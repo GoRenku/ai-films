@@ -1,0 +1,8 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FilmCard from '../../components/FilmCard.astro';
+import {getCollection} from 'astro:content';
+const films=(await getCollection('films')).sort((a,b)=>a.data.order-b.data.order);
+const artists=await getCollection('artists');
+---
+<Layout title="Films"><div class="page-head"><p class="eyebrow">THE SCREENING ROOM · {films.length} WORKS</p><h1>Worlds worth entering.</h1><p>Shorts, features and serial stories. Follow a film to its creator, its sources, and where to watch.</p></div><div class="film-grid">{films.map(film=><FilmCard film={film} artist={artists.find(a=>a.id===film.data.artist.id)}/>)}</div></Layout>

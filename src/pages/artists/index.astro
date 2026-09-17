@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {getCollection} from 'astro:content';
+const artists=(await getCollection('artists')).sort((a,b)=>a.data.title.localeCompare(b.data.title));
+---
+<Layout title="Artists"><div class="page-head"><p class="eyebrow">BEHIND THE FRAME · {artists.length} ARTISTS</p><h1>A point of view.<br/><em>A world of their own.</em></h1><p>The filmmakers developing stories, shaping performances and building bodies of work with AI.</p></div><div class="artist-list">{artists.map((a,i)=><a class="artist-row" href={`/artists/${a.id}/`}><span class="index">{String(i+1).padStart(2,'0')}</span><div><h2 style="font-size:32px">{a.data.title}</h2><p>{a.data.alias ?? a.data.focus}</p></div><span class="artist-focus">{a.data.focus}</span><span aria-hidden="true">↗</span></a>)}</div></Layout>

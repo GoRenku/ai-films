@@ -1,0 +1,11 @@
+packages: []
+minimumReleaseAge: 10080
+minimumReleaseAgeStrict: true
+minimumReleaseAgeIgnoreMissingTime: false
+blockExoticSubdeps: true
+trustLockfile: false
+verifyDepsBeforeRun: error
+strictDepBuilds: true
+allowBuilds:
+  esbuild: true
+  sharp: false

@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FilmCard from '../../components/FilmCard.astro';
+import Sources from '../../components/Sources.astro';
+import {getCollection,render} from 'astro:content';
+export async function getStaticPaths(){return (await getCollection('artists')).map(artist=>({params:{id:artist.id},props:{artist}}));}
+const {artist}=Astro.props;
+const films=(await getCollection('films')).filter(f=>f.data.artist.id===artist.id).sort((a,b)=>a.data.order-b.data.order);
+const {Content}=await render(artist);
+---
+<Layout title={artist.data.title} description={artist.data.description}><div class="artist-intro"><div class="page-head"><a class="back" href="/artists/">← The artists</a><p class="eyebrow" style="margin-top:28px">{artist.data.focus}</p><h1>{artist.data.title}</h1>{artist.data.alias&&<p class="status">{artist.data.alias}</p>}<p style="margin-top:20px">{artist.data.description}</p><a class="button" href={artist.data.website}>Artist / studio information ↗</a></div><article class="prose"><Content/><Sources sources={artist.data.sources}/></article></div><section class="section-space"><div class="section-heading"><h2>Selected work.</h2><span class="eyebrow">{films.length} IN THE COLLECTION</span></div><div class="film-grid">{films.map(film=><FilmCard film={film} artist={artist}/>)}</div></section></Layout>

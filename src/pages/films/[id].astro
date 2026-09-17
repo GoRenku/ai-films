@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Sources from '../../components/Sources.astro';
+import {getCollection,getEntry,render} from 'astro:content';
+export async function getStaticPaths(){return (await getCollection('films')).map(film=>({params:{id:film.id},props:{film}}));}
+const {film}=Astro.props;
+const artist=await getEntry(film.data.artist);
+if(!artist) throw new Error(`Missing artist for ${film.id}`);
+const {Content}=await render(film);
+---
+<Layout title={film.data.title} description={film.data.description}><div class="page-head"><a class="back" href="/films/">← The collection</a><p class="eyebrow" style="margin-top:28px">{film.data.format} / {film.data.genre} / {film.data.year}</p><h1>{film.data.title}</h1><p>{film.data.description}</p></div><img class="detail-image" src={film.data.image} alt={film.data.imageAlt} width="1280" height="720"/><p class="credit"><a href={film.data.imageSource}>{film.data.imageCredit} ↗</a></p><div class="article-layout"><article class="prose"><Content/></article><aside class="facts"><p class="status">{film.data.status}</p><dl><dt>Filmmaker</dt><dd><a href={`/artists/${artist.id}/`}>{artist.data.title} ↗</a></dd>{film.data.runtimeMinutes&&<><dt>{film.data.format==='Series'?'Approximate episode length':'Runtime'}</dt><dd>{film.data.runtimeMinutes} minutes</dd></>}<dt>Last checked</dt><dd><time datetime={film.data.lastVerifiedAt}>{film.data.lastVerifiedAt}</time></dd></dl>{film.data.watchUrl&&<a class="button" href={film.data.watchUrl} rel="noopener noreferrer">{film.data.watchLabel} ↗</a>}<Sources sources={film.data.sources}/></aside></div></Layout>

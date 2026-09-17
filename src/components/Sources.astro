@@ -1,0 +1,4 @@
+---
+const { sources } = Astro.props;
+---
+<section class="sources"><h2>Sources & further reading</h2>{sources.map((s: {url:string;label:string})=><a href={s.url} rel="noopener noreferrer">{s.label} ↗</a>)}</section>

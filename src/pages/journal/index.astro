@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {getCollection} from 'astro:content';
+const updates=(await getCollection('updates')).sort((a,b)=>b.data.date.localeCompare(a.data.date)||a.id.localeCompare(b.id));
+---
+<Layout title="Journal"><div class="page-head"><p class="eyebrow">FIELD NOTES</p><h1>What’s taking shape.</h1><p>New discoveries, release milestones, and the changing work of filmmakers in the collection.</p></div><div class="journal-grid">{updates.map(u=><a class="journal-card" href={`/journal/${u.id}/`}><time datetime={u.data.date}>{u.data.date}</time><h2 style="font-size:32px">{u.data.title}</h2><p>{u.data.description}</p><span class="text-link">Read the note ↗</span></a>)}</div></Layout>
