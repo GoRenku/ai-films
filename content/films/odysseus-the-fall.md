@@ -8,7 +8,7 @@ genre: "Mythological adventure"
 runtimeMinutes: 150
 status: "Watch now"
 watchUrl: "https://watch.fountain0.com/movies/odysseusthefall"
-watchLabel: "View rental on Fountain 0"
+watchLabel: "Rent the full film on Fountain 0"
 image: "/media/odysseus-the-fall.jpg"
 imageAlt: "Official trailer thumbnail for Odysseus: The Fall"
 imageCredit: "Fountain 0 · official trailer thumbnail"
@@ -16,6 +16,9 @@ imageSource: "https://www.youtube.com/watch?v=c75yg7_zLRE"
 order: 4
 sources:
   [
+    {"label": "Kling AI — scene clip and production announcement", "url": "https://x.com/Kling_ai/status/2100424655840387292"},
+    {"label": "Fountain 0 — official trailer", "url": "https://www.youtube.com/watch?v=NZ2VI7dQ91A"},
+    {"label": "Fountain 0 — rental catalogue", "url": "https://watch.fountain0.com/movies"},
     {
       "label": "Fountain 0 — September 16 release announcement",
       "url": "https://www.prnewswire.com/news-releases/fountain-0-announces-the-release-of-odysseus-the-fall-on-wednesday-september-16-the-first-completely-ai-generated-film-produced-at-the-level-of-a-big-budget-hollywood-movie-302880609.html",
@@ -35,8 +38,8 @@ production:
   [
     {
       "label": "Models and tools",
-      "detail": "Fountain 0’s studio engine over Kling; the release specifically discusses the Kling 3.0 series.",
-      "source": "https://www.prnewswire.com/news-releases/fountain-0-announces-the-release-of-odysseus-the-fall-on-wednesday-september-16-the-first-completely-ai-generated-film-produced-at-the-level-of-a-big-budget-hollywood-movie-302880609.html",
+      "detail": "Fountain 0’s studio engine over Kling. Kling AI’s release post states that every shot was generated exclusively with Kling 3.0; this is the technology provider’s production claim.",
+      "source": "https://x.com/Kling_ai/status/2100424655840387292",
     },
     {
       "label": "Named credits",
@@ -52,6 +55,12 @@ production:
 ---
 
 Fountain 0 released the film for rental on September 16, 2026, listing a 150-minute runtime. Earlier material used 135 minutes.
+
+## Watch and preview
+
+- **[Rent the full film on Fountain 0](https://watch.fountain0.com/movies/odysseusthefall)** — the 150-minute feature, listed in 4K UHD. As checked on September 17, 2026, the rental is $9.99, with 30 days to start watching and 72 hours to finish after pressing Watch. [Browse Fountain 0’s movies](https://watch.fountain0.com/movies).
+- **[Watch the official trailer on YouTube](https://www.youtube.com/watch?v=NZ2VI7dQ91A)** — published by Fountain 0 Studios.
+- **[Watch a scene from the film on X](https://x.com/Kling_ai/status/2100424655840387292)** — shared by Kling AI. This is an excerpt, not the full feature.
 
 ## Why this film matters
 
