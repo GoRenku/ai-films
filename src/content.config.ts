@@ -41,7 +41,7 @@ const films = defineCollection({
       format: z.enum(["Short film", "Feature", "Series"]),
       genre: z.string(),
       runtimeMinutes: z.number().positive().optional(),
-      status: z.enum(["Watch now", "Festival screening", "Coming soon"]),
+      status: z.enum(["Watch now", "Festival screening", "Coming soon", "Released", "In theaters"]),
       watchUrl: url.optional(),
       watchLabel: z.string().default("Watch film"),
       image: z.string().optional(),
