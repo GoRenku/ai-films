@@ -12,6 +12,11 @@ order: 53
 sources: [{"label": "Official film / credits", "url": "https://www.omnifilmfestival.com/hyperphantasia"}, {"label": "Creator — film listing", "url": "https://aifilmlab.co.uk/"}]
 production: []
 runtimeMinutes: 30
+image: "/media/duck.png"
+imageAlt: "Duck poster: a martial artist raises her fist among red circles, supporting characters and a white duck"
+imageCredit: "José Alvarez / AI Film Lab · Duck · official poster"
+imageSource: "https://aifilmlab.co.uk/"
+imageFit: "contain"
 ---
 
 ## Why this film is on the watchlist

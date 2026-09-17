@@ -13,6 +13,10 @@ sources: [{"label": "Official film / credits", "url": "https://www.linkedin.com/
 production: [{"label": "Disclosed tools", "detail": "Veo 2 for shots; ElevenLabs for voice; Udio for music; MMAudio and sound libraries for atmosphere; ScreenFlow and Photoshop in finishing.", "source": "https://www.linkedin.com/posts/upskydown_veo2-film-ai-activity-7297608346755375105-aSpF"}, {"label": "Time and method", "detail": "The filmmaker reports several hundred hours and numerous workarounds. He does not provide a verified total crew size.", "source": "https://www.linkedin.com/posts/upskydown_veo2-film-ai-activity-7297608346755375105-aSpF"}]
 watchUrl: "https://www.linkedin.com/posts/upskydown_veo2-film-ai-activity-7297608346755375105-aSpF"
 watchLabel: "Watch film"
+image: "/media/banished.jpg"
+imageAlt: "A lone guitarist faces a moonlit castle in BANISHED"
+imageCredit: "Henry Daubrez · BANISHED · frame from the filmmaker’s release, 00:35"
+imageSource: "https://www.linkedin.com/posts/upskydown_veo2-film-ai-activity-7297608346755375105-aSpF"
 ---
 
 ## Why this film matters

@@ -12,6 +12,11 @@ order: 52
 sources: [{"label": "Official film / credits", "url": "https://channel.theshortfilmshow.com/schedule?day=2026-09-19"}, {"label": "OMNI — animation award", "url": "https://www.omnifilmfestival.com/hyperphantasia"}]
 production: []
 runtimeMinutes: 15
+image: "/media/papernaught.jpg"
+imageAlt: "Papernaught poster: a cardboard father and child beneath paper stars and a yellow sun"
+imageCredit: "Glenn Robert Triggs · Papernaught · poster via The Short Film Show"
+imageSource: "https://channel.theshortfilmshow.com/schedule?day=2026-09-19"
+imageFit: "contain"
 ---
 
 ## Why this film matters

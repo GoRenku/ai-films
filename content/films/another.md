@@ -12,6 +12,10 @@ order: 43
 sources: [{"label": "Official film / credits", "url": "https://www.bifan.kr/eng/program/program_view.asp?actEvent=view&pk_seq=6834&sc_category_seq=7017&sc_num=1"}]
 production: [{"label": "Post-production tools", "detail": "The director’s statement identifies Midjourney, Stable Diffusion and ComfyUI as part of the production’s AI process.", "source": "https://www.bifan.kr/eng/program/program_view.asp?actEvent=view&pk_seq=6834&sc_category_seq=7017&sc_num=1"}]
 runtimeMinutes: 5
+image: "/media/another.jpg"
+imageAlt: "A woman faces another person in a warmly lit room in Another"
+imageCredit: "Dave Clark · Another · official still via BIFAN"
+imageSource: "https://www.bifan.kr/eng/program/program_view.asp?actEvent=view&pk_seq=6834&sc_category_seq=7017&sc_num=1"
 ---
 
 ## Why this film matters

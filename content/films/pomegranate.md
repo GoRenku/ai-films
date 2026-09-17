@@ -11,6 +11,10 @@ lastVerifiedAt: "2026-09-17"
 order: 55
 sources: [{"label": "Official film / credits", "url": "https://www.linkedin.com/posts/gossip-goblin-inc_pomegranate-premiering-july-22nd-watch-activity-7485367423496450048-purz"}, {"label": "Original full-film link — private at time of check", "url": "https://www.youtube.com/watch?v=fyZhC2TXgcs"}]
 production: []
+image: "/media/pomegranate.jpg"
+imageAlt: "Three pale, pointed-eared figures with luminous eyes in Pomegranate"
+imageCredit: "Gossip Goblin · Pomegranate · official release-video still"
+imageSource: "https://www.linkedin.com/posts/gossip-goblin-inc_pomegranate-premiering-july-22nd-watch-activity-7485367423496450048-purz"
 ---
 
 Gossip Goblin announced the film for July 22, 2026. Its original full-film YouTube link now shows “This video is private” on YouTube, so this entry preserves the work without promising playback.

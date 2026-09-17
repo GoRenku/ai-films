@@ -22,6 +22,10 @@ production:
   - label: "Announced creative credits"
     detail: "Director: Zack London. Writers: Zack London and Jacob Batchelor. Producers: Zack London and Edward Saatchi. Gossip Goblin presents in association with Fable Showrunner; these are announcement credits, not a complete crew list."
     source: "https://www.linkedin.com/posts/chris-branch-live_the-first-ai-film-in-theatres-live-interview-activity-7486395260286418944-z4La"
+image: "/media/gods-dont-give-gifts.jpg"
+imageAlt: "An ornate, augmented figure looks skyward in Gods Don’t Give Gifts"
+imageCredit: "Gossip Goblin · Gods Don’t Give Gifts · official film artwork"
+imageSource: "https://godsdontgivegifts.com/"
 ---
 
 **Announced theatrical opening: October 30, 2026, in select U.S. cinemas.** The official screening section still says cities will be announced soon. It offers email alerts; specific venues and bookable screenings have not been verified as of September 17.

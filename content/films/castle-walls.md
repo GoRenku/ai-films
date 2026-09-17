@@ -14,6 +14,11 @@ production: [{"label": "Credited producer and studio", "detail": "Prime Video cr
 runtimeMinutes: 17
 watchUrl: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
 watchLabel: "Watch film"
+image: "/media/castle-walls.jpg"
+imageAlt: "Castle Walls artwork: a man on a desert bridge framed by thorned roses"
+imageCredit: "AI Yapım · Castle Walls · artwork via Prime Video"
+imageSource: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
+imageFit: "contain"
 ---
 
 Prime Video lists two 17-minute episodes, dated August 11, 2026. Platform and territorial access may require a subscription.

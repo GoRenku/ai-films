@@ -46,6 +46,7 @@ const films = defineCollection({
       watchLabel: z.string().default("Watch film"),
       image: z.string().optional(),
       imageAlt: z.string().optional(),
+      imageFit: z.enum(["cover", "contain"]).default("cover"),
       imageCredit: z.string().optional(),
       imageSource: url.optional(),
       production: z

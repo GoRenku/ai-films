@@ -12,6 +12,11 @@ order: 35
 sources: [{"label": "Official film / credits", "url": "https://antalyaff.com/en/page/movies_new?movie=gercek-otesi"}, {"label": "Distributor release announcement", "url": "https://www.globenewswire.com/news-release/2025/07/14/3115260/0/en/Post-Truth-Becomes-The-First-AI-generated-Film-Released-in-Theaters.html"}]
 production: [{"label": "Creative credits", "detail": "Alkan Avcıoğlu directs, edits and composes; the screenplay is credited to Avcıoğlu and Vikki Bardot. Production: Mars Prodüksiyon.", "source": "https://antalyaff.com/en/page/movies_new?movie=gercek-otesi"}]
 runtimeMinutes: 102
+image: "/media/post-truth.png"
+imageAlt: "Post Truth poster with bold pink lettering over a woman’s face"
+imageCredit: "Spongeworthy Studio · Post Truth · poster via Odin’s Eye Entertainment"
+imageSource: "https://www.odinseyeent.com/post-truth"
+imageFit: "contain"
 ---
 
 ## Why this film matters

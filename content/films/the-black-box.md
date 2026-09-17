@@ -41,6 +41,10 @@ production:
     },
   ]
 runtimeMinutes: 10
+image: "/media/the-black-box.jpg"
+imageAlt: "Close-up of a man’s lowered eyes in The Black Box"
+imageCredit: "John Olivos / Magnific · The Black Box · official release still"
+imageSource: "https://es.linkedin.com/posts/john-olivos-118377161_aifilmmaking-generativeai-aivideo-activity-7494826332393168896-TNhf"
 ---
 
 ## Why this film matters
