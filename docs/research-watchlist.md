@@ -56,3 +56,7 @@ The public projects-to-follow journal note covers Touch Grass, Kira (Damien Stec
 ## Not selected as completed AI films
 
 ONEIRIC remains a vendor demonstration lead rather than a curated narrative-film entry. Lost Calls, Hexi Corridor and China were contextual/traditional-film references; do not convert them into AI film records without film-specific evidence.
+
+## The Prompter / Allan Ripley — added September 17, 2026
+
+Published `the-prompter` and `allan-ripley` (Midnight Monkeys). Identity is cross-linked by the official YouTube channel and Higgsfield project. Release credits and public project counters recorded with separate scope. Official artwork included. Track the channel and Higgsfield profile; personal X, wider biography, budget, schedule and complete crew remain unverified. Do not confuse festival entry with an award or project generation totals with finished-shot counts.
