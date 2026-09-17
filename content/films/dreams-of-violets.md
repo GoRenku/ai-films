@@ -27,6 +27,14 @@ sources:
   ]
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
+production:
+  [
+    {
+      "label": "Official credits",
+      "detail": "Ash Koosha — writer/director; Pooya Koosha — producer. Tribeca’s listing is the source for these roles.",
+      "source": "https://tribecafilm.com/films/dreams-of-violets-2026",
+    },
+  ]
 ---
 
 Tribeca’s 2026 program identifies **Dreams of Violets** as a 75-minute docudrama written and directed by Ash Koosha, with Pooya Koosha credited as producer. The program’s 90-minute event slot should not be confused with the film’s runtime.

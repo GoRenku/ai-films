@@ -31,12 +31,29 @@ sources:
   ]
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
+production:
+  [
+    {
+      "label": "Public cast",
+      "detail": "Breckin Meyer — Garrick; Taylor John Smith — Jax; Danielle Bisutti — Sloane; Gedeon Burkhard — Raymond; Hanna Balicki — Lee.",
+      "source": "https://www.arcanalabs.ai/echo-hunter-movie",
+    },
+    {
+      "label": "Public crew",
+      "detail": "Kavan the Kid — director; Jonathan Yunger — executive producer; Mike J Mitch — listed crew / Phantom X co-founder. This page is not a full end-credit roll.",
+      "source": "https://www.arcanalabs.ai/echo-hunter-movie",
+    },
+  ]
 ---
 
-In a society that uses clones for replacement organs, a hunter begins to doubt the system he serves. Kavan Cardoza’s short pairs a generated setting with a cast including Breckin Meyer and Taylor John Smith.
+In a society that uses clones for replacement organs, a hunter begins to doubt the system he serves. Kavan Cardoza's short pairs a generated setting with a professional ensemble.
 
-## Human performance, generated world
+## Why this film matters
 
-The production interview describes voice and facial capture with SAG-AFTRA performers. This makes the film a useful example of a hybrid workflow: actors contribute performances while AI tools help construct the images.
+The film offers a concrete alternative to treating synthetic cinema as actorless cinema. The production interview describes voice and facial capture with SAG-AFTRA performers. The creative challenge is to retain intention, timing and identity when the actor's contribution is translated into generated images.
 
-Runtime is approximately 22 minutes; early announcement coverage described a longer running time.
+That distinction matters when comparing workflows: an invented face, a licensed likeness and a recorded performance are different kinds of source material. Echo Hunter is included for its actor-centered experiment, not simply for a claim of technical novelty.
+
+## Production evidence
+
+Arcana's film page lists the cast and principal team below and links behind-the-scenes material. We have not converted the platform's general model catalogue into a film-specific tool list. Runtime is approximately 22 minutes; early coverage described a longer running time.

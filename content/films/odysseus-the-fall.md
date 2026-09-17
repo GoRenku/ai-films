@@ -31,14 +31,34 @@ sources:
   ]
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
+production:
+  [
+    {
+      "label": "Models and tools",
+      "detail": "Fountain 0’s studio engine over Kling; the release specifically discusses the Kling 3.0 series.",
+      "source": "https://www.prnewswire.com/news-releases/fountain-0-announces-the-release-of-odysseus-the-fall-on-wednesday-september-16-the-first-completely-ai-generated-film-produced-at-the-level-of-a-big-budget-hollywood-movie-302880609.html",
+    },
+    {
+      "label": "Named credits",
+      "detail": "Ash Koosha — writer/director/producer; Pooya Koosha — producer and post-producer; Tom Rogers — executive producer. The announcement also says thirteen real people supplied character likenesses.",
+      "source": "https://www.prnewswire.com/news-releases/fountain-0-announces-the-release-of-odysseus-the-fall-on-wednesday-september-16-the-first-completely-ai-generated-film-produced-at-the-level-of-a-big-budget-hollywood-movie-302880609.html",
+    },
+    {
+      "label": "Schedule and funding",
+      "detail": "The studio reports four months of part-time creative work and Kling underwriting generation-token costs. That support complicates comparisons with cash-budget independent films.",
+      "source": "https://www.prnewswire.com/news-releases/fountain-0-announces-the-release-of-odysseus-the-fall-on-wednesday-september-16-the-first-completely-ai-generated-film-produced-at-the-level-of-a-big-budget-hollywood-movie-302880609.html",
+    },
+  ]
 ---
 
-Fountain 0 announced the film’s rental release on September 16, 2026. Its release announcement lists **150 minutes**, while some earlier listings use 135 minutes.
+Fountain 0 released the film for rental on September 16, 2026, listing a 150-minute runtime. Earlier material used 135 minutes.
 
-## A second feature
+## Why this film matters
 
-Following _Dreams of Violets_, Koosha takes on a different scale and genre. Fountain 0 describes the visible scenes as AI-generated, with writing and creative development led by Koosha. These are the producer’s claims.
+After Dreams of Violets, Koosha attempts a second feature in a different genre. Repeat production is the meaningful signal: can an approach accommodate a new dramatic vocabulary, rather than reproduce the same visual trick?
 
-## Watch with a critical eye
+## Read the production claims carefully
 
-A completed feature is a production milestone, not an automatic quality endorsement. An independent review is linked below alongside the official sources. Rental price and regional availability are set by the distributor.
+The release calls the film a one-person creation while also crediting Pooya Koosha and Tom Rogers. We preserve those collaborators below instead of equating a lead creator with a crew of one.
+
+A completed feature remains a production milestone rather than an automatic artistic endorsement. The linked independent review offers a counterpoint to the studio's promotional claims. Rental terms and regional availability belong to the distributor.

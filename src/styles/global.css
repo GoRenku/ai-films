@@ -656,3 +656,51 @@ footer > a:last-child {
     transition: none !important;
   }
 }
+
+.social-link {
+  display: block;
+  margin-top: 20px;
+}
+.production-notes {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line, #48413a);
+}
+.production-notes dl > div {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line, #48413a);
+}
+.production-notes dt {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.production-notes dd {
+  margin: 0;
+}
+.production-notes dd a {
+  white-space: nowrap;
+}
+.disclosure-note {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+.film-title-art {
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background: #292721;
+  color: #e5d6b5;
+}
+.film-title-art span {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 15px;
+}
+.film-title-art strong {
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  line-height: 1.12;
+  font-weight: 400;
+}

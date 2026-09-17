@@ -27,12 +27,30 @@ sources:
   ]
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
+production:
+  [
+    {
+      "label": "Reported production",
+      "detail": "Approximately six months, with 13,000 selected generated outputs. Outputs are not the same thing as finished shots.",
+      "source": "https://www.mk.co.kr/en/movies/12146484",
+    },
+    {
+      "label": "Reported budget",
+      "detail": "Under KRW 1 billion overall; roughly KRW 500–600 million for generative AI tools, according to the screening report.",
+      "source": "https://www.mk.co.kr/en/movies/12146484",
+    },
+    {
+      "label": "Named production participants",
+      "detail": "Seol Woo-in — director; Won Kyung-hye — assistant director; Ham Seul-gi — Ainos Studio CEO. The report also names team leaders Kang Tae-kyung and Oh Se-eun; this is not a complete crew list.",
+      "source": "https://www.mk.co.kr/en/movies/12146484",
+    },
+  ]
 ---
 
-Ainos Studio presented **Steelay**, a 90-minute science-fiction action film, at a Seoul press screening on September 7, 2026. An October theatrical release is planned.
+Ainos Studio presented Steelay, a 90-minute science-fiction action film, at a Seoul press screening on September 7, 2026. An October theatrical release is planned.
 
-## From generations to a feature
+## Why this film matters
 
-Reporting from the screening describes six months of work and the selection of thousands of generated outputs. The studio’s account illustrates the editorial work involved in assembling a full-length production.
+The useful question here is editorial scale. Thousands of possible outputs must be reduced to a film with dramatic rhythm, intelligible action and visual continuity. The production figures suggest substantial selection and finishing work; they should not be read as a count of shots in the final edit.
 
-The production’s claim that its visuals were made entirely with AI is attributed to its makers. We have not independently reviewed the complete film, and a press screening does not mean it is already available to the public.
+This is a studio production with named human roles, rather than evidence that a model autonomously made a feature. The reported schedule and budget are recorded below. A press screening does not establish general availability, and we have not independently reviewed the complete film.

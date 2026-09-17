@@ -22,14 +22,29 @@ sources:
     url: "https://www.youtube.com/watch?v=-Rzl7nUdEs4"
   - label: "PJ Ace — interview with the filmmaker"
     url: "https://pjace.beehiiv.com/p/gossip-goblin-s-crazy-workflow-for-building-original-worlds-200m-views"
+production:
+  [
+    {
+      "label": "Models and tools",
+      "detail": "Midjourney for visual exploration; Nano Banana for compositing; Kling for animation; Sync for some lip-sync finishing.",
+      "source": "https://pjace.beehiiv.com/p/gossip-goblin-s-crazy-workflow-for-building-original-worlds-200m-views",
+    },
+    {
+      "label": "People and time",
+      "detail": "Around four months; human dialogue performers, a dedicated editor and human composers are described. A complete crew count is not disclosed.",
+      "source": "https://pjace.beehiiv.com/p/gossip-goblin-s-crazy-workflow-for-building-original-worlds-200m-views",
+    },
+  ]
 ---
 
-Set in NiiroCradle, this cyberpunk short follows an android's search for a lost memory. Its world extends beyond a single film into Gossip Goblin's recurring characters and stories.
+Set in NiiroCradle, this cyberpunk short follows an android's search for a lost memory. Its recurring world gives the story a life beyond a single release.
 
-## Behind the images
+## Why this film matters
 
-In an interview with PJ Ace, London describes an extensive foundation of character references and world-building, with human voice actors performing the discernible dialogue. The reported production took around four months.
+The compelling production idea is accumulated authorship: characters and places are developed across works, so each film can draw on decisions already made. This changes what continuity means. The director is maintaining a fictional culture, not just matching one face between two shots.
 
-## Why it belongs here
+## Disclosed craft
 
-A useful starting point for exploring how a small creative team can develop a distinctive fictional world through AI-assisted production. Runtime is rounded to the nearest minute.
+In PJ Ace's interview, London describes establishing a few key images for each environment before filling in connecting shots. Character coverage is assembled from separate angles. Color and lighting are largely decided in the stills before animation; the final grade unifies discrepancies.
+
+The same account describes aligning dialogue and clips before lip-sync finishing, and emphasizes an editor familiar with generated footage's failure modes. These are useful reminders that performance, timing and visual cohesion are made through repeated decisions. The linked interview contains the fuller process; its claims are attributed to the filmmaker.

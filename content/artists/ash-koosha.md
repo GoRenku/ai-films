@@ -18,6 +18,12 @@ sources:
   ]
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
+x:
+  {
+    "url": "https://x.com/AshKoosha",
+    "label": "Ash Koosha on X",
+    "source": "https://x.com/AshKoosha",
+  }
 ---
 
 Ash Koosha is the writer and director of **Dreams of Violets**, programmed at Tribeca in 2026, and **Odysseus: The Fall**. He co-founded Fountain 0 with producer Pooya Koosha.

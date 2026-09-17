@@ -18,6 +18,16 @@ const artists = defineCollection({
     alias: z.string().optional(),
     focus: z.string(),
     website: url,
+    x: z
+      .object({
+        url: url.refine(
+          (v) => /^https:\/\/x\.com\/[A-Za-z0-9_]+$/.test(v),
+          "Use an X profile URL",
+        ),
+        label: z.string(),
+        source: url,
+      })
+      .optional(),
     featured: z.boolean().default(false),
   }),
 });
@@ -34,13 +44,24 @@ const films = defineCollection({
       status: z.enum(["Watch now", "Festival screening", "Coming soon"]),
       watchUrl: url.optional(),
       watchLabel: z.string().default("Watch film"),
-      image: z.string(),
-      imageAlt: z.string(),
-      imageCredit: z.string(),
-      imageSource: url,
+      image: z.string().optional(),
+      imageAlt: z.string().optional(),
+      imageCredit: z.string().optional(),
+      imageSource: url.optional(),
+      production: z
+        .array(z.object({ label: z.string(), detail: z.string(), source: url }))
+        .default([]),
       featured: z.boolean().default(false),
       order: z.number().default(99),
     })
+    .refine(
+      (v) => !v.image || Boolean(v.imageAlt && v.imageCredit && v.imageSource),
+      "Artwork requires alt text, credit and source",
+    )
+    .refine(
+      (v) => !v.featured || Boolean(v.image),
+      "Featured films require artwork",
+    )
     .refine(
       (v) => v.status !== "Watch now" || Boolean(v.watchUrl),
       "Watch now needs a watch link",

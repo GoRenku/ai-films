@@ -25,10 +25,14 @@ discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
 ---
 
-**Yuki** had its world premiere at the AI International Film Festival on September 12, 2026. The festival lists an 18-minute runtime and credits Romanian director Andrei Sava.
+Yuki premiered at the AI International Film Festival on September 12, 2026. The festival lists an 18-minute runtime and credits Romanian director Andrei Sava.
 
-## A new filmmaker to follow
+## Why this film matters
 
-The jury awarded it Best AI Short; audiences selected it for Best Film and Best Use of AI. Those are festival results, rather than an independent review by this journal.
+The festival's premise connects a collapsing civilization with an animal in a coma. The interesting artistic proposition is the relationship between an expansive speculative world and a very intimate attachment. A generated environment can carry emotional meaning rather than simply exhibit scale.
 
-For viewing availability, consult the festival’s current listing. We have not verified an unrestricted full-film stream.
+The jury awarded Yuki Best AI Short; audiences selected it for Best Film and Best Use of AI. These are festival results, not this journal's independent review. The selection gives a reason to seek out Sava's work without pretending an award settles questions of taste.
+
+## Production information still to establish
+
+The festival listing does not provide a film-specific model list, detailed workflow or full crew. We will add those when an attributable production account is available. Consult the festival for viewing options; an unrestricted full-film stream has not been verified.

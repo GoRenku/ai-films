@@ -17,8 +17,8 @@ The local preview uses port 4327. Production is static output in dist/, publishe
 
 ## Content
 
-- content/artists/<slug>.md: artist biography, links, editorial context.
-- content/films/<slug>.md: film details, artist reference, availability, watch links, source and image credits.
+- content/artists/<slug>.md: artist biography, verified X profile and provenance, links, editorial context.
+- content/films/<slug>.md: film details, artist reference, availability, watch links, source and image credits, and sourced production disclosures.
 - content/updates/YYYY-MM-DD-<slug>.md: a dated note referencing films and artists.
 - src/content.config.ts: frontmatter schema. Required fields and reference checks run during build.
 - public/media/: credited promotional stills and thumbnails used to identify films.
@@ -27,7 +27,7 @@ Copy a relevant existing file to add an entry. Slugs are stable filenames. Recor
 
 ## Periodic refresh
 
-A Codex scheduled follow-up reads AI Film Director Watch, verifies new discoveries against original sources, updates these Markdown files, validates the build, and publishes meaningful changes to the existing Site. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
+Two daily Codex follow-ups work in sequence: an 11:00 Europe/Madrid X discovery review supplies a private queue; the 12:00 editorial refresh reads it alongside AI Film Director Watch, monitors verified artist accounts, verifies discoveries against original sources, updates Markdown and publishes meaningful changes. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
 
 ## Package safety
 
@@ -37,4 +37,4 @@ Routine content refreshes must not upgrade packages. Dependency updates are sepa
 
 ## Design and credits
 
-Palette and typography adapted from the user's Renku website. Fraunces is provided by @fontsource-variable/fraunces. IBM Plex Sans is self-hosted from the existing website; its license is retained with the font files. Every film page links to its image source and factual sources.
+Palette and typography adapted from the existing studio website. Fraunces is provided by @fontsource-variable/fraunces. IBM Plex Sans is self-hosted from the existing website; its license is retained with the font files. Every film page links to its image source and factual sources.
