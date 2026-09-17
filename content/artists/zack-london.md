@@ -8,6 +8,8 @@ featured: true
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
 sources:
+  - label: "Gods Don’t Give Gifts — official release and screenings"
+    url: "https://godsdontgivegifts.com/"
   - label: "Gossip Goblin — official studio"
     url: "https://www.gossipgoblin.studio/"
 x:
@@ -23,3 +25,9 @@ Zack London founded Gossip Goblin, a storytelling studio focused on recurring ch
 ## Why follow this artist
 
 The interesting thread is continuity: a filmmaker developing a world across multiple works, giving audiences characters and places to return to. **The Patchwright** is an entry point into that approach.
+
+## Next: a theatrical feature
+
+[**Gods Don’t Give Gifts**](/films/gods-dont-give-gifts/) is announced for **October 30, 2026 in select U.S. cinemas**. The official site is collecting screening alerts; individual cities are still to be announced as of September 17.
+
+This is a significant progression from online world-building to theatrical exhibition. The question is whether London's recurring universe can sustain a feature and persuade its online audience to buy cinema tickets. An announced release is a milestone, not yet evidence of box-office success or the finished film's quality.
