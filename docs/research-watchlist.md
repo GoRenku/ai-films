@@ -60,3 +60,7 @@ ONEIRIC remains a vendor demonstration lead rather than a curated narrative-film
 ## The Prompter / Allan Ripley — added September 17, 2026
 
 Published `the-prompter` and `allan-ripley` (Midnight Monkeys). Identity is cross-linked by the official YouTube channel and Higgsfield project. Release credits and public project counters recorded with separate scope. Official artwork included. Track the channel and Higgsfield profile; personal X, wider biography, budget, schedule and complete crew remain unverified. Do not confuse festival entry with an award or project generation totals with finished-shot counts.
+
+## September 18 additions
+
+Tales of Grimwicke — Chapter I / Charlie Driscoll and Grimble & Wobbles / Joss Monzoni now have local collection entries, original release artwork and production sources. Monitor CharlieDFilm for Chapter II and JossMonzoni for further shorts and credit disclosures. Full crew counts and commercial-support scope remain unresolved.

@@ -24,5 +24,5 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 
 - Reuse .openai/hosting.json project_id and the Sites source repository. Never create a replacement Site.
 - Preserve the current audience. No public access or new viewers without explicit user instruction.
-- Use the Sites building/hosting skills, push the exact committed source, package its verified static dist output, then save/deploy the version.
+- Accepted content must be saved in this checkout and summarized in README.md. Validate and commit it, push to GitHub origin, then push the exact same commit to the sites remote. Use the Sites building/hosting skills to package verified static dist output and save/deploy that commit. Hosting failure must not leave accepted content only in a private inbox; retain the validated repo/GitHub update and report publication pending.
 - Keep credentials out of files, logs, and Git. Do not overwrite or commit unrelated user changes. On concurrent local edits, stop the refresh and report the conflict.
