@@ -64,3 +64,9 @@ Published `the-prompter` and `allan-ripley` (Midnight Monkeys). Identity is cros
 ## September 18 additions
 
 Tales of Grimwicke — Chapter I / Charlie Driscoll and Grimble & Wobbles / Joss Monzoni now have local collection entries, original release artwork and production sources. Monitor CharlieDFilm for Chapter II and JossMonzoni for further shorts and credit disclosures. Full crew counts and commercial-support scope remain unresolved.
+
+## September 19 additions and follow-ups
+
+Backrooms Nemoris / Javi Lopez has a verified public pilot, original artwork and creator disclosures. Monitor @javilopen for further episodes and credits. Ten episodes are planned; only the pilot is verified. Magnific is the credited producer; funding and full crew details remain unresolved. Toronto premiere is not evidence of TIFF selection.
+
+Odysseus: The Fall now preserves Koosha’s later $24,600 and fourteen-likeness claims alongside the earlier studio announcement. Cost accounting and the differing contributor count remain unresolved. PJ Ace / Genre AI’s separate Odyssey scene remains a craft lead, not this film or a completed feature.

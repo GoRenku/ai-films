@@ -16,6 +16,7 @@ imageSource: "https://www.youtube.com/watch?v=c75yg7_zLRE"
 order: 4
 sources:
   [
+    {"label": "Ash Koosha \u2014 new cost and likeness disclosure", "url": "https://x.com/AshKoosha/status/2100897090884747697"},
     {"label": "Kling AI — scene clip and production announcement", "url": "https://x.com/Kling_ai/status/2100424655840387292"},
     {"label": "Fountain 0 — official trailer", "url": "https://www.youtube.com/watch?v=NZ2VI7dQ91A"},
     {"label": "Fountain 0 — rental catalogue", "url": "https://watch.fountain0.com/movies"},
@@ -33,9 +34,10 @@ sources:
     },
   ]
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-09-19"
 production:
   [
+    {"label": "Creator\u2019s later disclosure", "detail": "Koosha now reports $24,600 for the film and likenesses from 14 people. The earlier studio release said thirteen. The new post does not itemize costs or reconcile the count; retain the earlier collaborator credits and generation-support disclosure.", "source": "https://x.com/AshKoosha/status/2100897090884747697"},
     {
       "label": "Models and tools",
       "detail": "Fountain 0’s studio engine over Kling. Kling AI’s release post states that every shot was generated exclusively with Kling 3.0; this is the technology provider’s production claim.",
@@ -71,3 +73,9 @@ After Dreams of Violets, Koosha attempts a second feature in a different genre. 
 The release calls the film a one-person creation while also crediting Pooya Koosha and Tom Rogers. We preserve those collaborators below instead of equating a lead creator with a crew of one.
 
 A completed feature remains a production milestone rather than an automatic artistic endorsement. The linked independent review offers a counterpoint to the studio's promotional claims. Rental terms and regional availability belong to the distributor.
+
+## September 19 production update
+
+In a [new first-person account](https://x.com/AshKoosha/status/2100897090884747697), Koosha reports a **$24,600** cost and **14 likeness contributors**, alongside his writing, production, editing and original soundtrack work. The earlier studio announcement counted thirteen people and credited other producers. These accounts have different scopes and are preserved rather than silently merged into a single crew total.
+
+The new figure is a creator-reported cost without an itemized breakdown. It does not resolve how the previously announced underwriting of generation costs was accounted for, or whether labor is included.

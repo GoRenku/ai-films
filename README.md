@@ -48,3 +48,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [Charlie Driscoll](content/artists/charlie-driscoll.md) and [Tales of Grimwicke — Chapter I](content/films/tales-of-grimwicke.md): release artwork, watch link and disclosed production process.
 - [Grimble & Wobbles](content/films/grimble-and-wobbles.md): Joss Monzoni’s short comedy, original imagery and sourced workflow.
 - [Journal note](content/updates/2026-09-18-animal-worlds.md): links the two additions.
+
+### September 19, 2026 content refresh
+
+- [Backrooms Nemoris](content/films/backrooms-nemoris.md) and [Javi Lopez](content/artists/javi-lopez.md): official pilot, artwork, verified X profile and sourced sound/editing/model disclosures.
+- [Odysseus: The Fall](content/films/odysseus-the-fall.md): new creator-reported cost and likeness count, with earlier credits and funding context preserved.
+- [Journal note](content/updates/2026-09-19-sound-and-production.md): highlights the additions.
