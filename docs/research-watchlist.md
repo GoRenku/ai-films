@@ -78,3 +78,7 @@ Odysseus: The Fall now preserves Koosha’s later $24,600 and fourteen-likeness 
 - The Poison Taster: Absurd’s original release post contains the film, extending the earlier announcement lead. Named director/writer and film-specific AI production facts remain unresolved after checking the public release, studio profile and website. Do not infer a film’s models from Absurd’s product catalogue. Source: https://x.com/withabsurd/status/2100628897998254156 .
 
 - Gabriel Olson: added an artist profile and journal note for his unofficial DuckTales concept trailer, directed by Olson and edited by Jason Pachomski. Verified X: https://x.com/Gabriel_Olson . Track subsequent narrative releases and exact production disclosures. This is not an announced Disney feature or verified feature production. Official project: https://www.thisisgabriel.com/portfolio/ducktales-live-action-fan-trailer-unofficial-39th-anniversary .
+
+## Pending leads resolved September 20
+
+The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s official YouTube release verifies Seedance 2.5 and Nano Banana Pro; named individuals remain unresolved. Life Lines has an official full YouTube episode and CapCut sponsorship; full collaborator credits remain open. NiE’s original release and two-week schedule are verified; linked Higgsfield project returned 403, so specific models remain unknown. These gaps are follow-up research, not publication blockers.

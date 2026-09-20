@@ -704,3 +704,25 @@ footer > a:last-child {
   line-height: 1.12;
   font-weight: 400;
 }
+
+/* Dated additions lead the homepage; the curated feature stays below. */
+.whats-new { margin: 0 0 64px; padding: 30px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.news-films { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.news-film { text-decoration:none; background:var(--panel); }
+.news-film img { display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; }
+.news-film > div { padding:20px; }
+.news-film h3 { font:500 27px/1.2 var(--display); margin:10px 0; }
+.news-film p:not(.eyebrow) { color:var(--muted); margin:0; font-size:16px; }
+.news-details { display:grid; grid-template-columns:1.4fr 1fr; gap:40px; margin-top:28px; }
+.news-note { display:flex; align-items:baseline; gap:18px; padding:10px 0; text-decoration:none; border-bottom:1px solid var(--line); }
+.news-note time { font-size:14px; color:var(--muted); white-space:nowrap; }
+.news-note span:nth-child(2) { flex:1; }
+.news-artists { display:flex; flex-wrap:wrap; gap:10px 20px; }
+.news-artists a { text-decoration:none; }
+.news-day { display:grid; grid-template-columns:200px 1fr; gap:32px; margin-bottom:48px; }
+.news-day > h2 { font:500 26px/1.3 var(--display); margin:20px 0; }
+.news-item { display:grid; grid-template-columns:125px 1fr 20px; gap:20px; padding:22px 0; border-top:1px solid var(--line); text-decoration:none; }
+.news-item h3 { font:500 27px/1.25 var(--display); margin:0 0 8px; }
+.news-item p { margin:0; color:var(--muted); }
+.news-film:hover h3,.news-note:hover,.news-artists a:hover,.news-item:hover h3 { color:var(--accent); }
+@media(max-width:760px) { .news-films,.news-details,.news-day { grid-template-columns:1fr; } .news-films { gap:18px; } .news-day { gap:0; } .news-item { grid-template-columns:1fr 20px; gap:8px; } .news-item > .eyebrow { grid-column:1 / -1; } .news-note { flex-wrap:wrap; gap:8px; } .news-note time { width:100%; } .site-header nav { flex-wrap:wrap; } }

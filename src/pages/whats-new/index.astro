@@ -1,0 +1,7 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getNews, displayDate } from '../../lib/whats-new';
+const news = await getNews();
+const dates = [...new Set(news.map(n=>n.date))];
+---
+<Layout title="What’s New" description="The latest films, filmmakers and editorial updates added to AI Film Journal."><div class="page-head"><p class="eyebrow">THE COLLECTION, AS IT GROWS</p><h1>What’s New</h1><p>New films, new voices, and substantive updates. Dates show when we added them to the journal.</p></div>{dates.map(date=><section class="news-day"><h2><time datetime={date}>{displayDate(date)}</time></h2><div>{news.filter(n=>n.date===date).map(n=><a class="news-item" href={n.href}><span class="eyebrow">{n.kind}</span><div><h3>{n.title}</h3><p>{n.description}</p></div><span aria-hidden="true">↗</span></a>)}</div></section>)}</Layout>

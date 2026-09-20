@@ -1,0 +1,12 @@
+---
+import { getNews, displayDate } from '../lib/whats-new';
+const news = await getNews();
+const films = news.filter(n=>n.kind==='New film').slice(0,3);
+const notes = news.filter(n=>n.kind==='Journal update').slice(0,2);
+const artists = news.filter(n=>n.kind==='New artist').slice(0,4);
+---
+<section class="whats-new" aria-labelledby="whats-new-heading">
+  <div class="section-heading"><div><p class="eyebrow">LATEST ADDITIONS · <time datetime={news[0]?.date}>{news[0] && displayDate(news[0].date)}</time></p><h2 id="whats-new-heading">What’s New</h2></div><a class="text-link" href="/whats-new/">All recent additions ↗</a></div>
+  <div class="news-films">{films.map(n=><a class="news-film" href={n.href}>{n.image&&<img src={n.image} alt={n.alt} width="640" height="360" loading="lazy"/>}<div><p class="eyebrow">{n.kind} · <time datetime={n.date}>{displayDate(n.date)}</time></p><h3>{n.title}</h3><p>{n.description}</p></div></a>)}</div>
+  <div class="news-details"><div><p class="eyebrow">RECENT NOTES</p>{notes.map(n=><a class="news-note" href={n.href}><time datetime={n.date}>{displayDate(n.date)}</time><span>{n.title}</span><span aria-hidden="true">↗</span></a>)}</div><div><p class="eyebrow">NEW ARTISTS & STUDIOS</p><div class="news-artists">{artists.map(n=><a href={n.href}>{n.title} ↗</a>)}</div></div></div>
+</section>

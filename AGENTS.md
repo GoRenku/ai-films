@@ -26,3 +26,7 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 - Preserve the current audience. No public access or new viewers without explicit user instruction.
 - Accepted content must be saved in this checkout and summarized in README.md. Validate and commit it, push to GitHub origin, then push the exact same commit to the sites remote. Use the Sites building/hosting skills to package verified static dist output and save/deploy that commit. Hosting failure must not leave accepted content only in a private inbox; retain the validated repo/GitHub update and report publication pending.
 - Keep credentials out of files, logs, and Git. Do not overwrite or commit unrelated user changes. On concurrent local edits, stop the refresh and report the conflict.
+
+## Inclusion with incomplete disclosures
+
+A verified narrative release and identifiable creator or credited studio are enough to consider inclusion on editorial merit. Missing individual credits, budget, exact models or team size do not alone justify deferral. Publish supported facts, label unknowns, and keep researching. Check original full-release descriptions, creator portfolios and linked production sources before deferring a lead. Never imply full viewing or invent credits. Recent additions automatically appear in What’s New; add a dated journal note for substantive changes to existing entries, not routine verification.
