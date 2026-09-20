@@ -54,3 +54,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [Backrooms Nemoris](content/films/backrooms-nemoris.md) and [Javi Lopez](content/artists/javi-lopez.md): official pilot, artwork, verified X profile and sourced sound/editing/model disclosures.
 - [Odysseus: The Fall](content/films/odysseus-the-fall.md): new creator-reported cost and likeness count, with earlier credits and funding context preserved.
 - [Journal note](content/updates/2026-09-19-sound-and-production.md): highlights the additions.
+
+### September 20, 2026 content refresh
+
+- [A Face Only a Mother Could Love](content/films/a-face-only-a-mother-could-love.md): added its verified BIAIFF official selection and September 17 cinema programme credit, distinguishing the screening from an award.
+- Updated the research watchlist with public festival leads and the unresolved authorship of The Poison Taster.
+
+- [Gabriel Olson](content/artists/gabriel-olson.md): new director profile and [journal note](content/updates/2026-09-20-gabriel-olson.md), with DuckTales concept-trailer links, Jason Pachomski’s editing credit and verified X monitoring. No completed-film entry or feature announcement inferred.

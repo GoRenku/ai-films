@@ -70,3 +70,11 @@ Tales of Grimwicke — Chapter I / Charlie Driscoll and Grimble & Wobbles / Joss
 Backrooms Nemoris / Javi Lopez has a verified public pilot, original artwork and creator disclosures. Monitor @javilopen for further episodes and credits. Ten episodes are planned; only the pilot is verified. Magnific is the credited producer; funding and full crew details remain unresolved. Toronto premiere is not evidence of TIFF selection.
 
 Odysseus: The Fall now preserves Koosha’s later $24,600 and fourteen-likeness claims alongside the earlier studio announcement. Cost accounting and the differing contributor count remain unresolved. PJ Ace / Genre AI’s separate Odyssey scene remains a craft lead, not this film or a completed feature.
+
+## September 20 research
+
+- A Face Only a Mother Could Love: BIAIFF’s official archive verifies selection and a September 17 Kino Regis cinema programme listing; recorded in the existing film entry. Source: https://www.biaiff.pl/ .
+- BIAIFF follow-ups: Far Away Home / Siping Song (Grand Prix), Sinuca de Bico (Cornered) / Odair Faleco and Davi Moori (second place), and An Artist / Abel Art (third place). Organizer attribution is verified; investigate primary film releases, creator identities and production disclosures before collection entries. Source: https://www.biaiff.pl/ .
+- The Poison Taster: Absurd’s original release post contains the film, extending the earlier announcement lead. Named director/writer and film-specific AI production facts remain unresolved after checking the public release, studio profile and website. Do not infer a film’s models from Absurd’s product catalogue. Source: https://x.com/withabsurd/status/2100628897998254156 .
+
+- Gabriel Olson: added an artist profile and journal note for his unofficial DuckTales concept trailer, directed by Olson and edited by Jason Pachomski. Verified X: https://x.com/Gabriel_Olson . Track subsequent narrative releases and exact production disclosures. This is not an announced Disney feature or verified feature production. Official project: https://www.thisisgabriel.com/portfolio/ducktales-live-action-fan-trailer-unofficial-39th-anniversary .
