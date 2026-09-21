@@ -82,3 +82,11 @@ Odysseus: The Fall now preserves Koosha’s later $24,600 and fourteen-likeness 
 ## Pending leads resolved September 20
 
 The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s official YouTube release verifies Seedance 2.5 and Nano Banana Pro; named individuals remain unresolved. Life Lines has an official full YouTube episode and CapCut sponsorship; full collaborator credits remain open. NiE’s original release and two-week schedule are verified; linked Higgsfield project returned 403, so specific models remain unknown. These gaps are follow-up research, not publication blockers.
+
+## September 21 additions and research
+
+- Er Loop / Marco Magario: official full release and creator-linked interview verified; added with artwork and scoped workflow disclosures. Personal X verified by the full release. Do not execute linked production systems or infer undisclosed model versions.
+- Sinuca de Bico (Cornered) / Odair Faléco and Davi Moori: earlier BIAIFF lead resolved with director portfolio, full zero1cine release, artwork and named credits. Exact models and reconciled budget remain follow-ups. Faléco’s X is official; Moori’s personal X remains unverified.
+- Stellorado / Skyebrows: official 2:44 YouTube description and release verified (https://www.youtube.com/watch?v=s9f9oa3Ae6c); currently treated as a music/concept lead, not an announced series. Narrative completeness and production credits require further review.
+- Five-minute courier animation: original uploader is still unidentified. Repost https://x.com/lexx_aura/status/2101320795221787090 supplies no source, and visible replies request attribution. Do not credit the repost account or its unsupported tool claims.
+- Far Away Home / Siping Song: BIAIFF attribution remains verified; no additional original release established this run.

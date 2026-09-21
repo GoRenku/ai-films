@@ -67,3 +67,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added The Poison Taster / Absurd, Life Lines / Christopher Fryant and NiE / Nishiyama Seigo with official imagery and full viewing links.
 - Homepage What’s New and /whats-new/ automatically show dated new films, artists and editorial updates; routine verification does not count as new.
 - Missing secondary production details no longer block otherwise verified, curated releases.
+
+### September 21, 2026 content refresh
+
+- [Er Loop](content/films/er-loop.md) and [Marco Magario](content/artists/marco-magario.md): full release, official artwork, verified X and creator-linked reference/voice/music workflow.
+- [Sinuca de Bico (Cornered)](content/films/sinuca-de-bico-cornered.md) and [Odair Faléco & Davi Moori](content/artists/odair-faleco-and-davi-moori.md): full film, credited artwork, named creative roles and official BIAIFF/Cinema Shift results.
+- Both additions appear automatically in What’s New. Missing models and budget details remain research questions, not publication blockers.
