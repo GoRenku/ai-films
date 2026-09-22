@@ -90,3 +90,9 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 - Stellorado / Skyebrows: official 2:44 YouTube description and release verified (https://www.youtube.com/watch?v=s9f9oa3Ae6c); currently treated as a music/concept lead, not an announced series. Narrative completeness and production credits require further review.
 - Five-minute courier animation: original uploader is still unidentified. Repost https://x.com/lexx_aura/status/2101320795221787090 supplies no source, and visible replies request attribution. Do not credit the repost account or its unsupported tool claims.
 - Far Away Home / Siping Song: BIAIFF attribution remains verified; no additional original release established this run.
+
+## September 22 research
+
+- Verena Puhm: artist profile added from her official portfolio and studio biography. Nobody Dies on Mars is a trailer and official XPRIZE top-five finalist, with September 25 screening scheduled. Track results and full-film developments; specific models and personal X remain unverified. Sources: https://www.theverenapuhm.com/ ; https://fvxp.moonshots.com/ ; https://www.youtube.com/watch?v=spQleIK5dLI .
+- Backrooms Nemoris: new first-person narrative-planning disclosure added to the existing record; no additional released episodes inferred.
+- Far Away Home / Siping Song: official BIAIFF attribution remains the only established source in this run; no new original release found.
