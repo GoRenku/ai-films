@@ -79,3 +79,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [Backrooms Nemoris](content/films/backrooms-nemoris.md): creator-sourced narrative planning and intended clue/payoff structure, distinguished from completed episodes.
 - [Verena Puhm](content/artists/verena-puhm.md): original portfolio, studio background and credited Nobody Dies on Mars trailer; official XPRIZE finalist status, not an award or full-film release.
 - [Journal note](content/updates/2026-09-22-story-plans-and-a-finalist.md) makes the substantive update visible in What’s New.
+
+### September 23, 2026 content refresh
+
+- [An Artist](content/films/an-artist.md): full animated short, inspected official artwork, verified playback, BIAIFF third-place award and scoped Runway/Dreamina disclosures.
+- [Abel Art](content/artists/abel-art.md): portfolio context and verified X profile added to daily monitoring. Both additions appear automatically in What’s New.

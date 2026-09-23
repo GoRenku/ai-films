@@ -96,3 +96,9 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 - Verena Puhm: artist profile added from her official portfolio and studio biography. Nobody Dies on Mars is a trailer and official XPRIZE top-five finalist, with September 25 screening scheduled. Track results and full-film developments; specific models and personal X remain unverified. Sources: https://www.theverenapuhm.com/ ; https://fvxp.moonshots.com/ ; https://www.youtube.com/watch?v=spQleIK5dLI .
 - Backrooms Nemoris: new first-person narrative-planning disclosure added to the existing record; no additional released episodes inferred.
 - Far Away Home / Siping Song: official BIAIFF attribution remains the only established source in this run; no new original release found.
+
+## September 23 research
+
+- An Artist / Abel Art: the earlier BIAIFF lead is resolved with the original full release, playback verification, credited artwork, writer/director credit and official third-place result. Added both collections; monitor @A_B_E_L_A_R_T. Exact model versions, full crew and budget remain open, not publication blockers. Sources: https://abelart.studio/home/ ; https://www.youtube.com/watch?v=9dssOJbHK7I ; https://x.com/A_B_E_L_A_R_T/status/2058988340741812273 ; https://www.biaiff.pl/ .
+- Barn A’Bee — A Very Sloth Tale: Absurd posted a titled video (https://x.com/withabsurd/status/2102446533308502242). The post supplies no synopsis or credits, and a focused full-release search returned no result. Narrative scope still needs direct video review; do not infer production facts from The Poison Taster.
+- Sail Anyway: Joss Monzoni’s profile surfaces an older short-story post (https://x.com/JossMonzoni/status/2048078385637736463), not evidence of a new September release. Retain for narrative review without announcing it as fresh news.
