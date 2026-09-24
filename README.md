@@ -84,3 +84,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - [An Artist](content/films/an-artist.md): full animated short, inspected official artwork, verified playback, BIAIFF third-place award and scoped Runway/Dreamina disclosures.
 - [Abel Art](content/artists/abel-art.md): portfolio context and verified X profile added to daily monitoring. Both additions appear automatically in What’s New.
+
+### September 24, 2026 content refresh
+
+- Added [GOOD BOY](content/films/good-boy.md) and [Dair Karakeev](content/artists/dair-karakeev.md), with official artwork, multi-tool credits and earlier filmmaking context.
+- Added [The First Anunnaki](content/films/the-first-anunnaki.md) and [Lucas M. Kern](content/artists/lucas-m-kern.md), with episode-specific runtime and creative credits.
+- Added [Beyond the World: Book of Life](content/films/beyond-the-world-book-of-life.md) and [OVIS AI](content/artists/ovis-ai.md), distinguishing creator-reported costs and schedule from verified release facts.
+- All three have original full-release links and appear in What’s New. Playback verification remains incomplete; status is Released rather than Watch now.
