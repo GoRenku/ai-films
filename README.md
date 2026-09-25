@@ -91,3 +91,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added [The First Anunnaki](content/films/the-first-anunnaki.md) and [Lucas M. Kern](content/artists/lucas-m-kern.md), with episode-specific runtime and creative credits.
 - Added [Beyond the World: Book of Life](content/films/beyond-the-world-book-of-life.md) and [OVIS AI](content/artists/ovis-ai.md), distinguishing creator-reported costs and schedule from verified release facts.
 - All three have original full-release links and appear in What’s New. Playback verification remains incomplete; status is Released rather than Watch now.
+
+### September 25, 2026 content refresh
+
+- Added [The Sorrowful Figure](content/films/the-sorrowful-figure.md) with verified full playback, official artwork and named production credits. Added [Contanimation’s directors](content/artists/contanimation.md) and verified studio X account.
+- Added [Philipp Lenssen](content/artists/philipp-lenssen.md), his body of work, verified X profile and current Autonomous release links. The project’s part-by-part/in-progress status is explicit.
