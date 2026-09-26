@@ -27,7 +27,7 @@ Copy a relevant existing file to add an entry. Slugs are stable filenames. Recor
 
 ## Periodic refresh
 
-Two daily Codex follow-ups work in sequence: an 11:00 Europe/Madrid X discovery review supplies a private queue; the 12:00 editorial refresh reads it alongside AI Film Director Watch, monitors verified artist accounts, verifies discoveries against original sources, updates Markdown and publishes meaningful changes. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
+Two daily Codex follow-ups work in sequence: an 11:00 Europe/Madrid X discovery review supplies a private queue; the 13:00 editorial refresh reads it alongside AI Film Director Watch, monitors verified artist accounts, verifies discoveries against original sources, updates Markdown and publishes meaningful changes. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
 
 ## Package safety
 
@@ -96,3 +96,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - Added [The Sorrowful Figure](content/films/the-sorrowful-figure.md) with verified full playback, official artwork and named production credits. Added [Contanimation’s directors](content/artists/contanimation.md) and verified studio X account.
 - Added [Philipp Lenssen](content/artists/philipp-lenssen.md), his body of work, verified X profile and current Autonomous release links. The project’s part-by-part/in-progress status is explicit.
+
+### September 26, 2026 content refresh
+
+- [Passport Rush](content/films/passport-rush.md) and [Higgsfield Studio](content/artists/higgsfield-studio.md): original full-release link, inspected official artwork, verified playback, and sourced animation, design, finishing and practical production disclosures. Named individuals, budget and exact video models remain explicit unknowns.
+- Documentation now matches the authorized 13:00 Europe/Madrid refresh schedule.

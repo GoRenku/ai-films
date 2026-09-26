@@ -115,3 +115,11 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 - Philipp Lenssen / Autonomous: artist added with verified @jphilipp and current 31-minute release link. Maker profile announces Part 2 while https://aiandart.club/ still describes work in progress; do not infer completed-feature status. Film-specific tools and complete credits remain unresolved. https://x.com/jphilipp/status/2102845491230704073 .
 - Gavin Purcell’s five-minute agent-made explainer remains a supporting craft lead, not a narrative-film entry. His approximate usage costs are not a total production budget. No linked code or skills executed. https://x.com/gavinpurcell/status/2103304514329854102 .
 - Absurd’s Morgue Cat is announced for next week, not a verified released film. Other monitored profile changes mainly concerned commentary, reposts and non-narrative clips; existing leads retained.
+
+## September 26 research
+
+- Passport Rush / Higgsfield Studio: original full release and studio project brief verified, X playback observed, official thumbnail inspected. Added with scoped production facts and clear vendor affiliation. Individual director/crew names, total budget and precise video-model versions remain open. Original release: https://x.com/higgsfield/status/2103565160610972101 ; project: https://higgsfield.ai/ja/@higgsfield.studio/projects/passport-rush .
+- BOSS / Jenny Krakovsky: September 24 creator post announces a forthcoming theatrical feature, but supplies no verified cinema schedule or full release. Do not repeat its unsupported historical-first claims. Follow up on original film page and exhibition listing: https://x.com/jennykrakovsky/status/2103106925495832587 .
+- Joss Monzoni: September 25 Halloween video release lacks a title and synopsis in the original post; direct narrative review remains needed, rather than inferring scope from the contest mention. https://x.com/JossMonzoni/status/2103502224215203941 .
+- Dave Clark announces an unnamed production; no title or AI method inferred. https://x.com/Diesol/status/2103548624257098166 .
+- Future Vision XPRIZE official selection page still describes finalists and the September 25 event; no winner verified from the official sources checked. Preserve Verena Puhm’s finalist status. https://fvxp.moonshots.com/ .

@@ -1,6 +1,6 @@
 # Content refresh procedure
 
-Editorial refresh: daily at 12:00 Europe/Madrid. Automation: `refresh-ai-film-journal`.
+Editorial refresh: daily at 13:00 Europe/Madrid. Automation: `refresh-ai-film-journal`.
 X discovery review: daily at 11:00 Europe/Madrid, in a separate heartbeat. It supplies a private inbox; only the editorial refresh publishes.
 
 Source conversation: AI Film Director Watch, ChatGPT ID 6a730bfe-be08-83ed-b7c6-ece6463916d7.
