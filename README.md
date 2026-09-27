@@ -101,3 +101,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - [Passport Rush](content/films/passport-rush.md) and [Higgsfield Studio](content/artists/higgsfield-studio.md): original full-release link, inspected official artwork, verified playback, and sourced animation, design, finishing and practical production disclosures. Named individuals, budget and exact video models remain explicit unknowns.
 - Documentation now matches the authorized 13:00 Europe/Madrid refresh schedule.
+
+### September 27, 2026 content refresh
+
+- [Passport Rush](content/films/passport-rush.md): verified studio disclosure adds Seedance 2.5, Claude Opus 5.5 and Photoshop with their distinct roles, replacing previously unresolved model details.
+- [Dated journal note](content/updates/2026-09-27-passport-rush-models.md) surfaces the substantive update in What’s New.
