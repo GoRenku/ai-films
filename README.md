@@ -106,3 +106,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - [Passport Rush](content/films/passport-rush.md): verified studio disclosure adds Seedance 2.5, Claude Opus 5.5 and Photoshop with their distinct roles, replacing previously unresolved model details.
 - [Dated journal note](content/updates/2026-09-27-passport-rush-models.md) surfaces the substantive update in What’s New.
+
+### September 28, 2026 content refresh
+
+- Updated [Verena Puhm](content/artists/verena-puhm.md) with verified Future Vision XPRIZE second place.
+- [Results journal note](content/updates/2026-09-28-future-vision-results.md) distinguishes awards and future production support from completed-feature releases.

@@ -123,3 +123,8 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 - Joss Monzoni: September 25 Halloween video release lacks a title and synopsis in the original post; direct narrative review remains needed, rather than inferring scope from the contest mention. https://x.com/JossMonzoni/status/2103502224215203941 .
 - Dave Clark announces an unnamed production; no title or AI method inferred. https://x.com/Diesol/status/2103548624257098166 .
 - Future Vision XPRIZE official selection page still describes finalists and the September 25 event; no winner verified from the official sources checked. Preserve Verena Puhm’s finalist status. https://fvxp.moonshots.com/ .
+
+## September 28 research
+
+- Future Vision results now verified from the official announcement; Puhm’s profile and a dated journal note updated. The Gifted / Jeff Synthesized remains a feature-development lead; follow future production and creator disclosures. Source: https://www.xprize.org/news/the-gifted-wins-the-future-vision-xprize .
+- Present Company remains a craft lead pending direct narrative review. Lenssen’s new nightclub clip does not by itself establish completion of Autonomous.
