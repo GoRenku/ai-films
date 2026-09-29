@@ -10,8 +10,10 @@ watchUrl: "https://godsdontgivegifts.com/"
 watchLabel: "Official film & screening updates"
 order: 5
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-09-29"
 sources:
+  - label: "Gossip Goblin — first teaser, September 28"
+    url: "https://x.com/Gossip_Goblin/status/2104599338471374983"
   - label: "Official film — October 30 release and screening status"
     url: "https://godsdontgivegifts.com/"
   - label: "Gossip Goblin — official studio"
@@ -41,3 +43,7 @@ Those are reasons to follow the release closely, not a verdict on a film we have
 ## What remains undisclosed here
 
 A verified final runtime, complete crew list and feature-specific model breakdown are not yet recorded. Tools used in London's earlier shorts should not automatically be attributed to this feature.
+
+## First teaser
+
+Gossip Goblin released the [first teaser on September 28](https://x.com/Gossip_Goblin/status/2104599338471374983). This provides an official preview while the feature remains forthcoming; it is not a full-film release or confirmation of individual cinema bookings.

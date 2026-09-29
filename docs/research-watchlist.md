@@ -128,3 +128,10 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 
 - Future Vision results now verified from the official announcement; Puhm’s profile and a dated journal note updated. The Gifted / Jeff Synthesized remains a feature-development lead; follow future production and creator disclosures. Source: https://www.xprize.org/news/the-gifted-wins-the-future-vision-xprize .
 - Present Company remains a craft lead pending direct narrative review. Lenssen’s new nightclub clip does not by itself establish completion of Autonomous.
+
+## September 29 research
+
+- Life Lines: September 28 original making-of resolves Cate Bligh’s identity/finishing role and adds model-specific production facts. Preserve the distinction between fictional archive framing and historical evidence. https://x.com/cfryant/status/2104622387194896635 .
+- Gods Don’t Give Gifts: official first teaser linked; no new cinema booking claim. https://x.com/Gossip_Goblin/status/2104599338471374983 .
+- BOSS: Digital Hollywood’s July programme corroborates Jenny Krakovsky’s directing credit and commercials/documentary background; still no verified full release or cinema schedule. https://www.digitalhollywood.com/tuesday-eighteen---summer-2026-ai-festival .
+- Indra’s September 27 animation remains a craft lead; title and narrative scope unresolved. https://x.com/IndraVahan/status/2104280029442331015 .

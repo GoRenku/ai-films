@@ -111,3 +111,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - Updated [Verena Puhm](content/artists/verena-puhm.md) with verified Future Vision XPRIZE second place.
 - [Results journal note](content/updates/2026-09-28-future-vision-results.md) distinguishes awards and future production support from completed-feature releases.
+
+### September 29, 2026 content refresh
+
+- [Life Lines](content/films/life-lines.md): added Cate Bligh’s credited editing/finishing contribution and sourced model, sound, planning and continuity disclosures from the maker’s September 28 article.
+- [Gods Don’t Give Gifts](content/films/gods-dont-give-gifts.md): linked the first official teaser without changing forthcoming status.
+- [Journal note](content/updates/2026-09-29-life-lines-making-of-and-gossip-goblin-teaser.md): surfaces both updates in What’s New.
