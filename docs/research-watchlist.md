@@ -135,3 +135,8 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 - Gods Don’t Give Gifts: official first teaser linked; no new cinema booking claim. https://x.com/Gossip_Goblin/status/2104599338471374983 .
 - BOSS: Digital Hollywood’s July programme corroborates Jenny Krakovsky’s directing credit and commercials/documentary background; still no verified full release or cinema schedule. https://www.digitalhollywood.com/tuesday-eighteen---summer-2026-ai-festival .
 - Indra’s September 27 animation remains a craft lead; title and narrative scope unresolved. https://x.com/IndraVahan/status/2104280029442331015 .
+
+## September 30 research
+
+- Morgue Cat: original production account now recorded in the journal; full release remains unverified. https://absurd.com/stories/rommel-villa .
+- Simon Mayr’s sponsored Kling music-video post remains a craft lead, not a confirmed narrative-film entry. https://x.com/simonmeyer_/status/2104635206439198880 .

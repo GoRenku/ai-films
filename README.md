@@ -117,3 +117,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [Life Lines](content/films/life-lines.md): added Cate Bligh’s credited editing/finishing contribution and sourced model, sound, planning and continuity disclosures from the maker’s September 28 article.
 - [Gods Don’t Give Gifts](content/films/gods-dont-give-gifts.md): linked the first official teaser without changing forthcoming status.
 - [Journal note](content/updates/2026-09-29-life-lines-making-of-and-gossip-goblin-teaser.md): surfaces both updates in What’s New.
+
+### September 30, 2026 content refresh
+
+- [Morgue Cat production note](content/updates/2026-09-30-morgue-cat-production.md): sourced continuity and collaboration disclosures; forthcoming status preserved.
+- [Absurd](content/artists/absurd.md): linked the new production account.
