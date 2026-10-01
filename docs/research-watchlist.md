@@ -140,3 +140,12 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 
 - Morgue Cat: original production account now recorded in the journal; full release remains unverified. https://absurd.com/stories/rommel-villa .
 - Simon Mayr’s sponsored Kling music-video post remains a craft lead, not a confirmed narrative-film entry. https://x.com/simonmeyer_/status/2104635206439198880 .
+
+## October 1 research
+
+- Gods Don’t Give Gifts: latest original post says this winter; exact theatrical date remains unconfirmed. Film, artist and earlier journal note reconciled. https://x.com/Gossip_Goblin/status/2105392789580284037 .
+- Contanimation: new source-watch mention reconciles to existing artist/film records; original studio biographies checked, no duplicate needed.
+- A Woman Asleep / Vikki Bardot: secondary reporting of Cottbus selection and Turkish distribution requires original festival/distributor confirmation. Festival homepage failed to load; MUBI supplies Dreamt by Another’s synopsis but did not establish current playback. https://mubi.com/en/us/films/dreamt-by-another .
+- Sanxingdui: Future Past / Yue Ming: reported October 23 theatrical release remains a primary-announcement follow-up; do not represent as already released. https://awnchina.cn/chinas-first-ai-generated-theatrical-feature-sanxingdui-future-past-scheduled-for-october-23/ .
+- The Mother’s Monster / Zahid Iqbal: original YouTube title verified, but readable release credits/synopsis were unavailable from the page response. Full description and artwork still needed. https://www.youtube.com/watch?v=dqCGNrQ6N_o .
+- SPARE / HQ: new titled short lead retained for original-video and narrative review. https://x.com/hq4ai/status/2104921854213599353 .

@@ -1,7 +1,7 @@
 ---
 title: "Gods Don’t Give Gifts"
 artist: "zack-london"
-description: "Gossip Goblin’s science-fiction anthology is announced for select U.S. cinemas on October 30, 2026."
+description: "Gossip Goblin’s latest announcement places its science-fiction anthology in cinemas this winter; an exact date remains unconfirmed."
 year: 2026
 format: "Feature"
 genre: "Science-fiction anthology"
@@ -10,8 +10,10 @@ watchUrl: "https://godsdontgivegifts.com/"
 watchLabel: "Official film & screening updates"
 order: 5
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-29"
+lastVerifiedAt: "2026-10-01"
 sources:
+  - label: "Gossip Goblin — September 30 winter release announcement"
+    url: "https://x.com/Gossip_Goblin/status/2105392789580284037"
   - label: "Gossip Goblin — first teaser, September 28"
     url: "https://x.com/Gossip_Goblin/status/2104599338471374983"
   - label: "Official film — October 30 release and screening status"
@@ -30,7 +32,7 @@ imageCredit: "Gossip Goblin · Gods Don’t Give Gifts · official film artwork"
 imageSource: "https://godsdontgivegifts.com/"
 ---
 
-**Announced theatrical opening: October 30, 2026, in select U.S. cinemas.** The official screening section still says cities will be announced soon. It offers email alerts; specific venues and bookable screenings have not been verified as of September 17.
+**Latest announced window: this winter.** Gossip Goblin’s [September 30 post](https://x.com/Gossip_Goblin/status/2105392789580284037) uses this broader timing. The journal previously recorded October 30, 2026; that date should no longer be treated as confirmed. The new post does not explain the change or identify exact dates, venues or bookable screenings.
 
 The film inhabits London's Second Cycle of Humanity: a world where bodies can be replaced and memories altered, while familiar desires for love, belonging and stimulation persist.
 

@@ -122,3 +122,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - [Morgue Cat production note](content/updates/2026-09-30-morgue-cat-production.md): sourced continuity and collaboration disclosures; forthcoming status preserved.
 - [Absurd](content/artists/absurd.md): linked the new production account.
+
+### October 1, 2026 content refresh
+
+- [Gods Don’t Give Gifts](content/films/gods-dont-give-gifts.md) and Zack London: replaced current October 30 claims with the studio’s September 30 winter window; retained the older announcement with a correction.
+- [Timing note](content/updates/2026-10-01-gossip-goblin-winter-window.md) surfaces the change in What’s New.
