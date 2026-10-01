@@ -127,3 +127,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - [Gods Don’t Give Gifts](content/films/gods-dont-give-gifts.md) and Zack London: replaced current October 30 claims with the studio’s September 30 winter window; retained the older announcement with a correction.
 - [Timing note](content/updates/2026-10-01-gossip-goblin-winter-window.md) surfaces the change in What’s New.
+
+### October 1 — weekly director-watch findings incorporated
+
+- Added Zahid Iqbal and The Mother’s Monster, with original full-film link, artwork and scoped studio cost/schedule disclosures.
+- Added Vikki Bardot and A Woman Asleep, with credited artwork, reported production roles and attributed exhibition plans.
+- Added Yue Ming and Sanxingdui: Future Past, with release artwork, reported creative credits and October 23 announcement.
+- New journal note surfaces all three in What’s New. Contanimation’s weekly mention reconciles to existing entries.

@@ -149,3 +149,7 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 - Sanxingdui: Future Past / Yue Ming: reported October 23 theatrical release remains a primary-announcement follow-up; do not represent as already released. https://awnchina.cn/chinas-first-ai-generated-theatrical-feature-sanxingdui-future-past-scheduled-for-october-23/ .
 - The Mother’s Monster / Zahid Iqbal: original YouTube title verified, but readable release credits/synopsis were unavailable from the page response. Full description and artwork still needed. https://www.youtube.com/watch?v=dqCGNrQ6N_o .
 - SPARE / HQ: new titled short lead retained for original-video and narrative review. https://x.com/hq4ai/status/2104921854213599353 .
+
+## October 1 — completed weekly additions
+
+A Woman Asleep / Vikki Bardot, Sanxingdui: Future Past / Yue Ming and The Mother’s Monster / Zahid Iqbal now have collection entries, artwork, source links, credits and editorial context. This supersedes the earlier intake-only dispositions. Missing model versions and crew totals are labeled in the entries and did not prevent inclusion. Future exhibition claims are attributed to published reporting. Personal X identities were searched but not established; use the linked original studio, release and programme sources.
