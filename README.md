@@ -134,3 +134,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added Vikki Bardot and A Woman Asleep, with credited artwork, reported production roles and attributed exhibition plans.
 - Added Yue Ming and Sanxingdui: Future Past, with release artwork, reported creative credits and October 23 announcement.
 - New journal note surfaces all three in What’s New. Contanimation’s weekly mention reconciles to existing entries.
+
+### October 2, 2026 content refresh
+
+- SPARE / 汗青 HQ: original full release, verified playback, credited artwork and Kling 4.0/Omni Reference disclosure with beta-access context.
+- Morgue Cat — Episode 1 / Absurd: released first episode, official image and scoped collaboration/continuity facts; earlier forthcoming note reconciled.
+- Dated journal note adds Alex Patrascu’s documentary performance and continuity disclosures as craft coverage, with attribution and factual-review limits.

@@ -153,3 +153,9 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 ## October 1 — completed weekly additions
 
 A Woman Asleep / Vikki Bardot, Sanxingdui: Future Past / Yue Ming and The Mother’s Monster / Zahid Iqbal now have collection entries, artwork, source links, credits and editorial context. This supersedes the earlier intake-only dispositions. Missing model versions and crew totals are labeled in the entries and did not prevent inclusion. Future exhibition claims are attributed to published reporting. Personal X identities were searched but not established; use the linked original studio, release and programme sources.
+
+## October 2 completed research
+
+SPARE and Morgue Cat — Episode 1 are accepted with original releases, playback and inspected artwork. HQ’s public identity and AI Talk channel are cross-linked; no legal name inferred. Patrascu’s The City Beneath Your Feet is covered as documentary-explainer craft in a dated journal note rather than selected as narrative cinema. Maker autonomy and source-checking claims are not independently audited.
+
+Present Company, Simon Mayr’s music video and Indra’s animation were rechecked against their original releases on October 2. The first two receive attributed craft coverage in today’s journal; Indra’s released rendering experiment is excluded from the narrative collection for lack of a titled story or disclosed dramatic premise. This supersedes their earlier pending-research dispositions.

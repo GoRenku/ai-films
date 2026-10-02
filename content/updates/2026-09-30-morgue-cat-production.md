@@ -17,4 +17,4 @@ Three useful craft disclosures:
 
 The editorial interest is how decisions survive collaboration and iteration. Shared assets alone cannot ensure that adjoining shots make dramatic or spatial sense.
 
-This is a platform-published production account, not independent testing. It does not establish a full public release, runtime, exact models or budget. **Morgue Cat remains a forthcoming project in this journal.**
+This is a platform-published production account, not independent testing. It does not establish a full public release, runtime, exact models or budget. At the time of this note, no release was verified. **Update October 2:** [Episode 1 is now available](/films/morgue-cat/) from the studio’s October 1 release.
