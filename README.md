@@ -140,3 +140,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - SPARE / 汗青 HQ: original full release, verified playback, credited artwork and Kling 4.0/Omni Reference disclosure with beta-access context.
 - Morgue Cat — Episode 1 / Absurd: released first episode, official image and scoped collaboration/continuity facts; earlier forthcoming note reconciled.
 - Dated journal note adds Alex Patrascu’s documentary performance and continuity disclosures as craft coverage, with attribution and factual-review limits.
+
+### October 3, 2026 content refresh
+
+- [Crownless & Bound](content/films/crownless-and-bound.md) and [Taylor Matter](content/artists/taylor-matter.md): official artwork, festival evidence, named poster credits and disclosed set-construction workflow.
+- [Cracked Chimes](content/films/cracked-chimes.md) and [Anthony Jegu](content/artists/anthony-jegu.md): original production credits, official project X, artwork and trailer, with festival-summary discrepancies resolved in favor of production sources.
+- [Maki Death Games — Nexus Episode 5](content/films/maki-death-games.md): playable original release, image, model disclosures and public 3D planning techniques.
+- [What's New note](content/updates/2026-10-03-built-spaces-and-collaboration.md): three additions and attributed Paul Schrader announcement coverage, without treating planned work as released.

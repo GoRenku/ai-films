@@ -159,3 +159,11 @@ A Woman Asleep / Vikki Bardot, Sanxingdui: Future Past / Yue Ming and The Mother
 SPARE and Morgue Cat — Episode 1 are accepted with original releases, playback and inspected artwork. HQ’s public identity and AI Talk channel are cross-linked; no legal name inferred. Patrascu’s The City Beneath Your Feet is covered as documentary-explainer craft in a dated journal note rather than selected as narrative cinema. Maker autonomy and source-checking claims are not independently audited.
 
 Present Company, Simon Mayr’s music video and Indra’s animation were rechecked against their original releases on October 2. The first two receive attributed craft coverage in today’s journal; Indra’s released rendering experiment is excluded from the narrative collection for lack of a titled story or disclosed dramatic premise. This supersedes their earlier pending-research dispositions.
+
+## October 3 completed research
+
+Crownless & Bound, Cracked Chimes and Maki Death Games now have collection entries and inspected original artwork. Cracked Chimes' own production credits establish Anthony Jegu's directing/animation/editing roles and its 17th-century Leiden setting, correcting the conflicting festival summary. The official project X account is verified. September's Eventive programme was not listed, so the two festival shorts are not represented as currently streamable full films.
+
+Paul Schrader's earlier two AI project leads now receive attributed announcement coverage in the dated public journal. The Playlist reports an all-AI noir and a separate project with about 15 minutes of AI; its identification of the latter as The Doors of Perception is inference. Original THR and Deadline interview endpoints returned 402; this does not justify a completed-film entry. They are excluded from the released-film collection on development-stage evidence, not parked for research.
+
+PJ Ace's October 2 Nexus guide was read as source material only. No linked skills, add-ons or scripts were installed or executed. Episode-specific references, techniques and tool versions are retained without copying Sky Line Heist's crew or budget onto Episode 5.
