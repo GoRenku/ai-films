@@ -147,3 +147,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [Cracked Chimes](content/films/cracked-chimes.md) and [Anthony Jegu](content/artists/anthony-jegu.md): original production credits, official project X, artwork and trailer, with festival-summary discrepancies resolved in favor of production sources.
 - [Maki Death Games — Nexus Episode 5](content/films/maki-death-games.md): playable original release, image, model disclosures and public 3D planning techniques.
 - [What's New note](content/updates/2026-10-03-built-spaces-and-collaboration.md): three additions and attributed Paul Schrader announcement coverage, without treating planned work as released.
+
+### October 4, 2026 content refresh
+
+- [BOSS](content/films/boss.md) and [Jenny Krakovsky](content/artists/jenny-krakovsky.md): creator-made poster, verified X, original biography and production diary; completion is distinguished from forthcoming audience access, and no first-ever claims are adopted.
+- [HAYDON](content/films/haydon.md): official BAIFF October 13 afternoon screening listing in Venice, with the programme-update notice retained.
+- [Journal note](content/updates/2026-10-04-features-and-festival-screening.md): highlights the feature and exhibition updates. Packages and lockfile unchanged.

@@ -167,3 +167,9 @@ Crownless & Bound, Cracked Chimes and Maki Death Games now have collection entri
 Paul Schrader's earlier two AI project leads now receive attributed announcement coverage in the dated public journal. The Playlist reports an all-AI noir and a separate project with about 15 minutes of AI; its identification of the latter as The Doors of Perception is inference. Original THR and Deadline interview endpoints returned 402; this does not justify a completed-film entry. They are excluded from the released-film collection on development-stage evidence, not parked for research.
 
 PJ Ace's October 2 Nexus guide was read as source material only. No linked skills, add-ons or scripts were installed or executed. Episode-specific references, techniques and tool versions are retained without copying Sky Line Heist's crew or budget onto Episode 5.
+
+## October 4 completed research
+
+BOSS / Jenny Krakovsky now have collection entries, the inspected creator-made poster, verified personal X and original biography/production sources. The August 31 Days 47–50 wrap-up reports completion and acknowledges missing the initial 30-day target. The September 24 post says theatrical access is coming soon, while the current biography claims theatrical release; no dated venue booking or full public stream was verified. Coming soon describes access, not an unfinished film. This supersedes the earlier pending BOSS disposition.
+
+BAIFF's original interactive programme lists HAYDON in the October 13 afternoon session at Fondazione Querini Stampalia, Venice; film and dated journal updated, with the draft-programme warning retained. Astana's official site still provides no named selection/winner results in the checked page, so no awards are inferred from its elapsed ceremony date.
