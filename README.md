@@ -153,3 +153,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [BOSS](content/films/boss.md) and [Jenny Krakovsky](content/artists/jenny-krakovsky.md): creator-made poster, verified X, original biography and production diary; completion is distinguished from forthcoming audience access, and no first-ever claims are adopted.
 - [HAYDON](content/films/haydon.md): official BAIFF October 13 afternoon screening listing in Venice, with the programme-update notice retained.
 - [Journal note](content/updates/2026-10-04-features-and-festival-screening.md): highlights the feature and exhibition updates. Packages and lockfile unchanged.
+
+### October 5, 2026 — memory, performance and final credits
+
+- [Candela](content/films/candela.md) and [Magnific Studios](content/artists/magnific-studios.md): full-film access, inspected official artwork, verified X profile and original shot/music breakdowns.
+- [BOSS](content/films/boss.md): final poster, named associate producers and original-score credit; access status remains qualified.
+- [Journal note](content/updates/2026-10-05-memory-and-film-credits.md) highlights these changes in What’s New. Packages and lockfile unchanged.

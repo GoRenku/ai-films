@@ -7,16 +7,16 @@ format: "Feature"
 genre: "Period crime caper"
 status: "Coming soon"
 discoveredAt: "2026-10-04"
-lastVerifiedAt: "2026-10-04"
+lastVerifiedAt: "2026-10-05"
 watchUrl: "https://x.com/jennykrakovsky/status/2103106925495832587"
 watchLabel: "Creator announcement / trailer"
-image: "/media/boss-original.png"
-imageAlt: "Creator-made BOSS poster with pink lettering above a brick courtyard and two women in deckchairs"
+image: "/media/boss-final.jpg"
+imageAlt: "Final BOSS poster with black lettering above a brick courtyard and two women in deckchairs"
 imageFit: "contain"
-imageCredit: "Jenny Krakovsky · creator-made promotional poster"
-imageSource: "https://x.com/jennykrakovsky/status/2106342879731810773"
-sources: [{"label": "Original filmmaker biography and BOSS overview", "url": "https://jennykrakovsky.com/"}, {"label": "Creator theatrical announcement", "url": "https://x.com/jennykrakovsky/status/2103106925495832587"}, {"label": "Final production diary — Days 47–50", "url": "https://www.youtube.com/watch?v=yjrw3EraBtM"}, {"label": "Creator-made poster", "url": "https://x.com/jennykrakovsky/status/2106342879731810773"}]
-production: [{"label": "Authorship", "detail": "The creator-made poster credits Jenny Krakovsky with writing, directing and producing. Her wrap-up describes doing the production work herself, with community members acknowledged in special thanks; a complete independently checked credit roll is unavailable.", "source": "https://x.com/jennykrakovsky/status/2106342879731810773"}, {"label": "Schedule and finishing", "detail": "An initial 30-day challenge continued into a Days 47–50 wrap-up. The diary separately documents picture lock, sound design, sound/upscaling and a final grade; the challenge title is not a verified 30-day delivery time.", "source": "https://www.youtube.com/watch?v=yjrw3EraBtM"}]
+imageCredit: "Jenny Krakovsky · final promotional poster"
+imageSource: "https://x.com/jennykrakovsky/status/2106707357526839774"
+sources: [{"label": "Original filmmaker biography and BOSS overview", "url": "https://jennykrakovsky.com/"}, {"label": "Creator theatrical announcement", "url": "https://x.com/jennykrakovsky/status/2103106925495832587"}, {"label": "Final production diary \u2014 Days 47\u201350", "url": "https://www.youtube.com/watch?v=yjrw3EraBtM"}, {"label": "Creator-made poster", "url": "https://x.com/jennykrakovsky/status/2106342879731810773"}, {"label": "Creator final poster and readable credits", "url": "https://x.com/jennykrakovsky/status/2106707357526839774"}]
+production: [{"label": "Authorship and credited collaborators", "detail": "The final poster credits Jenny Krakovsky with writing, directing, producing and the original score. It names Bryan Starbuck and Azer Koculu as associate producers, presents Glue Production, and lists association with ACT 3 AI and MITTE. These credits do not establish a full crew total or tool inventory.", "source": "https://x.com/jennykrakovsky/status/2106707357526839774"}, {"label": "Schedule and finishing", "detail": "An initial 30-day challenge continued into a Days 47\u201350 wrap-up. The diary separately documents picture lock, sound design, sound/upscaling and a final grade; the challenge title is not a verified 30-day delivery time.", "source": "https://www.youtube.com/watch?v=yjrw3EraBtM"}]
 ---
 
 ## Why this film matters
@@ -33,6 +33,6 @@ The creator's “first” claims are not treated as independently established fi
 
 ## Production evidence
 
-The public diary distinguishes a rough cut from picture lock and sound/grade work. That separation is useful: generation produces material, while scene selection, duration, sound and colour still determine the finished experience. The creator-made poster identifies writing, direction and production roles; her wrap-up describes a largely individual production with community thanks.
+The public diary distinguishes a rough cut from picture lock and sound/grade work. That separation is useful: generation produces material, while scene selection, duration, sound and colour still determine the finished experience. The October 4 final poster credits Krakovsky with writing, direction, production and the original score, and names **Bryan Starbuck** and **Azer Koculu** as associate producers. It presents **Glue Production**, in association with **ACT 3 AI** and **MITTE**. Her account of doing the creative production work herself should not be read as a claim that the film has no credited collaborators. These company associations do not establish which software was used.
 
 A final runtime, itemised budget, full credit roll and verified model/version inventory remain unknown in this entry. The diary's soundtrack upload is not the feature's runtime. The final wrap-up mentions film-emulation work, but its auto-generated captions do not establish a reliable product spelling, so no tool name is guessed.
