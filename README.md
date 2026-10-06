@@ -159,3 +159,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [Candela](content/films/candela.md) and [Magnific Studios](content/artists/magnific-studios.md): full-film access, inspected official artwork, verified X profile and original shot/music breakdowns.
 - [BOSS](content/films/boss.md): final poster, named associate producers and original-score credit; access status remains qualified.
 - [Journal note](content/updates/2026-10-05-memory-and-film-credits.md) highlights these changes in What’s New. Packages and lockfile unchanged.
+
+### October 6, 2026 — serial mysteries and a release date
+
+- [Daniił Vołkaŭ](content/artists/daniil-volkau.md), [HOLED](content/films/holed.md) and [The Wrong Planet](content/films/the-wrong-planet.md): verified creator identity, original artwork, public episode access and qualified feature-release evidence; production claims remain work-specific.
+- [Henry Daubrez](content/artists/henry-daubrez.md): JUNKYARD KING Chapter 3’s October 7 noon ET announcement and scoped team disclosure.
+- [What’s New note](content/updates/2026-10-06-serial-mysteries-and-a-release-date.md) links the additions and announcement. Packages and lockfile unchanged.
