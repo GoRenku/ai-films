@@ -1,0 +1,26 @@
+---
+import type { Artist, Film } from '../lib/catalog';
+import { initials, shortDate } from '../lib/catalog';
+interface Props { artist: Artist; films: Film[]; active: string; isNew?: boolean; filterable?: boolean }
+const { artist, films, active, isNew = false, filterable = false } = Astro.props;
+const cover = films.find((f) => f.data.image);
+const data = filterable
+  ? { 'data-title': `${artist.data.title} ${artist.data.alias ?? ''} ${artist.data.focus}`.toLowerCase(), 'data-name': artist.data.title.toLowerCase(), 'data-active': active }
+  : {};
+---
+<article class="artist-card" {...data}>
+  <a href={`/artists/${artist.id}/`}>
+    <div class="artist-media">
+      {cover ? <img src={cover.data.image} alt="" loading="lazy" decoding="async" width="600" height="750" /> : <span class="monogram" aria-hidden="true">{initials(artist.data.title)}</span>}
+      {isNew && <span class="tag-new">New</span>}
+      <div class="artist-overlay">
+        <h3>{artist.data.title}</h3>
+        <p>{artist.data.focus}</p>
+      </div>
+    </div>
+    <p class="artist-meta">
+      <span>{films.length ? `${films.length} ${films.length === 1 ? 'film' : 'films'}` : 'Profile'}</span>
+      <span>Active {shortDate(active)}</span>
+    </p>
+  </a>
+</article>

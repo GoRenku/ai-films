@@ -2,10 +2,59 @@
 import Layout from '../../layouts/Layout.astro';
 import FilmCard from '../../components/FilmCard.astro';
 import Sources from '../../components/Sources.astro';
-import {getCollection,render} from 'astro:content';
-export async function getStaticPaths(){return (await getCollection('artists')).map(artist=>({params:{id:artist.id},props:{artist}}));}
-const {artist}=Astro.props;
-const films=(await getCollection('films')).filter(f=>f.data.artist.id===artist.id).sort((a,b)=>a.data.order-b.data.order);
-const {Content}=await render(artist);
+import { getCollection, render } from 'astro:content';
+import { catalog, displayDate, initials } from '../../lib/catalog';
+export async function getStaticPaths() {
+  return (await getCollection('artists')).map((artist) => ({ params: { id: artist.id }, props: { artist } }));
+}
+const { artist } = Astro.props;
+const c = await catalog();
+const films = c.filmsBy(artist.id);
+const cover = c.coverFor(artist);
+const notes = c.notesAbout(artist.id);
+const years = [...new Set(films.map((f) => f.data.year))].sort();
+const watchable = films.filter((f) => f.data.status === 'Watch now').length;
+const { Content } = await render(artist);
 ---
-<Layout title={artist.data.title} description={artist.data.description}><div class="artist-intro"><div class="page-head"><a class="back" href="/artists/">← The artists</a><p class="eyebrow" style="margin-top:28px">{artist.data.focus}</p><h1>{artist.data.title}</h1>{artist.data.alias&&<p class="status">{artist.data.alias}</p>}<p style="margin-top:20px">{artist.data.description}</p><a class="button" href={artist.data.website}>Artist / studio information ↗</a>{artist.data.x&&<a class="text-link social-link" href={artist.data.x.url}>{artist.data.x.label} ↗</a>}</div><article class="prose"><Content/><Sources sources={artist.data.sources}/></article></div><section class="section-space"><div class="section-heading"><h2>Selected work.</h2><span class="eyebrow">{films.length} IN THE COLLECTION</span></div><div class="film-grid">{films.map(film=><FilmCard film={film} artist={artist}/>)}</div></section></Layout>
+<Layout title={artist.data.title} description={artist.data.description}>
+  <section class="artist-hero" style={cover ? `--img:url('${cover.data.image}')` : undefined}>
+    {cover ? <img class="artist-hero-bg" src={cover.data.image} alt="" fetchpriority="high" width="1600" height="900" /> : <span class="artist-hero-mono" aria-hidden="true">{initials(artist.data.title)}</span>}
+    <div class="artist-hero-body">
+      <p class="kicker">{c.isNew(artist.data.discoveredAt) && <span class="tag-new">New</span>}{artist.data.focus}</p>
+      <h1>{artist.data.title}</h1>
+      {artist.data.alias && <p class="artist-alias">{artist.data.alias}</p>}
+      <p class="artist-desc">{artist.data.description}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href={artist.data.website}>Website ↗</a>
+        {artist.data.x && <a class="btn btn-ghost" href={artist.data.x.url}>{artist.data.x.label} ↗</a>}
+      </div>
+      <dl class="fact-strip">
+        <div><dt>In the collection</dt><dd>{films.length} {films.length === 1 ? 'film' : 'films'}</dd></div>
+        {watchable > 0 && <div><dt>Watch now</dt><dd>{watchable}</dd></div>}
+        {years.length > 0 && <div><dt>Years</dt><dd>{years.length > 1 ? `${years[0]}–${years.at(-1)}` : years[0]}</dd></div>}
+        <div><dt>Last active</dt><dd>{displayDate(c.lastActive(artist))}</dd></div>
+      </dl>
+    </div>
+    {cover?.data.imageSource && <a class="slide-credit" href={cover.data.imageSource}>{cover.data.imageCredit}</a>}
+  </section>
+
+  {films.length > 0 && (
+    <section class="artist-films" data-reveal aria-labelledby="films-h">
+      <div class="section-head"><h2 id="films-h">Films</h2></div>
+      <div class="grid films-grid">{films.map((f) => <FilmCard film={f} artist={artist} isNew={c.isNew(f.data.discoveredAt)} />)}</div>
+    </section>
+  )}
+
+  <div class="film-body">
+    <article class="prose" data-reveal><Content /></article>
+    <aside class="film-aside" data-reveal>
+      {notes.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">In the journal</p>
+          {notes.map((u) => <a class="aside-note" href={`/journal/${u.id}/`}><time datetime={u.data.date}>{displayDate(u.data.date)}</time>{u.data.title}</a>)}
+        </div>
+      )}
+      <Sources sources={artist.data.sources} checked={artist.data.lastVerifiedAt} />
+    </aside>
+  </div>
+</Layout>

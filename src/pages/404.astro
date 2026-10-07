@@ -1,4 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Page not found"><div class="page-head"><p class="eyebrow">404</p><h1>This frame is missing.</h1><p>The page may have moved. Return to the collection to find a film or filmmaker.</p><a class="button" href="/">Back to Discover ↗</a></div></Layout>
+<Layout title="Page not found">
+  <header class="page-hero">
+    <h1>This frame is missing.</h1>
+    <p class="page-sub">The page may have moved. Head back to the collection to find a film or filmmaker.</p>
+    <div class="actions"><a class="btn btn-primary" href="/">Back to the journal</a><a class="btn btn-ghost" href="/films/">Browse films</a></div>
+  </header>
+</Layout>

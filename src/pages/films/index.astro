@@ -1,8 +1,109 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import FilmCard from '../../components/FilmCard.astro';
-import {getCollection} from 'astro:content';
-const films=(await getCollection('films')).sort((a,b)=>a.data.order-b.data.order);
-const artists=await getCollection('artists');
+import { catalog, genresOf, genreGroups } from '../../lib/catalog';
+const { films, artistOf, isNew } = await catalog();
+const count = (pred: (f: (typeof films)[number]) => boolean) => films.filter(pred).length;
+const statuses = [
+  ['all', 'All', films.length],
+  ['Watch now', 'Watch now', count((f) => f.data.status === 'Watch now')],
+  ['upcoming', 'Coming soon & festivals', count((f) => ['Coming soon', 'Festival screening', 'In theaters'].includes(f.data.status))],
+  ['Released', 'Released', count((f) => f.data.status === 'Released')],
+] as const;
+const genres = genreGroups.map((g) => [g, count((f) => genresOf(f.data.genre).includes(g))] as const).filter(([, n]) => n > 0);
 ---
-<Layout title="Films"><div class="page-head"><p class="eyebrow">THE SCREENING ROOM · {films.length} WORKS</p><h1>Worlds worth entering.</h1><p>Shorts, features and serial stories. Follow a film to its creator, its sources, and where to watch.</p></div><div class="film-grid">{films.map(film=><FilmCard film={film} artist={artists.find(a=>a.id===film.data.artist.id)}/>)}</div></Layout>
+<Layout title="Films" description="Browse AI films: shorts, features and series, with where to watch.">
+  <header class="page-hero">
+    <h1>Films</h1>
+    <p class="page-sub"><strong>{films.length}</strong> shorts, features and series. <strong>{statuses[1][2]}</strong> free to watch now.</p>
+  </header>
+
+  <form class="browser" role="search" aria-label="Filter films">
+    <div class="browser-row">
+      <label class="search"><span class="sr-only">Search films</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" name="q" placeholder="Search titles, artists, genres" autocomplete="off" /></label>
+      <div class="segmented" role="radiogroup" aria-label="Availability">
+        {statuses.map(([value, label, n], i) => <label><input type="radio" name="status" value={value} checked={i === 0} /><span>{label} <em>{n}</em></span></label>)}
+      </div>
+      <div class="selects">
+        <label><span class="sr-only">Format</span><select name="format"><option value="all">All formats</option><option value="Feature">Features</option><option value="Series">Series</option><option value="Short film">Shorts</option></select></label>
+        <label><span class="sr-only">Sort</span><select name="sort"><option value="added">Newest added</option><option value="year">Release year</option><option value="az">A–Z</option><option value="runtime">Longest first</option></select></label>
+      </div>
+    </div>
+    <div class="chips" role="radiogroup" aria-label="Genre">
+      <label><input type="radio" name="genre" value="all" checked /><span>All genres</span></label>
+      {genres.map(([g, n]) => <label><input type="radio" name="genre" value={g} /><span>{g} <em>{n}</em></span></label>)}
+    </div>
+  </form>
+
+  <p class="result-line" aria-live="polite"><span class="result-count">{films.length}</span> films</p>
+  <div class="grid films-grid">
+    {films.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} filterable />)}
+  </div>
+  <div class="empty" hidden>
+    <p>No films match those filters.</p>
+    <button type="button" class="btn btn-ghost" data-reset>Clear filters</button>
+  </div>
+</Layout>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('.browser')!;
+  const grid = document.querySelector<HTMLElement>('.films-grid')!;
+  const cards = [...grid.querySelectorAll<HTMLElement>('.card')];
+  const countEl = document.querySelector('.result-count')!;
+  const empty = document.querySelector<HTMLElement>('.empty')!;
+  const upcoming = ['Coming soon', 'Festival screening', 'In theaters'];
+  const defaults: Record<string, string> = { q: '', status: 'all', format: 'all', genre: 'all', sort: 'added' };
+  const sorters: Record<string, (a: HTMLElement, b: HTMLElement) => number> = {
+    added: (a, b) => b.dataset.added!.localeCompare(a.dataset.added!),
+    year: (a, b) => Number(b.dataset.year) - Number(a.dataset.year) || b.dataset.added!.localeCompare(a.dataset.added!),
+    az: (a, b) => a.dataset.name!.localeCompare(b.dataset.name!),
+    runtime: (a, b) => Number(b.dataset.runtime) - Number(a.dataset.runtime),
+  };
+  const order = new Map(cards.map((c, i) => [c, i]));
+
+  const apply = (push = true) => {
+    const f = Object.fromEntries(new FormData(form)) as Record<string, string>;
+    const q = f.q.trim().toLowerCase();
+    let shown = 0;
+    for (const card of cards) {
+      const s = card.dataset.status!;
+      const ok =
+        (!q || card.dataset.title!.includes(q)) &&
+        (f.status === 'all' || (f.status === 'upcoming' ? upcoming.includes(s) : s === f.status)) &&
+        (f.format === 'all' || card.dataset.format === f.format) &&
+        (f.genre === 'all' || card.dataset.genres!.split('|').includes(f.genre));
+      card.hidden = !ok;
+      if (ok) shown++;
+    }
+    const sorted = [...cards].sort((a, b) => sorters[f.sort](a, b) || order.get(a)! - order.get(b)!);
+    grid.append(...sorted);
+    countEl.textContent = String(shown);
+    empty.hidden = shown > 0;
+    if (push) {
+      const params = new URLSearchParams();
+      for (const [k, v] of Object.entries(f)) if (v && v !== defaults[k]) params.set(k, v);
+      history.replaceState(null, '', params.size ? `?${params}` : location.pathname);
+    }
+  };
+
+  const fromUrl = () => {
+    const params = new URLSearchParams(location.search);
+    for (const [k, def] of Object.entries(defaults)) {
+      const v = params.get(k) ?? def;
+      const field = form.elements.namedItem(k);
+      if (field instanceof RadioNodeList) {
+        const match = [...field].find((r) => (r as HTMLInputElement).value === v) as HTMLInputElement | undefined;
+        (match ?? (field[0] as HTMLInputElement)).checked = true;
+      } else if (field) (field as HTMLInputElement).value = v;
+    }
+  };
+  fromUrl();
+  apply(false);
+  form.addEventListener('input', () => apply());
+  form.addEventListener('submit', (e) => e.preventDefault());
+  document.querySelector('[data-reset]')!.addEventListener('click', () => {
+    history.replaceState(null, '', location.pathname);
+    fromUrl();
+    apply(false);
+  });
+</script>

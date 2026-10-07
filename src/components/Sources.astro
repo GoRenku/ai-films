@@ -1,4 +1,8 @@
 ---
-const { sources } = Astro.props;
+interface Props { sources: { url: string; label: string }[]; checked?: string }
+const { sources, checked } = Astro.props;
 ---
-<section class="sources"><h2>Sources & further reading</h2>{sources.map((s: {url:string;label:string})=><a href={s.url} rel="noopener noreferrer">{s.label} ↗</a>)}</section>
+<details class="sources">
+  <summary><span>Sources</span><span class="sources-count">{sources.length}</span>{checked && <span class="sources-checked">checked <time datetime={checked}>{checked}</time></span>}</summary>
+  <ul>{sources.map((s) => <li><a href={s.url} rel="noopener noreferrer">{s.label} ↗</a></li>)}</ul>
+</details>

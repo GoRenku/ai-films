@@ -1,7 +1,117 @@
 ---
-import '@fontsource-variable/fraunces/index.css';
+import '@fontsource-variable/fraunces/opsz.css';
+import '@fontsource-variable/fraunces/opsz-italic.css';
 import '../styles/global.css';
-const {title = 'AI Film Journal', description = 'An ongoing collection of films, artists and new possibilities in AI cinema.'} = Astro.props;
+import { catalog, shortDate } from '../lib/catalog';
+const { title = 'AI Film Journal', description = 'An ongoing collection of films, artists and new possibilities in AI cinema.', overlay = false } = Astro.props;
 const path = Astro.url.pathname;
+const { latest, films, artists } = await catalog();
+const nav = [
+  ['Films', '/films/'],
+  ['Artists', '/artists/'],
+  ['Latest', '/whats-new/'],
+  ['Journal', '/journal/'],
+];
 ---
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#12100d"/><link rel="icon" href="/favicon.svg"/><title>{title === 'AI Film Journal' ? title : `${title} — AI Film Journal`}</title></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="/" aria-label="AI Film Journal home"><span class="brand-mark">aı<span>•</span></span><span>FILM JOURNAL</span></a><nav aria-label="Main navigation"><a href="/" aria-current={path==='/'?'page':undefined}>Discover</a><a href="/whats-new/" aria-current={path.startsWith('/whats-new/')?'page':undefined}>What’s New</a><a href="/films/" aria-current={path.startsWith('/films/')?'page':undefined}>Films</a><a href="/artists/" aria-current={path.startsWith('/artists/')?'page':undefined}>Artists</a><a href="/journal/" aria-current={path.startsWith('/journal/')?'page':undefined}>Journal</a></nav><span class="header-note">HUMAN VISION. NEW MEDIUM.</span></header><main id="main"><slot/></main><footer><a class="brand footer-brand" href="/">AI Film Journal<span class="dot">●</span></a><p>An independent watch on the people making AI cinema.</p><a href="/about/">About the collection ↗</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0c0b09" />
+    <link rel="icon" href="/favicon.svg" />
+    <title>{title === 'AI Film Journal' ? title : `${title} — AI Film Journal`}</title>
+    <script is:inline>document.documentElement.classList.add('js')</script>
+  </head>
+  <body class:list={{ overlay }}>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="AI Film Journal home"><span class="brand-mark">aı<span>•</span></span><span class="brand-word">Film Journal</span></a>
+        <nav aria-label="Main navigation">
+          {nav.map(([label, href]) => <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>{label}</a>)}
+        </nav>
+        <a class="pulse-pill" href="/whats-new/"><span class="live-dot" aria-hidden="true"></span>Updated <time datetime={latest}>{shortDate(latest)}</time></a>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="/">AI Film Journal<span class="dot">●</span></a>
+          <p class="footer-line">Films worth watching. <em>Artists worth following.</em></p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="/films/">Films</a><a href="/artists/">Artists</a><a href="/journal/">Journal</a><a href="/about/">About</a>
+        </nav>
+        <p class="footer-meta">{films.length} films · {artists.length} artists · updated <time datetime={latest}>{shortDate(latest)}</time></p>
+      </div>
+    </footer>
+    <dialog class="player-dialog" aria-label="Video player">
+      <div class="player-bar"><p class="player-title"></p><a class="player-source" href="/" target="_blank" rel="noopener noreferrer">Open at source ↗</a><button class="player-close" type="button" aria-label="Close player">✕</button></div>
+      <div class="player-frame"></div>
+    </dialog>
+    <script>
+      const header = document.querySelector('.site-header')!;
+      const onScroll = () => header.classList.toggle('scrolled', scrollY > 24);
+      addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Shared-element page transition: the clicked still morphs into the next page's hero media.
+      addEventListener('click', (e) => {
+        const link = (e.target as Element).closest<HTMLAnchorElement>('a[data-morph]');
+        const media = link?.querySelector<HTMLElement>('[data-morph-media]');
+        if (media) media.style.viewTransitionName = 'film-media';
+      });
+      addEventListener('pageshow', () => document.querySelectorAll<HTMLElement>('[data-morph-media]').forEach((m) => (m.style.viewTransitionName = '')));
+
+      // Lightbox player for embeddable films anywhere on the site.
+      const dialog = document.querySelector<HTMLDialogElement>('.player-dialog')!;
+      const frame = dialog.querySelector('.player-frame')!;
+      addEventListener('click', (e) => {
+        const trigger = (e.target as Element).closest<HTMLElement>('[data-play]');
+        if (!trigger || trigger.dataset.inline !== undefined) return;
+        e.preventDefault();
+        const iframe = document.createElement('iframe');
+        iframe.src = trigger.dataset.play!;
+        iframe.title = trigger.dataset.title ?? 'Film';
+        iframe.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media';
+        iframe.allowFullscreen = true;
+        frame.replaceChildren(iframe);
+        dialog.querySelector('.player-title')!.textContent = trigger.dataset.title ?? '';
+        dialog.querySelector<HTMLAnchorElement>('.player-source')!.href = trigger.dataset.source ?? '#';
+        dialog.showModal();
+      });
+      dialog.addEventListener('close', () => frame.replaceChildren());
+      dialog.querySelector('.player-close')!.addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (e) => e.target === dialog && dialog.close());
+
+      // Gentle reveal as sections enter the viewport.
+      const io = new IntersectionObserver(
+        (entries) => entries.forEach((en) => en.isIntersecting && (en.target.classList.add('in'), io.unobserve(en.target))),
+        { rootMargin: '0px 0px -8% 0px' },
+      );
+      document.querySelectorAll('[data-reveal]').forEach((el) => {
+        if (el.getBoundingClientRect().top < innerHeight) el.classList.add('in');
+        else io.observe(el);
+      });
+
+      // Rails: arrow buttons page through the cards.
+      document.querySelectorAll<HTMLElement>('.rail').forEach((rail) => {
+        const track = rail.querySelector<HTMLElement>('.rail-track')!;
+        const [prev, next] = rail.querySelectorAll<HTMLButtonElement>('.rail-nav button');
+        if (!prev || !next) return;
+        const update = () => {
+          prev.disabled = track.scrollLeft < 8;
+          next.disabled = track.scrollLeft + track.clientWidth > track.scrollWidth - 8;
+        };
+        prev.addEventListener('click', () => track.scrollBy({ left: -track.clientWidth * 0.85, behavior: 'smooth' }));
+        next.addEventListener('click', () => track.scrollBy({ left: track.clientWidth * 0.85, behavior: 'smooth' }));
+        track.addEventListener('scroll', update, { passive: true });
+        addEventListener('resize', update);
+        update();
+      });
+    </script>
+  </body>
+</html>

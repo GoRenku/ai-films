@@ -1,6 +1,46 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {getCollection} from 'astro:content';
-const artists=(await getCollection('artists')).sort((a,b)=>a.data.title.localeCompare(b.data.title));
+import ArtistCard from '../../components/ArtistCard.astro';
+import { catalog } from '../../lib/catalog';
+const c = await catalog();
 ---
-<Layout title="Artists"><div class="page-head"><p class="eyebrow">BEHIND THE FRAME · {artists.length} ARTISTS</p><h1>A point of view.<br/><em>A world of their own.</em></h1><p>The filmmakers developing stories, shaping performances and building bodies of work with AI.</p></div><div class="artist-list">{artists.map((a,i)=><a class="artist-row" href={`/artists/${a.id}/`}><span class="index">{String(i+1).padStart(2,'0')}</span><div><h2 style="font-size:32px">{a.data.title}</h2><p>{a.data.alias ?? a.data.focus}</p></div><span class="artist-focus">{a.data.focus}</span><span aria-hidden="true">↗</span></a>)}</div></Layout>
+<Layout title="Artists" description="The filmmakers and studios building bodies of work with AI.">
+  <header class="page-hero">
+    <h1>Artists</h1>
+    <p class="page-sub"><strong>{c.artists.length}</strong> filmmakers and studios with a point of view, ordered by who has been active most recently.</p>
+  </header>
+  <form class="browser" role="search" aria-label="Filter artists">
+    <div class="browser-row">
+      <label class="search"><span class="sr-only">Search artists</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" name="q" placeholder="Search names, studios, focus" autocomplete="off" /></label>
+      <div class="segmented" role="radiogroup" aria-label="Sort">
+        <label><input type="radio" name="sort" value="active" checked /><span>Recently active</span></label>
+        <label><input type="radio" name="sort" value="az" /><span>A–Z</span></label>
+      </div>
+    </div>
+  </form>
+  <p class="result-line" aria-live="polite"><span class="result-count">{c.artists.length}</span> artists</p>
+  <div class="grid artists-grid">
+    {c.artistsByActivity.map((a) => <ArtistCard artist={a} films={c.filmsBy(a.id)} active={c.lastActive(a)} isNew={c.isNew(a.data.discoveredAt)} filterable />)}
+  </div>
+  <div class="empty" hidden><p>No artists match that search.</p></div>
+</Layout>
+<script>
+  const form = document.querySelector<HTMLFormElement>('.browser')!;
+  const grid = document.querySelector<HTMLElement>('.artists-grid')!;
+  const cards = [...grid.querySelectorAll<HTMLElement>('.artist-card')];
+  const apply = () => {
+    const f = Object.fromEntries(new FormData(form)) as Record<string, string>;
+    const q = f.q.trim().toLowerCase();
+    let shown = 0;
+    cards.forEach((c) => {
+      c.hidden = Boolean(q) && !c.dataset.title!.includes(q);
+      if (!c.hidden) shown++;
+    });
+    const sorted = [...cards].sort((a, b) => (f.sort === 'az' ? a.dataset.name!.localeCompare(b.dataset.name!) : b.dataset.active!.localeCompare(a.dataset.active!) || a.dataset.name!.localeCompare(b.dataset.name!)));
+    grid.append(...sorted);
+    document.querySelector('.result-count')!.textContent = String(shown);
+    document.querySelector<HTMLElement>('.empty')!.hidden = shown > 0;
+  };
+  form.addEventListener('input', apply);
+  form.addEventListener('submit', (e) => e.preventDefault());
+</script>

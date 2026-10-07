@@ -1,6 +1,31 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {getCollection} from 'astro:content';
-const updates=(await getCollection('updates')).sort((a,b)=>b.data.date.localeCompare(a.data.date)||a.id.localeCompare(b.id));
+import { catalog, displayDate } from '../../lib/catalog';
+const c = await catalog();
+const [lead, ...rest] = c.updates;
+const thumbs = (u: (typeof c.updates)[number], n: number) => c.notesFilms(u).filter((f) => f.data.image).slice(0, n);
 ---
-<Layout title="Journal"><div class="page-head"><p class="eyebrow">FIELD NOTES</p><h1>What’s taking shape.</h1><p>New discoveries, release milestones, and the changing work of filmmakers in the collection.</p></div><div class="journal-grid">{updates.map(u=><a class="journal-card" href={`/journal/${u.id}/`}><time datetime={u.data.date}>{u.data.date}</time><h2 style="font-size:32px">{u.data.title}</h2><p>{u.data.description}</p><span class="text-link">Read the note ↗</span></a>)}</div></Layout>
+<Layout title="Journal" description="Field notes: discoveries, release milestones and production craft in AI cinema.">
+  <header class="page-hero">
+    <h1>Journal</h1>
+    <p class="page-sub">Field notes on discoveries, release milestones and how the work gets made.</p>
+  </header>
+  <a class="journal-lead" href={`/journal/${lead.id}/`} data-reveal>
+    <span class:list={['jl-mosaic', `n${thumbs(lead, 4).length}`]}>{thumbs(lead, 4).map((f) => <img src={f.data.image} alt="" width="640" height="360" />)}</span>
+    <span class="jl-copy">
+      <span class="kicker">Latest note · <time datetime={lead.data.date}>{displayDate(lead.data.date)}</time></span>
+      <span class="jl-title">{lead.data.title}</span>
+      <span class="jl-desc">{lead.data.description}</span>
+      <span class="btn btn-ghost">Read the note</span>
+    </span>
+  </a>
+  <div class="notes-list">
+    {rest.map((u) => (
+      <a class="note-row" href={`/journal/${u.id}/`} data-reveal>
+        <time datetime={u.data.date}>{displayDate(u.data.date)}</time>
+        <span class="note-copy"><span class="note-title">{u.data.title}</span><span class="note-desc">{u.data.description}</span></span>
+        <span class="note-thumbs">{thumbs(u, 3).map((f) => <img src={f.data.image} alt="" loading="lazy" width="160" height="90" />)}</span>
+      </a>
+    ))}
+  </div>
+</Layout>

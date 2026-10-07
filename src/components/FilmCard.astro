@@ -1,4 +1,36 @@
 ---
-const { film, artist } = Astro.props;
+import type { Film, Artist } from '../lib/catalog';
+import { embedOf, genresOf, minutes, statusKey, statusLabel } from '../lib/catalog';
+import PlayIcon from './PlayIcon.astro';
+interface Props { film: Film; artist: Artist; isNew?: boolean; filterable?: boolean; eager?: boolean }
+const { film, artist, isNew = false, filterable = false, eager = false } = Astro.props;
+const d = film.data;
+const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
+const meta = [artist.data.title, d.format === 'Short film' ? 'Short' : d.format, minutes(d.runtimeMinutes) ?? d.year].join(' · ');
+const data = filterable
+  ? {
+      'data-title': `${d.title} ${artist.data.title} ${artist.data.alias ?? ''} ${d.genre}`.toLowerCase(),
+      'data-status': d.status,
+      'data-format': d.format,
+      'data-genres': genresOf(d.genre).join('|'),
+      'data-added': d.discoveredAt,
+      'data-year': d.year,
+      'data-runtime': d.runtimeMinutes ?? 0,
+      'data-name': d.title.toLowerCase(),
+    }
+  : {};
 ---
-<article class="film-card"><a class="image-link" href={`/films/${film.id}/`} aria-label={`Explore ${film.data.title}`}>{film.data.image?<img src={film.data.image} alt={film.data.imageAlt} style={{objectFit: film.data.imageFit}} loading="lazy" width="800" height="450"/>:<div class="film-title-art" aria-hidden="true"><span>FILM NOTES</span><strong>{film.data.title}</strong></div>}<span class="image-label">{film.data.format}</span><span class="round-arrow" aria-hidden="true">↗</span></a><div class="card-meta"><span>{film.data.genre}</span><span>{film.data.runtimeMinutes ? `${film.data.runtimeMinutes} min` : film.data.year}</span></div><h3><a href={`/films/${film.id}/`}>{film.data.title}</a></h3><p class="artist-line">{artist?.data.title}{artist?.data.alias && ` / ${artist.data.alias}`}</p><p>{film.data.description}</p></article>
+<article class="card" {...data}>
+  <a class="card-link" href={`/films/${film.id}/`} data-morph>
+    <div class:list={['card-media', d.imageFit === 'contain' && 'is-contain']} data-morph-media style={d.image ? `--img:url('${d.image}')` : undefined}>
+      {d.image ? <img src={d.image} alt={d.imageAlt} loading={eager ? 'eager' : 'lazy'} decoding="async" width="800" height="450" /> : <span class="title-art" aria-hidden="true">{d.title}</span>}
+      <span class="card-tags">
+        {isNew && <span class="tag-new">New</span>}
+        <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
+      </span>
+    </div>
+    <h3>{d.title}</h3>
+    <p class="card-meta">{meta}</p>
+  </a>
+  {embed && <button class="card-play" type="button" data-play={embed.src} data-title={d.title} data-source={d.watchUrl} aria-label={`Play ${d.title}`}><PlayIcon /></button>}
+</article>

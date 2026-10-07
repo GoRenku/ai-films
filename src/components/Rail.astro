@@ -1,0 +1,16 @@
+---
+interface Props { title: string; href?: string; count?: number; note?: string }
+const { title, href, count, note } = Astro.props;
+---
+<section class="rail" data-reveal>
+  <div class="rail-head">
+    <h2>{href ? <a href={href}>{title}</a> : title}{count !== undefined && <span class="rail-count">{count}</span>}</h2>
+    {note && <p class="rail-note">{note}</p>}
+    <div class="rail-nav">
+      {href && <a class="see-all" href={href}>See all</a>}
+      <button type="button" aria-label={`Scroll ${title} back`}>←</button>
+      <button type="button" aria-label={`Scroll ${title} forward`}>→</button>
+    </div>
+  </div>
+  <div class="rail-track"><slot /></div>
+</section>

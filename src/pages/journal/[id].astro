@@ -1,12 +1,54 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Sources from '../../components/Sources.astro';
-import {getCollection,getEntry,render} from 'astro:content';
-export async function getStaticPaths(){return (await getCollection('updates')).map(update=>({params:{id:update.id},props:{update}}));}
-const {update}=Astro.props;
-const films=await Promise.all(update.data.films.map(f=>getEntry(f)));
-const artists=await Promise.all(update.data.artists.map(a=>getEntry(a)));
-if(films.some(f=>!f)||artists.some(a=>!a))throw new Error(`Missing reference in ${update.id}`);
-const {Content}=await render(update);
+import { getCollection, getEntry, render } from 'astro:content';
+import { catalog, displayDate, statusKey, statusLabel } from '../../lib/catalog';
+export async function getStaticPaths() {
+  return (await getCollection('updates')).map((update) => ({ params: { id: update.id }, props: { update } }));
+}
+const { update } = Astro.props;
+const films = await Promise.all(update.data.films.map((f) => getEntry(f)));
+const artists = await Promise.all(update.data.artists.map((a) => getEntry(a)));
+if (films.some((f) => !f) || artists.some((a) => !a)) throw new Error(`Missing reference in ${update.id}`);
+const c = await catalog();
+const idx = c.updates.findIndex((u) => u.id === update.id);
+const newer = c.updates[idx - 1];
+const older = c.updates[idx + 1];
+const { Content } = await render(update);
 ---
-<Layout title={update.data.title} description={update.data.description}><div class="page-head"><a class="back" href="/journal/">← The journal</a><p class="eyebrow" style="margin-top:28px"><time datetime={update.data.date}>{update.data.date}</time> / FIELD NOTE</p><h1>{update.data.title}</h1><p>{update.data.description}</p></div><div class="article-layout"><article class="prose"><Content/></article><aside class="facts"><p class="eyebrow">IN THIS NOTE</p>{films.map(f=>f&&<p style="margin-top:16px"><a href={`/films/${f.id}/`}>{f.data.title} ↗</a></p>)}{artists.map(a=>a&&<p style="margin-top:16px"><a href={`/artists/${a.id}/`}>{a.data.title} ↗</a></p>)}<Sources sources={update.data.sources}/></aside></div></Layout>
+<Layout title={update.data.title} description={update.data.description}>
+  <header class="note-hero">
+    <p class="kicker"><a href="/journal/">Journal</a> · <time datetime={update.data.date}>{displayDate(update.data.date)}</time></p>
+    <h1>{update.data.title}</h1>
+    <p class="page-sub">{update.data.description}</p>
+  </header>
+  {films.length > 0 && (
+    <div class="note-films" data-reveal>
+      {films.map((f) => f && (
+        <a class="note-film" href={`/films/${f.id}/`} data-morph>
+          <span class:list={['entry-media', f.data.imageFit === 'contain' && 'is-contain']} style={f.data.image ? `--img:url('${f.data.image}')` : undefined} data-morph-media>
+            {f.data.image ? <img src={f.data.image} alt={f.data.imageAlt} loading="lazy" width="480" height="270" /> : <span class="monogram">{f.data.title.slice(0, 1)}</span>}
+          </span>
+          <span class="note-film-title">{f.data.title}</span>
+          <span class={`pill pill-${statusKey(f.data.status)}`}>{statusLabel(f.data.status)}</span>
+        </a>
+      ))}
+    </div>
+  )}
+  <div class="film-body">
+    <article class="prose" data-reveal><Content /></article>
+    <aside class="film-aside" data-reveal>
+      {artists.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">Artists in this note</p>
+          {artists.map((a) => a && <a class="aside-note" href={`/artists/${a.id}/`}>{a.data.title}<time>{a.data.focus}</time></a>)}
+        </div>
+      )}
+      <Sources sources={update.data.sources} />
+    </aside>
+  </div>
+  <nav class="pager" aria-label="More notes">
+    {older ? <a href={`/journal/${older.id}/`}><span>← Earlier</span>{older.data.title}</a> : <span></span>}
+    {newer && <a class="pager-next" href={`/journal/${newer.id}/`}><span>Later →</span>{newer.data.title}</a>}
+  </nav>
+</Layout>

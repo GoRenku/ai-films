@@ -1,11 +1,143 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import FilmCard from '../../components/FilmCard.astro';
+import Rail from '../../components/Rail.astro';
 import Sources from '../../components/Sources.astro';
-import {getCollection,getEntry,render} from 'astro:content';
-export async function getStaticPaths(){return (await getCollection('films')).map(film=>({params:{id:film.id},props:{film}}));}
-const {film}=Astro.props;
-const artist=await getEntry(film.data.artist);
-if(!artist) throw new Error(`Missing artist for ${film.id}`);
-const {Content}=await render(film);
+import PlayIcon from '../../components/PlayIcon.astro';
+import { getCollection, render } from 'astro:content';
+import { catalog, embedOf, genresOf, minutes, hostOf, displayDate, statusKey, statusLabel } from '../../lib/catalog';
+export async function getStaticPaths() {
+  return (await getCollection('films')).map((film) => ({ params: { id: film.id }, props: { film } }));
+}
+const { film } = Astro.props;
+const c = await catalog();
+const d = film.data;
+const artist = c.artistOf(film);
+const { Content } = await render(film);
+const embed = embedOf(d.watchUrl);
+const playable = embed && (d.status === 'Watch now' || /trailer/i.test(d.watchLabel));
+const host = d.watchUrl ? hostOf(d.watchUrl) : undefined;
+const primaryGenre = genresOf(d.genre)[0];
+const byArtist = c.filmsBy(artist.id).filter((f) => f.id !== film.id);
+const related = c.films.filter((f) => f.id !== film.id && f.data.artist.id !== artist.id && genresOf(f.data.genre).includes(primaryGenre)).slice(0, 12);
+const notes = c.updates.filter((u) => u.data.films.some((r) => r.id === film.id));
+const facts = [
+  ['Format', d.format],
+  ['Genre', d.genre],
+  ['Year', String(d.year)],
+  d.runtimeMinutes ? [d.format === 'Series' ? 'Episode' : 'Runtime', minutes(d.runtimeMinutes)!] : undefined,
+  ['Added', displayDate(d.discoveredAt)],
+].filter((x): x is string[] => Boolean(x));
 ---
-<Layout title={film.data.title} description={film.data.description}><div class="page-head"><a class="back" href="/films/">← The collection</a><p class="eyebrow" style="margin-top:28px">{film.data.format} / {film.data.genre} / {film.data.year}</p><h1>{film.data.title}</h1><p>{film.data.description}</p></div>{film.data.image&&<><img class="detail-image" style={{objectFit: film.data.imageFit}} src={film.data.image} alt={film.data.imageAlt} width="1280" height="720"/><p class="credit"><a href={film.data.imageSource}>{film.data.imageCredit} ↗</a></p></>}<div class="article-layout"><article class="prose"><Content/>{film.data.production.length>0&&<section class="production-notes" aria-labelledby="production-heading"><p class="eyebrow">FROM THE MAKERS</p><h2 id="production-heading">Production notebook</h2><p class="disclosure-note">Film-specific disclosures from the linked sources. Credits may be partial; unreported details are left open.</p><dl>{film.data.production.map(fact=><div><dt>{fact.label}</dt><dd>{fact.detail} <a href={fact.source}>Source ↗</a></dd></div>)}</dl></section>}</article><aside class="facts"><p class="status">{film.data.status}</p><dl><dt>Filmmaker</dt><dd><a href={`/artists/${artist.id}/`}>{artist.data.title} ↗</a></dd>{film.data.runtimeMinutes&&<><dt>{film.data.format==='Series'?'Approximate episode length':'Runtime'}</dt><dd>{film.data.runtimeMinutes} minutes</dd></>}{artist.data.x&&<><dt>On X</dt><dd><a href={artist.data.x.url}>{artist.data.x.label} ↗</a></dd></>}<dt>Last checked</dt><dd><time datetime={film.data.lastVerifiedAt}>{film.data.lastVerifiedAt}</time></dd></dl>{film.data.watchUrl&&<a class="button" href={film.data.watchUrl} rel="noopener noreferrer">{film.data.watchLabel} ↗</a>}<Sources sources={film.data.sources}/></aside></div></Layout>
+<Layout title={d.title} description={d.description}>
+  <section class="film-hero" style={d.image ? `--img:url('${d.image}')` : undefined}>
+    <div class="film-hero-glow" aria-hidden="true"></div>
+    <div class="film-hero-inner">
+      <div class="film-media-col">
+        <div class:list={['film-media', d.imageFit === 'contain' && 'is-contain']} style="view-transition-name: film-media" data-player>
+          {d.image ? <img src={d.image} alt={d.imageAlt} fetchpriority="high" width="1280" height="720" /> : <span class="title-art" aria-hidden="true">{d.title}</span>}
+          {playable && embed && (
+            <button class="big-play" type="button" data-play={embed.src} data-inline data-title={d.title}>
+              <span class="big-play-disc"><PlayIcon /></span>
+              <span class="big-play-label">{d.status === 'Watch now' ? 'Play film' : 'Play trailer'}<small>via {embed.provider}</small></span>
+            </button>
+          )}
+        </div>
+        {d.imageSource && <p class="credit"><a href={d.imageSource}>{d.imageCredit} ↗</a></p>}
+      </div>
+      <div class="film-info">
+        <p class="kicker">
+          {c.isNew(d.discoveredAt) && <span class="tag-new">New</span>}
+          <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
+          <a href={`/films/?genre=${encodeURIComponent(primaryGenre)}`}>{primaryGenre}</a>
+        </p>
+        <h1>{d.title}</h1>
+        <p class="film-by">by <a href={`/artists/${artist.id}/`}>{artist.data.title}</a>{artist.data.alias && <span> · {artist.data.alias}</span>}</p>
+        <p class="film-logline">{d.description}</p>
+        <div class="actions">
+          {playable && embed && <a class="btn btn-primary" href={d.watchUrl} data-play={embed.src} data-title={d.title} data-source={d.watchUrl}><PlayIcon /> {d.status === 'Watch now' ? 'Play' : 'Play trailer'}</a>}
+          {d.watchUrl && <a class:list={['btn', playable ? 'btn-ghost' : 'btn-primary']} href={d.watchUrl} rel="noopener noreferrer">{playable ? `Open on ${host}` : d.watchLabel} ↗</a>}
+          {artist.data.x && <a class="btn btn-ghost" href={artist.data.x.url}>Follow on X ↗</a>}
+        </div>
+        <dl class="fact-strip">{facts.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="film-body">
+    <article class="prose" data-reveal>
+      <Content />
+    </article>
+    <aside class="film-aside" data-reveal>
+      <a class="maker-card" href={`/artists/${artist.id}/`}>
+        <span class="kicker">Filmmaker</span>
+        <strong>{artist.data.title}</strong>
+        <span>{artist.data.focus}</span>
+        <span class="maker-count">{c.filmsBy(artist.id).length} in the collection →</span>
+      </a>
+      {notes.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">In the journal</p>
+          {notes.map((u) => <a class="aside-note" href={`/journal/${u.id}/`}><time datetime={u.data.date}>{displayDate(u.data.date)}</time>{u.data.title}</a>)}
+        </div>
+      )}
+      <Sources sources={d.sources} checked={d.lastVerifiedAt} />
+    </aside>
+  </div>
+
+  {d.production.length > 0 && (
+    <section class="notebook" data-reveal aria-labelledby="production-heading">
+      <div class="section-head">
+        <h2 id="production-heading">Production notebook</h2>
+        <p>What the makers have disclosed. Credits may be partial.</p>
+      </div>
+      <div class="notebook-grid">
+        {d.production.map((fact, i) => (
+          <div class="note-card">
+            <span class="note-num">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{fact.label}</h3>
+            <p>{fact.detail}</p>
+            <a href={fact.source}>{hostOf(fact.source)} source ↗</a>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {byArtist.length > 0 && (
+    <Rail title={`More from ${artist.data.title}`} href={`/artists/${artist.id}/`} count={byArtist.length}>
+      {byArtist.map((f) => <FilmCard film={f} artist={artist} isNew={c.isNew(f.data.discoveredAt)} />)}
+    </Rail>
+  )}
+  {related.length > 0 && (
+    <Rail title={`More ${primaryGenre.toLowerCase()}`} href={`/films/?genre=${encodeURIComponent(primaryGenre)}`}>
+      {related.map((f) => <FilmCard film={f} artist={c.artistOf(f)} isNew={c.isNew(f.data.discoveredAt)} />)}
+    </Rail>
+  )}
+</Layout>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-player]').forEach((frame) => {
+    const play = () => {
+      const trigger = frame.querySelector<HTMLElement>('[data-play]');
+      if (!trigger) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = trigger.dataset.play!;
+      iframe.title = trigger.dataset.title ?? 'Film';
+      iframe.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media';
+      iframe.allowFullscreen = true;
+      frame.classList.add('playing');
+      frame.replaceChildren(iframe);
+    };
+    frame.querySelector('[data-play]')?.addEventListener('click', play);
+    // Header buttons on this page play inline rather than in the lightbox.
+    document.querySelectorAll<HTMLElement>('.film-info [data-play]').forEach((b) =>
+      b.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        play();
+        frame.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, { capture: true }),
+    );
+  });
+</script>

@@ -1,7 +1,43 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getNews, displayDate } from '../../lib/whats-new';
-const news = await getNews();
-const dates = [...new Set(news.map(n=>n.date))];
+import { catalog, news, displayDate, initials } from '../../lib/catalog';
+const c = await catalog();
+const feed = await news();
+const dates = [...new Set(feed.map((n) => n.date))];
+const week = feed.filter((n) => c.thisWeek(n.date));
+const tally = (k: string) => week.filter((n) => n.kind === k).length;
+const label = { Film: 'New film', Artist: 'New artist', Journal: 'Journal' };
 ---
-<Layout title="What’s New" description="The latest films, filmmakers and editorial updates added to AI Film Journal."><div class="page-head"><p class="eyebrow">THE COLLECTION, AS IT GROWS</p><h1>What’s New</h1><p>New films, new voices, and substantive updates. Dates show when we added them to the journal.</p></div>{dates.map(date=><section class="news-day"><h2><time datetime={date}>{displayDate(date)}</time></h2><div>{news.filter(n=>n.date===date).map(n=><a class="news-item" href={n.href}><span class="eyebrow">{n.kind}</span><div><h3>{n.title}</h3><p>{n.description}</p></div><span aria-hidden="true">↗</span></a>)}</div></section>)}</Layout>
+<Layout title="Latest" description="The latest films, filmmakers and editorial updates added to AI Film Journal.">
+  <header class="page-hero">
+    <h1>Latest</h1>
+    <p class="page-sub">Everything added to the journal, newest first. Dates show when it joined the collection.</p>
+    <dl class="week">
+      <div><dt>This week</dt><dd>{week.length}</dd></div>
+      <div><dt>Films</dt><dd>{tally('Film')}</dd></div>
+      <div><dt>Artists</dt><dd>{tally('Artist')}</dd></div>
+      <div><dt>Notes</dt><dd>{tally('Journal')}</dd></div>
+    </dl>
+  </header>
+  <div class="timeline">
+    {dates.map((date) => (
+      <section class="day" data-reveal>
+        <h2 class="day-date"><time datetime={date}>{displayDate(date, { day: 'numeric', month: 'short' })}</time><span>{displayDate(date, { weekday: 'long' })}</span></h2>
+        <div class="day-items">
+          {feed.filter((n) => n.date === date).map((n) => (
+            <a class:list={['entry', `entry-${n.kind.toLowerCase()}`]} href={n.href} data-morph={n.kind === 'Film' ? '' : undefined}>
+              <span class:list={['entry-media', n.kind === 'Film' && n.fit === 'contain' && 'is-contain']} style={n.image && n.kind !== 'Journal' ? `--img:url('${n.image}')` : undefined} data-morph-media={n.kind === 'Film' ? '' : undefined}>
+                {n.kind === 'Journal' ? <span class="note-tile"><b>Field note</b><small>{displayDate(n.date, { day: 'numeric', month: 'short' })}</small></span> : n.image ? <img src={n.image} alt="" loading="lazy" width="320" height="180" /> : <span class="monogram">{initials(n.title)}</span>}
+              </span>
+              <span class="entry-copy">
+                <span class="entry-kind">{label[n.kind]}{n.by && <span> · {n.by}</span>}</span>
+                <span class="entry-title">{n.title}</span>
+                <span class="entry-desc">{n.description}</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Layout>

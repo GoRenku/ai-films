@@ -39,6 +39,14 @@ Routine content refreshes must not upgrade packages. Dependency updates are sepa
 
 Palette and typography adapted from the existing studio website. Fraunces is provided by @fontsource-variable/fraunces. IBM Plex Sans is self-hosted from the existing website; its license is retained with the font files. Every film page links to its image source and factual sources.
 
+Every page is derived from the content collections; no section is hand-curated. src/lib/catalog.ts holds the shared rules:
+
+- The homepage hero shows the five newest films with artwork (a `featured` film keeps a slot); rails for Just added, Watch now, Coming soon & festivals, Features, Series and Artists to follow sort by `discoveredAt` and skip films already shown above them. Daily additions therefore move the whole page.
+- “New” badges cover the last three days of additions; the weekly tally covers seven, both measured from the newest content date rather than the build date.
+- Free-text `genre` stays editorial. Ten broad genre groups are derived from it by keyword for browsing and filters; extend the patterns rather than adding a frontmatter field.
+- YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.
+- Films and Artists filtering, sorting and search run client-side over the static HTML; filter state lives in the URL query.
+
 ## Source and publication workflow
 
 This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of truth. Every accepted content refresh must be written here, validated, committed and pushed to GitHub (`origin`, GoRenku/ai-films) before the same commit is pushed to `sites` and published. A private research queue is only an intake mechanism, never a substitute for repository content. If hosting fails, retain the validated changes in this repository and GitHub and report publication as pending.

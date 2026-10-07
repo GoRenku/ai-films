@@ -1,12 +1,189 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FilmCard from '../components/FilmCard.astro';
-import WhatsNew from '../components/WhatsNew.astro';
-import {getCollection} from 'astro:content';
-const films = (await getCollection('films')).sort((a,b)=>a.data.order-b.data.order);
-const artists = (await getCollection('artists')).sort((a,b)=>Number(b.data.featured)-Number(a.data.featured)||a.data.title.localeCompare(b.data.title));
-const updates = (await getCollection('updates')).sort((a,b)=>b.data.date.localeCompare(a.data.date));
-const hero = films.find(f=>f.data.featured) ?? films[0];
-const creator = artists.find(a=>a.id===hero.data.artist.id);
+import ArtistCard from '../components/ArtistCard.astro';
+import Rail from '../components/Rail.astro';
+import PlayIcon from '../components/PlayIcon.astro';
+import { catalog, news, minutes, embedOf, genresOf, genreGroups, hostOf, shortDate, displayDate, statusKey, statusLabel } from '../lib/catalog';
+
+const c = await catalog();
+const feed = await news();
+const { films, artistOf, isNew } = c;
+
+// Everything on this page is ordered by date added, so daily additions move every section.
+const featured = films.find((f) => f.data.featured && f.data.image);
+const slides = [...films.filter((f) => f.data.image).slice(0, 5)];
+if (featured && !slides.includes(featured)) slides.splice(4, 1, featured);
+// Each row skips what the rows above it already show, so the page never repeats itself.
+const seen = new Set(slides.map((f) => f.id));
+const justAdded = films.filter((f) => !seen.has(f.id)).slice(0, 14);
+justAdded.slice(0, 6).forEach((f) => seen.add(f.id));
+const watchNow = films.filter((f) => f.data.status === 'Watch now');
+const watchRail = watchNow.filter((f) => !seen.has(f.id)).slice(0, 16);
+const upcoming = films.filter((f) => ['Coming soon', 'Festival screening', 'In theaters'].includes(f.data.status));
+const features = films.filter((f) => f.data.format === 'Feature');
+const series = films.filter((f) => f.data.format === 'Series');
+const ticker = feed.slice(0, 16);
+const [lead, ...moreNotes] = c.updates;
+const leadFilms = c.notesFilms(lead).filter((f) => f.data.image).slice(0, 4);
+
+const used = new Set<string>();
+const genreTiles = genreGroups
+  .map((g) => {
+    const inGenre = films.filter((f) => genresOf(f.data.genre).includes(g));
+    const cover = inGenre.find((f) => f.data.image && f.data.imageFit === 'cover' && !used.has(f.id)) ?? inGenre.find((f) => f.data.image);
+    if (cover) used.add(cover.id);
+    return { name: g, count: inGenre.length, cover };
+  })
+  .filter((g) => g.count > 0)
+  .sort((a, b) => b.count - a.count);
+const week = feed.filter((n) => c.thisWeek(n.date));
 ---
-<Layout><section class="intro"><div><p class="eyebrow"><span class="dot">●</span> THE ONGOING COLLECTION</p><h1>A new medium.<br/><em>A human vision.</em></h1></div><p class="intro-note">Films worth watching.<br/>Artists worth following.<br/><span>An open-ended look at AI cinema.</span></p></section><WhatsNew/><section class="feature" aria-label="Featured film"><img class="feature-image" src={hero.data.image} alt={hero.data.imageAlt} fetchpriority="high" width="1280" height="720"/><div class="feature-shade"></div><div class="feature-top"><span class="eyebrow">IN FOCUS / 01</span><span>{hero.data.genre} <span class="dot">·</span> {hero.data.runtimeMinutes} min</span></div><div class="feature-copy"><p class="eyebrow">{creator?.data.alias ?? creator?.data.title}</p><h2><a href={`/films/${hero.id}/`}>{hero.data.title}</a></h2><p>{hero.data.description}</p><a class="button" href={`/films/${hero.id}/`}>Explore the film <span aria-hidden="true">↗</span></a></div><a class="feature-credit" href={hero.data.imageSource}>{hero.data.imageCredit}</a></section><section class="collection section-space"><div class="section-heading"><div><p class="eyebrow">THE SCREENING ROOM</p><h2>Stories taking shape.</h2></div><a class="text-link" href="/films/">All films <span>↗</span></a></div><div class="film-grid">{films.slice(0,6).map(film=><FilmCard film={film} artist={artists.find(a=>a.id===film.data.artist.id)}/>)}</div></section><section class="artists-strip section-space"><div class="section-heading"><div><p class="eyebrow">BEHIND THE FRAME</p><h2>The people making it.</h2></div><a class="text-link" href="/artists/">Meet the artists ↗</a></div><div class="artist-list">{artists.slice(0,4).map((a,i)=><a class="artist-row" href={`/artists/${a.id}/`}><span class="index">0{i+1}</span><div><h3>{a.data.title}</h3><p>{a.data.alias ?? a.data.focus}</p></div><span class="artist-focus">{a.data.focus}</span><span aria-hidden="true">↗</span></a>)}</div></section>{updates.length>0&&<section class="section-space"><div class="section-heading"><div><p class="eyebrow">FIELD NOTES</p><h2>From the journal.</h2></div><a class="text-link" href="/journal/">All updates ↗</a></div><div class="journal-grid">{updates.slice(0,3).map(u=><a class="journal-card" href={`/journal/${u.id}/`}><time datetime={u.data.date}>{u.data.date}</time><h3>{u.data.title}</h3><p>{u.data.description}</p><span class="text-link">Read the note ↗</span></a>)}</div></section>}</Layout>
+<Layout overlay>
+  <section class="hero" aria-roledescription="carousel" aria-label="Newest films">
+    <h1 class="sr-only">AI Film Journal — new AI cinema, updated daily</h1>
+    {slides.map((film, i) => {
+      const d = film.data;
+      const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
+      const artist = artistOf(film);
+      return (
+        <article class:list={['slide', d.imageFit === 'contain' && 'is-contain']} data-active={i === 0 ? '' : undefined} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
+          <div class="slide-bg"><img src={d.image} alt={d.imageAlt} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} width="1600" height="900" /></div>
+          <div class="slide-body">
+            <p class="slide-kicker">
+              {isNew(d.discoveredAt) && <span class="tag-new">New</span>}
+              <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
+              <span>{d.format}{d.runtimeMinutes && ` · ${minutes(d.runtimeMinutes)}`} · {d.genre}</span>
+            </p>
+            <h2><a href={`/films/${film.id}/`}>{d.title}</a></h2>
+            <p class="slide-by">by <a href={`/artists/${artist.id}/`}>{artist.data.title}</a></p>
+            <p class="slide-desc">{d.description}</p>
+            <div class="actions">
+              {embed && <a class="btn btn-primary" href={d.watchUrl} data-play={embed.src} data-title={d.title} data-source={d.watchUrl}><PlayIcon /> Play film</a>}
+              {!embed && d.status === 'Watch now' && d.watchUrl && <a class="btn btn-primary" href={d.watchUrl} rel="noopener noreferrer">Watch on {hostOf(d.watchUrl)} ↗</a>}
+              <a class:list={['btn', embed || d.status === 'Watch now' ? 'btn-ghost' : 'btn-primary']} href={`/films/${film.id}/`}>About the film</a>
+            </div>
+          </div>
+          {d.imageFit === 'contain' && <img class="slide-poster" src={d.image} alt="" loading="lazy" width="600" height="900" />}
+          {d.imageSource && <a class="slide-credit" href={d.imageSource}>{d.imageCredit}</a>}
+        </article>
+      );
+    })}
+    <div class="hero-index" role="tablist" aria-label="Choose a film">
+      {slides.map((film, i) => (
+        <button type="button" role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-slide={i}>
+          <span class="bar"><i></i></span>
+          <span class="hero-index-num">0{i + 1}</span>
+          <span class="hero-index-title">{film.data.title}</span>
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <section class="ticker" aria-label="Latest additions">
+    <a class="ticker-label" href="/whats-new/"><span class="live-dot" aria-hidden="true"></span>Latest</a>
+    <div class="ticker-viewport">
+      <ul class="ticker-track">
+        {[0, 1].map((copy) => ticker.map((n) => (
+          <li aria-hidden={copy === 1 ? 'true' : undefined}><a href={n.href} tabindex={copy === 1 ? -1 : undefined}><time datetime={n.date}>{shortDate(n.date)}</time><span class="ticker-kind">{n.kind === 'Film' ? 'New film' : n.kind === 'Artist' ? 'New artist' : 'Journal'}</span>{n.title}</a></li>
+        )))}
+      </ul>
+    </div>
+  </section>
+
+  <div class="home-body">
+    <Rail title="Just added" href="/whats-new/" note={`${week.length} additions this week`}>
+      {justAdded.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+    </Rail>
+
+    <Rail title="Watch now" href="/films/?status=Watch+now" count={watchNow.length} note="Free to stream at the source">
+      {watchRail.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+    </Rail>
+
+    <section class="journal-feature" data-reveal>
+      <div class="jf-copy">
+        <p class="kicker">Journal · <time datetime={lead.data.date}>{displayDate(lead.data.date)}</time></p>
+        <h2><a href={`/journal/${lead.id}/`}>{lead.data.title}</a></h2>
+        <p>{lead.data.description}</p>
+        <a class="btn btn-ghost" href={`/journal/${lead.id}/`}>Read the note</a>
+        <ul class="jf-more">
+          {moreNotes.slice(0, 3).map((u) => <li><a href={`/journal/${u.id}/`}><time datetime={u.data.date}>{shortDate(u.data.date)}</time><span>{u.data.title}</span></a></li>)}
+        </ul>
+      </div>
+      <div class:list={['jf-mosaic', `n${leadFilms.length}`]}>
+        {leadFilms.map((f) => <a href={`/films/${f.id}/`} data-morph><img data-morph-media src={f.data.image} alt={f.data.imageAlt} loading="lazy" width="640" height="360" /><span>{f.data.title}</span></a>)}
+      </div>
+    </section>
+
+    <Rail title="Coming soon & festivals" href="/films/?status=upcoming" count={upcoming.length}>
+      {upcoming.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+    </Rail>
+
+    <section class="genres" data-reveal aria-labelledby="genres-h">
+      <div class="section-head"><h2 id="genres-h">Browse by genre</h2></div>
+      <div class="genre-grid">
+        {genreTiles.map((g) => (
+          <a class="genre-tile" href={`/films/?genre=${encodeURIComponent(g.name)}`}>
+            {g.cover && <img src={g.cover.data.image} alt="" loading="lazy" width="480" height="270" />}
+            <span class="genre-name">{g.name}</span><span class="genre-count">{g.count}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <Rail title="Features" href="/films/?format=Feature" count={features.length}>
+      {features.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+    </Rail>
+
+    <Rail title="Series" href="/films/?format=Series" count={series.length}>
+      {series.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+    </Rail>
+
+    <Rail title="Artists to follow" href="/artists/" count={c.artists.length} note="Most recently active first">
+      {c.artistsByActivity.slice(0, 14).map((a) => <ArtistCard artist={a} films={c.filmsBy(a.id)} active={c.lastActive(a)} isNew={isNew(a.data.discoveredAt)} />)}
+    </Rail>
+
+    <section class="manifesto" data-reveal>
+      <p class="manifesto-line">A new medium. <em>A human vision.</em></p>
+      <p>An independent, sourced watch on the people making AI cinema — films worth watching, artists worth following.</p>
+      <dl class="stats">
+        <div><dt>Films</dt><dd>{films.length}</dd></div>
+        <div><dt>Watch now</dt><dd>{watchNow.length}</dd></div>
+        <div><dt>Artists</dt><dd>{c.artists.length}</dd></div>
+        <div><dt>Field notes</dt><dd>{c.updates.length}</dd></div>
+      </dl>
+      <a class="btn btn-ghost" href="/about/">How the collection works</a>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  const hero = document.querySelector<HTMLElement>('.hero');
+  if (hero) {
+    const slides = [...hero.querySelectorAll<HTMLElement>('.slide')];
+    const tabs = [...hero.querySelectorAll<HTMLButtonElement>('.hero-index button')];
+    let current = 0;
+    const show = (i: number) => {
+      current = (i + slides.length) % slides.length;
+      slides.forEach((s, j) => {
+        s.toggleAttribute('data-active', j === current);
+        s.toggleAttribute('inert', j !== current);
+      });
+      tabs.forEach((t, j) => t.setAttribute('aria-selected', String(j === current)));
+      const lazy = slides[current].querySelector('img');
+      if (lazy) lazy.loading = 'eager';
+    };
+    slides.forEach((s, j) => j && s.setAttribute('inert', ''));
+    tabs.forEach((t, j) => {
+      t.addEventListener('click', () => show(j));
+      t.querySelector('.bar i')!.addEventListener('animationend', () => show(current + 1));
+    });
+    const pause = (on: boolean) => hero.classList.toggle('paused', on);
+    hero.addEventListener('pointerenter', () => pause(true));
+    hero.addEventListener('pointerleave', () => pause(false));
+    hero.addEventListener('focusin', () => pause(true));
+    hero.addEventListener('focusout', () => pause(false));
+    document.addEventListener('visibilitychange', () => pause(document.hidden));
+    hero.classList.add('autoplay');
+  }
+</script>
