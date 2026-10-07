@@ -6,8 +6,10 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-01"
+lastVerifiedAt: "2026-10-07"
 sources:
+  - label: "Official trailer — December 4 announcement"
+    url: "https://www.youtube.com/watch?v=1G5LArU7tmE"
   - label: "September 30 theatrical timing update"
     url: "https://x.com/Gossip_Goblin/status/2105392789580284037"
   - label: "Gods Don’t Give Gifts — official release and screenings"
@@ -30,6 +32,6 @@ The interesting thread is continuity: a filmmaker developing a world across mult
 
 ## Next: a theatrical feature
 
-[**Gods Don’t Give Gifts**](/films/gods-dont-give-gifts/) is now promoted for **this winter**, according to the studio’s September 30 announcement. The earlier October 30 date is no longer presented here as confirmed; exact screening dates and venues remain unverified.
+[**Gods Don’t Give Gifts**](/films/gods-dont-give-gifts/) is now announced for **December 4, 2026**, in the studio’s October 6 official trailer description. The earlier October 30 date is no longer presented here as confirmed; individual cinema dates and venues remain unverified.
 
 This is a significant progression from online world-building to theatrical exhibition. The question is whether London's recurring universe can sustain a feature and persuade its online audience to buy cinema tickets. An announced release is a milestone, not yet evidence of box-office success or the finished film's quality.

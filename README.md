@@ -165,3 +165,11 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [Daniił Vołkaŭ](content/artists/daniil-volkau.md), [HOLED](content/films/holed.md) and [The Wrong Planet](content/films/the-wrong-planet.md): verified creator identity, original artwork, public episode access and qualified feature-release evidence; production claims remain work-specific.
 - [Henry Daubrez](content/artists/henry-daubrez.md): JUNKYARD KING Chapter 3’s October 7 noon ET announcement and scoped team disclosure.
 - [What’s New note](content/updates/2026-10-06-serial-mysteries-and-a-release-date.md) links the additions and announcement. Packages and lockfile unchanged.
+
+### October 7, 2026 — staging, ensembles and editing
+
+- [Billy Woodward](content/artists/billy-woodward.md) and [Afahria — The Wicked Worm](content/films/afahria-the-wicked-worm.md): complete first episode, inspected artwork, verified X, Showrunner / Fable partnership and preparation/blocking disclosures.
+- [Bunny Patrol](content/films/bunny-patrol.md): original four-story release by Daniił Vołkaŭ, full playback and artwork; optional production unknowns explicit.
+- [The Chronicles of Bone](content/films/chronicles-of-bone.md): Chapter Six full release and platform disclosure, separated from older models.
+- [Gods Don’t Give Gifts](content/films/gods-dont-give-gifts.md): official trailer’s December 4 date and scoped team/duration disclosure; venues unverified.
+- [What’s New note](content/updates/2026-10-07-staging-ensembles-and-editing.md): additions and Alex Patrascu’s Bruce McLaren documentary craft account, distinguishing archive, illustration, synthetic narration and human corrections. Packages and lockfile unchanged.
