@@ -23,6 +23,8 @@ pnpm deploy:cloudflare
 
 This runs `pnpm check` and `pnpm build` (including the generated-page link and asset check), then uploads dist/ with the pinned wrangler. It reads `CLOUDFLARE_TOKEN` (a token with Cloudflare Pages: Edit) and `CLOUDFLARE_ACCOUNT_ID` from the git-ignored `.env`. Deploy only committed work that has already been pushed to GitHub. public/_headers sets security headers and caching.
 
+Cloudflare setup (already in place; do not recreate): `latent-matinee` is a classic Pages project with custom domains latentmatinee.com and www.latentmatinee.com (proxied CNAMEs to latent-matinee.pages.dev). A zone Single Redirect rule sends www to the apex with a 301, excluding `/.well-known/` so certificate validation keeps working. Recent wrangler versions try to move new Pages projects to Workers; deploying to this existing project is unaffected.
+
 ## Content
 
 - content/artists/<slug>.md: artist biography, verified X profile and provenance, links, editorial context.
