@@ -41,7 +41,7 @@ Palette and typography adapted from the existing studio website. Fraunces is pro
 
 Every page is derived from the content collections; no section is hand-curated. src/lib/catalog.ts holds the shared rules:
 
-- The homepage hero shows the five newest films with full-frame stills (`imageFit: cover`; a `featured` film keeps a slot). Poster-only films (`imageFit: contain`) lead the Just added rail instead, since a poster cannot fill a widescreen frame; rails for Just added, Watch now, Coming soon & festivals, Features, Series and Artists to follow sort by `discoveredAt` and skip films already shown above them. Daily additions therefore move the whole page.
+- The homepage hero always shows the five newest films with artwork (a `featured` film keeps a slot). Posters (`imageFit: contain`) are cropped full-bleed like stills in the hero only; cards and film pages still show the whole poster; rails for Just added, Watch now, Coming soon & festivals, Features, Series and Artists to follow sort by `discoveredAt` and skip films already shown above them. Daily additions therefore move the whole page.
 - “New” badges cover the last three days of additions; the weekly tally covers seven, both measured from the newest content date rather than the build date.
 - Free-text `genre` stays editorial. Ten broad genre groups are derived from it by keyword for browsing and filters; extend the patterns rather than adding a frontmatter field.
 - YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.
@@ -193,5 +193,5 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 ### October 8, 2026 hero layout correction
 
-- Fixed a shared poster rule that overrode the homepage hero positioning. Contained artwork floats on the right over its own blurred, full-bleed backdrop, capped in width and height so it never meets the title; on mobile it sits above the text.
+- Fixed a shared poster rule that overrode the homepage hero positioning. Poster artwork now fills the hero full-bleed like a still, with a darker scrim behind the title.
 - Long titles use a smaller display size. The hero keeps its full-bleed, fixed-height cinematic layout rather than a two-column grid.

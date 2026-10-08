@@ -11,10 +11,10 @@ const feed = await news();
 const { films, artistOf, isNew } = c;
 
 // Everything on this page is ordered by date added, so daily additions move every section.
-// The hero needs full-frame stills; poster-only films lead the Just added rail instead.
-const stills = films.filter((f) => f.data.image && f.data.imageFit !== 'contain');
-const featured = stills.find((f) => f.data.featured);
-const slides = stills.slice(0, 5);
+// The newest films always lead; posters are cropped to fill the frame like stills.
+const withArt = films.filter((f) => f.data.image);
+const featured = withArt.find((f) => f.data.featured);
+const slides = withArt.slice(0, 5);
 if (featured && !slides.includes(featured)) slides.splice(4, 1, featured);
 // Each row skips what the rows above it already show, so the page never repeats itself.
 const seen = new Set(slides.map((f) => f.id));
@@ -49,7 +49,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
       const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
       const artist = artistOf(film);
       return (
-        <article class:list={['slide', d.imageFit === 'contain' && 'is-contain', d.title.length > 32 && 'has-long-title']} data-active={i === 0 ? '' : undefined} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
+        <article class:list={['slide', d.imageFit === 'contain' && 'is-poster', d.title.length > 32 && 'has-long-title']} data-active={i === 0 ? '' : undefined} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
           <div class="slide-bg"><img src={d.image} alt={d.imageAlt} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} width="1600" height="900" /></div>
           <div class="slide-body">
             <p class="slide-kicker">
@@ -66,7 +66,6 @@ const week = feed.filter((n) => c.thisWeek(n.date));
               <a class:list={['btn', embed || d.status === 'Watch now' ? 'btn-ghost' : 'btn-primary']} href={`/films/${film.id}/`}>About the film</a>
             </div>
           </div>
-          {d.imageFit === 'contain' && <img class="slide-poster" src={d.image} alt="" loading="lazy" width="600" height="900" />}
           {d.imageSource && <a class="slide-credit" href={d.imageSource}>{d.imageCredit}</a>}
         </article>
       );

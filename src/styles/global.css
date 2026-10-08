@@ -163,7 +163,6 @@ body:not(.overlay) main { padding-top: var(--header); }
 .slide-bg { position: absolute; inset: 0; overflow: hidden; }
 .slide-bg img { width: 100%; height: 100%; object-position: center 35%; transform: scale(1.08); transition: transform 9s linear; }
 .slide[data-active] .slide-bg img { transform: scale(1); }
-.slide.is-contain .slide-bg img { filter: blur(36px) brightness(0.5) saturate(1.3); transform: scale(1.3); }
 .slide::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
@@ -171,10 +170,10 @@ body:not(.overlay) main { padding-top: var(--header); }
     linear-gradient(0deg, var(--bg) 2%, rgb(11 10 8 / 0.4) 32%, transparent 55%),
     linear-gradient(180deg, rgb(11 10 8 / 0.6), transparent 22%);
 }
-/* Contained artwork floats over its own blurred wash on the right; the selector outranks the shared .is-contain > img rule. */
-.slide .slide-poster { position: absolute; z-index: 2; right: var(--pad); top: calc(50% - 40px); transform: translateY(-50%); width: auto; height: auto; max-width: min(44%, 760px); max-height: 60%; object-fit: contain; border-radius: 10px; box-shadow: 0 40px 100px -20px rgb(0 0 0 / 0.9), 0 0 0 1px var(--line); }
+/* Poster artwork fills the frame like a still; centre-weighted so the key image survives the crop. */
+.slide.is-poster .slide-bg img { object-position: center 45%; }
+.slide.is-poster .slide-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(11 10 8 / 0.7), rgb(11 10 8 / 0.25) 55%, transparent 80%); }
 .slide-body { position: absolute; z-index: 3; left: var(--pad); bottom: 170px; width: min(680px, 100% - 2 * var(--gutter)); display: grid; gap: 18px; }
-.slide.is-contain .slide-body { width: min(640px, 52% - var(--pad)); }
 .slide.has-long-title .slide-body h2 { font-size: clamp(44px, 5.4vw, 88px); line-height: 0.95; }
 .slide-body > * { opacity: 0; transform: translateY(18px); transition: opacity 0.7s var(--ease), transform 0.9s var(--ease); }
 .slide[data-active] .slide-body > * { opacity: 1; transform: none; }
@@ -556,8 +555,7 @@ html.js [data-reveal].in { opacity: 1; transform: none; }
   .pulse-pill { font-size: 11px; padding: 6px 10px; }
   .hero { height: max(620px, 88svh); }
   .slide::after { background: linear-gradient(0deg, var(--bg) 8%, rgb(11 10 8 / 0.75) 42%, rgb(11 10 8 / 0.15) 75%), linear-gradient(180deg, rgb(11 10 8 / 0.65), transparent 30%); }
-  .slide .slide-poster { right: 50%; top: calc(var(--header) + 20px); transform: translateX(50%); max-width: calc(100% - 2 * var(--gutter)); max-height: 30%; }
-  .slide-body, .slide.is-contain .slide-body { bottom: 92px; gap: 14px; width: calc(100% - 2 * var(--gutter)); }
+  .slide-body { bottom: 92px; gap: 14px; width: calc(100% - 2 * var(--gutter)); }
   .slide-body h2 { font-size: clamp(44px, 13vw, 64px); }
   .slide.has-long-title .slide-body h2 { font-size: clamp(36px, 10vw, 54px); }
   .slide-desc { font-size: 16px; -webkit-line-clamp: 2; }
