@@ -44,10 +44,14 @@ for (const file of pages) {
   if (/<script\b[^>]*src="https?:/i.test(html))
     errors.push(`${file}: unexpected remote script`);
 }
+const home = await readFile(join(root, "index.html"), "utf8");
+const slides = (home.match(/<article class="slide[\s"]/g) || []).length;
+if (slides < 3)
+  errors.push(`index.html: homepage hero rendered ${slides} slides (expected at least 3)`);
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
 console.log(
-  `Validated ${pages.length} pages: local links, assets, titles and image descriptions.`,
+  `Validated ${pages.length} pages: local links, assets, titles, image descriptions and ${slides} hero slides.`,
 );

@@ -42,12 +42,13 @@ export function hostOf(url: string) {
   return ({ 'youtube.com': 'YouTube', 'youtu.be': 'YouTube', 'vimeo.com': 'Vimeo', 'x.com': 'X', 'primevideo.com': 'Prime Video', 'bilibili.com': 'Bilibili', 'linkedin.com': 'LinkedIn' } as Record<string, string>)[host] ?? host;
 }
 
-/** Pixel width of a JPEG, PNG or WebP in public/, read from its header; 0 when unknown. */
+/** Pixel width of a JPEG, PNG or WebP in public/, read from its header; 0 when unknown.
+ *  Paths resolve from the project root (Astro's working directory): bundled build chunks live elsewhere, so import.meta.url cannot be used. */
 export function imageWidth(src?: string) {
   if (!src) return 0;
   let b: Uint8Array;
   try {
-    b = readFileSync(new URL(`../../public${src}`, import.meta.url));
+    b = readFileSync(`public${src}`);
   } catch {
     return 0;
   }
