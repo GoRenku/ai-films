@@ -46,6 +46,7 @@ Every page is derived from the content collections; no section is hand-curated. 
 - Free-text `genre` stays editorial. Ten broad genre groups are derived from it by keyword for browsing and filters; extend the patterns rather than adding a frontmatter field.
 - YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.
 - Films and Artists filtering, sorting and search run client-side over the static HTML; filter state lives in the URL query.
+- The hero is a full-bleed, fixed-height carousel with text anchored bottom-left. Fix layout problems inside that structure (for example the poster size caps in global.css) rather than converting slides to boxed or column layouts.
 
 ## Source and publication workflow
 
@@ -192,5 +193,5 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 ### October 8, 2026 hero layout correction
 
-- Fixed a shared poster rule that overrode the homepage hero positioning. Contained artwork now occupies a separate column, with a stacked layout on mobile.
-- Long titles use a smaller display size, and the carousel reserves enough height for its largest slide so text, artwork and controls do not overlap.
+- Fixed a shared poster rule that overrode the homepage hero positioning. Contained artwork floats on the right over its own blurred, full-bleed backdrop, capped in width and height so it never meets the title; on mobile it sits above the text.
+- Long titles use a smaller display size. The hero keeps its full-bleed, fixed-height cinematic layout rather than a two-column grid.
