@@ -1,4 +1,4 @@
-# AI Film Journal
+# Latent Matinee
 
 A small, static Astro site for discovering AI films and filmmakers. Content lives in Markdown; Git records all edits. No database, CMS, or runtime API is required.
 
@@ -13,7 +13,15 @@ pnpm check
 pnpm build
 ```
 
-The local preview uses port 4327. Production is static output in dist/, published through Sites using .openai/hosting.json. Dist and node_modules are not committed.
+The local preview uses port 4327. Production is static output in dist/, published to https://latentmatinee.com on Cloudflare Pages (project `latent-matinee`, configured in wrangler.jsonc). Dist and node_modules are not committed.
+
+## Deploy
+
+```sh
+pnpm deploy:cloudflare
+```
+
+This runs `pnpm check` and `pnpm build` (including the generated-page link and asset check), then uploads dist/ with the pinned wrangler. It reads `CLOUDFLARE_TOKEN` (a token with Cloudflare Pages: Edit) and `CLOUDFLARE_ACCOUNT_ID` from the git-ignored `.env`. Deploy only committed work that has already been pushed to GitHub. public/_headers sets security headers and caching.
 
 ## Content
 
@@ -50,7 +58,7 @@ Every page is derived from the content collections; no section is hand-curated. 
 
 ## Source and publication workflow
 
-This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of truth. Every accepted content refresh must be written here, validated, committed and pushed to GitHub (`origin`, GoRenku/ai-films) before the same commit is pushed to `sites` and published. A private research queue is only an intake mechanism, never a substitute for repository content. If hosting fails, retain the validated changes in this repository and GitHub and report publication as pending.
+This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of truth. Every accepted content refresh must be written here, validated, committed and pushed to GitHub (`origin`, GoRenku/ai-films) before that same commit is deployed to Cloudflare Pages with `pnpm deploy:cloudflare`. A private research queue is only an intake mechanism, never a substitute for repository content. If hosting fails, retain the validated changes in this repository and GitHub and report publication as pending.
 
 ### September 18, 2026 content refresh
 

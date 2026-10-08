@@ -12,7 +12,8 @@
     "dev": "astro dev --host 127.0.0.1 --port 4327",
     "build": "astro build && node scripts/validate-build.mjs",
     "preview": "astro preview --host 127.0.0.1 --port 4327",
-    "check": "astro check"
+    "check": "astro check",
+    "deploy:cloudflare": "pnpm check && pnpm build && node scripts/deploy-cloudflare.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "5.2.9",

@@ -1,6 +1,6 @@
-# AI Film Journal
+# Latent Matinee
 
-Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone Astro static website published through Sites.
+Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone Astro static website published at https://latentmatinee.com on Cloudflare Pages (project latent-matinee).
 
 ## Content
 
@@ -22,9 +22,10 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 
 ## Publishing
 
-- Reuse .openai/hosting.json project_id and the Sites source repository. Never create a replacement Site.
-- Preserve the current audience. No public access or new viewers without explicit user instruction.
-- Accepted content must be saved in this checkout and summarized in README.md. Validate and commit it, push to GitHub origin, then push the exact same commit to the sites remote. Use the Sites building/hosting skills to package verified static dist output and save/deploy that commit. Hosting failure must not leave accepted content only in a private inbox; retain the validated repo/GitHub update and report publication pending.
+- The site is public at https://latentmatinee.com. Reuse the existing Cloudflare Pages project latent-matinee and its custom domains. Never create a replacement project or change domain, DNS or access settings without explicit user instruction.
+- Accepted content must be saved in this checkout and summarized in README.md. Validate and commit it, push to GitHub origin, then deploy that exact commit with pnpm deploy:cloudflare (runs check, build and the link/asset validation, then uploads dist/). Deploy from a clean working tree only. Hosting failure must not leave accepted content only in a private inbox; retain the validated repo/GitHub update and report publication pending.
+- Cloudflare credentials (CLOUDFLARE_TOKEN, CLOUDFLARE_ACCOUNT_ID) live in the git-ignored .env. Never print, log or commit them.
+- The former Sites deployment (.openai/hosting.json, sites remote) is retired; do not push or deploy there.
 - Keep credentials out of files, logs, and Git. Do not overwrite or commit unrelated user changes. On concurrent local edits, stop the refresh and report the conflict.
 
 ## Inclusion with incomplete disclosures
