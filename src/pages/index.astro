@@ -4,15 +4,15 @@ import FilmCard from '../components/FilmCard.astro';
 import ArtistCard from '../components/ArtistCard.astro';
 import Rail from '../components/Rail.astro';
 import PlayIcon from '../components/PlayIcon.astro';
-import { catalog, news, minutes, embedOf, genresOf, genreGroups, hostOf, shortDate, displayDate, statusKey, statusLabel } from '../lib/catalog';
+import { catalog, news, imageWidth, minutes, embedOf, genresOf, genreGroups, hostOf, shortDate, displayDate, statusKey, statusLabel } from '../lib/catalog';
 
 const c = await catalog();
 const feed = await news();
 const { films, artistOf, isNew } = c;
 
 // Everything on this page is ordered by date added, so daily additions move every section.
-// The newest films always lead; posters are cropped to fill the frame like stills.
-const withArt = films.filter((f) => f.data.image);
+// The newest films with artwork sharp enough to fill the frame lead; posters are cropped like stills.
+const withArt = films.filter((f) => imageWidth(f.data.image) >= 1200);
 const featured = withArt.find((f) => f.data.featured);
 const slides = withArt.slice(0, 5);
 if (featured && !slides.includes(featured)) slides.splice(4, 1, featured);

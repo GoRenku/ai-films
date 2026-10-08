@@ -41,7 +41,7 @@ Palette and typography adapted from the existing studio website. Fraunces is pro
 
 Every page is derived from the content collections; no section is hand-curated. src/lib/catalog.ts holds the shared rules:
 
-- The homepage hero always shows the five newest films with artwork (a `featured` film keeps a slot). Posters (`imageFit: contain`) are cropped full-bleed like stills in the hero only; cards and film pages still show the whole poster; rails for Just added, Watch now, Coming soon & festivals, Features, Series and Artists to follow sort by `discoveredAt` and skip films already shown above them. Daily additions therefore move the whole page.
+- The homepage hero shows the five newest films whose artwork is at least 1200px wide (read from the image header at build time), so full-bleed slides stay sharp; a `featured` film keeps a slot. Lower-resolution artwork such as 480px video thumbnails still leads the Just added rail. Posters (`imageFit: contain`) are cropped full-bleed like stills in the hero only; cards and film pages still show the whole poster. Sourcing larger official artwork gets a film into the hero; rails for Just added, Watch now, Coming soon & festivals, Features, Series and Artists to follow sort by `discoveredAt` and skip films already shown above them. Daily additions therefore move the whole page.
 - “New” badges cover the last three days of additions; the weekly tally covers seven, both measured from the newest content date rather than the build date.
 - Free-text `genre` stays editorial. Ten broad genre groups are derived from it by keyword for browsing and filters; extend the patterns rather than adding a frontmatter field.
 - YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.
@@ -186,10 +186,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 ### October 8, 2026 — new worlds and festival winners
 
 - Added [JUNKYARD KING — The Other Side](content/films/junkyard-king-the-other-side.md): complete Chapter 3 playback, original artwork, series authorship and scoped collaboration/support disclosures; Henry Daubrez’s announcement reconciled.
-- Added [Asiri Ilu Awon Osu](content/films/asiri-ilu-awon-osu.md) and Mysterious Tech Studio / Tanwa Hameed: two official rental listings, inspected artwork, director/producer/cast credits, attributed hybrid-production account and qualified paid availability.
 - Added The First Honest Day / Nikolay Shestak, SITARA / Abhik Banerjee and Looking For Perseida / Ernest Desumbila: official AAIFF results, original creator evidence, artwork, editorial context and scoped production disclosures; no complete-stream claims.
 - Updated Pomegranate’s Best Concept recognition and Gods Don’t Give Gifts’ reported runtime / awards-plan context.
 - [What’s New note](content/updates/2026-10-08-new-worlds-and-festival-winners.md) surfaces the additions and substantive updates. Packages, lockfile and release-age policy unchanged.
+- Editorial removal: Asiri Ilu Awon Osu and its Mysterious Tech Studio / Tanwa Hameed profile were withdrawn at the editor’s direction the same day and recorded as an exclusion in docs/research-watchlist.md.
 
 ### October 8, 2026 hero layout correction
 

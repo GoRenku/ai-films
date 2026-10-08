@@ -36,7 +36,7 @@ Didi OK (Waste to Energy, Candy, Website), Joss Monzoni (The Fall), Zack London 
 
 ## Announcements / pending research
 
-The public projects-to-follow journal note covers Touch Grass, Kira (Damien Steck and Julien Petit), Space Nation (Martin Weisz), Misaligned (Eline van der Velden / Particle6), The Dwarka Project (Samraddhi Jain is a story/concept contributor, not a verified director), Sibiloi (Edwin Kiaraho and Dan Kairo; partial adaptation), and Asiri Ilu Awon Osu (Mysterious Tech Studio / Tanwa Hameed; primary complete-film source unresolved).
+The public projects-to-follow journal note covers Touch Grass, Kira (Damien Steck and Julien Petit), Space Nation (Martin Weisz), Misaligned (Eline van der Velden / Particle6), The Dwarka Project (Samraddhi Jain is a story/concept contributor, not a verified director), and Sibiloi (Edwin Kiaraho and Dan Kairo; partial adaptation).
 
 - Hardcore 94 — Dave Clark / Promise: retain as a development lead. Verify the original production announcement, MetaPuppet co-direction, Ivan Rome writing credit, and any completed pilot before a film record. Public lead: https://www.sinemalar.com/haber/13777/dave-clark-ve-promise-yapay-zeka-ile-hollywood-un-sinirlari-zorlaniyor .
 - Three Guns at Dawn — Paul Schrader: earlier screenplay and recent AI-production reports are not proof of a completed AI film. Recover the original current interview/announcement before publication. Earlier first-person interview: https://www.lemonde.fr/en/culture/article/2024/01/02/filmmaker-paul-schrader-if-i-am-gonna-make-a-film-about-dying-i-better-hurry-up_6396644_30.html .
@@ -54,6 +54,8 @@ The public projects-to-follow journal note covers Touch Grass, Kira (Damien Stec
 - Didi OK: full Candy making-of and Website-specific tool disclosures remain open; do not copy Waste to Energy’s workflow across films.
 
 ## Not selected as completed AI films
+
+Asiri Ilu Awon Osu — Mystery of Osu Land and Mysterious Tech Studio / Tanwa Hameed: excluded on October 8, 2026 by the editor’s decision after briefly being published. It does not meet the collection’s editorial bar. Do not re-add the film, its parts or the studio/producer profile, and treat future mentions as already reviewed.
 
 ONEIRIC remains a vendor demonstration lead rather than a curated narrative-film entry. Lost Calls, Hexi Corridor and China were contextual/traditional-film references; do not convert them into AI film records without film-specific evidence.
 
@@ -200,11 +202,10 @@ Alex Patrascu's distinct Bruce McLaren documentary thread and 9:32 playback chec
 
 ## October 8 completed research
 
-October 8’s completed weekly report reconciles through canonical film/artist records: Asiri Ilu Awon Osu, The First Honest Day, SITARA and Looking For Perseida are accepted with original exhibition/release evidence; Gods Don’t Give Gifts adds attributed runtime reporting and the studio’s awards submission plan without claiming Academy acceptance. AAIFF’s own Instagram results and nominee descriptions were read, then creator profiles, posters, portfolio and production statements checked. Pomegranate’s Best Concept result is additionally verified against the original festival post. Optional missing tools or crew do not delay publication.
+October 8’s completed weekly report reconciles through canonical film/artist records: The First Honest Day, SITARA and Looking For Perseida are accepted with original exhibition/release evidence; Gods Don’t Give Gifts adds attributed runtime reporting and the studio’s awards submission plan without claiming Academy acceptance. AAIFF’s own Instagram results and nominee descriptions were read, then creator profiles, posters, portfolio and production statements checked. Pomegranate’s Best Concept result is additionally verified against the original festival post. Optional missing tools or crew do not delay publication.
 
 JUNKYARD KING Chapter 3’s creator-linked 4K release plays for 16:04 and its full description establishes series creator and ODD KID credit. @juliewdesign_ is named as a team member; precise role unknown. InVideo support does not establish an exact model/version inventory. Chris Miller and Phil Lord receive inspiration thanks, not crew credits.
 
-Asiri’s official rental artwork supplies Tanwa Hammed’s producer credit and directors Adeniyi Bukola / Yusuf Ahmad. Two listing durations total 2:33:04, so the older reported over-three-hour figure is not adopted. Paid streaming untested; no purchase or signup. Tribune’s quoted joint statement was accessible in the browser despite the research fetch returning 403. Docuth’s creator page redirects to sign-in, but film pages, cast and artwork are public. Historical September note reconciled.
 
 All 30 previously verified X profiles were checked. Reposts, platform promotions, short model comparisons and excerpts of already covered narratives do not become new film cards. No verified X profiles are guessed for the four new creator records. No linked scripts, skills or workflow packages were run; no dependencies installed or upgraded. Full critical viewing is not claimed.
 

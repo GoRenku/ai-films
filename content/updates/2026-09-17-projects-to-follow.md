@@ -27,6 +27,4 @@ Kira’s [reported announcement](https://malaysia.news.yahoo.com/ai-sci-fi-serie
 
 **Sibiloi — Edwin Kiaraho / Dan Kairo.** In their published interview, the filmmakers describe a ten-minute adaptation of the novel’s first two chapters. That is a partial adaptation, not a completed feature. The original upload and film-specific workflow remain to be checked.
 
-**Asiri Ilu Awon Osu — Mysterious Tech Studio / Tanwa Hameed.** This September note is superseded by the [film record](/films/asiri-ilu-awon-osu/), added October 8 with official two-part rental listings, release artwork and named director/producer credits. Paid playback remains untested. Promotional “world first” claims are not treated as established history.
-
 Each lead needs evidence of the finished work, identifiable authorship and an editorial reason for inclusion before being promoted into the main collection.

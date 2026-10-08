@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { readFileSync } from 'node:fs';
 
 export type Film = CollectionEntry<'films'>;
 export type Artist = CollectionEntry<'artists'>;
@@ -39,6 +40,36 @@ export function embedOf(url?: string) {
 export function hostOf(url: string) {
   const host = new URL(url).hostname.replace(/^www\./, '');
   return ({ 'youtube.com': 'YouTube', 'youtu.be': 'YouTube', 'vimeo.com': 'Vimeo', 'x.com': 'X', 'primevideo.com': 'Prime Video', 'bilibili.com': 'Bilibili', 'linkedin.com': 'LinkedIn' } as Record<string, string>)[host] ?? host;
+}
+
+/** Pixel width of a JPEG, PNG or WebP in public/, read from its header; 0 when unknown. */
+export function imageWidth(src?: string) {
+  if (!src) return 0;
+  let b: Uint8Array;
+  try {
+    b = readFileSync(new URL(`../../public${src}`, import.meta.url));
+  } catch {
+    return 0;
+  }
+  const v = new DataView(b.buffer, b.byteOffset, b.byteLength);
+  const ascii = (from: number, to: number) => String.fromCharCode(...b.subarray(from, to));
+  if (v.getUint32(0) === 0x89504e47) return v.getUint32(16);
+  if (ascii(0, 4) === 'RIFF' && ascii(8, 12) === 'WEBP') {
+    const chunk = ascii(12, 16);
+    if (chunk === 'VP8 ') return v.getUint16(26, true) & 0x3fff;
+    if (chunk === 'VP8L') return 1 + (((b[22] & 0x3f) << 8) | b[21]);
+    if (chunk === 'VP8X') return 1 + (b[24] | (b[25] << 8) | (b[26] << 16));
+    return 0;
+  }
+  if (b[0] === 0xff && b[1] === 0xd8) {
+    for (let i = 2; i < b.length - 9; ) {
+      if (b[i] !== 0xff) { i++; continue; }
+      const marker = b[i + 1];
+      if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) return v.getUint16(i + 7);
+      i += 2 + v.getUint16(i + 2);
+    }
+  }
+  return 0;
 }
 
 const DAY = 86_400_000;
