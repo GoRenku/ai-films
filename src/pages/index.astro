@@ -45,7 +45,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
 ---
 <Layout overlay>
   <section class="hero" aria-roledescription="carousel" aria-label="Newest films">
-    <h1 class="sr-only">AI Film Journal — new AI cinema, updated daily</h1>
+    <h1 class="sr-only">Latent Matinee — new AI cinema, updated daily</h1>
     {slides.map((film, i) => {
       const d = film.data;
       const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;

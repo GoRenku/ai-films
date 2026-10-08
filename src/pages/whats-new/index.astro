@@ -8,7 +8,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
 const tally = (k: string) => week.filter((n) => n.kind === k).length;
 const label = { Film: 'New film', Artist: 'New artist', Journal: 'Journal' };
 ---
-<Layout title="Latest" description="The latest films, filmmakers and editorial updates added to AI Film Journal.">
+<Layout title="Latest" description="The latest films, filmmakers and editorial updates added to Latent Matinee.">
   <header class="page-hero">
     <h1>Latest</h1>
     <p class="page-sub">Everything added to the journal, newest first. Dates show when it joined the collection.</p>

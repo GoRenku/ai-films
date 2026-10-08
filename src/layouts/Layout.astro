@@ -3,7 +3,8 @@ import '@fontsource-variable/fraunces/opsz.css';
 import '@fontsource-variable/fraunces/opsz-italic.css';
 import '../styles/global.css';
 import { catalog, shortDate } from '../lib/catalog';
-const { title = 'AI Film Journal', description = 'An ongoing collection of films, artists and new possibilities in AI cinema.', overlay = false } = Astro.props;
+const site = 'Latent Matinee';
+const { title = site, description = 'An ongoing collection of films, artists and new possibilities in AI cinema.', overlay = false } = Astro.props;
 const path = Astro.url.pathname;
 const { latest, films, artists } = await catalog();
 const nav = [
@@ -21,14 +22,19 @@ const nav = [
     <meta name="description" content={description} />
     <meta name="theme-color" content="#0c0b09" />
     <link rel="icon" href="/favicon.svg" />
-    <title>{title === 'AI Film Journal' ? title : `${title} — AI Film Journal`}</title>
+    <title>{title === site ? title : `${title} — ${site}`}</title>
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <meta property="og:site_name" content={site} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={new URL(path, Astro.site)} />
     <script is:inline>document.documentElement.classList.add('js')</script>
   </head>
   <body class:list={{ overlay }}>
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="/" aria-label="AI Film Journal home"><span class="brand-mark">aı<span>•</span></span><span class="brand-word">Film Journal</span></a>
+        <a class="brand" href="/" aria-label="Latent Matinee home"><span class="brand-mark">lm<span>•</span></span><span class="brand-word">Latent Matinee</span></a>
         <nav aria-label="Main navigation">
           {nav.map(([label, href]) => <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>{label}</a>)}
         </nav>
@@ -39,7 +45,7 @@ const nav = [
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <a class="footer-brand" href="/">AI Film Journal<span class="dot">●</span></a>
+          <a class="footer-brand" href="/">Latent Matinee<span class="dot">●</span></a>
           <p class="footer-line">Films worth watching. <em>Artists worth following.</em></p>
         </div>
         <nav aria-label="Footer">
