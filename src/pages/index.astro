@@ -47,7 +47,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
       const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
       const artist = artistOf(film);
       return (
-        <article class:list={['slide', d.imageFit === 'contain' && 'is-contain']} data-active={i === 0 ? '' : undefined} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
+        <article class:list={['slide', d.imageFit === 'contain' && 'is-contain', d.title.length > 32 && 'has-long-title']} data-active={i === 0 ? '' : undefined} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
           <div class="slide-bg"><img src={d.image} alt={d.imageAlt} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} width="1600" height="900" /></div>
           <div class="slide-body">
             <p class="slide-kicker">
@@ -71,7 +71,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
     })}
     <div class="hero-index" role="tablist" aria-label="Choose a film">
       {slides.map((film, i) => (
-        <button type="button" role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-slide={i}>
+        <button type="button" role="tab" aria-label={`0${i + 1} ${film.data.title}`} aria-selected={i === 0 ? 'true' : 'false'} data-slide={i}>
           <span class="bar"><i></i></span>
           <span class="hero-index-num">0{i + 1}</span>
           <span class="hero-index-title">{film.data.title}</span>

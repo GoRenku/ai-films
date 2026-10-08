@@ -189,3 +189,8 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added The First Honest Day / Nikolay Shestak, SITARA / Abhik Banerjee and Looking For Perseida / Ernest Desumbila: official AAIFF results, original creator evidence, artwork, editorial context and scoped production disclosures; no complete-stream claims.
 - Updated Pomegranate’s Best Concept recognition and Gods Don’t Give Gifts’ reported runtime / awards-plan context.
 - [What’s New note](content/updates/2026-10-08-new-worlds-and-festival-winners.md) surfaces the additions and substantive updates. Packages, lockfile and release-age policy unchanged.
+
+### October 8, 2026 hero layout correction
+
+- Fixed a shared poster rule that overrode the homepage hero positioning. Contained artwork now occupies a separate column, with a stacked layout on mobile.
+- Long titles use a smaller display size, and the carousel reserves enough height for its largest slide so text, artwork and controls do not overlap.
