@@ -11,8 +11,10 @@ const feed = await news();
 const { films, artistOf, isNew } = c;
 
 // Everything on this page is ordered by date added, so daily additions move every section.
-const featured = films.find((f) => f.data.featured && f.data.image);
-const slides = [...films.filter((f) => f.data.image).slice(0, 5)];
+// The hero needs full-frame stills; poster-only films lead the Just added rail instead.
+const stills = films.filter((f) => f.data.image && f.data.imageFit !== 'contain');
+const featured = stills.find((f) => f.data.featured);
+const slides = stills.slice(0, 5);
 if (featured && !slides.includes(featured)) slides.splice(4, 1, featured);
 // Each row skips what the rows above it already show, so the page never repeats itself.
 const seen = new Set(slides.map((f) => f.id));

@@ -41,7 +41,7 @@ Palette and typography adapted from the existing studio website. Fraunces is pro
 
 Every page is derived from the content collections; no section is hand-curated. src/lib/catalog.ts holds the shared rules:
 
-- The homepage hero shows the five newest films with artwork (a `featured` film keeps a slot); rails for Just added, Watch now, Coming soon & festivals, Features, Series and Artists to follow sort by `discoveredAt` and skip films already shown above them. Daily additions therefore move the whole page.
+- The homepage hero shows the five newest films with full-frame stills (`imageFit: cover`; a `featured` film keeps a slot). Poster-only films (`imageFit: contain`) lead the Just added rail instead, since a poster cannot fill a widescreen frame; rails for Just added, Watch now, Coming soon & festivals, Features, Series and Artists to follow sort by `discoveredAt` and skip films already shown above them. Daily additions therefore move the whole page.
 - “New” badges cover the last three days of additions; the weekly tally covers seven, both measured from the newest content date rather than the build date.
 - Free-text `genre` stays editorial. Ten broad genre groups are derived from it by keyword for browsing and filters; extend the patterns rather than adding a frontmatter field.
 - YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.
