@@ -7,9 +7,9 @@ format: "Short film"
 genre: "Speculative drama"
 status: "Released"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-10-08"
 order: 55
-sources: [{"label": "Official film / credits", "url": "https://www.linkedin.com/posts/gossip-goblin-inc_pomegranate-premiering-july-22nd-watch-activity-7485367423496450048-purz"}, {"label": "Original full-film link — private at time of check", "url": "https://www.youtube.com/watch?v=fyZhC2TXgcs"}]
+sources: [{"label": "AAIFF \u2014 Best Concept winner", "url": "https://www.instagram.com/aaiff.ai/p/DeCfBOXCPv0/"}, {"label": "Official film / credits", "url": "https://www.linkedin.com/posts/gossip-goblin-inc_pomegranate-premiering-july-22nd-watch-activity-7485367423496450048-purz"}, {"label": "Original full-film link — private at time of check", "url": "https://www.youtube.com/watch?v=fyZhC2TXgcs"}]
 production: []
 image: "/media/pomegranate.jpg"
 imageAlt: "Three pale, pointed-eared figures with luminous eyes in Pomegranate"
@@ -24,3 +24,7 @@ Gossip Goblin announced the film for July 22, 2026. Its original full-film YouTu
 Abundance becomes the dramatic problem: if a character can experience almost anything, what could still matter? That gives the elaborate imagined worlds an emotional purpose and places the emphasis on weariness, desire and the rhythm of conversation.
 
 It belongs alongside [The Patchwright](/films/the-patchwright/) and the announced feature [Gods Don’t Give Gifts](/films/gods-dont-give-gifts/). Production details from those other works are not automatically transferred to this one.
+
+## Festival recognition
+
+[AAIFF’s original winner announcement](https://www.instagram.com/aaiff.ai/p/DeCfBOXCPv0/) names **Zachary London — Pomegranate** as its 2026 Best Concept recipient. This is a work-specific award, not a claim about the forthcoming feature’s eligibility or reception. The original YouTube link was rechecked separately; current viewing access remains qualified above.

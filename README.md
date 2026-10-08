@@ -181,3 +181,11 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [The Chronicles of Bone](content/films/chronicles-of-bone.md): Chapter Six full release and platform disclosure, separated from older models.
 - [Gods Don’t Give Gifts](content/films/gods-dont-give-gifts.md): official trailer’s December 4 date and scoped team/duration disclosure; venues unverified.
 - [What’s New note](content/updates/2026-10-07-staging-ensembles-and-editing.md): additions and Alex Patrascu’s Bruce McLaren documentary craft account, distinguishing archive, illustration, synthetic narration and human corrections. Packages and lockfile unchanged.
+
+### October 8, 2026 — new worlds and festival winners
+
+- Added [JUNKYARD KING — The Other Side](content/films/junkyard-king-the-other-side.md): complete Chapter 3 playback, original artwork, series authorship and scoped collaboration/support disclosures; Henry Daubrez’s announcement reconciled.
+- Added [Asiri Ilu Awon Osu](content/films/asiri-ilu-awon-osu.md) and Mysterious Tech Studio / Tanwa Hameed: two official rental listings, inspected artwork, director/producer/cast credits, attributed hybrid-production account and qualified paid availability.
+- Added The First Honest Day / Nikolay Shestak, SITARA / Abhik Banerjee and Looking For Perseida / Ernest Desumbila: official AAIFF results, original creator evidence, artwork, editorial context and scoped production disclosures; no complete-stream claims.
+- Updated Pomegranate’s Best Concept recognition and Gods Don’t Give Gifts’ reported runtime / awards-plan context.
+- [What’s New note](content/updates/2026-10-08-new-worlds-and-festival-winners.md) surfaces the additions and substantive updates. Packages, lockfile and release-age policy unchanged.

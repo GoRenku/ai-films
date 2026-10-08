@@ -10,8 +10,12 @@ watchUrl: "https://godsdontgivegifts.com/"
 watchLabel: "Official film & screening updates"
 order: 5
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-07"
+lastVerifiedAt: "2026-10-08"
 sources:
+  - label: "Fable Showrunner — awards submission plan"
+    url: "https://x.com/fableshowrunner/status/2108003714480971875"
+  - label: "More Horror — reported release runtime"
+    url: "https://www.morehorror.com/post/gods-dont-give-gifts-ai-generated-horror-movie"
   - label: "Official October 6 trailer — December 4 announcement"
     url: "https://www.youtube.com/watch?v=1G5LArU7tmE"
   - label: "October 7 production scope"
@@ -51,7 +55,7 @@ Those are reasons to follow the release closely, not a verdict on a film we have
 
 ## What remains undisclosed here
 
-A verified final runtime, complete named crew list and feature-specific model breakdown are not yet recorded. Tools used in London's earlier shorts should not automatically be attributed to this feature.
+A complete named crew list and feature-specific model breakdown are not yet recorded. Tools used in London's earlier shorts should not automatically be attributed to this feature.
 
 ## First teaser
 
@@ -62,3 +66,9 @@ Gossip Goblin released the [first teaser on September 28](https://x.com/Gossip_G
 The [October 7 maker disclosure](https://x.com/Gossip_Goblin/status/2107741745358508486) makes the human production scope clearer: writers, voice performers, composers, core creatives and post-production specialists, including foley, worked over more than nine months. Separate counts are preserved above without assuming every category contains different people.
 
 The [new official trailer](https://www.youtube.com/watch?v=1G5LArU7tmE) describes four interconnected stories on Niiro Cradle, where consciousness is commodified and bodies disposable. It provides a fuller preview than September's first teaser. The feature remains forthcoming; trailer access is not full-film access.
+
+## Reported runtime and awards plan
+
+[More Horror’s October 7 release coverage](https://www.morehorror.com/post/gods-dont-give-gifts-ai-generated-horror-movie) lists a **107-minute** runtime. This is a reported release specification, not a runtime measured from a complete film supplied to the journal.
+
+[Fable Showrunner’s public announcement](https://x.com/fableshowrunner/status/2108003714480971875) says the team is submitting for the Best Animated Feature Oscar. This describes an awards plan, not a nomination, Academy acceptance or independently verified qualification. December 4 remains the announced date, and the official site still has no individual cinema bookings listed.
