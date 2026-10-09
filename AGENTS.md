@@ -13,6 +13,13 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 - Only change lastVerifiedAt when the underlying sources were actually checked. Only add a journal note for a substantive discovery or change.
 - Run pnpm check and pnpm build. The build includes a generated-page link and asset check. Missing collection references must fail the build.
 
+## Scheduled refresh scope
+
+- Scheduled editorial refreshes are content-only: edit canonical film, artist and journal Markdown, properly credited real assets in public/media/, README refresh summaries and docs/research-watchlist.md editorial notes. Keep intake/tracking outside public Git.
+- Do not change src/, CSS, templates, components, layouts, scripts, package files, lockfiles, deployment configuration, headers or fonts during a refresh. Do not repair or redesign the layout as part of content work.
+- If content exposes a layout issue or requires a schema/code change, report the precise issue for a separate explicitly requested task. Review the changed-file list before committing or deploying and stop on unrelated edits or changes outside this content scope.
+- Do not install or upgrade dependencies during scheduled refreshes. If required existing dependencies are unavailable, report the concrete failure while preserving the seven-day release gate.
+
 ## Dependencies
 
 - Use the pinned pnpm 11.7.0 and committed lockfile. Use pnpm install --frozen-lockfile for routine installs.

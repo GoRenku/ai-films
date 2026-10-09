@@ -39,6 +39,8 @@ Copy a relevant existing file to add an entry. Slugs are stable filenames. Recor
 
 Two daily Codex follow-ups work in sequence: an 11:00 Europe/Madrid X discovery review supplies a private queue; the 13:00 editorial refresh reads it alongside AI Film Director Watch, monitors verified artist accounts, verifies discoveries against original sources, updates Markdown and publishes meaningful changes. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
 
+Scheduled editorial refreshes are content-only: Markdown entries, credited media, refresh summaries and editorial research notes. They must not change CSS, templates, layouts, application code, deployment configuration or dependencies. Layout issues require a separate explicitly requested task. Publication uses the existing `pnpm deploy:cloudflare` command; the former Sites target is retired.
+
 ## Package safety
 
 pnpm-workspace.yaml enforces a seven-day release age, strict release metadata checks, no missing timestamps, and restrictions on exotic transitive dependencies. All direct dependencies and the package manager are pinned. The lockfile is committed. Dependency scripts are denied unless explicitly allowed; esbuild is the sole allowed build script.
