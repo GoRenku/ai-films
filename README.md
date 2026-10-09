@@ -207,3 +207,11 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 
 - Fixed a shared poster rule that overrode the homepage hero positioning. Poster artwork now fills the hero full-bleed like a still, with a darker scrim behind the title.
 - Long titles use a smaller display size. The hero keeps its full-bleed, fixed-height cinematic layout rather than a two-column grid.
+
+### October 9, 2026 — continuing worlds
+
+- Added [Wendy’s Wonderful Dreamworld](content/films/wendys-wonderful-dreamworld.md) and [Christopher Gwinn / Grindhouse Glitch](content/artists/christopher-gwinn.md): three-episode context, verified full Episode 3 playback, inspected official artwork, verified X identity and episode-specific tool disclosures.
+- Updated [Morgue Cat](content/films/morgue-cat.md) and Absurd’s profile with the October 8 Episode 2 release; earlier production evidence stays scoped to the project.
+- [What’s New note](content/updates/2026-10-09-dreamworld-and-morgue-cat.md) surfaces the additions and release update. Application files, layout and dependencies unchanged.
+- Also added [Apocalypses, Connections and Delays](content/films/apocalypses-connections-and-delays.md) and [Foka’s Planet](content/films/fokas-planet.md), with original full releases, inspected artwork and work-specific production unknowns; expanded Daniił Vołkaŭ’s profile.
+- Clarified @juliewdesign_’s second-visual-artist role on JUNKYARD KING Chapter 3 against the maker’s direct episode-thread credit.

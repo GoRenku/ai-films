@@ -210,3 +210,13 @@ JUNKYARD KING Chapter 3’s creator-linked 4K release plays for 16:04 and its fu
 All 30 previously verified X profiles were checked. Reposts, platform promotions, short model comparisons and excerpts of already covered narratives do not become new film cards. No verified X profiles are guessed for the four new creator records. No linked scripts, skills or workflow packages were run; no dependencies installed or upgraded. Full critical viewing is not claimed.
 
 Punch’s October 8 original report was read fully in the signed-in browser; its quoted studio notice establishes premiere-time access failures and a repair effort, not confirmed resolution. The film entry now preserves that qualification.
+
+## October 9 completed research
+
+Wendy’s Wonderful Dreamworld / Christopher Gwinn / Grindhouse Glitch accepted: creator-linked full Episode 3 playback (4:07), original expanded description, inspected official artwork, verified X identity and earlier episode context. Exact Episode 3 image/video/audio tools preserved, with creator-program disclosure. Missing crew, budget and tool versions remain unknown.
+
+All 30 existing verified artist/project X profiles were checked. Morgue Cat Episode 2 has original full 3:51 playback, October 8 release and Episode 1 link; film and studio profile updated without transferring project-wide production evidence to an individual episode. JUNKYARD KING’s October 6 direct reply identifies @juliewdesign_ as second visual artist; prior role uncertainty resolved.
+
+Apocalypses, Connections and Delays and Foka’s Planet accepted from Vołkaŭ’s original catalogue and release posts, with full descriptions, playback (9:57 / 4:26) and inspected official thumbnails. Apocalypses premiered September 8; today’s X share is not a new premiere. Three numbered episodes are listed on the original channel, without a completed-season claim. Foka’s Planet premiered October 8. Character names in the fantasy series description are not human performer credits. No models, team totals or costs transferred between works.
+
+Contanimation’s October 9 next-episode teaser is excluded as a new film entry: it announces a forthcoming second anthology instalment without a verified title or complete release. Dave Clark’s Cleaner 3 post explicitly describes a model experiment and asks whether to make a sequel; excluded as an isolated test, not a verified released sequel. Current image-model launches, promotional prompts, excerpts and reposts do not become narrative entries. The latest completed Watch report remains October 8, already reconciled; the editor’s Asiri removal is preserved. No full critical viewing of these series is claimed.
