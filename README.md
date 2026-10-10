@@ -215,3 +215,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - [What’s New note](content/updates/2026-10-09-dreamworld-and-morgue-cat.md) surfaces the additions and release update. Application files, layout and dependencies unchanged.
 - Also added [Apocalypses, Connections and Delays](content/films/apocalypses-connections-and-delays.md) and [Foka’s Planet](content/films/fokas-planet.md), with original full releases, inspected artwork and work-specific production unknowns; expanded Daniił Vołkaŭ’s profile.
 - Clarified @juliewdesign_’s second-visual-artist role on JUNKYARD KING Chapter 3 against the maker’s direct episode-thread credit.
+
+### October 10, 2026 — choices and compositions
+
+- Added [KARMA](content/films/karma.md), Joss Monzoni’s October 10 horror short, with verified full playback and original artwork.
+- Added [What is Real?](content/films/what-is-real.md) and [Kennex Ma](content/artists/kennex-ma.md): official festival release, category-specific Grand Prix and direct interview production disclosures. An older release newly discovered, not a new premiere.
+- Updated Henry Daubrez with his exact Seedance 2.5 poster-composition technique and Jenny Krakovsky with the complete new Slop and Glory interview.
+- [Dated note](content/updates/2026-10-10-choices-and-compositions.md) surfaces the additions. No layout, application, deployment or dependency changes.
