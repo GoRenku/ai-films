@@ -222,3 +222,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added [What is Real?](content/films/what-is-real.md) and [Kennex Ma](content/artists/kennex-ma.md): official festival release, category-specific Grand Prix and direct interview production disclosures. An older release newly discovered, not a new premiere.
 - Updated Henry Daubrez with his exact Seedance 2.5 poster-composition technique and Jenny Krakovsky with the complete new Slop and Glory interview.
 - [Dated note](content/updates/2026-10-10-choices-and-compositions.md) surfaces the additions. No layout, application, deployment or dependency changes.
+
+### October 11, 2026 — planning shots and carrying proof
+
+- Added [Witchcraft](content/films/witchcraft.md) and [Crop Confidential](content/films/crop-confidential.md), with full original releases (3:18 / 5:33), inspected artwork and September dates distinguished from October X excerpts.
+- Updated Henry Daubrez’s artist profile with his direct Claude Code / Opus / Three.js previs disclosure; no assumed episode credit or savings.
+- Expanded Backrooms Nemoris and Javi Lopez with direct interview evidence on manual prompts, continuous handheld sequences and layered sound editing.
+- [Dated note](content/updates/2026-10-11-planning-shots-and-carrying-proof.md) also covers the official Higgsfield shortlist and voting deadline. No layout, application, deployment or dependency changes.
