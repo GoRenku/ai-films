@@ -6,8 +6,8 @@ focus: "Serial science fiction, memory and institutional absurdity"
 website: "https://daniilvolkau.myportfolio.com"
 x: {"url": "https://x.com/machina9000", "label": "Daniił Vołkaŭ on X", "source": "https://x.com/machina9000/status/2107086771066441933"}
 discoveredAt: "2026-10-06"
-lastVerifiedAt: "2026-10-11"
-sources: [{"label": "Original video catalogue", "url": "https://www.youtube.com/@DaniilVolkau/videos"}, {"label": "Creator portfolio", "url": "https://daniilvolkau.myportfolio.com"}, {"label": "Original HOLED release", "url": "https://www.youtube.com/watch?v=85nLjDZ0TBE"}, {"label": "Creator feature announcement", "url": "https://x.com/machina9000/status/2082083889762226638"}, {"label": "Apocalypses — Episode 1", "url": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}, {"label": "Foka’s Planet — Episode 1", "url": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}, {"label": "Witchcraft — complete release", "url": "https://www.youtube.com/watch?v=A04YX5UMVMY"}, {"label": "Crop Confidential — complete release", "url": "https://www.youtube.com/watch?v=hD105vi7Qos"}]
+lastVerifiedAt: "2026-10-12"
+sources: [{"label": "Original video catalogue", "url": "https://www.youtube.com/@DaniilVolkau/videos"}, {"label": "Creator portfolio", "url": "https://daniilvolkau.myportfolio.com"}, {"label": "Original HOLED release", "url": "https://www.youtube.com/watch?v=85nLjDZ0TBE"}, {"label": "Creator feature announcement", "url": "https://x.com/machina9000/status/2082083889762226638"}, {"label": "Apocalypses — Episode 1", "url": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}, {"label": "Foka’s Planet — Episode 1", "url": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}, {"label": "Witchcraft — complete release", "url": "https://www.youtube.com/watch?v=A04YX5UMVMY"}, {"label": "Crop Confidential — complete release", "url": "https://www.youtube.com/watch?v=hD105vi7Qos"}, {"label": "Iron Orchids — original complete release", "url": "https://www.youtube.com/watch?v=ab-vgvwh5a4"}]
 ---
 
 Vołkaŭ publishes as **Daniil Volkau** and **machina9000** as well as the accented name on his YouTube channel. His X profile links that channel and his portfolio, establishing the connection without guessing an identity from a similar name.
@@ -27,3 +27,7 @@ The [71-minute feature announcement](https://x.com/machina9000/status/2082083889
 ## Fantasy transactions and surveillance
 
 [Witchcraft](/films/witchcraft/) puts a magically inflated bounty against an apothecary’s rules; [Crop Confidential](/films/crop-confidential/) follows evidence from a compromised farm into a watched building. Both are complete September releases shared again in October. Their different scales of suspense—an opportunistic transaction and a dangerous delivery—extend the catalogue beyond its recurring series, without inheriting those series’ production claims.
+
+## Mecha comedy at feature length
+
+[Iron Orchids](/films/iron-orchids/) joins the collection through its creator-linked 74:30 complete release. Its September 1 upload predates the October 12 share. The maker’s premise puts birthdays, delivery boundaries and group-chat obligations inside an elite mech squad’s wartime operations: another form of institutional comedy, with a recurring ensemble carrying a feature rather than a single visual joke.

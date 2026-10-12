@@ -6,8 +6,10 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-07"
+lastVerifiedAt: "2026-10-12"
 sources:
+  - label: "An Honest Day\u2019s Work \u2014 original release"
+    url: "https://x.com/Gossip_Goblin/status/2109301986189324775"
   - label: "Official trailer — December 4 announcement"
     url: "https://www.youtube.com/watch?v=1G5LArU7tmE"
   - label: "September 30 theatrical timing update"
@@ -35,3 +37,7 @@ The interesting thread is continuity: a filmmaker developing a world across mult
 [**Gods Don’t Give Gifts**](/films/gods-dont-give-gifts/) is now announced for **December 4, 2026**, in the studio’s October 6 official trailer description. The earlier October 30 date is no longer presented here as confirmed; individual cinema dates and venues remain unverified.
 
 This is a significant progression from online world-building to theatrical exhibition. The question is whether London's recurring universe can sustain a feature and persuade its online audience to buy cinema tickets. An announced release is a milestone, not yet evidence of box-office success or the finished film's quality.
+
+## A new chamber satire
+
+[An Honest Day’s Work](/films/an-honest-days-work/), posted by Gossip Goblin on October 11, is an approximately three-minute dialogue-led social satire about work, business and money. The ornate room and mechanical body put a futuristic economy inside an old language of privilege. The original release does not establish that it is an excerpt from Gods Don’t Give Gifts; its production details remain scoped separately.

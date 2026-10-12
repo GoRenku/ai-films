@@ -229,3 +229,11 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Updated Henry Daubrez’s artist profile with his direct Claude Code / Opus / Three.js previs disclosure; no assumed episode credit or savings.
 - Expanded Backrooms Nemoris and Javi Lopez with direct interview evidence on manual prompts, continuous handheld sequences and layered sound editing.
 - [Dated note](content/updates/2026-10-11-planning-shots-and-carrying-proof.md) also covers the official Higgsfield shortlist and voting deadline. No layout, application, deployment or dependency changes.
+
+### October 12, 2026 — mecha, money and musical choices
+
+- Added [Iron Orchids](content/films/iron-orchids.md): creator-linked 74:30 feature, original artwork, September release date and scoped Seedance / Dreamina disclosures.
+- Added [An Honest Day’s Work](content/films/an-honest-days-work.md): Gossip Goblin’s October 11 complete short, sampled narrative/captions, credited timestamped release frame and explicit production unknowns.
+- Added [Javier Fan / javiexmachina](content/artists/javiexmachina.md): authored music-video practice, original complete release and public Suno / Claude / Midjourney process, distinguishing development edits and conflicting counts from final production facts.
+- Updated Cracked Chimes with Anthony Jegu’s exact official September monthly-competition award; expanded the Vołkaŭ and London profiles.
+- [Dated note](content/updates/2026-10-12-mecha-money-and-musical-choices.md) surfaces the additions. No layout, application, deployment or dependency changes.
