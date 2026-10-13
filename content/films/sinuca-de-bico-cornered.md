@@ -15,8 +15,8 @@ imageCredit: "zero1cine originals / Nave Madre · official film artwork"
 imageSource: "https://ai.ofaleco.xyz/sinuca-de-bico-cornered"
 imageFit: "contain"
 discoveredAt: "2026-09-21"
-lastVerifiedAt: "2026-09-21"
-sources: [{"label": "Full film and credits", "url": "https://www.youtube.com/watch?v=HFuWPGTGUI4"}, {"label": "Director’s project page", "url": "https://ai.ofaleco.xyz/sinuca-de-bico-cornered"}, {"label": "BIAIFF — second place", "url": "https://www.biaiff.pl/"}, {"label": "Cinema Shift — narrative and audience awards", "url": "https://www.cinemashiftfestival.com/films"}]
+lastVerifiedAt: "2026-10-13"
+sources: [{"label": "Full film and credits", "url": "https://www.youtube.com/watch?v=HFuWPGTGUI4"}, {"label": "Director’s project page", "url": "https://ai.ofaleco.xyz/sinuca-de-bico-cornered"}, {"label": "BIAIFF — second place", "url": "https://www.biaiff.pl/"}, {"label": "Cinema Shift — narrative and audience awards", "url": "https://www.cinemashiftfestival.com/films"}, {"label": "Torino — official 2026 awards", "url": "https://www.tucfest.com/i-premi-del-torino-underground-cinefest-2026/"}]
 production: [{"label": "Writing and direction", "detail": "Written and directed by Odair Faléco; co-directed by Davi Moori.", "source": "https://www.youtube.com/watch?v=HFuWPGTGUI4"}, {"label": "Editing, sound and voice", "detail": "Davi Moori: edit and sound design. Odair Faléco: voice acting.", "source": "https://www.youtube.com/watch?v=HFuWPGTGUI4"}, {"label": "Image and motion credits", "detail": "The full release credits Odair Faléco and Rodrigo Ribeiro for AI cinematography, Bruno Piva for motion design, and Bruno Corrente / Pixo Reto for typography.", "source": "https://www.youtube.com/watch?v=HFuWPGTGUI4"}, {"label": "Production companies", "detail": "Produced by zero1cine originals; co-produced by Nave Madre. These credits are not a total crew count.", "source": "https://www.youtube.com/watch?v=HFuWPGTGUI4"}]
 ---
 
@@ -33,3 +33,7 @@ The named editing, sound and voice credits make the human creative division of l
 BIAIFF lists the film in **second place** at its September 17, 2026 edition. Cinema Shift’s official results name it **Best Narrative AI Film** and **Audience Choice Award** winner.
 
 The linked full release provides the credits above. Exact generation models, practical prompting techniques and a reconciled production budget remain unverified. The director’s project page groups some art/motion credits differently; the detailed credits here follow the full-film release description.
+
+## Torino recognition
+
+The [festival’s October 5 results](https://www.tucfest.com/i-premi-del-torino-underground-cinefest-2026/) confirm **Sinuca de Bico (Cornered), by Odair Faléco and Davi Moori**, won **Miglior Corto in IA** (Best AI Short) at the thirteenth Torino Underground Cinefest. The awards were announced at the October 4 close. Faléco shared the result again October 12; that post is not a new film premiere. This is a category-specific recognition, not the festival’s overall Best Film award.

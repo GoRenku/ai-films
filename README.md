@@ -243,3 +243,10 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added `Music video` as a fourth film format with an optional `musician` credit, a home-page Music videos rail, a films-page filter, a separate home stat and "New music video" labels in Latest. Music-video selection criteria are in docs/content-refresh.md.
 - Added [I’M YOUR SLOP](content/films/im-your-slop.md) by javiexmachina as the first entry, after rechecking the original release, creator credits and release artwork; linked it from the artist profile.
 - Application change (schema, catalogue helpers, home, films and Latest pages); no dependency or deployment changes.
+
+### October 13, 2026 — songs, characters and directed worlds
+
+- Added nine music videos: Chromatique, C’est de l’IA, Airplane Mode, Escape Velocity, Clodyssey, Bliss, P DOOM, The Seventh Reset and Stellorado. Original full releases, credited artwork, musician/project identities and work-specific disclosures are recorded; no human performer or undisclosed director is invented.
+- Added six creator/project profiles: Extraltodeus, anabology / Claudia, Astra Blue AI, VØXELLE, schmede and Skye Freeman / Skyebrows, with verified original X links.
+- Added the complete credited Malfoid — I Wasn’t Joking adaptation; updated Cornered’s exact Torino award and Henry Daubrez’s separate game announcement.
+- The dated journal connects production lessons and distinguishes film releases from excerpts, interviews and live-stage production. Application, CSS, deployment configuration, packages and lockfile unchanged.
