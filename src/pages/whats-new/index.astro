@@ -6,7 +6,6 @@ const feed = await news();
 const dates = [...new Set(feed.map((n) => n.date))];
 const week = feed.filter((n) => c.thisWeek(n.date));
 const tally = (k: string) => week.filter((n) => n.kind === k).length;
-const label = { Film: 'New film', Artist: 'New artist', Journal: 'Journal' };
 ---
 <Layout title="Latest" description="The latest films, filmmakers and editorial updates added to Latent Matinee.">
   <header class="page-hero">
@@ -30,7 +29,7 @@ const label = { Film: 'New film', Artist: 'New artist', Journal: 'Journal' };
                 {n.kind === 'Journal' ? <span class="note-tile"><b>Field note</b><small>{displayDate(n.date, { day: 'numeric', month: 'short' })}</small></span> : n.image ? <img src={n.image} alt="" loading="lazy" width="320" height="180" /> : <span class="monogram">{initials(n.title)}</span>}
               </span>
               <span class="entry-copy">
-                <span class="entry-kind">{label[n.kind]}{n.by && <span> · {n.by}</span>}</span>
+                <span class="entry-kind">{n.label}{n.by && <span> · {n.by}</span>}</span>
                 <span class="entry-title">{n.title}</span>
                 <span class="entry-desc">{n.description}</span>
               </span>

@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import FilmCard from '../../components/FilmCard.astro';
-import { catalog, genresOf, genreGroups } from '../../lib/catalog';
+import { catalog, genresOf, genreGroups, isMusicVideo } from '../../lib/catalog';
 const { films, artistOf, isNew } = await catalog();
 const count = (pred: (f: (typeof films)[number]) => boolean) => films.filter(pred).length;
 const statuses = [
@@ -10,12 +10,13 @@ const statuses = [
   ['upcoming', 'Coming soon & festivals', count((f) => ['Coming soon', 'Festival screening', 'In theaters'].includes(f.data.status))],
   ['Released', 'Released', count((f) => f.data.status === 'Released')],
 ] as const;
+const musicVideos = count(isMusicVideo);
 const genres = genreGroups.map((g) => [g, count((f) => genresOf(f.data.genre).includes(g))] as const).filter(([, n]) => n > 0);
 ---
-<Layout title="Films" description="Browse AI films: shorts, features and series, with where to watch.">
+<Layout title="Films" description="Browse AI films: shorts, features, series and music videos, with where to watch.">
   <header class="page-hero">
     <h1>Films</h1>
-    <p class="page-sub"><strong>{films.length}</strong> shorts, features and series. <strong>{statuses[1][2]}</strong> free to watch now.</p>
+    <p class="page-sub"><strong>{films.length - musicVideos}</strong> shorts, features and series{musicVideos > 0 && <>, plus <strong>{musicVideos}</strong> music {musicVideos === 1 ? 'video' : 'videos'}</>}. <strong>{statuses[1][2]}</strong> free to watch now.</p>
   </header>
 
   <form class="browser" role="search" aria-label="Filter films">
@@ -25,7 +26,7 @@ const genres = genreGroups.map((g) => [g, count((f) => genresOf(f.data.genre).in
         {statuses.map(([value, label, n], i) => <label><input type="radio" name="status" value={value} checked={i === 0} /><span>{label} <em>{n}</em></span></label>)}
       </div>
       <div class="selects">
-        <label><span class="sr-only">Format</span><select name="format"><option value="all">All formats</option><option value="Feature">Features</option><option value="Series">Series</option><option value="Short film">Shorts</option></select></label>
+        <label><span class="sr-only">Format</span><select name="format"><option value="all">All formats</option><option value="Feature">Features</option><option value="Series">Series</option><option value="Short film">Shorts</option><option value="Music video">Music videos</option></select></label>
         <label><span class="sr-only">Sort</span><select name="sort"><option value="added">Newest added</option><option value="year">Release year</option><option value="az">A–Z</option><option value="runtime">Longest first</option></select></label>
       </div>
     </div>

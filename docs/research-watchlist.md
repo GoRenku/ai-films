@@ -141,7 +141,8 @@ The Poison Taster, Life Lines and NiE now have collection entries. Absurd’s of
 ## September 30 research
 
 - Morgue Cat: original production account now recorded in the journal; full release remains unverified. https://absurd.com/stories/rommel-villa .
-- Simon Mayr’s sponsored Kling music-video post remains a craft lead, not a confirmed narrative-film entry. https://x.com/simonmeyer_/status/2104635206439198880 .
+- Simon Mayr’s sponsored Kling music-video post remains a craft lead, not a confirmed narrative-film entry. https://x.com/simonmeyer_/status/2104635206439198880 . October 13: re-review against the new music-video criteria (released song, credited director, directorial intent beyond a sponsored capability demo).
+- Stellorado / Skyebrows (above) should also be re-reviewed as a possible music-video entry.
 
 ## October 1 research
 
@@ -243,7 +244,7 @@ All 31 verified X profiles checked. Latest completed Watch remains October 8, al
 
 - Iron Orchids: accepted complete 74:30 September 1 release, publicly linked in the creator’s October 12 thread; original thumbnail inspected. Work-specific tool disclosure and unknowns retained.
 - An Honest Day’s Work: accepted Gossip Goblin’s October 11 titled 2:59 narrative satire. Original complete player, sampled scenes/captions and timestamped real frame checked; no inferred feature relationship or transferred tool credits. The CDN poster returned HTTP 403, so a representative frame at approximately 0:31 supplies the artwork.
-- Javier Fan / javiexmachina: accepted as artist and dated craft coverage after reading the expanded full-release description, original announcement, creator project and public process. Excluded from narrative-film collection because the verified work is an authored music video. Earlier 3:23 process cut, final 4:07 release and inconsistent production counters are explicitly distinguished; sponsorship solicitations are not production credits.
+- Javier Fan / javiexmachina: accepted as artist and dated craft coverage after reading the expanded full-release description, original announcement, creator project and public process. Excluded from narrative-film collection because the verified work is an authored music video. October 13: I’M YOUR SLOP published as the first `Music video` format entry after rechecking the original release, creator project credits and release artwork; the current YouTube title adds “(SLOPCORE)”. Earlier 3:23 process cut, final 4:07 release and inconsistent production counters are explicitly distinguished; sponsorship solicitations are not production credits.
 - Cracked Chimes: September World AI Cinema Festival official monthly online results verify Anthony Jegu / Best AI Director of the Future. Film-site wording corrected from the organiser’s exact category, without implying Cannes Film Festival recognition.
 - Christopher Gwinn’s October 12 Luciana Episode 10 / Those Two Maids: original full post explicitly calls it a simulated period-film trailer with credits excerpt; excluded as a standalone completed narrative film. Model-specific disclosure pertains to that trailer only (Grok Imagine / Seedream / Nano Banana images, Seedance 2.5 video on Dreamina): https://x.com/ChrisGwinnLA/status/2109429988755959917 .
 - Henry Daubrez’s Alone in the Dark: original post contains a still image, with no new film release or production disclosure; excluded as standalone film news. https://x.com/henrydaubrez/status/2109484392108404969 .

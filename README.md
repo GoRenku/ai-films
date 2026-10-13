@@ -33,7 +33,7 @@ Cloudflare setup (already in place; do not recreate): `latent-matinee` is a clas
 - src/content.config.ts: frontmatter schema. Required fields and reference checks run during build.
 - public/media/: credited promotional stills and thumbnails used to identify films.
 
-Copy a relevant existing file to add an entry. Slugs are stable filenames. Record discoveredAt and lastVerifiedAt using YYYY-MM-DD strings. Runtime is approximate; series runtime is per episode. Avoid unnecessary edits to verification dates.
+Copy a relevant existing file to add an entry. Slugs are stable filenames. Record discoveredAt and lastVerifiedAt using YYYY-MM-DD strings. Format is Short film, Feature, Series or Music video; music videos use the genre Music video, credit the song artist in `musician` and get their own home-page rail and films filter. Runtime is approximate; series runtime is per episode. Avoid unnecessary edits to verification dates.
 
 ## Periodic refresh
 
@@ -237,3 +237,9 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added [Javier Fan / javiexmachina](content/artists/javiexmachina.md): authored music-video practice, original complete release and public Suno / Claude / Midjourney process, distinguishing development edits and conflicting counts from final production facts.
 - Updated Cracked Chimes with Anthony Jegu’s exact official September monthly-competition award; expanded the Vołkaŭ and London profiles.
 - [Dated note](content/updates/2026-10-12-mecha-money-and-musical-choices.md) surfaces the additions. No layout, application, deployment or dependency changes.
+
+### October 13, 2026 — music videos as a format
+
+- Added `Music video` as a fourth film format with an optional `musician` credit, a home-page Music videos rail, a films-page filter, a separate home stat and "New music video" labels in Latest. Music-video selection criteria are in docs/content-refresh.md.
+- Added [I’M YOUR SLOP](content/films/im-your-slop.md) by javiexmachina as the first entry, after rechecking the original release, creator credits and release artwork; linked it from the artist profile.
+- Application change (schema, catalogue helpers, home, films and Latest pages); no dependency or deployment changes.

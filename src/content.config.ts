@@ -38,7 +38,9 @@ const films = defineCollection({
       ...common,
       artist: reference("artists"),
       year: z.number().int(),
-      format: z.enum(["Short film", "Feature", "Series"]),
+      format: z.enum(["Short film", "Feature", "Series", "Music video"]),
+      // The credited song artist, for music videos.
+      musician: z.string().optional(),
       genre: z.string(),
       runtimeMinutes: z.number().positive().optional(),
       status: z.enum(["Watch now", "Festival screening", "Coming soon", "Released", "In theaters"]),
@@ -62,6 +64,14 @@ const films = defineCollection({
     .refine(
       (v) => !v.featured || Boolean(v.image),
       "Featured films require artwork",
+    )
+    .refine(
+      (v) => (v.format === "Music video") === (v.genre === "Music video"),
+      "Music videos, and only music videos, use the genre Music video",
+    )
+    .refine(
+      (v) => !v.musician || v.format === "Music video",
+      "Only music videos credit a musician",
     )
     .refine(
       (v) => v.status !== "Watch now" || Boolean(v.watchUrl),

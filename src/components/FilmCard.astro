@@ -9,7 +9,7 @@ const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
 const meta = [artist.data.title, d.format === 'Short film' ? 'Short' : d.format, minutes(d.runtimeMinutes) ?? d.year].join(' · ');
 const data = filterable
   ? {
-      'data-title': `${d.title} ${artist.data.title} ${artist.data.alias ?? ''} ${d.genre}`.toLowerCase(),
+      'data-title': `${d.title} ${artist.data.title} ${artist.data.alias ?? ''} ${d.genre} ${d.format} ${d.musician ?? ''}`.toLowerCase(),
       'data-status': d.status,
       'data-format': d.format,
       'data-genres': genresOf(d.genre).join('|'),

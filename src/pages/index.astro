@@ -4,7 +4,7 @@ import FilmCard from '../components/FilmCard.astro';
 import ArtistCard from '../components/ArtistCard.astro';
 import Rail from '../components/Rail.astro';
 import PlayIcon from '../components/PlayIcon.astro';
-import { catalog, news, imageWidth, minutes, embedOf, genresOf, genreGroups, hostOf, shortDate, displayDate, statusKey, statusLabel } from '../lib/catalog';
+import { catalog, news, imageWidth, minutes, embedOf, genresOf, genreGroups, hostOf, shortDate, displayDate, statusKey, statusLabel, isMusicVideo, workNoun } from '../lib/catalog';
 
 const c = await catalog();
 const feed = await news();
@@ -27,6 +27,7 @@ const watchRail = watchNow.filter((f) => !seen.has(f.id)).slice(0, 16);
 const upcoming = films.filter((f) => ['Coming soon', 'Festival screening', 'In theaters'].includes(f.data.status));
 const features = films.filter((f) => f.data.format === 'Feature');
 const series = films.filter((f) => f.data.format === 'Series');
+const musicVideos = films.filter(isMusicVideo);
 const ticker = feed.slice(0, 16);
 const [lead, ...moreNotes] = c.updates;
 const leadFilms = c.notesFilms(lead).filter((f) => f.data.image).slice(0, 4);
@@ -57,15 +58,15 @@ const week = feed.filter((n) => c.thisWeek(n.date));
             <p class="slide-kicker">
               {isNew(d.discoveredAt) && <span class="tag-new">New</span>}
               <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
-              <span>{d.format}{d.runtimeMinutes && ` · ${minutes(d.runtimeMinutes)}`} · {d.genre}</span>
+              <span>{d.format}{d.runtimeMinutes && ` · ${minutes(d.runtimeMinutes)}`}{d.genre !== d.format && ` · ${d.genre}`}</span>
             </p>
             <h2><a href={`/films/${film.id}/`}>{d.title}</a></h2>
             <p class="slide-by">by <a href={`/artists/${artist.id}/`}>{artist.data.title}</a></p>
             <p class="slide-desc">{d.description}</p>
             <div class="actions">
-              {embed && <a class="btn btn-primary" href={d.watchUrl} data-play={embed.src} data-title={d.title} data-source={d.watchUrl}><PlayIcon /> Play film</a>}
+              {embed && <a class="btn btn-primary" href={d.watchUrl} data-play={embed.src} data-title={d.title} data-source={d.watchUrl}><PlayIcon /> Play {workNoun(film)}</a>}
               {!embed && d.status === 'Watch now' && d.watchUrl && <a class="btn btn-primary" href={d.watchUrl} rel="noopener noreferrer">Watch on {hostOf(d.watchUrl)} ↗</a>}
-              <a class:list={['btn', embed || d.status === 'Watch now' ? 'btn-ghost' : 'btn-primary']} href={`/films/${film.id}/`}>About the film</a>
+              <a class:list={['btn', embed || d.status === 'Watch now' ? 'btn-ghost' : 'btn-primary']} href={`/films/${film.id}/`}>About the {workNoun(film)}</a>
             </div>
           </div>
           {d.imageSource && <a class="slide-credit" href={d.imageSource}>{d.imageCredit}</a>}
@@ -88,7 +89,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
     <div class="ticker-viewport">
       <ul class="ticker-track">
         {[0, 1].map((copy) => ticker.map((n) => (
-          <li aria-hidden={copy === 1 ? 'true' : undefined}><a href={n.href} tabindex={copy === 1 ? -1 : undefined}><time datetime={n.date}>{shortDate(n.date)}</time><span class="ticker-kind">{n.kind === 'Film' ? 'New film' : n.kind === 'Artist' ? 'New artist' : 'Journal'}</span>{n.title}</a></li>
+          <li aria-hidden={copy === 1 ? 'true' : undefined}><a href={n.href} tabindex={copy === 1 ? -1 : undefined}><time datetime={n.date}>{shortDate(n.date)}</time><span class="ticker-kind">{n.label}</span>{n.title}</a></li>
         )))}
       </ul>
     </div>
@@ -142,6 +143,12 @@ const week = feed.filter((n) => c.thisWeek(n.date));
       {series.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
     </Rail>
 
+    {musicVideos.length > 0 && (
+      <Rail title="Music videos" href="/films/?format=Music+video" count={musicVideos.length} note="Directed and cut to a song">
+        {musicVideos.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+      </Rail>
+    )}
+
     <Rail title="Artists to follow" href="/artists/" count={c.artists.length} note="Most recently active first">
       {c.artistsByActivity.slice(0, 14).map((a) => <ArtistCard artist={a} films={c.filmsBy(a.id)} active={c.lastActive(a)} isNew={isNew(a.data.discoveredAt)} />)}
     </Rail>
@@ -150,7 +157,8 @@ const week = feed.filter((n) => c.thisWeek(n.date));
       <p class="manifesto-line">A new medium. <em>A human vision.</em></p>
       <p>An independent, sourced watch on the people making AI cinema — films worth watching, artists worth following.</p>
       <dl class="stats">
-        <div><dt>Films</dt><dd>{films.length}</dd></div>
+        <div><dt>Films</dt><dd>{films.length - musicVideos.length}</dd></div>
+        {musicVideos.length > 0 && <div><dt>Music videos</dt><dd>{musicVideos.length}</dd></div>}
         <div><dt>Watch now</dt><dd>{watchNow.length}</dd></div>
         <div><dt>Artists</dt><dd>{c.artists.length}</dd></div>
         <div><dt>Field notes</dt><dd>{c.updates.length}</dd></div>

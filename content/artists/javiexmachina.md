@@ -26,4 +26,4 @@ That page documents an earlier **3:23 development edit**, while the released vid
 
 ## Watch the work
 
-[Watch I’M YOUR SLOP (I’M YOUR ART) on the original channel](https://www.youtube.com/watch?v=40kUdtNVLyE). It is covered here as an authored music video and production practice, rather than labeled a completed narrative short in the film catalogue. The expanded release description and linked process were checked; this profile does not claim complete critical viewing or a verified total crew.
+[I’M YOUR SLOP](/films/im-your-slop/) is now listed in the collection as a music video ([original channel release](https://www.youtube.com/watch?v=40kUdtNVLyE)), rather than labeled a completed narrative short. The expanded release description and linked process were checked; this profile does not claim complete critical viewing or a verified total crew.

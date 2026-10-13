@@ -17,6 +17,7 @@ const GENRE_GROUPS: [string, RegExp][] = [
   ['History', /historical|period/i],
   ['Adventure', /adventure|action|survival|superhero/i],
   ['Documentary & essay', /documentar|essay|docudrama|experimental|reality/i],
+  ['Music video', /^music video$/i],
 ];
 export const genreGroups = GENRE_GROUPS.map(([name]) => name);
 export const genresOf = (genre: string) => {
@@ -26,6 +27,9 @@ export const genresOf = (genre: string) => {
 
 export const statusKey = (status: Film['data']['status']) =>
   ({ 'Watch now': 'live', 'Coming soon': 'soon', 'Festival screening': 'fest', 'In theaters': 'cinema', Released: 'released' })[status];
+export const isMusicVideo = (film: Film) => film.data.format === 'Music video';
+/** What to call a work in buttons and labels: a music video is not a "film". */
+export const workNoun = (film: Film) => (isMusicVideo(film) ? 'video' : 'film');
 export const statusLabel = (status: Film['data']['status']) => (status === 'Festival screening' ? 'Festival' : status);
 
 /** A playable embed for YouTube and Vimeo links; everything else opens at the source. */
@@ -115,19 +119,19 @@ async function build() {
   return { films, artists, updates, latest, artistOf, filmsBy, notesAbout, isNew, thisWeek, lastActive, coverFor, artistsByActivity, notesFilms, filmById, artistById };
 }
 
-export type NewsItem = { title: string; description: string; date: string; kind: 'Film' | 'Artist' | 'Journal'; href: string; image?: string; fit?: string; by?: string };
+export type NewsItem = { title: string; description: string; date: string; kind: 'Film' | 'Artist' | 'Journal'; label: string; href: string; image?: string; fit?: string; by?: string };
 export async function news(): Promise<NewsItem[]> {
   const c = await catalog();
   const rank = { Film: 0, Journal: 1, Artist: 2 };
   return [
-    ...c.films.map((f) => ({ title: f.data.title, description: f.data.description, date: f.data.discoveredAt, kind: 'Film' as const, href: `/films/${f.id}/`, image: f.data.image, fit: f.data.imageFit, by: c.artistOf(f).data.title })),
+    ...c.films.map((f) => ({ title: f.data.title, description: f.data.description, date: f.data.discoveredAt, kind: 'Film' as const, label: isMusicVideo(f) ? 'New music video' : 'New film', href: `/films/${f.id}/`, image: f.data.image, fit: f.data.imageFit, by: c.artistOf(f).data.title })),
     ...c.artists.map((a) => {
       const cover = c.coverFor(a);
-      return { title: a.data.title, description: a.data.description, date: a.data.discoveredAt, kind: 'Artist' as const, href: `/artists/${a.id}/`, image: cover?.data.image, fit: 'cover', by: a.data.focus };
+      return { title: a.data.title, description: a.data.description, date: a.data.discoveredAt, kind: 'Artist' as const, label: 'New artist', href: `/artists/${a.id}/`, image: cover?.data.image, fit: 'cover', by: a.data.focus };
     }),
     ...c.updates.map((u) => {
       const cover = c.notesFilms(u).find((f) => f.data.image);
-      return { title: u.data.title, description: u.data.description, date: u.data.date, kind: 'Journal' as const, href: `/journal/${u.id}/`, image: cover?.data.image, fit: 'cover', by: 'Field note' };
+      return { title: u.data.title, description: u.data.description, date: u.data.date, kind: 'Journal' as const, label: 'Journal', href: `/journal/${u.id}/`, image: cover?.data.image, fit: 'cover', by: 'Field note' };
     }),
   ].sort((a, b) => b.date.localeCompare(a.date) || rank[a.kind] - rank[b.kind] || a.title.localeCompare(b.title));
 }

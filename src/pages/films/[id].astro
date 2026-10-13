@@ -5,7 +5,7 @@ import Rail from '../../components/Rail.astro';
 import Sources from '../../components/Sources.astro';
 import PlayIcon from '../../components/PlayIcon.astro';
 import { getCollection, render } from 'astro:content';
-import { catalog, embedOf, genresOf, minutes, hostOf, displayDate, statusKey, statusLabel } from '../../lib/catalog';
+import { catalog, embedOf, genresOf, minutes, hostOf, displayDate, statusKey, statusLabel, workNoun } from '../../lib/catalog';
 export async function getStaticPaths() {
   return (await getCollection('films')).map((film) => ({ params: { id: film.id }, props: { film } }));
 }
@@ -17,13 +17,15 @@ const { Content } = await render(film);
 const embed = embedOf(d.watchUrl);
 const playable = embed && (d.status === 'Watch now' || /trailer/i.test(d.watchLabel));
 const host = d.watchUrl ? hostOf(d.watchUrl) : undefined;
+const noun = workNoun(film);
 const primaryGenre = genresOf(d.genre)[0];
 const byArtist = c.filmsBy(artist.id).filter((f) => f.id !== film.id);
 const related = c.films.filter((f) => f.id !== film.id && f.data.artist.id !== artist.id && genresOf(f.data.genre).includes(primaryGenre)).slice(0, 12);
 const notes = c.updates.filter((u) => u.data.films.some((r) => r.id === film.id));
 const facts = [
   ['Format', d.format],
-  ['Genre', d.genre],
+  d.musician ? ['Music', d.musician] : undefined,
+  d.genre !== d.format ? ['Genre', d.genre] : undefined,
   ['Year', String(d.year)],
   d.runtimeMinutes ? [d.format === 'Series' ? 'Episode' : 'Runtime', minutes(d.runtimeMinutes)!] : undefined,
   ['Added', displayDate(d.discoveredAt)],
@@ -39,7 +41,7 @@ const facts = [
           {playable && embed && (
             <button class="big-play" type="button" data-play={embed.src} data-inline data-title={d.title}>
               <span class="big-play-disc"><PlayIcon /></span>
-              <span class="big-play-label">{d.status === 'Watch now' ? 'Play film' : 'Play trailer'}<small>via {embed.provider}</small></span>
+              <span class="big-play-label">{d.status === 'Watch now' ? `Play ${noun}` : 'Play trailer'}<small>via {embed.provider}</small></span>
             </button>
           )}
         </div>
@@ -70,7 +72,7 @@ const facts = [
     </article>
     <aside class="film-aside" data-reveal>
       <a class="maker-card" href={`/artists/${artist.id}/`}>
-        <span class="kicker">Filmmaker</span>
+        <span class="kicker">{noun === 'video' ? 'Director' : 'Filmmaker'}</span>
         <strong>{artist.data.title}</strong>
         <span>{artist.data.focus}</span>
         <span class="maker-count">{c.filmsBy(artist.id).length} in the collection →</span>
@@ -110,7 +112,7 @@ const facts = [
     </Rail>
   )}
   {related.length > 0 && (
-    <Rail title={`More ${primaryGenre.toLowerCase()}`} href={`/films/?genre=${encodeURIComponent(primaryGenre)}`}>
+    <Rail title={`More ${primaryGenre === 'Music video' ? 'music videos' : primaryGenre.toLowerCase()}`} href={`/films/?genre=${encodeURIComponent(primaryGenre)}`}>
       {related.map((f) => <FilmCard film={f} artist={c.artistOf(f)} isNew={c.isNew(f.data.discoveredAt)} />)}
     </Rail>
   )}
