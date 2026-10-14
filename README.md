@@ -258,3 +258,7 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added nine inspected real release images/frames and a dated journal note. Expanded existing artist records, including anabology’s teaser/interface announcement without treating it as a full song release.
 - Content-only refresh: no design, schema, package, lockfile or deployment-configuration changes.
 - Updated schmede’s reported subtitle availability and the separately scoped moonlightbro adaptation credit.
+
+### October 14, 2026 — homepage selection correction
+
+Removed The Patchwright’s featured flag so it no longer replaces the fifth newest eligible artwork in the homepage carousel. The film remains in the collection. No CSS, template, layout or dependency changes.

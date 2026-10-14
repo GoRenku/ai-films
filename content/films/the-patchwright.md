@@ -13,7 +13,6 @@ image: "/media/the-patchwright.jpg"
 imageAlt: "A cybernetic aristocrat in The Patchwright"
 imageCredit: "Gossip Goblin · still via The Daring Creatives"
 imageSource: "https://www.thedaringcreatives.com/creator-stories/what-zack-london-actually-means-when-he-says-there-is-zero-skill-in-ai/"
-featured: true
 order: 1
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
