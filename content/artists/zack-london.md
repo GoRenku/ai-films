@@ -6,7 +6,7 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-12"
+lastVerifiedAt: "2026-10-14"
 sources:
   - label: "An Honest Day\u2019s Work \u2014 original release"
     url: "https://x.com/Gossip_Goblin/status/2109301986189324775"
@@ -41,3 +41,7 @@ This is a significant progression from online world-building to theatrical exhib
 ## A new chamber satire
 
 [An Honest Day’s Work](/films/an-honest-days-work/), posted by Gossip Goblin on October 11, is an approximately three-minute dialogue-led social satire about work, business and money. The ornate room and mechanical body put a futuristic economy inside an old language of privilege. The original release does not establish that it is an excerpt from Gods Don’t Give Gifts; its production details remain scoped separately.
+
+## Mother Was A Fighter
+
+The October 13 [complete short](/films/mother-was-a-fighter/) turns a queen’s desperate defence into a story about spectators demanding real stakes. Its captioned reversal extends the creator’s recurring interest in the commodification of lives and minds. No connection to the feature or transfer of earlier tool credits is asserted.

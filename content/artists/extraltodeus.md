@@ -4,7 +4,7 @@ description: "A French music-video creator exploring synthetic identity and tran
 focus: "French music videos and synthetic identity"
 x: {"url": "https://x.com/Extraltodeus", "label": "Extraltodeus on X", "source": "https://www.youtube.com/watch?v=QPO210-A534"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-13"
+lastVerifiedAt: "2026-10-14"
 sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}]
 website: "https://www.youtube.com/@extraltodeus"
 ---
@@ -16,3 +16,7 @@ Extraltodeus is the public creator/channel identity behind **Chromatique** and *
 [C’est de l’IA](/films/cest-de-lia/) gives a synthetic singer an identity problem: every attempt to appear human invites more suspicion. [Chromatique](/films/chromatique/) instead centres an expansive, changing world of reflective architecture and colour. Both establish song-length visual concepts rather than presenting an isolated model test.
 
 The creator also discloses local image/video tools and distinguishes them from the language models coordinating production. Claims of overnight or unsupervised production remain attributed accounts, not proof that artistic intent or human release decisions disappeared.
+
+## October 13 releases
+
+[Sur mesure](/films/sur-mesure/) and [Le ciel sous la peau](/films/le-ciel-sous-la-peau/) extend Astra’s recurring identity into tailoring and bodily/architectural transformation. Their original complete-release descriptions separately credit local Krea2 reference images, local MinimaxH3 video, ComfyUI and Suno. Lyric credits differ: GPT-6.1 for Sur mesure, Codex for Le ciel sous la peau. These are work-specific maker claims.

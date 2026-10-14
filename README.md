@@ -250,3 +250,11 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 - Added six creator/project profiles: Extraltodeus, anabology / Claudia, Astra Blue AI, VØXELLE, schmede and Skye Freeman / Skyebrows, with verified original X links.
 - Added the complete credited Malfoid — I Wasn’t Joking adaptation; updated Cornered’s exact Torino award and Henry Daubrez’s separate game announcement.
 - The dated journal connects production lessons and distinguishes film releases from excerpts, interviews and live-stage production. Application, CSS, deployment configuration, packages and lockfile unchanged.
+
+### October 14, 2026 — stakes, staging and synthetic singers
+
+- Added The Offsite, Malfoid — Expecto Patronum and Mother Was A Fighter; a 29:14 Gavin Purcell / Fig documentary; Exile Protocol Episode 8 and Beurre Noir — Rum Baba; and three music videos: Sur mesure, Le ciel sous la peau and WAIST CØNTRØL.
+- Added Eliott Mogenet, Aiden Guo, Gavin Purcell and S.A.V profiles with verified X links. Preserved creator-specific explanations, exact original production disclosures, unknown credits and upload-versus-discovery dates.
+- Added nine inspected real release images/frames and a dated journal note. Expanded existing artist records, including anabology’s teaser/interface announcement without treating it as a full song release.
+- Content-only refresh: no design, schema, package, lockfile or deployment-configuration changes.
+- Updated schmede’s reported subtitle availability and the separately scoped moonlightbro adaptation credit.

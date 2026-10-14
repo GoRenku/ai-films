@@ -4,7 +4,7 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-13"
+lastVerifiedAt: "2026-10-14"
 sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
@@ -16,3 +16,7 @@ schmede publishes a recurring **Malfoid** fan-fiction catalogue, including compl
 The relevant challenge is emotional interpretation: a character’s apparently mocking offer is sincere, but the other person cannot recognise it. Acting, pauses and reactions carry the turn. That makes the complete scene more interesting than its use of a familiar fantasy setting alone.
 
 The maker says a continuing character reference is reused, and that preferred generated audio becomes a voice reference. Acting is prompted. Vidu creative-partner support is explicitly disclosed; exact model versions, a total crew and a production budget are not established by the checked credit thread. No official franchise affiliation is claimed.
+
+## October 13 — alternate animation and subtitles
+
+The maker’s [original update](https://x.com/schmede_AI/status/2110106509325500509) introduces Part 2 of an anime adaptation and reports English, Japanese, Korean, Russian, Spanish (Spain and Latin America), and Chinese (Simplified and Traditional) subtitles across the Malfoid YouTube catalogue. The quoted [Part 1 release, The Only Explanation](https://www.youtube.com/watch?v=Yuf1eMwn4Ew), directly credits **moonlightbro** as writer. This writer credit belongs to that adaptation, not I Wasn’t Joking. The separate parts and alternate versions remain identified as catalogue instalments, rather than being merged into a guessed standalone runtime or reassigned to Aiden Guo.
