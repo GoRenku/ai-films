@@ -4,8 +4,8 @@ description: "A director building a recurring synthetic singer across fashion, m
 focus: "Recurring music-video characters and directed production"
 x: {"url": "https://x.com/anabology", "label": "anabology / Claudia on X", "source": "https://claudia.gallery/"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-14"
-sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}]
+lastVerifiedAt: "2026-10-15"
+sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}]
 website: "https://claudia.gallery/"
 ---
 
@@ -24,3 +24,7 @@ For Airplane Mode, the record describes using grey Blender renders as motion ref
 ## October 14 — a new teaser and production interface
 
 The maker’s [original announcement](https://x.com/anabology/status/2110224953287070195) describes a Grok bot able to use Suno, Midjourney and Opus for music-video production, with a generated teaser. It is explicitly a teaser, not a new complete song release. This is a creator workflow announcement; the bot was not invoked or independently tested, and its tool list is not assigned to earlier Claudia videos.
+
+## October 15 — listening as a production experiment
+
+The creator reports testing an “ear-proxy” in which Claude uses Gemini 4 Argon for audio understanding. This is an attributed experiment, not a benchmark of musical taste or a verified tool credit for the already released videos. No new complete song video is established by that post.

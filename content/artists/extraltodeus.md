@@ -4,8 +4,8 @@ description: "A French music-video creator exploring synthetic identity and tran
 focus: "French music videos and synthetic identity"
 x: {"url": "https://x.com/Extraltodeus", "label": "Extraltodeus on X", "source": "https://www.youtube.com/watch?v=QPO210-A534"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-14"
-sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}]
+lastVerifiedAt: "2026-10-15"
+sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}]
 website: "https://www.youtube.com/@extraltodeus"
 ---
 
@@ -20,3 +20,7 @@ The creator also discloses local image/video tools and distinguishes them from t
 ## October 13 releases
 
 [Sur mesure](/films/sur-mesure/) and [Le ciel sous la peau](/films/le-ciel-sous-la-peau/) extend Astra’s recurring identity into tailoring and bodily/architectural transformation. Their original complete-release descriptions separately credit local Krea2 reference images, local MinimaxH3 video, ComfyUI and Suno. Lyric credits differ: GPT-6.1 for Sur mesure, Codex for Le ciel sous la peau. These are work-specific maker claims.
+
+## October 14 — Volta
+
+[Villain Era](/films/villain-era/) introduces another credited performer identity, Volta, in a full 3:29 release. Its original description supplies work-specific coordination, lyric, music, reference-image and video credits. Those disclosures are recorded on the film page; the title does not establish a separate human vocalist.

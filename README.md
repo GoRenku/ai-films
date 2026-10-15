@@ -262,3 +262,11 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 ### October 14, 2026 — homepage selection correction
 
 Removed The Patchwright’s featured flag so it no longer replaces the fifth newest eligible artwork in the homepage carousel. The film remains in the collection. No CSS, template, layout or dependency changes.
+
+
+### October 15, 2026 — worlds, performances and reference work
+
+- Added eight catalogue entries: The Arc, INFERNO — The Series, Volta — Villain Era, Luccia, Houdini: Back from the Dead, Space Nation, Kira and Vanish Thread, each with inspected real official artwork or a credited release frame.
+- Added six creator/studio profiles: Darin Stewart, Niccolò Savinelli / Realista, Lita Bosch & Pablo Maestres, Red Rock Films, Martin Weisz, and Damien Steck & Julien Petit. Expanded Extraltodeus, Absurd, Contanimation and anabology; updated the older Kira / Space Nation journal references.
+- Preserved detailed production disclosures and unknowns: generation credits versus full budgets, human performance under Houdini’s generated appearances, composed INFERNO sound, music-video tool roles, and pilot delivery versus public episodes. New dated journal includes Finn McKenty’s reference-preparation practice without inventing a film credit or measured savings.
+- Content-only refresh. No CSS, templates, application code, dependency, lockfile, deployment or audience changes. Patchwright remains unpinned.
