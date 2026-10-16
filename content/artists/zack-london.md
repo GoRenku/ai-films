@@ -6,7 +6,7 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-14"
+lastVerifiedAt: "2026-10-16"
 sources:
   - label: "An Honest Day\u2019s Work \u2014 original release"
     url: "https://x.com/Gossip_Goblin/status/2109301986189324775"
@@ -45,3 +45,7 @@ This is a significant progression from online world-building to theatrical exhib
 ## Mother Was A Fighter
 
 The October 13 [complete short](/films/mother-was-a-fighter/) turns a queen’s desperate defence into a story about spectators demanding real stakes. Its captioned reversal extends the creator’s recurring interest in the commodification of lives and minds. No connection to the feature or transfer of earlier tool credits is asserted.
+
+## Pursue Your Passions
+
+The October 15 [complete short](/films/pursue-your-passions/) puts a ruler’s feast against a district’s lack of bread. Its talk of freedom after automation extends the studio’s social satire through close-up dialogue. The original release supplies no episode-specific model inventory or established feature connection.

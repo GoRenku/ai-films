@@ -1,0 +1,18 @@
+---
+title: "Kelly Boesch"
+description: "A digital artist joining original songs to surreal fashion, invented bodies and deliberately unfamiliar movement."
+focus: "Surreal fashion, music and choreographed synthetic figures"
+website: "https://www.kellyboesch.com/"
+x: {"url": "https://x.com/kellyeld", "label": "Kelly Boesch on X", "source": "https://linktr.ee/kellyboeschaiart"}
+discoveredAt: "2026-10-16"
+lastVerifiedAt: "2026-10-16"
+sources: [{"label": "Official artist portfolio", "url": "https://www.kellyboesch.com/"}, {"label": "Creator-linked profiles and music", "url": "https://linktr.ee/kellyboeschaiart"}, {"label": "Between Me and You — original video and process", "url": "https://www.youtube.com/watch?v=c2-HEkIvVqE"}]
+---
+
+Kelly Boesch publishes visual art and music through her own portfolio and Kelly Boesch AI Art channel. Her creator-linked directory connects the website, X account, YouTube and music releases under **Kelly Boesch**. The project’s generated voice is not assigned to an invented human vocalist.
+
+## Why follow this artist
+
+[Between Me and You](/films/between-me-and-you/) places a recognisable emotional problem inside an unfamiliar fashion world. The song concerns the period when attraction has ended but a relationship continues. Elongated figures, sculptural clothes and futuristic dance give that inward distance a visual vocabulary, rather than simply illustrating each lyric.
+
+Her production account also exposes a useful creative compromise: a Midjourney style reference kept imposing an extreme body shape. She retained it because the fashion and artificial appearance suited the work, then sought unusual movement through Kling. This makes the choice legible as art direction with constraints, rather than proof that the software delivered every intention unchanged. Exact model settings, collaborators and total crew remain undisclosed.

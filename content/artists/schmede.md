@@ -4,7 +4,7 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-14"
+lastVerifiedAt: "2026-10-16"
 sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
@@ -20,3 +20,7 @@ The maker says a continuing character reference is reused, and that preferred ge
 ## October 13 — alternate animation and subtitles
 
 The maker’s [original update](https://x.com/schmede_AI/status/2110106509325500509) introduces Part 2 of an anime adaptation and reports English, Japanese, Korean, Russian, Spanish (Spain and Latin America), and Chinese (Simplified and Traditional) subtitles across the Malfoid YouTube catalogue. The quoted [Part 1 release, The Only Explanation](https://www.youtube.com/watch?v=Yuf1eMwn4Ew), directly credits **moonlightbro** as writer. This writer credit belongs to that adaptation, not I Wasn’t Joking. The separate parts and alternate versions remain identified as catalogue instalments, rather than being merged into a guessed standalone runtime or reassigned to Aiden Guo.
+
+## October 15 — a complete anime cut
+
+[Draconia Malfoy](/films/malfoid-draconia-malfoy/) now provides a complete 7:29 cut of the moonlightbro adaptations. Its original full description explicitly retains that writer credit. The [maker’s announcement](https://x.com/schmede_AI/status/2110813486632542416) expands captions to ten language/region variants, adding Brazilian Portuguese and Polish to those previously reported. Captions are not claimed as ten new dubs. This complete cut is a separate adaptation from I Wasn’t Joking, whose source credits remain unchanged.

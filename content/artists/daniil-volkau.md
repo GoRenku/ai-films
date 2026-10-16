@@ -6,7 +6,7 @@ focus: "Serial science fiction, memory and institutional absurdity"
 website: "https://daniilvolkau.myportfolio.com"
 x: {"url": "https://x.com/machina9000", "label": "Daniił Vołkaŭ on X", "source": "https://x.com/machina9000/status/2107086771066441933"}
 discoveredAt: "2026-10-06"
-lastVerifiedAt: "2026-10-14"
+lastVerifiedAt: "2026-10-16"
 sources: [{"label": "Original video catalogue", "url": "https://www.youtube.com/@DaniilVolkau/videos"}, {"label": "Creator portfolio", "url": "https://daniilvolkau.myportfolio.com"}, {"label": "Original HOLED release", "url": "https://www.youtube.com/watch?v=85nLjDZ0TBE"}, {"label": "Creator feature announcement", "url": "https://x.com/machina9000/status/2082083889762226638"}, {"label": "Apocalypses — Episode 1", "url": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}, {"label": "Foka’s Planet — Episode 1", "url": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}, {"label": "Witchcraft — complete release", "url": "https://www.youtube.com/watch?v=A04YX5UMVMY"}, {"label": "Crop Confidential — complete release", "url": "https://www.youtube.com/watch?v=hD105vi7Qos"}, {"label": "Iron Orchids — original complete release", "url": "https://www.youtube.com/watch?v=ab-vgvwh5a4"}]
 ---
 
@@ -35,3 +35,7 @@ The [71-minute feature announcement](https://x.com/machina9000/status/2082083889
 ## Beurre Noir
 
 [Rum Baba](/films/beurre-noir/) adds a complete Beurre Noir episode with original writing/directing credit. Its municipal bakery dispute carries the filmmaker’s institutional humour into action comedy. The September 5 upload and October 14 share are distinguished; Dreamina’s named role does not establish an exact model version.
+
+## Porcelain and a station horror
+
+[Bone China — The Other Half](/films/bone-china/) gives a trench runner a reason to seek the fate other soldiers fear. Its complete October 2 first episode predates the October 15 share. [MIND THE GAP](/films/mind-the-gap/) instead compresses a pursuing threat into a 1:49 urban horror short released October 15. Both have direct creator replies naming Dreamina; neither gains an invented model version or full crew from other projects.
