@@ -10,9 +10,10 @@ watchUrl: "https://x.com/DiDi_OKK/status/2097992769629278549"
 watchLabel: "Watch at the source"
 order: 3
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-10-17"
 sources:
   [
+    {"label": "MoonPay — official Lumara finalist announcement", "url": "https://x.com/moonpay/status/2111099892504678861"},
     {
       "label": "DiDi_OK — film and model disclosure",
       "url": "https://x.com/DiDi_OKK/status/2097992769629278549",
@@ -47,3 +48,7 @@ At roughly nine minutes, the original upload is a narrative short, not a sample 
 ## What the creator disclosed
 
 Li identifies **Seedance 2.5** and a collaboration with **BytePlus** in the release post. That establishes a model and a commercial relationship, not the complete production stack. A full crew list, budget, and detailed making-of are not provided in that post; they remain open research questions.
+
+## October 16 — Lumara finalist announcement
+
+The [organiser’s official announcement](https://x.com/moonpay/status/2111099892504678861) names **Candy**, directed by **DiDi_OK**, among the Lumara Film Festival finalists. The winner is due to be revealed **October 26** in New York. Finalist selection is the verified new development; it is not described as a prize win, a new premiere or a changed production credit.

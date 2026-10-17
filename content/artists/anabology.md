@@ -4,7 +4,7 @@ description: "A director building a recurring synthetic singer across fashion, m
 focus: "Recurring music-video characters and directed production"
 x: {"url": "https://x.com/anabology", "label": "anabology / Claudia on X", "source": "https://claudia.gallery/"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-15"
+lastVerifiedAt: "2026-10-17"
 sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}]
 website: "https://claudia.gallery/"
 ---
@@ -28,3 +28,7 @@ The maker’s [original announcement](https://x.com/anabology/status/21102249532
 ## October 15 — listening as a production experiment
 
 The creator reports testing an “ear-proxy” in which Claude uses Gemini 4 Argon for audio understanding. This is an attributed experiment, not a benchmark of musical taste or a verified tool credit for the already released videos. No new complete song video is established by that post.
+
+## Claudia in another maker’s video
+
+Antonio Sabatella’s [Baby, You Flew](/films/baby-you-flew/) places Claudia in an independently released car-centred fan film. anabology [acknowledges the release](https://x.com/anabology/status/2111239690816786631), while Sabatella thanks the project for MCP access and inspiration. Sabatella’s own account of manual shot replacement and edit repair is preserved on that film’s page. This is not reassigned to anabology as a directing credit.

@@ -6,7 +6,7 @@ focus: "Conceptual science fiction"
 website: "https://x.com/DiDi_OKK"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-10-17"
 sources:
   [
     {
@@ -41,3 +41,7 @@ This is a developing body of work, rather than a single visual stunt. **Waste to
 Li credits editor **TzuJung Lin** and VFX collaborator **Zhetao Huang** on Waste to Energy, and names both as collaborators on Website. Those credits matter: a strongly authored film need not be a one-person production. His published tool choices are recorded on the individual film pages; a tool used on one project should not be assumed to have been used on every other film.
 
 Website received the Reply AI Studios Grand Prix and WeShort Community Award in 2026. These are **Reply AI Film Festival awards**, not awards in the Venice Film Festival's main competition. The films' conceptual premises and sustained output are our reasons for following Li; the prizes are additional context.
+
+## Candy — Lumara finalist
+
+MoonPay’s [October 16 official announcement](https://x.com/moonpay/status/2111099892504678861) names **Candy**, directed by DiDi_OK, among the Lumara Film Festival finalists. The organiser says the winner will be revealed October 26 in New York. This is finalist status, not a win or evidence that a new cut has been released.
