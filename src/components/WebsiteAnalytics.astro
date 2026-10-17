@@ -1,0 +1,86 @@
+---
+// PostHog project tokens are public browser identifiers, not secret API keys.
+const token = 'phc_rTTOTmP5c7ZzNTKVMbVwEzmyofCP3dio7ZSI1Zavub6';
+const host = 'https://eu.i.posthog.com';
+---
+
+<script is:inline define:vars={{ token, host }}>
+  (function () {
+    var consentKey = 'latent_matinee_analytics_consent';
+    var started = false;
+
+    function storedChoice() {
+      try {
+        return localStorage.getItem(consentKey);
+      } catch {
+        // Analytics stays off when browser storage is unavailable.
+        return null;
+      }
+    }
+
+    function start() {
+      if (started) return;
+      started = true;
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+      window.posthog.init(token, {
+        api_host: host,
+        capture_pageview: false,
+        capture_pageleave: true,
+        // Project settings can switch these on remotely; the Privacy Notice promises they stay off.
+        autocapture: false,
+        enable_heatmaps: false,
+        capture_dead_clicks: false,
+        capture_performance: false,
+        disable_session_recording: true,
+        persistence: 'localStorage',
+        person_profiles: 'identified_only',
+        cookieless_mode: 'on_reject',
+        before_send: function (event) {
+          if (event) event.properties.surface = 'matinee';
+          return event;
+        },
+      });
+    }
+
+    // Visitors who chose No are counted by page views and page-leave times only.
+    function captureConsented(name, properties, options) {
+      if (!started || storedChoice() !== 'yes') return;
+      window.posthog.capture(name, properties, options);
+    }
+
+    function trackPage() {
+      window.posthog.capture('$pageview');
+    }
+
+    // PostHog switches between its browser identifier and its daily server-side code
+    // at each answer, so the page view is sent again under the new state.
+    function syncConsent(choice, answeredNow) {
+      if (choice !== 'yes' && choice !== 'no') return;
+      start();
+      if (choice === 'yes') {
+        window.posthog.opt_in_capturing(answeredNow ? undefined : { captureEventName: false });
+      } else {
+        window.posthog.opt_out_capturing();
+      }
+      trackPage();
+    }
+
+    function placementOf(element) {
+      var root = element.closest('[data-analytics-placement]');
+      return root ? root.getAttribute('data-analytics-placement') : 'page';
+    }
+
+    function onSubmit(event) {
+      if (!(event.target instanceof HTMLFormElement)) return;
+      if (event.target.getAttribute('data-analytics-form') !== 'newsletter') return;
+      captureConsented('newsletter_signup_submitted', { placement: placementOf(event.target) }, { transport: 'sendBeacon' });
+    }
+
+    syncConsent(storedChoice(), false);
+    window.addEventListener('matinee:analytics-consent', function (event) {
+      syncConsent(event.detail, true);
+    });
+    document.addEventListener('submit', onSubmit);
+  })();
+</script>

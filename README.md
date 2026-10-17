@@ -60,6 +60,10 @@ Every page is derived from the content collections; no section is hand-curated. 
 - Films and Artists filtering, sorting and search run client-side over the static HTML; filter state lives in the URL query.
 - The hero is a full-bleed, fixed-height carousel with text anchored bottom-left. Fix layout problems inside that structure (for example the poster size caps in global.css) rather than converting slides to boxed or column layouts.
 
+## Analytics and privacy
+
+The site asks visitors before storing an analytics identifier. PostHog (EU) loads only after a Yes or No answer: Yes visitors send page views and page-leave times, plus submissions of any form marked `data-analytics-form="newsletter"`; No visitors are counted by page views and page-leave times only, with nothing stored in the browser except the choice. The footer's Analytics choice reopens the banner, and /privacy/ is the visitor-facing notice. The event list, consent states, UTM convention and PostHog configuration are documented in [Web analytics and attribution](https://github.com/GoRenku/studio/blob/main/docs/operations/web-analytics-and-attribution.md).
+
 ## Source and publication workflow
 
 This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of truth. Every accepted content refresh must be written here, validated, committed and pushed to GitHub (`origin`, GoRenku/ai-films) before that same commit is deployed to Cloudflare Pages with `pnpm deploy:cloudflare`. A private research queue is only an intake mechanism, never a substitute for repository content. If hosting fails, retain the validated changes in this repository and GitHub and report publication as pending.

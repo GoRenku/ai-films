@@ -507,7 +507,8 @@ html:not(.js) .browser, html:not(.js) .result-line { display: none; }
 .footer-brand { font: 420 18px/1 var(--display); }
 .footer-line { margin-top: 12px; font: 380 clamp(28px, 3vw, 40px)/1 var(--display); letter-spacing: -0.03em; color: var(--text); }
 .site-footer nav { display: flex; gap: 20px; font-size: 14px; color: var(--soft); }
-.site-footer nav a:hover { color: var(--accent); }
+.site-footer nav a:hover, .site-footer nav .analytics-choice:hover { color: var(--accent); }
+.site-footer nav .analytics-choice { padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
 .footer-meta { font-size: 13px; color: var(--dim); }
 
 /* ---------- Player ---------- */

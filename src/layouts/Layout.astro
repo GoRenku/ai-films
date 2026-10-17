@@ -3,6 +3,8 @@ import '@fontsource-variable/fraunces/opsz.css';
 import '@fontsource-variable/fraunces/opsz-italic.css';
 import '../styles/global.css';
 import { catalog, shortDate } from '../lib/catalog';
+import CookieConsent from '../components/CookieConsent.astro';
+import WebsiteAnalytics from '../components/WebsiteAnalytics.astro';
 const site = 'Latent Matinee';
 const { title = site, description = 'An ongoing collection of films, artists and new possibilities in AI cinema.', overlay = false } = Astro.props;
 const path = Astro.url.pathname;
@@ -42,14 +44,14 @@ const nav = [
       </div>
     </header>
     <main id="main"><slot /></main>
-    <footer class="site-footer">
+    <footer class="site-footer" data-analytics-placement="footer">
       <div class="footer-inner">
         <div>
           <a class="footer-brand" href="/">Latent Matinee<span class="dot">●</span></a>
           <p class="footer-line">Films worth watching. <em>Artists worth following.</em></p>
         </div>
         <nav aria-label="Footer">
-          <a href="/films/">Films</a><a href="/artists/">Artists</a><a href="/journal/">Journal</a><a href="/about/">About</a>
+          <a href="/films/">Films</a><a href="/artists/">Artists</a><a href="/journal/">Journal</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><button type="button" class="analytics-choice" data-cookie-settings>Analytics choice</button>
         </nav>
         <p class="footer-meta">{films.length} films · {artists.length} artists · updated <time datetime={latest}>{shortDate(latest)}</time></p>
       </div>
@@ -119,5 +121,7 @@ const nav = [
         update();
       });
     </script>
+    <CookieConsent />
+    <WebsiteAnalytics />
   </body>
 </html>

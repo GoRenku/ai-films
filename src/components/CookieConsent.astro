@@ -1,0 +1,82 @@
+<aside class="cookie-banner" id="cookie-banner" aria-label="Analytics consent" hidden>
+  <p>May we store an analytics identifier in your browser to learn which films and pages readers find useful? If you choose No, we still count your page visits, without storing anything in your browser. Read our <a href="/privacy/">Privacy Notice</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" data-cookie-choice="no">No</button>
+    <button type="button" data-cookie-choice="yes">Yes</button>
+  </div>
+</aside>
+
+<script>
+  const consentKey = 'latent_matinee_analytics_consent';
+  const banner = document.getElementById('cookie-banner');
+  const settings = document.querySelector<HTMLButtonElement>('[data-cookie-settings]');
+
+  function getConsent() {
+    try {
+      return localStorage.getItem(consentKey);
+    } catch {
+      return null;
+    }
+  }
+
+  if (banner && getConsent() !== 'yes' && getConsent() !== 'no') banner.hidden = false;
+
+  banner?.addEventListener('click', (event) => {
+    const button = (event.target as Element).closest<HTMLButtonElement>('[data-cookie-choice]');
+    const choice = button?.dataset.cookieChoice;
+    if (choice !== 'yes' && choice !== 'no') return;
+
+    try {
+      localStorage.setItem(consentKey, choice);
+    } catch {
+      return;
+    }
+
+    banner.hidden = true;
+    window.dispatchEvent(new CustomEvent('matinee:analytics-consent', { detail: choice }));
+  });
+
+  settings?.addEventListener('click', () => {
+    if (banner) banner.hidden = false;
+  });
+</script>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    inset: auto 20px 20px;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 768px;
+    margin-inline: auto;
+    padding: 16px 20px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: 0 16px 50px rgb(0 0 0 / 0.55);
+  }
+
+  .cookie-banner[hidden] { display: none; }
+  .cookie-banner p { font-size: 14px; line-height: 1.5; color: var(--soft); }
+  .cookie-banner a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+  .cookie-banner a:hover { color: var(--accent); }
+  .cookie-actions { display: flex; gap: 8px; flex-shrink: 0; }
+  .cookie-actions button {
+    padding: 7px 15px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text);
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .cookie-actions button:last-child { border-color: var(--accent); background: var(--accent); color: var(--ink); }
+
+  @media (max-width: 640px) {
+    .cookie-banner { flex-direction: column; align-items: flex-start; }
+    .cookie-actions { align-self: flex-end; }
+  }
+</style>
