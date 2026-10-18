@@ -6,7 +6,7 @@ focus: "Serial science fiction, memory and institutional absurdity"
 website: "https://daniilvolkau.myportfolio.com"
 x: {"url": "https://x.com/machina9000", "label": "Daniił Vołkaŭ on X", "source": "https://x.com/machina9000/status/2107086771066441933"}
 discoveredAt: "2026-10-06"
-lastVerifiedAt: "2026-10-17"
+lastVerifiedAt: "2026-10-18"
 sources: [{"label": "Original video catalogue", "url": "https://www.youtube.com/@DaniilVolkau/videos"}, {"label": "Creator portfolio", "url": "https://daniilvolkau.myportfolio.com"}, {"label": "Original HOLED release", "url": "https://www.youtube.com/watch?v=85nLjDZ0TBE"}, {"label": "Creator feature announcement", "url": "https://x.com/machina9000/status/2082083889762226638"}, {"label": "Apocalypses — Episode 1", "url": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}, {"label": "Foka’s Planet — Episode 1", "url": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}, {"label": "Witchcraft — complete release", "url": "https://www.youtube.com/watch?v=A04YX5UMVMY"}, {"label": "Crop Confidential — complete release", "url": "https://www.youtube.com/watch?v=hD105vi7Qos"}, {"label": "Iron Orchids — original complete release", "url": "https://www.youtube.com/watch?v=ab-vgvwh5a4"}]
 ---
 
@@ -43,3 +43,7 @@ The [71-minute feature announcement](https://x.com/machina9000/status/2082083889
 ## Sound, narration and an older episode’s new share
 
 [AMBIANCE](/films/ambiance/) makes chewing and silence the machinery of a complete animated horror-comedy. [Zorgon Explains Everything](/films/zorgon-explains-everything/) turns disputes about narrative meaning into a linked science-fiction episode. Both expand the catalogue’s range without inheriting an unreported crew or generation stack. The October 17 public share of Zorgon and the new HOLED Episode 4 verification point to September uploads, with those dates preserved on the film pages.
+
+## October 18 — Wrong House
+
+[Wrong House](/films/wrong-house/) compresses a burglary, a captive woman and a creature threat into a complete 1:47 snowbound short. Its October 18 YouTube upload follows the October 17 share. The maker’s direct full-release reply names Dreamina without an exact model version or separate voice/music credits.

@@ -4,7 +4,7 @@ description: "A French music-video creator exploring synthetic identity and tran
 focus: "French music videos and synthetic identity"
 x: {"url": "https://x.com/Extraltodeus", "label": "Extraltodeus on X", "source": "https://www.youtube.com/watch?v=QPO210-A534"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-15"
+lastVerifiedAt: "2026-10-18"
 sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}]
 website: "https://www.youtube.com/@extraltodeus"
 ---
@@ -24,3 +24,7 @@ The creator also discloses local image/video tools and distinguishes them from t
 ## October 14 — Volta
 
 [Villain Era](/films/villain-era/) introduces another credited performer identity, Volta, in a full 3:29 release. Its original description supplies work-specific coordination, lyric, music, reference-image and video credits. Those disclosures are recorded on the film page; the title does not establish a separate human vocalist.
+
+## October 17 — Coming Home on Fire
+
+[Volta — Coming Home on Fire](/films/coming-home-on-fire/) is the complete 3:24 release behind the [X caption “Innovation is conquest”](https://x.com/Extraltodeus/status/2111383907715154312). The original channel resolves the title and performer identity. Its sparse description does not repeat Villain Era’s model list, so that earlier stack is not assumed for the new work.

@@ -288,3 +288,10 @@ Removed The Patchwright’s featured flag so it no longer replaces the fifth new
 - [AMBIANCE](content/films/ambiance.md) and [Zorgon Explains Everything](content/films/zorgon-explains-everything.md) add complete narrative work; [HOLED](content/films/holed.md) adds verified Episode 4 playback and a direct Dreamina disclosure. September upload dates remain distinct from October shares.
 - New profiles for [antic](content/artists/antic.md) and [Antonio Sabatella](content/artists/antonio-sabatella.md); existing creator profiles extended. [Candy](content/films/candy.md) adds the official Lumara finalist announcement, with the October 26 result still forthcoming.
 - [Dated journal](content/updates/2026-10-17-selection-repair-and-the-finished-film.md) connects six new works and substantive existing-entry news. Five original thumbnails and one inspected, timestamped original frame. Content-only update; no layout, CSS, package, deployment or access changes.
+
+### October 18, 2026 content refresh
+
+- Three complete music videos: [Don’t Let Me Scroll](content/films/dont-let-me-scroll.md), [DOWNFORCE](content/films/downforce.md) and [Volta — Coming Home on Fire](content/films/coming-home-on-fire.md), with original playback, inspected real imagery, artist identities and work-specific production disclosures. Claudia’s separate audio-tool announcement is not retroactively assigned to film credits.
+- Two narrative shorts: [Wrong House](content/films/wrong-house.md) and [Dominio](content/films/dominio.md). The latter adds [Jun Pabon](content/artists/jun-pabon.md), with September premiere and October discovery distinguished; missing optional crew/model details remain explicit.
+- Expanded anabology, Extraltodeus, Vołkaŭ and schmede profiles; [dated journal](content/updates/2026-10-18-the-cut-and-the-world.md) covers the releases, human revision, audio-analysis claims, Freeman’s craft disclosure and soundtrack access. Four original thumbnails plus one credited finished-cut gallery frame.
+- Content-only refresh. No CSS, layout, application, schema, dependency, lockfile, deployment-configuration or audience changes; no installations or upgrades.
