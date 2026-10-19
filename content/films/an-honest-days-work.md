@@ -9,7 +9,7 @@ runtimeMinutes: 3
 status: "Watch now"
 watchUrl: "https://x.com/Gossip_Goblin/status/2109301986189324775"
 watchLabel: "Watch the complete short on X"
-image: "/media/an-honest-days-work.png"
+image: "/media/an-honest-days-work.jpg"
 imageFit: "contain"
 imageAlt: "A mechanical woman and an older man in an ornate green chair face a visitor in An Honest Day’s Work"
 imageCredit: "Gossip Goblin · frame from the original release, approximately 0:31"

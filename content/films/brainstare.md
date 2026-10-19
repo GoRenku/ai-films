@@ -15,9 +15,9 @@ runtimeMinutes: 137
 watchUrl: "https://www.youtube.com/watch?v=iHqAc3pXELo"
 watchLabel: "Watch film"
 image: "/media/brainstare.jpg"
-imageAlt: "Official artwork for BRAINSTARE"
-imageCredit: "Dikenga Films · official BRAINSTARE artwork"
-imageSource: "https://www.dikenga.com/brainstare"
+imageAlt: "A man wired with electrodes screams under blue light above the BRAINSTARE title"
+imageCredit: "Dikenga Films · thumbnail of the official full-film upload"
+imageSource: "https://www.youtube.com/watch?v=iHqAc3pXELo"
 ---
 
 ## Why this film matters

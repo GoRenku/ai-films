@@ -14,7 +14,7 @@ The collection now includes more ways of thinking about AI filmmaking: feature-l
 - **Personal history:** Dave Clark’s [Borrowing Time](/films/borrowing-time/) and [Battalion](/films/battalion/) connect technical choices to family experience.
 - **Animation with a point of view:** explore Henry Daubrez’s [KITSUNE](/films/kitsune/), Mathery’s [Where Knights Fall](/films/where-knights-fall/) and Léo Cannone’s [Where Do Grandmas Go When They Get Lost?](/films/where-do-grandmas-go/).
 - **Features and changing forms:** Hooroo Jackson’s [A Very Long Carriage Ride](/films/a-very-long-carriage-ride/) and [Strings](/films/strings/) invite comparison across alternative visual treatments and endings.
-- **Longer narrative and production work:** follow [Haydon](/films/haydon/), [The Living Corpse](/films/the-living-corpse/) and [The Cully Hill Boys](/films/the-cully-hill-boys/).
+- **Longer narrative and production work:** follow [Haydon](/films/haydon/) and [The Living Corpse](/films/the-living-corpse/).
 
 ## The craft behind the work
 

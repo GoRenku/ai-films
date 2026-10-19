@@ -27,7 +27,6 @@ Every earlier lead must have a durable disposition. This document contains only 
 | haodong zhang | [The Frozen Field](../content/films/the-frozen-field.md) |
 | glenn robert triggs | [Papernaught](../content/films/papernaught.md) |
 | jose alvarez | [Duck](../content/films/duck.md) |
-| aitore zholdaskali adilet abish | [The Cully Hill Boys](../content/films/the-cully-hill-boys.md) |
 | zack london | [Pomegranate](../content/films/pomegranate.md) |
 
 ## Existing entries retained
@@ -56,6 +55,8 @@ The public projects-to-follow journal note covers Touch Grass, Kira (Damien Stec
 ## Not selected as completed AI films
 
 Asiri Ilu Awon Osu — Mystery of Osu Land and Mysterious Tech Studio / Tanwa Hameed: excluded on October 8, 2026 by the editor’s decision after briefly being published. It does not meet the collection’s editorial bar. Do not re-add the film, its parts or the studio/producer profile, and treat future mentions as already reviewed.
+
+The Cully Hill Boys (Higgsfield) / Aitore Zholdaskali & Adilet Abish: removed on October 19, 2026 by the editor’s decision. Its only available official artwork is marked “Licensed for study under HOL-RO-1.0. Not licensed for reuse.” Do not re-add the film, its artwork or the directors’ profile, and treat future mentions as already reviewed.
 
 ONEIRIC remains a vendor demonstration lead rather than a curated narrative-film entry. Lost Calls, Hexi Corridor and China were contextual/traditional-film references; do not convert them into AI film records without film-specific evidence.
 
