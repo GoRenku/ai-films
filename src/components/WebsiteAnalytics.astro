@@ -43,12 +43,6 @@ const host = 'https://eu.i.posthog.com';
       });
     }
 
-    // Visitors who chose No are counted by page views and page-leave times only.
-    function captureConsented(name, properties, options) {
-      if (!started || storedChoice() !== 'yes') return;
-      window.posthog.capture(name, properties, options);
-    }
-
     function trackPage() {
       window.posthog.capture('$pageview');
     }
@@ -66,21 +60,9 @@ const host = 'https://eu.i.posthog.com';
       trackPage();
     }
 
-    function placementOf(element) {
-      var root = element.closest('[data-analytics-placement]');
-      return root ? root.getAttribute('data-analytics-placement') : 'page';
-    }
-
-    function onSubmit(event) {
-      if (!(event.target instanceof HTMLFormElement)) return;
-      if (event.target.getAttribute('data-analytics-form') !== 'newsletter') return;
-      captureConsented('newsletter_signup_submitted', { placement: placementOf(event.target) }, { transport: 'sendBeacon' });
-    }
-
     syncConsent(storedChoice(), false);
     window.addEventListener('matinee:analytics-consent', function (event) {
       syncConsent(event.detail, true);
     });
-    document.addEventListener('submit', onSubmit);
   })();
 </script>

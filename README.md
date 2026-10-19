@@ -62,7 +62,7 @@ Every page is derived from the content collections; no section is hand-curated. 
 
 ## Analytics and privacy
 
-The site asks visitors before storing an analytics identifier. PostHog (EU) loads only after a Yes or No answer: Yes visitors send page views and page-leave times, plus submissions of any form marked `data-analytics-form="newsletter"`; No visitors are counted by page views and page-leave times only, with nothing stored in the browser except the choice. The footer's Analytics choice reopens the banner, and /privacy/ is the visitor-facing notice. The event list, consent states, UTM convention and PostHog configuration are documented in [Web analytics and attribution](https://github.com/GoRenku/studio/blob/main/docs/operations/web-analytics-and-attribution.md).
+The site asks visitors before storing an analytics identifier. PostHog (EU) loads only after a Yes or No answer: Yes visitors send page views and page-leave times; No visitors are counted by page views and page-leave times only, with nothing stored in the browser except the choice. The footer's Analytics choice reopens the banner, and /privacy/ is the visitor-facing notice. The event list, consent states, UTM convention and PostHog configuration are documented in [Web analytics and attribution](https://github.com/GoRenku/studio/blob/main/docs/operations/web-analytics-and-attribution.md).
 
 ## Source and publication workflow
 
