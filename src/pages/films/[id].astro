@@ -5,7 +5,7 @@ import Rail from '../../components/Rail.astro';
 import Sources from '../../components/Sources.astro';
 import PlayIcon from '../../components/PlayIcon.astro';
 import { getCollection, render } from 'astro:content';
-import { catalog, embedOf, genresOf, minutes, hostOf, displayDate, statusKey, statusLabel, workNoun } from '../../lib/catalog';
+import { catalog, embedOf, genresOf, minutes, hostOf, displayDate, shareImageOf, statusKey, statusLabel, workNoun } from '../../lib/catalog';
 export async function getStaticPaths() {
   return (await getCollection('films')).map((film) => ({ params: { id: film.id }, props: { film } }));
 }
@@ -31,7 +31,7 @@ const facts = [
   ['Added', displayDate(d.discoveredAt)],
 ].filter((x): x is string[] => Boolean(x));
 ---
-<Layout title={d.title} description={d.description}>
+<Layout title={d.title} description={d.description} shareImage={shareImageOf(film)}>
   <section class="film-hero" style={d.image ? `--img:url('${d.image}')` : undefined}>
     <div class="film-hero-glow" aria-hidden="true"></div>
     <div class="film-hero-inner">

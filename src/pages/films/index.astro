@@ -36,7 +36,7 @@ const genres = genreGroups.map((g) => [g, count((f) => genresOf(f.data.genre).in
     </div>
   </form>
 
-  <p class="result-line" aria-live="polite"><span class="result-count">{films.length}</span> films</p>
+  <p class="result-line" aria-live="polite"><span class="result-count">{films.length}</span> titles</p>
   <div class="grid films-grid">
     {films.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} filterable />)}
   </div>

@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import FilmCard from '../../components/FilmCard.astro';
 import Sources from '../../components/Sources.astro';
 import { getCollection, render } from 'astro:content';
-import { catalog, displayDate, initials } from '../../lib/catalog';
+import { catalog, displayDate, initials, shareImageOf, workTally } from '../../lib/catalog';
 export async function getStaticPaths() {
   return (await getCollection('artists')).map((artist) => ({ params: { id: artist.id }, props: { artist } }));
 }
@@ -16,7 +16,7 @@ const years = [...new Set(films.map((f) => f.data.year))].sort();
 const watchable = films.filter((f) => f.data.status === 'Watch now').length;
 const { Content } = await render(artist);
 ---
-<Layout title={artist.data.title} description={artist.data.description}>
+<Layout title={artist.data.title} description={artist.data.description} shareImage={shareImageOf(cover)}>
   <section class="artist-hero" style={cover ? `--img:url('${cover.data.image}')` : undefined}>
     {cover ? <img class="artist-hero-bg" src={cover.data.image} alt="" fetchpriority="high" width="1600" height="900" /> : <span class="artist-hero-mono" aria-hidden="true">{initials(artist.data.title)}</span>}
     <div class="artist-hero-body">
@@ -29,7 +29,7 @@ const { Content } = await render(artist);
         {artist.data.x && <a class="btn btn-ghost" href={artist.data.x.url}>{artist.data.x.label} ↗</a>}
       </div>
       <dl class="fact-strip">
-        <div><dt>In the collection</dt><dd>{films.length} {films.length === 1 ? 'film' : 'films'}</dd></div>
+        <div><dt>In the collection</dt><dd>{workTally(films)}</dd></div>
         {watchable > 0 && <div><dt>Watch now</dt><dd>{watchable}</dd></div>}
         {years.length > 0 && <div><dt>Years</dt><dd>{years.length > 1 ? `${years[0]}–${years.at(-1)}` : years[0]}</dd></div>}
         <div><dt>Last active</dt><dd>{displayDate(c.lastActive(artist))}</dd></div>

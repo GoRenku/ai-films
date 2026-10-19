@@ -8,7 +8,7 @@ const thumbs = (u: (typeof c.updates)[number], n: number) => c.notesFilms(u).fil
 <Layout title="Journal" description="Field notes: discoveries, release milestones and production craft in AI cinema.">
   <header class="page-hero">
     <h1>Journal</h1>
-    <p class="page-sub">Field notes on discoveries, release milestones and how the work gets made.</p>
+    <p class="page-sub">Field notes on discoveries, release milestones and how the work gets made. <a href="/journal/rss.xml">RSS feed</a></p>
   </header>
   <a class="journal-lead" href={`/journal/${lead.id}/`} data-reveal>
     <span class:list={['jl-mosaic', `n${thumbs(lead, 4).length}`]}>{thumbs(lead, 4).map((f) => <img src={f.data.image} alt="" width="640" height="360" />)}</span>

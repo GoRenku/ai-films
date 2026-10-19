@@ -1,6 +1,6 @@
 ---
 import type { Artist, Film } from '../lib/catalog';
-import { initials, shortDate } from '../lib/catalog';
+import { initials, shortDate, workTally } from '../lib/catalog';
 interface Props { artist: Artist; films: Film[]; active: string; isNew?: boolean; filterable?: boolean }
 const { artist, films, active, isNew = false, filterable = false } = Astro.props;
 const cover = films.find((f) => f.data.image);
@@ -19,7 +19,7 @@ const data = filterable
       </div>
     </div>
     <p class="artist-meta">
-      <span>{films.length ? `${films.length} ${films.length === 1 ? 'film' : 'films'}` : 'Profile'}</span>
+      <span>{films.length ? workTally(films) : 'Profile'}</span>
       <span>Active {shortDate(active)}</span>
     </p>
   </a>

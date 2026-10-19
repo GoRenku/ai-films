@@ -2,11 +2,12 @@
 import '@fontsource-variable/fraunces/opsz.css';
 import '@fontsource-variable/fraunces/opsz-italic.css';
 import '../styles/global.css';
-import { catalog, shortDate } from '../lib/catalog';
+import { catalog, shortDate, workTally } from '../lib/catalog';
 import CookieConsent from '../components/CookieConsent.astro';
 import WebsiteAnalytics from '../components/WebsiteAnalytics.astro';
 const site = 'Latent Matinee';
-const { title = site, description = 'An ongoing collection of films, artists and new possibilities in AI cinema.', overlay = false } = Astro.props;
+interface Props { title?: string; description?: string; overlay?: boolean; shareImage?: { src: string; alt: string } }
+const { title = site, description = 'An ongoing collection of films, artists and new possibilities in AI cinema.', overlay = false, shareImage } = Astro.props;
 const path = Astro.url.pathname;
 const { latest, films, artists } = await catalog();
 const nav = [
@@ -30,6 +31,10 @@ const nav = [
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={new URL(path, Astro.site)} />
+    {shareImage && <meta property="og:image" content={new URL(shareImage.src, Astro.site)} />}
+    {shareImage && <meta property="og:image:alt" content={shareImage.alt} />}
+    {shareImage && <meta name="twitter:card" content="summary_large_image" />}
+    <link rel="alternate" type="application/rss+xml" title="Latent Matinee Journal" href="/journal/rss.xml" />
     <script is:inline>document.documentElement.classList.add('js')</script>
   </head>
   <body class:list={{ overlay }}>
@@ -53,7 +58,7 @@ const nav = [
         <nav aria-label="Footer">
           <a href="/films/">Films</a><a href="/artists/">Artists</a><a href="/journal/">Journal</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><button type="button" class="analytics-choice" data-cookie-settings>Analytics choice</button>
         </nav>
-        <p class="footer-meta">{films.length} films · {artists.length} artists · updated <time datetime={latest}>{shortDate(latest)}</time></p>
+        <p class="footer-meta">{workTally(films)} · {artists.length} artists · updated <time datetime={latest}>{shortDate(latest)}</time></p>
       </div>
     </footer>
     <dialog class="player-dialog" aria-label="Video player">

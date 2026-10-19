@@ -30,6 +30,17 @@ export const statusKey = (status: Film['data']['status']) =>
 export const isMusicVideo = (film: Film) => film.data.format === 'Music video';
 /** What to call a work in buttons and labels: a music video is not a "film". */
 export const workNoun = (film: Film) => (isMusicVideo(film) ? 'video' : 'film');
+/** One counting rule: shorts, features and series are films; music videos are counted separately. */
+export function workTally(works: Film[]) {
+  const videos = works.filter(isMusicVideo).length;
+  const films = works.length - videos;
+  const parts = [];
+  if (films > 0 || videos === 0) parts.push(`${films} ${films === 1 ? 'film' : 'films'}`);
+  if (videos > 0) parts.push(`${videos} music ${videos === 1 ? 'video' : 'videos'}`);
+  return parts.join(' · ');
+}
+/** A page's share picture: the film's own credited artwork, used unchanged (the schema requires alt text with every image). */
+export const shareImageOf = (film?: Film) => (film?.data.image && film.data.imageAlt ? { src: film.data.image, alt: film.data.imageAlt } : undefined);
 export const statusLabel = (status: Film['data']['status']) => (status === 'Festival screening' ? 'Festival' : status);
 
 /** A playable embed for YouTube and Vimeo links; everything else opens at the source. */
@@ -78,7 +89,7 @@ export function imageWidth(src?: string) {
 }
 
 const DAY = 86_400_000;
-const toTime = (date: string) => Date.parse(`${date}T12:00:00Z`);
+export const toTime = (date: string) => Date.parse(`${date}T12:00:00Z`);
 export const displayDate = (date: string, opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' }) =>
   new Intl.DateTimeFormat('en-GB', { ...opts, timeZone: 'UTC' }).format(new Date(toTime(date)));
 export const shortDate = (date: string) => displayDate(date, { day: 'numeric', month: 'short' });
