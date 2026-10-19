@@ -510,6 +510,9 @@ html:not(.js) .browser, html:not(.js) .result-line { display: none; }
 .site-footer nav a:hover, .site-footer nav .analytics-choice:hover { color: var(--accent); }
 .site-footer nav .analytics-choice { padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
 .footer-meta { font-size: 13px; color: var(--dim); }
+.footer-disclosure { grid-column: 1 / -1; font-size: 13px; color: var(--dim); }
+.footer-disclosure a { color: var(--soft); }
+.footer-disclosure a:hover { color: var(--accent); }
 
 /* ---------- Player ---------- */
 .player-dialog { width: min(1240px, 94vw); padding: 0; border: 0; border-radius: 18px; overflow: hidden; background: #000; color: var(--text); box-shadow: 0 60px 160px rgb(0 0 0 / 0.9); }

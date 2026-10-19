@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { RENKU_ABOUT_URL } from '../lib/external-links';
 ---
 <Layout title="About">
   <header class="page-hero">
@@ -19,5 +20,7 @@ import Layout from '../layouts/Layout.astro';
     <p>Verified X profiles provide another route to the people behind the films. A studio or collaborator account is labeled as such. If an artist’s account cannot be verified, we leave it out.</p>
     <h2>A living journal</h2>
     <p>New discoveries and meaningful changes appear as dated journal entries. Existing artist and film pages are updated as the work develops. You can also follow the journal by <a href="/journal/rss.xml">RSS</a>.</p>
+    <h2>Who makes Latent Matinee</h2>
+    <p>Latent Matinee is made by the makers of <a href={RENKU_ABOUT_URL}>Renku Studio</a>, a free, open-source tool for planning films with AI agents. Films are chosen by the standard above, whatever tools they were made with.</p>
   </article>
 </Layout>

@@ -3,6 +3,7 @@ import '@fontsource-variable/fraunces/opsz.css';
 import '@fontsource-variable/fraunces/opsz-italic.css';
 import '../styles/global.css';
 import { catalog, shortDate, workTally } from '../lib/catalog';
+import { RENKU_FOOTER_URL } from '../lib/external-links';
 import CookieConsent from '../components/CookieConsent.astro';
 import WebsiteAnalytics from '../components/WebsiteAnalytics.astro';
 const site = 'Latent Matinee';
@@ -59,6 +60,7 @@ const nav = [
           <a href="/films/">Films</a><a href="/artists/">Artists</a><a href="/journal/">Journal</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><button type="button" class="analytics-choice" data-cookie-settings>Analytics choice</button>
         </nav>
         <p class="footer-meta">{workTally(films)} · {artists.length} artists · updated <time datetime={latest}>{shortDate(latest)}</time></p>
+        <p class="footer-disclosure">Latent Matinee is made by the makers of <a href={RENKU_FOOTER_URL}>Renku Studio</a>, a free, open-source tool for planning films with AI agents.</p>
       </div>
     </footer>
     <dialog class="player-dialog" aria-label="Video player">
