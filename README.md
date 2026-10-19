@@ -59,6 +59,10 @@ Every page is derived from the content collections; no section is hand-curated. 
 - YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.
 - Films and Artists filtering, sorting and search run client-side over the static HTML; filter state lives in the URL query.
 - The hero is a full-bleed, fixed-height carousel with text anchored bottom-left. Fix layout problems inside that structure (for example the poster size caps in global.css) rather than converting slides to boxed or column layouts.
+- “Films” means shorts, features and series; music videos are counted separately (`workTally`). Every count on the site uses that rule; the mixed Films list says “titles”.
+- Film and artist pages use their existing credited artwork, unchanged, as the share picture (`og:image`); an artist uses the same cover their page shows. Nothing is cropped, resized or generated.
+- `/journal/rss.xml` and `/sitemap.xml` are generated from the content at build time, and `public/robots.txt` names the sitemap. `scripts/validate-build.mjs` fails the build if the sitemap misses a page, robots.txt loses its Sitemap line, a feed item has no page, or a share picture is missing.
+- Outbound links to gorenku.com, with their link tags, live in `src/lib/external-links.ts`. The footer line and the About section are the only places that mention Renku.
 
 ## Analytics and privacy
 
