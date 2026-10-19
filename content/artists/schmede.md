@@ -4,7 +4,7 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-18"
+lastVerifiedAt: "2026-10-19"
 sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
@@ -28,3 +28,9 @@ The maker’s [original update](https://x.com/schmede_AI/status/2110106509325500
 ## October 17 — the songs as separate releases
 
 The maker’s [original announcement](https://x.com/schmede_AI/status/2111459177994268858) links a [Malfoid Music playlist](https://www.youtube.com/playlist?list=PLZ12Yyf3LBqc). The expanded [Silver and Green full-song description](https://www.youtube.com/watch?v=lXE8NBeQ1g8) links a free download and Suno generation data. These provide soundtrack access alongside the adaptations. The inspected presentation uses portrait art and a waveform; it is not catalogued as a new complete directed music video merely because the song is now on YouTube.
+
+## October 18–19 — continuation and download limits
+
+[Don’t Wait for Me, Part 1](https://www.youtube.com/watch?v=7D0Q0mk_2Gs) continues the narrative after [I Wasn’t Joking](/films/malfoid-i-wasnt-joking/). The maker’s [release note](https://x.com/schmede_AI/status/2111789541921042875) explains framing and likeness constraints and the intention to assemble revised compilations later. That intention is not presented as an already finished long cut.
+
+A [new soundtrack note](https://x.com/schmede_AI/status/2112130002976231572) says Silver and Green has reached SoundCloud’s download limit. Its YouTube listening link remains available, but the earlier free-download link should not be assumed to deliver a file now. The maker is seeking another download route; none is invented here.

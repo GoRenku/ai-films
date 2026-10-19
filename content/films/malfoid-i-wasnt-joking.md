@@ -14,9 +14,9 @@ imageAlt: "A blonde Malfoid character beside a stone wall in the original short�
 imageCredit: "schmede_AI · original YouTube release artwork"
 imageSource: "https://www.youtube.com/watch?v=os8ULNNjEWI"
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-13"
+lastVerifiedAt: "2026-10-19"
 sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Original story and comic credit", "url": "https://x.com/schmede_AI/status/2109323478679597403"}, {"label": "Maker — character, voice and acting references", "url": "https://x.com/schmede_AI/status/2109356101351145768"}]
-production: [{"label": "Adaptation credits", "detail": "The release credits story/comic to G-G-G-Grin (@Grin2702) and writing to TriangularCipher9000 (@Axolotl52032346). schmede is the adapter/releasing creator. The October 11 original upload runs 2:21 and belongs to a continuing fan-fiction catalogue, not an official franchise production.", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "References and support", "detail": "The maker reports reusing a created character reference, extracting preferred generated audio as a voice reference and prompting the acting. The creator discloses Vidu creative-partner support. Exact film-wide model/version allocation, total crew and budget are not established by hashtags.", "source": "https://x.com/schmede_AI/status/2109356101351145768"}]
+production: [{"label": "Adaptation credits", "detail": "The release credits story/comic to G-G-G-Grin (@Grin2702) and writing to TriangularCipher9000 (@Axolotl52032346). schmede is the adapter/releasing creator. The October 11 original upload runs 2:21 and belongs to a continuing fan-fiction catalogue, not an official franchise production.", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "References and support", "detail": "The maker reports reusing a created character reference, extracting preferred generated audio as a voice reference and prompting the acting. The creator discloses Vidu creative-partner support. Exact film-wide model/version allocation, total crew and budget are not established by hashtags.", "source": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "October 18 continuation: staging and support", "detail": "For Don’t Wait for Me Part 1, the maker reports framing around supporting-character likeness constraints, Vidu partner/preview context and an intended later compilation. These describe the new instalment, not a retroactive exact model or writing credit for I Wasn’t Joking.", "source": "https://x.com/schmede_AI/status/2111789541921042875"}]
 ---
 
 After Harry is turned down for a ball, Malfoid offers to go with him. Harry hears a familiar insult where the speaker intends something sincere. The complete captioned scene makes that misunderstanding and its aftermath the story.
@@ -30,3 +30,9 @@ The full caption text was checked alongside release and production sources. Fan-
 ## Viewing and credits
 
 The original release, available production sources, playback and credited artwork were checked. This entry introduces the work; it is not a complete critical review. Undisclosed collaborators, total crew and production facts are not inferred from other projects.
+
+## October 18 — a further instalment
+
+The maker links [Don’t Wait for Me, Part 1](https://www.youtube.com/watch?v=7D0Q0mk_2Gs) as a continuation after this scene. The complete new upload runs **1:34**; the title denotes an instalment rather than a completed combined adaptation. Its current description names Vidu creative-partner / Q4 Preview context and links reusable realistic and anime references. It does not establish a full model allocation or new instalment-specific writing credit, so the earlier source credits above remain scoped to I Wasn’t Joking.
+
+In the [original release note](https://x.com/schmede_AI/status/2111789541921042875), schmede describes the difficulty of preserving supporting-character likenesses and using framing to limit their exposure. The maker plans separate parts followed by revised compilations. Ten caption language/region variants are reported, not ten dubs. This is a concrete account of continuity and staging constraints, not evidence that the final combined work has been completed.

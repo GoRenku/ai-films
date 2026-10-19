@@ -4,7 +4,7 @@ description: "A French music-video creator exploring synthetic identity and tran
 focus: "French music videos and synthetic identity"
 x: {"url": "https://x.com/Extraltodeus", "label": "Extraltodeus on X", "source": "https://www.youtube.com/watch?v=QPO210-A534"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-18"
+lastVerifiedAt: "2026-10-19"
 sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}]
 website: "https://www.youtube.com/@extraltodeus"
 ---
@@ -28,3 +28,9 @@ The creator also discloses local image/video tools and distinguishes them from t
 ## October 17 — Coming Home on Fire
 
 [Volta — Coming Home on Fire](/films/coming-home-on-fire/) is the complete 3:24 release behind the [X caption “Innovation is conquest”](https://x.com/Extraltodeus/status/2111383907715154312). The original channel resolves the title and performer identity. Its sparse description does not repeat Villain Era’s model list, so that earlier stack is not assumed for the new work.
+
+## October 19 — another song and an accessible cut
+
+[La musique ne s’arrête pas](/films/la-musique-ne-sarrete-pas/) adds an earlier complete ClaudiaGI release, with its own Suno V6 mini credit and locally run visual-tool account. Its two opposed visions of the same world differ from C’est de l’IA’s authenticity satire.
+
+The [English-subtitled C’est de l’IA release](https://x.com/Extraltodeus/status/2111872584338018562) makes that existing song’s argument easier to follow. This is a translated alternate cut, not another directing identity or a new dub. The newly teased French clip is still a preview, not a completed release.

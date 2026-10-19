@@ -295,3 +295,10 @@ Removed The Patchwright’s featured flag so it no longer replaces the fifth new
 - Two narrative shorts: [Wrong House](content/films/wrong-house.md) and [Dominio](content/films/dominio.md). The latter adds [Jun Pabon](content/artists/jun-pabon.md), with September premiere and October discovery distinguished; missing optional crew/model details remain explicit.
 - Expanded anabology, Extraltodeus, Vołkaŭ and schmede profiles; [dated journal](content/updates/2026-10-18-the-cut-and-the-world.md) covers the releases, human revision, audio-analysis claims, Freeman’s craft disclosure and soundtrack access. Four original thumbnails plus one credited finished-cut gallery frame.
 - Content-only refresh. No CSS, layout, application, schema, dependency, lockfile, deployment-configuration or audience changes; no installations or upgrades.
+
+### October 19, 2026 content refresh
+
+- Added [Space Pirates — The Auction](content/films/space-pirates.md), anchored to the complete 5:39 Episode 6 with its scoped Pika plugin disclosure, and [La musique ne s’arrête pas](content/films/la-musique-ne-sarrete-pas.md), an October 8 full music video with exact maker-disclosed tools.
+- Added [Pelagos](content/films/pelagos.md) and filmmaker [Zack Murray](content/artists/zack-murray.md) from the original Artlist release and linked creator portfolio. All three entries have inspected original release artwork.
+- Updated C’est de l’IA with its English-subtitled version; documented Malfoid’s new continuation, continuity constraints, caption scope and soundtrack-download limit. Expanded three existing profiles and added a [dated journal](content/updates/2026-10-19-translations-and-continuing-worlds.md).
+- Content-only refresh; no layout, CSS, application, schema, dependency, lockfile, deployment or audience changes. No installations or upgrades.
