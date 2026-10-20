@@ -5,8 +5,8 @@ website: "https://x.com/voxellesound"
 focus: "Synthetic performance and image-making"
 x: {"url": "https://x.com/voxellesound", "label": "VØXELLE on X", "source": "https://x.com/voxellesound/status/2109622766559232455"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-14"
-sources: [{"label": "Original titled-video thread", "url": "https://x.com/voxellesound/status/2109622766559232455"}, {"label": "Original remastered song and project credit", "url": "https://suno.com/song/702c6913-3633-4a91-9bca-4e00d37c4d0d"}]
+lastVerifiedAt: "2026-10-20"
+sources: [{"label": "Original titled-video thread", "url": "https://x.com/voxellesound/status/2109622766559232455"}, {"label": "Original remastered song and project credit", "url": "https://suno.com/song/702c6913-3633-4a91-9bca-4e00d37c4d0d"}, {"label": "Golden Life full video", "url": "https://x.com/voxellesound/status/2112230297047847222"}, {"label": "Golden Life released song", "url": "https://suno.com/song/536198cc-ad45-48fe-98c0-757d26c2fc95"}]
 ---
 
 VØXELLE is the credited music-project identity on the Suno release linked from the original video thread. The song page identifies **V6**. That establishes a song/project credit, not a named human vocalist or the visual-generation model.
@@ -20,3 +20,7 @@ Individual direction, visual tools and team size remain undisclosed in the check
 ## A dance-centred release
 
 [WAIST CØNTRØL](/films/waist-control/) is an October 13 full music video with a matching released song on the project’s Suno profile. A recurring performer and neon spatial geometry sustain its dance concept. Song generation is labelled V6; video models and an individual director remain undisclosed.
+
+## October 19 — time promised and deferred
+
+[GOLDEN LIFE (S.I.)](/films/golden-life/) pairs a complete 3:57 video with an October 15 released song. The subject is postponed family life and the wish to inhabit the future people have spent their lives building. The linked song displays V6; an individual human vocalist, director and visual-model allocation remain undisclosed.

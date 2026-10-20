@@ -4,8 +4,8 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-19"
-sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}]
+lastVerifiedAt: "2026-10-20"
+sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
 
@@ -34,3 +34,9 @@ The maker’s [original announcement](https://x.com/schmede_AI/status/2111459177
 [Don’t Wait for Me, Part 1](https://www.youtube.com/watch?v=7D0Q0mk_2Gs) continues the narrative after [I Wasn’t Joking](/films/malfoid-i-wasnt-joking/). The maker’s [release note](https://x.com/schmede_AI/status/2111789541921042875) explains framing and likeness constraints and the intention to assemble revised compilations later. That intention is not presented as an already finished long cut.
 
 A [new soundtrack note](https://x.com/schmede_AI/status/2112130002976231572) says Silver and Green has reached SoundCloud’s download limit. Its YouTube listening link remains available, but the earlier free-download link should not be assumed to deliver a file now. The maker is seeking another download route; none is invented here.
+
+## October 19–20 — another part and a soundtrack release
+
+[Don’t Wait for Me, Part 2](https://www.youtube.com/watch?v=cp8VYGsG7O0) adds a complete 1:34 instalment to the continuing Malfoid adaptation. Its Vidu preview/partner description is scoped to this release. Ten caption variants do not establish new dubs or a finished combined cut.
+
+The complete song [WRATH — Let Them Be Scattered](https://www.youtube.com/watch?v=lrotWzEqC0g) is separately available to hear. The inspected presentation uses portrait artwork and a waveform, so it is linked as a soundtrack rather than catalogued as a new directed music video. It does not establish that the previously announced WRATH narrative work is finished.

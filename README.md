@@ -306,3 +306,9 @@ Removed The Patchwright’s featured flag so it no longer replaces the fifth new
 - Added [Pelagos](content/films/pelagos.md) and filmmaker [Zack Murray](content/artists/zack-murray.md) from the original Artlist release and linked creator portfolio. All three entries have inspected original release artwork.
 - Updated C’est de l’IA with its English-subtitled version; documented Malfoid’s new continuation, continuity constraints, caption scope and soundtrack-download limit. Expanded three existing profiles and added a [dated journal](content/updates/2026-10-19-translations-and-continuing-worlds.md).
 - Content-only refresh; no layout, CSS, application, schema, dependency, lockfile, deployment or audience changes. No installations or upgrades.
+
+## October 20, 2026 refresh
+
+Added five verified works: ClaudiaGI’s Demande à l’IA! and VØXELLE’s GOLDEN LIFE (S.I.) music videos; Gossip Goblin’s Escaping the Onion and 汗青 HQ’s StoryWeave shorts; and the older Lyrian Chronicles RIFT pilot with a profile preserving its six credited collaborators. Original complete releases, current playback, expanded descriptions, available captions and sampled scenes checked. Five real credited images inspected; Golden Life uses its released song cover and Demande uses a clean original frame near 3:40.
+
+Expanded Cutting Room Floor’s planning/editing account from antic’s production essay; retained both scoped Pika and later Dreamina statements for Space Pirates without inventing their division of work; linked Malfoid’s complete Don’t Wait for Me Part 2 and WRATH soundtrack; distinguished The Sage’s forthcoming episode from the current complete release. Added a dated journal note. All 46 verified X profiles checked, including the two requested music-video discovery accounts. No CSS, layout, application, package, lockfile or deployment changes; no installs or Sites actions.

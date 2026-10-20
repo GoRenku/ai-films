@@ -6,7 +6,7 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-16"
+lastVerifiedAt: "2026-10-20"
 sources:
   - label: "An Honest Day\u2019s Work \u2014 original release"
     url: "https://x.com/Gossip_Goblin/status/2109301986189324775"
@@ -18,6 +18,10 @@ sources:
     url: "https://godsdontgivegifts.com/"
   - label: "Gossip Goblin — official studio"
     url: "https://www.gossipgoblin.studio/"
+  - label: "Escaping the Onion original"
+    url: "https://www.youtube.com/watch?v=Qh61MUazE1Y"
+  - label: "Alternate release caption"
+    url: "https://x.com/Gossip_Goblin/status/2112196907053301796"
 x:
   {
     "url": "https://x.com/Gossip_Goblin",
@@ -49,3 +53,7 @@ The October 13 [complete short](/films/mother-was-a-fighter/) turns a queen’s 
 ## Pursue Your Passions
 
 The October 15 [complete short](/films/pursue-your-passions/) puts a ruler’s feast against a district’s lack of bread. Its talk of freedom after automation extends the studio’s social satire through close-up dialogue. The original release supplies no episode-specific model inventory or established feature connection.
+
+## October 19 — another layer of reality
+
+[Escaping the Onion](/films/escaping-the-onion/) is the complete 2:59 short released on the official channel and shared under the alternate caption Cracking The Onion. A researcher’s neglected relationship gives the simulation-escape premise a cost. Work-specific models, voices, music and crew are not disclosed.
