@@ -4,8 +4,8 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-20"
-sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}]
+lastVerifiedAt: "2026-10-21"
+sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}, {"label": "Part 3 original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Part 3 production and subtitle note", "url": "https://x.com/schmede_AI/status/2112691761537552832"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
 
@@ -40,3 +40,7 @@ A [new soundtrack note](https://x.com/schmede_AI/status/2112130002976231572) say
 [Don’t Wait for Me, Part 2](https://www.youtube.com/watch?v=cp8VYGsG7O0) adds a complete 1:34 instalment to the continuing Malfoid adaptation. Its Vidu preview/partner description is scoped to this release. Ten caption variants do not establish new dubs or a finished combined cut.
 
 The complete song [WRATH — Let Them Be Scattered](https://www.youtube.com/watch?v=lrotWzEqC0g) is separately available to hear. The inspected presentation uses portrait artwork and a waveform, so it is linked as a soundtrack rather than catalogued as a new directed music video. It does not establish that the previously announced WRATH narrative work is finished.
+
+## October 21 — Part 3 and French captions
+
+[Don’t Wait for Me, Part 3](https://www.youtube.com/watch?v=nU807C2rgVU) adds a complete 1:30 instalment to the continuing adaptation. The [maker’s note](https://x.com/schmede_AI/status/2112691761537552832) attributes some pacing decisions to moderation constraints and reports French subtitles across the catalogue. Those are attributed production/access disclosures, not a claimed new dub, an audited total production time or confirmation of a final compilation.

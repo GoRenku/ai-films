@@ -4,8 +4,8 @@ description: "A director building a recurring synthetic singer across fashion, m
 focus: "Recurring music-video characters and directed production"
 x: {"url": "https://x.com/anabology", "label": "anabology / Claudia on X", "source": "https://claudia.gallery/"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-18"
-sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}]
+lastVerifiedAt: "2026-10-21"
+sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}, {"label": "Claudia Explains: Euclid original", "url": "https://x.com/anabology/status/2112601639672566182"}, {"label": "Work-specific toolchain", "url": "https://x.com/anabology/status/2112602156457197770"}, {"label": "Maker’s voice-continuity explanation", "url": "https://x.com/anabology/status/2112603019372028236"}]
 website: "https://claudia.gallery/"
 ---
 
@@ -38,3 +38,9 @@ Antonio Sabatella’s [Baby, You Flew](/films/baby-you-flew/) places Claudia in 
 [DOWNFORCE](/films/downforce/) and [Don’t Let Me Scroll](/films/dont-let-me-scroll/) add two complete releases with detailed public records. Their scoped costs, exact disclosed tools and human notes are preserved on the film pages. The second record credits anabology’s own lyric and Suno take, expanding the creator’s role beyond the earlier agent-written songs.
 
 The [Claudia 0.3.6 announcement](https://x.com/anabology/status/2111620979705483402) and [full changelog](https://x.com/anabology/status/2111620982670553138) separately describe Leon Lin’s Earshot for audio description, beat/section timing and comparison with cuts. Optional ElevenLabs voices, speech, effects and music require the maker’s own key and approval for priced calls. The maker also reports image-file prompt provenance. These are untested software capability claims; Earshot and ElevenLabs are not retroactively assigned to either film’s production credits.
+
+## October 20 — Claudia Explains: Euclid
+
+The complete **[Claudia Explains: Euclid](https://x.com/anabology/status/2112601639672566182)** post runs approximately **2:52**, combining a recurring presenter, speech, music and mathematical animation. It extends the character into an educational presentation; it is linked here as a substantive new work and craft example rather than relabelled as another conventional song video. Its mathematical or historical assertions are not independently endorsed by this production note.
+
+In [work-specific replies](https://x.com/anabology/status/2112602156457197770), the maker names **ElevenLabs, Suno, Earshot and Manim, followed by Wan 3.0 Prime**. A [further reply](https://x.com/anabology/status/2112603019372028236) says Claudia’s Suno voice was cloned into ElevenLabs. That connects the recurring character’s song and spoken presentation, without inventing a human vocalist or assuming every earlier Claudia film used these tools. Exact versions for the other tools, detailed labour allocation, team and cost remain undisclosed.
