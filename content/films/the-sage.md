@@ -9,7 +9,7 @@ runtimeMinutes: 22.456016666666667
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=kN1E4JiC7oM"
 watchLabel: "Watch the complete episode"
-image: "/media/the-sage.jpg"
+image: "/media/the-sage-episode-8.jpg"
 imageAlt: "The Reverend stands in a hall beneath The Sage Episode 8 — The Other Side title"
 imageCredit: "Mike J Mitch / Phantom X · original Episode 8 release artwork"
 imageSource: "https://www.youtube.com/watch?v=kN1E4JiC7oM"
