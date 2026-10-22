@@ -4,8 +4,8 @@ description: "A French music-video creator exploring synthetic identity and tran
 focus: "French music videos and synthetic identity"
 x: {"url": "https://x.com/Extraltodeus", "label": "Extraltodeus on X", "source": "https://www.youtube.com/watch?v=QPO210-A534"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-20"
-sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}, {"label": "Demande à l’IA! complete original", "url": "https://www.youtube.com/watch?v=ScHM6ROYVeg"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}, {"label": "Demande à l’IA! complete original", "url": "https://www.youtube.com/watch?v=ScHM6ROYVeg"}, {"label": "Sky Beneath the Skin release post", "url": "https://x.com/Extraltodeus/status/2113082169509753290"}]
 website: "https://www.youtube.com/@extraltodeus"
 ---
 
@@ -38,3 +38,7 @@ The [English-subtitled C’est de l’IA release](https://x.com/Extraltodeus/sta
 ## October 19 — asking the assistant
 
 [Demande à l’IA!](/films/demande-a-lia/) gives ClaudiaGI a satire about surrendering judgment in ordinary life. The full 4:07 release connects navigation, conversation and interpretation through a recurring performer. Its production description is sparse; earlier videos’ exact tool and lyric credits are not silently transferred to it.
+
+## October 22 — Sky Beneath the Skin
+
+The [English-titled 4:42 post](https://x.com/Extraltodeus/status/2113082169509753290) is linked from [Le ciel sous la peau](/films/le-ciel-sous-la-peau/). The matching work is retained under one canonical entry; a separate vocal dub or new production stack is not inferred from its English title.

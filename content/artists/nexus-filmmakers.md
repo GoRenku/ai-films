@@ -6,7 +6,7 @@ focus: "Anthology & collaborative world-building"
 website: "https://x.com/PJaccetturo/status/2100218143625073088"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-10-22"
 sources:
   [
     {
@@ -17,6 +17,9 @@ sources:
       "label": "Public team credits",
       "url": "https://x.com/PJaccetturo/status/2100218148981256499",
     },
+    {"label": "Nexus cost and process disclosure", "url": "https://x.com/PJaccetturo/status/2112899203701547153"},
+    {"label": "Blender staging", "url": "https://x.com/PJaccetturo/status/2112899206448914913"},
+    {"label": "Still storyboard method", "url": "https://x.com/PJaccetturo/status/2112899207568785784"},
   ]
 x:
   {
@@ -33,3 +36,9 @@ x:
 The useful signal is a recurring dramatic concern inside a shared visual world, supported by named collaborators. Their public breakdown links look development, performance direction and editing to the finished short. That is more instructive than a claim that a single prompt produced a film.
 
 The team also discusses a future feature. That ambition remains a plan; the released anthology work is the evidence on which this entry rests. The X link below belongs to **PJ Ace**, whose posts provide production news and credits for this project.
+
+## October 22 — staging before generation
+
+PJ Ace’s [new Nexus production breakdown](https://x.com/PJaccetturo/status/2112899203701547153) reports spending over **$2,000 per day** on generations during part of the work. This is an attributed daily generation-cost claim, not an audited total film budget.
+
+The useful method is [Claude-assisted Blender staging](https://x.com/PJaccetturo/status/2112899206448914913), followed by [still storyboards supplied to Seedance through Dreamina](https://x.com/PJaccetturo/status/2112899207568785784). He says they used images rather than the rendered Blender video to preserve spatial control while allowing less rigid camera work. Exact model versions, complete crew and net savings are undisclosed. The post refers to a latest episode without establishing a new completed release here, so these tools are not retroactively assigned to every Nexus film.

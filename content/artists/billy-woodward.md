@@ -5,8 +5,8 @@ focus: "Character comedy, animation and staged fantasy"
 website: "https://www.backsliderbrand.com/"
 x: {"url": "https://x.com/billywoodward", "label": "Billy Woodward on X", "source": "https://x.com/billywoodward/status/2107537407629197618"}
 discoveredAt: "2026-10-07"
-lastVerifiedAt: "2026-10-07"
-sources: [{"label": "Backslider Brand — original studio portfolio", "url": "https://www.backsliderbrand.com/"}, {"label": "Woodward — Afahria release", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Woodward — personal story background", "url": "https://x.com/billywoodward/status/2107552186364555629"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Backslider Brand — original studio portfolio", "url": "https://www.backsliderbrand.com/"}, {"label": "Woodward — Afahria release", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Woodward — personal story background", "url": "https://x.com/billywoodward/status/2107552186364555629"}, {"label": "Episode 2 and production thread", "url": "https://x.com/billywoodward/status/2112927769503883399"}]
 ---
 
 Woodward runs **Backslider Brand**, whose original portfolio spans animation, music, design and generative production. His public release and linked studio establish his identity without confusing him with similarly named filmmakers.
@@ -18,3 +18,7 @@ Woodward runs **Backslider Brand**, whose original portfolio spans animation, mu
 His production account treats staging as a directing problem. A sitcom returning to two locations requires recognisable space and stable positions across generations. Preparing character, prop and environment variations beforehand offers a concrete way to support that continuity.
 
 The episode was produced in partnership with **Showrunner / Fable**. That support is disclosed; it does not establish an itemised crew, exact model versions or ownership terms.
+
+## October 22 — continuity across a second episode
+
+[Afahria](/films/afahria-the-wicked-worm/) now includes Episode 2 and its production replies. Woodward’s environment sheets, baked-in blocking and deliberate change from close-up to wide view make scene geography a concrete production constraint. The new release also identifies his music reworking, editing and finishing; exact model allocation and total crew remain unknown.

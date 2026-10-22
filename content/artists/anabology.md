@@ -4,8 +4,8 @@ description: "A director building a recurring synthetic singer across fashion, m
 focus: "Recurring music-video characters and directed production"
 x: {"url": "https://x.com/anabology", "label": "anabology / Claudia on X", "source": "https://claudia.gallery/"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-21"
-sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}, {"label": "Claudia Explains: Euclid original", "url": "https://x.com/anabology/status/2112601639672566182"}, {"label": "Work-specific toolchain", "url": "https://x.com/anabology/status/2112602156457197770"}, {"label": "Maker’s voice-continuity explanation", "url": "https://x.com/anabology/status/2112603019372028236"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}, {"label": "Claudia Explains: Euclid original", "url": "https://x.com/anabology/status/2112601639672566182"}, {"label": "Work-specific toolchain", "url": "https://x.com/anabology/status/2112602156457197770"}, {"label": "Maker’s voice-continuity explanation", "url": "https://x.com/anabology/status/2112603019372028236"}, {"label": "Universal High Income original release", "url": "https://x.com/anabology/status/2113239948144890235"}]
 website: "https://claudia.gallery/"
 ---
 
@@ -44,3 +44,7 @@ The [Claudia 0.3.6 announcement](https://x.com/anabology/status/2111620979705483
 The complete **[Claudia Explains: Euclid](https://x.com/anabology/status/2112601639672566182)** post runs approximately **2:52**, combining a recurring presenter, speech, music and mathematical animation. It extends the character into an educational presentation; it is linked here as a substantive new work and craft example rather than relabelled as another conventional song video. Its mathematical or historical assertions are not independently endorsed by this production note.
 
 In [work-specific replies](https://x.com/anabology/status/2112602156457197770), the maker names **ElevenLabs, Suno, Earshot and Manim, followed by Wan 3.0 Prime**. A [further reply](https://x.com/anabology/status/2112603019372028236) says Claudia’s Suno voice was cloned into ElevenLabs. That connects the recurring character’s song and spoken presentation, without inventing a human vocalist or assuming every earlier Claudia film used these tools. Exact versions for the other tools, detailed labour allocation, team and cost remain undisclosed.
+
+## October 22 — Universal High Income
+
+[Universal High Income](/films/universal-high-income/) introduces a complete 3:55 release with a tactile constructed world. The linked gallery had not yet added this work’s production record when checked. The film can be included on its verified authorship and sustained concept while exact tools, music credits, team and costs remain unknown.

@@ -4,8 +4,8 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-21"
-sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}, {"label": "Part 3 original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Part 3 production and subtitle note", "url": "https://x.com/schmede_AI/status/2112691761537552832"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}, {"label": "Part 3 original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Part 3 production and subtitle note", "url": "https://x.com/schmede_AI/status/2112691761537552832"}, {"label": "Part 4 writing statement", "url": "https://x.com/schmede_AI/status/2113014086183338228"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
 
@@ -44,3 +44,7 @@ The complete song [WRATH — Let Them Be Scattered](https://www.youtube.com/watc
 ## October 21 — Part 3 and French captions
 
 [Don’t Wait for Me, Part 3](https://www.youtube.com/watch?v=nU807C2rgVU) adds a complete 1:30 instalment to the continuing adaptation. The [maker’s note](https://x.com/schmede_AI/status/2112691761537552832) attributes some pacing decisions to moderation constraints and reports French subtitles across the catalogue. Those are attributed production/access disclosures, not a claimed new dub, an audited total production time or confirmation of a final compilation.
+
+## October 22 — writing the next scene
+
+[Malfoid’s Part 4](/films/malfoid-i-wasnt-joking/) adds a complete 1:25 instalment and an explicit maker writing credit. The creator’s discussion of knowledge, apology and pride explains a dramatic decision rather than a model setting. Earlier adaptation credits remain scoped to those earlier works; the reported eleven caption variants are not dubs.

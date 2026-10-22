@@ -5,8 +5,8 @@ focus: "Surreal fashion, music and choreographed synthetic figures"
 website: "https://www.kellyboesch.com/"
 x: {"url": "https://x.com/kellyeld", "label": "Kelly Boesch on X", "source": "https://linktr.ee/kellyboeschaiart"}
 discoveredAt: "2026-10-16"
-lastVerifiedAt: "2026-10-17"
-sources: [{"label": "Official artist portfolio", "url": "https://www.kellyboesch.com/"}, {"label": "Creator-linked profiles and music", "url": "https://linktr.ee/kellyboeschaiart"}, {"label": "Between Me and You — original video and process", "url": "https://www.youtube.com/watch?v=c2-HEkIvVqE"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Official artist portfolio", "url": "https://www.kellyboesch.com/"}, {"label": "Creator-linked profiles and music", "url": "https://linktr.ee/kellyboeschaiart"}, {"label": "Between Me and You — original video and process", "url": "https://www.youtube.com/watch?v=c2-HEkIvVqE"}, {"label": "Somewhere Along the Way original release", "url": "https://x.com/kellyeld/status/2112897019845165440"}]
 ---
 
 Kelly Boesch publishes visual art and music through her own portfolio and Kelly Boesch AI Art channel. Her creator-linked directory connects the website, X account, YouTube and music releases under **Kelly Boesch**. The project’s generated voice is not assigned to an invented human vocalist.
@@ -20,3 +20,7 @@ Her production account also exposes a useful creative compromise: a Midjourney s
 ## A different visual workflow
 
 [Come a Little Closer](/films/come-a-little-closer/) pairs an original song about trust and surrender with Pika keyframe transitions. Its [complete release description](https://www.youtube.com/watch?v=-oK8_B31v1M) credits Boesch’s lyrics and creative direction with Suno assistance, and acknowledges Pika-supplied credits while describing the video as not an advertisement. That Pika workflow is kept separate from Between Me and You’s Kling animation.
+
+## October 22 — Somewhere Along the Way
+
+[Somewhere Along the Way](/films/somewhere-along-the-way/) carries Boesch’s memory of Japan into dance and sculptural costume. Her own lyrics, Suno song, Midjourney images and Veo animation are separately credited. This extends her song-length practice through another visual workflow, without assigning it the Pika or Kling pipeline of earlier videos.

@@ -14,8 +14,8 @@ imageAlt: "Small blossoms growing along a glass-like surface in the original vid
 imageCredit: "Extraltodeus · original YouTube release artwork"
 imageSource: "https://www.youtube.com/watch?v=7RLOmtkwMhw"
 discoveredAt: "2026-10-14"
-lastVerifiedAt: "2026-10-14"
-sources: [{"label": "Original complete release", "url": "https://www.youtube.com/watch?v=7RLOmtkwMhw"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Original complete release", "url": "https://www.youtube.com/watch?v=7RLOmtkwMhw"}, {"label": "Complete English-titled X post", "url": "https://x.com/Extraltodeus/status/2113082169509753290"}]
 production: [{"label": "Production coordination", "detail": "The description credits Claude Opus 5.5 with Codex / GPT-6.0 Astra assisting. Human release decisions and total crew are not quantified.", "source": "https://www.youtube.com/watch?v=7RLOmtkwMhw"}, {"label": "Music and lyrics", "detail": "Suno is credited for music; lyrics are credited to Codex. No Suno version or human performer is specified.", "source": "https://www.youtube.com/watch?v=7RLOmtkwMhw"}, {"label": "Local visual tools", "detail": "Krea2 for reference images, MinimaxH3 for video, both labelled local; ComfyUI is the interface, according to the creator.", "source": "https://www.youtube.com/watch?v=7RLOmtkwMhw"}]
 musician: "Astra"
 ---
@@ -31,3 +31,7 @@ The video gives an otherwise flexible generated world a recurring visual anchor:
 The full original description credits Claude Opus 5.5 in control with Codex / GPT-6.0 Astra assisting, Suno for music, Krea2 for local reference images, MinimaxH3 for local video generation and ComfyUI as the interface. Those spellings and local-use claims are preserved as maker disclosures. They are not independent performance tests. Astra is the credited song identity, not an inferred human vocalist; total crew, budget and production duration are undisclosed.
 
 The original release, full production description, playback and artwork were checked. This entry does not claim complete critical viewing.
+
+## October 22 — English-titled release post
+
+The maker now shares a complete **4:42 X video titled [Astra — Sky Beneath the Skin](https://x.com/Extraltodeus/status/2113082169509753290)**. Its recurring Astra imagery, translated title and matching duration connect it to this existing work. It is linked here without creating a duplicate film card or claiming a separately verified English vocal dub. The new short caption supplies no replacement production inventory.

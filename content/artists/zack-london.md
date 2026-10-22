@@ -6,7 +6,7 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-20"
+lastVerifiedAt: "2026-10-22"
 sources:
   - label: "An Honest Day\u2019s Work \u2014 original release"
     url: "https://x.com/Gossip_Goblin/status/2109301986189324775"
@@ -22,6 +22,8 @@ sources:
     url: "https://www.youtube.com/watch?v=Qh61MUazE1Y"
   - label: "Alternate release caption"
     url: "https://x.com/Gossip_Goblin/status/2112196907053301796"
+  - label: "The Toaster Rebellion original release"
+    url: "https://x.com/Gossip_Goblin/status/2112935228104905156"
 x:
   {
     "url": "https://x.com/Gossip_Goblin",
@@ -57,3 +59,7 @@ The October 15 [complete short](/films/pursue-your-passions/) puts a ruler’s f
 ## October 19 — another layer of reality
 
 [Escaping the Onion](/films/escaping-the-onion/) is the complete 2:59 short released on the official channel and shared under the alternate caption Cracking The Onion. A researcher’s neglected relationship gives the simulation-escape premise a cost. Work-specific models, voices, music and crew are not disclosed.
+
+## October 22 — The Toaster Rebellion
+
+[The Toaster Rebellion](/films/the-toaster-rebellion/) puts a recurring mechanical woman and a domestic relationship inside a retrofuturist home. The complete 2:54 release continues the studio’s small-scale social science fiction. Its sparse caption does not identify a feature connection or a new model stack, so neither is inferred.

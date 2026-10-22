@@ -6,8 +6,8 @@ focus: "Music-video direction, recurring characters and editing"
 website: "https://javiexmachina.com/"
 x: {"url": "https://x.com/javif4_", "label": "Javier Fan on X", "source": "https://x.com/javif4_/status/2109314007899259255"}
 discoveredAt: "2026-10-12"
-lastVerifiedAt: "2026-10-12"
-sources: [{"label": "Original music-video release", "url": "https://www.youtube.com/watch?v=40kUdtNVLyE"}, {"label": "Creator announcement", "url": "https://x.com/javif4_/status/2109314007899259255"}, {"label": "Creator project and credits", "url": "https://javiexmachina.com/"}, {"label": "Public process and development versions", "url": "https://javiexmachina.com/process/"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Original music-video release", "url": "https://www.youtube.com/watch?v=40kUdtNVLyE"}, {"label": "Creator announcement", "url": "https://x.com/javif4_/status/2109314007899259255"}, {"label": "Creator project and credits", "url": "https://javiexmachina.com/"}, {"label": "Public process and development versions", "url": "https://javiexmachina.com/process/"}, {"label": "a 1959 reimagining original release", "url": "https://www.youtube.com/watch?v=QrYwaNhsGwE"}]
 ---
 
 Publishing as **javiexmachina**, Javier Fan presents a connected music-video practice rather than an isolated generation test. His project site credits **javier** for direction and editing and **slopdiva** for the song on **I’M YOUR SLOP (I’M YOUR ART)**. The original channel’s October 11 release runs **4:07**. Slopdiva is a credited project identity; the checked sources do not establish a separate human performer.
@@ -27,3 +27,7 @@ That page documents an earlier **3:23 development edit**, while the released vid
 ## Watch the work
 
 [I’M YOUR SLOP](/films/im-your-slop/) is now listed in the collection as a music video ([original channel release](https://www.youtube.com/watch?v=40kUdtNVLyE)), rather than labeled a completed narrative short. The expanded release description and linked process were checked; this profile does not claim complete critical viewing or a verified total crew.
+
+## October 22 — a 1959 reimagining
+
+[ANY DAY NOW — The Robots in 1959](/films/any-day-now-1959/) is a complete 4:20 recasting of the automation song in a retrofuturist blues world. The original channel and creator thread establish a new version, rather than the short excerpt seen in earlier updates. Its slop.cc contest context is disclosed, while the September version’s clip counts and models stay attached to that earlier cut.

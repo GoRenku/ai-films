@@ -5,8 +5,8 @@ website: "https://x.com/AstrablueAI"
 focus: "Speculative music-video storytelling"
 x: {"url": "https://x.com/AstrablueAI", "label": "Astra Blue AI on X", "source": "https://x.com/AstrablueAI/status/2109639386178650416"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-17"
-sources: [{"label": "P DOOM — original release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "P DOOM — original release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}, {"label": "Wait Till You See It original release", "url": "https://www.youtube.com/watch?v=YZGLA_F_UGw"}]
 ---
 
 Astra Blue AI is the public releasing project behind [P DOOM](/films/p-doom/). The account identifies itself as a slopcore artist. Its public project identity is used here without guessing an operator’s legal name or a human singer.
@@ -24,3 +24,7 @@ The release claims twelve hours of unattended production. It does not identify a
 ## NOW SERVING — direction and repair
 
 [NOW SERVING](/films/now-serving/) adds a complete October 16 release about helpful automation becoming replacement. The maker’s [direct production reply](https://x.com/AstrablueAI/status/2111109685805994086) explicitly describes human editing, directional intervention and hundreds of failed clips. That disclosure belongs beside the project’s automation language; it does not retroactively prove or disprove the different accounts attached to earlier works.
+
+## October 22 — Wait Till You See It
+
+[WAIT TILL YOU SEE IT](/films/wait-till-you-see-it/) uses a mother-and-daughter relationship to carry an imagined transition from 2026 to 2050. The original full release supplies a 5:10 song, rather than a short preview. Its prompting-only production claim is attributed; the story’s job-loss figures and future outcomes are not adopted as factual predictions.

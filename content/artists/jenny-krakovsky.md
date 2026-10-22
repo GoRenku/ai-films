@@ -5,8 +5,8 @@ focus: "Period crime fiction and transparent independent production"
 website: "https://jennykrakovsky.com/"
 x: {"url": "https://x.com/jennykrakovsky", "label": "Jenny Krakovsky on X", "source": "https://jennykrakovsky.com/"}
 discoveredAt: "2026-10-04"
-lastVerifiedAt: "2026-10-10"
-sources: [{"label": "Original filmmaker biography and BOSS overview", "url": "https://jennykrakovsky.com/"}, {"label": "Creator theatrical announcement", "url": "https://x.com/jennykrakovsky/status/2103106925495832587"}, {"label": "Final production diary — Days 47–50", "url": "https://www.youtube.com/watch?v=yjrw3EraBtM"}, {"label": "Slop and Glory — full interview", "url": "https://x.com/SLOPandGLORY/status/2108595130005672078"}]
+lastVerifiedAt: "2026-10-22"
+sources: [{"label": "Original filmmaker biography and BOSS overview", "url": "https://jennykrakovsky.com/"}, {"label": "Creator theatrical announcement", "url": "https://x.com/jennykrakovsky/status/2103106925495832587"}, {"label": "Final production diary — Days 47–50", "url": "https://www.youtube.com/watch?v=yjrw3EraBtM"}, {"label": "Slop and Glory — full interview", "url": "https://x.com/SLOPandGLORY/status/2108595130005672078"}, {"label": "Original BBC interview", "url": "https://www.youtube.com/watch?v=gOYOVgwGyIo"}]
 ---
 
 Krakovsky's original biography traces her training to documentary pioneer Colin Young and a career in documentaries and commercials before narrative fiction. She describes observational filmmaking, Italian Neorealism and the French Nouvelle Vague as influences on her AI and hybrid practice.
@@ -20,3 +20,7 @@ The original 30-day challenge became a longer production. Her [Days 47–50 wrap
 ## A longer conversation
 
 On October 9, Krakovsky [shared a new interview](https://x.com/jennykrakovsky/status/2108595081506648535) with Slop and Glory. The [complete approximately 51-minute episode](https://x.com/SLOPandGLORY/status/2108595130005672078) is available on X. The host introduces her commercial background and making a feature from her bedroom; the conversation is an additional first-person resource alongside the production diary. It does not establish a new screening or release date for BOSS.
+
+## October 22 — BBC production interview
+
+The [BBC Radical interview](https://www.youtube.com/watch?v=gOYOVgwGyIo) adds Krakovsky’s account of performing and editing BOSS’s dialogue before generation, alongside a scoped technology-cost estimate. [The film entry](/films/boss/) distinguishes these direct disclosures from an audited budget or verified venue access. No new theatrical opening is inferred from the interview’s release ambition.
