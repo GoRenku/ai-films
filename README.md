@@ -4,7 +4,7 @@ A small, static Astro site for discovering AI films and filmmakers. Content live
 
 ## Develop
 
-Requires Node 22.12+ or Node 24 and the pinned pnpm 11.7.0 (declared in package.json).
+Requires Node 22.23.4 or newer in the 22.x line, or 24.22.1 or newer in the 24.x line, and the pinned pnpm 11.7.0 (declared in package.json).
 
 ```sh
 pnpm install --frozen-lockfile
