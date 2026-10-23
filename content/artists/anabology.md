@@ -4,8 +4,8 @@ description: "A director building a recurring synthetic singer across fashion, m
 focus: "Recurring music-video characters and directed production"
 x: {"url": "https://x.com/anabology", "label": "anabology / Claudia on X", "source": "https://claudia.gallery/"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-22"
-sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}, {"label": "Claudia Explains: Euclid original", "url": "https://x.com/anabology/status/2112601639672566182"}, {"label": "Work-specific toolchain", "url": "https://x.com/anabology/status/2112602156457197770"}, {"label": "Maker’s voice-continuity explanation", "url": "https://x.com/anabology/status/2112603019372028236"}, {"label": "Universal High Income original release", "url": "https://x.com/anabology/status/2113239948144890235"}]
+lastVerifiedAt: "2026-10-23"
+sources: [{"label": "Claudia — original gallery and credits", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full production record", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Escape Velocity — original release", "url": "https://www.youtube.com/watch?v=C3fxudvU-UU"}, {"label": "Original audio-analysis experiment", "url": "https://x.com/anabology/status/2110601112013382016"}, {"label": "Claudia Explains: Euclid original", "url": "https://x.com/anabology/status/2112601639672566182"}, {"label": "Work-specific toolchain", "url": "https://x.com/anabology/status/2112602156457197770"}, {"label": "Maker’s voice-continuity explanation", "url": "https://x.com/anabology/status/2112603019372028236"}, {"label": "Universal High Income original release", "url": "https://x.com/anabology/status/2113239948144890235"}, {"label": "WHITEPILL official film page", "url": "https://claudia.gallery/whitepill/"}, {"label": "WHITEPILL production record", "url": "https://claudia.gallery/record/whitepill/readme/"}]
 website: "https://claudia.gallery/"
 ---
 
@@ -48,3 +48,7 @@ In [work-specific replies](https://x.com/anabology/status/2112602156457197770), 
 ## October 22 — Universal High Income
 
 [Universal High Income](/films/universal-high-income/) introduces a complete 3:55 release with a tactile constructed world. The linked gallery had not yet added this work’s production record when checked. The film can be included on its verified authorship and sustained concept while exact tools, music credits, team and costs remain unknown.
+
+## October 23 — WHITEPILL and the final edit
+
+The gallery now identifies yesterday’s [Universal High Income release as WHITEPILL](/films/universal-high-income/), with a work-specific production record. It credits Seedance 2.5 for all final picture, distinguishes abandoned Wan/Kling work from the final cut, and explains isolated-vocal guidance, shader-based movement and the director’s shot-by-shot revisions. The scoped cost tally is kept separate from a full budget; software agents are not counted as human crew.

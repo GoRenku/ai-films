@@ -325,3 +325,12 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 - Added [Blurred Horizon](content/films/blurred-horizon.md), its six original episodes and director-specific credits, and [The Toaster Rebellion](content/films/the-toaster-rebellion.md). New profiles: [Jeff Synthesized](content/artists/jeff-synthesized.md) and [Eddie Jacobson / Evil Eddie](content/artists/eddie-jacobson.md). Austin awards verified at the original festival.
 - [Steelay](content/films/steelay.md) now has a confirmed October 21 theatrical opening. Afahria Episode 2, Malfoid Part 4, Nexus staging/cost disclosures and BOSS’s BBC production interview extend existing entries. Sky Beneath the Skin links from the existing Le ciel sous la peau entry, avoiding duplication.
 - [Dated journal](content/updates/2026-10-22-worlds-built-to-a-song.md) connects the update. Refresh edits are content, credited media and summaries only; no CSS, rendering, package, lockfile, deployment or audience changes, installations or upgrades. The separately committed Node requirement change is retained as the base commit.
+
+### October 23, 2026 content refresh
+
+- Added [CHUMBO](content/films/chumbo.md) with full release, named credits, maker-reported scale and continuity/compositing techniques.
+- Added [Luke Mazey / Slophouse](content/artists/luke-mazey.md), [The Reformation Room](content/films/the-reformation-room.md) and BIA’s [Solo Reign](content/films/solo-reign.md): original released series/music video, direction, artwork and scoped disclosures.
+- Added [COLD OUT THERE](content/films/cold-out-there.md) from the original complete horror-short release.
+- Updated [WHITEPILL — Universal High Income](content/films/universal-high-income.md) at its existing URL with the new full production record; final tools, discarded tests, human revisions and scoped costs are distinguished.
+- Confirmed [Sanxingdui’s Chinese cinema opening](content/films/sanxingdui-future-past.md); added [Gods Don’t Give Gifts’ announced AGC partnership](content/films/gods-dont-give-gifts.md) and Kelly Boesch’s work-specific storytelling experiment.
+- [Dated journal](content/updates/2026-10-23-drops-dancers-and-a-final-cut.md) connects the substantive changes. All accepted content is canonical; application, styles, packages and deployment setup are unchanged.

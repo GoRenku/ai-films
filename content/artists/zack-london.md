@@ -6,7 +6,7 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-22"
+lastVerifiedAt: "2026-10-23"
 sources:
   - label: "An Honest Day\u2019s Work \u2014 original release"
     url: "https://x.com/Gossip_Goblin/status/2109301986189324775"
@@ -24,6 +24,8 @@ sources:
     url: "https://x.com/Gossip_Goblin/status/2112196907053301796"
   - label: "The Toaster Rebellion original release"
     url: "https://x.com/Gossip_Goblin/status/2112935228104905156"
+  - label: "AGC partnership \u2014 creator announcement"
+    url: "https://x.com/Gossip_Goblin/status/2113306179296448727"
 x:
   {
     "url": "https://x.com/Gossip_Goblin",
@@ -63,3 +65,7 @@ The October 15 [complete short](/films/pursue-your-passions/) puts a ruler’s f
 ## October 22 — The Toaster Rebellion
 
 [The Toaster Rebellion](/films/the-toaster-rebellion/) puts a recurring mechanical woman and a domestic relationship inside a retrofuturist home. The complete 2:54 release continues the studio’s small-scale social science fiction. Its sparse caption does not identify a feature connection or a new model stack, so neither is inferred.
+
+## October 23 — AGC distribution announcement
+
+The maker [announces an AGC partnership](https://x.com/Gossip_Goblin/status/2113306179296448727) for taking **Gods Don’t Give Gifts** to screens internationally, retaining December 4 as its target. That is a substantive step in the feature’s route to exhibition; individual territories and venue bookings are not inferred from the announcement.

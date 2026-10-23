@@ -10,7 +10,7 @@ watchUrl: "https://godsdontgivegifts.com/"
 watchLabel: "Official film & screening updates"
 order: 5
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-08"
+lastVerifiedAt: "2026-10-23"
 sources:
   - label: "Fable Showrunner — awards submission plan"
     url: "https://x.com/fableshowrunner/status/2108003714480971875"
@@ -30,6 +30,8 @@ sources:
     url: "https://www.gossipgoblin.studio/"
   - label: "Chris Branch — creator interview announcement and credits"
     url: "https://www.linkedin.com/posts/chris-branch-live_the-first-ai-film-in-theatres-live-interview-activity-7486395260286418944-z4La"
+  - label: "Creator AGC distribution announcement"
+    url: "https://x.com/Gossip_Goblin/status/2113306179296448727"
 production:
   - label: "Feature team and duration"
     detail: "The maker reports two writers, eleven voice actors, four composers, nine core creatives and a five-person post-production team including a foley artist, with more than nine months of work. These categories may overlap; no total headcount is inferred."
@@ -72,3 +74,7 @@ The [new official trailer](https://www.youtube.com/watch?v=1G5LArU7tmE) describe
 [More Horror’s October 7 release coverage](https://www.morehorror.com/post/gods-dont-give-gifts-ai-generated-horror-movie) lists a **107-minute** runtime. This is a reported release specification, not a runtime measured from a complete film supplied to the journal.
 
 [Fable Showrunner’s public announcement](https://x.com/fableshowrunner/status/2108003714480971875) says the team is submitting for the Best Animated Feature Oscar. This describes an awards plan, not a nomination, Academy acceptance or independently verified qualification. December 4 remains the announced date, and the official site still has no individual cinema bookings listed.
+
+## October 23 — announced distribution partnership
+
+In the [October 22 creator announcement](https://x.com/Gossip_Goblin/status/2113306179296448727), Gossip Goblin says the production is teaming with **AGC** to bring the film to screens around the world. **December 4** remains the announced theatrical date. This adds distribution context, not confirmation that every territory or cinema has booked the film; specific local access remains unverified here.
