@@ -4,8 +4,8 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-22"
-sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}, {"label": "Part 3 original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Part 3 production and subtitle note", "url": "https://x.com/schmede_AI/status/2112691761537552832"}, {"label": "Part 4 writing statement", "url": "https://x.com/schmede_AI/status/2113014086183338228"}]
+lastVerifiedAt: "2026-10-24"
+sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}, {"label": "Part 3 original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Part 3 production and subtitle note", "url": "https://x.com/schmede_AI/status/2112691761537552832"}, {"label": "Part 4 writing statement", "url": "https://x.com/schmede_AI/status/2113014086183338228"}, {"label": "Part 5 complete release", "url": "https://www.youtube.com/watch?v=i16WEtbV4ZM"}, {"label": "Part 5 writing account", "url": "https://x.com/schmede_AI/status/2113710377628307842"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
 
@@ -48,3 +48,7 @@ The complete song [WRATH — Let Them Be Scattered](https://www.youtube.com/watc
 ## October 22 — writing the next scene
 
 [Malfoid’s Part 4](/films/malfoid-i-wasnt-joking/) adds a complete 1:25 instalment and an explicit maker writing credit. The creator’s discussion of knowledge, apology and pride explains a dramatic decision rather than a model setting. Earlier adaptation credits remain scoped to those earlier works; the reported eleven caption variants are not dubs.
+
+## October 24 — motivation in Part 5
+
+[Don’t Wait for Me, Part 5](https://www.youtube.com/watch?v=i16WEtbV4ZM) adds a complete **2:18** instalment. The maker’s [writing account](https://x.com/schmede_AI/status/2113710377628307842) connects an apology, pride and a shared Quidditch refuge through character motivation. Vidu preview/partner context remains disclosed; eleven caption variants are not dubs, and the planned revised compilation is not yet a completed release.

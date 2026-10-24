@@ -4,8 +4,8 @@ description: "A French music-video creator exploring synthetic identity and tran
 focus: "French music videos and synthetic identity"
 x: {"url": "https://x.com/Extraltodeus", "label": "Extraltodeus on X", "source": "https://www.youtube.com/watch?v=QPO210-A534"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-22"
-sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}, {"label": "Demande à l’IA! complete original", "url": "https://www.youtube.com/watch?v=ScHM6ROYVeg"}, {"label": "Sky Beneath the Skin release post", "url": "https://x.com/Extraltodeus/status/2113082169509753290"}]
+lastVerifiedAt: "2026-10-24"
+sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}, {"label": "Demande à l’IA! complete original", "url": "https://www.youtube.com/watch?v=ScHM6ROYVeg"}, {"label": "Sky Beneath the Skin release post", "url": "https://x.com/Extraltodeus/status/2113082169509753290"}, {"label": "Accélère complete original", "url": "https://www.youtube.com/watch?v=nZnGvNsB1yg"}, {"label": "Chromatique alternate cut", "url": "https://x.com/Extraltodeus/status/2113782567723810832"}, {"label": "C’est de l’IA subtitled YouTube version", "url": "https://www.youtube.com/watch?v=vyqWAF3s69E"}]
 website: "https://www.youtube.com/@extraltodeus"
 ---
 
@@ -42,3 +42,9 @@ The [English-subtitled C’est de l’IA release](https://x.com/Extraltodeus/sta
 ## October 22 — Sky Beneath the Skin
 
 The [English-titled 4:42 post](https://x.com/Extraltodeus/status/2113082169509753290) is linked from [Le ciel sous la peau](/films/le-ciel-sous-la-peau/). The matching work is retained under one canonical entry; a separate vocal dub or new production stack is not inferred from its English title.
+
+## October 24 — Accélère! and alternate access
+
+**[Accélère!](/films/accelere/)** gives ClaudiaGI a new train-driven satire about the pressure to keep up. The maker describes local generation and one human’s involvement, but does not repeat a precise model stack. Those unknowns are kept separate from earlier work-specific disclosures.
+
+[Chromatique](/films/chromatique/) adds its maker-linked restyled, English-subtitled cut; [C’est de l’IA](/films/cest-de-lia/) gains English-subtitled YouTube access; [La musique ne s’arrête pas](/films/la-musique-ne-sarrete-pas/) links the complete English-titled share. Alternate cuts and reissues remain attached to their existing entries.

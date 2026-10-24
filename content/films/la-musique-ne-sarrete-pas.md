@@ -14,8 +14,8 @@ imageAlt: "ClaudiaGI smiles in a close-up with an orange hair streak and flower 
 imageCredit: "Extraltodeus · original full-release artwork"
 imageSource: "https://www.youtube.com/watch?v=dy6Ly3YniKo"
 discoveredAt: "2026-10-19"
-lastVerifiedAt: "2026-10-19"
-sources: [{"label": "Original October 8 premiere, song and production credits", "url": "https://www.youtube.com/watch?v=dy6Ly3YniKo"}]
+lastVerifiedAt: "2026-10-24"
+sources: [{"label": "Original October 8 premiere, song and production credits", "url": "https://www.youtube.com/watch?v=dy6Ly3YniKo"}, {"label": "Creator’s complete English-titled share", "url": "https://x.com/Extraltodeus/status/2113708044454629377"}]
 production: [{"label": "Song and production coordination", "detail": "The creator credits Claude Opus 5.5 with coordination and lyrics, Suno V6 mini with music, and ClaudiaGI as the project/persona in the title. A separate human vocalist is not identified.", "source": "https://www.youtube.com/watch?v=dy6Ly3YniKo"}, {"label": "Visual tools", "detail": "The original credits name local Krea2 reference images, Qwen2.1 image editing, MinimaxH3 video and Depth Anything 3 depth maps, with ComfyUI as the interface. Spellings follow the maker’s release.", "source": "https://www.youtube.com/watch?v=dy6Ly3YniKo"}, {"label": "Human scope and cost limits", "detail": "The maker reports one human involved, wholly generated imagery and no real-person reference images. The informal electricity/subscription comparison is not a measured cost ledger or complete production budget.", "source": "https://www.youtube.com/watch?v=dy6Ly3YniKo"}]
 musician: "ClaudiaGI"
 ---
@@ -29,3 +29,7 @@ The song sets two incompatible readings of transformation against one another: a
 The original full description publishes the song text and specific tool roles, allowing the dramatic premise and production claims to be checked together. Those credits are scoped to this video; the informal cost comparison is not converted into a cash budget.
 
 The full original player, expanded description and sampled imagery were checked. No complete critical review is claimed.
+
+## October 24 — another complete access link
+
+The creator’s **[Music Doesn’t Stop](https://x.com/Extraltodeus/status/2113708044454629377)** post, dated October 23, is a complete **4:13** presentation of this work under an English title. It is retained as an alternate access link, not a new song-video entry or evidence of an English vocal dub. The original YouTube release and its work-specific production credits remain canonical.

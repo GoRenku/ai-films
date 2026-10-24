@@ -5,8 +5,8 @@ focus: "Surreal fashion, music and choreographed synthetic figures"
 website: "https://www.kellyboesch.com/"
 x: {"url": "https://x.com/kellyeld", "label": "Kelly Boesch on X", "source": "https://linktr.ee/kellyboeschaiart"}
 discoveredAt: "2026-10-16"
-lastVerifiedAt: "2026-10-23"
-sources: [{"label": "Official artist portfolio", "url": "https://www.kellyboesch.com/"}, {"label": "Creator-linked profiles and music", "url": "https://linktr.ee/kellyboeschaiart"}, {"label": "Between Me and You — original video and process", "url": "https://www.youtube.com/watch?v=c2-HEkIvVqE"}, {"label": "Somewhere Along the Way original release", "url": "https://x.com/kellyeld/status/2112897019845165440"}, {"label": "Seedance storytelling experiment — original maker post", "url": "https://x.com/kellyeld/status/2113092624227922020"}]
+lastVerifiedAt: "2026-10-24"
+sources: [{"label": "Official artist portfolio", "url": "https://www.kellyboesch.com/"}, {"label": "Creator-linked profiles and music", "url": "https://linktr.ee/kellyboeschaiart"}, {"label": "Between Me and You — original video and process", "url": "https://www.youtube.com/watch?v=c2-HEkIvVqE"}, {"label": "Somewhere Along the Way original release", "url": "https://x.com/kellyeld/status/2112897019845165440"}, {"label": "Seedance storytelling experiment — original maker post", "url": "https://x.com/kellyeld/status/2113092624227922020"}, {"label": "Nobody’s Watching complete original and process", "url": "https://www.youtube.com/watch?v=BjqhS7vbYIg"}, {"label": "Original release and Midjourney image disclosure", "url": "https://x.com/kellyeld/status/2113631290633412726"}]
 ---
 
 Kelly Boesch publishes visual art and music through her own portfolio and Kelly Boesch AI Art channel. Her creator-linked directory connects the website, X account, YouTube and music releases under **Kelly Boesch**. The project’s generated voice is not assigned to an invented human vocalist.
@@ -28,3 +28,7 @@ Her production account also exposes a useful creative compromise: a Midjourney s
 ## October 23 — a storytelling experiment
 
 A [complete 1:51 public post](https://x.com/kellyeld/status/2113092624227922020) shows a library-like interior and recurring fantastical figures while Boesch explicitly describes trying **Seedance 2.5 through Dreamina** with supplied credits. This is a new, work-specific model disclosure and a move toward character-led storytelling. It is recorded as a production experiment, rather than assigning the title suggested in a viewer reply or presenting a separately verified finished film. Her released music videos retain their own distinct tool credits.
+
+## October 24 — Nobody’s Watching
+
+**[Nobody’s Watching](/films/nobodys-watching/)** is a complete original song-video release about unguarded private selves. Boesch’s full description explains that the song came before the search for a visual direction. Lyrics and creative direction are hers; Suno music and Midjourney images are separately disclosed. The animation model is not established for this work, so earlier experiments and other videos do not fill that gap by assumption.
