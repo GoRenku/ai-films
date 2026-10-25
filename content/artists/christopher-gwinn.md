@@ -5,8 +5,8 @@ focus: "Serial fantasy, storybook design and musical atmosphere"
 website: "https://www.youtube.com/@grindhouseglitch"
 x: {"url": "https://x.com/ChrisGwinnLA", "label": "Christopher Gwinn on X", "source": "https://x.com/ChrisGwinnLA/status/2106436890241151065"}
 discoveredAt: "2026-10-09"
-lastVerifiedAt: "2026-10-24"
-sources: [{"label": "Gwinn — original profile", "url": "https://x.com/ChrisGwinnLA"}, {"label": "Grindhouse Glitch — Episode 3 and full description", "url": "https://www.youtube.com/watch?v=c04CDs4unHY"}, {"label": "Gwinn — Episode 1 context", "url": "https://x.com/ChrisGwinnLA/status/2106558105027014888"}, {"label": "Treasure of the Himalayas Part One announcement", "url": "https://x.com/ChrisGwinnLA/status/2112615028591591927"}, {"label": "Maker’s dated premiere-window announcement", "url": "https://x.com/ChrisGwinnLA/status/2113840442899067178"}]
+lastVerifiedAt: "2026-10-25"
+sources: [{"label": "Gwinn — original profile", "url": "https://x.com/ChrisGwinnLA"}, {"label": "Grindhouse Glitch — Episode 3 and full description", "url": "https://www.youtube.com/watch?v=c04CDs4unHY"}, {"label": "Gwinn — Episode 1 context", "url": "https://x.com/ChrisGwinnLA/status/2106558105027014888"}, {"label": "Treasure of the Himalayas Part One announcement", "url": "https://x.com/ChrisGwinnLA/status/2112615028591591927"}, {"label": "Maker’s dated premiere-window announcement", "url": "https://x.com/ChrisGwinnLA/status/2113840442899067178"}, {"label": "Complete opening teaser and exact model roles", "url": "https://www.youtube.com/watch?v=uTE0zs345Pg"}, {"label": "Original release thread and forthcoming scope", "url": "https://x.com/ChrisGwinnLA/status/2114026522801811633"}, {"label": "Peter Hyoguchi named writing/direction/production credit", "url": "https://x.com/ChrisGwinnLA/status/2114051607621185715"}, {"label": "Official project page", "url": "https://roninfilm.com/treasureofthehimalayas"}]
 ---
 
 Gwinn publishes as **Grindhouse Glitch**. His original X profile identifies him as a digital/AI creator, graphic designer, musician and writer based in Hollywood. The same account links the Grindhouse Glitch release channel, establishing the connection between the name and the films.
@@ -26,3 +26,9 @@ Gwinn’s [original announcement](https://x.com/ChrisGwinnLA/status/211261502859
 ## October 24 — the premiere window
 
 The maker’s [latest announcement](https://x.com/ChrisGwinnLA/status/2113840442899067178) sets **Treasure of the Himalayas, Part One** for **18:00 CEST today**. Its young heiress travels into the Victorian-era Himalayas. At the time of this refresh the stated window is still ahead: this is a release plan, not a claim that a complete film is already publicly playable. The joint Roninfilm / Grindhouse Glitch attribution is retained without guessing individual directing roles or models.
+
+## October 25 — the opening teaser and named director
+
+**[Treasure of the Himalayas, Part One](https://www.youtube.com/watch?v=uTE0zs345Pg)** is now publicly playable at **1:26**. Its full original description names **Midjourney images** and **Seedance 2.5 video through Dreamina**, with Dreamina creator-program context. The linked Roninfilm page preserves the joint project's Victorian adventure premise.
+
+Gwinn's [direct credit reply](https://x.com/ChrisGwinnLA/status/2114051607621185715) identifies **Peter Hyoguchi** as writer, director and executive producer. This is a useful new division of authorship; Gwinn's contribution is not silently expanded into sole direction. A later maker reply calls this opening a teaser, says longer episodes are coming and describes a feature as the ultimate goal. It is therefore linked as project news here, rather than a completed feature or a new standalone narrative-film card. Those future targets are plans.

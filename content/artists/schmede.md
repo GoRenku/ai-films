@@ -4,8 +4,8 @@ description: "A creator adapting attributed fan-written scenes into recurring fa
 focus: "Dialogue adaptation and character continuity"
 x: {"url": "https://x.com/schmede_AI", "label": "schmede on X", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-24"
-sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}, {"label": "Part 3 original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Part 3 production and subtitle note", "url": "https://x.com/schmede_AI/status/2112691761537552832"}, {"label": "Part 4 writing statement", "url": "https://x.com/schmede_AI/status/2113014086183338228"}, {"label": "Part 5 complete release", "url": "https://www.youtube.com/watch?v=i16WEtbV4ZM"}, {"label": "Part 5 writing account", "url": "https://x.com/schmede_AI/status/2113710377628307842"}]
+lastVerifiedAt: "2026-10-25"
+sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Maker — references and prompted acting", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "WRATH full song", "url": "https://www.youtube.com/watch?v=lrotWzEqC0g"}, {"label": "Part 3 original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Part 3 production and subtitle note", "url": "https://x.com/schmede_AI/status/2112691761537552832"}, {"label": "Part 4 writing statement", "url": "https://x.com/schmede_AI/status/2113014086183338228"}, {"label": "Part 5 complete release", "url": "https://www.youtube.com/watch?v=i16WEtbV4ZM"}, {"label": "Part 5 writing account", "url": "https://x.com/schmede_AI/status/2113710377628307842"}, {"label": "Combined complete short", "url": "https://www.youtube.com/watch?v=3ieOEFLKMD4"}, {"label": "WRATH original narrative release", "url": "https://www.youtube.com/watch?v=6pTjAOCgfIM"}, {"label": "WRATH Italian-subtitled version", "url": "https://www.youtube.com/watch?v=hHP0n346vCU"}]
 website: "https://www.youtube.com/@schmede_AI"
 ---
 
@@ -52,3 +52,9 @@ The complete song [WRATH — Let Them Be Scattered](https://www.youtube.com/watc
 ## October 24 — motivation in Part 5
 
 [Don’t Wait for Me, Part 5](https://www.youtube.com/watch?v=i16WEtbV4ZM) adds a complete **2:18** instalment. The maker’s [writing account](https://x.com/schmede_AI/status/2113710377628307842) connects an apology, pride and a shared Quidditch refuge through character motivation. Vidu preview/partner context remains disclosed; eleven caption variants are not dubs, and the planned revised compilation is not yet a completed release.
+
+## October 25 — a combined short and an earlier original
+
+[I Wasn't Joking & Don't Wait for Me](/films/malfoid-i-wasnt-joking/) is now a complete **9:50 combined short**. It supersedes the planned-compilation status, while retaining the source story/comic and additional writing credits specifically for I Wasn't Joking. Eleven caption language/region variants do not establish eleven dubs.
+
+[WRATH: Adventus — The Coming](/films/wrath-adventus/) adds the complete **2:55 September 13 narrative release**, separately from the previously linked WRATH soundtrack. Its new Italian-subtitled upload is an access version. The maker's finalist statement remains attributed because the checked festival organiser listing supplies no work-specific result. Exact models beyond the Vidu tags remain undisclosed.

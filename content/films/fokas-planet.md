@@ -1,21 +1,21 @@
 ---
-title: "Foka’s Planet — Can Seals Sing?"
+title: "Foka’s Planet"
 artist: "daniil-volkau"
-description: "Astrid and Ayo borrow a spaceship to follow a mysterious song to an ocean planet, where curious seals resist being photographed."
+description: "Astrid and Ayo explore strange worlds and hide a stowaway seal from a rule-bound spaceport harbourmaster."
 year: 2026
 format: "Series"
 genre: "Animated science-fiction family adventure"
-runtimeMinutes: 4.433683333333334
+runtimeMinutes: 5.22602
 status: "Watch now"
-watchUrl: "https://www.youtube.com/watch?v=qq9ShmAJR6s"
-watchLabel: "Watch full Episode 1 on the creator’s channel"
-image: "/media/fokas-planet.jpg"
-imageAlt: "A seal peers at a startled child wearing a space helmet and holding a camera"
-imageCredit: "Daniił Vołkaŭ · official Episode 1 YouTube thumbnail"
-imageSource: "https://www.youtube.com/watch?v=qq9ShmAJR6s"
+watchUrl: "https://www.youtube.com/watch?v=grhBD_mUktc"
+watchLabel: "Watch complete Episode 2"
+image: "/media/fokas-planet-episode-2.jpg"
+imageAlt: "The Foka’s Planet Episode 2 ensemble beneath the Hide the Seal title"
+imageCredit: "Daniił Vołkaŭ · original Episode 2 YouTube artwork"
+imageSource: "https://www.youtube.com/watch?v=grhBD_mUktc"
 discoveredAt: "2026-10-09"
-lastVerifiedAt: "2026-10-09"
-sources: [{"label": "Original full episode and expanded description", "url": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}, {"label": "Creator — original public release link", "url": "https://x.com/machina9000/status/2108286265250455613"}]
+lastVerifiedAt: "2026-10-25"
+sources: [{"label": "Original full episode and expanded description", "url": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}, {"label": "Creator — original public release link", "url": "https://x.com/machina9000/status/2108286265250455613"}, {"label": "Episode 2 complete original and authorship", "url": "https://www.youtube.com/watch?v=grhBD_mUktc"}, {"label": "Original creator release", "url": "https://x.com/machina9000/status/2114252981440778713"}]
 production: [{"label": "Authorship and disclosure scope", "detail": "The original release identifies Daniił Vołkaŭ. Exact models, human performers, total crew, editing software and budget are not disclosed in the checked description.", "source": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}]
 ---
 
@@ -32,3 +32,11 @@ The inspected official artwork uses expressive animation and a close encounter b
 ## Production evidence
 
 The original description identifies the creator but supplies no named voice performers, generation models, editing tools, budget or full crew. These remain unknown. Neither a solo-production claim nor model choices from Vołkaŭ’s other films are applied to this episode.
+
+## October 25 — a stowaway at the spaceport
+
+Complete **[Episode 2](https://www.youtube.com/watch?v=grhBD_mUktc)** is now available at **5:14**, with an October 25 original upload. It replaces Episode 1 as the main watch link; the [first episode](https://www.youtube.com/watch?v=qq9ShmAJR6s) stays linked with its own 4:26 length. These are episode runtimes, not a combined season total.
+
+Astrid and Ayo must conceal a stowaway seal during an inspection by a walrus harbourmaster. The hide-and-seek game gives the returning cast a practical problem, while Grandma Vera's rule about taking a homesick creature home puts care alongside evasion. The continuing world gains a moral condition as well as a recurring joke about regulations.
+
+The expanded original description credits **Daniił Vołkaŭ** and links Episode 1. Exact models, voice performers, full crew and cost remain undisclosed for this episode. Original full description, available automatic captions, current player and sampled scenes were checked; no full critical viewing is claimed.
