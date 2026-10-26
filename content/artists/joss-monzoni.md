@@ -5,18 +5,12 @@ description: "A creative director bringing an advertising and visual-production 
 focus: "Animated fables & fantasy"
 website: "https://tv.wonderstudios.com/creator/joss-monzon"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-10"
+lastVerifiedAt: "2026-10-26"
 x:
   url: "https://x.com/JossMonzoni"
   label: "Joss Monzoni on X"
   source: "https://tv.wonderstudios.com/creator/joss-monzon"
-sources:
-  - label: "Wonder TV — filmmaker profile"
-    url: "https://tv.wonderstudios.com/creator/joss-monzon"
-  - label: "Joss Monzoni — The Fall release and credits"
-    url: "https://x.com/JossMonzoni/status/2083529712475771000"
-  - label: "KARMA \u2014 original release"
-    url: "https://x.com/JossMonzoni/status/2108719172582826207"
+sources: [{"label": "Wonder TV — filmmaker profile", "url": "https://tv.wonderstudios.com/creator/joss-monzon"}, {"label": "Joss Monzoni — The Fall release and credits", "url": "https://x.com/JossMonzoni/status/2083529712475771000"}, {"label": "KARMA — original release", "url": "https://x.com/JossMonzoni/status/2108719172582826207"}, {"label": "Official OPUS nomination", "url": "https://opusfilmawards.com/invite/the-fall"}]
 ---
 
 Joss Monzoni, also credited as Joss Monzon, is a Canada-based creative director and AI producer. Wonder TV describes a career spanning more than 30 years in advertising, brand storytelling and visual production.
@@ -34,3 +28,7 @@ The craft question is how one creative voice connects writing, art direction, na
 ## A turn towards horror
 
 [**KARMA**](/films/karma/) was released on October 10, 2026. The complete short uses a two-button choice as its horror premise. Its competition context and currently undisclosed production details are recorded separately from his earlier films.
+
+## October 26 — The Fall nominated at OPUS
+
+[The Fall](/films/the-fall/) is an **official Best AI Animation nominee** at the 2026 OPUS Film Awards. The [festival's own page](https://opusfilmawards.com/invite/the-fall) confirms the film, creator and category. Its solo-project biography is attributed to that listing, and the November 14 London ceremony remains forthcoming. No award win is claimed.

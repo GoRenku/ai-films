@@ -6,26 +6,8 @@ focus: "World-building & science fiction"
 website: "https://www.gossipgoblin.studio/"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-23"
-sources:
-  - label: "An Honest Day\u2019s Work \u2014 original release"
-    url: "https://x.com/Gossip_Goblin/status/2109301986189324775"
-  - label: "Official trailer — December 4 announcement"
-    url: "https://www.youtube.com/watch?v=1G5LArU7tmE"
-  - label: "September 30 theatrical timing update"
-    url: "https://x.com/Gossip_Goblin/status/2105392789580284037"
-  - label: "Gods Don’t Give Gifts — official release and screenings"
-    url: "https://godsdontgivegifts.com/"
-  - label: "Gossip Goblin — official studio"
-    url: "https://www.gossipgoblin.studio/"
-  - label: "Escaping the Onion original"
-    url: "https://www.youtube.com/watch?v=Qh61MUazE1Y"
-  - label: "Alternate release caption"
-    url: "https://x.com/Gossip_Goblin/status/2112196907053301796"
-  - label: "The Toaster Rebellion original release"
-    url: "https://x.com/Gossip_Goblin/status/2112935228104905156"
-  - label: "AGC partnership \u2014 creator announcement"
-    url: "https://x.com/Gossip_Goblin/status/2113306179296448727"
+lastVerifiedAt: "2026-10-26"
+sources: [{"label": "An Honest Day’s Work — original release", "url": "https://x.com/Gossip_Goblin/status/2109301986189324775"}, {"label": "Official trailer — December 4 announcement", "url": "https://www.youtube.com/watch?v=1G5LArU7tmE"}, {"label": "September 30 theatrical timing update", "url": "https://x.com/Gossip_Goblin/status/2105392789580284037"}, {"label": "Gods Don’t Give Gifts — official release and screenings", "url": "https://godsdontgivegifts.com/"}, {"label": "Gossip Goblin — official studio", "url": "https://www.gossipgoblin.studio/"}, {"label": "Escaping the Onion original", "url": "https://www.youtube.com/watch?v=Qh61MUazE1Y"}, {"label": "Alternate release caption", "url": "https://x.com/Gossip_Goblin/status/2112196907053301796"}, {"label": "The Toaster Rebellion original release", "url": "https://x.com/Gossip_Goblin/status/2112935228104905156"}, {"label": "AGC partnership — creator announcement", "url": "https://x.com/Gossip_Goblin/status/2113306179296448727"}, {"label": "AI Psychosis original complete release", "url": "https://x.com/Gossip_Goblin/status/2114390625202344157"}]
 x:
   {
     "url": "https://x.com/Gossip_Goblin",
@@ -69,3 +51,7 @@ The October 15 [complete short](/films/pursue-your-passions/) puts a ruler’s f
 ## October 23 — AGC distribution announcement
 
 The maker [announces an AGC partnership](https://x.com/Gossip_Goblin/status/2113306179296448727) for taking **Gods Don’t Give Gifts** to screens internationally, retaining December 4 as its target. That is a substantive step in the feature’s route to exhibition; individual territories and venue bookings are not inferred from the announcement.
+
+## October 26 — AI Psychosis
+
+[AI Psychosis](/films/ai-psychosis/) adds the complete approximately **2:01** October 25 satire released by Gossip Goblin. Retro-futurist human/synthetic pairings make attachment and control a physical scene. The character-name joke in the release thread does not establish use of Claude or any other exact production model; undisclosed credits and costs remain unknown.

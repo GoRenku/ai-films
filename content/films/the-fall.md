@@ -14,14 +14,8 @@ imageCredit: "Joss Monzoni · The Fall · cover via Wonder TV"
 imageSource: "https://tv.wonderstudios.com/watch/the-fall"
 order: 6
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
-sources:
-  - label: "Wonder TV — full film and synopsis"
-    url: "https://tv.wonderstudios.com/watch/the-fall"
-  - label: "Wonder TV — September selection and 6:07 runtime"
-    url: "https://tv.wonderstudios.com/"
-  - label: "Joss Monzoni — full-film release and production disclosure"
-    url: "https://x.com/JossMonzoni/status/2083529712475771000"
+lastVerifiedAt: "2026-10-26"
+sources: [{"label": "Wonder TV — full film and synopsis", "url": "https://tv.wonderstudios.com/watch/the-fall"}, {"label": "Wonder TV — September selection and 6:07 runtime", "url": "https://tv.wonderstudios.com/"}, {"label": "Joss Monzoni — full-film release and production disclosure", "url": "https://x.com/JossMonzoni/status/2083529712475771000"}, {"label": "Official nominee, category and submitted runtime", "url": "https://opusfilmawards.com/invite/the-fall"}, {"label": "Official event date and venue", "url": "https://opusfilmawards.com"}]
 production:
   - label: "Writing, direction and art"
     detail: "Joss Monzoni credits himself for these roles. His acknowledgment of supporters is not a complete crew list; a total team size is not disclosed in the release post."
@@ -50,3 +44,9 @@ Its inclusion rests on a complete narrative work, identifiable authorship and pu
 ## Production questions still open
 
 A budget, production schedule, complete crew list and detailed continuity techniques have not been verified. The public tool list is recorded below without turning it into an assumed recipe.
+
+## October 26 — OPUS animation nomination
+
+The **[official OPUS nominee page](https://opusfilmawards.com/invite/the-fall)** names **The Fall / Joss Monzoni** in **Best AI Animation** for 2026. The ceremony is scheduled for **November 14 in London**; this is a nomination, not a win. OPUS lists a **6:10** submission, distinct from Wonder TV's earlier **6:07** listing, without establishing that the public player has been replaced.
+
+The festival biography describes the film as written, directed and produced by Monzoni as a solo project. That attributed account adds scope to the existing writing/direction/art credits; it is not an independently audited complete crew list.

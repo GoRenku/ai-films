@@ -4,8 +4,8 @@ description: "A French music-video creator exploring synthetic identity and tran
 focus: "French music videos and synthetic identity"
 x: {"url": "https://x.com/Extraltodeus", "label": "Extraltodeus on X", "source": "https://www.youtube.com/watch?v=QPO210-A534"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-24"
-sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}, {"label": "Demande à l’IA! complete original", "url": "https://www.youtube.com/watch?v=ScHM6ROYVeg"}, {"label": "Sky Beneath the Skin release post", "url": "https://x.com/Extraltodeus/status/2113082169509753290"}, {"label": "Accélère complete original", "url": "https://www.youtube.com/watch?v=nZnGvNsB1yg"}, {"label": "Chromatique alternate cut", "url": "https://x.com/Extraltodeus/status/2113782567723810832"}, {"label": "C’est de l’IA subtitled YouTube version", "url": "https://www.youtube.com/watch?v=vyqWAF3s69E"}]
+lastVerifiedAt: "2026-10-26"
+sources: [{"label": "Original Chromatique release and tool credits", "url": "https://www.youtube.com/watch?v=QPO210-A534"}, {"label": "Original C’est de l’IA release and credits", "url": "https://www.youtube.com/watch?v=D-VaEIHanQA"}, {"label": "Villain Era complete release and exact credits", "url": "https://www.youtube.com/watch?v=L3_EfYsz8PI"}, {"label": "Demande à l’IA! complete original", "url": "https://www.youtube.com/watch?v=ScHM6ROYVeg"}, {"label": "Sky Beneath the Skin release post", "url": "https://x.com/Extraltodeus/status/2113082169509753290"}, {"label": "Accélère complete original", "url": "https://www.youtube.com/watch?v=nZnGvNsB1yg"}, {"label": "Chromatique alternate cut", "url": "https://x.com/Extraltodeus/status/2113782567723810832"}, {"label": "C’est de l’IA subtitled YouTube version", "url": "https://www.youtube.com/watch?v=vyqWAF3s69E"}, {"label": "New complete original", "url": "https://www.youtube.com/watch?v=wV0MZhT54g8"}, {"label": "Coordination reply", "url": "https://x.com/Extraltodeus/status/2114521778919805413"}, {"label": "Lip-sync and scoped electricity reply", "url": "https://x.com/Extraltodeus/status/2114455604286636495"}]
 website: "https://www.youtube.com/@extraltodeus"
 ---
 
@@ -48,3 +48,7 @@ The [English-titled 4:42 post](https://x.com/Extraltodeus/status/211308216950975
 **[Accélère!](/films/accelere/)** gives ClaudiaGI a new train-driven satire about the pressure to keep up. The maker describes local generation and one human’s involvement, but does not repeat a precise model stack. Those unknowns are kept separate from earlier work-specific disclosures.
 
 [Chromatique](/films/chromatique/) adds its maker-linked restyled, English-subtitled cut; [C’est de l’IA](/films/cest-de-lia/) gains English-subtitled YouTube access; [La musique ne s’arrête pas](/films/la-musique-ne-sarrete-pas/) links the complete English-titled share. Alternate cuts and reissues remain attached to their existing entries.
+
+## October 26 — Make Love, Not Prompts
+
+[Faîtes l'amour, pas des prompts!](/films/faites-lamour-pas-des-prompts/) sends ClaudiaGI toward the contradiction between virtual intimacy and human contact. The complete **3:25** French song has English-subtitled access. The maker names Claude coordination and H3 lip sync, with occasional later checks; exact versions and music tools remain unknown. The sub-€2 claim concerns electricity, not a complete production budget. Alizée / 1990s French television are acknowledged inspiration, not collaborators.
