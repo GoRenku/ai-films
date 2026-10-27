@@ -6,22 +6,8 @@ focus: "Conceptual science fiction"
 website: "https://x.com/DiDi_OKK"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-17"
-sources:
-  [
-    {
-      "label": "DiDi_OK — official films and announcements",
-      "url": "https://x.com/DiDi_OKK",
-    },
-    {
-      "label": "Reply — 2026 awards",
-      "url": "https://www.reply.com/de/artificial-intelligence/reply-ai-film-festival",
-    },
-    {
-      "label": "Jiaze Li — production credits",
-      "url": "https://www.linkedin.com/posts/jiaze-li-a54494228_ai-aifilm-generativeai-activity-7481413564684017664-Mpd-",
-    },
-  ]
+lastVerifiedAt: "2026-10-27"
+sources: [{"label": "DiDi_OK — official films and announcements", "url": "https://x.com/DiDi_OKK"}, {"label": "Reply — 2026 awards", "url": "https://www.reply.com/de/artificial-intelligence/reply-ai-film-festival"}, {"label": "Jiaze Li — production credits", "url": "https://www.linkedin.com/posts/jiaze-li-a54494228_ai-aifilm-generativeai-activity-7481413564684017664-Mpd-"}, {"label": "Official Lumara result", "url": "https://lumarafilmfestival.com/"}]
 x:
   {
     "url": "https://x.com/DiDi_OKK",
@@ -45,3 +31,7 @@ Website received the Reply AI Studios Grand Prix and WeShort Community Award in 
 ## Candy — Lumara finalist
 
 MoonPay’s [October 16 official announcement](https://x.com/moonpay/status/2111099892504678861) names **Candy**, directed by DiDi_OK, among the Lumara Film Festival finalists. The organiser says the winner will be revealed October 26 in New York. This is finalist status, not a win or evidence that a new cut has been released.
+
+## October 27 — Candy's Lumara result
+
+[Candy](/films/candy/) is now officially labelled **Jury Selection / runner-up** by [Lumara](https://lumarafilmfestival.com/), credited there to **Jiaze Li**. This adds a verified result to the earlier finalist announcement without calling it the Grand Prize or changing the film's production credits.
