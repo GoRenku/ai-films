@@ -4,7 +4,7 @@ import FilmCard from '../components/FilmCard.astro';
 import ArtistCard from '../components/ArtistCard.astro';
 import Rail from '../components/Rail.astro';
 import PlayIcon from '../components/PlayIcon.astro';
-import { catalog, news, imageWidth, minutes, embedOf, genresOf, genreGroups, hostOf, shortDate, displayDate, statusKey, statusLabel, isMusicVideo, workNoun } from '../lib/catalog';
+import { catalog, news, imageWidth, lengthOf, embedOf, genresOf, genreGroups, hostOf, shortDate, displayDate, statusKey, statusLabel, isMusicVideo, workNoun } from '../lib/catalog';
 
 const c = await catalog();
 const feed = await news();
@@ -26,7 +26,8 @@ const watchNow = films.filter((f) => f.data.status === 'Watch now');
 const watchRail = watchNow.filter((f) => !seen.has(f.id)).slice(0, 16);
 const upcoming = films.filter((f) => ['Coming soon', 'Festival screening', 'In theaters'].includes(f.data.status));
 const features = films.filter((f) => f.data.format === 'Feature');
-const series = films.filter((f) => f.data.format === 'Series');
+// Series that gained an episode move back to the front of their rail.
+const series = films.filter((f) => f.data.format === 'Series').sort((a, b) => c.addedOf(b).localeCompare(c.addedOf(a)));
 const musicVideos = films.filter(isMusicVideo);
 const ticker = feed.slice(0, 16);
 const [lead, ...moreNotes] = c.updates;
@@ -56,9 +57,9 @@ const week = feed.filter((n) => c.thisWeek(n.date));
           <div class="slide-bg"><img src={d.image} alt={d.imageAlt} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} width="1600" height="900" /></div>
           <div class="slide-body">
             <p class="slide-kicker">
-              {isNew(d.discoveredAt) && <span class="tag-new">New</span>}
+              {c.freshOf(film) && <span class="tag-new">{c.freshOf(film)}</span>}
               <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
-              <span>{d.format}{d.runtimeMinutes && ` · ${minutes(d.runtimeMinutes)}`}{d.genre !== d.format && ` · ${d.genre}`}</span>
+              <span>{[d.format, lengthOf(film), d.genre !== d.format && d.genre].filter(Boolean).join(' · ')}</span>
             </p>
             <h2><a href={`/films/${film.id}/`}>{d.title}</a></h2>
             <p class="slide-by">by <a href={`/artists/${artist.id}/`}>{artist.data.title}</a></p>
@@ -97,11 +98,11 @@ const week = feed.filter((n) => c.thisWeek(n.date));
 
   <div class="home-body">
     <Rail title="Just added" href="/whats-new/" note={`${week.length} additions this week`}>
-      {justAdded.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+      {justAdded.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={c.freshOf(f)} />)}
     </Rail>
 
     <Rail title="Watch now" href="/films/?status=Watch+now" count={watchNow.length} note="Free to stream at the source">
-      {watchRail.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+      {watchRail.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={c.freshOf(f)} />)}
     </Rail>
 
     <section class="journal-feature" data-reveal>
@@ -120,7 +121,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
     </section>
 
     <Rail title="Coming soon & festivals" href="/films/?status=upcoming" count={upcoming.length}>
-      {upcoming.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+      {upcoming.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={c.freshOf(f)} />)}
     </Rail>
 
     <section class="genres" data-reveal aria-labelledby="genres-h">
@@ -136,16 +137,16 @@ const week = feed.filter((n) => c.thisWeek(n.date));
     </section>
 
     <Rail title="Features" href="/films/?format=Feature" count={features.length}>
-      {features.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+      {features.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={c.freshOf(f)} />)}
     </Rail>
 
-    <Rail title="Series" href="/films/?format=Series" count={series.length}>
-      {series.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+    <Rail title="Series" href="/films/?format=Series" count={series.length} note="Newest episodes first">
+      {series.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={c.freshOf(f)} />)}
     </Rail>
 
     {musicVideos.length > 0 && (
       <Rail title="Music videos" href="/films/?format=Music+video" count={musicVideos.length} note="Directed and cut to a song">
-        {musicVideos.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} />)}
+        {musicVideos.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={c.freshOf(f)} />)}
       </Rail>
     )}
 

@@ -5,10 +5,9 @@ description: "A western-horror ensemble escapes a hostile town, then splits over
 year: 2026
 format: "Series"
 genre: "Western horror"
-runtimeMinutes: 22.456016666666667
 status: "Watch now"
-watchUrl: "https://www.youtube.com/watch?v=kN1E4JiC7oM"
-watchLabel: "Watch the complete episode"
+watchUrl: "https://www.youtube.com/watch?v=Hyz5zYRBrB4"
+watchLabel: "Watch Episode 7 — The Storm"
 image: "/media/the-sage-episode-8.jpg"
 imageAlt: "The Reverend stands in a hall beneath The Sage Episode 8 — The Other Side title"
 imageCredit: "Mike J Mitch / Phantom X · original Episode 8 release artwork"
@@ -17,9 +16,62 @@ discoveredAt: "2026-10-16"
 lastVerifiedAt: "2026-10-21"
 sources: [{"label": "Official episode catalogue", "url": "https://phantomx.ai/shows/the-sage"}, {"label": "The Storm — complete Episode 7 and directing credit", "url": "https://www.youtube.com/watch?v=Hyz5zYRBrB4"}, {"label": "Creator’s Agent Two release disclosure", "url": "https://x.com/mikejmitch/status/2099890998897996140"}, {"label": "Creator’s next-episode announcement", "url": "https://x.com/mikejmitch/status/2112393311352963310"}, {"label": "The Other Side — complete original Episode 8", "url": "https://www.youtube.com/watch?v=kN1E4JiC7oM"}, {"label": "Creator’s Episode 8 release", "url": "https://x.com/mikejmitch/status/2112577530393985434"}]
 production: [{"label": "Direction and production", "detail": "The complete Episode 7 description credits direction to Mike J Mitch and identifies a Phantom X Original made in Invideo.", "source": "https://www.youtube.com/watch?v=Hyz5zYRBrB4"}, {"label": "Platform scope", "detail": "The title and original creator post name Invideo Agent Two for The Storm. No shot-by-shot underlying model/version list, full crew, total budget or total season runtime is supplied.", "source": "https://x.com/mikejmitch/status/2099890998897996140"}, {"label": "Episode 8: current complete release", "detail": "The October 20 original credits direction to Mike J Mitch, identifies Invideo Agent Two and a Phantom X Original, and runs 22:27. The studio now lists eight episodes. This runtime covers Episode 8 alone; exact underlying models, full crew and budget remain undisclosed.", "source": "https://www.youtube.com/watch?v=kN1E4JiC7oM"}]
+episodes:
+  - number: 1
+    title: "Homecoming"
+    status: "Released"
+    watchUrl: "https://phantomx.ai/shows/the-sage"
+    watchLabel: "Via Phantom X’s episode catalogue"
+    source: "https://phantomx.ai/shows/the-sage"
+  - number: 2
+    status: "Released"
+    watchUrl: "https://phantomx.ai/shows/the-sage"
+    watchLabel: "Via Phantom X’s episode catalogue"
+    source: "https://phantomx.ai/shows/the-sage"
+  - number: 3
+    status: "Released"
+    watchUrl: "https://phantomx.ai/shows/the-sage"
+    watchLabel: "Via Phantom X’s episode catalogue"
+    source: "https://phantomx.ai/shows/the-sage"
+  - number: 4
+    status: "Released"
+    watchUrl: "https://phantomx.ai/shows/the-sage"
+    watchLabel: "Via Phantom X’s episode catalogue"
+    source: "https://phantomx.ai/shows/the-sage"
+  - number: 5
+    status: "Released"
+    watchUrl: "https://phantomx.ai/shows/the-sage"
+    watchLabel: "Via Phantom X’s episode catalogue"
+    source: "https://phantomx.ai/shows/the-sage"
+  - number: 6
+    status: "Released"
+    watchUrl: "https://phantomx.ai/shows/the-sage"
+    watchLabel: "Via Phantom X’s episode catalogue"
+    source: "https://phantomx.ai/shows/the-sage"
+  - number: 7
+    title: "The Storm"
+    synopsis: "Elijah has one night to break Aiyana and Ines out of the town, with the storm as both cover and deadline."
+    releasedOn: "2026-09-15"
+    runtimeMinutes: 17.57
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=Hyz5zYRBrB4"
+    source: "https://www.youtube.com/watch?v=Hyz5zYRBrB4"
+  - number: 8
+    title: "The Other Side"
+    synopsis: "After escaping the town at a cost that strengthens the Reverend, the group divides over whether to retreat or resist."
+    releasedOn: "2026-10-20"
+    addedAt: "2026-10-20"
+    runtimeMinutes: 22.456016666666667
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=kN1E4JiC7oM"
+    image: "/media/the-sage-episode-8.jpg"
+    imageAlt: "The Reverend stands in a hall beneath The Sage Episode 8 — The Other Side title"
+    imageCredit: "Mike J Mitch / Phantom X · original Episode 8 release artwork"
+    imageSource: "https://www.youtube.com/watch?v=kN1E4JiC7oM"
+    source: "https://www.youtube.com/watch?v=kN1E4JiC7oM"
 ---
 
-Phantom X’s official catalogue now lists **eight episodes**, from Homecoming to **The Other Side**. The main watch link opens the complete Episode 8, uploaded **October 20**, running **22:27**. The series is continuing; a complete season is not claimed.
+Phantom X’s official catalogue now lists **eight episodes**, from Homecoming to **The Other Side**. The complete Episode 8 was uploaded **October 20**, running **22:27**. The series is continuing; a complete season is not claimed.
 
 The earlier [Episode 7, The Storm](https://www.youtube.com/watch?v=Hyz5zYRBrB4), was uploaded **September 15** and runs **17:34**. Its release and production context are retained below.
 
@@ -33,7 +85,7 @@ The director and releasing studio are identifiable, and the named platform is sc
 
 ## October 20 — another episode announced
 
-The creator’s [early October 20 announcement](https://x.com/mikejmitch/status/2112393311352963310) targeted **October 21** for an episode immediately following Episode 7. The complete October 20 upload below supersedes that target; Episode 8 is now the main watch link.
+The creator’s [early October 20 announcement](https://x.com/mikejmitch/status/2112393311352963310) targeted **October 21** for an episode immediately following Episode 7. The complete October 20 upload below supersedes that target.
 
 ## October 20 — Episode 8 is released
 

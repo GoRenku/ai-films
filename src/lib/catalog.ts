@@ -88,12 +88,70 @@ export function imageWidth(src?: string) {
   return 0;
 }
 
+export type Status = Film['data']['status'];
+export type Episode = {
+  series: Film;
+  /** Stable URL segment: the number (s2e3 in later seasons), or the title slug when unnumbered. */
+  key: string;
+  number?: number;
+  season?: number;
+  /** "Episode 2", or the episode title when the maker does not number it. */
+  label: string;
+  /** The episode's own title, when it has one beyond its number. */
+  title?: string;
+  synopsis?: string;
+  releasedOn?: string;
+  addedAt: string;
+  runtimeMinutes?: number;
+  status: Status;
+  watchUrl?: string;
+  watchLabel?: string;
+  image?: string;
+  imageAlt?: string;
+  imageCredit?: string;
+  imageSource?: string;
+  imageFit: 'cover' | 'contain';
+  source?: string;
+  /** A standalone film entry this episode links to (anthology stories). */
+  film?: Film;
+  /** Where the episode lives on this site; announced episodes have no page. */
+  href?: string;
+};
+const slug = (text: string) => text.normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+/** A series is as available as its most available episode. */
+const STATUS_RANK: Status[] = ['Watch now', 'In theaters', 'Festival screening', 'Released', 'Coming soon'];
+export const seriesStatus = (episodes: Episode[]) => STATUS_RANK.find((s) => episodes.some((e) => e.status === s))!;
+/** Where a new viewer starts: the first episode that plays, else the first with any watch link. */
+export const startEpisode = (episodes: Episode[]) =>
+  episodes.find((e) => e.status === 'Watch now') ?? episodes.find((e) => e.watchUrl) ?? episodes.find((e) => e.href) ?? episodes[0];
+/** Episodes that have come out, in order; announced ones are listed but not counted. */
+export const releasedEpisodes = (episodes: Episode[]) => episodes.filter((e) => e.status !== 'Coming soon');
+/** Combined running time, only when every released episode's length is known. */
+export const totalMinutesOf = (episodes: Episode[]) => {
+  const out = releasedEpisodes(episodes);
+  return out.length && out.every((e) => e.runtimeMinutes) ? out.reduce((sum, e) => sum + e.runtimeMinutes!, 0) : undefined;
+};
+/** "3 episodes", "1 chapter": how a series card states its length. */
+export const episodeCount = (film: Film) => {
+  const n = film.data.episodes.filter((e) => e.status !== 'Coming soon').length;
+  const noun = film.data.episodeNoun.toLowerCase();
+  return n ? `${n} ${noun}${n === 1 ? '' : 's'}` : undefined;
+};
+/** The length shown beside a title: episodes for a series, minutes for everything else. */
+export const lengthOf = (film: Film) => (film.data.format === 'Series' ? episodeCount(film) : minutes(film.data.runtimeMinutes));
+
 const DAY = 86_400_000;
 export const toTime = (date: string) => Date.parse(`${date}T12:00:00Z`);
 export const displayDate = (date: string, opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' }) =>
   new Intl.DateTimeFormat('en-GB', { ...opts, timeZone: 'UTC' }).format(new Date(toTime(date)));
 export const shortDate = (date: string) => displayDate(date, { day: 'numeric', month: 'short' });
 export const minutes = (n?: number) => (n ? `${Math.max(1, Math.round(n))} min` : undefined);
+/** "1 hr 8 min" for a series' combined running time. */
+export const longMinutes = (n?: number) => {
+  if (!n) return undefined;
+  const m = Math.max(1, Math.round(n));
+  return m < 60 ? `${m} min` : `${Math.floor(m / 60)} hr${m % 60 ? ` ${m % 60} min` : ''}`;
+};
 export const initials = (name: string) =>
   name.split(/[\s&]+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 
@@ -109,7 +167,8 @@ async function build() {
   const updates = [...rawUpdates].sort((a, b) => b.data.date.localeCompare(a.data.date) || a.id.localeCompare(b.id));
   const artistById = new Map(artists.map((a) => [a.id, a]));
   const filmById = new Map(films.map((f) => [f.id, f]));
-  const latest = [...films.map((f) => f.data.discoveredAt), ...artists.map((a) => a.data.discoveredAt), ...updates.map((u) => u.data.date)].sort().at(-1)!;
+  const episodeDates = films.flatMap((f) => f.data.episodes.map((e) => e.addedAt).filter((d): d is string => Boolean(d)));
+  const latest = [...films.map((f) => f.data.discoveredAt), ...episodeDates, ...artists.map((a) => a.data.discoveredAt), ...updates.map((u) => u.data.date)].sort().at(-1)!;
 
   const artistOf = (film: Film) => {
     const artist = artistById.get(film.data.artist.id);
@@ -127,15 +186,70 @@ async function build() {
   const artistsByActivity = [...artists].sort((a, b) => lastActive(b).localeCompare(lastActive(a)) || a.data.title.localeCompare(b.data.title));
   const notesFilms = (update: Update) => update.data.films.map((r) => filmById.get(r.id)).filter((f): f is Film => Boolean(f));
 
-  return { films, artists, updates, latest, artistOf, filmsBy, notesAbout, isNew, thisWeek, lastActive, coverFor, artistsByActivity, notesFilms, filmById, artistById };
+  // Resolve every series' episodes once, and check what the schema cannot see across entries.
+  const episodesById = new Map<string, Episode[]>();
+  const membership = new Map<string, { series: Film; episode: Episode }>();
+  for (const series of films.filter((f) => f.data.format === 'Series')) {
+    const d = series.data;
+    const seasons = new Set(d.episodes.map((e) => e.season ?? 1)).size;
+    const episodes = d.episodes.map((e): Episode => {
+      const numbered = e.number !== undefined ? `${d.episodeNoun} ${e.number}` : undefined;
+      const label = seasons > 1 && e.number !== undefined ? `S${e.season ?? 1} · ${numbered}` : numbered;
+      if (e.film) {
+        const film = filmById.get(e.film.id);
+        if (!film) throw new Error(`${series.id}: episode links to missing film ${e.film.id}`);
+        if (film.data.format === 'Series') throw new Error(`${series.id}: episode ${film.id} is itself a series`);
+        const f = film.data;
+        return {
+          series, key: film.id, number: e.number, season: e.season, label: label ?? f.title, title: label ? f.title : undefined,
+          synopsis: f.description, addedAt: e.addedAt ?? f.discoveredAt, runtimeMinutes: f.runtimeMinutes, status: f.status,
+          watchUrl: f.watchUrl, watchLabel: f.watchLabel, image: f.image, imageAlt: f.imageAlt, imageCredit: f.imageCredit,
+          imageSource: f.imageSource, imageFit: f.imageFit, source: f.sources[0].url, film, href: `/films/${film.id}/`,
+        };
+      }
+      const key = e.number !== undefined ? (seasons > 1 ? `s${e.season ?? 1}e${e.number}` : String(e.number)) : slug(e.title!);
+      return {
+        series, key, number: e.number, season: e.season, label: label ?? e.title!, title: label ? e.title : undefined,
+        synopsis: e.synopsis, releasedOn: e.releasedOn, addedAt: e.addedAt ?? d.discoveredAt, runtimeMinutes: e.runtimeMinutes,
+        status: e.status!, watchUrl: e.watchUrl, watchLabel: e.watchLabel, image: e.image, imageAlt: e.imageAlt,
+        imageCredit: e.imageCredit, imageSource: e.imageSource, imageFit: e.image ? 'cover' : d.imageFit, source: e.source,
+        // An episode known only from a catalogue count gets a row, not a page of its own.
+        href: e.status !== 'Coming soon' && (e.watchUrl || e.synopsis || e.image) ? `/films/${series.id}/episodes/${key}/` : undefined,
+      };
+    });
+    if (new Set(episodes.map((e) => e.key)).size !== episodes.length) throw new Error(`${series.id}: two episodes share a URL`);
+    const status = seriesStatus(episodes);
+    if (d.status !== status) throw new Error(`${series.id}: series status must be "${status}", the most available episode's status`);
+    const start = startEpisode(episodes);
+    // With no episode link (an announced pilot), the series may still point at its official page.
+    if (d.watchUrl && start.watchUrl && d.watchUrl !== start.watchUrl) throw new Error(`${series.id}: series watchUrl must be where viewers start (${start.label})`);
+    for (const ep of episodes.filter((e) => e.film)) {
+      if (membership.has(ep.film!.id)) throw new Error(`${ep.film!.id} is an episode of two series`);
+      membership.set(ep.film!.id, { series, episode: ep });
+    }
+    episodesById.set(series.id, episodes);
+  }
+  const episodesOf = (film: Film) => episodesById.get(film.id) ?? [];
+  /** The series a standalone film belongs to as an episode, if any. */
+  const seriesOf = (film: Film) => membership.get(film.id);
+  /** When a work last gained something: a series counts its newest episode. */
+  const addedOf = (film: Film) => [film.data.discoveredAt, ...episodesOf(film).map((e) => e.addedAt)].sort().at(-1)!;
+  /** The badge a card shows: New for new work, New episode (or chapter, part) when an older series continues. */
+  const freshOf = (film: Film) =>
+    isNew(film.data.discoveredAt) ? 'New' : isNew(addedOf(film)) ? `New ${film.data.episodeNoun.toLowerCase()}` : undefined;
+  /** Inline episodes that joined after their series did; each gets its own What's New item. */
+  const laterEpisodes = [...episodesById.values()].flat().filter((e) => !e.film && e.href && e.addedAt > e.series.data.discoveredAt);
+
+  return { films, artists, updates, latest, artistOf, filmsBy, notesAbout, isNew, thisWeek, lastActive, coverFor, artistsByActivity, notesFilms, filmById, artistById, episodesOf, seriesOf, addedOf, freshOf, laterEpisodes };
 }
 
-export type NewsItem = { title: string; description: string; date: string; kind: 'Film' | 'Artist' | 'Journal'; label: string; href: string; image?: string; fit?: string; by?: string };
+export type NewsItem = { title: string; description: string; date: string; kind: 'Film' | 'Episode' | 'Artist' | 'Journal'; label: string; href: string; image?: string; fit?: string; by?: string };
 export async function news(): Promise<NewsItem[]> {
   const c = await catalog();
-  const rank = { Film: 0, Journal: 1, Artist: 2 };
+  const rank = { Film: 0, Episode: 1, Journal: 2, Artist: 3 };
   return [
     ...c.films.map((f) => ({ title: f.data.title, description: f.data.description, date: f.data.discoveredAt, kind: 'Film' as const, label: isMusicVideo(f) ? 'New music video' : 'New film', href: `/films/${f.id}/`, image: f.data.image, fit: f.data.imageFit, by: c.artistOf(f).data.title })),
+    ...c.laterEpisodes.map((e) => ({ title: `${e.series.data.title} — ${e.label}${e.title ? `: ${e.title}` : ''}`, description: e.synopsis ?? e.series.data.description, date: e.addedAt, kind: 'Episode' as const, label: `New ${e.series.data.episodeNoun.toLowerCase()}`, href: e.href!, image: e.image ?? e.series.data.image, fit: e.image ? 'cover' : e.series.data.imageFit, by: c.artistOf(e.series).data.title })),
     ...c.artists.map((a) => {
       const cover = c.coverFor(a);
       return { title: a.data.title, description: a.data.description, date: a.data.discoveredAt, kind: 'Artist' as const, label: 'New artist', href: `/artists/${a.id}/`, image: cover?.data.image, fit: 'cover', by: a.data.focus };

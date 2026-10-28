@@ -7,7 +7,7 @@ format: "Series"
 genre: "Science-fiction mystery"
 status: "Watch now"
 watchUrl: "https://x.com/DiDi_OKK/status/2075554498064617627"
-watchLabel: "Watch at the source"
+watchLabel: "Watch the first installment on X"
 order: 4
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-09-17"
@@ -35,11 +35,18 @@ production:
       "source": "https://www.linkedin.com/posts/jiaze-li-a54494228_ai-aifilm-generativeai-activity-7481413564684017664-Mpd-",
     },
   ]
-runtimeMinutes: 12
 image: "/media/waste-to-energy.jpg"
 imageAlt: "Official video poster for Waste to Energy"
 imageCredit: "DiDi_OK · original video poster"
 imageSource: "https://x.com/DiDi_OKK/status/2075554498064617627"
+episodes:
+  - title: "First installment"
+    synopsis: "A night-shift operator at a waste plant keeps finding strange objects in each night’s final garbage delivery."
+    releasedOn: "2026-07-10"
+    runtimeMinutes: 12
+    status: "Watch now"
+    watchUrl: "https://x.com/DiDi_OKK/status/2075554498064617627"
+    source: "https://x.com/DiDi_OKK/status/2075554498064617627"
 ---
 
 ## Why this film matters

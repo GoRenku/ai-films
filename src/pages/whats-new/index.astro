@@ -14,6 +14,7 @@ const tally = (k: string) => week.filter((n) => n.kind === k).length;
     <dl class="week">
       <div><dt>This week</dt><dd>{week.length}</dd></div>
       <div><dt>Films</dt><dd>{tally('Film')}</dd></div>
+      {tally('Episode') > 0 && <div><dt>Episodes</dt><dd>{tally('Episode')}</dd></div>}
       <div><dt>Artists</dt><dd>{tally('Artist')}</dd></div>
       <div><dt>Notes</dt><dd>{tally('Journal')}</dd></div>
     </dl>
@@ -24,8 +25,8 @@ const tally = (k: string) => week.filter((n) => n.kind === k).length;
         <h2 class="day-date"><time datetime={date}>{displayDate(date, { day: 'numeric', month: 'short' })}</time><span>{displayDate(date, { weekday: 'long' })}</span></h2>
         <div class="day-items">
           {feed.filter((n) => n.date === date).map((n) => (
-            <a class:list={['entry', `entry-${n.kind.toLowerCase()}`]} href={n.href} data-morph={n.kind === 'Film' ? '' : undefined}>
-              <span class:list={['entry-media', n.kind === 'Film' && n.fit === 'contain' && 'is-contain']} style={n.image && n.kind !== 'Journal' ? `--img:url('${n.image}')` : undefined} data-morph-media={n.kind === 'Film' ? '' : undefined}>
+            <a class:list={['entry', `entry-${n.kind.toLowerCase()}`]} href={n.href} data-morph={n.kind === 'Film' || n.kind === 'Episode' ? '' : undefined}>
+              <span class:list={['entry-media', (n.kind === 'Film' || n.kind === 'Episode') && n.fit === 'contain' && 'is-contain']} style={n.image && n.kind !== 'Journal' ? `--img:url('${n.image}')` : undefined} data-morph-media={n.kind === 'Film' || n.kind === 'Episode' ? '' : undefined}>
                 {n.kind === 'Journal' ? <span class="note-tile"><b>Field note</b><small>{displayDate(n.date, { day: 'numeric', month: 'short' })}</small></span> : n.image ? <img src={n.image} alt="" loading="lazy" width="320" height="180" /> : <span class="monogram">{initials(n.title)}</span>}
               </span>
               <span class="entry-copy">

@@ -5,10 +5,9 @@ description: "Astrid and Ayo explore strange worlds and hide a stowaway seal fro
 year: 2026
 format: "Series"
 genre: "Animated science-fiction family adventure"
-runtimeMinutes: 5.22602
 status: "Watch now"
-watchUrl: "https://www.youtube.com/watch?v=grhBD_mUktc"
-watchLabel: "Watch complete Episode 2"
+watchUrl: "https://www.youtube.com/watch?v=qq9ShmAJR6s"
+watchLabel: "Watch Episode 1 on YouTube"
 image: "/media/fokas-planet-episode-2.jpg"
 imageAlt: "The Foka’s Planet Episode 2 ensemble beneath the Hide the Seal title"
 imageCredit: "Daniił Vołkaŭ · original Episode 2 YouTube artwork"
@@ -17,6 +16,28 @@ discoveredAt: "2026-10-09"
 lastVerifiedAt: "2026-10-25"
 sources: [{"label": "Original full episode and expanded description", "url": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}, {"label": "Creator — original public release link", "url": "https://x.com/machina9000/status/2108286265250455613"}, {"label": "Episode 2 complete original and authorship", "url": "https://www.youtube.com/watch?v=grhBD_mUktc"}, {"label": "Original creator release", "url": "https://x.com/machina9000/status/2114252981440778713"}]
 production: [{"label": "Authorship and disclosure scope", "detail": "The original release identifies Daniił Vołkaŭ. Exact models, human performers, total crew, editing software and budget are not disclosed in the checked description.", "source": "https://www.youtube.com/watch?v=qq9ShmAJR6s"}]
+episodes:
+  - number: 1
+    title: "Seals Can’t Sing"
+    synopsis: "Astrid doubts that seals sing and Ayo remembers a dream song, so they take Grandma Vera’s spaceship to an ocean world with a sunrise deadline."
+    releasedOn: "2026-10-08"
+    runtimeMinutes: 4.43
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=qq9ShmAJR6s"
+    source: "https://www.youtube.com/watch?v=qq9ShmAJR6s"
+  - number: 2
+    title: "Hide the Seal"
+    synopsis: "Astrid and Ayo must hide a stowaway seal from a walrus harbourmaster’s inspection, while Grandma Vera insists a homesick creature be taken home."
+    releasedOn: "2026-10-25"
+    addedAt: "2026-10-25"
+    runtimeMinutes: 5.22602
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=grhBD_mUktc"
+    image: "/media/fokas-planet-episode-2.jpg"
+    imageAlt: "The Foka’s Planet Episode 2 ensemble beneath the Hide the Seal title"
+    imageCredit: "Daniił Vołkaŭ · original Episode 2 YouTube artwork"
+    imageSource: "https://www.youtube.com/watch?v=grhBD_mUktc"
+    source: "https://www.youtube.com/watch?v=grhBD_mUktc"
 ---
 
 The first **Foka’s Planet** episode, titled **Seals Can’t Sing** in its description and **Can Seals Sing?** on YouTube, was released **October 8, 2026**. The original full player runs approximately **4:26**; playback and the expanded description were checked October 9.
@@ -35,7 +56,7 @@ The original description identifies the creator but supplies no named voice perf
 
 ## October 25 — a stowaway at the spaceport
 
-Complete **[Episode 2](https://www.youtube.com/watch?v=grhBD_mUktc)** is now available at **5:14**, with an October 25 original upload. It replaces Episode 1 as the main watch link; the [first episode](https://www.youtube.com/watch?v=qq9ShmAJR6s) stays linked with its own 4:26 length. These are episode runtimes, not a combined season total.
+Complete **[Episode 2](https://www.youtube.com/watch?v=grhBD_mUktc)** is now available at **5:14**, with an October 25 original upload. It now supplies this entry's artwork; the [first episode](https://www.youtube.com/watch?v=qq9ShmAJR6s) stays linked with its own 4:26 length. These are episode runtimes, not a combined season total.
 
 Astrid and Ayo must conceal a stowaway seal during an inspection by a walrus harbourmaster. The hide-and-seek game gives the returning cast a practical problem, while Grandma Vera's rule about taking a homesick creature home puts care alongside evasion. The continuing world gains a moral condition as well as a recurring joke about regulations.
 

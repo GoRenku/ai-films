@@ -15,6 +15,10 @@ image: "/media/non-player-combat.jpg"
 imageAlt: "Non Player Combat episode artwork showing its contestants and presenter"
 imageCredit: "AiMation Studios · Non Player Combat · official episode artwork"
 imageSource: "https://www.youtube.com/watch?v=LEaeU0oznXM"
+episodes:
+  - title: "Finale"
+    status: "Released"
+    source: "https://www.linkedin.com/posts/tompatonfilm_today-i-was-on-good-morning-britain-talking-activity-7411855698801696768-wxSd"
 ---
 
 ## Why this series matters

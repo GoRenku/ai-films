@@ -11,14 +11,28 @@ lastVerifiedAt: "2026-09-17"
 order: 40
 sources: [{"label": "Official film / credits", "url": "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"}, {"label": "Studio — production context", "url": "https://aiyapim.com/"}]
 production: [{"label": "Credited producer and studio", "detail": "Prime Video credits Kerem Çatay as producer and AI Yapım as studio.", "source": "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"}, {"label": "Named cast", "detail": "Şener Savaş, Kaan Kıran, Bulut Buldu and Sinan Devrik are listed by Prime Video. These are credited names, not a verified count of the complete team.", "source": "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"}]
-runtimeMinutes: 17
 watchUrl: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
-watchLabel: "Watch film"
+watchLabel: "Watch Episode 1 on Prime Video"
 image: "/media/castle-walls.jpg"
 imageAlt: "Castle Walls artwork: a man on a desert bridge framed by thorned roses"
 imageCredit: "AI Yapım · Castle Walls · artwork via Prime Video"
 imageSource: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
 imageFit: "contain"
+episodes:
+  - number: 1
+    releasedOn: "2026-08-11"
+    runtimeMinutes: 17
+    status: "Watch now"
+    watchUrl: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
+    watchLabel: "Prime Video; subscription may be required"
+    source: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
+  - number: 2
+    releasedOn: "2026-08-11"
+    runtimeMinutes: 17
+    status: "Watch now"
+    watchUrl: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
+    watchLabel: "Prime Video; subscription may be required"
+    source: "https://www.primevideo.com/-/pt_PT/detail/0OKGPBFLS3EBD67XGHHYC74XPJ"
 ---
 
 Prime Video lists two 17-minute episodes, dated August 11, 2026. Platform and territorial access may require a subscription.

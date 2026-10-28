@@ -14,9 +14,27 @@ discoveredAt: "2026-10-15"
 lastVerifiedAt: "2026-10-15"
 sources: [{"label": "Full Episode 1 and five-episode catalogue", "url": "https://artlist.io/tv/the-arc/ep1"}, {"label": "Original production account", "url": "https://artlist.io/blog/the-arc-ai-series-london-premiere/"}, {"label": "Filmmaker interview", "url": "https://www.businessinsider.com/creators-ai-tv-series-38000-credits-seedance-artlist-the-arc-2026-10"}, {"label": "AI Creator Day discussion", "url": "https://whatstrending.com/how-the-arc-made-an-ai-series-in-weeks/"}]
 production: [{"label": "Reference and image tools", "detail": "Stewart describes ShotDeck/Figma boards, Claude-assisted script development and research, and Nano Banana Pro / GPT Image 2 image generation.", "source": "https://www.businessinsider.com/creators-ai-tv-series-38000-credits-seedance-artlist-the-arc-2026-10"}, {"label": "Video and iteration", "detail": "The filmmakers name Seedance and Kling, reporting eight to ten attempts for some shots and lower-resolution trials before final-quality output. Versions are unspecified.", "source": "https://www.businessinsider.com/creators-ai-tv-series-38000-credits-seedance-artlist-the-arc-2026-10"}, {"label": "Credit support, not total budget", "detail": "The filmmakers report roughly $38,000 in Artlist-supplied AI credits. Stewart says team members received their full day rates; labour is not included in that credit figure.", "source": "https://www.businessinsider.com/creators-ai-tv-series-38000-credits-seedance-artlist-the-arc-2026-10"}, {"label": "Named collaborators", "detail": "Artlist names Happy Monday Labs for production, Kids Don’t Know for post, and Simone Ferretti / Artlist as executive producers. This is not a complete team count.", "source": "https://artlist.io/blog/the-arc-ai-series-london-premiere/"}]
-runtimeMinutes: 19.8243
 watchUrl: "https://artlist.io/tv/the-arc/ep1"
 watchLabel: "Watch Episode 1 · all episodes at source"
+episodes:
+  - number: 1
+    title: "Among the Condemned"
+    runtimeMinutes: 19.82
+    status: "Watch now"
+    watchUrl: "https://artlist.io/tv/the-arc/ep1"
+    source: "https://artlist.io/tv/the-arc/ep1"
+  - number: 2
+    status: "Released"
+    source: "https://artlist.io/tv/the-arc/ep1"
+  - number: 3
+    status: "Released"
+    source: "https://artlist.io/tv/the-arc/ep1"
+  - number: 4
+    status: "Released"
+    source: "https://artlist.io/tv/the-arc/ep1"
+  - number: 5
+    status: "Released"
+    source: "https://artlist.io/tv/the-arc/ep1"
 ---
 
 **The Arc** is a five-episode series, approximately 83 minutes overall, available on Artlist TV. The watch link opens **Among the Condemned**, Episode 1; its current player runs **19:49**, while the catalogue rounds it to 20 minutes. Other episodes have different lengths.

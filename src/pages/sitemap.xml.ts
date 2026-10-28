@@ -5,10 +5,11 @@ import { escapeXml } from '../lib/xml';
 const FIXED_PAGES = ['/', '/films/', '/artists/', '/whats-new/', '/journal/', '/about/', '/privacy/'];
 
 export const GET: APIRoute = async ({ site }) => {
-  const { films, artists, updates } = await catalog();
+  const { films, artists, updates, episodesOf } = await catalog();
   const paths = [
     ...FIXED_PAGES,
     ...films.map((f) => `/films/${f.id}/`),
+    ...films.flatMap((f) => episodesOf(f).filter((e) => e.href && !e.film).map((e) => e.href!)),
     ...artists.map((a) => `/artists/${a.id}/`),
     ...updates.map((u) => `/journal/${u.id}/`),
   ];

@@ -3,12 +3,11 @@ title: "Malfoid — I Wasn’t Joking & Don’t Wait for Me"
 artist: "schmede"
 description: "A sincere offer to accompany Harry to a ball is mistaken for mockery, leaving its speaker unable to explain."
 year: 2026
-format: "Short film"
+format: "Series"
 genre: "Fantasy fan-fiction drama"
-runtimeMinutes: 9.83168
 status: "Watch now"
-watchUrl: "https://www.youtube.com/watch?v=3ieOEFLKMD4"
-watchLabel: "Watch the complete combined short"
+watchUrl: "https://www.youtube.com/watch?v=os8ULNNjEWI"
+watchLabel: "Start with I Wasn’t Joking"
 image: "/media/malfoid-complete-short.jpg"
 imageAlt: "Malfoid beside the I Wasn’t Joking and Don’t Wait for Me titles in the combined short’s artwork"
 imageCredit: "schmede_AI · original complete-cut YouTube artwork"
@@ -17,6 +16,75 @@ discoveredAt: "2026-10-13"
 lastVerifiedAt: "2026-10-26"
 sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Original story and comic credit", "url": "https://x.com/schmede_AI/status/2109323478679597403"}, {"label": "Maker — character, voice and acting references", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2 full original", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "Part 2 maker announcement", "url": "https://x.com/schmede_AI/status/2112297287552786566"}, {"label": "Part 3 complete original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Maker’s pacing and French-subtitle disclosure", "url": "https://x.com/schmede_AI/status/2112691761537552832"}, {"label": "Part 4 original and description", "url": "https://www.youtube.com/watch?v=hp6kwoMIosA"}, {"label": "Part 4 writing and caption disclosure", "url": "https://x.com/schmede_AI/status/2113014086183338228"}, {"label": "Part 5 complete original and description", "url": "https://www.youtube.com/watch?v=i16WEtbV4ZM"}, {"label": "Part 5 writing and staging account", "url": "https://x.com/schmede_AI/status/2113710377628307842"}, {"label": "Part 5 caption scope", "url": "https://x.com/schmede_AI/status/2113710488530178295"}, {"label": "Complete combined short and scoped writing credits", "url": "https://www.youtube.com/watch?v=3ieOEFLKMD4"}, {"label": "Combined-cut creator announcement", "url": "https://x.com/schmede_AI/status/2114120737636205050"}, {"label": "Creator caption-language scope", "url": "https://x.com/schmede_AI/status/2114121415591170199"}, {"label": "I Was Joking Part 1 complete original", "url": "https://www.youtube.com/watch?v=FJFiu8JL3R8"}, {"label": "Creator release and caption scope", "url": "https://x.com/schmede_AI/status/2114403745698115810"}]
 production: [{"label": "Adaptation credits", "detail": "The release credits story/comic to G-G-G-Grin (@Grin2702) and writing to TriangularCipher9000 (@Axolotl52032346). schmede is the adapter/releasing creator. The October 11 original upload runs 2:21 and belongs to a continuing fan-fiction catalogue, not an official franchise production.", "source": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "References and support", "detail": "The maker reports reusing a created character reference, extracting preferred generated audio as a voice reference and prompting the acting. The creator discloses Vidu creative-partner support. Exact film-wide model/version allocation, total crew and budget are not established by hashtags.", "source": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "October 18 continuation: staging and support", "detail": "For Don’t Wait for Me Part 1, the maker reports framing around supporting-character likeness constraints, Vidu partner/preview context and an intended later compilation. These describe the new instalment, not a retroactive exact model or writing credit for I Wasn’t Joking.", "source": "https://x.com/schmede_AI/status/2111789541921042875"}, {"label": "Complete combined release", "detail": "The October 25 upload runs 9:50 and supersedes the planned-compilation status. Original source writers remain credited specifically for I Wasn’t Joking. Exact full-cut model allocation, human crew and budget remain unknown.", "source": "https://www.youtube.com/watch?v=3ieOEFLKMD4"}]
+episodeNoun: "Part"
+episodes:
+  - title: "I Wasn’t Joking"
+    synopsis: "Malfoid’s sincere offer to go to the ball with Harry is heard as a familiar insult, leaving him unable to explain."
+    releasedOn: "2026-10-11"
+    runtimeMinutes: 2.35
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=os8ULNNjEWI"
+    source: "https://www.youtube.com/watch?v=os8ULNNjEWI"
+  - number: 1
+    title: "Don’t Wait for Me"
+    synopsis: "A continuation that picks up after the misunderstanding of I Wasn’t Joking."
+    addedAt: "2026-10-18"
+    runtimeMinutes: 1.57
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=7D0Q0mk_2Gs"
+    source: "https://www.youtube.com/watch?v=7D0Q0mk_2Gs"
+  - number: 2
+    title: "Don’t Wait for Me"
+    addedAt: "2026-10-19"
+    runtimeMinutes: 1.57
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=cp8VYGsG7O0"
+    source: "https://www.youtube.com/watch?v=cp8VYGsG7O0"
+  - number: 3
+    title: "Don’t Wait for Me"
+    addedAt: "2026-10-21"
+    runtimeMinutes: 1.5
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=nU807C2rgVU"
+    source: "https://www.youtube.com/watch?v=nU807C2rgVU"
+  - number: 4
+    title: "Don’t Wait for Me"
+    synopsis: "Harry has to understand the hurt before an apology can land, while pride stands in the way of an admission."
+    releasedOn: "2026-10-21"
+    addedAt: "2026-10-22"
+    runtimeMinutes: 1.42
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=hp6kwoMIosA"
+    source: "https://www.youtube.com/watch?v=hp6kwoMIosA"
+  - number: 5
+    title: "Don’t Wait for Me"
+    synopsis: "Harry needs a credible reason to apologise and Malfoy’s pride resists vulnerability, with Quidditch offering a shared refuge."
+    releasedOn: "2026-10-23"
+    addedAt: "2026-10-24"
+    runtimeMinutes: 2.3
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=i16WEtbV4ZM"
+    source: "https://www.youtube.com/watch?v=i16WEtbV4ZM"
+  - title: "I Wasn’t Joking & Don’t Wait for Me"
+    synopsis: "The complete combined short brings I Wasn’t Joking and the Don’t Wait for Me continuation together in one cut."
+    releasedOn: "2026-10-25"
+    addedAt: "2026-10-25"
+    runtimeMinutes: 9.83168
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=3ieOEFLKMD4"
+    image: "/media/malfoid-complete-short.jpg"
+    imageAlt: "Malfoid beside the I Wasn’t Joking and Don’t Wait for Me titles in the combined short’s artwork"
+    imageCredit: "schmede_AI · original complete-cut YouTube artwork"
+    imageSource: "https://www.youtube.com/watch?v=3ieOEFLKMD4"
+    source: "https://www.youtube.com/watch?v=3ieOEFLKMD4"
+  - title: "I Was Joking, Part 1 — Daphne Greengrass"
+    synopsis: "Gossip about the ball turns an earlier encounter into conflicting public accounts, and Daphne’s questions expose what others assume."
+    releasedOn: "2026-10-25"
+    addedAt: "2026-10-26"
+    runtimeMinutes: 2.65
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=FJFiu8JL3R8"
+    source: "https://www.youtube.com/watch?v=FJFiu8JL3R8"
 ---
 
 After Harry is turned down for a ball, Malfoid offers to go with him. Harry hears a familiar insult where the speaker intends something sincere. The complete captioned scene makes that misunderstanding and its aftermath the story.
@@ -73,4 +141,4 @@ The [release post](https://x.com/schmede_AI/status/2114120737636205050) provides
 
 The maker has released **[I Was Joking, Part 1 — Daphne Greengrass](https://www.youtube.com/watch?v=FJFiu8JL3R8)**, a complete **2:39** instalment uploaded October 25. Gossip about the ball turns an earlier encounter into conflicting public accounts; Daphne's questions expose what others assume rather than what they know. The title's reversal belongs to this continuation, not a renamed version of the original short.
 
-The [release note](https://x.com/schmede_AI/status/2114403745698115810) supplies Spanish captions on X and lists further YouTube caption languages. Those are subtitles, not dubs. The full original description retains Vidu creative-partner / Q4 Preview context without exact versions or new scene-specific source-writer credits. The existing **9:50 combined short remains the main watch link**; it does not suddenly include this later instalment. Full description, available caption text, current playback and sampled scenes were checked.
+The [release note](https://x.com/schmede_AI/status/2114403745698115810) supplies Spanish captions on X and lists further YouTube caption languages. Those are subtitles, not dubs. The full original description retains Vidu creative-partner / Q4 Preview context without exact versions or new scene-specific source-writer credits. The existing **9:50 combined short** does not suddenly include this later instalment. Full description, available caption text, current playback and sampled scenes were checked.

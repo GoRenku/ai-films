@@ -5,7 +5,6 @@ description: "A Victorian tutor dreams her way into a fantastical kingdom; the t
 year: 2026
 format: "Series"
 genre: "Fantasy adventure"
-runtimeMinutes: 4.119016666666666
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=c04CDs4unHY"
 watchLabel: "Watch Episode 3 on the creator’s YouTube channel"
@@ -17,6 +16,30 @@ discoveredAt: "2026-10-09"
 lastVerifiedAt: "2026-10-09"
 sources: [{"label": "Grindhouse Glitch — Episode 3 full release", "url": "https://www.youtube.com/watch?v=c04CDs4unHY"}, {"label": "Gwinn — original release and tools", "url": "https://x.com/ChrisGwinnLA/status/2106436890241151065"}, {"label": "Gwinn — Episode 1 link and premise", "url": "https://x.com/ChrisGwinnLA/status/2106558105027014888"}, {"label": "Gwinn — Episode 2 link and premise", "url": "https://x.com/ChrisGwinnLA/status/2106558038857679152"}]
 production: [{"label": "Direction", "detail": "Official release artwork credits Grindhouse Glitch as director; Christopher Gwinn’s original account links the release. A complete crew list, budget and team size are not disclosed in the checked description.", "source": "https://www.youtube.com/watch?v=c04CDs4unHY"}, {"label": "Episode 3 — images", "detail": "The maker names Midjourney, Seedream, Nano Banana Pro and GPT images. No further versions or shot-by-shot allocation are given.", "source": "https://www.youtube.com/watch?v=c04CDs4unHY"}, {"label": "Episode 3 — video", "detail": "The maker names Seedance on Dreamina and MiniMax H3 on Hailuo. The Seedance version is not specified for this episode.", "source": "https://www.youtube.com/watch?v=c04CDs4unHY"}, {"label": "Episode 3 — audio", "detail": "Seed Audio, Elevenlabs, Udio and Suno are collectively listed for music, sound effects and voices; the description does not assign each element to an individual tool.", "source": "https://www.youtube.com/watch?v=c04CDs4unHY"}, {"label": "Creator-program context", "detail": "The original Episode 3 release includes a Dreamina creator-program tag. Payment, sponsorship terms and production costs are not disclosed.", "source": "https://x.com/ChrisGwinnLA/status/2106436890241151065"}]
+episodes:
+  - number: 1
+    synopsis: "Wendy, a young tutor in Victorian England, finds in her dreams an escape from an unhappy daily life."
+    status: "Released"
+    watchUrl: "https://x.com/ChrisGwinnLA/status/2106558105027014888"
+    watchLabel: "Via the creator’s link on X"
+    source: "https://x.com/ChrisGwinnLA/status/2106558105027014888"
+  - number: 2
+    synopsis: "Wendy is separated from Kavi inside a strange mansion."
+    status: "Released"
+    watchUrl: "https://x.com/ChrisGwinnLA/status/2106558038857679152"
+    watchLabel: "Via the creator’s link on X"
+    source: "https://x.com/ChrisGwinnLA/status/2106558038857679152"
+  - number: 3
+    synopsis: "Wendy ventures beyond the mansion to rescue Kavi from his mother’s Black Rose Maze."
+    releasedOn: "2026-10-03"
+    runtimeMinutes: 4.119016666666666
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=c04CDs4unHY"
+    image: "/media/wendys-wonderful-dreamworld.jpg"
+    imageAlt: "Wendy beneath yellow Dreamworld lettering, surrounded by birdlike creatures and a stern queen"
+    imageCredit: "Grindhouse Glitch / Christopher Gwinn · official Episode 3 thumbnail"
+    imageSource: "https://www.youtube.com/watch?v=c04CDs4unHY"
+    source: "https://www.youtube.com/watch?v=c04CDs4unHY"
 ---
 
 Three numbered instalments are publicly linked by the filmmaker. The first introduces Wendy, a young tutor in Victorian England whose dreams offer an escape from an unhappy daily life. The second separates her from Kavi inside a strange mansion. In **Episode 3**, released **October 3, 2026**, she ventures beyond it to rescue him from his mother’s Black Rose Maze.

@@ -5,7 +5,7 @@ description: "Realista’s Dante adaptation pairs generated journeys through Hel
 year: 2026
 format: "Series"
 genre: "Literary fantasy drama"
-status: "Festival screening"
+status: "Released"
 image: "/media/inferno-the-series.jpg"
 imageAlt: "Souls crowd beside a dark river and a line of fire in Antinferno"
 imageCredit: "Realista / Niccolò Savinelli · official Antinferno episode artwork"
@@ -15,7 +15,27 @@ lastVerifiedAt: "2026-10-15"
 sources: [{"label": "Original episode catalogue and access", "url": "https://realista.tv/"}, {"label": "Creator sound and authorship disclosure", "url": "https://niccolosavinelli.com/"}, {"label": "Official BAIFF programme", "url": "https://programme.baiff.eu/"}]
 production: [{"label": "Music and sound", "detail": "Savinelli states that he writes, produces and mixes the score and sound design in the studio; the generated imagery does not establish AI-generated music.", "source": "https://niccolosavinelli.com/"}]
 watchUrl: "https://realista.tv/"
-watchLabel: "Visit series · email unlock required"
+watchLabel: "Watch Selva at Realista · email unlock required"
+episodes:
+  - title: "Selva"
+    status: "Released"
+    watchUrl: "https://realista.tv/"
+    watchLabel: "Email unlock required at Realista"
+    source: "https://realista.tv/"
+  - title: "Antinferno"
+    status: "Released"
+    watchUrl: "https://realista.tv/"
+    watchLabel: "Email unlock required at Realista"
+    image: "/media/inferno-the-series.jpg"
+    imageAlt: "Souls crowd beside a dark river and a line of fire in Antinferno"
+    imageCredit: "Realista / Niccolò Savinelli · official Antinferno episode artwork"
+    imageSource: "https://realista.tv/"
+    source: "https://realista.tv/"
+  - title: "Limbo"
+    status: "Released"
+    watchUrl: "https://realista.tv/"
+    watchLabel: "Email unlock required at Realista"
+    source: "https://realista.tv/"
 ---
 
 Realista lists **Selva**, **Antinferno** and **Limbo** as available episodes of its Dante adaptation. Further circles remain in production. The landing page’s season headline is not evidence that every episode is finished.

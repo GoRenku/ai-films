@@ -1,0 +1,13 @@
+---
+import FilmPage from '../../../../components/FilmPage.astro';
+import { catalog } from '../../../../lib/catalog';
+// Each series episode with its own page gets a shareable URL that opens the series with it on stage.
+export async function getStaticPaths() {
+  const c = await catalog();
+  return c.films.flatMap((film) =>
+    c.episodesOf(film).filter((e) => e.href && !e.film).map((episode) => ({ params: { id: film.id, episode: episode.key }, props: { film, episode } })),
+  );
+}
+const { film, episode } = Astro.props;
+---
+<FilmPage film={film} episode={episode} />

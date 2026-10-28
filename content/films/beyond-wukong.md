@@ -5,10 +5,9 @@ description: "A new stone monkey begins a journey west in a generated mythologic
 year: 2026
 format: "Series"
 genre: "Mythological fantasy"
-runtimeMinutes: 40
 status: "Watch now"
 watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
-watchLabel: "Watch on Mango TV"
+watchLabel: "Watch Episode 1 on Mango TV"
 image: "/media/beyond-wukong.jpg"
 imageAlt: "Mango TV promotional image for Beyond Wukong"
 imageCredit: "Mango TV · series promotional image"
@@ -40,6 +39,33 @@ production:
       "source": "https://finance.sina.com.cn/jjxw/2026-09-11/doc-inirnnxu8872119.shtml",
     },
   ]
+episodes:
+  - number: 1
+    releasedOn: "2026-08-31"
+    runtimeMinutes: 40
+    status: "Watch now"
+    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+  - number: 2
+    runtimeMinutes: 40
+    status: "Watch now"
+    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+  - number: 3
+    runtimeMinutes: 40
+    status: "Watch now"
+    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+  - number: 4
+    runtimeMinutes: 40
+    status: "Watch now"
+    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+  - number: 5
+    runtimeMinutes: 40
+    status: "Watch now"
+    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
 ---
 
 Beyond Wukong premiered on Mango TV and Hunan Satellite TV on August 31, 2026. The initial release contains five episodes of approximately 40 minutes; a planned 30-episode run is not the same as thirty released episodes.

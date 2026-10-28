@@ -1,0 +1,528 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FilmCard from './FilmCard.astro';
+import Rail from './Rail.astro';
+import Sources from './Sources.astro';
+import PlayIcon from './PlayIcon.astro';
+import { render } from 'astro:content';
+import { catalog, embedOf, genresOf, minutes, longMinutes, hostOf, displayDate, shareImageOf, statusKey, statusLabel, workNoun, startEpisode, releasedEpisodes, totalMinutesOf, type Film, type Episode } from '../lib/catalog';
+interface Props { film: Film; episode?: Episode }
+const { film, episode } = Astro.props;
+const c = await catalog();
+const d = film.data;
+const artist = c.artistOf(film);
+const { Content } = await render(film);
+const noun = workNoun(film);
+const primaryGenre = genresOf(d.genre)[0];
+const byArtist = c.filmsBy(artist.id).filter((f) => f.id !== film.id);
+const related = c.films.filter((f) => f.id !== film.id && f.data.artist.id !== artist.id && genresOf(f.data.genre).includes(primaryGenre)).slice(0, 12);
+const notes = c.updates.filter((u) => u.data.films.some((r) => r.id === film.id));
+const fresh = c.freshOf(film);
+
+// Series: the episode on stage is the one this URL names, else where a new viewer starts.
+const isSeries = d.format === 'Series';
+const episodes = c.episodesOf(film);
+const released = releasedEpisodes(episodes);
+const announced = episodes.length - released.length;
+const current = isSeries ? (episode ?? startEpisode(episodes)) : undefined;
+const withPages = episodes.filter((e) => e.href);
+const latest = withPages.at(-1);
+const seasons = [...new Set(episodes.map((e) => e.season ?? 1))];
+const total = totalMinutesOf(episodes);
+const nounPlural = `${d.episodeNoun}s`;
+const embedFor = (e?: Episode) => (e && e.status === 'Watch now' ? embedOf(e.watchUrl) : undefined);
+const neighbours = (list: Episode[], e?: Episode) => {
+  const i = e ? list.indexOf(e) : -1;
+  return { prev: i > 0 ? list[i - 1] : undefined, next: i >= 0 ? list[i + 1] : undefined };
+};
+const howToWatch = (e: Episode) =>
+  embedFor(e) ? 'Plays here' : e.status === 'Watch now' && e.watchUrl ? `On ${hostOf(e.watchUrl)} ↗` : e.watchLabel ?? statusLabel(e.status);
+const episodeName = (e: Episode) => (e.title ? `${e.label}: ${e.title}` : e.label);
+
+// A standalone film that is also an episode of a series links back into it.
+const member = c.seriesOf(film);
+const siblings = member ? neighbours(c.episodesOf(member.series).filter((e) => e.href), member.episode) : undefined;
+
+const stage = current
+  ? {
+      image: current.image ?? d.image,
+      alt: current.image ? current.imageAlt : d.imageAlt,
+      fit: current.image ? current.imageFit : d.imageFit,
+      credit: current.image ? current.imageCredit : d.imageCredit,
+      source: current.image ? current.imageSource : d.imageSource,
+    }
+  : { image: d.image, alt: d.imageAlt, fit: d.imageFit, credit: d.imageCredit, source: d.imageSource };
+const embed = current ? embedFor(current) : embedOf(d.watchUrl);
+const watchUrl = current ? current.watchUrl : d.watchUrl;
+const playable = Boolean(embed && (current || d.status === 'Watch now' || /trailer/i.test(d.watchLabel)));
+const host = watchUrl ? hostOf(watchUrl) : undefined;
+const step = neighbours(withPages, current);
+
+const facts = [
+  ['Format', d.format],
+  d.musician ? ['Music', d.musician] : undefined,
+  d.genre !== d.format ? ['Genre', d.genre] : undefined,
+  ['Year', String(d.year)],
+  isSeries ? [nounPlural, `${released.length}${announced ? ` + ${announced} announced` : ''}`] : undefined,
+  isSeries && total ? ['Running time', longMinutes(total)!] : undefined,
+  !isSeries && d.runtimeMinutes ? ['Runtime', minutes(d.runtimeMinutes)!] : undefined,
+  ['Added', displayDate(d.discoveredAt)],
+  isSeries && c.addedOf(film) !== d.discoveredAt ? ['Updated', displayDate(c.addedOf(film))] : undefined,
+].filter((x): x is string[] => Boolean(x));
+
+const pageTitle = episode ? `${d.title} — ${episodeName(episode)}` : d.title;
+const pageDescription = episode?.synopsis ?? d.description;
+const share = episode?.image && episode.imageAlt ? { src: episode.image, alt: episode.imageAlt } : shareImageOf(film);
+// What the series player needs in the browser; everything else is already in the markup.
+const seriesData = isSeries && {
+  id: film.id,
+  title: d.title,
+  deepLink: Boolean(episode),
+  current: current!.key,
+  episodes: episodes.map((e) => {
+    const em = embedFor(e);
+    return {
+      key: e.key, label: e.label, name: episodeName(e), href: e.href, selectable: Boolean(e.href && !e.film),
+      embed: em?.src, provider: em?.provider, watchUrl: e.watchUrl, host: e.watchUrl ? hostOf(e.watchUrl) : undefined,
+      how: howToWatch(e),
+      image: e.image ?? d.image, alt: (e.image ? e.imageAlt : d.imageAlt) ?? '', fit: e.image ? e.imageFit : d.imageFit,
+      credit: e.image ? e.imageCredit : d.imageCredit, source: e.image ? e.imageSource : d.imageSource,
+    };
+  }),
+};
+---
+<Layout title={pageTitle} description={pageDescription} shareImage={share}>
+  <section class="film-hero" style={d.image ? `--img:url('${d.image}')` : undefined}>
+    <div class="film-hero-glow" aria-hidden="true"></div>
+    <div class="film-hero-inner">
+      <div class="film-media-col">
+        <div class:list={['film-media', stage.fit === 'contain' && 'is-contain']} style="view-transition-name: film-media" data-player={isSeries ? undefined : ''} data-stage={isSeries ? '' : undefined}>
+          {stage.image ? <img src={stage.image} alt={stage.alt} fetchpriority="high" width="1280" height="720" /> : <span class="title-art" aria-hidden="true">{d.title}</span>}
+          {playable && embed && (
+            <button class="big-play" type="button" data-play={isSeries ? undefined : embed.src} data-ep-play={isSeries ? '' : undefined} data-inline data-title={d.title}>
+              <span class="big-play-disc"><PlayIcon /></span>
+              <span class="big-play-label">{current ? `Play ${current.label}` : d.status === 'Watch now' ? `Play ${noun}` : 'Play trailer'}<small>via {embed.provider}</small></span>
+            </button>
+          )}
+          {current && !embed && current.watchUrl && (
+            <a class="stage-out" href={current.watchUrl} rel="noopener noreferrer" data-ep-out>
+              <span class="stage-out-label">{current.status === 'Watch now' ? `Watch ${current.label} on ${host}` : `Open ${current.label} on ${host}`} ↗</span>
+            </a>
+          )}
+        </div>
+        {stage.source && <p class="credit" data-stage-credit><a href={stage.source}>{stage.credit} ↗</a></p>}
+        {current && (
+          <div class="ep-bar" data-ep-bar>
+            <p class="ep-now"><span>Now showing</span><strong data-ep-now>{episodeName(current)}</strong></p>
+            <nav class="ep-step" aria-label={`${nounPlural} of ${d.title}`}>
+              {step.prev && <a class="ep-step-link" href={step.prev.href} data-step="prev">← {step.prev.label}</a>}
+              {step.next && <a class="ep-step-link is-next" href={step.next.href} data-step="next">Next: {step.next.label} →</a>}
+            </nav>
+          </div>
+        )}
+        {member && siblings && (
+          <div class="ep-bar">
+            <p class="ep-now"><span>Part of {member.series.data.title}</span><strong>{member.episode.label}</strong></p>
+            <nav class="ep-step" aria-label={`${member.series.data.episodeNoun}s of ${member.series.data.title}`}>
+              {siblings.prev && <a class="ep-step-link" href={siblings.prev.href}>← {siblings.prev.label}</a>}
+              <a class="ep-step-link" href={`/films/${member.series.id}/#episodes`}>All {member.series.data.episodeNoun.toLowerCase()}s</a>
+              {siblings.next && <a class="ep-step-link is-next" href={siblings.next.href}>Next: {siblings.next.label} →</a>}
+            </nav>
+          </div>
+        )}
+      </div>
+      <div class="film-info">
+        <p class="kicker">
+          {fresh && <span class="tag-new">{fresh}</span>}
+          <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
+          <a href={`/films/?genre=${encodeURIComponent(primaryGenre)}`}>{primaryGenre}</a>
+          {member && <a class="series-tag" href={`/films/${member.series.id}/`}>{member.series.data.title} · {member.episode.label}</a>}
+        </p>
+        <h1>{d.title}</h1>
+        <p class="film-by">by <a href={`/artists/${artist.id}/`}>{artist.data.title}</a>{artist.data.alias && <span> · {artist.data.alias}</span>}</p>
+        <p class="film-logline">{d.description}</p>
+        {isSeries && current ? (
+          <div class="actions">
+            {embed ? (
+              <a class="btn btn-primary" href={current.watchUrl} data-ep-primary><PlayIcon /> <span data-ep-primary-label>Play {current.label}</span></a>
+            ) : current.watchUrl ? (
+              <a class="btn btn-primary" href={current.watchUrl} rel="noopener noreferrer" data-ep-primary><span data-ep-primary-label>{current.status === 'Watch now' ? `Watch ${current.label} on ${host}` : `Open ${current.label} on ${host}`}</span> ↗</a>
+            ) : d.watchUrl ? (
+              <a class="btn btn-primary" href={d.watchUrl} rel="noopener noreferrer">{d.watchLabel} ↗</a>
+            ) : (
+              <a class="btn btn-primary" href="#episodes">See the {nounPlural.toLowerCase()}</a>
+            )}
+            {latest && latest !== current && <a class="btn btn-ghost" href={latest.href} data-ep-latest data-select={latest.film ? undefined : latest.key}>Latest: {latest.label}</a>}
+            <a class="btn btn-ghost" href={`/films/${film.id}/`} data-ep-restart hidden>From the start</a>
+            {artist.data.x && <a class="btn btn-ghost" href={artist.data.x.url}>Follow on X ↗</a>}
+          </div>
+        ) : (
+          <div class="actions">
+            {playable && embed && <a class="btn btn-primary" href={d.watchUrl} data-play={embed.src} data-title={d.title} data-source={d.watchUrl}><PlayIcon /> {d.status === 'Watch now' ? 'Play' : 'Play trailer'}</a>}
+            {d.watchUrl && <a class:list={['btn', playable ? 'btn-ghost' : 'btn-primary']} href={d.watchUrl} rel="noopener noreferrer">{playable ? `Open on ${host}` : d.watchLabel} ↗</a>}
+            {artist.data.x && <a class="btn btn-ghost" href={artist.data.x.url}>Follow on X ↗</a>}
+          </div>
+        )}
+        <dl class="fact-strip">{facts.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
+      </div>
+    </div>
+  </section>
+
+  {isSeries && (
+    <section class="episodes" id="episodes" aria-labelledby="episodes-heading" data-reveal>
+      <div class="section-head">
+        <h2 id="episodes-heading">{nounPlural}</h2>
+        <p>{released.length} released{announced ? `, ${announced} announced` : ''} · in release order{d.episodes.some((e) => e.film) ? ' · each story has its own page' : ''}</p>
+      </div>
+      {seasons.map((season) => (
+        <div class="season">
+          {seasons.length > 1 && <h3 class="season-head">Season {season}</h3>}
+          <ol class="ep-list">
+            {episodes.filter((e) => (e.season ?? 1) === season).map((e) => {
+              const body = (
+                <>
+                  <span class="ep-num" aria-hidden="true">{e.number ?? '·'}</span>
+                  <span class:list={['ep-thumb', !e.image && 'is-blank']} style={!e.image && d.image ? `--img:url('${d.image}')` : undefined}>
+                    {e.image ? <img src={e.image} alt="" loading="lazy" decoding="async" width="320" height="180" /> : <span class="ep-thumb-label">{e.number !== undefined ? `${d.episodeNoun} ${e.number}` : e.label}</span>}
+                    {embedFor(e) && <span class="ep-thumb-play" aria-hidden="true"><PlayIcon /></span>}
+                    <span class="ep-bar-progress" aria-hidden="true"></span>
+                  </span>
+                  <span class="ep-copy">
+                    <span class="ep-title">{e.title ?? e.label}{c.isNew(e.addedAt) && e.addedAt > d.discoveredAt && <span class="tag-new">New</span>}</span>
+                    {e.title && <span class="ep-label">{e.label}</span>}
+                    {e.synopsis && <span class="ep-synopsis">{e.synopsis}</span>}
+                  </span>
+                  <span class="ep-meta">
+                    {minutes(e.runtimeMinutes) && <span>{minutes(e.runtimeMinutes)}</span>}
+                    {e.releasedOn && <time datetime={e.releasedOn}>{displayDate(e.releasedOn)}</time>}
+                    <span class:list={['ep-how', `is-${statusKey(e.status)}`]}>{e.status === 'Coming soon' ? 'Announced' : howToWatch(e)}</span>
+                    <span class="ep-state" data-ep-state></span>
+                  </span>
+                </>
+              );
+              return (
+                <li class:list={['ep-row', e === current && 'is-current', !e.href && 'is-announced']} data-ep={e.key}>
+                  {e.href ? (
+                    <a class="ep-link" href={e.href} data-select={e.film ? undefined : e.key} aria-current={e === current ? 'true' : undefined}>{body}</a>
+                  ) : (
+                    <div class="ep-link">{body}</div>
+                  )}
+                  {!e.href && e.source && <a class="ep-source" href={e.source}>Announcement · {hostOf(e.source)} ↗</a>}
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      ))}
+    </section>
+  )}
+
+  <div class="film-body">
+    <article class="prose" data-reveal>
+      <Content />
+    </article>
+    <aside class="film-aside" data-reveal>
+      <a class="maker-card" href={`/artists/${artist.id}/`}>
+        <span class="kicker">{noun === 'video' ? 'Director' : 'Filmmaker'}</span>
+        <strong>{artist.data.title}</strong>
+        <span>{artist.data.focus}</span>
+        <span class="maker-count">{c.filmsBy(artist.id).length} in the collection →</span>
+      </a>
+      {notes.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">In the journal</p>
+          {notes.map((u) => <a class="aside-note" href={`/journal/${u.id}/`}><time datetime={u.data.date}>{displayDate(u.data.date)}</time>{u.data.title}</a>)}
+        </div>
+      )}
+      <Sources sources={d.sources} checked={d.lastVerifiedAt} />
+    </aside>
+  </div>
+
+  {d.production.length > 0 && (
+    <section class="notebook" data-reveal aria-labelledby="production-heading">
+      <div class="section-head">
+        <h2 id="production-heading">Production notebook</h2>
+        <p>What the makers have disclosed. Credits may be partial.</p>
+      </div>
+      <div class="notebook-grid">
+        {d.production.map((fact, i) => (
+          <div class="note-card">
+            <span class="note-num">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{fact.label}</h3>
+            <p>{fact.detail}</p>
+            <a href={fact.source}>{hostOf(fact.source)} source ↗</a>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {byArtist.length > 0 && (
+    <Rail title={`More from ${artist.data.title}`} href={`/artists/${artist.id}/`} count={byArtist.length}>
+      {byArtist.map((f) => <FilmCard film={f} artist={artist} fresh={c.freshOf(f)} />)}
+    </Rail>
+  )}
+  {related.length > 0 && (
+    <Rail title={`More ${primaryGenre === 'Music video' ? 'music videos' : primaryGenre.toLowerCase()}`} href={`/films/?genre=${encodeURIComponent(primaryGenre)}`}>
+      {related.map((f) => <FilmCard film={f} artist={c.artistOf(f)} fresh={c.freshOf(f)} />)}
+    </Rail>
+  )}
+  {seriesData && <script is:inline type="application/json" id="series-data" set:html={JSON.stringify(seriesData).replaceAll('<', '\\u003c')} />}
+</Layout>
+
+<script>
+  // Films: the hero still turns into the player in place.
+  document.querySelectorAll<HTMLElement>('[data-player]').forEach((frame) => {
+    const play = () => {
+      const trigger = frame.querySelector<HTMLElement>('[data-play]');
+      if (!trigger) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = trigger.dataset.play!;
+      iframe.title = trigger.dataset.title ?? 'Film';
+      iframe.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media';
+      iframe.allowFullscreen = true;
+      frame.classList.add('playing');
+      frame.replaceChildren(iframe);
+    };
+    frame.querySelector('[data-play]')?.addEventListener('click', play);
+    // Header buttons on this page play inline rather than in the lightbox.
+    document.querySelectorAll<HTMLElement>('.film-info [data-play]').forEach((b) =>
+      b.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        play();
+        frame.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, { capture: true }),
+    );
+  });
+
+  // Series: one stage plays any episode, steps through them in order and remembers where you were.
+  type Ep = {
+    key: string; label: string; name: string; href?: string; selectable: boolean; embed?: string; provider?: string;
+    watchUrl?: string; host?: string; how: string; image?: string; alt: string; fit: string; credit?: string; source?: string;
+  };
+  type Series = { id: string; title: string; deepLink: boolean; current: string; episodes: Ep[] };
+  type Progress = { last?: string; started?: string[]; finished?: string[] };
+  const dataEl = document.getElementById('series-data');
+  const stage = document.querySelector<HTMLElement>('[data-stage]');
+  if (dataEl && stage) {
+    const series: Series = JSON.parse(dataEl.textContent!);
+    const eps = series.episodes;
+    const byKey = new Map(eps.map((e) => [e.key, e]));
+    const paged = eps.filter((e) => e.href);
+    const storeKey = `lm-series:${series.id}`;
+    const esc = (s = '') => s.replace(/[&<>"']/g, (ch) => `&#${ch.charCodeAt(0)};`);
+    // Progress stays in this browser; storage may be unavailable, and the page works without it.
+    const load = (): Progress => {
+      try {
+        return JSON.parse(localStorage.getItem(storeKey) ?? '{}') ?? {};
+      } catch {
+        return {};
+      }
+    };
+    const save = (p: Progress) => {
+      try {
+        localStorage.setItem(storeKey, JSON.stringify(p));
+      } catch {}
+    };
+    const mark = (key: string, state: 'started' | 'finished') => {
+      const p = load();
+      const list = new Set(p[state] ?? []);
+      list.add(key);
+      save({ ...p, last: key, [state]: [...list] });
+      paint();
+    };
+    const paint = () => {
+      const p = load();
+      document.querySelectorAll<HTMLElement>('.ep-row').forEach((row) => {
+        const key = row.dataset.ep!;
+        const done = p.finished?.includes(key);
+        const begun = p.started?.includes(key);
+        row.classList.toggle('is-finished', Boolean(done));
+        row.classList.toggle('is-started', Boolean(begun && !done));
+        const label = row.querySelector('[data-ep-state]');
+        if (label) label.textContent = done ? 'Finished' : begun ? 'Started' : '';
+      });
+    };
+
+    let cur = byKey.get(series.current)!;
+    let ended = false;
+    const nextOf = (e: Ep) => paged[paged.indexOf(e) + 1];
+    const prevOf = (e: Ep) => paged[paged.indexOf(e) - 1];
+    const watchText = (e: Ep) => (e.how.startsWith('On ') ? `Watch ${e.label} on ${e.host}` : `Open ${e.label} on ${e.host}`);
+
+    const credit = document.querySelector<HTMLElement>('[data-stage-credit]');
+    const now = document.querySelector<HTMLElement>('[data-ep-now]');
+    const stepNav = document.querySelector<HTMLElement>('.ep-step');
+    const primary = document.querySelector<HTMLAnchorElement>('[data-ep-primary]');
+    const primaryLabel = document.querySelector<HTMLElement>('[data-ep-primary-label]');
+    const restart = document.querySelector<HTMLAnchorElement>('[data-ep-restart]');
+    const latest = document.querySelector<HTMLAnchorElement>('[data-ep-latest]');
+
+    const still = (e: Ep) => {
+      stage.classList.remove('playing');
+      stage.classList.toggle('is-contain', e.fit === 'contain');
+      if (e.image) stage.style.setProperty('--img', `url('${e.image}')`);
+      const img = e.image ? `<img src="${esc(e.image)}" alt="${esc(e.alt)}" width="1280" height="720" />` : `<span class="title-art" aria-hidden="true">${esc(series.title)}</span>`;
+      const play = e.embed
+        ? `<button class="big-play" type="button" data-ep-play><span class="big-play-disc">${document.querySelector('.big-play-disc')?.innerHTML ?? '▶'}</span><span class="big-play-label">Play ${esc(e.label)}<small>via ${esc(e.provider)}</small></span></button>`
+        : e.watchUrl
+          ? `<a class="stage-out" href="${esc(e.watchUrl)}" rel="noopener noreferrer" data-ep-out><span class="stage-out-label">${esc(watchText(e))} ↗</span></a>`
+          : '';
+      stage.innerHTML = img + play;
+    };
+    const playNow = (e: Ep) => {
+      if (!e.embed) return;
+      const iframe = document.createElement('iframe');
+      // The player APIs report when an episode ends, so the next one can be offered.
+      iframe.src = e.embed.includes('youtube') ? `${e.embed}&enablejsapi=1&origin=${encodeURIComponent(location.origin)}` : e.embed;
+      iframe.title = `${series.title} — ${e.name}`;
+      iframe.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media';
+      iframe.allowFullscreen = true;
+      iframe.addEventListener('load', () => {
+        if (e.embed!.includes('youtube')) {
+          iframe.contentWindow?.postMessage(JSON.stringify({ event: 'listening', id: 1, channel: 'widget' }), '*');
+          iframe.contentWindow?.postMessage(JSON.stringify({ event: 'command', func: 'addEventListener', args: ['onStateChange'], id: 1, channel: 'widget' }), '*');
+        }
+      });
+      ended = false;
+      stage.classList.add('playing');
+      stage.replaceChildren(iframe);
+      mark(e.key, 'started');
+    };
+    const select = (e: Ep, opts: { play?: boolean; push?: boolean } = {}) => {
+      cur = e;
+      ended = false;
+      if (opts.play && e.embed) playNow(e);
+      else still(e);
+      if (credit) credit.innerHTML = e.source ? `<a href="${esc(e.source)}">${esc(e.credit)} ↗</a>` : '';
+      if (now) now.textContent = e.name;
+      if (stepNav) {
+        const prev = prevOf(e);
+        const next = nextOf(e);
+        stepNav.innerHTML =
+          (prev ? `<a class="ep-step-link" href="${esc(prev.href)}" data-step="prev">← ${esc(prev.label)}</a>` : '') +
+          (next ? `<a class="ep-step-link is-next" href="${esc(next.href)}" data-step="next">Next: ${esc(next.label)} →</a>` : '');
+      }
+      if (primary && primaryLabel) {
+        primary.href = e.watchUrl ?? '#episodes';
+        primaryLabel.textContent = e.embed ? `Play ${e.label}` : e.watchUrl ? watchText(e) : 'See all';
+        primary.querySelector('svg')?.toggleAttribute('hidden', !e.embed);
+      }
+      if (latest) latest.hidden = latest.dataset.select === e.key;
+      document.querySelectorAll<HTMLElement>('.ep-row').forEach((row) => {
+        const on = row.dataset.ep === e.key;
+        row.classList.toggle('is-current', on);
+        row.querySelector('.ep-link')?.toggleAttribute('aria-current', on);
+        if (on) row.querySelector('.ep-link')?.setAttribute('aria-current', 'true');
+      });
+      if (opts.push && e.href) {
+        history.replaceState(null, '', e.href);
+        document.title = `${series.title} — ${e.name} — Latent Matinee`;
+      }
+    };
+
+    // Up next: offered when an embedded episode ends; it only counts down to another embedded episode.
+    const upNext = () => {
+      if (ended) return;
+      ended = true;
+      mark(cur.key, 'finished');
+      const next = nextOf(cur);
+      const panel = document.createElement('div');
+      panel.className = 'up-next';
+      if (!next) {
+        panel.innerHTML = `<p class="up-next-kicker">You're caught up</p><p class="up-next-title">That's the latest ${esc(cur.label.split(' ')[0].toLowerCase())} listed here.</p><div class="up-next-actions"><button class="btn btn-ghost" type="button" data-up-close>Close</button></div>`;
+      } else if (next.embed && next.selectable) {
+        panel.innerHTML = `<p class="up-next-kicker">Up next in <span data-count>8</span>s</p><p class="up-next-title">${esc(next.name)}</p><div class="up-next-actions"><button class="btn btn-primary" type="button" data-up-play>Play now</button><button class="btn btn-ghost" type="button" data-up-close>Cancel</button></div>`;
+        let n = 8;
+        const timer = setInterval(() => {
+          n -= 1;
+          const count = panel.querySelector('[data-count]');
+          if (count) count.textContent = String(n);
+          if (n <= 0) {
+            clearInterval(timer);
+            select(next, { play: true, push: true });
+          }
+        }, 1000);
+        panel.addEventListener('click', (ev) => {
+          const t = ev.target as Element;
+          if (t.closest('[data-up-play]')) { clearInterval(timer); select(next, { play: true, push: true }); }
+          if (t.closest('[data-up-close]')) { clearInterval(timer); panel.remove(); }
+        });
+      } else {
+        const out = next.watchUrl && !next.selectable ? next.href : next.watchUrl;
+        panel.innerHTML = `<p class="up-next-kicker">Up next</p><p class="up-next-title">${esc(next.name)}</p><div class="up-next-actions">${
+          next.selectable ? `<button class="btn btn-primary" type="button" data-up-select>Go to ${esc(next.label)}</button>` : out ? `<a class="btn btn-primary" href="${esc(out)}">Open ${esc(next.label)}</a>` : ''
+        }<button class="btn btn-ghost" type="button" data-up-close>Close</button></div>`;
+      }
+      panel.addEventListener('click', (ev) => {
+        const t = ev.target as Element;
+        if (t.closest('[data-up-select]') && next) select(next, { push: true });
+        if (t.closest('[data-up-close]')) panel.remove();
+      });
+      stage.append(panel);
+    };
+    addEventListener('message', (ev) => {
+      const iframe = stage.querySelector('iframe');
+      if (!iframe || ev.source !== iframe.contentWindow) return;
+      let msg: { event?: string; info?: unknown };
+      try {
+        msg = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data;
+      } catch {
+        return;
+      }
+      if (/youtube/.test(ev.origin)) {
+        const info = msg.info as { playerState?: number } | number | undefined;
+        if ((msg.event === 'onStateChange' && info === 0) || (msg.event === 'infoDelivery' && typeof info === 'object' && info?.playerState === 0)) upNext();
+      } else if (/vimeo/.test(ev.origin)) {
+        if (msg.event === 'ready') iframe.contentWindow?.postMessage(JSON.stringify({ method: 'addEventListener', value: 'ended' }), ev.origin);
+        if (msg.event === 'ended') upNext();
+      }
+    });
+
+    // One click handler covers the stage, header buttons, the up-next bar and the episode list.
+    document.addEventListener('click', (ev) => {
+      if (ev.defaultPrevented || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      const t = ev.target as Element;
+      if (t.closest('[data-ep-play]') || (t.closest('[data-ep-primary]') && cur.embed)) {
+        ev.preventDefault();
+        playNow(cur);
+        if (t.closest('[data-ep-primary]')) stage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      if (t.closest('[data-ep-out]') || t.closest('[data-ep-primary]')) {
+        if (cur.watchUrl) mark(cur.key, 'started');
+        return;
+      }
+      const step = t.closest<HTMLElement>('[data-step]');
+      const pick = t.closest<HTMLElement>('[data-select]');
+      const target = step ? (step.dataset.step === 'next' ? nextOf(cur) : prevOf(cur)) : pick ? byKey.get(pick.dataset.select!) : undefined;
+      if (!target || !target.selectable) return;
+      ev.preventDefault();
+      const playing = stage.classList.contains('playing');
+      // Choosing from the list plays straight away; stepping keeps playing only if something was playing.
+      select(target, { play: Boolean(pick && !step) || playing, push: true });
+      stage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    // Returning viewers resume where they left off, unless this URL names an episode.
+    paint();
+    const p = load();
+    const last = p.last ? byKey.get(p.last) : undefined;
+    const resume = last && p.finished?.includes(last.key) ? nextOf(last) : last;
+    if (!series.deepLink && resume && resume.selectable && resume.key !== cur.key) {
+      select(resume);
+      if (primaryLabel) primaryLabel.textContent = resume.embed ? `Continue: ${resume.label}` : `Continue: ${watchText(resume)}`;
+      if (restart) {
+        const first = byKey.get(series.current)!;
+        restart.hidden = false;
+        restart.href = first.href ?? '#episodes';
+        restart.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          restart.hidden = true;
+          select(first, { push: false });
+        });
+      }
+    }
+  }
+</script>

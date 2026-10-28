@@ -33,7 +33,7 @@ Cloudflare setup (already in place; do not recreate): `latent-matinee` is a clas
 - src/content.config.ts: frontmatter schema. Required fields and reference checks run during build.
 - public/media/: credited promotional stills and thumbnails used to identify films.
 
-Copy a relevant existing file to add an entry. Slugs are stable filenames. Record discoveredAt and lastVerifiedAt using YYYY-MM-DD strings. Format is Short film, Feature, Series or Music video; music videos use the genre Music video, credit the song artist in `musician` and get their own home-page rail and films filter. Runtime is approximate; series runtime is per episode. Avoid unnecessary edits to verification dates.
+Copy a relevant existing file to add an entry. Slugs are stable filenames. Record discoveredAt and lastVerifiedAt using YYYY-MM-DD strings. Format is Short film, Feature, Series or Music video; music videos use the genre Music video, credit the song artist in `musician` and get their own home-page rail and films filter. Runtime is approximate. A series has no runtime of its own: it lists its `episodes` in release order (see docs/content-refresh.md), and each episode carries its own runtime, status and watch link. Avoid unnecessary edits to verification dates.
 
 ## Periodic refresh
 

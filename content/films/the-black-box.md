@@ -40,11 +40,17 @@ production:
       "source": "https://es.linkedin.com/posts/john-olivos-118377161_aifilmmaking-generativeai-aivideo-activity-7494826332393168896-TNhf",
     },
   ]
-runtimeMinutes: 10
 image: "/media/the-black-box.jpg"
 imageAlt: "Close-up of a man’s lowered eyes in The Black Box"
 imageCredit: "John Olivos / Magnific · The Black Box · official release still"
 imageSource: "https://es.linkedin.com/posts/john-olivos-118377161_aifilmmaking-generativeai-aivideo-activity-7494826332393168896-TNhf"
+episodes:
+  - number: 1
+    synopsis: "Kendrick Robinson’s need to pay for his sister’s treatment draws him into an invented, lethal fighting arena."
+    runtimeMinutes: 10
+    status: "Watch now"
+    watchUrl: "https://www.magnific.com/originals/black-box"
+    source: "https://es.linkedin.com/posts/john-olivos-118377161_aifilmmaking-generativeai-aivideo-activity-7494826332393168896-TNhf"
 ---
 
 ## Why this film matters

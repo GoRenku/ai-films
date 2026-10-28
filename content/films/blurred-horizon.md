@@ -5,10 +5,9 @@ description: "A six-episode science-fiction anthology about manufactured reality
 year: 2026
 format: "Series"
 genre: "Science-fiction satire"
-runtimeMinutes: 26.34
 status: "Watch now"
-watchUrl: "https://www.youtube.com/watch?v=NKZyyYaZJu4"
-watchLabel: "Watch the complete release"
+watchUrl: "https://www.youtube.com/watch?v=dM5-w6sQBB0"
+watchLabel: "Watch Episode 1 on YouTube"
 discoveredAt: "2026-10-22"
 lastVerifiedAt: "2026-10-22"
 image: "/media/blurred-horizon.jpg"
@@ -17,6 +16,57 @@ imageCredit: "Jeff Synthesized / NeoCinema · original MindPods release artwork"
 imageSource: "https://www.youtube.com/watch?v=NKZyyYaZJu4"
 sources: [{"label": "Expiration Day — complete original and credits", "url": "https://www.youtube.com/watch?v=dM5-w6sQBB0"}, {"label": "MindPods — complete original and credits", "url": "https://www.youtube.com/watch?v=NKZyyYaZJu4"}, {"label": "Hate? — complete original and credits", "url": "https://www.youtube.com/watch?v=UPhxHS7isXk"}, {"label": "Echo Chamber — complete original and credits", "url": "https://www.youtube.com/watch?v=McT3lAh2hOU"}, {"label": "You’re Burning Fat — complete original and credits", "url": "https://www.youtube.com/watch?v=qGwa1IhCiXI"}, {"label": "The Human Equation — complete original and credits", "url": "https://www.youtube.com/watch?v=Dw0ad39YIvs"}, {"label": "Original anthology catalogue", "url": "https://www.10xcinema.com/epidsodes"}, {"label": "Official festival result and selection", "url": "https://www.austinaifilmfestival.com/"}]
 production: [{"label": "Episode-specific direction", "detail": "Eike Swoboda directs Expiration Day and Echo Chamber; Lion El Aton directs The Human Equation; Jeff Synthesized writes these and writes/directs Hate?. Other episode credits remain limited to what their releases state.", "source": "https://www.youtube.com/watch?v=dM5-w6sQBB0"}, {"label": "Hate? tools", "detail": "The original description names Seedance 2.0 via Runway. This spelling is preserved as a maker claim, not independently tested capability or a series-wide inventory.", "source": "https://www.youtube.com/watch?v=UPhxHS7isXk"}, {"label": "Echo Chamber tools", "detail": "The original description names Kling, without a model version or full production allocation.", "source": "https://www.youtube.com/watch?v=McT3lAh2hOU"}, {"label": "Unreported totals", "detail": "The checked original descriptions and linked anthology site do not establish a total human crew, common tool stack, budget or full-season production schedule. NeoCinema is the releasing production identity.", "source": "https://www.youtube.com/watch?v=NKZyyYaZJu4"}]
+episodes:
+  - number: 1
+    title: "Expiration Day"
+    releasedOn: "2025-12-10"
+    runtimeMinutes: 24.73
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=dM5-w6sQBB0"
+    source: "https://www.youtube.com/watch?v=dM5-w6sQBB0"
+  - number: 2
+    title: "MindPods"
+    synopsis: "Immersive entertainment becomes a question about memory and agency."
+    releasedOn: "2026-02-07"
+    runtimeMinutes: 26.34
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=NKZyyYaZJu4"
+    image: "/media/blurred-horizon.jpg"
+    imageAlt: "A mechanical face beneath the Blurred Horizon MindPods title"
+    imageCredit: "Jeff Synthesized / NeoCinema · original MindPods release artwork"
+    imageSource: "https://www.youtube.com/watch?v=NKZyyYaZJu4"
+    source: "https://www.youtube.com/watch?v=NKZyyYaZJu4"
+  - number: 3
+    title: "Hate?"
+    synopsis: "Restricted vocabulary is turned into a political instrument."
+    releasedOn: "2026-05-18"
+    runtimeMinutes: 18.88
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=UPhxHS7isXk"
+    source: "https://www.youtube.com/watch?v=UPhxHS7isXk"
+  - number: 4
+    title: "Echo Chamber"
+    releasedOn: "2026-06-04"
+    runtimeMinutes: 18.88
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=McT3lAh2hOU"
+    source: "https://www.youtube.com/watch?v=McT3lAh2hOU"
+  - number: 5
+    title: "You’re Burning Fat"
+    synopsis: "The technological bargain shifts to compulsory physical improvement."
+    releasedOn: "2026-07-16"
+    runtimeMinutes: 14.25
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=qGwa1IhCiXI"
+    source: "https://www.youtube.com/watch?v=qGwa1IhCiXI"
+  - number: 6
+    title: "The Human Equation"
+    synopsis: "Extreme wealth is confronted with a game of personal reckoning."
+    releasedOn: "2026-08-06"
+    runtimeMinutes: 10.47
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=Dw0ad39YIvs"
+    source: "https://www.youtube.com/watch?v=Dw0ad39YIvs"
 ---
 
 ## Why this series matters

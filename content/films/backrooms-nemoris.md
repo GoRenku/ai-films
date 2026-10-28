@@ -5,7 +5,6 @@ description: "A liminal-horror pilot introducing a new mystery within the Backro
 year: 2026
 format: "Series"
 genre: "Liminal horror"
-runtimeMinutes: 17.7
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=I5gQXbhkdpk"
 watchLabel: "Watch the full pilot on YouTube"
@@ -18,6 +17,15 @@ discoveredAt: "2026-09-19"
 lastVerifiedAt: "2026-10-11"
 sources: [{"label": "Javi Lopez — release and making-of", "url": "https://x.com/javilopen/status/2100962091565760617"}, {"label": "Nemoris — official pilot and credits", "url": "https://www.youtube.com/watch?v=I5gQXbhkdpk"}, {"label": "Lopez — planned narrative and clues", "url": "https://x.com/javilopen/status/2102194031241412678"}, {"label": "Lopez — October 8 production interview", "url": "https://www.youtube.com/watch?v=OxxRcagqbHU"}]
 production: [{"label": "Authorship and production", "detail": "Official credits: created by Javi Lopez, produced by Magnific. Lopez identifies himself as writer and editor and describes the pilot as a solo undertaking; no complete end-credit crew list has been independently verified.", "source": "https://www.youtube.com/watch?v=I5gQXbhkdpk"}, {"label": "Generation models", "detail": "Lopez names mainly Seedance 2.0 and 2.5 for video, and Nano Banana Pro and Seedream 5 for image references, through Magnific.", "source": "https://x.com/javilopen/status/2100962091565760617"}, {"label": "Editing and sound", "detail": "DaVinci Resolve. Lopez estimates sound work consumed roughly 60% of his time, combining his own recordings, generated material and foley libraries; some scenes use more than 13 simultaneous stereo tracks.", "source": "https://x.com/javilopen/status/2100962091565760617"}, {"label": "Production scale", "detail": "The creator reports six months, more than 7,000 generations and approximately 12 hours of generated video for the finished pilot.", "source": "https://x.com/javilopen/status/2100962091565760617"}, {"label": "Cost and commercial context", "detail": "Lopez reports approximately $20,000 in token costs, explicitly excluding his own time. The release is produced by Magnific; the funding or subsidy arrangement is not disclosed.", "source": "https://x.com/javilopen/status/2100962091565760617"}, {"label": "Story development", "detail": "Lopez says the series’ mysteries and later connections are planned in detail; he cites LOST as an inspiration for repeat viewing and clue discovery. Completion of the series remains conditional.", "source": "https://x.com/javilopen/status/2102194031241412678"}, {"label": "Prompt construction — October interview", "detail": "Lopez says he wrote the prompts manually and used no agentic workflow. He describes setting/character placement, camera, action and dialogue, ending with a no-music instruction. This is his pilot-specific account.", "source": "https://www.youtube.com/watch?v=OxxRcagqbHU&t=617s"}, {"label": "Long-take lesson", "detail": "Lopez explains that cutting between generations can salvage usable segments, while his handheld sequences needed long continuous passages to work. He recommends low-resolution draft generation before committing to improved output; no quantified saving or exact draft-mode model is established.", "source": "https://www.youtube.com/watch?v=OxxRcagqbHU&t=792s"}]
+episodes:
+  - number: 1
+    season: 1
+    title: "It Eats Light"
+    synopsis: "The pilot introduces a new mystery within the Backrooms concept, seeding strange details the creator says connect to later events."
+    runtimeMinutes: 17.7
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=I5gQXbhkdpk"
+    source: "https://www.youtube.com/watch?v=I5gQXbhkdpk"
 ---
 
 The released **17-minute 42-second** pilot is Season 1, Episode 1. Lopez describes an intended ten-episode anthology in which viewers gradually assemble a larger mystery. The pilot is available now; the remaining season is a plan, not a completed release.

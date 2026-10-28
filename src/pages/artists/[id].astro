@@ -41,7 +41,7 @@ const { Content } = await render(artist);
   {films.length > 0 && (
     <section class="artist-films" data-reveal aria-labelledby="films-h">
       <div class="section-head"><h2 id="films-h">Films</h2></div>
-      <div class="grid films-grid">{films.map((f) => <FilmCard film={f} artist={artist} isNew={c.isNew(f.data.discoveredAt)} />)}</div>
+      <div class="grid films-grid">{films.map((f) => <FilmCard film={f} artist={artist} fresh={c.freshOf(f)} />)}</div>
     </section>
   )}
 

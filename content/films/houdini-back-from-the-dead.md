@@ -5,6 +5,8 @@ description: "A three-part documentary reconstructs Houdini as the subject of a 
 year: 2026
 format: "Series"
 genre: "Historical documentary"
+watchUrl: "https://www.youtube.com/watch?v=8Nsf3KcQIgg"
+watchLabel: "Watch the official trailer"
 status: "Released"
 image: "/media/houdini-back-from-the-dead.jpg"
 imageAlt: "Houdini Back from the Dead trailer title with chain and broken padlock"
@@ -14,8 +16,18 @@ discoveredAt: "2026-10-15"
 lastVerifiedAt: "2026-10-15"
 sources: [{"label": "Broadcaster production announcement", "url": "https://press.foxnews.com/2026/10/fox-nation-set-to-premiere-houdini-back-from-the-dead-marking-platforms-first-full-length-project-created-entirely-with-ai-generated-imagery"}, {"label": "Official trailer", "url": "https://www.youtube.com/watch?v=8Nsf3KcQIgg"}, {"label": "Producer portfolio", "url": "https://redrockfilms.net/"}, {"label": "Magnific production collaboration", "url": "https://x.com/magnific/status/2110400677554123054"}]
 production: [{"label": "Performance and archival basis", "detail": "FOX describes human scripts, actors’ performances and licensed archival references before AI appearance transformation.", "source": "https://press.foxnews.com/2026/10/fox-nation-set-to-premiere-houdini-back-from-the-dead-marking-platforms-first-full-length-project-created-entirely-with-ai-generated-imagery"}, {"label": "Platform collaboration", "detail": "Magnific’s October 14 announcement confirms work with Red Rock on this production; exact product/model roles are not disclosed.", "source": "https://x.com/magnific/status/2110400677554123054"}]
-watchUrl: "https://www.youtube.com/watch?v=8Nsf3KcQIgg"
-watchLabel: "Watch the official trailer"
+episodeNoun: "Part"
+episodes:
+  - number: 1
+    releasedOn: "2026-10-14"
+    status: "Released"
+    source: "https://press.foxnews.com/2026/10/fox-nation-set-to-premiere-houdini-back-from-the-dead-marking-platforms-first-full-length-project-created-entirely-with-ai-generated-imagery"
+  - number: 2
+    status: "Released"
+    source: "https://press.foxnews.com/2026/10/fox-nation-set-to-premiere-houdini-back-from-the-dead-marking-platforms-first-full-length-project-created-entirely-with-ai-generated-imagery"
+  - number: 3
+    status: "Released"
+    source: "https://press.foxnews.com/2026/10/fox-nation-set-to-premiere-houdini-back-from-the-dead-marking-platforms-first-full-length-project-created-entirely-with-ai-generated-imagery"
 ---
 
 FOX Nation announced an **October 14** launch for Red Rock Films’ three-part series. The broadcaster is a subscription service; the linked public video is a **trailer**, not a free complete episode. Full subscriber playback has not been verified here. The producer’s broader portfolio still uses coming-soon wording, while the dated broadcaster release and Magnific’s launch-day post provide the more specific release context.

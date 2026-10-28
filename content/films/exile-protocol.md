@@ -5,7 +5,6 @@ description: "A continuing anime series follows Zelle and her AI companion throu
 year: 2026
 format: "Series"
 genre: "Science-fiction anime"
-runtimeMinutes: 18.2047
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=AgSh4bzUGmQ"
 watchLabel: "Watch the complete release"
@@ -17,6 +16,19 @@ discoveredAt: "2026-10-14"
 lastVerifiedAt: "2026-10-14"
 sources: [{"label": "Original complete release", "url": "https://www.youtube.com/watch?v=AgSh4bzUGmQ"}, {"label": "Original creator channel", "url": "https://www.youtube.com/@FilmsBySav"}, {"label": "Maker staged-reference technique", "url": "https://x.com/FilmsBySav/status/2103190223173865792"}]
 production: [{"label": "Creator and production label", "detail": "The original channel credits creation to S.A.V, presents a Phantom X Original Series and labels Episode 8 Made in Invideo Agent Two.", "source": "https://www.youtube.com/watch?v=AgSh4bzUGmQ"}, {"label": "Shot references", "detail": "The maker describes Blender and a phone for building series shots with Invideo Agent 2. This is project-level technique, not an Episode 8 shot-by-shot inventory.", "source": "https://x.com/FilmsBySav/status/2103190223173865792"}]
+episodes:
+  - number: 8
+    title: "The Righteous"
+    synopsis: "Pursued through a ruined city by Lieutenant Nolan in a hijacked Halitus 2, Zelle must trust AI04-15’s plan as her fuel runs low."
+    releasedOn: "2026-10-13"
+    runtimeMinutes: 18.2047
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=AgSh4bzUGmQ"
+    image: "/media/exile-protocol.jpg"
+    imageAlt: "Exile Protocol Episode 8 artwork showing armed mechs in a ruined city"
+    imageCredit: "S.A.V / Phantom X · original Episode 8 release artwork"
+    imageSource: "https://www.youtube.com/watch?v=AgSh4bzUGmQ"
+    source: "https://www.youtube.com/watch?v=AgSh4bzUGmQ"
 ---
 
 The original channel publishes a continuing **Exile Protocol** catalogue and identifies S.A.V as its creator. **Episode 8, “The Righteous,”** was released October 13 and runs **18:12**. The watch button opens that episode; the runtime above describes this instalment, not the season.

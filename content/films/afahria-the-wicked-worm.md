@@ -5,7 +5,6 @@ description: "A dark-fantasy family-pub sitcom with two complete episodes and a 
 year: 2026
 format: "Series"
 genre: "Dark fantasy comedy · series episode"
-runtimeMinutes: 3.57
 status: "Watch now"
 watchUrl: "https://x.com/billywoodward/status/2107537407629197618"
 watchLabel: "Watch Episode 1 on X"
@@ -17,6 +16,23 @@ image: "/media/afahria-the-wicked-worm.jpg"
 imageAlt: "The fantastical pub ensemble in ornate Afahria release artwork"
 imageCredit: "Billy Woodward / Showrunner · original Afahria release artwork"
 imageSource: "https://x.com/billywoodward/status/2107537407629197618"
+episodes:
+  - number: 1
+    title: "The Wicked Worm"
+    synopsis: "A struggling family-run pub in a dark-fantasy world sets up the ensemble and its two locations."
+    releasedOn: "2026-10-06"
+    runtimeMinutes: 3.57
+    status: "Watch now"
+    watchUrl: "https://x.com/billywoodward/status/2107537407629197618"
+    source: "https://x.com/billywoodward/status/2107537407629197618"
+  - number: 2
+    synopsis: "The pub prepares a birthday celebration while Wick’s intended perfect evening unravels."
+    releasedOn: "2026-10-21"
+    addedAt: "2026-10-22"
+    runtimeMinutes: 3.15
+    status: "Watch now"
+    watchUrl: "https://x.com/billywoodward/status/2112927769503883399"
+    source: "https://x.com/billywoodward/status/2112927769503883399"
 ---
 
 **Episode 1: The Wicked Worm** was published by Billy Woodward on October 6. The original X video plays for approximately **3 minutes 34 seconds**. This is a complete titled episode, not a trailer or a model demonstration.

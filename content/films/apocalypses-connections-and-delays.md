@@ -5,7 +5,6 @@ description: "A detective investigates a vanished living treaty aboard a railway
 year: 2026
 format: "Series"
 genre: "Fantasy detective comedy"
-runtimeMinutes: 9.95
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=lvWgWMYYiPo"
 watchLabel: "Watch full Episode 1 on the creator’s channel"
@@ -17,6 +16,15 @@ discoveredAt: "2026-10-09"
 lastVerifiedAt: "2026-10-09"
 sources: [{"label": "Original full episode and expanded description", "url": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}, {"label": "Creator — original public release link", "url": "https://x.com/machina9000/status/2108461562231243255"}]
 production: [{"label": "Authorship and disclosure scope", "detail": "The original release identifies Daniił Vołkaŭ. Exact models, human performers, total crew, editing software and budget are not disclosed in the checked description.", "source": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}]
+episodes:
+  - number: 1
+    title: "Terms and Conditions"
+    synopsis: "A living treaty vanishes from a secured reliquary aboard the inter-world railway Perpetual, and investigator Beatrice Mord must work where reality’s own rules can change."
+    releasedOn: "2026-09-08"
+    runtimeMinutes: 9.95
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=lvWgWMYYiPo"
+    source: "https://www.youtube.com/watch?v=lvWgWMYYiPo"
 ---
 
 **Terms and Conditions**, the first episode, was uploaded September 8. The creator shared it again on October 9; that share is not a new premiere. The original full player runs **9:57**, slightly longer than the description’s rounded nine-minute account. Playback and the complete description were checked October 9.

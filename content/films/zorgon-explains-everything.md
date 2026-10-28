@@ -5,10 +5,9 @@ description: "A self-important alien’s filmmaking explanations collide with a 
 year: 2026
 format: "Series"
 genre: "Science-fiction meta-comedy"
-runtimeMinutes: 8.62935
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=kcJD8j5PdXg"
-watchLabel: "Watch the complete release"
+watchLabel: "Watch the complete episode"
 image: "/media/zorgon-explains-everything.jpg"
 imageAlt: "Illustrated characters read beside a desert road beneath the Zorgon Explains Everything title"
 imageCredit: "Daniił Vołkaŭ · original linked episode artwork"
@@ -17,6 +16,14 @@ discoveredAt: "2026-10-17"
 lastVerifiedAt: "2026-10-17"
 sources: [{"label": "Creator-linked complete episode and description", "url": "https://www.youtube.com/watch?v=kcJD8j5PdXg"}, {"label": "Original full-episode share and Dreamina disclosure", "url": "https://x.com/machina9000/status/2111367454349808024"}]
 production: [{"label": "Release scope", "detail": "The creator publicly links this complete 8:38 episode. Its unlisted YouTube upload is dated September 4, before the October 17 public share. This entry does not establish a completed season or count of episodes.", "source": "https://www.youtube.com/watch?v=kcJD8j5PdXg"}, {"label": "Tools and personnel", "detail": "The creator’s public full-episode reply names Dreamina. Exact models, versions, named voice/music collaborators, budget and team size remain unreported.", "source": "https://x.com/machina9000/status/2111367454349808024"}]
+episodes:
+  - title: "Zorgon Explains Everything"
+    synopsis: "Self-styled method actor Zorgon arrives with a stolen shuttle and a camera, and a waitress, a hitchhiker and a crystal alien contest his explanations of the film."
+    releasedOn: "2026-09-04"
+    runtimeMinutes: 8.63
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=kcJD8j5PdXg"
+    source: "https://www.youtube.com/watch?v=kcJD8j5PdXg"
 ---
 
 The creator’s **October 17** public post links this complete **8:38** episode. The linked YouTube upload is dated **September 4** and marked unlisted; the maker’s public release link establishes its availability here. This is a rediscovery of an older upload, not an October premiere.

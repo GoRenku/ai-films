@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import FilmCard from '../../components/FilmCard.astro';
 import { catalog, genresOf, genreGroups, isMusicVideo } from '../../lib/catalog';
-const { films, artistOf, isNew } = await catalog();
+const { films, artistOf, freshOf } = await catalog();
 const count = (pred: (f: (typeof films)[number]) => boolean) => films.filter(pred).length;
 const statuses = [
   ['all', 'All', films.length],
@@ -38,7 +38,7 @@ const genres = genreGroups.map((g) => [g, count((f) => genresOf(f.data.genre).in
 
   <p class="result-line" aria-live="polite"><span class="result-count">{films.length}</span> titles</p>
   <div class="grid films-grid">
-    {films.map((f) => <FilmCard film={f} artist={artistOf(f)} isNew={isNew(f.data.discoveredAt)} filterable />)}
+    {films.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={freshOf(f)} filterable />)}
   </div>
   <div class="empty" hidden>
     <p>No films match those filters.</p>

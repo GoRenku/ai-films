@@ -6,8 +6,8 @@ year: 2026
 format: "Series"
 genre: "Dark fantasy"
 status: "Watch now"
-watchUrl: "https://www.magnific.com/originals/chronicles-of-bone"
-watchLabel: "Watch at the source"
+watchUrl: "https://x.com/Kavanthekid/status/2107516926545281203"
+watchLabel: "Watch Chapter 6 on X"
 order: 5
 discoveredAt: "2026-09-17"
 lastVerifiedAt: "2026-10-07"
@@ -37,6 +37,28 @@ image: "/media/chronicles-of-bone.png"
 imageAlt: "Official promotional artwork for The Chronicles of Bone episode three"
 imageCredit: "Magnific / Kavan the Kid · episode artwork"
 imageSource: "https://www.magnific.com/es/blog/the-chronicles-of-bone-temporada-1-capitulo-3/"
+episodeNoun: "Chapter"
+episodes:
+  - number: 3
+    season: 1
+    title: "The Nightmare Below"
+    synopsis: "A conversation aboard a moving ship tests whether direction, props and light hold across reverse angles."
+    status: "Released"
+    image: "/media/chronicles-of-bone.png"
+    imageAlt: "Official promotional artwork for The Chronicles of Bone episode three"
+    imageCredit: "Magnific / Kavan the Kid · episode artwork"
+    imageSource: "https://www.magnific.com/es/blog/the-chronicles-of-bone-temporada-1-capitulo-3/"
+    source: "https://www.magnific.com/es/blog/the-chronicles-of-bone-temporada-1-capitulo-3/"
+  - number: 6
+    season: 1
+    title: "The Ghost of the Dawn Spawn"
+    synopsis: "The Collector heads into the Northern Realm to rescue his wife, only to be steered toward Vaylos and a secret from Varek’s past."
+    releasedOn: "2026-10-06"
+    addedAt: "2026-10-07"
+    runtimeMinutes: 24
+    status: "Watch now"
+    watchUrl: "https://x.com/Kavanthekid/status/2107516926545281203"
+    source: "https://x.com/Kavanthekid/status/2107516926545281203"
 ---
 
 ## Why this series matters

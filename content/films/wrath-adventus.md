@@ -5,10 +5,9 @@ description: "Winged forces arrive in a ruined world to establish a beachhead ag
 year: 2026
 format: "Series"
 genre: "Apocalyptic fantasy action"
-runtimeMinutes: 2.91868
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=6pTjAOCgfIM"
-watchLabel: "Watch the complete release"
+watchLabel: "Watch Adventus — The Coming on YouTube"
 discoveredAt: "2026-10-25"
 lastVerifiedAt: "2026-10-25"
 image: "/media/wrath-adventus.jpg"
@@ -17,6 +16,18 @@ imageCredit: "schmede_AI · original YouTube release artwork"
 imageSource: "https://www.youtube.com/watch?v=6pTjAOCgfIM"
 sources: [{"label": "Complete original release and full description", "url": "https://www.youtube.com/watch?v=6pTjAOCgfIM"}, {"label": "Complete Italian-subtitled version", "url": "https://www.youtube.com/watch?v=hHP0n346vCU"}, {"label": "Maker identifies finished older release and subtitle update", "url": "https://x.com/schmede_AI/status/2114009763193184550"}, {"label": "Festival organiser listing, without a film-specific result", "url": "https://filmfreeway.com/BreveMenteInternationalCinefest"}]
 production: [{"label": "Creator and release scope", "detail": "schmede_AI releases Adventus as a finished piece from the continuing WRATH series. The original English version is dated September 13 and runs 2:55. This does not establish a completed season or feature.", "source": "https://www.youtube.com/watch?v=6pTjAOCgfIM"}, {"label": "Production disclosure", "detail": "Original and alternate descriptions carry Vidu / Vidu creative-partner tags. Exact versions, division of image/video/voice/music work, complete crew, schedule and budget are not supplied.", "source": "https://www.youtube.com/watch?v=6pTjAOCgfIM"}, {"label": "Subtitles and festival-claim scope", "detail": "The October 24 upload adds Italian subtitles and is labelled a BreveMente finalist by the maker. The organiser listing checked does not provide a work-specific result; finalist status is therefore an attributed creator statement, not an independently verified award or screening.", "source": "https://x.com/schmede_AI/status/2114009763193184550"}]
+episodes:
+  - title: "Adventus — The Coming"
+    synopsis: "Armoured winged forces arrive in a ruined city and must take and hold ground against an established opposing force."
+    releasedOn: "2026-09-13"
+    runtimeMinutes: 2.91868
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=6pTjAOCgfIM"
+    image: "/media/wrath-adventus.jpg"
+    imageAlt: "A winged armoured figure in the original WRATH Adventus release artwork"
+    imageCredit: "schmede_AI · original YouTube release artwork"
+    imageSource: "https://www.youtube.com/watch?v=6pTjAOCgfIM"
+    source: "https://www.youtube.com/watch?v=6pTjAOCgfIM"
 ---
 
 ## Why this episode matters

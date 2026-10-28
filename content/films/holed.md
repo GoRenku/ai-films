@@ -16,6 +16,44 @@ imageCredit: "Daniił Vołkaŭ · original Episode 1 release thumbnail"
 imageSource: "https://www.youtube.com/watch?v=85nLjDZ0TBE"
 sources: [{"label": "Episode 1 — full release and description", "url": "https://www.youtube.com/watch?v=85nLjDZ0TBE"}, {"label": "Episode 2 — full release and description", "url": "https://www.youtube.com/watch?v=mo_FxJs6ctA"}, {"label": "Official series playlist", "url": "https://www.youtube.com/playlist?list=PLcWjFYhh9VDc"}, {"label": "Original maker portfolio", "url": "https://daniilvolkau.myportfolio.com/holed-clean-edges-ep1"}, {"label": "Episode 4 — complete original release", "url": "https://www.youtube.com/watch?v=ZEHH-plxP7M"}, {"label": "Episode 4 — creator Dreamina disclosure", "url": "https://x.com/machina9000/status/2111332903586300036"}]
 production: [{"label": "Authorship and release scope", "detail": "Published by Daniił Vołkaŭ on his original channel. Episode 1 describes a ten-episode plan; the checked playlist lists five numbered full episodes plus three related excerpts. Playback was verified for Episodes 1 and 2, approximately 9:30 and 9:25 respectively. No whole-season runtime is inferred.", "source": "https://www.youtube.com/playlist?list=PLcWjFYhh9VDc"}, {"label": "Colour as narrative information", "detail": "The maker reserves terracotta for residue in the HOLED universe and asks viewers to identify an object that breaks that rule. Episode 2 continues this colour-based clue. This is a disclosed visual-storytelling rule, not a verified generation technique.", "source": "https://www.youtube.com/watch?v=85nLjDZ0TBE"}, {"label": "Undisclosed production details", "detail": "The release descriptions do not provide a reliable model/version inventory, complete individual credits, team total, schedule or budget for this series. Prompts and workflows advertised behind membership are not treated as checked public disclosures.", "source": "https://www.youtube.com/watch?v=mo_FxJs6ctA"}, {"label": "Episode 4 — named platform", "detail": "The maker’s October 17 public full-episode reply names Dreamina. The linked episode was uploaded September 4; exact underlying models, versions, full crew and budget remain undisclosed.", "source": "https://x.com/machina9000/status/2111332903586300036"}]
+episodes:
+  - number: 1
+    synopsis: "A vast, smooth-edged hole appears with no evidence of its cause, and people cannot name what they have lost."
+    releasedOn: "2026-08-19"
+    runtimeMinutes: 9.5
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=85nLjDZ0TBE"
+    image: "/media/holed.jpg"
+    imageAlt: "A silhouetted figure at the rim of a vast hole beneath the HOLED Episode 1 title"
+    imageCredit: "Daniił Vołkaŭ · original Episode 1 release thumbnail"
+    imageSource: "https://www.youtube.com/watch?v=85nLjDZ0TBE"
+    source: "https://www.youtube.com/watch?v=85nLjDZ0TBE"
+  - number: 2
+    synopsis: "Grief outlasts the memory of a lost person, as the investigation runs up against a Council that prefers comforting explanations."
+    releasedOn: "2026-08-27"
+    runtimeMinutes: 9.42
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=mo_FxJs6ctA"
+    source: "https://www.youtube.com/watch?v=mo_FxJs6ctA"
+  - number: 3
+    status: "Released"
+    watchUrl: "https://www.youtube.com/playlist?list=PLcWjFYhh9VDc"
+    watchLabel: "Listed in the official playlist"
+    source: "https://www.youtube.com/playlist?list=PLcWjFYhh9VDc"
+  - number: 4
+    title: "Forty Days"
+    synopsis: "An accepted finding is classed as speculative, and an appeal would take 51 days while the threatened inhabited site is only 34 days away."
+    releasedOn: "2026-09-04"
+    addedAt: "2026-10-17"
+    runtimeMinutes: 10.23
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=ZEHH-plxP7M"
+    source: "https://www.youtube.com/watch?v=ZEHH-plxP7M"
+  - number: 5
+    status: "Released"
+    watchUrl: "https://www.youtube.com/playlist?list=PLcWjFYhh9VDc"
+    watchLabel: "Listed in the official playlist"
+    source: "https://www.youtube.com/playlist?list=PLcWjFYhh9VDc"
 ---
 
 ## Why this series matters

@@ -1,12 +1,13 @@
 ---
 import type { Film, Artist } from '../lib/catalog';
-import { embedOf, genresOf, minutes, statusKey, statusLabel } from '../lib/catalog';
+import { embedOf, genresOf, lengthOf, statusKey, statusLabel } from '../lib/catalog';
 import PlayIcon from './PlayIcon.astro';
-interface Props { film: Film; artist: Artist; isNew?: boolean; filterable?: boolean; eager?: boolean }
-const { film, artist, isNew = false, filterable = false, eager = false } = Astro.props;
+// fresh: the badge from the catalog's freshOf — New, or New episode for a continuing series.
+interface Props { film: Film; artist: Artist; fresh?: string; filterable?: boolean; eager?: boolean }
+const { film, artist, fresh, filterable = false, eager = false } = Astro.props;
 const d = film.data;
 const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
-const meta = [artist.data.title, d.format === 'Short film' ? 'Short' : d.format, minutes(d.runtimeMinutes) ?? d.year].join(' · ');
+const meta = [artist.data.title, d.format === 'Short film' ? 'Short' : d.format, lengthOf(film) ?? d.year].join(' · ');
 const data = filterable
   ? {
       'data-title': `${d.title} ${artist.data.title} ${artist.data.alias ?? ''} ${d.genre} ${d.format} ${d.musician ?? ''}`.toLowerCase(),
@@ -15,7 +16,7 @@ const data = filterable
       'data-genres': genresOf(d.genre).join('|'),
       'data-added': d.discoveredAt,
       'data-year': d.year,
-      'data-runtime': d.runtimeMinutes ?? 0,
+      'data-runtime': d.runtimeMinutes ?? d.episodes.reduce((sum, e) => sum + (e.runtimeMinutes ?? 0), 0),
       'data-name': d.title.toLowerCase(),
     }
   : {};
@@ -25,7 +26,7 @@ const data = filterable
     <div class:list={['card-media', d.imageFit === 'contain' && 'is-contain']} data-morph-media style={d.image ? `--img:url('${d.image}')` : undefined}>
       {d.image ? <img src={d.image} alt={d.imageAlt} loading={eager ? 'eager' : 'lazy'} decoding="async" width="800" height="450" /> : <span class="title-art" aria-hidden="true">{d.title}</span>}
       <span class="card-tags">
-        {isNew && <span class="tag-new">New</span>}
+        {fresh && <span class="tag-new">{fresh}</span>}
         <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
       </span>
     </div>

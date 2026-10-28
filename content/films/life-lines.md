@@ -5,10 +5,9 @@ description: "A supernatural anthology episode framed around two people with not
 year: 2026
 format: "Series"
 genre: "Supernatural drama"
-runtimeMinutes: 8.05
 status: "Watch now"
 watchUrl: "https://www.youtube.com/watch?v=dD98JtGr4b0"
-watchLabel: "Watch the full episode"
+watchLabel: "Watch Season 2, Episode 1"
 image: "/media/life-lines.jpg"
 imageAlt: "Life Lines artwork showing a red game box and miniature figures on a board"
 imageCredit: "Circadian Stories / Christopher Fryant · official release artwork"
@@ -18,6 +17,14 @@ discoveredAt: "2026-09-20"
 lastVerifiedAt: "2026-09-29"
 sources: [{"label": "Official release", "url": "https://www.youtube.com/watch?v=dD98JtGr4b0"}, {"label": "Schedule and support", "url": "https://x.com/cfryant/status/2100679455354069371"}, {"label": "Fryant and Cate Bligh — September 28 making-of", "url": "https://x.com/cfryant/status/2104622387194896635"}]
 production: [{"label": "Video model", "detail": "Fryant identifies Seedance 2.5 for the episode.", "source": "https://x.com/cfryant/status/2100679455354069371"}, {"label": "Schedule and support", "detail": "Approximately two months, according to Fryant. The release names CapCut as producer; his public profile confirms sponsorship.", "source": "https://x.com/cfryant/status/2100679455354069371"}, {"label": "Character and set references", "detail": "Fryant describes Seedance concept clips, Runway Aleph 2.0 colorization and Nano Pro character sheets. He derives voices, props and a clean set plate from the same scene.", "source": "https://x.com/cfryant/status/2104622387194896635"}, {"label": "Editing and finishing — Cate Bligh", "detail": "Redacted Owl Studio cofounder Cate Bligh describes editing and color matching in Adobe Premiere Pro, then selected-take upscaling in Topaz Video AI with Astra 2, Creative setting 1; some shots used frame interpolation.", "source": "https://x.com/cfryant/status/2104622387194896635"}, {"label": "Music and sound", "detail": "Fryant names ElevenLabs Music 2.5 for the theme. Bligh names Suno for underscore and ElevenLabs for sound effects and Roger’s phone voice, subsequently processed in post.", "source": "https://x.com/cfryant/status/2104622387194896635"}, {"label": "Planning and motion reuse", "detail": "Fryant describes Grok Bot organizing numbered storyboard sketches into Google Sheets. His depth-reference workflow names Seedream 5.0 Pro and Seedance 2.5 to retain motion while changing a shot’s look.", "source": "https://x.com/cfryant/status/2104622387194896635"}]
+episodes:
+  - number: 1
+    season: 2
+    synopsis: "An intimate supernatural story in which the tension comes from what two people with nothing to hide know about each other."
+    runtimeMinutes: 8.05
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=dD98JtGr4b0"
+    source: "https://www.youtube.com/watch?v=dD98JtGr4b0"
 ---
 
 The full episode runs **8 minutes 3 seconds** and is labeled Season 2, Episode 1. It is now available on the creator-linked Circadian Stories YouTube channel.
