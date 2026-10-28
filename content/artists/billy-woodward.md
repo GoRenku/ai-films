@@ -5,8 +5,8 @@ focus: "Character comedy, animation and staged fantasy"
 website: "https://www.backsliderbrand.com/"
 x: {"url": "https://x.com/billywoodward", "label": "Billy Woodward on X", "source": "https://x.com/billywoodward/status/2107537407629197618"}
 discoveredAt: "2026-10-07"
-lastVerifiedAt: "2026-10-22"
-sources: [{"label": "Backslider Brand — original studio portfolio", "url": "https://www.backsliderbrand.com/"}, {"label": "Woodward — Afahria release", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Woodward — personal story background", "url": "https://x.com/billywoodward/status/2107552186364555629"}, {"label": "Episode 2 and production thread", "url": "https://x.com/billywoodward/status/2112927769503883399"}]
+lastVerifiedAt: "2026-10-28"
+sources: [{"label": "Backslider Brand — original studio portfolio", "url": "https://www.backsliderbrand.com/"}, {"label": "Woodward — Afahria release", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Woodward — personal story background", "url": "https://x.com/billywoodward/status/2107552186364555629"}, {"label": "Episode 2 and production thread", "url": "https://x.com/billywoodward/status/2112927769503883399"}, {"label": "Maker’s complete professional announcement", "url": "https://x.com/billywoodward/status/2115493822797066280"}]
 ---
 
 Woodward runs **Backslider Brand**, whose original portfolio spans animation, music, design and generative production. His public release and linked studio establish his identity without confusing him with similarly named filmmakers.
@@ -22,3 +22,7 @@ The episode was produced in partnership with **Showrunner / Fable**. That suppor
 ## October 22 — continuity across a second episode
 
 [Afahria](/films/afahria-the-wicked-worm/) now includes Episode 2 and its production replies. Woodward’s environment sheets, baked-in blocking and deliberate change from close-up to wide view make scene geography a concrete production constraint. The new release also identifies his music reworking, editing and finishing; exact model allocation and total crew remain unknown.
+
+## October 28 — a new studio role
+
+Woodward [announces joining Mochine AI](https://x.com/billywoodward/status/2115493822797066280) as **Director of AI Creative and Innovation**. He describes participating in its launch video, combining on-set production, generated assets and motion design. This is his attributed professional announcement, not a new Afahria episode or an independently tested product claim. His separate 33-second Afahria gag points back to the existing channel rather than establishing another complete episode.

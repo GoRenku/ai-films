@@ -5,8 +5,8 @@ focus: "Character continuity, intimate performance and disclosed production work
 website: "https://www.magnific.com/originals"
 x: {"url": "https://x.com/magnific", "label": "Magnific on X", "source": "https://www.magnific.com/originals/candela"}
 discoveredAt: "2026-10-05"
-lastVerifiedAt: "2026-10-26"
-sources: [{"label": "Original film and studio credits", "url": "https://www.magnific.com/originals/candela"}, {"label": "Original shot-generation making-of", "url": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Original music making-of", "url": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}, {"label": "Roots original full release", "url": "https://www.magnific.com/originals/roots"}, {"label": "Patricia Camuñas credit and complete presentation", "url": "https://x.com/magnific/status/2114356446615974273"}, {"label": "Original model roles and reference-free video account", "url": "https://x.com/magnific/status/2114402169017573381"}, {"label": "Separate poster workflow", "url": "https://x.com/magnific/status/2114402220804551017"}]
+lastVerifiedAt: "2026-10-28"
+sources: [{"label": "Original film and studio credits", "url": "https://www.magnific.com/originals/candela"}, {"label": "Original shot-generation making-of", "url": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Original music making-of", "url": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}, {"label": "Roots original full release", "url": "https://www.magnific.com/originals/roots"}, {"label": "Patricia Camuñas credit and complete presentation", "url": "https://x.com/magnific/status/2114356446615974273"}, {"label": "Original model roles and reference-free video account", "url": "https://x.com/magnific/status/2114402169017573381"}, {"label": "Separate poster workflow", "url": "https://x.com/magnific/status/2114402220804551017"}, {"label": "Complete release and work-specific credits", "url": "https://www.magnific.com/originals/smoke"}]
 ---
 
 Magnific Studios is the in-house filmmaking team credited on **Candela**. Its releases and making-of material come from the same company that supplies the production platform; that relationship matters when weighing its process claims.
@@ -26,3 +26,7 @@ The official film page links the studio's X account. Its production videos provi
 Magnific's **[The Power of Now](https://x.com/magnific/status/2114356446615974273)** post explicitly credits **Patricia Camuñas**, rather than assigning the work to the in-house studio. The complete approximately **1:03** presentation links different lives through persistence. It is retained here as a sourced craft note on a platform-published motivational montage, without adding a standalone narrative-film card.
 
 The [production thread](https://x.com/magnific/status/2114402169017573381) names **Seedance 2.5** for text-to-video with **no image references**, and **ElevenLabs Music v2** for the soundtrack. Its [separate poster note](https://x.com/magnific/status/2114402220804551017) says Camuñas used film frames as references with **Magnific One**. That latter image-reference step concerns posters, not a contradiction of the stated reference-free video process. These are platform/maker claims; costs, full crew and financial terms are undisclosed, and the tools are not retroactively assigned to Candela or Roots.
+
+## October 28 — a new complete release
+
+[SMOKE](/films/smoke/) adds a complete drama and unusually detailed named team: Mario Alonso writes/directs from Rosa Quesada’s idea, with Marina Rueda on AI visuals, editing and sound. The public production page separates Seedance 2.5 Pro video, Nano Banana 2 4K references and ElevenLabs SFX, and explains screen positions, group-scale references and targeted multishot repairs.
