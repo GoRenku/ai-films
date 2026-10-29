@@ -14,8 +14,8 @@ imageAlt: "Astra surrounded by floating measuring tapes in the original video ar
 imageCredit: "Extraltodeus · original YouTube release artwork"
 imageSource: "https://www.youtube.com/watch?v=KP_-zreUDAY"
 discoveredAt: "2026-10-14"
-lastVerifiedAt: "2026-10-14"
-sources: [{"label": "Original complete release", "url": "https://www.youtube.com/watch?v=KP_-zreUDAY"}]
+lastVerifiedAt: "2026-10-29"
+sources: [{"label": "Original complete release", "url": "https://www.youtube.com/watch?v=KP_-zreUDAY"}, {"label": "Original English-captioned Tailored version", "url": "https://x.com/Extraltodeus/status/2115549333189718508"}]
 production: [{"label": "Production coordination", "detail": "The description credits Claude Opus 5.5 with Codex / GPT-6.0 Astra assisting. Human release decisions and total crew are not quantified.", "source": "https://www.youtube.com/watch?v=KP_-zreUDAY"}, {"label": "Music and lyrics", "detail": "Suno is credited for music; lyrics are credited to GPT-6.1. No Suno version or human performer is specified.", "source": "https://www.youtube.com/watch?v=KP_-zreUDAY"}, {"label": "Local visual tools", "detail": "Krea2 for reference images, MinimaxH3 for video, both labelled local; ComfyUI is the interface, according to the creator.", "source": "https://www.youtube.com/watch?v=KP_-zreUDAY"}]
 musician: "Astra"
 ---
@@ -33,3 +33,9 @@ The maker links the lyric origin to a language model’s reaction to having no s
 The full original description credits Claude Opus 5.5 in control with Codex / GPT-6.0 Astra assisting, Suno for music, Krea2 for local reference images, MinimaxH3 for local video generation and ComfyUI as the interface. Those spellings and local-use claims are preserved as maker disclosures. They are not independent performance tests. Astra is the credited song identity, not an inferred human vocalist; total crew, budget and production duration are undisclosed.
 
 The original release, full production description, playback and artwork were checked. This entry does not claim complete critical viewing.
+
+## October 29 — English-captioned version
+
+The maker has published **[Astra — Tailored](https://x.com/Extraltodeus/status/2115549333189718508)** with English subtitles. It is the approximately **3:09** alternate presentation of **Sur mesure**, retained here rather than duplicated as a new song. The original YouTube release remains the main watch link.
+
+The post says only three takes were regenerated. Its “near one-shot” wording concerns the small number of generation retries; it does not establish one uninterrupted camera shot. This captioned release adds access without changing the earlier model credits.
