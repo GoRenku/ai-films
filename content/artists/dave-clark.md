@@ -4,8 +4,8 @@ description: "A director connecting family history, genre storytelling and hybri
 focus: "Personal history & hybrid genre films"
 website: "https://www.promise.ai/"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
-sources: [{"label": "Battalion — director’s release", "url": "https://x.com/Diesol/status/1839351148412825605"}, {"label": "Adobe — My Friend, Zeph", "url": "https://blog.adobe.com/en/publish/2025/10/29/storytelling-reimagined-generative-ai-film-festival-adobe-max-2025"}, {"label": "Touch Grass — director’s development notes", "url": "https://www.promise.ai/post/dead-internet-touch-grass"}]
+lastVerifiedAt: "2026-10-30"
+sources: [{"label":"Battalion — director’s release","url":"https://x.com/Diesol/status/1839351148412825605"},{"label":"Adobe — My Friend, Zeph","url":"https://blog.adobe.com/en/publish/2025/10/29/storytelling-reimagined-generative-ai-film-festival-adobe-max-2025"},{"label":"Touch Grass — director’s development notes","url":"https://www.promise.ai/post/dead-internet-touch-grass"},{"label":"Boo Hag creator reshare","url":"https://x.com/Diesol/status/2115908457945874588"}]
 x: {"url": "https://x.com/Diesol", "label": "Dave Clark on X", "source": "https://x.com/Diesol/status/1839351148412825605"}
 ---
 
@@ -16,3 +16,7 @@ x: {"url": "https://x.com/Diesol", "label": "Dave Clark on X", "source": "https:
 That trajectory matters because it offers several ways of using the tools in service of a story. His original release threads disclose film-specific tools; they also help distinguish the original films from later tests and revised clips.
 
 Clark’s announced **Touch Grass** feature remains a development project. It should not be confused with an available full film.
+
+## October 30 — an older horror short returns
+
+[Boo Hag](/films/boo-hag/) joins through Clark’s Halloween reshare of his June 9 complete short. Its Seedance 2.0 disclosure belongs to this film. The reshare supplies current playback and authorship without changing the original release date or borrowing credits from his other work.

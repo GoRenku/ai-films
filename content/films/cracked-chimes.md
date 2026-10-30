@@ -15,8 +15,8 @@ imageAlt: "Red, green and white Cracked Chimes poster with a terrified printer a
 imageCredit: "Darksea · official festival poster"
 imageSource: "https://aifilmfest.org/assets/posters/sep-cracked-chimes.webp?v=20"
 discoveredAt: "2026-10-03"
-lastVerifiedAt: "2026-10-12"
-sources: [{"label": "Original film site", "url": "https://crackedchimes.com/film"}, {"label": "Original story and visual approach", "url": "https://crackedchimes.com/about"}, {"label": "Production credits", "url": "https://crackedchimes.com/creators"}, {"label": "Festival awards and duration", "url": "https://aifilmfest.org/"}, {"label": "Official film account", "url": "https://x.com/CrackedChimes"}, {"label": "World AI Cinema Festival — September winners", "url": "https://worldaicinema.com/gagnants-septembre-2026/"}]
+lastVerifiedAt: "2026-10-30"
+sources: [{"label":"Original film site","url":"https://crackedchimes.com/film"},{"label":"Original story and visual approach","url":"https://crackedchimes.com/about"},{"label":"Production credits","url":"https://crackedchimes.com/creators"},{"label":"Festival awards and duration","url":"https://aifilmfest.org/"},{"label":"Official film account","url":"https://x.com/CrackedChimes"},{"label":"World AI Cinema Festival — September winners","url":"https://worldaicinema.com/gagnants-septembre-2026/"},{"label":"Official film account’s CSFCCA announcement","url":"https://x.com/CrackedChimes/status/2116090005948956901"},{"label":"CSFCCA official festival site","url":"https://csfccaaifilm.com/"}]
 production: [{"label":"Direction and writing","detail":"Official credits: Anthony Jegu — director, animator, editor; Dr Scott — producer and story; Brandon Hartley — writer; Sebastiaan Ruinard — dramaturg.","source":"https://crackedchimes.com/creators"},{"label":"Music and sound","detail":"The production credits Thomas Carnacki for music, Gregory Scharpen for sound design and Dan Olmsted for sound engineering. The festival describes an original, composed score.","source":"https://crackedchimes.com/creators"},{"label":"Visual method","detail":"The original site describes a combination of 3D modeling, original art, period references and generated imagery. Exact models, versions, budget and schedule are undisclosed.","source":"https://crackedchimes.com/about"}]
 ---
 
@@ -37,3 +37,7 @@ The linked video is a **trailer**, not the full film. September's winning progra
 ## September festival recognition
 
 The [World AI Cinema Festival’s official September 2026 winners](https://worldaicinema.com/gagnants-septembre-2026/) name **Anthony Jegu — Best AI Director of the Future, for Cracked Chimes**. This is the festival’s **monthly online competition**, whose results page was published October 1; it should not be confused with an award at the Cannes Film Festival or proof of a theatrical showing. The organiser’s exact category resolves the production update’s “Directory” wording. The previously documented AI International Film Festival awards remain separate recognitions.
+
+## October 30 — CSFCCA selection announcement
+
+The [official film account](https://x.com/CrackedChimes/status/2116090005948956901) reports selection by **CSFCCA International AI Film Festival**. The organiser’s [official site](https://csfccaaifilm.com/) confirms the festival’s identity and Taiwan event context. A work-specific public programme was not established in this check, so the selection remains attributed to the production account. No award, finalist status, screening date or full-film availability is inferred.
