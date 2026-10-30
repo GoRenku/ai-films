@@ -388,3 +388,8 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 - Added [The Feeling Farm](content/films/the-feeling-farm.md), [The Knitting](content/films/the-knitting.md) and [Boo Hag](content/films/boo-hag.md), with current original playback and inspected real artwork. Kept Knitting’s 57-second narrative distinct from its quoted vendor demo and Boo Hag’s June release distinct from the October reshare.
 - Added VØXELLE’s [I REMEMBER TOMORROW](content/films/i-remember-tomorrow.md) and [LØSE YOUR MANNERS](content/films/lose-your-manners.md); distinguished the published video cuts from longer Suno songs and scoped V6 to music.
 - Updated KARMA’s CapCut campaign disclosure, Cracked Chimes’ maker-reported CSFCCA selection and DOWNFORCE’s song-platform announcement, with the [dated journal](content/updates/2026-10-30-dreams-candy-and-impossible-studios.md). No design or application files changed.
+
+### October 30 — journal presentation correction
+
+- Restored the October 30 journal’s existing image-card grid and artist sidebar through nine canonical `films` references and eight `artists` references, with editorial section headings. Reused the already credited artwork and existing template.
+- Documented mandatory journal reference reconciliation, built card/sidebar counts, loaded-image checks and visual inspection before and after publication in AGENTS.md and docs/content-refresh.md. The refresh automation receives the same requirement; its schedule, privacy rules and Cloudflare target remain intact.

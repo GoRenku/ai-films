@@ -22,6 +22,21 @@ Series list their episodes in frontmatter (`episodes`, in release order); a seri
 
 Every film and artist needs an original explanation of why it matters. Describe the actual filmmaking problem and what the work demonstrates or tests. Preserve useful public analysis from the original watch, but exclude personal plans, private product strategy, and copied transcripts. Do not claim to have watched or critically reviewed a complete film unless you actually did. A festival selection or a production milestone is evidence of that fact, not proof of artistic quality.
 
+## Journal references and visual verification
+
+Every journal note that substantively discusses existing catalogue works must explicitly populate its `films` frontmatter with their canonical slugs, in editorial order, including music videos, series and substantive updates to existing entries. Populate `artists` with the canonical credited creator/studio slugs represented in the note, deduplicated. Links in Markdown prose and `sources` do not populate these lists. Preserve existing references when editing a note. Do not copy yesterday's slugs or invent new collection entries merely to fill a visual section.
+
+These references drive the existing film-image grid, artist sidebar and related journal links on film pages. They are content fields, not layout or CSS changes. Follow the current journal template and recent complete notes; give substantial multi-topic notes clear editorial section headings. A genuinely general note may use explicit empty lists only when no catalogue works or artists are substantively covered; explain that exception in the review.
+
+Before committing or deploying a journal change:
+
+1. Compare all substantive film/music-video/series mentions and their credited artists with `films` and `artists`. Check that every slug resolves, lists are deduplicated, and referenced works have the expected credited artwork or a specifically documented image gap. Do not rely on optional schema defaults.
+2. Run `pnpm check` and `pnpm build`, then inspect the built journal HTML. Count its `.note-film` cards against `films.length` and its artist-sidebar links against `artists.length`; verify that each card links to the correct entry and uses that entry's artwork. A missing expected card or sidebar entry blocks publication even when the build passes.
+3. Open the rendered journal in the browser. Verify the image grid, headings, artist sidebar and sources visually, and confirm card images load after scrolling them into view. Compare with a recent complete journal so omitted sections are caught. Do not repair CSS or templates to compensate for missing content references. Save a review screenshot.
+4. After the normal GitHub-first deployment, open the journal on latentmatinee.com and verify the same card/sidebar counts, links and loaded images before reporting success. Check the journal itself, not only individual film pages.
+
+Do not report a journal refresh as complete solely because source links, individual film images or generic build validation passed. This review is required in addition to those checks.
+
 ## Research and publishing
 
 1. Read AGENTS.md; inspect Git status. Do not overwrite or publish unrelated edits. If another refresh is running or files are dirty from unrelated work, report the conflict.
