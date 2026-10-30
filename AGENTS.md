@@ -13,6 +13,7 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 - Only change lastVerifiedAt when the underlying sources were actually checked. Only add a journal note for a substantive discovery or change.
 - Run pnpm check and pnpm build. The build includes a generated-page link and asset check. Missing collection references must fail the build.
 - Journal notes must explicitly list substantively discussed catalogue works in `films` and their credited creators/studios in `artists`; prose links and sources do not create image cards or the artist sidebar. Preserve these lists on edits and follow the mandatory journal reference/count/image/browser checks in docs/content-refresh.md. Optional schema defaults and a passing build do not establish a complete journal. Verify the built and deployed journal itself before reporting success.
+- Track regular research tabs and native Incognito windows separately in the private per-run browser ownership ledger described in docs/content-refresh.md. Explicitly close and inventory task-owned tabs/windows across reconnects and resets; a private-window failure must not skip regular-tab cleanup. Never treat automatic cleanup or an attempted close as verified closure, and never close the user’s pre-existing tabs.
 
 ## Scheduled refresh scope
 
