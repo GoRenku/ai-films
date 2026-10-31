@@ -393,3 +393,10 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 
 - Restored the October 30 journal’s existing image-card grid and artist sidebar through nine canonical `films` references and eight `artists` references, with editorial section headings. Reused the already credited artwork and existing template.
 - Documented mandatory journal reference reconciliation, built card/sidebar counts, loaded-image checks and visual inspection before and after publication in AGENTS.md and docs/content-refresh.md. The refresh automation receives the same requirement; its schedule, privacy rules and Cloudflare target remain intact.
+
+### October 31, 2026 — masks, memories and returning worlds
+
+- Added three complete music videos: On a le temps, The Cake Is Not a Lie and Everything Blue, with work-specific credits and production disclosures.
+- Added The Moustache Job, Dino Demolition Squad (also linked in Nexus), Treasure of the Himalayas with its released Part Two, and the studio-documented feature The Yellow Knight; introduced Brian James Gage / Magic Engine Studios. The feature’s official full upload is playable at 1:12:46; its studio-listed 77-minute runtime is separately attributed.
+- Added Malfoid’s I Was Joking Part 3 and recasting account, corrected Candy to Lumara Grand Prize against dated official evidence, recorded The Offsite’s maker-reported shared contest win, and added JeffTriesThings / Higginswerx craft notes.
+- The dated journal explicitly references 11 catalogue works and 12 credited artist/studio profiles. Journal cards, artist links and loaded imagery were checked in the rendered note.

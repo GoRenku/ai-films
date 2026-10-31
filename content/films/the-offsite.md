@@ -14,8 +14,8 @@ imageAlt: "A forest canopy and birds in a sampled shot from The Offsite"
 imageCredit: "Eliott Mogenet · original release frame, approximately 1:37"
 imageSource: "https://x.com/eliott__mogenet/status/2110037655459344491"
 discoveredAt: "2026-10-14"
-lastVerifiedAt: "2026-10-14"
-sources: [{"label": "Original complete release", "url": "https://x.com/eliott__mogenet/status/2110037655459344491"}, {"label": "Maker — exact model and platform", "url": "https://x.com/eliott__mogenet/status/2110064656773693624"}, {"label": "Maker — continuous pull-back", "url": "https://x.com/eliott__mogenet/status/2110050032284205364"}, {"label": "Creator portfolio", "url": "https://eliottmogenet.com/"}]
+lastVerifiedAt: "2026-10-31"
+sources: [{"label":"Original complete release","url":"https://x.com/eliott__mogenet/status/2110037655459344491"},{"label":"Maker — exact model and platform","url":"https://x.com/eliott__mogenet/status/2110064656773693624"},{"label":"Maker — continuous pull-back","url":"https://x.com/eliott__mogenet/status/2110050032284205364"},{"label":"Creator portfolio","url":"https://eliottmogenet.com/"},{"label":"Maker’s shared-win announcement","url":"https://x.com/eliott__mogenet/status/2116236403759792606"},{"label":"Juror congratulation","url":"https://x.com/jasonzada/status/2116302050665660649"}]
 production: [{"label": "Video generation", "detail": "The maker says the short was made with Seedance 2.5 on Dreamina. Other tools, full credits and crew size remain undisclosed.", "source": "https://x.com/eliott__mogenet/status/2110064656773693624"}, {"label": "Camera continuity", "detail": "The maker reports spending time on a continuous shot with a camera pull-back; the claim concerns this particular shot, not every sequence.", "source": "https://x.com/eliott__mogenet/status/2110050032284205364"}]
 ---
 
@@ -30,3 +30,7 @@ Corporate retreat language promises safety and belonging, making it a useful fou
 The maker directly identifies **Seedance 2.5 on Dreamina**. His separate shot reply says he worked to make the camera pull-back continuous. A complete crew, performer and audio-credit list, budget and production duration were not established by the original thread or linked portfolio. The competition branding is not evidence of a particular music licence or a production sponsorship.
 
 Playback, the complete release, sampled imagery and the creator’s sources were checked. This is an introduction, not a complete critical review.
+
+## October 31 — maker-reported shared contest win
+
+Mogenet’s [October 30 announcement](https://x.com/eliott__mogenet/status/2116236403759792606) reports that The Offsite won the **Dreamina Spooktacular Film Contest alongside two other films**. Juror Jason Zada [congratulates the maker](https://x.com/jasonzada/status/2116302050665660649). This is recorded as a maker-reported shared win, without inventing a sole Grand Prize, category rank or screening date.

@@ -10,8 +10,8 @@ watchUrl: "https://x.com/DiDi_OKK/status/2097992769629278549"
 watchLabel: "Watch at the source"
 order: 3
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-27"
-sources: [{"label": "MoonPay — official Lumara finalist announcement", "url": "https://x.com/moonpay/status/2111099892504678861"}, {"label": "DiDi_OK — film and model disclosure", "url": "https://x.com/DiDi_OKK/status/2097992769629278549"}, {"label": "Official Lumara result and category definitions", "url": "https://lumarafilmfestival.com/"}]
+lastVerifiedAt: "2026-10-31"
+sources: [{"label":"MoonPay — official Lumara finalist announcement","url":"https://x.com/moonpay/status/2111099892504678861"},{"label":"DiDi_OK — film and model disclosure","url":"https://x.com/DiDi_OKK/status/2097992769629278549"},{"label":"Official Lumara result and category definitions","url":"https://lumarafilmfestival.com/"},{"label":"Dated organiser winners announcement","url":"https://x.com/AskVenice/status/2116243937744875615"}]
 production:
   [
     {
@@ -46,6 +46,8 @@ Li identifies **Seedance 2.5** and a collaboration with **BytePlus** in the rele
 
 The [organiser’s official announcement](https://x.com/moonpay/status/2111099892504678861) names **Candy**, directed by **DiDi_OK**, among the Lumara Film Festival finalists. The winner is due to be revealed **October 26** in New York. Finalist selection is the verified new development; it is not described as a prize win, a new premiere or a changed production credit.
 
-## October 27 — Lumara Jury Selection
+## October 31 — Lumara Grand Prize: corrected result
 
-The [official Lumara results](https://lumarafilmfestival.com/) now label **Candy / Jiaze Li** as **Jury Selection**, whose award description identifies the runner-up. This supersedes the earlier forthcoming-result note. **Black Thunder**, rather than Candy, is labelled Grand Prize. The source confirms the result without establishing a new cut, premiere or production budget.
+The [current official results](https://lumarafilmfestival.com/) and the organiser’s [October 30 winners announcement](https://x.com/AskVenice/status/2116243937744875615) agree: **Candy / Jiaze Li won the Grand Prize**. The earlier October 27 note here identified Jury Selection and is superseded by this correction. The current results assign Jury Selection to Mianmian and Best Made With Venice to Black Thunder.
+
+This corrects the award record. It does not establish a new cut, an independently tested new stream or a changed production budget.
