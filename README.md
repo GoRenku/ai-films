@@ -407,3 +407,8 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 - Added Stalk, When Death Whispers Your Name and Vołkaŭ’s descriptively titled rubber-duck short, plus festival-exhibited Mianmian. Introduced 88probs, Korgami AI and Yingjie Chen profiles. Seven credited real artworks inspected.
 - Updated Odysseus’s free full-film access, Malfoid’s complete Part Four and CHUMBO’s later, differently scoped production figures. Space Pirates Episode 7 was already covered and was not duplicated.
 - The dated journal explicitly references ten works and ten credited artist profiles, with the existing grid, sidebar and section headings. Content-only refresh; packages, application and deployment configuration unchanged.
+
+### November 1 — Obliteration addition
+
+- Added [Obliteration](content/films/obliteration.md) and [Samyaza Speaks](content/artists/samyaza-speaks.md), with the complete original 5:10 player, inspected real artwork and sourced accounts of visual scale, dramatic contrast and fictional language setting. Venice platform credit is kept separate from unknown models, crew and commercial terms.
+- Extended today’s journal to eleven canonical work references and eleven credited artist references, preserving the existing entries and imagery. No application, package or deployment changes.
