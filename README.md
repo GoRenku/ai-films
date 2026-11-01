@@ -400,3 +400,10 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 - Added The Moustache Job, Dino Demolition Squad (also linked in Nexus), Treasure of the Himalayas with its released Part Two, and the studio-documented feature The Yellow Knight; introduced Brian James Gage / Magic Engine Studios. The feature’s official full upload is playable at 1:12:46; its studio-listed 77-minute runtime is separately attributed.
 - Added Malfoid’s I Was Joking Part 3 and recasting account, corrected Candy to Lumara Grand Prize against dated official evidence, recorded The Offsite’s maker-reported shared contest win, and added JeffTriesThings / Higginswerx craft notes.
 - The dated journal explicitly references 11 catalogue works and 12 credited artist/studio profiles. Journal cards, artist links and loaded imagery were checked in the rendered note.
+
+### November 1, 2026 — voices, performances and a free epic
+
+- Added three music videos: ClaudiaGI’s Qu’est-ce qu’elle a que j’ai pas?, Skyebrows’s Can’t Avoid Malfoid and Korgamiai’s A Million Malfoids. Collaborators, exact disclosed tools and unresolved musician/role fields remain work-specific.
+- Added Stalk, When Death Whispers Your Name and Vołkaŭ’s descriptively titled rubber-duck short, plus festival-exhibited Mianmian. Introduced 88probs, Korgami AI and Yingjie Chen profiles. Seven credited real artworks inspected.
+- Updated Odysseus’s free full-film access, Malfoid’s complete Part Four and CHUMBO’s later, differently scoped production figures. Space Pirates Episode 7 was already covered and was not duplicated.
+- The dated journal explicitly references ten works and ten credited artist profiles, with the existing grid, sidebar and section headings. Content-only refresh; packages, application and deployment configuration unchanged.
