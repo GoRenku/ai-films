@@ -1,0 +1,94 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FestivalCard from '../../components/FestivalCard.astro';
+import { catalog } from '../../lib/catalog';
+import { PHASE_GROUP, phaseOf, sortKeyOf, today } from '../../lib/festival-status';
+const c = await catalog();
+const day = today();
+const entries = c.festivals.map((festival) => {
+  const edition = festival.data.editions.at(-1)!;
+  const winners = c.recognitions.filter((r) => r.edition === edition && r.decisive);
+  const phase = phaseOf(edition.milestones, winners.length > 0, day);
+  return { festival, winners, group: PHASE_GROUP[phase], sort: sortKeyOf(edition.milestones, phase, day) };
+});
+const groups = [
+  { id: 'open', title: 'Open for entries', note: 'Nearest deadline first. Dates are the organiser’s; check the official call before entering.' },
+  { id: 'soon', title: 'Coming up', note: 'Voting, screenings, ceremonies and results still to come.' },
+  { id: 'results', title: 'Results', note: 'Most recent results first.' },
+] as const;
+const inGroup = (id: string) =>
+  entries.filter((e) => e.group === id).sort((a, b) => (id === 'results' ? b.sort.localeCompare(a.sort) : a.sort.localeCompare(b.sort)));
+const count = (type: string) => c.festivals.filter((f) => f.data.type === type).length;
+---
+<Layout title="Festivals" description="AI film festivals and competitions that publish their results: open calls for entries, upcoming dates and winners.">
+  <header class="page-hero">
+    <h1>Festivals</h1>
+    <p class="page-sub">AI film festivals and competitions with a named organiser, public rules, a jury or judging process and published results. What is open for entries, what is coming up, and who won.</p>
+    <dl class="week">
+      <div><dt>Open for entries</dt><dd data-tally="open">{inGroup('open').length}</dd></div>
+      <div><dt>Coming up</dt><dd data-tally="soon">{inGroup('soon').length}</dd></div>
+      <div><dt>Festivals</dt><dd>{count('Festival')}</dd></div>
+      <div><dt>Competitions</dt><dd>{count('Competition')}</dd></div>
+    </dl>
+  </header>
+  <form class="browser" role="search" aria-label="Filter festivals">
+    <div class="browser-row">
+      <label class="search"><span class="sr-only">Search festivals</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" name="q" placeholder="Search festivals, organisers, cities" autocomplete="off" /></label>
+      <div class="segmented" role="radiogroup" aria-label="Type">
+        <label><input type="radio" name="type" value="" checked /><span>All</span></label>
+        <label><input type="radio" name="type" value="Festival" /><span>Festivals <em>{count('Festival')}</em></span></label>
+        <label><input type="radio" name="type" value="Competition" /><span>Competitions <em>{count('Competition')}</em></span></label>
+      </div>
+    </div>
+  </form>
+  {groups.map((g) => (
+    <section class="fest-group" data-group={g.id} aria-labelledby={`${g.id}-h`} hidden={inGroup(g.id).length === 0}>
+      <div class="section-head"><h2 id={`${g.id}-h`}>{g.title}</h2><p>{g.note}</p></div>
+      <div class="grid films-grid">
+        {inGroup(g.id).map((e) => <FestivalCard festival={e.festival} cover={c.festivalCover(e.festival)} winners={e.winners} day={day} isNew={c.isNew(e.festival.data.discoveredAt)} />)}
+      </div>
+    </section>
+  ))}
+  <div class="empty" hidden><p>No festivals match that search.</p></div>
+</Layout>
+<script>
+  import { PHASE_GROUP, PHASE_LABEL, phaseOf, sortKeyOf, statusLine, today, type Milestone } from '../../lib/festival-status';
+  const form = document.querySelector<HTMLFormElement>('.browser')!;
+  const cards = [...document.querySelectorAll<HTMLElement>('.fest-card')];
+  const sections = Object.fromEntries([...document.querySelectorAll<HTMLElement>('.fest-group')].map((s) => [s.dataset.group!, s]));
+  // Re-ask each card where it stands today: a deploy can be days old, a deadline cannot be stale.
+  const day = today();
+  for (const card of cards) {
+    const milestones: Milestone[] = JSON.parse(card.dataset.milestones!);
+    const phase = phaseOf(milestones, Boolean(card.dataset.results), day);
+    const pill = card.querySelector<HTMLElement>('[data-phase]')!;
+    pill.className = `pill pill-phase-${phase}`;
+    pill.textContent = PHASE_LABEL[phase];
+    if (!card.dataset.results) card.querySelector('[data-next]')!.textContent = statusLine(milestones, phase, day);
+    card.dataset.group = PHASE_GROUP[phase];
+    card.dataset.sort = sortKeyOf(milestones, phase, day);
+  }
+  const apply = () => {
+    const f = Object.fromEntries(new FormData(form)) as Record<string, string>;
+    const q = f.q.trim().toLowerCase();
+    let shown = 0;
+    for (const [id, section] of Object.entries(sections)) {
+      const grid = section.querySelector<HTMLElement>('.grid')!;
+      const mine = cards.filter((c) => c.dataset.group === id).sort((a, b) => (id === 'results' ? b.dataset.sort!.localeCompare(a.dataset.sort!) : a.dataset.sort!.localeCompare(b.dataset.sort!)));
+      grid.append(...mine);
+      let visible = 0;
+      for (const card of mine) {
+        card.hidden = (Boolean(f.type) && card.dataset.type !== f.type) || (Boolean(q) && !card.dataset.title!.includes(q));
+        if (!card.hidden) visible++;
+      }
+      section.hidden = visible === 0;
+      shown += visible;
+      const tally = document.querySelector(`[data-tally="${id}"]`);
+      if (tally) tally.textContent = String(mine.length);
+    }
+    document.querySelector<HTMLElement>('.empty')!.hidden = shown > 0;
+  };
+  form.addEventListener('input', apply);
+  form.addEventListener('submit', (e) => e.preventDefault());
+  apply();
+</script>

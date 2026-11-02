@@ -4,6 +4,7 @@ description: "Four music videos, an animated horror-comedy, a linked series disc
 date: "2026-10-17"
 films: ["cutting-room-floor", "now-serving", "come-a-little-closer", "baby-you-flew", "ambiance", "zorgon-explains-everything", "holed", "candy"]
 artists: ["antic", "antonio-sabatella", "astra-blue-ai", "kelly-boesch", "anabology", "daniil-volkau", "didi-ok"]
+festivals: ["lumara-film-festival"]
 sources: [{"label": "Cutting Room Floor time and iteration", "url": "https://x.com/antic/status/2111142939464499584"}, {"label": "NOW SERVING human editing disclosure", "url": "https://x.com/AstrablueAI/status/2111109685805994086"}, {"label": "Come a Little Closer full production description", "url": "https://www.youtube.com/watch?v=-oK8_B31v1M"}, {"label": "Baby, You Flew manual repair disclosure", "url": "https://x.com/Anto_Sabatella/status/2111239775474815120"}, {"label": "AMBIANCE complete release", "url": "https://www.youtube.com/watch?v=mVUed5iJwkA"}, {"label": "Zorgon public release link", "url": "https://x.com/machina9000/status/2111367454349808024"}, {"label": "HOLED full Episode 4", "url": "https://www.youtube.com/watch?v=ZEHH-plxP7M"}, {"label": "Official Lumara finalist announcement", "url": "https://x.com/moonpay/status/2111099892504678861"}]
 ---
 

@@ -5,13 +5,14 @@ description: "Bittu, a city toilet cleaner, seeks ordinary respect and finds a s
 year: 2026
 format: "Short film"
 genre: "Social drama / surrealism"
-status: "Festival screening"
-watchUrl: "https://www.instagram.com/rollsound9/p/Dc57oGdonRv/"
-watchLabel: "View original release poster"
+status: "Watch now"
+watchUrl: "https://www.youtube.com/watch?v=lkBmVz8cvqg"
+watchLabel: "Watch the complete film"
 discoveredAt: "2026-10-08"
-lastVerifiedAt: "2026-10-08"
-sources: [{"label": "Original release poster", "url": "https://www.instagram.com/rollsound9/p/Dc57oGdonRv/"}, {"label": "Festival synopsis", "url": "https://www.instagram.com/aaiff.ai/p/DdhyyiOCMxf/"}, {"label": "Official second-place result", "url": "https://www.instagram.com/aaiff.ai/p/DeCm8B3iMfj/"}, {"label": "Creator’s producer disclosure", "url": "https://www.instagram.com/abhickofficial/p/DeC1pPXnPkW/"}]
+lastVerifiedAt: "2026-11-02"
+sources: [{"label": "Complete film — Rollsound’s YouTube channel", "url": "https://www.youtube.com/watch?v=lkBmVz8cvqg"}, {"label": "Original release poster", "url": "https://www.instagram.com/rollsound9/p/Dc57oGdonRv/"}, {"label": "Festival synopsis", "url": "https://www.instagram.com/aaiff.ai/p/DdhyyiOCMxf/"}, {"label": "Official second-place result", "url": "https://www.instagram.com/aaiff.ai/p/DeCm8B3iMfj/"}, {"label": "Creator’s producer disclosure", "url": "https://www.instagram.com/abhickofficial/p/DeC1pPXnPkW/"}]
 production: [{"label": "Writer, director and production", "detail": "Original poster: written and directed by Abhick; produced by Rollsound.", "source": "https://www.instagram.com/rollsound9/p/Dc57oGdonRv/"}, {"label": "Additional producer acknowledgement", "detail": "Creator thanks @raayadingoria as a producer alongside Rollsound studio; a full named crew is not supplied.", "source": "https://www.instagram.com/abhickofficial/p/DeC1pPXnPkW/"}]
+runtimeMinutes: 10.47
 image: "/media/sitara.jpg"
 imageAlt: "SITARA poster showing a seated figure above a city at night beneath a starry sky"
 imageCredit: "Rollsound / Abhick · original release poster"
@@ -25,8 +26,12 @@ Bittu cleans the city’s toilets, while the people around him treat him as some
 
 A modest wish for dignity can be a stronger story engine than a grand technological premise. The contrast between Bittu’s essential work and his social invisibility gives the film a concrete point of view. Its surreal turn serves an identifiable desire rather than replacing it with spectacle.
 
-AAIFF names SITARA second in its thematic competition. The original Rollsound release poster credits **Abhick** as writer and director and **Rollsound** as producer. The release post is shared with the director’s personal account. These film-specific sources establish the work and authorship; they do not establish current complete public playback.
+AAIFF names SITARA second in its thematic competition. The original Rollsound release poster credits **Abhick** as writer and director and **Rollsound** as producer. The release post is shared with the director’s personal account. These film-specific sources establish the work and authorship; the complete film was later published on the Rollsound channel (see the November 2 note below).
 
 ## Production evidence
 
 The director’s award account thanks @raayadingoria as a producer alongside Rollsound studio. A full named crew, model versions, runtime, budget and detailed making-of have not been disclosed in the checked sources. Entry into a platform-sponsored festival does not by itself establish which software generated the film. The journal has not watched the complete film.
+
+## November 2 — full film available
+
+Rollsound published the complete 10:28 film on its YouTube channel on September 6, 2026. The upload credits Abhick Banerjee as writer and director and Rollsound as producer. It describes the film as an independent Hindi-language short with English subtitles and names it an official selection of the Higgsfield Global Film Festival 2026.

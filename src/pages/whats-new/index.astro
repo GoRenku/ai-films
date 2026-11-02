@@ -16,6 +16,7 @@ const tally = (k: string) => week.filter((n) => n.kind === k).length;
       <div><dt>Films</dt><dd>{tally('Film')}</dd></div>
       {tally('Episode') > 0 && <div><dt>Episodes</dt><dd>{tally('Episode')}</dd></div>}
       <div><dt>Artists</dt><dd>{tally('Artist')}</dd></div>
+      {tally('Festival') > 0 && <div><dt>Festivals</dt><dd>{tally('Festival')}</dd></div>}
       <div><dt>Notes</dt><dd>{tally('Journal')}</dd></div>
     </dl>
   </header>

@@ -9,7 +9,8 @@ export async function getStaticPaths() {
 const { update } = Astro.props;
 const films = await Promise.all(update.data.films.map((f) => getEntry(f)));
 const artists = await Promise.all(update.data.artists.map((a) => getEntry(a)));
-if (films.some((f) => !f) || artists.some((a) => !a)) throw new Error(`Missing reference in ${update.id}`);
+const festivals = await Promise.all(update.data.festivals.map((f) => getEntry(f)));
+if (films.some((f) => !f) || artists.some((a) => !a) || festivals.some((f) => !f)) throw new Error(`Missing reference in ${update.id}`);
 const c = await catalog();
 const idx = c.updates.findIndex((u) => u.id === update.id);
 const newer = c.updates[idx - 1];
@@ -42,6 +43,12 @@ const { Content } = await render(update);
         <div class="aside-block">
           <p class="kicker">Artists in this note</p>
           {artists.map((a) => a && <a class="aside-note" href={`/artists/${a.id}/`}>{a.data.title}<time>{a.data.focus}</time></a>)}
+        </div>
+      )}
+      {festivals.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">Festivals in this note</p>
+          {festivals.map((f) => f && <a class="aside-note" href={`/festivals/${f.id}/`}>{f.data.title}<time>{f.data.type} · {f.data.organiser}</time></a>)}
         </div>
       )}
       <Sources sources={update.data.sources} />

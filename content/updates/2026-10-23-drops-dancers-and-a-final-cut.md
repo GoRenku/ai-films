@@ -4,6 +4,7 @@ description: "CHUMBO, a fifteen-part drama and BIA’s music video join the coll
 date: "2026-10-23"
 films: ["chumbo", "the-reformation-room", "solo-reign", "cold-out-there", "universal-high-income", "sanxingdui-future-past", "gods-dont-give-gifts"]
 artists: ["contanimation", "luke-mazey", "daniil-volkau", "anabology", "yue-ming", "zack-london", "kelly-boesch"]
+festivals: ["austin-ai-film-festival"]
 sources: [{"label": "CHUMBO official production breakdown", "url": "https://www.magnific.com/originals/contanimation-tv/chumbo"}, {"label": "Slophouse original portfolio", "url": "https://www.slophouse.co"}, {"label": "Austin official winners", "url": "https://www.austinaifilmfestival.com/"}, {"label": "WHITEPILL full production record", "url": "https://claudia.gallery/record/whitepill/readme/"}, {"label": "AFP opening-day report", "url": "https://www.afp.com/en/chinas-first-ai-film-hits-cinemas-ticket-sales-lag"}, {"label": "Creator distribution announcement", "url": "https://x.com/Gossip_Goblin/status/2113306179296448727"}]
 ---
 

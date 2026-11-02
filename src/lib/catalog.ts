@@ -4,6 +4,11 @@ import { readFileSync } from 'node:fs';
 export type Film = CollectionEntry<'films'>;
 export type Artist = CollectionEntry<'artists'>;
 export type Update = CollectionEntry<'updates'>;
+export type Festival = CollectionEntry<'festivals'>;
+export type Edition = Festival['data']['editions'][number];
+export type Award = Edition['awards'][number];
+/** One festival result, resolved against the catalogue. */
+export type Recognition = { festival: Festival; edition: Edition; award: Award; film?: Film; artist?: Artist; addedAt: string; decisive: boolean };
 
 // Free-text genres stay editorial; these broad groups only power browsing.
 const GENRE_GROUPS: [string, RegExp][] = [
@@ -158,17 +163,31 @@ export const initials = (name: string) =>
 const newestFirst = (a: Film, b: Film) =>
   b.data.discoveredAt.localeCompare(a.data.discoveredAt) || a.data.order - b.data.order || a.data.title.localeCompare(b.data.title);
 
+/** Results in the order a page lists them: wins before selections. */
+export const RESULT_RANK: Award['result'][] = ['Winner', 'Runner-up', 'Jury selection', 'Audience choice', 'Honourable mention', 'Finalist', 'Shortlisted', 'Nominee', 'Official selection'];
+export const isDecisive = (award: Award) => RESULT_RANK.indexOf(award.result) < 5;
+/** When an edition's results were published; editions without them sort by their last milestone. */
+export const resultsDateOf = (edition: Edition) => (edition.milestones.findLast((m) => m.kind === 'Results') ?? edition.milestones.at(-1)!).date;
+/** "Winner · Grand Prix", or just "Official selection" when the category only repeats the result. */
+export const awardLabel = (award: Award) => (award.category.toLowerCase() === award.result.toLowerCase() ? award.result : `${award.result} · ${award.category}`);
+/** The awarded work as the organiser named it: a catalogue film, its awarded episode, or a title outside the collection. */
+export const workName = (r: Recognition) => (r.film ? `${r.film.data.title}${r.award.title ? `: ${r.award.title}` : ''}` : r.award.title!);
+/** "Lumara Film Festival 2026", without repeating a year already in the title. */
+export const editionName = (festival: Festival, edition: Edition) => (festival.data.title.includes(edition.label) ? festival.data.title : `${festival.data.title} ${edition.label}`);
+
 let cached: Awaited<ReturnType<typeof build>> | undefined;
 export const catalog = async () => (cached ??= await build());
 
 async function build() {
-  const [rawFilms, artists, rawUpdates] = await Promise.all([getCollection('films'), getCollection('artists'), getCollection('updates')]);
+  const [rawFilms, artists, rawUpdates, rawFestivals] = await Promise.all([getCollection('films'), getCollection('artists'), getCollection('updates'), getCollection('festivals')]);
   const films = [...rawFilms].sort(newestFirst);
   const updates = [...rawUpdates].sort((a, b) => b.data.date.localeCompare(a.data.date) || a.id.localeCompare(b.id));
   const artistById = new Map(artists.map((a) => [a.id, a]));
   const filmById = new Map(films.map((f) => [f.id, f]));
   const episodeDates = films.flatMap((f) => f.data.episodes.map((e) => e.addedAt).filter((d): d is string => Boolean(d)));
-  const latest = [...films.map((f) => f.data.discoveredAt), ...episodeDates, ...artists.map((a) => a.data.discoveredAt), ...updates.map((u) => u.data.date)].sort().at(-1)!;
+  const festivals = [...rawFestivals].sort((a, b) => a.data.title.localeCompare(b.data.title));
+  const awardDates = festivals.flatMap((f) => f.data.editions.flatMap((e) => e.awards.map((a) => a.addedAt ?? f.data.discoveredAt)));
+  const latest = [...films.map((f) => f.data.discoveredAt), ...episodeDates, ...artists.map((a) => a.data.discoveredAt), ...updates.map((u) => u.data.date), ...festivals.map((f) => f.data.discoveredAt), ...awardDates].sort().at(-1)!;
 
   const artistOf = (film: Film) => {
     const artist = artistById.get(film.data.artist.id);
@@ -240,13 +259,54 @@ async function build() {
   /** Inline episodes that joined after their series did; each gets its own What's New item. */
   const laterEpisodes = [...episodesById.values()].flat().filter((e) => !e.film && e.href && e.addedAt > e.series.data.discoveredAt);
 
-  return { films, artists, updates, latest, artistOf, filmsBy, notesAbout, isNew, thisWeek, lastActive, coverFor, artistsByActivity, notesFilms, filmById, artistById, episodesOf, seriesOf, addedOf, freshOf, laterEpisodes };
+  // Festival results, resolved once; every reference must exist.
+  const recognitions: Recognition[] = festivals.flatMap((festival) =>
+    festival.data.editions.flatMap((edition) =>
+      edition.awards.map((award) => {
+        const film = award.film ? filmById.get(award.film.id) : undefined;
+        if (award.film && !film) throw new Error(`${festival.id}: award links to missing film ${award.film.id}`);
+        const artist = award.artist ? artistById.get(award.artist.id) : film ? artistOf(film) : undefined;
+        if (award.artist && !artist) throw new Error(`${festival.id}: award links to missing artist ${award.artist.id}`);
+        return { festival, edition, award, film, artist, addedAt: award.addedAt ?? festival.data.discoveredAt, decisive: isDecisive(award) };
+      }),
+    ),
+  );
+  const byResult = (a: Recognition, b: Recognition) => RESULT_RANK.indexOf(a.award.result) - RESULT_RANK.indexOf(b.award.result);
+  /** Results for an artist's own films, and awards made to them by name. */
+  const recognitionsOf = (artistId: string) =>
+    recognitions
+      .filter((r) => r.artist?.id === artistId || r.film?.data.artist.id === artistId)
+      .sort((a, b) => Number(b.decisive) - Number(a.decisive) || resultsDateOf(b.edition).localeCompare(resultsDateOf(a.edition)) || byResult(a, b));
+  const recognitionsFor = (filmId: string) => recognitions.filter((r) => r.film?.id === filmId).sort(byResult);
+  const festivalById = new Map(festivals.map((f) => [f.id, f]));
+  const notesOnFestival = (festivalId: string) => updates.filter((u) => u.data.festivals.some((f) => f.id === festivalId));
+  /** A festival card's picture: its own credited artwork, else the newest decisive winner's. */
+  const festivalCover = (festival: Festival): { src: string; alt: string; fit: string } | undefined => {
+    if (festival.data.image) return { src: festival.data.image, alt: festival.data.imageAlt!, fit: 'cover' };
+    const winner = [...recognitions.filter((r) => r.festival.id === festival.id && r.film?.data.image)].sort((a, b) => resultsDateOf(b.edition).localeCompare(resultsDateOf(a.edition)) || byResult(a, b))[0]?.film;
+    return winner ? { src: winner.data.image!, alt: winner.data.imageAlt!, fit: winner.data.imageFit } : undefined;
+  };
+
+  return { films, artists, updates, festivals, recognitions, recognitionsOf, recognitionsFor, festivalById, notesOnFestival, festivalCover, latest, artistOf, filmsBy, notesAbout, isNew, thisWeek, lastActive, coverFor, artistsByActivity, notesFilms, filmById, artistById, episodesOf, seriesOf, addedOf, freshOf, laterEpisodes };
 }
 
-export type NewsItem = { title: string; description: string; date: string; kind: 'Film' | 'Episode' | 'Artist' | 'Journal'; label: string; href: string; image?: string; fit?: string; by?: string };
+export type NewsItem = { title: string; description: string; date: string; kind: 'Film' | 'Episode' | 'Artist' | 'Journal' | 'Festival'; label: string; href: string; image?: string; fit?: string; by?: string };
 export async function news(): Promise<NewsItem[]> {
   const c = await catalog();
-  const rank = { Film: 0, Episode: 1, Journal: 2, Artist: 3 };
+  const rank = { Film: 0, Episode: 1, Festival: 2, Journal: 3, Artist: 4 };
+  // A festival appears when it joins, and again on each later day its results were recorded.
+  const festivalNews = c.festivals.flatMap((f) => {
+    const cover = c.festivalCover(f);
+    const joined = { title: f.data.title, description: f.data.description, date: f.data.discoveredAt, kind: 'Festival' as const, label: `New ${f.data.type.toLowerCase()}`, href: `/festivals/${f.id}/`, image: cover?.src, fit: cover?.fit, by: f.data.organiser };
+    const later = f.data.editions.flatMap((e) => {
+      const dates = [...new Set(c.recognitions.filter((r) => r.edition === e && r.addedAt > f.data.discoveredAt).map((r) => r.addedAt))];
+      return dates.map((date) => {
+        const winner = c.recognitions.find((r) => r.edition === e && r.addedAt === date && r.film?.data.image)?.film;
+        return { title: `${editionName(f, e)}: results`, description: f.data.description, date, kind: 'Festival' as const, label: 'Festival results', href: `/festivals/${f.id}/`, image: winner?.data.image ?? cover?.src, fit: winner?.data.imageFit ?? cover?.fit, by: f.data.organiser };
+      });
+    });
+    return [joined, ...later];
+  });
   return [
     ...c.films.map((f) => ({ title: f.data.title, description: f.data.description, date: f.data.discoveredAt, kind: 'Film' as const, label: isMusicVideo(f) ? 'New music video' : 'New film', href: `/films/${f.id}/`, image: f.data.image, fit: f.data.imageFit, by: c.artistOf(f).data.title })),
     ...c.laterEpisodes.map((e) => ({ title: `${e.series.data.title} — ${e.label}${e.title ? `: ${e.title}` : ''}`, description: e.synopsis ?? e.series.data.description, date: e.addedAt, kind: 'Episode' as const, label: `New ${e.series.data.episodeNoun.toLowerCase()}`, href: e.href!, image: e.image ?? e.series.data.image, fit: e.image ? 'cover' : e.series.data.imageFit, by: c.artistOf(e.series).data.title })),
@@ -254,6 +314,7 @@ export async function news(): Promise<NewsItem[]> {
       const cover = c.coverFor(a);
       return { title: a.data.title, description: a.data.description, date: a.data.discoveredAt, kind: 'Artist' as const, label: 'New artist', href: `/artists/${a.id}/`, image: cover?.data.image, fit: 'cover', by: a.data.focus };
     }),
+    ...festivalNews,
     ...c.updates.map((u) => {
       const cover = c.notesFilms(u).find((f) => f.data.image);
       return { title: u.data.title, description: u.data.description, date: u.data.date, kind: 'Journal' as const, label: 'Journal', href: `/journal/${u.id}/`, image: cover?.data.image, fit: 'cover', by: 'Field note' };

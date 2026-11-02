@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import FilmCard from '../../components/FilmCard.astro';
 import Sources from '../../components/Sources.astro';
 import { getCollection, render } from 'astro:content';
-import { catalog, displayDate, initials, shareImageOf, workTally } from '../../lib/catalog';
+import { awardLabel, catalog, displayDate, editionName, initials, shareImageOf, workName, workTally } from '../../lib/catalog';
 export async function getStaticPaths() {
   return (await getCollection('artists')).map((artist) => ({ params: { id: artist.id }, props: { artist } }));
 }
@@ -14,6 +14,8 @@ const cover = c.coverFor(artist);
 const notes = c.notesAbout(artist.id);
 const years = [...new Set(films.map((f) => f.data.year))].sort();
 const watchable = films.filter((f) => f.data.status === 'Watch now').length;
+const honours = c.recognitionsOf(artist.id);
+const wins = honours.filter((r) => r.decisive).length;
 const { Content } = await render(artist);
 ---
 <Layout title={artist.data.title} description={artist.data.description} shareImage={shareImageOf(cover)}>
@@ -31,6 +33,7 @@ const { Content } = await render(artist);
       <dl class="fact-strip">
         <div><dt>In the collection</dt><dd>{workTally(films)}</dd></div>
         {watchable > 0 && <div><dt>Watch now</dt><dd>{watchable}</dd></div>}
+        {wins > 0 && <div><dt>Festival awards</dt><dd>{wins}</dd></div>}
         {years.length > 0 && <div><dt>Years</dt><dd>{years.length > 1 ? `${years[0]}–${years.at(-1)}` : years[0]}</dd></div>}
         <div><dt>Last active</dt><dd>{displayDate(c.lastActive(artist))}</dd></div>
       </dl>
@@ -48,6 +51,12 @@ const { Content } = await render(artist);
   <div class="film-body">
     <article class="prose" data-reveal><Content /></article>
     <aside class="film-aside" data-reveal>
+      {honours.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">Awards &amp; selections</p>
+          {honours.map((r) => <a class="aside-note aside-award" href={`/festivals/${r.festival.id}/`}><time>{awardLabel(r.award)}</time>{editionName(r.festival, r.edition)}<span> · {workName(r)}</span></a>)}
+        </div>
+      )}
       {notes.length > 0 && (
         <div class="aside-block">
           <p class="kicker">In the journal</p>

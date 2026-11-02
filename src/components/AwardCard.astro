@@ -1,0 +1,31 @@
+---
+import type { Recognition } from '../lib/catalog';
+import { embedOf, hostOf, workName } from '../lib/catalog';
+import PlayIcon from './PlayIcon.astro';
+// One festival result as a card: the film's artwork, the award, and a way to watch it.
+// categories: every award this work won in the edition, best first.
+interface Props { r: Recognition; categories?: string[]; featured?: boolean }
+const { r, categories = [r.award.category], featured = false } = Astro.props;
+const film = r.film;
+const name = workName(r);
+const href = film ? `/films/${film.id}/` : undefined;
+// A film plays here only when it is Watch now; a released film with a link (embedding disabled, say) opens at the source.
+const watchUrl = film ? (film.data.status === 'Watch now' || film.data.status === 'Released' ? film.data.watchUrl : undefined) : r.award.watchUrl;
+const embed = (film ? film.data.status === 'Watch now' : r.award.embeddable) ? embedOf(watchUrl) : undefined;
+const image = film?.data.image;
+---
+<article class:list={['award-card', featured && 'is-featured']}>
+  <div class:list={['award-media', film?.data.imageFit === 'contain' && 'is-contain']} style={image ? `--img:url('${image}')` : undefined}>
+    {image ? <img src={image} alt={film!.data.imageAlt} loading="lazy" decoding="async" width="800" height="450" /> : <span class="title-art" aria-hidden="true">{name}</span>}
+    {r.award.result !== 'Winner' && <span class="card-tags"><span class="pill">{r.award.result}</span></span>}
+    {embed && <button class="card-play" type="button" data-play={embed.src} data-title={name} data-source={watchUrl} aria-label={`Play ${name}`}><PlayIcon /></button>}
+  </div>
+  <p class="award-category">{categories.join(' · ')}</p>
+  <h3>{href ? <a href={href}>{name}</a> : name}</h3>
+  <p class="award-credit">{r.award.credit}</p>
+  <p class="award-links">
+    {watchUrl && !embed && <a href={watchUrl} rel="noopener noreferrer">{film ? film.data.watchLabel : `Watch on ${hostOf(watchUrl)}`} ↗</a>}
+    {!watchUrl && !film && <span>No public release found</span>}
+    <a href={r.award.source} rel="noopener noreferrer">Result source ↗</a>
+  </p>
+</article>

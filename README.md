@@ -29,7 +29,8 @@ Cloudflare setup (already in place; do not recreate): `latent-matinee` is a clas
 
 - content/artists/<slug>.md: artist biography, verified X profile and provenance, links, editorial context.
 - content/films/<slug>.md: film details, artist reference, availability, watch links, source and image credits, and sourced production disclosures.
-- content/updates/YYYY-MM-DD-<slug>.md: a dated note referencing films and artists.
+- content/festivals/<slug>.md: an AI film festival or competition with its editions, dated milestones (calls, deadlines, shortlists, votes, screenings, results) and organiser-published awards. Phases such as Entries open or Results are computed from the dates; awards feed artist and film pages.
+- content/updates/YYYY-MM-DD-<slug>.md: a dated note referencing films, artists and festivals.
 - src/content.config.ts: frontmatter schema. Required fields and reference checks run during build.
 - public/media/: credited promotional stills and thumbnails used to identify films.
 
@@ -37,7 +38,7 @@ Copy a relevant existing file to add an entry. Slugs are stable filenames. Recor
 
 ## Periodic refresh
 
-Two daily Codex follow-ups work in sequence: an 11:00 Europe/Madrid X discovery review supplies a private queue; the 13:00 editorial refresh reads it alongside AI Film Director Watch, monitors verified artist accounts, verifies discoveries against original sources, updates Markdown and publishes meaningful changes. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
+A twice-weekly festival watch (`refresh-ai-film-festivals`, Monday and Thursday at 11:30 Europe/Madrid) checks festival and competition calls, deadlines and results and publishes festival records. Two daily Codex follow-ups work in sequence: an 11:00 Europe/Madrid X discovery review supplies a private queue; the 13:00 editorial refresh reads it alongside AI Film Director Watch, monitors verified artist accounts, verifies discoveries against original sources, updates Markdown and publishes meaningful changes. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
 
 Scheduled editorial refreshes are content-only: Markdown entries, credited media, refresh summaries and editorial research notes. They must not change CSS, templates, layouts, application code, deployment configuration or dependencies. Layout issues require a separate explicitly requested task. Publication uses the existing `pnpm deploy:cloudflare` command; the former Sites target is retired.
 
@@ -412,3 +413,14 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 
 - Added [Obliteration](content/films/obliteration.md) and [Samyaza Speaks](content/artists/samyaza-speaks.md), with the complete original 5:10 player, inspected real artwork and sourced accounts of visual scale, dramatic contrast and fictional language setting. Venice platform credit is kept separate from unknown models, crew and commercial terms.
 - Extended today’s journal to eleven canonical work references and eleven credited artist references, preserving the existing entries and imagery. No application, package or deployment changes.
+
+### November 2, 2026 — Festivals and competitions
+
+- Added a Festivals section (/festivals/) for AI film festivals and competitions that publish their results, grouped into Open for entries, Coming up and Results. Phases are computed from each edition's dated milestones at build time and again in the reader's browser.
+- Added fourteen records: Lumara, Higgsfield Global Film Festival, Future Vision XPRIZE, Runway AI Festival, Chroma Awards, Curious Refuge AI Horror Film Competition, Astana AI Film Festival, Austin AI Film Festival, OMNI, AI Film Festival Japan, Torino Underground Cinefest: AI Visions, Reply AI Film Festival, World AI Film Festival and AI for Good Film Festival. Dates, rules and results were checked against organiser sources on November 2.
+- Artist pages list Awards & selections and film pages Festival recognition, drawn from the festival records. Twelve existing journal notes now reference the festivals they discuss.
+- Traced every result to its official release and added 63 winning films and 58 artists, nearly all with credited official thumbnails and playable YouTube or Vimeo links. Seven existing winners (A Face Only a Mother Could Love, The Well, TAIRELL ISN'T REAL, Costa Verde, Papernaught, SITARA, Looking for Perseida) now play in full. Trailers, adverts and visual studies that won are linked from their results rather than added as films.
+- Redesigned the festival page: one edition per tab, winners as playable cards (a work with several awards shares one card), honourable mentions and selections as compact lists, then a key-dates timeline and edition details.
+- Corrected the WAIFF 2026 results: the organiser's prize list puts each category after its film, so Costa Verde won Best WAIFF Film and Best AI Fantasy Film.
+- Added a dated journal note, Festival winners you can watch.
+- Schema, pages, styles and docs changed in this explicitly requested task; packages and deployment configuration unchanged.

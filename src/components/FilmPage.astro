@@ -5,7 +5,7 @@ import Rail from './Rail.astro';
 import Sources from './Sources.astro';
 import PlayIcon from './PlayIcon.astro';
 import { render } from 'astro:content';
-import { catalog, embedOf, genresOf, minutes, longMinutes, hostOf, displayDate, shareImageOf, statusKey, statusLabel, workNoun, startEpisode, releasedEpisodes, totalMinutesOf, type Film, type Episode } from '../lib/catalog';
+import { awardLabel, catalog, editionName, embedOf, genresOf, minutes, longMinutes, hostOf, displayDate, shareImageOf, statusKey, statusLabel, workNoun, startEpisode, releasedEpisodes, totalMinutesOf, type Film, type Episode } from '../lib/catalog';
 interface Props { film: Film; episode?: Episode }
 const { film, episode } = Astro.props;
 const c = await catalog();
@@ -18,6 +18,7 @@ const byArtist = c.filmsBy(artist.id).filter((f) => f.id !== film.id);
 const related = c.films.filter((f) => f.id !== film.id && f.data.artist.id !== artist.id && genresOf(f.data.genre).includes(primaryGenre)).slice(0, 12);
 const notes = c.updates.filter((u) => u.data.films.some((r) => r.id === film.id));
 const fresh = c.freshOf(film);
+const honours = c.recognitionsFor(film.id);
 
 // Series: the episode on stage is the one this URL names, else where a new viewer starts.
 const isSeries = d.format === 'Series';
@@ -228,6 +229,12 @@ const seriesData = isSeries && {
         <span>{artist.data.focus}</span>
         <span class="maker-count">{c.filmsBy(artist.id).length} in the collection →</span>
       </a>
+      {honours.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">Festival recognition</p>
+          {honours.map((r) => <a class="aside-note aside-award" href={`/festivals/${r.festival.id}/`}><time>{awardLabel(r.award)}</time>{editionName(r.festival, r.edition)}{r.award.title && <span> · {r.award.title}</span>}</a>)}
+        </div>
+      )}
       {notes.length > 0 && (
         <div class="aside-block">
           <p class="kicker">In the journal</p>

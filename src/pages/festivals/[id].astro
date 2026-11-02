@@ -1,0 +1,190 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AwardCard from '../../components/AwardCard.astro';
+import Sources from '../../components/Sources.astro';
+import { getCollection, render } from 'astro:content';
+import { catalog, displayDate, initials, resultsDateOf, workName, RESULT_RANK } from '../../lib/catalog';
+import { PHASE_LABEL, dateRange, phaseOf, statusLine, today } from '../../lib/festival-status';
+export async function getStaticPaths() {
+  return (await getCollection('festivals')).map((festival) => ({ params: { id: festival.id }, props: { festival } }));
+}
+const { festival } = Astro.props;
+const c = await catalog();
+const d = festival.data;
+const day = today();
+const { Content } = await render(festival);
+const cover = c.festivalCover(festival);
+// The picture's credit: the festival's own artwork, else the winning film's.
+const coverFilm = !d.image && cover ? c.films.find((f) => f.data.image === cover.src) : undefined;
+const credit = d.image ? { text: d.imageCredit, href: d.imageSource } : coverFilm ? { text: coverFilm.data.imageCredit, href: coverFilm.data.imageSource } : undefined;
+const notes = c.notesOnFestival(festival.id);
+const rank = (r: { award: { result: (typeof RESULT_RANK)[number] } }) => RESULT_RANK.indexOf(r.award.result);
+// Newest edition first; each becomes a tab.
+const editions = d.editions
+  .map((edition) => {
+    const recs = c.recognitions.filter((r) => r.edition === edition);
+    const wins = recs.filter((r) => r.decisive).sort((a, b) => rank(a) - rank(b));
+    // One card per work: a film that won several categories lists them together.
+    const keyOf = (r: (typeof wins)[number]) => r.film?.id ?? r.award.title!;
+    // Honourable mentions outside the collection sit in a compact list under the cards.
+    const listed = (r: (typeof wins)[number]) => r.award.result === 'Honourable mention' && !r.film;
+    const podium = wins.filter((r) => !listed(r));
+    const cards = [...new Set(podium.map(keyOf))].map((k) => podium.filter((r) => keyOf(r) === k));
+    const phase = phaseOf(edition.milestones, wins.length > 0, day);
+    const facts = [['Brief', edition.brief], ['Eligibility', edition.eligibility], ['Prizes', edition.prizes], ['Jury', edition.jury]].filter((x): x is [string, string] => Boolean(x[1]));
+    const deadline = edition.milestones.find((m) => /deadline/i.test(m.kind) && m.date >= day);
+    return {
+      edition, wins, cards, phase, facts, deadline,
+      mentions: wins.filter(listed),
+      selections: recs.filter((r) => !r.decisive),
+      anchor: edition.label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+      summary: wins.length ? `Results published ${displayDate(resultsDateOf(edition))}` : statusLine(edition.milestones, phase, day),
+    };
+  })
+  .reverse();
+const current = editions[0];
+const entering = (current.phase === 'open' || current.phase === 'closing') && current.edition.submitUrl;
+---
+<Layout title={d.title} description={d.description} shareImage={cover ? { src: cover.src, alt: cover.alt } : undefined}>
+  <section class="artist-hero fest-hero" style={cover ? `--img:url('${cover.src}')` : undefined}>
+    {cover ? <img class="artist-hero-bg" src={cover.src} alt="" fetchpriority="high" width="1600" height="900" /> : <span class="artist-hero-mono" aria-hidden="true">{initials(d.title)}</span>}
+    <div class="artist-hero-body">
+      <p class="kicker"><a href="/festivals/">Festivals</a> · {d.type} · {d.kind}{c.isNew(d.discoveredAt) && <span class="tag-new">New</span>}</p>
+      <h1>{d.title}</h1>
+      {d.parent && <p class="artist-alias">Part of {d.parent}</p>}
+      <p class="artist-desc">{d.description}</p>
+      <div class="actions">
+        {entering && <a class="btn btn-primary" data-enter href={current.edition.submitUrl}>Enter {current.edition.label} ↗</a>}
+        <a class:list={['btn', entering ? 'btn-ghost' : 'btn-primary']} href={d.website}>Official site ↗</a>
+        {d.x && <a class="btn btn-ghost" href={d.x.url}>{d.x.label} ↗</a>}
+      </div>
+      <dl class="fact-strip">
+        <div><dt>Organiser</dt><dd>{d.organiser}</dd></div>
+        {d.sponsors && <div><dt>With</dt><dd>{d.sponsors}</dd></div>}
+        <div><dt>Held</dt><dd>{d.cadence}</dd></div>
+      </dl>
+    </div>
+    {credit?.href && <a class="slide-credit" href={credit.href}>{credit.text}</a>}
+  </section>
+
+  <div class="editions">
+    {editions.length > 1 && (
+      <div class="edition-tabs segmented" role="tablist" aria-label="Editions">
+        {editions.map((e, i) => (
+          <button type="button" role="tab" id={`tab-${e.anchor}`} aria-controls={e.anchor} aria-selected={i === 0 ? 'true' : 'false'} data-tab={e.anchor}>{e.edition.label}</button>
+        ))}
+      </div>
+    )}
+
+    {editions.map((e, i) => (
+      <section class:list={['edition-panel', i === 0 && 'is-active']} id={e.anchor} role={editions.length > 1 ? 'tabpanel' : undefined} aria-labelledby={`${e.anchor}-h`}>
+        <header class="edition-head">
+          <div class="edition-title">
+            <h2 id={`${e.anchor}-h`}>{e.edition.label}</h2>
+            <span class={`pill pill-phase-${e.phase}`} data-phase data-milestones={JSON.stringify(e.edition.milestones)} data-results={e.wins.length ? '1' : ''}>{PHASE_LABEL[e.phase]}</span>
+          </div>
+          <p class="edition-where">{e.edition.location} · {e.summary}</p>
+        </header>
+
+        {e.deadline && (e.phase === 'open' || e.phase === 'closing') && (
+          <div class="call-card" data-call>
+            <div>
+              <p class="kicker">{e.deadline.kind}</p>
+              <p class="call-date"><time datetime={e.deadline.date}>{displayDate(e.deadline.date)}</time></p>
+              {e.deadline.note && <p class="call-note">{e.deadline.note}</p>}
+            </div>
+            <div class="actions">
+              {e.edition.submitUrl && <a class="btn btn-primary" href={e.edition.submitUrl}>Enter ↗</a>}
+              {e.edition.url && <a class="btn btn-ghost" href={e.edition.url}>Read the call ↗</a>}
+            </div>
+          </div>
+        )}
+
+        {e.wins.length > 0 && (
+          <section class="edition-block" aria-label={`${e.edition.label} winners`}>
+            <h3 class="block-title">Winners</h3>
+            <div class="award-grid">
+              {e.cards.map((group, j) => <AwardCard r={group[0]} categories={group.map((r) => r.award.category)} featured={j === 0} />)}
+            </div>
+          </section>
+        )}
+
+        {[['Honourable mentions', e.mentions], ['Also selected', e.selections]].map(([title, list]) => (list as typeof e.selections).length > 0 && (
+          <section class="edition-block">
+            <h3 class="block-title">{title}</h3>
+            <ul class="selection-list">
+              {(list as typeof e.selections).map((r) => (
+                <li>
+                  <span class="selection-result">{r.award.category === r.award.result || title === 'Honourable mentions' ? r.award.category : r.award.result}</span>
+                  {r.film ? <a href={`/films/${r.film.id}/`}>{workName(r)}</a> : r.award.watchUrl ? <a href={r.award.watchUrl} rel="noopener noreferrer">{workName(r)} ↗</a> : <span>{workName(r)}</span>}
+                  <span class="selection-credit">{r.award.credit}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+
+        <div class="edition-info">
+          <section class="edition-block">
+            <h3 class="block-title">Key dates</h3>
+            <ol class="timeline">
+              {e.edition.milestones.map((m) => (
+                <li class:list={[(m.endDate ?? m.date) < day && 'is-past']}>
+                  <time datetime={m.date}>{dateRange(m)}</time>
+                  <span class="timeline-kind">{m.kind}<a class="timeline-source" href={m.source} rel="noopener noreferrer" aria-label={`Source for ${m.kind}`}>↗</a></span>
+                  {m.note && <span class="timeline-note">{m.note}</span>}
+                </li>
+              ))}
+            </ol>
+          </section>
+          {e.facts.length > 0 && (
+            <section class="edition-block">
+              <h3 class="block-title">About this edition</h3>
+              <dl class="edition-facts">
+                {e.facts.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+              </dl>
+              {e.edition.url && <p class="edition-link"><a href={e.edition.url}>Official edition page ↗</a></p>}
+            </section>
+          )}
+        </div>
+      </section>
+    ))}
+  </div>
+
+  <div class="film-body">
+    <article class="prose" data-reveal><Content /></article>
+    <aside class="film-aside" data-reveal>
+      {notes.length > 0 && (
+        <div class="aside-block">
+          <p class="kicker">In the journal</p>
+          {notes.map((u) => <a class="aside-note" href={`/journal/${u.id}/`}><time datetime={u.data.date}>{displayDate(u.data.date)}</time>{u.data.title}</a>)}
+        </div>
+      )}
+      <Sources sources={d.sources} checked={d.lastVerifiedAt} />
+    </aside>
+  </div>
+</Layout>
+<script>
+  import { PHASE_LABEL, phaseOf, today, type Milestone } from '../../lib/festival-status';
+  // The page states the build day's phases; restate them on the reader's day.
+  const day = today();
+  for (const pill of document.querySelectorAll<HTMLElement>('[data-phase]')) {
+    const milestones: Milestone[] = JSON.parse(pill.dataset.milestones!);
+    const phase = phaseOf(milestones, Boolean(pill.dataset.results), day);
+    pill.className = `pill pill-phase-${phase}`;
+    pill.textContent = PHASE_LABEL[phase];
+    const open = phase === 'open' || phase === 'closing';
+    if (!open) pill.closest('.edition-panel')?.querySelector('[data-call]')?.remove();
+    if (!open && pill.closest('.edition-panel') === document.querySelector('.edition-panel')) document.querySelector('[data-enter]')?.remove();
+  }
+
+  // Edition tabs: one edition at a time, remembered in the URL hash.
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('[data-tab]')];
+  const show = (id: string) => {
+    if (!tabs.some((t) => t.dataset.tab === id)) return;
+    for (const t of tabs) t.setAttribute('aria-selected', String(t.dataset.tab === id));
+    for (const p of document.querySelectorAll<HTMLElement>('.edition-panel')) p.classList.toggle('is-active', p.id === id);
+  };
+  for (const t of tabs) t.addEventListener('click', () => { show(t.dataset.tab!); history.replaceState(null, '', `#${t.dataset.tab}`); });
+  if (location.hash) show(location.hash.slice(1));
+</script>

@@ -2,19 +2,20 @@
 
 Editorial refresh: daily at 13:00 Europe/Madrid. Automation: `refresh-ai-film-journal`.
 X discovery review: daily at 11:00 Europe/Madrid, in a separate heartbeat. It supplies a private inbox; only the editorial refresh publishes.
+Festival watch: Monday and Thursday at 11:30 Europe/Madrid. Automation: `refresh-ai-film-festivals`. It collects festival and competition leads and publishes festival records itself; see "Festivals and competitions" below.
 
 Source conversation: AI Film Director Watch, ChatGPT ID 6a730bfe-be08-83ed-b7c6-ece6463916d7.
 Private discovery inbox: `/Users/keremk/.codex/.chatgpt-projects/g-p-6aabb55f14b8819192b8a0d2bee9108b/discovery-inbox.md`. Never copy this file into the repository or public output.
 
 ## Content-only boundary
 
-The scheduled refresh may change content/films/*.md, content/artists/*.md, content/updates/*.md, credited real assets in public/media/, README refresh summaries and editorial notes in docs/research-watchlist.md. Private tracking remains outside the repository. It must not change src/, CSS, Astro templates, components, layouts, scripts, package files, lockfiles, deployment configuration, headers or fonts. Report layout or schema/code issues for a separate explicitly requested task; do not fix them during content refreshes. Inspect the changed-file list before committing or deploying and stop on changes outside this scope or unrelated concurrent work.
+The scheduled refresh may change content/films/*.md, content/artists/*.md, content/festivals/*.md, content/updates/*.md, credited real assets in public/media/, README refresh summaries and editorial notes in docs/research-watchlist.md. Private tracking remains outside the repository. It must not change src/, CSS, Astro templates, components, layouts, scripts, package files, lockfiles, deployment configuration, headers or fonts. Report layout or schema/code issues for a separate explicitly requested task; do not fix them during content refreshes. Inspect the changed-file list before committing or deploying and stop on changes outside this scope or unrelated concurrent work.
 
 Use the existing configured `pnpm deploy:cloudflare` command to publish the exact GitHub-pushed commit to https://latentmatinee.com. Do not use Sites, its tools, its remote or .openai/hosting.json for publishing. Preserve the existing Cloudflare project, domains, DNS, redirects and audience.
 
 ## Editorial standard
 
-Select filmmakers with a sustained body of work, complete narrative shorts, or clear formal authorship. Prefer identifiable dramatic intent, visual language, performance judgment, editing and continuity over popularity, resolution or model novelty. There is no arbitrary ten-minute minimum: a substantive shorter narrative can qualify. A 15-second test, trailer, tutorial or vendor demo is not a completed narrative film. Commercial support must be disclosed when relevant. Announced features belong in a watchlist until evidence justifies a collection entry.
+Select filmmakers with a sustained body of work, complete narrative shorts, or clear formal authorship. Prefer identifiable dramatic intent, visual language, performance judgment, editing and continuity over popularity, resolution or model novelty. There is no arbitrary ten-minute minimum: a substantive shorter narrative can qualify. A 15-second test, trailer, tutorial or vendor demo is not a completed narrative film. Commercial support must be disclosed when relevant. A complete narrative commissioned, funded or produced by an AI tool maker (as Kling, Dreamina or Magnific do) is not branded content: include it on its merits and disclose the support. Announced features belong in a watchlist until evidence justifies a collection entry.
 
 Music videos are collected as their own format (`format: "Music video"`), not as narrative shorts. Include an officially released video when it has an identifiable director or credited studio and clear directorial intent: a narrative, recurring characters or a sustained visual concept cut to the song. Exclude lyric videos, visualizer loops, model-launch or sponsored capability demos and clips without a released song. Set `genre: "Music video"`; do not add music genres. Credit the song artist in `musician` exactly as the release or creator credits them; do not infer a human performer from a project identity. The production notebook, sourcing and image rules are the same as for films.
 
@@ -50,6 +51,42 @@ Do not report a journal refresh as complete solely because source links, individ
 9. Preserve packages, the lockfile and the seven-day release gate. Do not upgrade during refreshes. Do not install dependencies during scheduled refreshes; if existing dependencies are unavailable, report the concrete failure. Run pnpm check and pnpm build, inspect the content diff and rendered changed pages as needed.
 10. Write all accepted public content into this local repository and update the README refresh summary. Commit only the refresh; push that exact commit to GitHub origin first, then deploy it from the clean checkout with `pnpm deploy:cloudflare` to the existing Cloudflare Pages project latent-matinee (https://latentmatinee.com). Never publish a commit missing from GitHub. If Cloudflare is unavailable or .env credentials are missing, still complete and push independently verifiable repository content; report publication as pending. The site is PUBLIC; do not change domains, DNS, access settings or create another Pages project. The former Sites deployment is retired. Keep credentials out of files/logs/Git.
 11. Confirm deployment success (wrangler reports the deployment and https://latentmatinee.com serves the change) before reporting publication. On failure retain the commit/version and report the issue; do not mark leads published prematurely. Stay quiet when unchanged. Notify for a meaningful publication, failure, or necessary user action.
+
+## Festivals and competitions
+
+`content/festivals/` holds one Markdown file per AI film festival or competition, with its editions listed oldest first. Results live only there: artist pages ("Awards & selections"), film pages ("Festival recognition"), the Festivals index and What's New all read them. Never copy an award into a second structured place.
+
+### Listing bar
+
+List only properly organised festivals and competitions that publish their results:
+
+- a named organiser, a public call for entries or rules, and a defined jury, judging or selection process;
+- officially published results from the organiser for at least one completed edition.
+
+An AI strand of an established festival qualifies on its parent's standing (`kind: "Strand of an established festival"`, `parent`). An inaugural edition qualifies only when an established institution runs it; otherwise keep it as a private lead until it publishes official results. Exclude pay-to-enter laurel mills, monthly award mills without a programme, jury and results, hashtag campaigns and model-launch challenges without published judging. Record exclusions and their reason in research-watchlist.md. Always disclose platform or brand organisers and sponsors (`kind: "Brand or platform"`, `sponsors`; `"Foundation prize"` for a foundation-run prize such as XPRIZE; otherwise `"Independent"`). `type` is `Festival` for events built around a programme or screening, `Competition` for calls judged online.
+
+### Records
+
+- Reuse the slug of the festival's name, without a year. Name editions as the organiser does ("2026", "Season 2").
+- `milestones` contain dates the organiser published, each with a direct `source`. For a past event the organiser's pages no longer date, a reputable press report may date it; say so in the milestone `note`. Upcoming deadlines and dates always come from the organiser. Never estimate a date; leave an unannounced step out and say so in the milestone note or prose (an open call without a dated deadline shows as "Deadline not yet announced"). Change a date only after checking the organiser's current page, and note the change under a dated heading.
+- Never write a status. Entries open, Closing soon, Public voting, Happening now, Upcoming, Results pending and Results are worked out from the milestones, at build time and again in the reader's browser.
+- `submitUrl` points only to the organiser's own entry page or its official FilmFreeway listing, and needs a sourced deadline.
+- Brief, eligibility, prizes, jury and entry or shortlist counts use the organiser's wording and are attributed. A required tool is a contest rule, not evidence of what a particular film used.
+- `awards` record only results the organiser published. A maker-only claim stays attributed in the film's text. Use `credit` exactly as the organiser writes it. Link `film` when the work is in the catalogue; otherwise give its `title`. Use `artist` for an award to a person or a co-credited maker. Decisive results (Winner, Runner-up, Jury selection, Audience choice, Honourable mention) need a dated `Results`, `Ceremony` or `Screening` milestone no later than `lastVerifiedAt`; prefer the organiser's `Results` date. With a catalogue `film`, `title` may name the awarded episode or cut. Map the organiser's own ranks (Gold, Silver, Merit) onto these results and keep the organiser's label in `category`. A shortlist, finalist list, nomination or official selection is not a win.
+- When results join an existing record, set `addedAt` to the run date on each new award; that creates the What's New item.
+- Make results playable. For every award, find the work's official full release (the creator's or organiser's YouTube upload first, so it embeds; otherwise Vimeo or the organiser's player). A qualifying work becomes a catalogue film with that `watchUrl`; a work that stays outside the collection gets the official link as the award's `watchUrl`. Leave it empty only after checking the creator's channel and site, the organiser's page and a web search, and record that in research-watchlist.md.
+- Evaluate every winning work, including category winners and runners-up, under the normal inclusion standard and add qualifying films, music videos and artists in the same run. Winners of non-narrative categories (trailers, advertising, visual studies) stay title-only. Keep award notes already in film and artist prose consistent with the festival record.
+- Festival artwork needs alt text, credit and source, as film artwork does; never use a logo as artwork. Without it, the card uses the newest winning film's credited artwork automatically.
+- A new festival or a published set of results is substantive: add a journal note listing it in `festivals`, plus the discussed works in `films` and their makers in `artists`, following the journal checks above.
+
+### Festival watch run
+
+1. Read AGENTS.md and this document. Check Git status and stop on unrelated or concurrent edits. The daily refresh runs at 13:00; if the tree is dirty from the other task, stop and report the conflict.
+2. Re-check every edition that does not yet show results: official site, call for entries, FilmFreeway listing and organiser posts. Record new or changed deadlines, shortlists, voting windows, programmes, ceremony dates and results.
+3. Discover new festivals and competitions: organiser announcements, established festivals' AI strands, FilmFreeway listings, festivals named in the weekly director-watch report and catalogue artists' posts, and the private festival inbox at `/Users/keremk/.codex/.chatgpt-projects/g-p-6aabb55f14b8819192b8a0d2bee9108b/festival-inbox.md`. The daily refresh and the X discovery review append festival leads there instead of editing festival files. Apply the listing bar; never copy the inbox into the repository.
+4. Record results and add qualifying winners as films and artists.
+5. Validate, review the changed-file list, commit, push and deploy exactly as for the editorial refresh. Afterwards open https://latentmatinee.com/festivals/ and each changed festival page, and check the phase labels, dates, award rows, film cards and artist awards before reporting success. Mark inbox leads processed only after confirmed deployment.
+6. Follow the browser ownership and cleanup rules below. Stay quiet when nothing changed; notify for publication, failure or required user action.
 
 ## Browser ownership and cleanup
 

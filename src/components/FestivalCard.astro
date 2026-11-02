@@ -1,0 +1,37 @@
+---
+import type { Festival, Recognition } from '../lib/catalog';
+import { editionName, workName } from '../lib/catalog';
+import { PHASE_LABEL, phaseOf, sortKeyOf, statusLine, type Phase } from '../lib/festival-status';
+// day: the build day; the index script re-reads phase, next date and order on the reader's day.
+interface Props { festival: Festival; cover?: { src: string; alt: string; fit: string }; winners: Recognition[]; day: string; isNew?: boolean }
+const { festival, cover, winners, day, isNew = false } = Astro.props;
+const d = festival.data;
+const edition = d.editions.at(-1)!;
+const milestones = edition.milestones.map(({ kind, date, endDate }) => ({ kind, date, endDate }));
+const hasResults = winners.length > 0;
+const phase: Phase = phaseOf(milestones, hasResults, day);
+const top = winners[0];
+---
+<article
+  class="card fest-card"
+  data-type={d.type}
+  data-title={`${d.title} ${d.organiser} ${d.sponsors ?? ''} ${d.parent ?? ''} ${edition.location}`.toLowerCase()}
+  data-milestones={JSON.stringify(milestones)}
+  data-results={hasResults ? '1' : ''}
+  data-sort={sortKeyOf(milestones, phase, day)}
+>
+  <a class="card-link" href={`/festivals/${festival.id}/`}>
+    <div class:list={['card-media', cover?.fit === 'contain' && 'is-contain']} style={cover ? `--img:url('${cover.src}')` : undefined}>
+      {cover ? <img src={cover.src} alt="" loading="lazy" decoding="async" width="800" height="450" /> : <span class="title-art" aria-hidden="true">{d.title}</span>}
+      <span class="card-tags">
+        {isNew && <span class="tag-new">New</span>}
+        <span class={`pill pill-phase-${phase}`} data-phase>{PHASE_LABEL[phase]}</span>
+      </span>
+    </div>
+    <h3>{d.title}</h3>
+    <p class="card-meta">{d.type} · {edition.label} · {edition.location}</p>
+    <p class="fest-next" data-next>{hasResults && top ? `${top.award.category}: ${workName(top)}` : statusLine(milestones, phase, day)}</p>
+    {d.sponsors && <p class="fest-sponsor">With {d.sponsors}</p>}
+    <span class="sr-only">{editionName(festival, edition)}</span>
+  </a>
+</article>

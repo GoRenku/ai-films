@@ -4,6 +4,7 @@ description: "Nine music videos, a complete fan-fiction short, recurring-charact
 date: "2026-10-13"
 films: ["chromatique", "cest-de-lia", "airplane-mode", "escape-velocity", "clodyssey", "bliss", "p-doom", "seventh-reset", "stellorado", "malfoid-i-wasnt-joking", "sinuca-de-bico-cornered"]
 artists: ["extraltodeus", "anabology", "astra-blue-ai", "voxelle", "schmede", "skyebrows", "henry-daubrez"]
+festivals: ["torino-underground-cinefest-ai-visions"]
 sources: [{"label": "Claudia — original project gallery", "url": "https://claudia.gallery/"}, {"label": "Airplane Mode — full making-of", "url": "https://claudia.gallery/record/airplane-mode/readme/"}, {"label": "Torino — official awards", "url": "https://www.tucfest.com/i-premi-del-torino-underground-cinefest-2026/"}]
 ---
 

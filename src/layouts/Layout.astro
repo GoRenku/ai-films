@@ -14,6 +14,7 @@ const { latest, films, artists } = await catalog();
 const nav = [
   ['Films', '/films/'],
   ['Artists', '/artists/'],
+  ['Festivals', '/festivals/'],
   ['Latest', '/whats-new/'],
   ['Journal', '/journal/'],
 ];
@@ -57,7 +58,7 @@ const nav = [
           <p class="footer-line">Films worth watching. <em>Artists worth following.</em></p>
         </div>
         <nav aria-label="Footer">
-          <a href="/films/">Films</a><a href="/artists/">Artists</a><a href="/journal/">Journal</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><button type="button" class="analytics-choice" data-cookie-settings>Analytics choice</button>
+          <a href="/films/">Films</a><a href="/artists/">Artists</a><a href="/festivals/">Festivals</a><a href="/journal/">Journal</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><button type="button" class="analytics-choice" data-cookie-settings>Analytics choice</button>
         </nav>
         <p class="footer-meta">{workTally(films)} · {artists.length} artists · updated <time datetime={latest}>{shortDate(latest)}</time></p>
         <p class="footer-disclosure">Latent Matinee is made by the makers of <a href={RENKU_FOOTER_URL}>Renku Studio</a>, a free, open-source tool for planning films with AI agents.</p>

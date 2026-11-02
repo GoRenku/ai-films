@@ -4,6 +4,7 @@ description: "Two complete Vołkaŭ shorts, Daubrez’s disclosed previs workflo
 date: "2026-10-11"
 films: ["witchcraft", "crop-confidential", "backrooms-nemoris"]
 artists: ["daniil-volkau", "henry-daubrez", "javi-lopez"]
+festivals: ["higgsfield-global-film-festival"]
 sources: [{"label": "Witchcraft — full release", "url": "https://www.youtube.com/watch?v=A04YX5UMVMY"}, {"label": "Crop Confidential — full release", "url": "https://www.youtube.com/watch?v=hD105vi7Qos"}, {"label": "Daubrez — technical reply", "url": "https://x.com/henrydaubrez/status/2109173754563895700"}, {"label": "Lopez — production interview", "url": "https://www.youtube.com/watch?v=OxxRcagqbHU"}, {"label": "Higgsfield — shortlist announcement", "url": "https://x.com/higgsfield/status/2109002027955368258"}, {"label": "Official festival shortlist", "url": "https://higgsfield.ai/ja/contests/higgsfield-global-film-festival"}]
 ---
 

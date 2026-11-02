@@ -3,6 +3,7 @@ title: "Future Vision results: Puhm places second"
 description: "Nobody Dies on Mars earns a runner-up award; The Gifted receives backing for feature development."
 date: "2026-09-28"
 artists: ["verena-puhm"]
+festivals: ["future-vision-xprize"]
 films: []
 sources: [{"label": "XPRIZE — official results", "url": "https://www.xprize.org/news/the-gifted-wins-the-future-vision-xprize"}]
 ---

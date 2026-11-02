@@ -4,6 +4,7 @@ description: "Four film additions, three artist profiles, Pomegranate’s award 
 date: "2026-10-08"
 films: ["junkyard-king-the-other-side", "the-first-honest-day", "sitara", "looking-for-perseida", "pomegranate", "gods-dont-give-gifts"]
 artists: ["henry-daubrez", "nikolay-shestak", "abhik-banerjee", "ernest-desumbila", "zack-london"]
+festivals: ["astana-ai-film-festival"]
 sources: [{"label": "Complete JUNKYARD KING episode", "url": "https://www.youtube.com/watch?v=oa0UO-L07mw"}, {"label": "AAIFF thematic winners", "url": "https://www.instagram.com/aaiff.ai/p/DeCm8B3iMfj/"}, {"label": "AAIFF Best Concept", "url": "https://www.instagram.com/aaiff.ai/p/DeCfBOXCPv0/"}, {"label": "Fable’s awards plan", "url": "https://x.com/fableshowrunner/status/2108003714480971875"}]
 ---
 

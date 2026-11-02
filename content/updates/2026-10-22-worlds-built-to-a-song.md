@@ -4,6 +4,7 @@ description: "Five music videos, a six-episode anthology, a domestic sci-fi shor
 date: "2026-10-22"
 films: ["blurred-horizon", "psychopsypher", "any-day-now-1959", "somewhere-along-the-way", "universal-high-income", "wait-till-you-see-it", "the-toaster-rebellion", "steelay", "afahria-the-wicked-worm", "malfoid-i-wasnt-joking", "boss", "le-ciel-sous-la-peau"]
 artists: ["jeff-synthesized", "eddie-jacobson", "javiexmachina", "kelly-boesch", "anabology", "astra-blue-ai", "zack-london", "seol-woo-in", "billy-woodward", "schmede", "nexus-filmmakers", "jenny-krakovsky", "extraltodeus"]
+festivals: ["austin-ai-film-festival"]
 sources: [{"label": "Austin festival results", "url": "https://www.austinaifilmfestival.com/"}, {"label": "Original Blurred Horizon catalogue", "url": "https://www.youtube.com/@JeffSynthesized/videos"}, {"label": "PsychoPsypher complete release", "url": "https://www.youtube.com/watch?v=9AlCwkK7nNY"}, {"label": "Megabox release listing", "url": "https://www.megabox.co.kr/movie-detail?rpstMovieNo=26062100"}, {"label": "Nexus production method", "url": "https://x.com/PJaccetturo/status/2112899203701547153"}, {"label": "BBC interview", "url": "https://www.youtube.com/watch?v=gOYOVgwGyIo"}]
 ---
 

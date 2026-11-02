@@ -4,6 +4,7 @@ description: "Javi Lopez explains Nemoris’s narrative planning; Verena Puhm jo
 date: "2026-09-22"
 films: ["backrooms-nemoris"]
 artists: ["javi-lopez", "verena-puhm"]
+festivals: ["future-vision-xprize"]
 sources: [{"label": "Lopez — narrative planning", "url": "https://x.com/javilopen/status/2102194031241412678"}, {"label": "XPRIZE — official finalists", "url": "https://fvxp.moonshots.com/"}, {"label": "Puhm — credited trailer", "url": "https://www.youtube.com/watch?v=spQleIK5dLI"}]
 ---
 

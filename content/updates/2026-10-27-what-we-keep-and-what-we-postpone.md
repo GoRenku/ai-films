@@ -4,6 +4,7 @@ description: "Three music videos, two shorts, Space Pirates Episode 7 and verifi
 date: "2026-10-27"
 films: ["free-monday", "one-foot-out", "resistance-is-futile", "ato-de", "the-tool", "space-pirates", "candy"]
 artists: ["javiexmachina", "hyde-synister", "funny-story-musicals", "luke-mazey", "odair-faleco", "daniil-volkau", "henry-daubrez"]
+festivals: ["lumara-film-festival"]
 sources:
   - label: "FREE MONDAY complete original"
     url: "https://www.youtube.com/watch?v=peCHJBtkeKU"
