@@ -424,3 +424,9 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 - Corrected the WAIFF 2026 results: the organiser's prize list puts each category after its film, so Costa Verde won Best WAIFF Film and Best AI Fantasy Film.
 - Added a dated journal note, Festival winners you can watch.
 - Schema, pages, styles and docs changed in this explicitly requested task; packages and deployment configuration unchanged.
+
+### November 2 — daily editorial additions
+
+- Preserved the existing Festivals section, all fourteen festival records and today's Festival winners you can watch journal; extended that journal with its prior eleven film/artist references and fourteen festival references intact. It now has fourteen works and fifteen credited artist profiles.
+- Added [The Toy Mender](content/films/the-toy-mender.md), Kelly Boesch's complete two-minute short, with real original artwork, Seedance disclosure and Dreamina creative-partner context. Added Malfoid's complete I Was Joking Part Five, with its original title, 3:12 runtime, twelve caption variants and maker's confidante-writing account.
+- Added Obliteration's newly disclosed visual starting point and JeffTriesThings' four-clip, 39-frame overlap technique. Unknown versions, credits and painting attribution remain explicit; no demo becomes an extra film or music-video card. Content/media/editorial notes only; no festival, application, dependency or deployment setup changes.
