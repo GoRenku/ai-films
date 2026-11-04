@@ -1,7 +1,7 @@
 ---
 title: "Gods Don’t Give Gifts"
 artist: "zack-london"
-description: "The official trailer announces December 4 for Gossip Goblin’s science-fiction anthology; individual cinema bookings remain unverified."
+description: "Gossip Goblin’s science-fiction anthology has a December 4 general-release announcement and a November 10 advance screening in Los Angeles."
 year: 2026
 format: "Feature"
 genre: "Science-fiction anthology"
@@ -10,28 +10,8 @@ watchUrl: "https://godsdontgivegifts.com/"
 watchLabel: "Official film & screening updates"
 order: 5
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-23"
-sources:
-  - label: "Fable Showrunner — awards submission plan"
-    url: "https://x.com/fableshowrunner/status/2108003714480971875"
-  - label: "More Horror — reported release runtime"
-    url: "https://www.morehorror.com/post/gods-dont-give-gifts-ai-generated-horror-movie"
-  - label: "Official October 6 trailer — December 4 announcement"
-    url: "https://www.youtube.com/watch?v=1G5LArU7tmE"
-  - label: "October 7 production scope"
-    url: "https://x.com/Gossip_Goblin/status/2107741745358508486"
-  - label: "Gossip Goblin — September 30 winter release announcement"
-    url: "https://x.com/Gossip_Goblin/status/2105392789580284037"
-  - label: "Gossip Goblin — first teaser, September 28"
-    url: "https://x.com/Gossip_Goblin/status/2104599338471374983"
-  - label: "Official film — current city and screening status"
-    url: "https://godsdontgivegifts.com/"
-  - label: "Gossip Goblin — official studio"
-    url: "https://www.gossipgoblin.studio/"
-  - label: "Chris Branch — creator interview announcement and credits"
-    url: "https://www.linkedin.com/posts/chris-branch-live_the-first-ai-film-in-theatres-live-interview-activity-7486395260286418944-z4La"
-  - label: "Creator AGC distribution announcement"
-    url: "https://x.com/Gossip_Goblin/status/2113306179296448727"
+lastVerifiedAt: "2026-11-04"
+sources: [{"label": "Fable Showrunner — awards submission plan", "url": "https://x.com/fableshowrunner/status/2108003714480971875"}, {"label": "More Horror — reported release runtime", "url": "https://www.morehorror.com/post/gods-dont-give-gifts-ai-generated-horror-movie"}, {"label": "Official October 6 trailer — December 4 announcement", "url": "https://www.youtube.com/watch?v=1G5LArU7tmE"}, {"label": "October 7 production scope", "url": "https://x.com/Gossip_Goblin/status/2107741745358508486"}, {"label": "Gossip Goblin — September 30 winter release announcement", "url": "https://x.com/Gossip_Goblin/status/2105392789580284037"}, {"label": "Gossip Goblin — first teaser, September 28", "url": "https://x.com/Gossip_Goblin/status/2104599338471374983"}, {"label": "Official film — current city and screening status", "url": "https://godsdontgivegifts.com/"}, {"label": "Gossip Goblin — official studio", "url": "https://www.gossipgoblin.studio/"}, {"label": "Chris Branch — creator interview announcement and credits", "url": "https://www.linkedin.com/posts/chris-branch-live_the-first-ai-film-in-theatres-live-interview-activity-7486395260286418944-z4La"}, {"label": "Creator AGC distribution announcement", "url": "https://x.com/Gossip_Goblin/status/2113306179296448727"}, {"label": "Maker advance-screening invitation", "url": "https://x.com/Gossip_Goblin/status/2117688344012525707"}, {"label": "FBRC.AI screening listing and access conditions", "url": "https://luma.com/dewrl4jn"}]
 production:
   - label: "Feature team and duration"
     detail: "The maker reports two writers, eleven voice actors, four composers, nine core creatives and a five-person post-production team including a foley artist, with more than nine months of work. These categories may overlap; no total headcount is inferred."
@@ -78,3 +58,9 @@ The [new official trailer](https://www.youtube.com/watch?v=1G5LArU7tmE) describe
 ## October 23 — announced distribution partnership
 
 In the [October 22 creator announcement](https://x.com/Gossip_Goblin/status/2113306179296448727), Gossip Goblin says the production is teaming with **AGC** to bring the film to screens around the world. **December 4** remains the announced theatrical date. This adds distribution context, not confirmation that every territory or cinema has booked the film; specific local access remains unverified here.
+
+## November 4 — a dated Los Angeles screening
+
+The maker's November 3 invitation now links to **FBRC.AI's organiser listing** for a **November 10 private fan screening at AMC Century City 15, Los Angeles**. The listing says doors at 7 p.m. and the film at **8 p.m. PST**; its broader event block runs 7:30–10:30 p.m. Those are different event timings, not a changed general release date.
+
+At the November 4 check the event is **full, with a waitlist**. The organiser explicitly says seating is first come, first served and an RSVP does not guarantee admission. The film's December 4 general-release announcement remains in place; this advance screening does not make it an anonymously available stream or an unrestricted public screening. No registration was submitted.

@@ -2,9 +2,9 @@
 title: "Worlds behind the interface"
 description: "An Almaty science-fiction short, a school-year documentary, four song-videos and new serial and shot-making notes."
 date: "2026-11-04"
-films: ["alma-the-nomad-saga", "what-do-you-want-to-be", "aero", "upgraded-2", "the-app-says-wait", "vibe-check", "afahria-the-wicked-worm", "malfoid-i-wasnt-joking", "treasure-of-the-himalayas", "chumbo"]
-artists: ["riz-esentaev", "magnific-studios", "gavin-purcell", "anabology", "noiradevil", "astra-blue-ai", "skyebrows", "billy-woodward", "schmede", "christopher-gwinn", "contanimation"]
-sources: [{"label": "ALMA full release", "url": "https://www.youtube.com/watch?v=psDurxghQ8Q"}, {"label": "ALMA studio credits", "url": "https://x.com/magnific/status/2117651914557145387"}, {"label": "Full documentary", "url": "https://www.youtube.com/watch?v=TzT9lNPaVXI"}, {"label": "AERO production record", "url": "https://claudia.gallery/record/aero/readme/"}, {"label": "Upgraded 2 full release", "url": "https://www.youtube.com/watch?v=57Bzpl21-KQ"}, {"label": "THE APP SAYS WAIT", "url": "https://x.com/AstrablueAI/status/2117639277375046050"}, {"label": "Vibe Check full release", "url": "https://www.youtube.com/watch?v=irD-RQvOjUQ"}, {"label": "Afahria Episode 3", "url": "https://www.youtube.com/watch?v=OblhVYS0MKU"}, {"label": "Malfoid Part 6", "url": "https://www.youtube.com/watch?v=FBUEjD453KE"}, {"label": "Part Three announcement", "url": "https://x.com/ChrisGwinnLA/status/2117775971927621645"}, {"label": "CHUMBO shot breakdown", "url": "https://x.com/Cont_animation/status/2117744830298431931"}]
+films: ["alma-the-nomad-saga", "what-do-you-want-to-be", "aero", "upgraded-2", "the-app-says-wait", "vibe-check", "afahria-the-wicked-worm", "malfoid-i-wasnt-joking", "treasure-of-the-himalayas", "gods-dont-give-gifts", "chumbo"]
+artists: ["riz-esentaev", "magnific-studios", "gavin-purcell", "anabology", "noiradevil", "astra-blue-ai", "skyebrows", "billy-woodward", "schmede", "christopher-gwinn", "zack-london", "contanimation"]
+sources: [{"label": "ALMA full release", "url": "https://www.youtube.com/watch?v=psDurxghQ8Q"}, {"label": "ALMA studio credits", "url": "https://x.com/magnific/status/2117651914557145387"}, {"label": "Full documentary", "url": "https://www.youtube.com/watch?v=TzT9lNPaVXI"}, {"label": "AERO production record", "url": "https://claudia.gallery/record/aero/readme/"}, {"label": "Upgraded 2 full release", "url": "https://www.youtube.com/watch?v=57Bzpl21-KQ"}, {"label": "THE APP SAYS WAIT", "url": "https://x.com/AstrablueAI/status/2117639277375046050"}, {"label": "Vibe Check full release", "url": "https://www.youtube.com/watch?v=irD-RQvOjUQ"}, {"label": "Afahria Episode 3", "url": "https://www.youtube.com/watch?v=OblhVYS0MKU"}, {"label": "Malfoid Part 6", "url": "https://www.youtube.com/watch?v=FBUEjD453KE"}, {"label": "Part Three announcement", "url": "https://x.com/ChrisGwinnLA/status/2117775971927621645"}, {"label": "CHUMBO shot breakdown", "url": "https://x.com/Cont_animation/status/2117744830298431931"}, {"label": "Gods Don’t Give Gifts organiser screening listing", "url": "https://luma.com/dewrl4jn"}]
 ---
 
 ## A small object opens a large world
@@ -28,6 +28,10 @@ sources: [{"label": "ALMA full release", "url": "https://www.youtube.com/watch?v
 **[Afahria](/films/afahria-the-wicked-worm/)** adds Billy Woodward's complete Episode 3, Essence of Murk. **[Malfoid](/films/malfoid-i-wasnt-joking/)** adds schmede's Part 6, Nobody's That Good, and the corrected official main-story playlist that avoids repeated viewing of combined cuts. Both guides retain their first playable starting links and earlier credit scopes.
 
 **[Treasure of the Himalayas](/films/treasure-of-the-himalayas/)** records Christopher Gwinn's November 7 Part Three announcement as coming soon. It is not represented as a released chapter.
+
+## A confirmed advance screening
+
+**[Gods Don't Give Gifts](/films/gods-dont-give-gifts/)** now has a maker-linked FBRC.AI listing for November 10 at AMC Century City 15 in Los Angeles. The organiser says the film begins at 8 p.m. PST. The event is full with a waitlist and no guaranteed admission; the advance event does not replace [Zack London](/artists/zack-london/)'s announced general-release date.
 
 ## How a kiss is staged
 
