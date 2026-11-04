@@ -1,7 +1,7 @@
 ---
 title: "Afahria — The Wicked Worm"
 artist: "billy-woodward"
-description: "A dark-fantasy family-pub sitcom with two complete episodes and a disclosed Showrunner / Fable production partnership."
+description: "A dark-fantasy family-pub sitcom with three complete episodes and a disclosed Showrunner / Fable production partnership."
 year: 2026
 format: "Series"
 genre: "Dark fantasy comedy · series episode"
@@ -9,8 +9,8 @@ status: "Watch now"
 watchUrl: "https://x.com/billywoodward/status/2107537407629197618"
 watchLabel: "Watch Episode 1 on X"
 discoveredAt: "2026-10-07"
-lastVerifiedAt: "2026-10-22"
-sources: [{"label": "Original complete episode", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Two-location blocking", "url": "https://x.com/billywoodward/status/2107548721294753898"}, {"label": "Preproduction", "url": "https://x.com/billywoodward/status/2107549926162858347"}, {"label": "Family-pub premise", "url": "https://x.com/billywoodward/status/2107552186364555629"}, {"label": "Production partnership", "url": "https://x.com/billywoodward/status/2107553062839529690"}, {"label": "Episode 2 complete release", "url": "https://x.com/billywoodward/status/2112927769503883399"}, {"label": "Blocking sheets and prompting", "url": "https://x.com/billywoodward/status/2112940085297521096"}, {"label": "Camera treatment", "url": "https://x.com/billywoodward/status/2112984730794909848"}, {"label": "Pronunciation example", "url": "https://x.com/billywoodward/status/2112996960151994444"}]
+lastVerifiedAt: "2026-11-04"
+sources: [{"label": "Original complete episode", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Two-location blocking", "url": "https://x.com/billywoodward/status/2107548721294753898"}, {"label": "Preproduction", "url": "https://x.com/billywoodward/status/2107549926162858347"}, {"label": "Family-pub premise", "url": "https://x.com/billywoodward/status/2107552186364555629"}, {"label": "Production partnership", "url": "https://x.com/billywoodward/status/2107553062839529690"}, {"label": "Episode 2 complete release", "url": "https://x.com/billywoodward/status/2112927769503883399"}, {"label": "Blocking sheets and prompting", "url": "https://x.com/billywoodward/status/2112940085297521096"}, {"label": "Camera treatment", "url": "https://x.com/billywoodward/status/2112984730794909848"}, {"label": "Pronunciation example", "url": "https://x.com/billywoodward/status/2112996960151994444"}, {"label": "Episode 3 complete release", "url": "https://www.youtube.com/watch?v=OblhVYS0MKU"}, {"label": "Episode 3 maker announcement", "url": "https://x.com/billywoodward/status/2117664342900449476"}]
 production: [{"label": "Production partnership", "detail": "Produced in partnership with Showrunner / Fable, according to Woodward. Individual crew roles, budget and model versions are not disclosed in the checked thread.", "source": "https://x.com/billywoodward/status/2107553062839529690"}, {"label": "Blocking and locations", "detail": "The creator describes a sitcom staged in two locations; location and blocking consistency across generations were his biggest challenge.", "source": "https://x.com/billywoodward/status/2107548721294753898"}, {"label": "Preproduction", "detail": "He created characters, props, environments and variations before generation to streamline production.", "source": "https://x.com/billywoodward/status/2107549926162858347"}, {"label": "Episode 2 production", "detail": "Woodward describes script, design, music reworking, editing and finishing; thanks Dreamina and Invideo. Blocking uses environment sheets, Claude-assisted prompts and references. No exact model versions, total budget or audited crew count is disclosed.", "source": "https://x.com/billywoodward/status/2112927769503883399"}]
 image: "/media/afahria-the-wicked-worm.jpg"
 imageAlt: "The fantastical pub ensemble in ornate Afahria release artwork"
@@ -33,6 +33,15 @@ episodes:
     status: "Watch now"
     watchUrl: "https://x.com/billywoodward/status/2112927769503883399"
     source: "https://x.com/billywoodward/status/2112927769503883399"
+  - number: 3
+    title: "Essence of Murk"
+    synopsis: "Gerald clashes with Gorm over the worm stash while MaryAnn tries to replace the birthday cake."
+    releasedOn: "2026-11-03"
+    addedAt: "2026-11-04"
+    runtimeMinutes: 2.783333333333333
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=OblhVYS0MKU"
+    source: "https://www.youtube.com/watch?v=OblhVYS0MKU"
 ---
 
 **Episode 1: The Wicked Worm** was published by Billy Woodward on October 6. The original X video plays for approximately **3 minutes 34 seconds**. This is a complete titled episode, not a trailer or a model demonstration.
@@ -54,3 +63,9 @@ The production partnership and preparation techniques are attributed to the crea
 Woodward describes his script, character design, original music reworking, editing and finishing, and thanks Dreamina and Invideo without giving exact models or their full allocation. In the [blocking reply](https://x.com/billywoodward/status/2112940085297521096), he describes environment sheets containing character positions, Claude-assisted prompting and repeated references. A [further explanation](https://x.com/billywoodward/status/2112984730794909848) uses an opening close-up followed by a wide view to stop the environment plate dictating every opening frame. A [dialogue example](https://x.com/billywoodward/status/2112996960151994444) uses phonetic spelling to correct pronunciation.
 
 These are attributed, work-specific methods. Named tools and a broad single-artist account do not establish an audited whole-crew total or budget. The new complete player and source thread were checked.
+
+## November 4 — Essence of Murk
+
+The complete **Episode 3**, released November 3, runs **2:47** in its current original player. Gerald's fight with Gorm over worms and MaryAnn's attempt to replace the birthday cake continue the same ensemble obligations. The expanded official description credits Billy Woodward and the Showrunner partnership without establishing new exact generation models or a full crew. Earlier episode-specific tool disclosures remain scoped to those episodes.
+
+The series still starts with Episode 1. Original release post, full description and sampled current playback were checked.

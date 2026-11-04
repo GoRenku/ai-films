@@ -434,3 +434,9 @@ All 47 verified artist X profiles checked, including Extraltodeus and anabology.
 ## November 3, 2026 refresh
 
 Added Daniella Raphael and the complete 8:52 first episode of Dr. Jekyll and Mr. Hyde; Bon débarras (Good Riddance!), the 3:11 ClaudiaGI music video; and Gossip Goblin’s The Rise of Zobo Zanzada (2:26). Each has original release artwork and scoped production facts. Existing Absurd, Extraltodeus and Zack London profiles now link the works; anabology’s notebook adds the attributed Seedance 2.5 isolated-vocal method. A new dated journal explicitly references all three works and five represented creators/studios. The November 2 festival report and all festival records remain unchanged.
+
+## November 4, 2026 refresh
+
+Added six complete releases: ALMA: The Nomad Saga (10:43) and filmmaker Riz Esentaev; Gavin Purcell’s What Do You Want to Be? (36:19); AERO / Touch Glass (3:19.7); NoiraDEVIL’s Upgraded 2 (4:02) and a verified artist profile; THE APP SAYS WAIT (3:18); and Vibe Check (2:11, corrected upload). Each has inspected original artwork, direct sources, an authored inclusion rationale and scoped production facts. ALMA’s conflicting original credits and AERO’s partial API list-price accounting stay explicit.
+
+Added Afahria Episode 3, Malfoid Part 6 and its corrected viewing-order playlist, Treasure of the Himalayas Part Three as coming soon, and CHUMBO’s four-reference / 17-second Seedance Pro 2.5 shot breakdown. The dated journal explicitly references all ten works and eleven represented creators/studios. Earlier journals and all fourteen festival records remain intact. No application, styling, dependency, lockfile or deployment setup changes.

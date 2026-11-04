@@ -5,8 +5,8 @@ website: "https://x.com/AstrablueAI"
 focus: "Speculative music-video storytelling"
 x: {"url": "https://x.com/AstrablueAI", "label": "Astra Blue AI on X", "source": "https://x.com/AstrablueAI/status/2109639386178650416"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-28"
-sources: [{"label": "P DOOM — original release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}, {"label": "Wait Till You See It original release", "url": "https://www.youtube.com/watch?v=YZGLA_F_UGw"}, {"label": "What Am I To You original complete release", "url": "https://www.youtube.com/watch?v=y5mkdjG9xtA"}, {"label": "Creator on lyric direction", "url": "https://x.com/AstrablueAI/status/2114226080169304246"}, {"label": "Creator on work and Claude", "url": "https://x.com/AstrablueAI/status/2114018141051515075"}, {"label": "Creator on per-video prompting", "url": "https://x.com/AstrablueAI/status/2114255799312920912"}, {"label": "Complete release and work-specific credits", "url": "https://www.youtube.com/watch?v=W-HTU4Inzbg"}]
+lastVerifiedAt: "2026-11-04"
+sources: [{"label": "P DOOM — original release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}, {"label": "Wait Till You See It original release", "url": "https://www.youtube.com/watch?v=YZGLA_F_UGw"}, {"label": "What Am I To You original complete release", "url": "https://www.youtube.com/watch?v=y5mkdjG9xtA"}, {"label": "Creator on lyric direction", "url": "https://x.com/AstrablueAI/status/2114226080169304246"}, {"label": "Creator on work and Claude", "url": "https://x.com/AstrablueAI/status/2114018141051515075"}, {"label": "Creator on per-video prompting", "url": "https://x.com/AstrablueAI/status/2114255799312920912"}, {"label": "Complete release and work-specific credits", "url": "https://www.youtube.com/watch?v=W-HTU4Inzbg"}, {"label": "New full original", "url": "https://x.com/AstrablueAI/status/2117639277375046050"}]
 ---
 
 Astra Blue AI is the public releasing project behind [P DOOM](/films/p-doom/). The account identifies itself as a slopcore artist. Its public project identity is used here without guessing an operator’s legal name or a human singer.
@@ -36,3 +36,7 @@ The release claims twelve hours of unattended production. It does not identify a
 ## October 28 — a new complete release
 
 [Who Gets Tomorrow](/films/who-gets-tomorrow/) gives the recurring performer a new complete song about work and access to an imagined future. Its chaptered structure is verified; its broad Super Intelligence framing still does not establish exact generation models or a human singer.
+
+## November 4 — THE APP SAYS WAIT
+
+[THE APP SAYS WAIT](/films/the-app-says-wait/) adds a complete 3:18 November 3 release, using the recurring performer and institutional/interface imagery to turn reassuring system language into unease. Its news-like premise is not independently verified reporting, and broad Super Intelligence framing still supplies no exact tool inventory.

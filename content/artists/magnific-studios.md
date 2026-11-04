@@ -5,8 +5,8 @@ focus: "Character continuity, intimate performance and disclosed production work
 website: "https://www.magnific.com/originals"
 x: {"url": "https://x.com/magnific", "label": "Magnific on X", "source": "https://www.magnific.com/originals/candela"}
 discoveredAt: "2026-10-05"
-lastVerifiedAt: "2026-10-28"
-sources: [{"label": "Original film and studio credits", "url": "https://www.magnific.com/originals/candela"}, {"label": "Original shot-generation making-of", "url": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Original music making-of", "url": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}, {"label": "Roots original full release", "url": "https://www.magnific.com/originals/roots"}, {"label": "Patricia Camuñas credit and complete presentation", "url": "https://x.com/magnific/status/2114356446615974273"}, {"label": "Original model roles and reference-free video account", "url": "https://x.com/magnific/status/2114402169017573381"}, {"label": "Separate poster workflow", "url": "https://x.com/magnific/status/2114402220804551017"}, {"label": "Complete release and work-specific credits", "url": "https://www.magnific.com/originals/smoke"}]
+lastVerifiedAt: "2026-11-04"
+sources: [{"label": "Original film and studio credits", "url": "https://www.magnific.com/originals/candela"}, {"label": "Original shot-generation making-of", "url": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Original music making-of", "url": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}, {"label": "Roots original full release", "url": "https://www.magnific.com/originals/roots"}, {"label": "Patricia Camuñas credit and complete presentation", "url": "https://x.com/magnific/status/2114356446615974273"}, {"label": "Original model roles and reference-free video account", "url": "https://x.com/magnific/status/2114402169017573381"}, {"label": "Separate poster workflow", "url": "https://x.com/magnific/status/2114402220804551017"}, {"label": "Complete release and work-specific credits", "url": "https://www.magnific.com/originals/smoke"}, {"label": "ALMA full original", "url": "https://www.youtube.com/watch?v=psDurxghQ8Q"}, {"label": "ALMA studio credit thread", "url": "https://x.com/magnific/status/2117651914557145387"}]
 ---
 
 Magnific Studios is the in-house filmmaking team credited on **Candela**. Its releases and making-of material come from the same company that supplies the production platform; that relationship matters when weighing its process claims.
@@ -30,3 +30,7 @@ The [production thread](https://x.com/magnific/status/2114402169017573381) names
 ## October 28 — a new complete release
 
 [SMOKE](/films/smoke/) adds a complete drama and unusually detailed named team: Mario Alonso writes/directs from Rosa Quesada’s idea, with Marina Rueda on AI visuals, editing and sound. The public production page separates Seedance 2.5 Pro video, Nano Banana 2 4K references and ElevenLabs SFX, and explains screen positions, group-scale references and targeted multishot repairs.
+
+## November 4 — ALMA and the Creative Hub
+
+[ALMA: The Nomad Saga](/films/alma-the-nomad-saga/) is written and directed by [Riz Esentaev](/artists/riz-esentaev/), from Magnific Creative Hub and powered by Magnific. The named team and platform-backed context are preserved. The original YouTube description and X thread differ on AI-artist and sound credits; the film page documents both accounts without merging them into an invented final crew.
