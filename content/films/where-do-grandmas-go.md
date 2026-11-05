@@ -24,3 +24,5 @@ imageSource: "https://aif.runwayml.com/screening-room"
 Its scale is intimate. The central device is a child’s interpretation of something difficult to understand, allowing imaginative imagery to serve an emotional perspective. It is worth examining how transitions connect that inner world to the question that starts the story.
 
 The complete short is included in AIF’s screening room.
+
+[BIFAN’s 2024 results](https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13) confirm the short won Best AI Film in the first Bucheon Choice AI Films competition.

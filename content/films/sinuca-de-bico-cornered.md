@@ -37,3 +37,7 @@ The linked full release provides the credits above. Exact generation models, pra
 ## Torino recognition
 
 The [festival’s October 5 results](https://www.tucfest.com/i-premi-del-torino-underground-cinefest-2026/) confirm **Sinuca de Bico (Cornered), by Odair Faléco and Davi Moori**, won **Miglior Corto in IA** (Best AI Short) at the thirteenth Torino Underground Cinefest. The awards were announced at the October 4 close. Faléco shared the result again October 12; that post is not a new film premiere. This is a category-specific recognition, not the festival’s overall Best Film award.
+
+## Bucheon recognition
+
+[BIFAN’s July 6 results](https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1) name *Cornered* Best AI Film in Bucheon Choice AI Films, crediting Odair Faléco and Davi Moori.

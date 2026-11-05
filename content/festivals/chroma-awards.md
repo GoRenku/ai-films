@@ -9,9 +9,10 @@ cadence: "Annual"
 website: "https://chromaawards.com/"
 x: {url: "https://x.com/chromaawards", label: "@chromaawards on X", source: "https://x.com/chromaawards"}
 discoveredAt: "2026-11-02"
-lastVerifiedAt: "2026-11-02"
+lastVerifiedAt: "2026-11-05"
 sources:
   - {label: "Official site, rules and Season 2 timeline", url: "https://chromaawards.com/"}
+  - {label: "Season 2 official rules", url: "https://chromaawards.com/terms"}
   - {label: "Official winners gallery", url: "https://watch.chromaawards.com/"}
   - {label: "ElevenLabs Season 2 announcement", url: "https://elevenlabs.io/blog/chroma-awards-season-two-announcement"}
   - {label: "No Film School on Season 1 dates", url: "https://nofilmschool.com/elevenlabs-chroma-awards"}
@@ -42,7 +43,7 @@ editions:
     prizes: "A cash and travel prize pool of more than $450,000, according to the organiser."
     milestones:
       - {kind: "Entries open", date: "2026-10-19", source: "https://elevenlabs.io/blog/chroma-awards-season-two-announcement"}
-      - {kind: "Deadline", date: "2027-01-07", note: "11:45 pm PT. The ElevenLabs announcement also says entries are open until January 1, 2027; check the official site before entering", source: "https://x.com/chromaawards"}
+      - {kind: "Deadline", date: "2027-01-07", note: "11:45 pm PT, confirmed in the official rules", source: "https://chromaawards.com/terms"}
       - {kind: "Shortlist", date: "2027-01-08", endDate: "2027-01-21", note: "Shortlisting", source: "https://x.com/chromaawards"}
       - {kind: "Voting opens", date: "2027-01-21", note: "Public voting and judging, finalists only", source: "https://x.com/chromaawards"}
       - {kind: "Voting closes", date: "2027-02-11", source: "https://x.com/chromaawards"}
@@ -59,4 +60,8 @@ Judging ran in three rounds, with a panel per category, and ranked results are p
 
 ## Season 2
 
-Entries opened on October 19, 2026. The official site gives a January 7, 2027 deadline, while the ElevenLabs announcement also mentions January 1; entrants should confirm on the official site. Finalists go to a public vote and jury judging, with winners announced on a February 11 livestream and an in-person gala planned for April 2027.
+Entries opened on October 19, 2026. The official rules and FAQ agree that entries close on January 7, 2027 at 11:45 p.m. Pacific time. Finalists go to a public vote and jury judging, with winners announced on a February 11 livestream and an in-person gala planned for April 2027.
+
+### November 5, 2026
+
+The published rules and FAQ both confirm January 7 as the submission deadline, resolving the January 1 date in the earlier ElevenLabs announcement.

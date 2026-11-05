@@ -24,3 +24,5 @@ imageSource: "https://aif.runwayml.com/screening-room"
 An essay needs an argument that survives its imagery. This is worth studying for the way a finite visual system can suggest an overwhelming field of possible meanings. The interest is in the selection and sequence: why this image follows that one, and what the juxtaposition asks us to think.
 
 AIF lists the 9:28 film as its 2025 Grand Prix winner and provides it in the screening room.
+
+[BIFAN’s 2025 results](https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1) give the film a Jury’s Special Mention in Bucheon Choice AI Films.

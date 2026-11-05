@@ -584,3 +584,9 @@ Listing bar: properly organised festivals and competitions with a named organise
 - Broadened through Magnific Creative Hub’s original site and release team. No festival records are edited by this daily run. All earlier festival coverage and journal references remain intact.
 
 - Screening card resolution: the fully loaded maker post https://x.com/Gossip_Goblin/status/2117688344012525707 identifies Gods Don’t Give Gifts in its artwork and links FBRC.AI’s https://luma.com/dewrl4jn . Original organiser listing checked: November 10 at AMC Century City 15, film 8 p.m. PST, doors 7 p.m., event block 7:30–10:30 p.m.; currently full/waitlist, first-come seating and RSVP no guarantee. Added an attributed film/artist/journal exhibition note while preserving the general-release announcement and all earlier journal material. No registration or account change.
+
+## November 5, 2026 — festival watch
+
+- Accepted Bucheon Choice AI Films using the published BIFAN rules, jury criteria and 2024–2026 results. Cornered, Where Do Grandmas Go When They Get Lost? and Total Pixel Space reuse existing slugs. More Tears Than Harm has a director-linked player and official Runway artwork.
+- Full releases remain unverified for Snowfall, Latex Kid, One More Pumpkin, Last Dream, Confession, Mold, Big Ball, Let There Be Light and Ask Me Anything. Festival listings establish screenings and credits. The Fran Gas Vimeo is a teaser, the Studio Freewillusion link is labelled a showreel, Takeshi Kushida’s Vimeo is a trailer, Hiromu Takahashi’s public promotion includes a trailer, and SOAK’s Ask Me Anything upload is an excerpt. These links are not full-release substitutes.
+- Chroma rules and FAQ agree on January 7 at 11:45 p.m. PT. Torino’s FilmFreeway listing gives August 9 as the final deadline. The August 16 date in the rules applies to screening copies.
