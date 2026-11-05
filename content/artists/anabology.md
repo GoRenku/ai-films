@@ -66,3 +66,8 @@ This reinforces the distinction between the audio that guides mouth movement and
 ## November 4 — AERO / Touch Glass
 
 [AERO (Touch Glass)](/films/aero/) turns a recreated Vista desktop into a complete 3:19.7 song-video. The newly published work-specific notebook credits anabology with direction and Claude with production, while documenting human revisions, exact image/video models, Blender passages and scoped API list-price costs. The original X clarification explicitly rejects a one-shot account of the first half.
+
+
+## Claudia becomes a castable character
+
+On November 4, anabology announced that Claudia could be cast through Glif. Glif describes the accompanying video as a debut trailer made on its platform. This is a distribution and casting development for the recurring synthetic performer. Financial terms and any completed productions commissioned through the arrangement remain undisclosed. [Creator announcement and Glif release](https://x.com/anabology/status/2118026755726258247)

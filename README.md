@@ -444,3 +444,8 @@ Added Afahria Episode 3, Malfoid Part 6 and its corrected viewing-order playlist
 ## November 5, 2026 festival refresh
 
 Added BIFAN’s Bucheon Choice AI Films strand and the organiser’s 2024–2026 results, plus More Tears Than Harm and filmmaker Herinarivo Rakotomanana. Confirmed Chroma’s January 7 deadline in its official rules and added the exact Torino AI Visions dates from the festival’s FilmFreeway listing.
+
+
+## November 5 editorial refresh
+
+Added Ça tourne ! by Extraltodeus, credited to the ClaudiaGI music project, with the original artwork and the maker’s explanation of Claude’s role. Updated anabology’s profile with Glif’s Claudia casting announcement. The journal note is Turning and casting.
