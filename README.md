@@ -449,3 +449,7 @@ Added BIFAN’s Bucheon Choice AI Films strand and the organiser’s 2024–2026
 ## November 5 editorial refresh
 
 Added Ça tourne ! by Extraltodeus, credited to the ClaudiaGI music project, with the original artwork and the maker’s explanation of Claude’s role. Updated anabology’s profile with Glif’s Claudia casting announcement. The journal note is Turning and casting.
+
+## November 6, 2026 editorial refresh
+
+Added Earth Fall 2763, four Thousand Words FilmS entries with both River Mother and Tall Beasts installments, and The Last Nursery of Elderwall. Added profiles for Domain Filmes A.I, Thousand Words FilmS and LedertsWorld Studios, with original release artwork and source links. The journal note is Worlds with consequences.
