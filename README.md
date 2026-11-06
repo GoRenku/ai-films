@@ -459,3 +459,7 @@ Added Earth Fall 2763, four Thousand Words FilmS entries with both River Mother 
 - Reconciled the existing award rows across the festival collection. Added 30 films and 29 credited filmmaker or studio profiles across seven festival records, including nine Bucheon films with official programme stills.
 - Updated the festival watch to apply daily discovery and signed-out Chrome Incognito checks to new and historical results. Verified festival screenings can enter the catalogue with credited artwork while public full-film playback is unverified.
 - Documented remaining evidence gaps and exclusions in the research watchlist. The [backfill journal](content/updates/2026-11-06-festival-winners-backfill.md) highlights six additions.
+
+## November 6, 2026 Gossip Goblin credits
+
+Added the sourced Gods Don’t Give Gifts cast and crew breakdown to Zack London’s profile, surfaced Pomegranate there, and added the short’s voice, animation and post-production notes. The journal note is The people behind Gossip Goblin.
