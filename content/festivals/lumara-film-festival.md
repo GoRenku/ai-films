@@ -32,10 +32,10 @@ editions:
       - {category: "Grand Prize", result: "Winner", film: "candy", credit: "Jiaze Li (@DiDi_OKK)", source: "https://x.com/AskVenice/status/2116243937744875615"}
       - {category: "Jury Selection", result: "Runner-up", film: "mianmian", credit: "Yingjie Chen", source: "https://lumarafilmfestival.com/"}
       - {category: "Serenissima Award (made with Venice)", result: "Winner", film: "black-thunder", credit: "Ryan Lightbourn", source: "https://lumarafilmfestival.com/"}
-      - {category: "Terminal Award (experimental)", result: "Winner", title: "REVIVER", credit: "Aleksey Dor", watchUrl: "https://www.youtube.com/watch?v=JnqUjIW55kM&t=790s", embeddable: false, source: "https://lumarafilmfestival.com/"}
+      - {"category": "Terminal Award (experimental)", "result": "Winner", "credit": "Aleksey Dor", "source": "https://lumarafilmfestival.com/", "film": "reviver-aleksey-dor"}
       - {category: "Get Shorty Award (under two minutes)", result: "Winner", film: "ato-de", credit: "Luke Mazey", source: "https://lumarafilmfestival.com/"}
       - {category: "Mouse Award (young audiences)", result: "Winner", film: "fix", credit: "Eunha Lee, Sora Lee & Hakhoon Lee", source: "https://lumarafilmfestival.com/"}
-      - {category: "Rekt Award (finance or crypto satire)", result: "Winner", title: "JUST SAY SOLANA", credit: "Yassine Le Gall", watchUrl: "https://www.youtube.com/watch?v=JnqUjIW55kM&t=1930s", embeddable: false, source: "https://lumarafilmfestival.com/"}
+      - {"category": "Rekt Award (finance or crypto satire)", "result": "Winner", "credit": "Yassine Le Gall", "source": "https://lumarafilmfestival.com/", "film": "just-say-solana"}
 ---
 
 ## Why it matters

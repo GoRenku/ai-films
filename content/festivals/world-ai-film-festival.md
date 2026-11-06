@@ -22,7 +22,7 @@ editions:
     awards:
       - {category: "Best WAIFF Film", result: "Winner", film: "costa-verde", credit: "By Léo Cannone - United Kingdom", source: "https://worldaifilmfestival.com/prize-list/"}
       - {category: "Best AI Fantasy Film", result: "Winner", film: "costa-verde", credit: "By Léo Cannone - United Kingdom", source: "https://worldaifilmfestival.com/prize-list/"}
-      - {category: "Best AI Feature Film", result: "Winner", title: "Napoléon III, le prix de l'audace", watchUrl: "https://vimeo.com/1175510230", credit: "By Jacques Edouard - France", source: "https://worldaifilmfestival.com/prize-list/"}
+      - {"category": "Best AI Feature Film", "result": "Winner", "credit": "By Jacques Edouard - France", "source": "https://worldaifilmfestival.com/prize-list/", "film": "napoleon-iii-le-prix-de-laudace"}
       - {category: "Best AI Action Film", result: "Winner", film: "a-dollar-story", credit: "By Qiu Sheng - Switzerland", source: "https://worldaifilmfestival.com/prize-list/"}
       - {category: "Best AI First Film", result: "Winner", film: "another-detail", credit: "By Larzilliere Denis - France", source: "https://worldaifilmfestival.com/prize-list/"}
       - {category: "CapCut Prize", result: "Winner", film: "apocalypse-the-art-of-tovar", credit: "By Nyko Oliver - Brazil", source: "https://worldaifilmfestival.com/prize-list/"}
@@ -31,7 +31,7 @@ editions:
       - {category: "Press Prize", result: "Winner", film: "la-tisseuse-dombres", credit: "By Anne Horel - France", source: "https://worldaifilmfestival.com/prize-list/"}
       - {category: "Best AI Advertising Film", result: "Winner", title: "Life is about the ride", watchUrl: "https://www.youtube.com/watch?v=gnfj1ignKNE", credit: "By Aurelien Bigot - France", source: "https://worldaifilmfestival.com/prize-list/"}
       - {category: "Best 8th Art Film", result: "Winner", film: "present", credit: "By Dario Cirrincione - Switzerland", source: "https://worldaifilmfestival.com/prize-list/"}
-      - {category: "Best Youth Film", result: "Winner", title: "RendAI-vous", credit: "By Marius Doicov - France", source: "https://worldaifilmfestival.com/prize-list/"}
+      - {"category": "Best Youth Film", "result": "Winner", "credit": "By Marius Doicov - France", "source": "https://worldaifilmfestival.com/prize-list/", "film": "rendai-vous"}
       - {category: "Best AI Soundtrack", result: "Winner", film: "steam", credit: "By Fabio Bonvicini - Italy", source: "https://worldaifilmfestival.com/prize-list/"}
       - {category: "Best AI Emotion Film", result: "Winner", film: "the-beginning", credit: "By Ibraheem Diab - Jordan", source: "https://worldaifilmfestival.com/prize-list/"}
   - label: "2027"
@@ -55,6 +55,6 @@ WAIFF stages AI cinema at the Palais des Festivals in Cannes, the month before t
 
 ## Editions
 
-At the 2026 grand finale on April 22, Léo Cannone's [Costa Verde](/films/costa-verde/) won Best WAIFF Film and Best AI Fantasy Film. Category winners included Qiu Sheng's [A Dollar Story](/films/a-dollar-story/) (Best AI Action Film), Ibraheem Diab's [The Beginning](/films/the-beginning/) (Best AI Emotion Film) and Nyko Oliver's [Apocalypse the art of Tovar](/films/apocalypse-the-art-of-tovar/) (CapCut Prize). The Best AI Feature Film award went to *Napoléon III, le prix de l'audace*, a documentary by Jacques Edouard produced for Planète+ and Canal+ Docs; it is listed here with the organiser's copy rather than as a catalogue film. On the organiser's prize list each film is followed by its category, which this record follows. Press reports name Agnès Jaoui as jury president, with Gong Li as festival president and Claude Lelouch as honorary president; the organiser's own page does not list the jury.
+At the 2026 grand finale on April 22, Léo Cannone's [Costa Verde](/films/costa-verde/) won Best WAIFF Film and Best AI Fantasy Film. Category winners included Qiu Sheng's [A Dollar Story](/films/a-dollar-story/) (Best AI Action Film), Ibraheem Diab's [The Beginning](/films/the-beginning/) (Best AI Emotion Film) and Nyko Oliver's [Apocalypse the art of Tovar](/films/apocalypse-the-art-of-tovar/) (CapCut Prize). The Best AI Feature Film award went to *Napoléon III, le prix de l'audace*, a documentary by Jacques Edouard produced for Planète+ and Canal+ Docs; the catalogue links the cut published by the organiser. On the organiser's prize list each film is followed by its category, which this record follows. Press reports name Agnès Jaoui as jury president, with Gong Li as festival president and Claude Lelouch as honorary president; the organiser's own page does not list the jury.
 
 The 2027 call is open until February 15, 2027, with a cheaper early-bird fee until November 15, 2026. Finalists are chosen between February 17 and March 7, and screened in Cannes on April 6 and 7, with the awards on April 7. Regional editions are announced on the official site, among them Istanbul on November 9, 2026, Abidjan, Naples, Seoul and São Paulo in early 2027.

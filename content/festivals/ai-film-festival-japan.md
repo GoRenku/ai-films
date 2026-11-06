@@ -23,11 +23,11 @@ editions:
       - {kind: "Screening", date: "2025-11-02", endDate: "2025-11-03", source: "https://aifilm.jp/archive/"}
       - {kind: "Results", date: "2025-11-02", source: "https://aifilm.jp/index.php?page_id=2529"}
     awards:
-      - {category: "Best AI Narrative Award", result: "Winner", title: "Chairman", credit: "STUDIO 011", source: "https://aifilm.jp/index.php?page_id=2529"}
+      - {"category": "Best AI Narrative Award", "result": "Winner", "credit": "STUDIO 011", "source": "https://aifilm.jp/index.php?page_id=2529", "film": "chairman"}
       - {category: "Outstanding AI Narrative Award", result: "Runner-up", film: "what-remains", credit: "Vadim Lasca", source: "https://aifilm.jp/index.php?page_id=2529"}
       - {category: "Best AI Animation Award", result: "Winner", film: "walled-dreams", credit: "Bee Han, Yixuan Niu", source: "https://aifilm.jp/index.php?page_id=2529"}
       - {category: "Outstanding AI Animation Award", result: "Runner-up", film: "friends", credit: "Jihyun Kim", source: "https://aifilm.jp/index.php?page_id=2529"}
-      - {category: "Best AI Experimental Award", result: "Winner", title: "The Hidden Tremor", artist: "leo-cannone", credit: "Léo Cannone", watchUrl: "https://www.youtube.com/watch?v=-7-bdjX8DOY", source: "https://aifilm.jp/index.php?page_id=2529"}
+      - {"category": "Best AI Experimental Award", "result": "Winner", "artist": "leo-cannone", "credit": "Léo Cannone", "source": "https://aifilm.jp/index.php?page_id=2529", "film": "the-hidden-tremor"}
       - {category: "Outstanding AI Experimental Award", result: "Runner-up", film: "last-call-before-agi", credit: "Matt Zien", source: "https://aifilm.jp/index.php?page_id=2529"}
       - {category: "Best AI Documentary Award", result: "Winner", film: "the-cinema-that-never-was", credit: "Mark Wachholz", source: "https://aifilm.jp/index.php?page_id=2529"}
       - {category: "Best AI Comedy Award", result: "Winner", film: "andys-days-42", credit: "Ryo Matsumoto", source: "https://aifilm.jp/index.php?page_id=2529"}
@@ -39,7 +39,7 @@ editions:
       - {kind: "Screening", date: "2026-04-26", note: "Spring event, a SusHi Tech Tokyo 2026 partner event", source: "https://aifilm.jp/spring.html"}
     awards:
       - {category: "Grand Prix, AI Creative Dept. (Non-Genre / Free Theme)", result: "Winner", film: "what-is-real", credit: "Directed by Kennex MA", source: "https://aifilm.jp/spring.html"}
-      - {category: "Grand Prix, AI Creative Dept. (Theme: Imagine 2126)", result: "Winner", title: "The Tree", credit: "Directed by Ivan Yeh", watchUrl: "https://www.youtube.com/watch?v=MJHSjqcqeGQ", source: "https://aifilm.jp/spring.html"}
+      - {"category": "Grand Prix, AI Creative Dept. (Theme: Imagine 2126)", "result": "Winner", "credit": "Directed by Ivan Yeh", "source": "https://aifilm.jp/spring.html", "film": "the-tree-ivan-yeh"}
   - label: "2026"
     location: "Tokyo Innovation Base"
     url: "https://aifilm.jp/index_en.html"

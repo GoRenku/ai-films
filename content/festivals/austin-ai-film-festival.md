@@ -32,9 +32,9 @@ editions:
       - {category: "Short Film", result: "Winner", film: "the-morisca", credit: "Seif Abdalla", source: "https://www.austinaifilmfestival.com/"}
       - {category: "Micro-Short", result: "Winner", film: "kev", credit: "Mike Bennion", source: "https://www.austinaifilmfestival.com/"}
       - {category: "Hybrid", result: "Winner", film: "hazama", credit: "Victor Moreno", source: "https://www.austinaifilmfestival.com/"}
-      - {category: "Avant-Garde", result: "Winner", title: "SIMUL/ACTION #1", credit: "Francesca Fini", watchUrl: "https://www.youtube.com/watch?v=TT-2-YK5AAg", source: "https://www.austinaifilmfestival.com/"}
+      - {"category": "Avant-Garde", "result": "Winner", "credit": "Francesca Fini", "source": "https://www.austinaifilmfestival.com/", "film": "simul-action-1"}
       - {category: "Documentary", result: "Winner", film: "the-sultana-disaster-of-1865", credit: "Gavin Carlton", source: "https://www.austinaifilmfestival.com/"}
-      - {category: "Student Film", result: "Winner", title: "Listen To The Heart Of The Wood", credit: "Yunqi Zha, Cao Xinrui & Wang Dong", source: "https://www.austinaifilmfestival.com/"}
+      - {"category": "Student Film", "result": "Winner", "credit": "Yunqi Zha, Cao Xinrui & Wang Dong", "source": "https://www.austinaifilmfestival.com/", "film": "listen-to-the-heart-of-the-wood"}
       - {category: "Brand / Commercial", result: "Winner", title: "DIA PRÉSENCE", credit: "Claudia Lalau", watchUrl: "https://www.austinaifilmfestival.com/watch/dia-presence", source: "https://www.austinaifilmfestival.com/"}
       - {category: "Trailer", result: "Winner", title: "Actor Zero", credit: "Zurab Dzhidzhilava", watchUrl: "https://www.youtube.com/watch?v=7G8AlAObHUc", embeddable: false, source: "https://www.austinaifilmfestival.com/"}
       - {category: "Honorable Mention", result: "Honourable mention", film: "le-drip", credit: "Alex Naghavi", source: "https://www.austinaifilmfestival.com/"}

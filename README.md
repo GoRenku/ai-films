@@ -453,3 +453,9 @@ Added Ça tourne ! by Extraltodeus, credited to the ClaudiaGI music project, wit
 ## November 6, 2026 editorial refresh
 
 Added Earth Fall 2763, four Thousand Words FilmS entries with both River Mother and Tall Beasts installments, and The Last Nursery of Elderwall. Added profiles for Domain Filmes A.I, Thousand Words FilmS and LedertsWorld Studios, with original release artwork and source links. The journal note is Worlds with consequences.
+
+## November 6, 2026 festival catalogue backfill
+
+- Reconciled the existing award rows across the festival collection. Added 30 films and 29 credited filmmaker or studio profiles across seven festival records, including nine Bucheon films with official programme stills.
+- Updated the festival watch to apply daily discovery and signed-out Chrome Incognito checks to new and historical results. Verified festival screenings can enter the catalogue with credited artwork while public full-film playback is unverified.
+- Documented remaining evidence gaps and exclusions in the research watchlist. The [backfill journal](content/updates/2026-11-06-festival-winners-backfill.md) highlights six additions.

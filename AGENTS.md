@@ -19,6 +19,7 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 
 - Festival and competition records follow the listing bar and rules in docs/content-refresh.md ("Festivals and competitions"): only properly organised events with published results, organiser-sourced dates, organiser-published awards. Never type a status; it is computed from dated milestones.
 - The twice-weekly festival watch (`refresh-ai-film-festivals`, Monday and Thursday 11:30 Europe/Madrid) owns content/festivals/. Other runs add festival leads to the private festival inbox instead of editing festival files.
+- The festival watch researches every award across all editions as a discovery lead and backfills qualifying completed films and credited artists, including verified festival screenings without public playback. Apply the daily discovery workflow and use signed-out Chrome Incognito for YouTube, as specified in docs/content-refresh.md.
 
 ## Scheduled refresh scope
 

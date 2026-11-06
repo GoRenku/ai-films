@@ -31,14 +31,14 @@ editions:
       - {category: "Animation, Long Form", result: "Winner", film: "papernaught", credit: "Glenn Robert Triggs (Australia)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
       - {category: "Narrative Ultra Long Form (over 30 minutes)", result: "Winner", film: "the-living-corpse", credit: "Takeshi Sone (Japan)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
       - {category: "The Envato Pattern Recognition Award", result: "Winner", film: "the-reckless-play", credit: "Maria Zozulia (Ukraine)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
-      - {category: "Best Visuals", result: "Winner", title: "The Pornographer", credit: "Milla Cummings, Marie-Josee Saint-Pierre (Canada)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
-      - {category: "Best Score", result: "Winner", title: "Peking Opera Paradise", credit: "Jiayang Liang (China)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
+      - {"category": "Best Visuals", "result": "Winner", "credit": "Milla Cummings, Marie-Josee Saint-Pierre (Canada)", "source": "https://www.omnifilmfestival.com/hyperphantasia", "film": "the-pornographer-cummings-saint-pierre"}
+      - {"category": "Best Score", "result": "Winner", "credit": "Jiayang Liang (China)", "source": "https://www.omnifilmfestival.com/hyperphantasia", "film": "peking-opera-paradise"}
       - {category: "Best Editing", result: "Winner", film: "the-man-behind-the-cartoon", credit: "Raphaël Alistair (France)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
       - {category: "Best Script", result: "Winner", title: "Phoebe and Her 404 Fears", credit: "Siyi Chen, Chujun Zhou (China)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
       - {category: "OMNI Golden AI Performance", result: "Winner", film: "lilies", credit: "Muhammed Jabir (UK)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
       - {category: "Golden Sound: Music Video", result: "Winner", film: "ici-remix", credit: "Sijin Liu (Taiwan, UK)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
       - {category: "Documentary, Short Form", result: "Winner", film: "guardians-of-the-burrow", credit: "Jodie Heenan (Australia)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
-      - {category: "Animation, Short Form", result: "Winner", title: "Amal (Hope)", credit: "Ridouan Ajhir (Morocco)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
+      - {"category": "Animation, Short Form", "result": "Winner", "credit": "Ridouan Ajhir (Morocco)", "source": "https://www.omnifilmfestival.com/hyperphantasia", "film": "amal-hope"}
       - {category: "Honorable Mention", result: "Honourable mention", film: "duck", credit: "Jose Alvarez (UK)", source: "https://www.omnifilmfestival.com/hyperphantasia"}
 ---
 

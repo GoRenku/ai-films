@@ -34,16 +34,16 @@ editions:
       - {category: "2nd Place", result: "Runner-up", film: "fukushima", credit: "aist", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
       - {category: "3rd Place", result: "Runner-up", film: "the-field-agent", credit: "zackmmurray", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
       - {category: "Audience Choice", result: "Audience choice", film: "the-tortoise-and-the-hare", credit: "benhamin", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "BALLAST", credit: "lejardinier", watchUrl: "https://higgsfield.ai/@lejardinier/projects/ballast", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "lejardinier", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "ballast-lejardinier"}
       - {category: "Honorable Mention", result: "Honourable mention", film: "fix", credit: "production_pi_korea", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "ROAR", credit: "vermeer_ice_9000", watchUrl: "https://higgsfield.ai/@vermeer_ice_9000/projects/roar", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "Soulless", credit: "yoav_yariv", watchUrl: "https://higgsfield.ai/@yoav_yariv/projects/soulless", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "THE COAT", credit: "davidacfilm", watchUrl: "https://higgsfield.ai/@davidacfilm/projects/the-coat", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "Morek", credit: "zezumre", watchUrl: "https://higgsfield.ai/@zezumre/projects/morek", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "Lullaby", credit: "keigo_matsumaru", watchUrl: "https://higgsfield.ai/@keigo_matsumaru/projects/lullaby", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "GIRLS / DEMONS", credit: "tambv", watchUrl: "https://higgsfield.ai/@tambv/projects/girls-demons", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "The Elevator", credit: "curious_media_2026", watchUrl: "https://higgsfield.ai/@curious_media_2026/projects/the-elevator", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
-      - {category: "Honorable Mention", result: "Honourable mention", title: "HUNGER", credit: "sssacccade", watchUrl: "https://higgsfield.ai/@sssacccade/projects/hunger-ai-short-film", source: "https://higgsfield.ai/contests/higgsfield-global-film-festival"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "vermeer_ice_9000", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "roar-vermeer-ice"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "yoav_yariv", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "soulless-yoav-yariv"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "davidacfilm", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "the-coat-davidacfilm"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "zezumre", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "morek"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "keigo_matsumaru", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "lullaby-keigo-matsumaru"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "tambv", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "girls-demons"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "curious_media_2026", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "the-elevator-curious-media"}
+      - {"category": "Honorable Mention", "result": "Honourable mention", "credit": "sssacccade", "source": "https://higgsfield.ai/contests/higgsfield-global-film-festival", "film": "hunger-sssacccade"}
 ---
 
 ## Why it matters

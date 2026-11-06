@@ -9,7 +9,7 @@ sponsors: "TimeTree, TapNow and AIMMOVIE sponsor named awards in 2026."
 cadence: "Annual"
 website: "https://www.bifan.kr/eng/"
 discoveredAt: "2026-11-05"
-lastVerifiedAt: "2026-11-05"
+lastVerifiedAt: "2026-11-06"
 sources:
   - {label: "2024 AI competition rules", url: "https://www.bifan.kr/download/BIFAN2024_Film_Submission_Rules_Regulations_Eng_Bucheon%20Choice_AI%20Films.pdf"}
   - {label: "2026 awards and judging", url: "https://www.bifan.kr/eng/bifan/05_01.asp"}
@@ -25,21 +25,21 @@ editions:
       - {kind: "Results", date: "2024-07-12", source: "https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
     awards:
       - {"category":"Best AI Film","result":"Winner","credit":"Léo Cannone","film":"where-do-grandmas-go","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
-      - {"category":"Best Technical Achievement","result":"Winner","credit":"Bae Jun-won","title":"Snowfall","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
-      - {"category":"Jury’s Special Mention","result":"Honourable mention","credit":"Fran Gas","title":"Latex Kid","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
-      - {"category":"Jury’s Special Mention","result":"Honourable mention","credit":"Kwon Hansl","title":"One More Pumpkin","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
-      - {"category":"Audience Award","result":"Audience choice","credit":"Bae Jun-won","title":"Snowfall","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
+      - {"category":"Best Technical Achievement","result":"Winner","credit":"Bae Jun-won","film":"snowfall","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
+      - {"category":"Jury’s Special Mention","result":"Honourable mention","credit":"Fran Gas","film":"latex-kid","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
+      - {"category":"Jury’s Special Mention","result":"Honourable mention","credit":"Kwon Hansl","film":"one-more-pumpkin","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
+      - {"category":"Audience Award","result":"Audience choice","credit":"Bae Jun-won","film":"snowfall","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=89332&sc_board_seq=13"}
   - label: "2025"
     location: "Bucheon, South Korea"
     url: "https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"
     milestones:
       - {kind: "Results", date: "2025-07-08", source: "https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
     awards:
-      - {"category":"Best AI Film","result":"Winner","credit":"KUSHIDA Takeshi","title":"Last Dream","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
+      - {"category":"Best AI Film","result":"Winner","credit":"KUSHIDA Takeshi","film":"last-dream","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
       - {"category":"TimeTree Best Technical Achievement","result":"Winner","credit":"Herinarivo RAKOTOMANANA","film":"more-tears-than-harm","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
-      - {"category":"Jury’s Special Mention","result":"Honourable mention","credit":"JANG Gun-ho","title":"Confession","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
+      - {"category":"Jury’s Special Mention","result":"Honourable mention","credit":"JANG Gun-ho","film":"confession","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
       - {"category":"Jury’s Special Mention","result":"Honourable mention","credit":"Jacob ADLER","film":"total-pixel-space","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
-      - {"category":"Audience Award","result":"Audience choice","credit":"KIM Woon-ha","title":"Mold","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
+      - {"category":"Audience Award","result":"Audience choice","credit":"KIM Woon-ha","film":"mold","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}
   - label: "2026"
     location: "Bucheon, South Korea"
     url: "https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"
@@ -47,9 +47,9 @@ editions:
       - {kind: "Results", date: "2026-07-06", source: "https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
     awards:
       - {"category":"Best AI Film","result":"Winner","credit":"Odair FALECO, Davi MOORI","film":"sinuca-de-bico-cornered","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
-      - {"category":"TimeTree Best Technical Achievement","result":"Winner","credit":"LIM Ye-jun","title":"Big Ball","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
-      - {"category":"TapNow New Wave Award","result":"Winner","credit":"TAKAHASHI Hiromu","title":"Let There Be Light","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
-      - {"category":"AIMMOVIE Audience Award","result":"Audience choice","credit":"LEE Yong-seuk","title":"Ask Me Anything","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
+      - {"category":"TimeTree Best Technical Achievement","result":"Winner","credit":"LIM Ye-jun","film":"big-ball","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
+      - {"category":"TapNow New Wave Award","result":"Winner","credit":"TAKAHASHI Hiromu","film":"let-there-be-light","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
+      - {"category":"AIMMOVIE Audience Award","result":"Audience choice","credit":"LEE Yong-seuk","film":"ask-me-anything","source":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=92660&sc_board_seq=1"}
 ---
 
 ## Why it matters
