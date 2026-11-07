@@ -463,3 +463,7 @@ Added Earth Fall 2763, four Thousand Words FilmS entries with both River Mother 
 ## November 6, 2026 Gossip Goblin credits
 
 Added the sourced Gods Don’t Give Gifts cast and crew breakdown to Zack London’s profile, surfaced Pomegranate there, and added the short’s voice, animation and post-production notes. The journal note is The people behind Gossip Goblin.
+
+## November 7, 2026 editorial refresh
+
+Added Extraltodeus’s Au cas où and LedertsWorld Studios’ Elderwall: Origins, and documented the Ankara Film Festival screening and official production disclosures for A Woman Asleep. The journal note is Altered bodies and new screens.
