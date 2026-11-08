@@ -467,3 +467,7 @@ Added the sourced Gods Don’t Give Gifts cast and crew breakdown to Zack London
 ## November 7, 2026 editorial refresh
 
 Added Extraltodeus’s Au cas où and LedertsWorld Studios’ Elderwall: Origins, and documented the Ankara Film Festival screening and official production disclosures for A Woman Asleep. The journal note is Altered bodies and new screens.
+
+## November 8, 2026 editorial refresh
+
+Added the complete Treasure of the Himalayas Part Three and its co-production disclosure, and documented the Signes de Nuit French premiere and Cottbus programme dates for A Woman Asleep. The journal note is A third chapter and a French premiere.
