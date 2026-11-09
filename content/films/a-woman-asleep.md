@@ -1,6 +1,6 @@
 ---
 discoveredAt: "2026-10-01"
-lastVerifiedAt: "2026-11-08"
+lastVerifiedAt: "2026-11-09"
 title: "A Woman Asleep"
 artist: "vikki-bardot"
 description: "An experimental feature about alienation in a world of constant connection."
@@ -11,7 +11,7 @@ runtimeMinutes: 80
 status: "Coming soon"
 watchUrl: "https://www.milliyetsanat.com/haberler/diger/yapay-zekanin-gordugu-insanin-unuttugu-dunya/59741"
 watchLabel: "Film details, credits and release reporting"
-sources: [{"label": "Milliyet Sanat — credits and production account", "url": "https://www.milliyetsanat.com/haberler/diger/yapay-zekanin-gordugu-insanin-unuttugu-dunya/59741"}, {"label": "Ankara Film Festival official programme", "url": "https://filmfestankara.org.tr/tr/uyuyan-kadin-a-woman-asleep"}, {"label": "Ankara screening listing", "url": "https://biletinial.com/tr-tr/sinema/festival-uyuyan-kadin"}, {"label": "Signes de Nuit opening programme", "url": "https://www.signesdenuit.com/paris/2026/open.htm"}, {"label": "Cottbus November 4 ticket listing", "url": "https://www.reservix.de/tickets-a-woman-asleep-in-cottbus-weltspiegel-am-4-11-2026/e2620322"}, {"label": "Cottbus November 7 ticket listing", "url": "https://www.adticket.de/A-WOMAN-ASLEEP/Cottbus-Weltspiegel-Cottbus-Saal-3/07-11-2026_13-30.html"}]
+sources: [{"label": "Milliyet Sanat — credits and production account", "url": "https://www.milliyetsanat.com/haberler/diger/yapay-zekanin-gordugu-insanin-unuttugu-dunya/59741"}, {"label": "Ankara Film Festival official programme", "url": "https://filmfestankara.org.tr/tr/uyuyan-kadin-a-woman-asleep"}, {"label": "Ankara screening listing", "url": "https://biletinial.com/tr-tr/sinema/festival-uyuyan-kadin"}, {"label": "Signes de Nuit opening programme", "url": "https://www.signesdenuit.com/paris/2026/open.htm"}, {"label": "Cottbus November 4 ticket listing", "url": "https://www.reservix.de/tickets-a-woman-asleep-in-cottbus-weltspiegel-am-4-11-2026/e2620322"}, {"label": "Cottbus November 7 ticket listing", "url": "https://www.adticket.de/A-WOMAN-ASLEEP/Cottbus-Weltspiegel-Cottbus-Saal-3/07-11-2026_13-30.html"}, {"label": "rbbKultur interview with Vikki Bardot and Alkan Avcıoğlu", "url": "https://www.rbb-online.de/rbbkultur-magazin/archiv/20261107_1830/Bardot-Avcioglu-regie-paar-ki-film-festival-cottbus-wettbewerb-a-woman-asleep.html"}]
 image: "/media/a-woman-asleep.jpg"
 imageAlt: "A woman leans out of a car window amid reflected city lights"
 imageCredit: "A Woman Asleep · film image published by Milliyet Sanat"
@@ -36,3 +36,7 @@ The 37th Ankara Film Festival programmed the film in Taptaze / Fresh at Büyül�
 Signes de Nuit lists the French premiere of **A Woman Asleep** in its opening programme on **November 9 at 20:00 local time**, at the Maison des étudiants arméniens, Cité universitaire, Paris. Its programme lists 79 minutes, while Ankara lists 80. [Paris festival programme](https://www.signesdenuit.com/paris/2026/open.htm)
 
 The Cottbus ticket listings scheduled the film for **November 4 at 18:15** and **November 7 at 13:30** at Weltspiegel. These sources establish the programme dates. [November 4 listing](https://www.reservix.de/tickets-a-woman-asleep-in-cottbus-weltspiegel-am-4-11-2026/e2620322) · [November 7 listing](https://www.adticket.de/A-WOMAN-ASLEEP/Cottbus-Weltspiegel-Cottbus-Saal-3/07-11-2026_13-30.html)
+
+## Writing a shared experience
+
+In rbbKultur’s November 7 interview, Bardot says the script grew out of her experience of being overwhelmed by messages and news. She and Alkan Avcıoğlu wrote the screenplay together. Bardot explains that she spread the experience across several women so that the isolation would register as a collective condition. The report also describes how the filmmakers leave the generated images’ artificiality and imperfections visible. The repeated figures and polished surfaces give that feeling a visual form. [rbbKultur interview](https://www.rbb-online.de/rbbkultur-magazin/archiv/20261107_1830/Bardot-Avcioglu-regie-paar-ki-film-festival-cottbus-wettbewerb-a-woman-asleep.html)

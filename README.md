@@ -477,3 +477,7 @@ Added the complete Treasure of the Himalayas Part Three and its co-production di
 Recorded all 18 AI Film Festival Japan 2026 awards. Added eleven screened films, their filmmaker credits and ten pieces of official programme artwork.
 
 Playback follow-up: verified the official releases of The Finding (DeoVR), A Message for the Butterfly and PUNCHLINE (YouTube). Their film pages and the Japan festival award cards now provide playback.
+
+## November 9, 2026 editorial refresh
+
+Added Vikki Bardot’s account of how she and Alkan Avcıoğlu developed A Woman Asleep, with a linked interview and the journal note Writing a shared experience.
