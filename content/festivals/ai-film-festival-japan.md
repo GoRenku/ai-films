@@ -4,17 +4,19 @@ description: "Japan's international AI film festival in Tokyo, run by an executi
 type: "Festival"
 kind: "Independent"
 organiser: "AI Film Festival Japan Executive Committee (lead: AI Film Japan Inc.)"
-sponsors: "Alibaba Cloud, CapCut and ElevenLabs (2026)"
+sponsors: "Alibaba Cloud, CapCut and ElevenLabs and IYS Inc. (2026)"
 cadence: "Annual"
 website: "https://aifilm.jp/index_en.html"
 x: {url: "https://x.com/AIFJ2025", label: "@AIFJ2025 on X", source: "https://aifilm.jp/index_en.html"}
 discoveredAt: "2026-11-02"
-lastVerifiedAt: "2026-11-02"
+lastVerifiedAt: "2026-11-09"
 sources:
   - {label: "Official site (English)", url: "https://aifilm.jp/index_en.html"}
   - {label: "2025 winners list", url: "https://aifilm.jp/index.php?page_id=2529"}
   - {label: "Spring 2026 event and Grand Prix", url: "https://aifilm.jp/spring.html"}
   - {label: "2026 nominations and official selection", url: "https://aifilm.jp/nominations_jp.html"}
+  - {label: "2026 official awards", url: "https://www.aifilm.jp/#award-winners-2026"}
+  - {label: "2026 screening programme", url: "https://aifilm.jp/program_en.html"}
 editions:
   - label: "2025"
     location: "Tokyo Innovation Base"
@@ -50,6 +52,24 @@ editions:
       - {kind: "Ceremony", date: "2026-11-01", source: "https://aifilm.jp/index_en.html"}
     awards:
       - {category: "Official Selection", result: "Official selection", film: "a-face-only-a-mother-could-love", credit: "Robert Gaudette", source: "https://aifilm.jp/nominations_jp.html"}
+      - {"category": "GRAND PRIX", "result": "Winner", "film": "the-finding", "credit": "Vincenzo Lo Re", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "BEST AI MOVIE", "result": "Winner", "film": "tokyo-stories-rain", "credit": "Int. Lab（イント・ラボ）", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "AI Movie Division — OUTSTANDING", "result": "Runner-up", "film": "punchline-norihiko", "credit": "Norihiko", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "AI Movie Division — OUTSTANDING", "result": "Runner-up", "film": "tokyo-stories-imitation", "credit": "大澤健太郎 / Kentaro Osawa", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "BEST ANIMATION", "result": "Winner", "film": "abyss-siren", "credit": "吉江圭太 / Keita Yoshie", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "AI Animation Division — OUTSTANDING", "result": "Runner-up", "film": "the-amazing-kitsuverse", "credit": "Leo Neumann", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "AI Animation Division — OUTSTANDING", "result": "Runner-up", "film": "ticket-to-neverland", "credit": "Min Heo / Minho Son / Hanin Kim", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "BEST CREATIVE", "result": "Winner", "film": "a-message-for-the-butterfly", "credit": "Zuxin Hou / Mark Wachholz", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026", "artist": "zuxin-hou"}
+      - {"category": "AI Creative Division — OUTSTANDING", "result": "Runner-up", "film": "tokyo-stories-new-wave", "credit": "フコウエアラタ / Arata Fukoe", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "AI Creative Division — SPECIAL MENTION", "result": "Honourable mention", "film": "tokyo-echo", "credit": "内野政明 / Masaaki Uchino", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "ElevenLabs Award", "result": "Winner", "film": "little-sun-liz-chen", "credit": "Liz Chen", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "BEST MUSIC (LIVE ACTION)", "result": "Winner", "title": "Return to the Womb", "credit": "小鷹狩綾乃 / Ayano Kotakari", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "OUTSTANDING (LIVE ACTION)", "result": "Runner-up", "title": "Laundromat", "credit": "Masayoshi Kurihara", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "BEST MUSIC (ANIMATION)", "result": "Winner", "title": "AIFJ2026 Theme B - Original Score", "credit": "821R (Honey R)", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "CapCut Award", "result": "Winner", "title": "EISENRITTER Confronting the World", "credit": "TechTalkNavigator", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "SIO Award 1st", "result": "Winner", "title": "Kaguya's Letter", "credit": "Galvanizing", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "SIO Award 2nd", "result": "Runner-up", "title": "Moonlight", "credit": "Auremi", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "SIO Award 3rd", "result": "Runner-up", "title": "Until the Sky Falls", "credit": "CRS", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
 ---
 
 ## Why it matters
@@ -60,4 +80,8 @@ AIFJ is Japan's main international AI film festival and links filmmakers to Japa
 
 The first edition's winners were published on November 2, 2025. They include [What Remains](/films/what-remains/), [WALLED DREAMS](/films/walled-dreams/), [Last Call Before A.G.I](/films/last-call-before-agi/), [The Cinema That Never Was](/films/the-cinema-that-never-was/), [Andy's Days #42](/films/andys-days-42/) and the Special Jury Award winner [El día que me quieras](/films/el-dia-que-me-quieras/). The Best AI Narrative winner, *Chairman* by STUDIO 011, has no public release this journal could find. At the spring 2026 LOOP 2126 Prelude event, [What is Real?](/films/what-is-real/) by Kennex Ma won the Grand Prix in the free-theme category. The organiser's spring page does not say on which day the Grand Prix was announced; the event dates it here.
 
-The second edition ran at Tokyo Innovation Base from October 31 to November 2, 2026, with the awards ceremony on November 1. The organiser announced an official selection of 68 films and 21 finalists from more than 730 entries; [A Face Only a Mother Could Love](/films/a-face-only-a-mother-could-love/) is in the official selection. The 2026 winners had not been published when this record was checked. Kennex Ma, a spring Grand Prix winner, sits on the 2026 jury. A different film called *The Well*, by Ryeongmi Jo, is in the 2026 selection; it is not [The Well](/films/the-well/) in this collection.
+The second edition ran at Tokyo Innovation Base from October 31 to November 2, 2026, with the awards ceremony on November 1. The organiser announced an official selection of 68 films and 21 finalists from more than 730 entries; [A Face Only a Mother Could Love](/films/a-face-only-a-mother-could-love/) is in the official selection. Kennex Ma, a spring Grand Prix winner, sits on the 2026 jury. A different film called *The Well*, by Ryeongmi Jo, is in the 2026 selection; it is not [The Well](/films/the-well/) in this collection.
+
+### November 9, 2026
+
+The [organiser’s results](https://www.aifilm.jp/#award-winners-2026) identify Vincenzo Lo Re’s [The Finding](/films/the-finding/) as the Grand Prix winner at the November 1 ceremony. Eleven awarded works are linked to their catalogue records. The film-score and SIO vocal-track prizes remain separate award entries.

@@ -471,3 +471,7 @@ Added Extraltodeus’s Au cas où and LedertsWorld Studios’ Elderwall: Origins
 ## November 8, 2026 editorial refresh
 
 Added the complete Treasure of the Himalayas Part Three and its co-production disclosure, and documented the Signes de Nuit French premiere and Cottbus programme dates for A Woman Asleep. The journal note is A third chapter and a French premiere.
+
+## November 9, 2026 festival refresh
+
+Recorded all 18 AI Film Festival Japan 2026 awards. Added eleven screened films, their filmmaker credits and ten pieces of official programme artwork.
