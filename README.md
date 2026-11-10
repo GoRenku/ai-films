@@ -481,3 +481,7 @@ Playback follow-up: verified the official releases of The Finding (DeoVR), A Mes
 ## November 9, 2026 editorial refresh
 
 Added Vikki Bardot’s account of how she and Alkan Avcıoğlu developed A Woman Asleep, with a linked interview and the journal note Writing a shared experience.
+
+## November 10, 2026 editorial refresh
+
+Added ClaudiaGI’s Qui a tiré la chasse?! with Extraltodeus’s original full release, credited artwork and the journal note A bathroom as a pop stage.
