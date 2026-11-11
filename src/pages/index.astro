@@ -32,7 +32,7 @@ const featuredWorks = featureEntries.map(({ film: id, since }) => {
   }
   const end = new Date(since);
   end.setUTCDate(end.getUTCDate() + 7);
-  return { film, expires: end.toISOString().slice(0, 10) };
+  return { film, since, expires: end.toISOString().slice(0, 10) };
 });
 const slides = featuredWorks.map(({ film }) => film);
 // Each row skips what the rows above it already show, so the page never repeats itself.
@@ -65,12 +65,12 @@ const week = feed.filter((n) => c.thisWeek(n.date));
 <Layout overlay>
   <h1 class="sr-only">Latent Matinee — new AI cinema, updated daily</h1>
   <section class="hero" aria-roledescription="carousel" aria-label="Featured films and music videos">
-    {featuredWorks.map(({ film, expires }, i) => {
+    {featuredWorks.map(({ film, since, expires }, i) => {
       const d = film.data;
       const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
       const artist = artistOf(film);
       return (
-        <article class:list={['slide', d.imageFit === 'contain' && 'is-poster', d.title.length > 32 && 'has-long-title']} data-active={i === 0 ? '' : undefined} data-expires={expires} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
+        <article class:list={['slide', d.imageFit === 'contain' && 'is-poster', d.title.length > 32 && 'has-long-title']} data-active={i === 0 ? '' : undefined} data-expires={expires} data-film={film.id} data-format={d.format} data-since={since} data-watch-mode={embed ? 'embed' : d.status === 'Watch now' && d.watchUrl ? 'outbound' : 'unavailable'} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
           <div class="slide-bg"><img src={d.image} alt={d.imageAlt} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} width="1600" height="900" /></div>
           <div class="slide-body">
             <p class="slide-kicker">
@@ -78,13 +78,13 @@ const week = feed.filter((n) => c.thisWeek(n.date));
               <span class={`pill pill-${statusKey(d.status)}`}>{statusLabel(d.status)}</span>
               <span>{[d.format, lengthOf(film), d.genre !== d.format && d.genre].filter(Boolean).join(' · ')}</span>
             </p>
-            <h2><a href={`/films/${film.id}/`}>{d.title}</a></h2>
+            <h2><a href={`/films/${film.id}/`} data-feature-action="details">{d.title}</a></h2>
             <p class="slide-by">by <a href={`/artists/${artist.id}/`}>{artist.data.title}</a></p>
             <p class="slide-desc">{d.description}</p>
             <div class="actions">
-              {embed && <a class="btn btn-primary" href={d.watchUrl} data-play={embed.src} data-title={d.title} data-source={d.watchUrl}><PlayIcon /> Play {workNoun(film)}</a>}
-              {!embed && d.status === 'Watch now' && d.watchUrl && <a class="btn btn-primary" href={d.watchUrl} rel="noopener noreferrer">Watch on {hostOf(d.watchUrl)} ↗</a>}
-              <a class:list={['btn', embed || d.status === 'Watch now' ? 'btn-ghost' : 'btn-primary']} href={`/films/${film.id}/`}>About the {workNoun(film)}</a>
+              {embed && <a class="btn btn-primary" href={d.watchUrl} data-play={embed.src} data-title={d.title} data-source={d.watchUrl} data-feature-action="watch"><PlayIcon /> Play {workNoun(film)}</a>}
+              {!embed && d.status === 'Watch now' && d.watchUrl && <a class="btn btn-primary" href={d.watchUrl} rel="noopener noreferrer" data-feature-action="watch">Watch on {hostOf(d.watchUrl)} ↗</a>}
+              <a class:list={['btn', embed || d.status === 'Watch now' ? 'btn-ghost' : 'btn-primary']} href={`/films/${film.id}/`} data-feature-action="details">About the {workNoun(film)}</a>
             </div>
           </div>
           {d.imageSource && <a class="slide-credit" href={d.imageSource}>{d.imageCredit}</a>}
@@ -187,6 +187,8 @@ const week = feed.filter((n) => c.thisWeek(n.date));
 </Layout>
 
 <script>
+  import { trackFeaturedWorks } from '../lib/feature-analytics';
+
   const hero = document.querySelector<HTMLElement>('.hero');
   if (hero) {
     const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Madrid' });
@@ -209,6 +211,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
         tab.querySelector('.hero-index-num')!.textContent = number;
         slides[i].setAttribute('aria-label', `${i + 1} of ${slides.length}: ${title}`);
       });
+      const track = trackFeaturedWorks(hero, slides);
       let current = 0;
       const show = (i: number) => {
         current = (i + slides.length) % slides.length;
@@ -219,10 +222,14 @@ const week = feed.filter((n) => c.thisWeek(n.date));
         activeTabs.forEach((t, j) => t.setAttribute('aria-selected', String(j === current)));
         const lazy = slides[current].querySelector('img');
         if (lazy) lazy.loading = 'eager';
+        track.show(current);
       };
       show(0);
       activeTabs.forEach((t, j) => {
-        t.addEventListener('click', () => show(j));
+        t.addEventListener('click', () => {
+          show(j);
+          track.select();
+        });
         t.querySelector('.bar i')!.addEventListener('animationend', () => show(current + 1));
       });
       const pause = (on: boolean) => hero.classList.toggle('paused', on);

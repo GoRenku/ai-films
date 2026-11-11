@@ -60,6 +60,11 @@ const host = 'https://eu.i.posthog.com';
       trackPage();
     }
 
+    window.addEventListener('matinee:feature-analytics', function (event) {
+      if (!started || storedChoice() !== 'yes') return;
+      window.posthog.capture('matinee_feature_interaction', event.detail, { transport: 'sendBeacon' });
+    });
+
     syncConsent(storedChoice(), false);
     window.addEventListener('matinee:analytics-consent', function (event) {
       syncConsent(event.detail, true);

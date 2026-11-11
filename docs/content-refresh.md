@@ -44,6 +44,14 @@ The daily editorial refresh owns the ordered `content/featured.json` slate. Revi
 
 Retain a worthwhile pick with its original date for at most seven days. Rotate earlier when a stronger candidate arrives. Check recent slate history before bringing back a pick, and give it at least one week off after removal. Change the order only for a reason. Verify that the rendered home has the intended lineup, no repeated creator, loaded artwork and working carousel controls before committing and again on the public site. The Latest feed contains the complete set of additions independently of feature selection. An unchanged slate does not require a commit.
 
+### PostHog feedback
+
+At each homepage review, run `node --env-file-if-exists=.env scripts/featured-engagement.mjs` from the canonical checkout. The read-only EU PostHog query returns 28 days of Latent Matinee carousel counts grouped by work, feature start date, visible slot, format and watch mode. Configure the numeric `POSTHOG_PROJECT_ID` and a project-restricted `POSTHOG_QUERY_API_KEY` with `query:read` in the local environment or git-ignored `.env`. Keep credentials and engagement counts out of Git, public copy and slate reasons. If the query fails or is empty, continue with editorial evidence and avoid inferring low interest.
+
+Use watch clicks per impression as the main audience signal where there is a direct watch action. Compare against works in similar slots and watch modes, with format as context. Use details clicks per impression for works without a direct watch action. Tab selections measure active curiosity and can overlap the other actions. The site counts each action once per work per page visit for consenting visitors, so these are visit-based signals. An impression means the active slide was at least half visible for one second or the visitor actively chose or clicked it. Watch clicks measure intent, including outbound links. A details click followed by a watch action elsewhere is outside this report.
+
+Treat fewer than 50 impressions in a comparable group as directional evidence only. Leave room for new and underexposed work. Across multiple rotations, look for repeatable patterns in artwork, formats and availability, and use them to inform future picks alongside editorial judgment. Keep all diversity, rotation and artwork rules.
+
 ## Research and publishing
 
 1. Read AGENTS.md; inspect Git status. Do not overwrite or publish unrelated edits. If another refresh is running or files are dirty from unrelated work, report the conflict.
