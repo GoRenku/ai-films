@@ -22,3 +22,8 @@ The studio’s [Vanish Thread](/films/vanish-thread/) adds a sustained surrealis
 ## November 3 — a performance-led gothic adaptation
 
 [Dr. Jekyll and Mr. Hyde](/films/dr-jekyll-and-mr-hyde/) adds a complete first episode by **Daniella Raphael**, identified in Absurd's own production interview. The studio-linked workflow describes planning in Blender, filming actors and locking an edit before transforming environments and makeup. The maker-reported $15,324 is retained with its accounting limits on the episode page; this is a narrative released by the platform company, not an anonymous tool demonstration.
+
+
+## November 11 — retaining performers’ voices
+
+In its November 10 [hybrid production breakdown](https://x.com/withabsurd/status/2120207361230987756), Absurd shows its approach to working from live performance. The studio says it [kept the actors’ voices](https://x.com/withabsurd/status/2120252527635792200) and [reports close to three weeks](https://x.com/withabsurd/status/2120253117778506157) when asked about the time from idea to final. The public post is a making-of. The project title, performer identities and a separate completed release were unverified.

@@ -610,3 +610,7 @@ Listing bar: properly organised festivals and competitions with a named organise
 - OMNI’s [award page](https://www.omnifilmfestival.com/hyperphantasia) still identifies Phoebe and Her 404 Fears by its script prize. A focused search did not establish a completed film screening or running time from a primary source.
 
 Playback follow-up: confirmed the director’s 14:00 DeoVR upload of The Finding in a signed-out browser. Verified the Particle Panic upload of A Message for the Butterfly (8:08) and Norihiko’s PUNCHLINE (11:01 shown in the player) in signed-out Chrome Incognito. Other Japan festival award entries still need full-release verification.
+
+## November 11, 2026 — Beethoven feature
+
+Monique Pryce [demonstrates dialogue direction](https://x.com/second_bassoon/status/2117307653320007954) in a roughly 57-second excerpt from her in-progress Beethoven feature. She names Seedance 2.5 and describes shorter lines, intentional pauses and physical actions between lines. The clip and accompanying post establish a work in production. Formal feature credits and a completed release remain unverified.

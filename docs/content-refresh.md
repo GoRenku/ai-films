@@ -1,7 +1,7 @@
 # Content refresh procedure
 
 Editorial refresh: daily at 13:00 Europe/Madrid. Automation: `refresh-ai-film-journal`.
-X discovery review: daily at 11:00 Europe/Madrid, in a separate heartbeat. It supplies a private inbox; only the editorial refresh publishes.
+X discovery review: daily at 11:00 Europe/Madrid, in a separate heartbeat. It supplies a private queue; only the editorial refresh publishes.
 Festival watch: Monday and Thursday at 11:30 Europe/Madrid. Automation: `refresh-ai-film-festivals`. It collects festival and competition leads and publishes festival records itself; see "Festivals and competitions" below.
 
 Source conversation: AI Film Director Watch, ChatGPT ID 6a730bfe-be08-83ed-b7c6-ece6463916d7.
@@ -93,7 +93,7 @@ An AI strand of an established festival qualifies on its parent's standing (`kin
 
 Regular research tabs and native Incognito windows are separate cleanup responsibilities. Closing or attempting to close the private window does not clean up regular X, creator-site, preview or verification tabs. Automatic browser-session cleanup is a fallback, not evidence that cleanup succeeded.
 
-Before opening research tabs, record the baseline browser identity and existing tab IDs in a private per-run ownership ledger at `/Users/keremk/.codex/.chatgpt-projects/g-p-6aabb55f14b8819192b8a0d2bee9108b/browser-cleanup.json`. Record each new task-owned tab ID immediately after creation and before navigating it, and each native window created for the run with its available window ID and verified Incognito identity. Persist the ledger as work proceeds so a timeout, tool reset, context compaction or reconnect does not erase ownership. Keep only run identifiers, browser/window/tab identifiers and cleanup states; do not copy unrelated tab titles, URLs, browser history, screenshots or private page contents into this ledger or public Git. Preserve the same task session name when reconnecting rather than treating a new session label as a fresh ownership boundary.
+Use a run-specific private ownership record. Store only the browser/session identity and IDs of tabs or native windows created by this run. Record each owned item before navigating it, with the verified Incognito identity for native windows. Keep any pre-existing IDs in memory if needed to compare inventories. Persist owned IDs in the current task workspace or an authorized local temporary file so reconnects can recover them. Reuse the same session name. A rejected write to a different workspace does not block authorized read-only discovery. The X discovery task may use a single owned tab and its live handle, with exact-ID cleanup verified at the end.
 
 On normal completion, errors and early exits:
 
@@ -106,9 +106,9 @@ Complete this reconciliation before the final publication summary. A published s
 
 ## X discovery review
 
-Use computer use in the user's existing signed-in X browser. Open X History (`https://x.com/i/history`) and review both Bookmarks and Likes. Read up to 40 recent entries per tab per run, stopping at already reviewed entries after allowing for newly saved older posts. No broader browser history or private messages are needed. The first run is a sample, not a claim to have exhausted the archive.
+Use computer use in the user's existing signed-in X browser. Open X History (`https://x.com/i/history`) and review both Bookmarks and Likes. Read up to 40 recent entries per feed in routine runs. In recovery, continue toward each feed’s last confirmed checkpoint in bounded batches. Preserve the checkpoint if a gap remains and record the resume point separately. No broader browser history or private messages are needed. The first run is a sample, not a claim to have exhausted the archive.
 
-For promising films, open the original public creator post and inspect the full disclosure/credit thread. Add only public film URLs, a short evidence-based description and unresolved research questions to the private inbox. Exclude unrelated topics. Deduplicate against that inbox and published Markdown. Keep any cursor in the private task directory, never in public Git or public assets. Do not record irrelevant post content, screenshots, user identity, like/bookmark status or collection provenance in public material.
+For promising films, open the original public creator post and inspect the full disclosure/credit thread. Use the local private queue helper alongside the legacy inbox. Run its open command to see pending, blocked and awaiting-publication records. Add original public source URLs and short evidence notes. Deduplicate X posts by status ID, and confirm the queue write before advancing the feed cursor. The editorial run records an evidence-based disposition for each URL and marks it published only after confirming the canonical live destination. Exclude unrelated topics. Deduplicate against that inbox and published Markdown. Keep any cursor in the private task directory, never in public Git or public assets. Do not record irrelevant post content, screenshots, user identity, like/bookmark status or collection provenance in public material.
 
 If login/browser access fails, report that the X review is blocked; do not repeatedly request access or falsely report an empty queue. Do not bypass access barriers. The existing published website must remain intact. These are local Codex schedules and require the app/browser connection to be available; no unattended-run success should be claimed before a run has occurred.
 
