@@ -491,3 +491,5 @@ Added ClaudiaGI’s Qui a tiré la chasse?! with Extraltodeus’s original full 
 Added Tu me calcules pas, the Quentin du PC music video by Extraltodeus, with its original player, credited artwork and the journal note Left on read.
 
 A second November 11 update added Forever | Special Episode, the two-part Storm-Born and Yuri’s AI opera, plus an Absurd production note on retaining actors’ voices. The journal note is Camera plans and voices.
+
+Added Claudia’s Fable with its official final cut, credited still and the production record of the song replacement and second pass. The journal note is Claudia turns the page.

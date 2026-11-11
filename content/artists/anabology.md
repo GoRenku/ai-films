@@ -71,3 +71,7 @@ This reinforces the distinction between the audio that guides mouth movement and
 ## Claudia becomes a castable character
 
 On November 4, anabology announced that Claudia could be cast through Glif. Glif describes the accompanying video as a debut trailer made on its platform. This is a distribution and casting development for the recurring synthetic performer. Financial terms and any completed productions commissioned through the arrangement remain undisclosed. [Creator announcement and Glif release](https://x.com/anabology/status/2118026755726258247)
+
+## November 11 — Fable
+
+[Fable](/films/fable-claudia/) turns Claudia’s performance into a pop-up storybook. The official record credits Claude Fable 5.2 for writing, painting and directing the film, and identifies anabology’s brief, plan approval and decision to replace the original song take. The final performance was built around the replacement vocal. [Official cut and credits](https://claudia.gallery/fable/)
