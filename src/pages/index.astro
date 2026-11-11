@@ -1,4 +1,6 @@
 ---
+import { z } from 'astro/zod';
+import featureSlate from '../../content/featured.json';
 import Layout from '../layouts/Layout.astro';
 import FilmCard from '../components/FilmCard.astro';
 import ArtistCard from '../components/ArtistCard.astro';
@@ -10,11 +12,29 @@ const c = await catalog();
 const feed = await news();
 const { films, artistOf, isNew } = c;
 
-// The catalogue is already ordered by date added. Artwork resolution does not determine recency.
-const withArt = films.filter((f) => f.data.image);
-const slides = withArt.slice(0, 5);
-const featured = withArt.find((f) => f.data.featured);
-if (featured && !slides.includes(featured)) slides.splice(4, 1, featured);
+const featureEntries = z.array(z.object({
+  film: z.string().min(1),
+  since: z.iso.date(),
+  reason: z.string().trim().min(1),
+})).min(3).max(5).parse(featureSlate);
+
+const featuredArtists = new Set<string>();
+let featuredMusicVideos = 0;
+const featuresById = new Map(films.map((film) => [film.id, film]));
+const featuredWorks = featureEntries.map(({ film: id, since }) => {
+  const film = featuresById.get(id);
+  if (!film?.data.image) throw new Error(`Featured work requires credited artwork: ${id}`);
+  const artist = film.data.artist.id;
+  if (featuredArtists.has(artist)) throw new Error(`Homepage features repeat the artist ${artist}`);
+  featuredArtists.add(artist);
+  if (isMusicVideo(film) && ++featuredMusicVideos > 2) {
+    throw new Error('Homepage features allow up to two music videos');
+  }
+  const end = new Date(since);
+  end.setUTCDate(end.getUTCDate() + 7);
+  return { film, expires: end.toISOString().slice(0, 10) };
+});
+const slides = featuredWorks.map(({ film }) => film);
 // Each row skips what the rows above it already show, so the page never repeats itself.
 const seen = new Set(slides.map((f) => f.id));
 const justAdded = films.filter((f) => !seen.has(f.id)).slice(0, 14);
@@ -43,14 +63,14 @@ const genreTiles = genreGroups
 const week = feed.filter((n) => c.thisWeek(n.date));
 ---
 <Layout overlay>
-  <section class="hero" aria-roledescription="carousel" aria-label="Newest films">
-    <h1 class="sr-only">Latent Matinee — new AI cinema, updated daily</h1>
-    {slides.map((film, i) => {
+  <h1 class="sr-only">Latent Matinee — new AI cinema, updated daily</h1>
+  <section class="hero" aria-roledescription="carousel" aria-label="Featured films and music videos">
+    {featuredWorks.map(({ film, expires }, i) => {
       const d = film.data;
       const embed = d.status === 'Watch now' ? embedOf(d.watchUrl) : undefined;
       const artist = artistOf(film);
       return (
-        <article class:list={['slide', d.imageFit === 'contain' && 'is-poster', d.title.length > 32 && 'has-long-title']} data-active={i === 0 ? '' : undefined} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
+        <article class:list={['slide', d.imageFit === 'contain' && 'is-poster', d.title.length > 32 && 'has-long-title']} data-active={i === 0 ? '' : undefined} data-expires={expires} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}: ${d.title}`} style={`--img:url('${d.image}')`}>
           <div class="slide-bg"><img src={d.image} alt={d.imageAlt} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} width="1600" height="900" /></div>
           <div class="slide-body">
             <p class="slide-kicker">
@@ -71,7 +91,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
         </article>
       );
     })}
-    <div class="hero-index" role="tablist" aria-label="Choose a film">
+    <div class="hero-index" role="tablist" aria-label="Choose a featured work">
       {slides.map((film, i) => (
         <button type="button" role="tab" aria-label={`0${i + 1} ${film.data.title}`} aria-selected={i === 0 ? 'true' : 'false'} data-slide={i}>
           <span class="bar"><i></i></span>
@@ -169,30 +189,49 @@ const week = feed.filter((n) => c.thisWeek(n.date));
 <script>
   const hero = document.querySelector<HTMLElement>('.hero');
   if (hero) {
-    const slides = [...hero.querySelectorAll<HTMLElement>('.slide')];
+    const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Madrid' });
     const tabs = [...hero.querySelectorAll<HTMLButtonElement>('.hero-index button')];
-    let current = 0;
-    const show = (i: number) => {
-      current = (i + slides.length) % slides.length;
-      slides.forEach((s, j) => {
-        s.toggleAttribute('data-active', j === current);
-        s.toggleAttribute('inert', j !== current);
-      });
-      tabs.forEach((t, j) => t.setAttribute('aria-selected', String(j === current)));
-      const lazy = slides[current].querySelector('img');
-      if (lazy) lazy.loading = 'eager';
-    };
-    slides.forEach((s, j) => j && s.setAttribute('inert', ''));
-    tabs.forEach((t, j) => {
-      t.addEventListener('click', () => show(j));
-      t.querySelector('.bar i')!.addEventListener('animationend', () => show(current + 1));
+    const slides = [...hero.querySelectorAll<HTMLElement>('.slide')].filter((slide, i) => {
+      if (slide.dataset.expires! > today) return true;
+      slide.remove();
+      tabs[i].remove();
+      return false;
     });
-    const pause = (on: boolean) => hero.classList.toggle('paused', on);
-    hero.addEventListener('pointerenter', () => pause(true));
-    hero.addEventListener('pointerleave', () => pause(false));
-    hero.addEventListener('focusin', () => pause(true));
-    hero.addEventListener('focusout', () => pause(false));
-    document.addEventListener('visibilitychange', () => pause(document.hidden));
-    hero.classList.add('autoplay');
+    if (!slides.length) {
+      hero.hidden = true;
+      document.body.classList.remove('overlay');
+    } else {
+      const activeTabs = tabs.filter((tab) => tab.isConnected);
+      activeTabs.forEach((tab, i) => {
+        const title = slides[i].querySelector('h2')?.textContent?.trim() ?? '';
+        const number = `0${i + 1}`;
+        tab.setAttribute('aria-label', `${number} ${title}`);
+        tab.querySelector('.hero-index-num')!.textContent = number;
+        slides[i].setAttribute('aria-label', `${i + 1} of ${slides.length}: ${title}`);
+      });
+      let current = 0;
+      const show = (i: number) => {
+        current = (i + slides.length) % slides.length;
+        slides.forEach((s, j) => {
+          s.toggleAttribute('data-active', j === current);
+          s.toggleAttribute('inert', j !== current);
+        });
+        activeTabs.forEach((t, j) => t.setAttribute('aria-selected', String(j === current)));
+        const lazy = slides[current].querySelector('img');
+        if (lazy) lazy.loading = 'eager';
+      };
+      show(0);
+      activeTabs.forEach((t, j) => {
+        t.addEventListener('click', () => show(j));
+        t.querySelector('.bar i')!.addEventListener('animationend', () => show(current + 1));
+      });
+      const pause = (on: boolean) => hero.classList.toggle('paused', on);
+      hero.addEventListener('pointerenter', () => pause(true));
+      hero.addEventListener('pointerleave', () => pause(false));
+      hero.addEventListener('focusin', () => pause(true));
+      hero.addEventListener('focusout', () => pause(false));
+      document.addEventListener('visibilitychange', () => pause(document.hidden));
+      hero.classList.add('autoplay');
+    }
   }
 </script>

@@ -54,7 +54,7 @@ Palette and typography adapted from the existing studio website. Fraunces is pro
 
 Every page is derived from the content collections; no section is hand-curated. src/lib/catalog.ts holds the shared rules:
 
-- The homepage hero shows up to five catalogue works with artwork, newest by date added. Same-day entries use their catalogue order and then title. An explicit `featured` work can occupy the fifth slot. The Latest page lists all dated additions, including titles without artwork. Posters (`imageFit: contain`) fill the frame in the hero and retain their full composition on cards and film pages.
+- The homepage hero shows an editorial selection from `content/featured.json`. The daily editorial review weighs recency, audience response, relevance and how the credited artwork reads full-screen. The slate allows one work per creator, up to two music videos and a seven-day feature window per pick. Latest lists all dated additions. Posters (`imageFit: contain`) fill the frame in the hero and retain their full composition on cards and film pages.
 - “New” badges cover the last three days of additions; the weekly tally covers seven, both measured from the newest content date rather than the build date.
 - Free-text `genre` stays editorial. Ten broad genre groups are derived from it by keyword for browsing and filters; extend the patterns rather than adding a frontmatter field.
 - YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.

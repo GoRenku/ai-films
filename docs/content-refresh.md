@@ -9,7 +9,7 @@ Private discovery inbox: `/Users/keremk/.codex/.chatgpt-projects/g-p-6aabb55f14b
 
 ## Content-only boundary
 
-The scheduled refresh may change content/films/*.md, content/artists/*.md, content/festivals/*.md, content/updates/*.md, credited real assets in public/media/, README refresh summaries and editorial notes in docs/research-watchlist.md. Private tracking remains outside the repository. It must not change src/, CSS, Astro templates, components, layouts, scripts, package files, lockfiles, deployment configuration, headers or fonts. Report layout or schema/code issues for a separate explicitly requested task; do not fix them during content refreshes. Inspect the changed-file list before committing or deploying and stop on changes outside this scope or unrelated concurrent work.
+The scheduled refresh may change content/films/*.md, content/artists/*.md, content/festivals/*.md, content/updates/*.md, the editorial content/featured.json slate, credited real assets in public/media/, README refresh summaries and editorial notes in docs/research-watchlist.md. Private tracking remains outside the repository. It must not change src/, CSS, Astro templates, components, layouts, scripts, package files, lockfiles, deployment configuration, headers or fonts. Report layout or schema/code issues for a separate explicitly requested task; do not fix them during content refreshes. Inspect the changed-file list before committing or deploying and stop on changes outside this scope or unrelated concurrent work.
 
 Use the existing configured `pnpm deploy:cloudflare` command to publish the exact GitHub-pushed commit to https://latentmatinee.com. Do not use Sites, its tools, its remote or .openai/hosting.json for publishing. Preserve the existing Cloudflare project, domains, DNS, redirects and audience.
 
@@ -37,6 +37,12 @@ Before committing or deploying a journal change:
 4. After the normal GitHub-first deployment, open the journal on latentmatinee.com and verify the same card/sidebar counts, links and loaded images before reporting success. Check the journal itself, not only individual film pages.
 
 Do not report a journal refresh as complete solely because source links, individual film images or generic build validation passed. This review is required in addition to those checks.
+
+## Homepage features
+
+The daily editorial refresh owns the ordered `content/featured.json` slate. Review it on every run, including days with no catalogue additions. Feature three to five works with credited artwork, at most one work per creator and at most two music videos. Use the film slug, the original Madrid calendar date it entered the slate as `since`, and a short editorial `reason`. Cite original audience or award evidence in the reason when it affects the pick. Weigh audience interest alongside recent releases, new episodes, availability, range across formats, and whether the actual image reads well at desktop and mobile hero crops. Prefer a representative still over an interface frame or an illegible poster crop. Keep popularity in context across platforms and release ages.
+
+Retain a worthwhile pick with its original date for at most seven days. Rotate earlier when a stronger candidate arrives. Check recent slate history before bringing back a pick, and give it at least one week off after removal. Change the order only for a reason. Verify that the rendered home has the intended lineup, no repeated creator, loaded artwork and working carousel controls before committing and again on the public site. The Latest feed contains the complete set of additions independently of feature selection. An unchanged slate does not require a commit.
 
 ## Research and publishing
 
