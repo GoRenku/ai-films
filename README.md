@@ -485,3 +485,7 @@ Added Vikki Bardot’s account of how she and Alkan Avcıoğlu developed A Woman
 ## November 10, 2026 editorial refresh
 
 Added ClaudiaGI’s Qui a tiré la chasse?! with Extraltodeus’s original full release, credited artwork and the journal note A bathroom as a pop stage.
+
+## November 11, 2026 editorial refresh
+
+Added Tu me calcules pas, the Quentin du PC music video by Extraltodeus, with its original player, credited artwork and the journal note Left on read.
