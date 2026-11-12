@@ -614,3 +614,10 @@ Playback follow-up: confirmed the director’s 14:00 DeoVR upload of The Finding
 ## November 11, 2026 — Beethoven feature
 
 Monique Pryce [demonstrates dialogue direction](https://x.com/second_bassoon/status/2117307653320007954) in a roughly 57-second excerpt from her in-progress Beethoven feature. She names Seedance 2.5 and describes shorter lines, intentional pauses and physical actions between lines. The clip and accompanying post establish a work in production. Formal feature credits and a completed release remain unverified.
+
+## November 12, 2026 — Japan playback follow-up
+
+- TYO’s original Rain and Tokyo Echo and its English versions of Tokyo Imitation and Tokyo New Wave played in signed-out Chrome Incognito. All four match their festival credits and approximate runtimes.
+- The EISENRITTER award matches the [creator’s full compilation](https://www.youtube.com/watch?v=qjPNe9bYfuI), an edit of episodes one through four with additional scenes. Preserved the award’s original addition date.
+- Exact-title and maker checks in signed-out YouTube yielded unrelated titles for ABYSS SIREN and Little Sun, Annecy’s interview for The Amazing Kitsuverse, and no verified full upload for Ticket to Neverland. The official [Japan programme](https://aifilm.jp/program_en.html) still supports their screening status.
+- [AI Movie Awards London](https://www.aimovieawards.org/) held its ceremony November 8, and its [published winners release](https://www.londondaily.news/ai-movie-awards-announces-winners-of-first-london-edition-celebrating-global-ai-filmmaking-talent/) lists twelve winning works. The London and earlier Mallorca results need a complete film-by-film reconciliation before the festival entry is ready.

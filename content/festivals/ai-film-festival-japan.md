@@ -9,7 +9,7 @@ cadence: "Annual"
 website: "https://aifilm.jp/index_en.html"
 x: {url: "https://x.com/AIFJ2025", label: "@AIFJ2025 on X", source: "https://aifilm.jp/index_en.html"}
 discoveredAt: "2026-11-02"
-lastVerifiedAt: "2026-11-09"
+lastVerifiedAt: "2026-11-12"
 sources:
   - {label: "Official site (English)", url: "https://aifilm.jp/index_en.html"}
   - {label: "2025 winners list", url: "https://aifilm.jp/index.php?page_id=2529"}
@@ -66,7 +66,7 @@ editions:
       - {"category": "BEST MUSIC (LIVE ACTION)", "result": "Winner", "title": "Return to the Womb", "credit": "小鷹狩綾乃 / Ayano Kotakari", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
       - {"category": "OUTSTANDING (LIVE ACTION)", "result": "Runner-up", "title": "Laundromat", "credit": "Masayoshi Kurihara", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
       - {"category": "BEST MUSIC (ANIMATION)", "result": "Winner", "title": "AIFJ2026 Theme B - Original Score", "credit": "821R (Honey R)", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
-      - {"category": "CapCut Award", "result": "Winner", "title": "EISENRITTER Confronting the World", "credit": "TechTalkNavigator", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
+      - {"category": "CapCut Award", "result": "Winner", "film": "eisenritter-confronting-the-world", "credit": "TechTalkNavigator", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
       - {"category": "SIO Award 1st", "result": "Winner", "title": "Kaguya's Letter", "credit": "Galvanizing", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
       - {"category": "SIO Award 2nd", "result": "Runner-up", "title": "Moonlight", "credit": "Auremi", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
       - {"category": "SIO Award 3rd", "result": "Runner-up", "title": "Until the Sky Falls", "credit": "CRS", "addedAt": "2026-11-09", "source": "https://www.aifilm.jp/#award-winners-2026"}
@@ -84,4 +84,8 @@ The second edition ran at Tokyo Innovation Base from October 31 to November 2, 2
 
 ### November 9, 2026
 
-The [organiser’s results](https://www.aifilm.jp/#award-winners-2026) identify Vincenzo Lo Re’s [The Finding](/films/the-finding/) as the Grand Prix winner at the November 1 ceremony. Eleven awarded works are linked to their catalogue records. The film-score and SIO vocal-track prizes remain separate award entries.
+The [organiser’s results](https://www.aifilm.jp/#award-winners-2026) identify Vincenzo Lo Re’s [The Finding](/films/the-finding/) as the Grand Prix winner at the November 1 ceremony. The film-score and SIO vocal-track prizes remain separate award entries.
+
+### November 12, 2026
+
+The CapCut Award now links to [EISENRITTER Confronting the World](/films/eisenritter-confronting-the-world/), the creator’s compilation of episodes one through four. Four Tokyo Stories winners also have full-film players from TYO.

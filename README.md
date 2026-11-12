@@ -493,3 +493,9 @@ Added Tu me calcules pas, the Quentin du PC music video by Extraltodeus, with it
 A second November 11 update added Forever | Special Episode, the two-part Storm-Born and Yuri’s AI opera, plus an Absurd production note on retaining actors’ voices. The journal note is Camera plans and voices.
 
 Added Claudia’s Fable with its official final cut, credited still and the production record of the song replacement and second pass. The journal note is Claudia turns the page.
+
+## November 12, 2026 festival refresh
+
+Verified full-film playback for Rain, Tokyo Imitation, Tokyo New Wave and Tokyo Echo. Added TechTalkNavigator and the awarded EISENRITTER compilation, with the existing CapCut Award linked to that cut.
+
+Updated Torino Underground Cinefest’s Deadline B to November 27, as published on its FilmFreeway listing.

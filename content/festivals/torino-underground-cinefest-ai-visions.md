@@ -8,7 +8,7 @@ organiser: "Associazione Culturale SystemOut, with Associazione Baretti"
 cadence: "Annual"
 website: "https://www.tucfest.com/"
 discoveredAt: "2026-11-02"
-lastVerifiedAt: "2026-11-05"
+lastVerifiedAt: "2026-11-12"
 sources:
   - {label: "Official 2026 results", url: "https://www.tucfest.com/i-premi-del-torino-underground-cinefest-2026/"}
   - {label: "2027 rules and call for entries", url: "https://www.tucfest.com/rules-and-terms/"}
@@ -30,7 +30,7 @@ editions:
     prizes: "A Best AI Film award among the festival's special awards."
     milestones:
       - {kind: "Entries open", date: "2026-09-02", note: "The written rules give September 2; FilmFreeway lists its opening date as September 11", source: "https://www.tucfest.com/rules-and-terms/"}
-      - {kind: "Deadline", date: "2026-11-09", note: "Deadline B, one of the paid entry tiers", source: "https://filmfreeway.com/TUCFEST"}
+      - {kind: "Deadline", date: "2026-11-27", note: "Deadline B, one of the paid entry tiers", source: "https://filmfreeway.com/TUCFEST"}
       - {kind: "Final deadline", date: "2027-08-09", note: "Deadline L on the festival’s FilmFreeway entry listing", source: "https://filmfreeway.com/TUCFEST"}
       - {kind: "Screening", date: "2027-09-27", endDate: "2027-10-03", note: "Festival dates; the AI Visions screening times are still to be announced", source: "https://filmfreeway.com/TUCFEST"}
 ---
@@ -48,3 +48,7 @@ For 2027 the section becomes **AI Visions**, "a new competitive section dedicate
 ### November 5, 2026
 
 The festival’s FilmFreeway listing gives November 9 for its next paid entry tier and August 9, 2027 for its final entry deadline. The written rules still say mid-August. FilmFreeway lists the festival for September 27 to October 3, 2027. The rules’ August 16 date is for delivering screening copies of selected films.
+
+### November 12, 2026
+
+The festival’s [FilmFreeway listing](https://filmfreeway.com/TUCFEST) now gives November 27 for Deadline B. The final deadline is still August 9, 2027.
