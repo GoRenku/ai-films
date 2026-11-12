@@ -503,3 +503,5 @@ Updated Torino Underground Cinefest’s Deadline B to November 27, as published 
 ## November 12, 2026 editorial refresh
 
 Added The Trials, LATE, Raphael, For The Record, Grieving Freshies and four music videos: Pas calculé, The Words You Never Said, an untitled JeffTriesThings release and Christmas With Myself. Added Hal Watmough and Mateo AI Studio profiles. Updated Exile Protocol with Reckoning, A Woman Asleep with the Cottbus screening response, and Obliteration with its Episode 2 teaser. The journal note *A quill toss and a reckoning* also records Monique Pryce’s disclosure about directing a dialogue scene from her Beethoven feature.
+
+Verified the original Edit9 player for LATE and added Domain Filmes A.I’s full cuts of After Impact, Black Horizon and Black Horizon Ancestral.
