@@ -499,3 +499,7 @@ Added Claudia’s Fable with its official final cut, credited still and the prod
 Verified full-film playback for Rain, Tokyo Imitation, Tokyo New Wave and Tokyo Echo. Added TechTalkNavigator and the awarded EISENRITTER compilation, with the existing CapCut Award linked to that cut.
 
 Updated Torino Underground Cinefest’s Deadline B to November 27, as published on its FilmFreeway listing.
+
+## November 12, 2026 editorial refresh
+
+Added The Trials, LATE, Raphael, For The Record, Grieving Freshies and four music videos: Pas calculé, The Words You Never Said, an untitled JeffTriesThings release and Christmas With Myself. Added Hal Watmough and Mateo AI Studio profiles. Updated Exile Protocol with Reckoning, A Woman Asleep with the Cottbus screening response, and Obliteration with its Episode 2 teaser. The journal note *A quill toss and a reckoning* also records Monique Pryce’s disclosure about directing a dialogue scene from her Beethoven feature.

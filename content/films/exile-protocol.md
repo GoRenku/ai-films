@@ -13,7 +13,7 @@ imageAlt: "Exile Protocol Episode 8 artwork showing armed mechs in a ruined city
 imageCredit: "S.A.V / Phantom X · original Episode 8 release artwork"
 imageSource: "https://www.youtube.com/watch?v=AgSh4bzUGmQ"
 discoveredAt: "2026-10-14"
-lastVerifiedAt: "2026-10-14"
+lastVerifiedAt: "2026-11-12"
 sources: [{"label": "Original complete release", "url": "https://www.youtube.com/watch?v=AgSh4bzUGmQ"}, {"label": "Original creator channel", "url": "https://www.youtube.com/@FilmsBySav"}, {"label": "Maker staged-reference technique", "url": "https://x.com/FilmsBySav/status/2103190223173865792"}]
 production: [{"label": "Creator and production label", "detail": "The original channel credits creation to S.A.V, presents a Phantom X Original Series and labels Episode 8 Made in Invideo Agent Two.", "source": "https://www.youtube.com/watch?v=AgSh4bzUGmQ"}, {"label": "Shot references", "detail": "The maker describes Blender and a phone for building series shots with Invideo Agent 2. This is project-level technique, not an Episode 8 shot-by-shot inventory.", "source": "https://x.com/FilmsBySav/status/2103190223173865792"}]
 episodes:
@@ -29,6 +29,15 @@ episodes:
     imageCredit: "S.A.V / Phantom X · original Episode 8 release artwork"
     imageSource: "https://www.youtube.com/watch?v=AgSh4bzUGmQ"
     source: "https://www.youtube.com/watch?v=AgSh4bzUGmQ"
+  - number: 9
+    title: "Reckoning"
+    synopsis: "S.A.V’s penultimate release leads into the announced season finale."
+    releasedOn: "2026-11-11"
+    addedAt: "2026-11-12"
+    runtimeMinutes: 21.231933333333333
+    status: "Watch now"
+    watchUrl: "https://x.com/FilmsBySav/status/2120548779804016976"
+    source: "https://x.com/FilmsBySav/status/2120548779804016976"
 ---
 
 The original channel publishes a continuing **Exile Protocol** catalogue and identifies S.A.V as its creator. **Episode 8, “The Righteous,”** was released October 13 and runs **18:12**. The watch button opens that episode; the runtime above describes this instalment, not the season.
@@ -42,3 +51,7 @@ Serial action demands repeatable characters, mechanical design and understandabl
 ## Production scope
 
 The release is labelled a **Phantom X Original**, made in **Invideo Agent Two**. The September 24 staging post is series-level craft evidence, not proof that every Episode 8 shot uses Blender. Earlier channel episodes carry Agent One labels. Full named credits, underlying model versions, budget and total crew remain unknown in this entry. Original synopsis, chapter structure, channel identity, playback and artwork were checked; no complete critical viewing is claimed.
+
+## Episode 9 — Reckoning
+
+[S.A.V’s November 11 release](https://x.com/FilmsBySav/status/2120548779804016976) runs about **21:14**. The maker describes a solo production taking about three weeks and says it leads into a planned season finale the following month. The announcement gives no exact release date for the finale or model list for Episode 9. The series’ main watch link continues to start with the earliest playable episode listed here.
