@@ -1,5 +1,5 @@
 ---
-title: "Sky Line Heist"
+title: "Squid Heist"
 artist: "nexus-filmmakers"
 description: "A gold-producing squid is trapped aboard a luxury sky train in a new story from the Nexus anthology."
 year: 2026
@@ -10,7 +10,7 @@ watchUrl: "https://x.com/PJaccetturo/status/2100218143625073088"
 watchLabel: "Watch at the source"
 order: 6
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-13"
 sources:
   [
     {
@@ -73,3 +73,5 @@ PJ Ace reports a **$29,575 budget and ten-day production**, including five full-
 - **Establish relative scale.** A clean reference of a character carrying Goldie provided a size relationship that could be reused in other scenes.
 
 These are the team's disclosed techniques, not universal guarantees. The linked post includes the released video and the full thread; its player includes additional material, so we have not assigned a precise narrative runtime.
+
+PJ Ace’s official upload calls this **Squid Heist**, Episode 4. It was previously catalogued here as **Sky Line Heist**.

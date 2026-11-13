@@ -1,5 +1,5 @@
 ---
-title: "Maki Death Games — Nexus Episode 5"
+title: "Maki Death Games"
 artist: "nexus-filmmakers"
 description: "A vulnerable creature faces a lethal stadium obstacle course in the Nexus anthology."
 year: 2026
@@ -13,8 +13,8 @@ imageAlt: "A small orange-furred Maki in the original episode's video poster"
 imageCredit: "Nexus / PJ Ace · original video poster"
 imageSource: "https://x.com/PJaccetturo/status/2105285283298115670"
 discoveredAt: "2026-10-03"
-lastVerifiedAt: "2026-10-03"
-sources: [{"label":"Original episode and production thread","url":"https://x.com/PJaccetturo/status/2105285283298115670"},{"label":"Episode title and number","url":"https://x.com/PJaccetturo/status/2106010059377418604"},{"label":"Public 3D workflow","url":"https://docs.google.com/document/d/1MXARcTpDhzahT_r2LV974MfeOGaJFEZsaZujMqpTQSU/edit"},{"label":"Original video-model disclosure","url":"https://x.com/PJaccetturo/status/2105285283990126848"},{"label":"Disclosed scene prompt","url":"https://x.com/PJaccetturo/status/2105285290436812964"}]
+lastVerifiedAt: "2026-11-13"
+sources: [{"label": "PJ Ace’s numbered YouTube release", "url": "https://www.youtube.com/watch?v=ojyjZYhKKmI"}, {"label":"Original episode and production thread","url":"https://x.com/PJaccetturo/status/2105285283298115670"},{"label":"Episode title and number","url":"https://x.com/PJaccetturo/status/2106010059377418604"},{"label":"Public 3D workflow","url":"https://docs.google.com/document/d/1MXARcTpDhzahT_r2LV974MfeOGaJFEZsaZujMqpTQSU/edit"},{"label":"Original video-model disclosure","url":"https://x.com/PJaccetturo/status/2105285283990126848"},{"label":"Disclosed scene prompt","url":"https://x.com/PJaccetturo/status/2105285290436812964"}]
 production: [{"label":"Image and video tools","detail":"PJ Ace names Midjourney for the base stadium look, Nano Banana and Seedream 5 for five variants, then Seedance 2.5 through Dreamina for video.","source":"https://x.com/PJaccetturo/status/2105285283298115670"},{"label":"3D staging","detail":"Claude-assisted Blender greyboxing and animation produce reference sequences. The maker says the team had not used Blender before; this claim is not independently audited.","source":"https://x.com/PJaccetturo/status/2106010057917805053"},{"label":"Reference handoff","detail":"The guide exports Workbench renders at 24 fps and assigns the video reference to camera/timing, with image references providing finished character and location design.","source":"https://docs.google.com/document/d/1MXARcTpDhzahT_r2LV974MfeOGaJFEZsaZujMqpTQSU/edit"},{"label":"Commercial context and scope","detail":"The creator identifies a Dreamina Original Series. Exact episode budget, crew list, sponsorship terms and production duration are not disclosed in the checked thread.","source":"https://x.com/PJaccetturo/status/2106010059377418604"}]
 ---
 
@@ -31,3 +31,5 @@ The [October 2 guide](https://docs.google.com/document/d/1MXARcTpDhzahT_r2LV974M
 The [published scene prompt](https://x.com/PJaccetturo/status/2105285290436812964) distinguishes what to inherit from previs—route and timing—from what to reject, including flat shading and weightless movement. It separately specifies character motivation, gaze, water motion and diegetic sound without generated music. These are maker instructions being described as evidence, not guarantees of the model's behavior.
 
 Credits from **Sky Line Heist** are not copied onto this episode. The source does not establish that the same director, animators or editor made both.
+
+The alternate YouTube upload is titled **Monkey Death Games** and also identifies it as Episode 5. The film keeps the title used in PJ Ace’s X release thread.

@@ -513,3 +513,5 @@ Added AIST’s ARTIFICIAL, TechTalkNavigator’s Immune Prime and MINIMA’s kus
 Refreshed the homepage lineup with The Trials, Pas calculé and ARTIFICIAL. The daily editor now compares new additions with current picks before publishing.
 
 The homepage now pairs Fable’s storybook musical with MINIMA’s experimental kusarabi. Featured picks are reviewed for originality, craft and variety across the lineup.
+
+Rebuilt the Nexus guide in creator-confirmed release order, restored the missing early stories and The Last Whales of Caldera, and documented the conflicting upload number and title variants. Featured Prison Break — Part I and recorded its crew and two-pass animation workflow. See *When Nexus stories meet* in the journal.

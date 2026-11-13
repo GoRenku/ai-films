@@ -6,8 +6,8 @@ focus: "Anthology & collaborative world-building"
 website: "https://x.com/PJaccetturo/status/2100218143625073088"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-24"
-sources: [{"label": "PJ Ace — Sky Line Heist production breakdown", "url": "https://x.com/PJaccetturo/status/2100218143625073088"}, {"label": "Public team credits", "url": "https://x.com/PJaccetturo/status/2100218148981256499"}, {"label": "Nexus cost and process disclosure", "url": "https://x.com/PJaccetturo/status/2112899203701547153"}, {"label": "Blender staging", "url": "https://x.com/PJaccetturo/status/2112899206448914913"}, {"label": "Still storyboard method", "url": "https://x.com/PJaccetturo/status/2112899207568785784"}, {"label": "Creator’s public workflow link", "url": "https://x.com/PJaccetturo/status/2113632068651667801"}, {"label": "Nexus storyboard guide and Theo Dudley credit", "url": "https://docs.google.com/document/d/1-VBwdGAHAd3eDblGc9Wal25zOOJzydyAQkO50539hdg/edit"}]
+lastVerifiedAt: "2026-11-13"
+sources: [{"label": "Episode 8 Part I crew credits", "url": "https://x.com/PJaccetturo/status/2121249238873227636"}, {"label": "PJ Ace on the shift to a connected story", "url": "https://x.com/PJaccetturo/status/2121249227582181387"}, {"label": "PJ Ace — Sky Line Heist production breakdown", "url": "https://x.com/PJaccetturo/status/2100218143625073088"}, {"label": "Public team credits", "url": "https://x.com/PJaccetturo/status/2100218148981256499"}, {"label": "Nexus cost and process disclosure", "url": "https://x.com/PJaccetturo/status/2112899203701547153"}, {"label": "Blender staging", "url": "https://x.com/PJaccetturo/status/2112899206448914913"}, {"label": "Still storyboard method", "url": "https://x.com/PJaccetturo/status/2112899207568785784"}, {"label": "Creator’s public workflow link", "url": "https://x.com/PJaccetturo/status/2113632068651667801"}, {"label": "Nexus storyboard guide and Theo Dudley credit", "url": "https://docs.google.com/document/d/1-VBwdGAHAd3eDblGc9Wal25zOOJzydyAQkO50539hdg/edit"}]
 x:
   {
     "url": "https://x.com/PJaccetturo",
@@ -18,7 +18,7 @@ x:
 
 ## Why follow this team
 
-**Sky Line Heist** makes the division of authorship clear: Beau Fipke directs, while PJ Ace is creator and executive producer and writes with Dan Weller. The work belongs to the Nexus anthology, whose stories revolve around creatures in danger.
+**Squid Heist** makes the division of authorship clear: Beau Fipke directs, while PJ Ace is creator and executive producer and writes with Dan Weller. The work belongs to the Nexus anthology, whose stories revolve around creatures in danger.
 
 The useful signal is a recurring dramatic concern inside a shared visual world, supported by named collaborators. Their public breakdown links look development, performance direction and editing to the finished short. That is more instructive than a claim that a single prompt produced a film.
 
@@ -32,8 +32,14 @@ The useful method is [Claude-assisted Blender staging](https://x.com/PJaccetturo
 
 ## October 24 — the storyboard workflow and its director
 
-PJ Ace’s [publicly linked Nexus workflow document](https://docs.google.com/document/d/1-VBwdGAHAd3eDblGc9Wal25zOOJzydyAQkO50539hdg/edit) credits **Theo Dudley** as lead director for the project described there. That work-specific credit does not replace Beau Fipke’s direction of Sky Line Heist or assign Dudley to every earlier episode.
+PJ Ace’s [publicly linked Nexus workflow document](https://docs.google.com/document/d/1-VBwdGAHAd3eDblGc9Wal25zOOJzydyAQkO50539hdg/edit) credits **Theo Dudley** as lead director for the project described there. That work-specific credit does not replace Beau Fipke’s direction of Squid Heist or assign Dudley to every earlier episode.
 
 The guide makes spatial preparation concrete: build a simple scene at consistent scale, use coloured character stand-ins, preserve world orientation and screen direction, and define a real camera position, lens and height for each shot. Several frames from those actual camera views become storyboards. Geometry and blocking guide continuity while separate references supply appearance. The useful distinction is between fixing the scene’s spatial relationships and rigidly copying every motion from an animatic.
 
 This is an attributed production method, not a new completed-film announcement or an audited savings claim. Its linked example prompts are source material; they are neither reproduced nor executed here.
+
+## November 13 — from anthology to serial
+
+The [Nexus episode guide](/films/nexus/#episodes) now follows the team’s numbered release order. PJ Ace describes the first seven episodes as a way to develop the world and find characters worth bringing back. [Prison Break — Part I](/films/nexus-prison-break-part-one/) reunites Anika and Jace and begins the continuing story.
+
+The episode credits Beau Fipke as director, PJ Ace as creator and executive producer, and PJ Ace and Dan Weller as writers. Steven Quach led animation, with Giulio Fulchignoni and Joe Sill also animating. Tyler Messervey edited. The episode’s two-pass Seedance coverage gave animators stable character positions for close-ups without building the shots in 3D.
