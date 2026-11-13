@@ -511,3 +511,5 @@ Verified the original Edit9 player for LATE and added Domain Filmes A.I’s full
 Added AIST’s ARTIFICIAL, TechTalkNavigator’s Immune Prime and MINIMA’s kusarabi, plus a profile for MINIMA. Updated Storm-Born and CHUMBO with sourced reference, staging and sound-production details. See *What the reference carries* in the journal.
 
 Refreshed the homepage lineup with The Trials, Pas calculé and ARTIFICIAL. The daily editor now compares new additions with current picks before publishing.
+
+The homepage now pairs Fable’s storybook musical with MINIMA’s experimental kusarabi. Featured picks are reviewed for originality, craft and variety across the lineup.
