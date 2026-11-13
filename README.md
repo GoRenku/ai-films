@@ -515,3 +515,5 @@ Refreshed the homepage lineup with The Trials, Pas calculé and ARTIFICIAL. The 
 The homepage now pairs Fable’s storybook musical with MINIMA’s experimental kusarabi. Featured picks are reviewed for originality, craft and variety across the lineup.
 
 Rebuilt the Nexus guide in creator-confirmed release order, restored the missing early stories and The Last Whales of Caldera, and documented the conflicting upload number and title variants. Featured Prison Break — Part I and recorded its crew and two-pass animation workflow. See *When Nexus stories meet* in the journal.
+
+Expanded the Prison Break production notebook with PJ Ace’s reported labor and animation cost split, design-reference workflow and the status of his character-audio guide.
