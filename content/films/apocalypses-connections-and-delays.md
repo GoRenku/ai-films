@@ -13,8 +13,8 @@ imageAlt: "An investigator holds a red oval object beneath the words Nothing Was
 imageCredit: "Daniił Vołkaŭ · official Episode 1 YouTube thumbnail"
 imageSource: "https://www.youtube.com/watch?v=lvWgWMYYiPo"
 discoveredAt: "2026-10-09"
-lastVerifiedAt: "2026-10-09"
-sources: [{"label": "Original full episode and expanded description", "url": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}, {"label": "Creator — original public release link", "url": "https://x.com/machina9000/status/2108461562231243255"}]
+lastVerifiedAt: "2026-11-14"
+sources: [{"label": "Creator’s full Episode 5 release", "url": "https://x.com/machina9000/status/2121288923074666631"}, {"label": "Original full episode and expanded description", "url": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}, {"label": "Creator — original public release link", "url": "https://x.com/machina9000/status/2108461562231243255"}]
 production: [{"label": "Authorship and disclosure scope", "detail": "The original release identifies Daniił Vołkaŭ. Exact models, human performers, total crew, editing software and budget are not disclosed in the checked description.", "source": "https://www.youtube.com/watch?v=lvWgWMYYiPo"}]
 episodes:
   - number: 1
@@ -25,6 +25,18 @@ episodes:
     status: "Watch now"
     watchUrl: "https://www.youtube.com/watch?v=lvWgWMYYiPo"
     source: "https://www.youtube.com/watch?v=lvWgWMYYiPo"
+  - number: 5
+    synopsis: "When a porter dies in a snowbound gorge, Beatrice investigates the time missing from his fall."
+    releasedOn: "2026-11-13"
+    addedAt: "2026-11-14"
+    runtimeMinutes: 9.566666666666666
+    status: "Watch now"
+    watchUrl: "https://x.com/machina9000/status/2121288923074666631"
+    image: "/media/apocalypses-episode-five.jpg"
+    imageAlt: "Bowls sit intact in a fabric-lined crate dusted with snow"
+    imageCredit: "Daniił Vołkaŭ · original Episode 5 release thumbnail"
+    imageSource: "https://x.com/machina9000/status/2121288923074666631"
+    source: "https://x.com/machina9000/status/2121288923074666631"
 ---
 
 **Terms and Conditions**, the first episode, was uploaded September 8. The creator shared it again on October 9; that share is not a new premiere. The original full player runs **9:57**, slightly longer than the description’s rounded nine-minute account. Playback and the complete description were checked October 9.
@@ -40,3 +52,7 @@ This connects to Vołkaŭ’s recurring interest in institutions, evidence and w
 ## Production evidence
 
 The expanded description names fictional characters and their story roles. Its “CAST / SERIES” heading is not a performer credit list: Beatrice Mord, Tomas Grey, Pikk, Article Thirteen and Conductor-General Noll are characters. No generation models, editing software, human cast, complete crew, budget or episode-specific production recipe are disclosed there. Claims from the creator’s other projects are not transferred to this series.
+
+## Episode 5 — the missing seconds
+
+In the [9:34 release](https://x.com/machina9000/status/2121288923074666631), a porter dies in a gorge while his fragile cargo survives. Beatrice follows the missing time to an institution where someone else pays for every gift of time. The intact cargo gives the investigation a physical clue before it reaches the institution’s rules. The creator mentions $100,000 without defining the scope of that figure. The guide links verified Episodes 1 and 5 and leaves the intervening numbers open.
