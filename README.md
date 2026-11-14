@@ -38,7 +38,7 @@ Copy a relevant existing file to add an entry. Slugs are stable filenames. Recor
 
 ## Periodic refresh
 
-A twice-weekly festival watch (`refresh-ai-film-festivals`, Monday and Thursday at 11:30 Europe/Madrid) checks festival and competition calls, deadlines and results and publishes festival records. Two daily Codex follow-ups work in sequence: an 11:00 Europe/Madrid X discovery review supplies a private queue; the 13:00 editorial refresh reads it alongside AI Film Director Watch, monitors verified artist accounts, verifies discoveries against original sources, updates Markdown and publishes meaningful changes. See docs/content-refresh.md. It needs the local machine and Codex environment available; this is not a server-side scheduler.
+The daily editorial refresh runs at 13:00 Europe/Madrid. The festival watch runs Mondays and Thursdays at 11:30, and the existing AI Film Director Watch provides a weekly deep editorial survey on Thursdays at 11:00. The separate 11:00 daily X discovery task uses the official X API for public intake. See the [maintenance plan](docs/maintenance-plan.md) for source coverage, bookmarks, handoffs and Featured decisions, and the [content refresh procedure](docs/content-refresh.md) for publishing and verification.
 
 Scheduled editorial refreshes are content-only: Markdown entries, credited media, refresh summaries and editorial research notes. They must not change CSS, templates, layouts, application code, deployment configuration or dependencies. Layout issues require a separate explicitly requested task. Publication uses the existing `pnpm deploy:cloudflare` command; the former Sites target is retired.
 
