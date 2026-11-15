@@ -7,17 +7,17 @@ format: "Music video"
 genre: "Music video"
 status: "Watch now"
 discoveredAt: "2026-11-14"
-lastVerifiedAt: "2026-11-14"
+lastVerifiedAt: "2026-11-15"
 image: "/media/dream-tape-antic.jpg"
 imageAlt: "A cassette deck with glowing green meters sits behind two tapes"
 imageCredit: "antic · original release thumbnail"
 imageSource: "https://x.com/antic/status/2121489459573309612"
-sources: [{"label": "Original music video", "url": "https://x.com/antic/status/2121489459573309612"}, {"label": "Original song", "url": "https://suno.com/song/d6c86390-563e-4ced-b629-e6cd97af9d79"}, {"label": "Creator’s editing account", "url": "https://x.com/antic/status/2121489461095837816"}, {"label": "Creator’s video-tool credit", "url": "https://x.com/antic/status/2121493329905131705"}]
+sources: [{"label": "Original music video", "url": "https://x.com/antic/status/2121489459573309612"}, {"label": "Original song", "url": "https://suno.com/song/d6c86390-563e-4ced-b629-e6cd97af9d79"}, {"label": "Creator’s editing account", "url": "https://x.com/antic/status/2121489461095837816"}, {"label": "Creator’s video-tool credit", "url": "https://x.com/antic/status/2121493329905131705"}, {"label": "Creator’s follow-up on surreal continuity", "url": "https://x.com/antic/status/2121661474263408981"}]
 watchUrl: "https://x.com/antic/status/2121489459573309612"
 watchLabel: "Watch the original music video"
 runtimeMinutes: 2.8333333333333335
 musician: "antic"
-production: [{"label": "Planning and revision", "detail": "antic names Fable 5.2 and reports editing, correcting and replanning the shots.", "source": "https://x.com/antic/status/2121489461095837816"}, {"label": "Video clips", "detail": "antic credits Grok Imagine for the clips.", "source": "https://x.com/antic/status/2121493329905131705"}]
+production: [{"label": "Planning and revision", "detail": "antic names Fable 5.2 and reports editing, correcting and replanning the shots.", "source": "https://x.com/antic/status/2121489461095837816"}, {"label": "Video clips", "detail": "antic credits Grok Imagine for the clips.", "source": "https://x.com/antic/status/2121493329905131705"}, {"label": "Which room changes to keep", "detail": "antic says the edit kept deliberate room changes between shots and reworked surreal details when they pulled attention away from the story.", "source": "https://x.com/antic/status/2121661474263408981"}]
 ---
 
 ## Why this music video matters
@@ -25,3 +25,5 @@ production: [{"label": "Planning and revision", "detail": "antic names Fable 5.2
 The cassette deck gives the dream premise a physical object. The title suggests a way to hold onto experiences that normally disappear on waking. antic links the complete video to the released song of the same name.
 
 The maker says the initial plan with Fable 5.2 still required hands-on editing, corrections and new shot plans. The release credits Grok Imagine for clips. Crew, budget and per-shot tool assignments are unstated.
+
+In a [follow-up about the edit](https://x.com/antic/status/2121661474263408981), antic describes keeping some changes to the room between shots and reworking others when they distracted from the story. That decision lets the space behave like a dream while giving the viewer a thread to follow.

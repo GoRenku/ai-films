@@ -523,3 +523,7 @@ Expanded the Prison Break production notebook with PJ Ace’s reported labor and
 Added antic’s Dream Tape and Kelly Boesch’s Before I Knew. Updated Apocalypses, Connections and Delays with the creator’s full Episode 5 release. See *What the cut keeps* in the journal.
 
 Added TUPACABRA’s upcoming Nuremberg with the credited trailer and attributed feature plans, and JSFILMZ’s complete DEADRISE with the five-day workflow and sound editing credit. Added profiles for both creators.
+
+## November 15, 2026 editorial refresh
+
+Added the Nexus team’s character-voice workflow to Prison Break — Part I, antic’s editing disclosure to Dream Tape, and Roninfilm’s Part One listing to the Treasure of the Himalayas episode guide. See *A voice across the cut* in the journal.
