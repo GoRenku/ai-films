@@ -527,3 +527,7 @@ Added TUPACABRA’s upcoming Nuremberg with the credited trailer and attributed 
 ## November 15, 2026 editorial refresh
 
 Added the Nexus team’s character-voice workflow to Prison Break — Part I, antic’s editing disclosure to Dream Tape, and Roninfilm’s Part One listing to the Treasure of the Himalayas episode guide. See *A voice across the cut* in the journal.
+
+## November 16, 2026 festival refresh
+
+Added AI Movie Awards with the twelve published London results and the official March 2027 call. Six winning films have newly verified full-film players, three link to existing records and Henry has a festival screening record. The journal lists the nine winners with full releases.
