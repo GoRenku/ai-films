@@ -531,3 +531,7 @@ Added the Nexus team’s character-voice workflow to Prison Break — Part I, an
 ## November 16, 2026 festival refresh
 
 Added AI Movie Awards with the twelve published London results and the official March 2027 call. Six winning films have newly verified full-film players, three link to existing records and Henry has a festival screening record. The journal lists the nine winners with full releases.
+
+## November 16, 2026 editorial refresh
+
+Added Gossip Goblin’s Carnal Pursuits from the original 2:57 release, clarified the three-part scope of the Nexus Prison Break budget, and verified the playable Part One cut of Treasure of the Himalayas. See *A budget across three parts* in the journal.
