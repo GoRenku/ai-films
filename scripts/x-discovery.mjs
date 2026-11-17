@@ -1,3 +1,4 @@
+import { bookmarkCredentials, bookmarkAuthStatus } from './x-bookmark-auth.mjs';
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
 import { homedir } from 'node:os';
@@ -129,14 +130,13 @@ function requestPlan(db, groups, command, value, day, now) {
     if (job?.lastDay === day) return;
     return { kind: 'thread', key, query: 'conversation_id:' + id + ' from:' + handle, start: job?.range?.start, end: job?.range?.end ?? instant(now - 30_000), token: job?.range?.token, limit: PAGE };
   }
-  if (command === 'bookmarks') {
-    const userId = process.env.X_BOOKMARK_USER_ID;
-    if (!idPattern.test(userId ?? '') || !process.env.X_BOOKMARK_ACCESS_TOKEN) {
-      throw new Error('Bookmarks require a separately authorized user token and numeric user ID.');
-    }
-    const state = get(db, 'bookmarks');
-    if (state?.lastDay === day) return;
-    return { kind: 'bookmarks', key: 'bookmarks', path: '/2/users/' + userId + '/bookmarks', token: state?.token, limit: PAGE };
+  if (command === 'bookmarks' || command === 'bookmark-backfill') {
+    const state = get(db, 'bookmarks') ?? {};
+    const backfill = command === 'bookmark-backfill';
+    if (!backfill && state.lastDay === day) return;
+    if (backfill && (!state.backfillToken || state.backfillRead >= 100)) return;
+    return { kind: 'bookmarks', key: 'bookmarks', mode: backfill ? 'backfill' : 'head',
+      token: backfill ? state.backfillToken : undefined, limit: backfill ? Math.min(PAGE, 100 - state.backfillRead) : PAGE };
   }
   if (command === 'verify-bookmarks') {
     const ids = readJson(value);
@@ -148,6 +148,13 @@ function requestPlan(db, groups, command, value, day, now) {
       throw new Error('Select IDs from the currently staged bookmark page.');
     }
     return { kind: 'bookmark-verification', path: '/2/tweets', ids: [...new Set(ids)], limit: ids.length };
+  }
+  if (command === 'collect' && value) {
+    if (!['priority', 'rotation'].includes(value)) throw new Error('Use collect, collect priority or collect rotation.');
+    const eligible = groups.filter(group => group.kind === value && get(db, group.key)?.lastDay !== day);
+    eligible.sort((a, b) => (get(db, a.key)?.lastPageDay ?? '').localeCompare(get(db, b.key)?.lastPageDay ?? ''));
+    const group = eligible[0];
+    return group && { ...searchRange(group, get(db, group.key), now), limit: PAGE };
   }
   const plan = nextSearch(db, groups, day, now);
   return plan && { ...plan, limit: PAGE };
@@ -161,7 +168,7 @@ function reserve(db, plan, day, now) {
     if (plan.kind === 'bookmark-verification' ? pending?.kind !== 'bookmarks' : pending) {
       throw new Error('A staged page needs review before another request.');
     }
-    if (plan.key && get(db, plan.key)?.lastDay === day) throw new Error('This group has already been checked today.');
+    if (plan.key && plan.mode !== 'backfill' && get(db, plan.key)?.lastDay === day) throw new Error('This group has already been checked today.');
     const used = budget(db, day);
     if (used.requests >= DAILY_REQUESTS || used.posts + plan.limit > DAILY_POSTS || used.cyclePosts + plan.limit > CYCLE_POSTS) {
       throw new Error('X discovery budget exhausted.');
@@ -206,8 +213,16 @@ async function fetchPage(plan, token, request = fetch) {
   return page;
 }
 
-async function collect(db, plan, day, now, request) {
-  const token = (plan.kind === 'bookmarks' ? process.env.X_BOOKMARK_ACCESS_TOKEN : process.env.X_BEARER_TOKEN)?.trim();
+async function collect(db, plan, day, now, request, privateRoot) {
+  let token = process.env.X_BEARER_TOKEN?.trim();
+  if (plan.kind === 'bookmarks') {
+    // User credentials are never staged, printed or included in receipts.
+    const credentials = process.env.X_BOOKMARK_ACCESS_TOKEN && idPattern.test(process.env.X_BOOKMARK_USER_ID ?? '')
+      ? { userId: process.env.X_BOOKMARK_USER_ID, accessToken: process.env.X_BOOKMARK_ACCESS_TOKEN }
+      : await bookmarkCredentials(privateRoot, { request });
+    token = credentials.accessToken;
+    plan = { ...plan, path: '/2/users/' + credentials.userId + '/bookmarks' };
+  }
   if (!token) throw new Error('X_BEARER_TOKEN is missing from the environment.');
   const id = reserve(db, plan, day, now);
   try {
@@ -219,13 +234,14 @@ async function collect(db, plan, day, now, request) {
       const posts = page.data ?? [];
       if (plan.ids) {
         const pending = get(db, 'pending');
+        pending.publicPosts = [...(pending.publicPosts ?? []).filter(post => !plan.ids.includes(post.id)), ...posts.filter(post => plan.ids.includes(post.id))];
         pending.publicIds = [...new Set([...(pending.publicIds ?? []), ...posts.map(post => post.id).filter(id => plan.ids.includes(id))])];
         put(db, 'pending', pending);
       } else {
         const seen = plan.kind === 'bookmarks' ? new Set(get(db, 'bookmarks')?.seen ?? []) : null;
         put(db, 'pending', {
           ...plan, id, day,
-          nextToken: seen && posts.length && posts.every(post => seen.has(post.id)) ? undefined : page.meta?.next_token,
+          nextToken: page.meta?.next_token,
           readCount: posts.length,
           bookmarkIds: seen ? posts.map(post => post.id) : undefined,
           posts: seen ? posts.filter(post => !seen.has(post.id)) : posts,
@@ -239,7 +255,7 @@ async function collect(db, plan, day, now, request) {
       db.prepare('UPDATE requests SET outcome = ? WHERE id = ?').run('failed', id);
       if (get(db, 'lease')?.id === id) remove(db, 'lease');
       const retryAfter = now + 60 * 60 * 1000;
-      if ([400, 401, 402, 403, 429].includes(error.status) && plan.kind !== 'bookmarks') {
+      if ([402, 429].includes(error.status) || ([400, 401, 403].includes(error.status) && plan.kind !== 'bookmarks')) {
         put(db, 'halt', { day, reason: error.message, until: Math.max(retryAfter, error.reset || 0) });
       }
     });
@@ -287,15 +303,25 @@ function acknowledge(db, dir, path) {
     const lastDay = pending.day;
     if (pending.kind === 'priority') put(db, 'priority-page-day', lastDay);
     if (pending.kind === 'bookmarks') {
-      put(db, 'bookmarks', { lastDay, token: pending.nextToken, seen: [...new Set([...pending.bookmarkIds, ...(previous.seen ?? [])])].slice(0, 2000) });
+      const first = previous.backfillRead === undefined;
+      const advancing = first || pending.mode === 'backfill';
+      const backfillRead = advancing ? (previous.backfillRead ?? 0) + pending.readCount : previous.backfillRead;
+      put(db, 'bookmarks', { lastDay: pending.mode === 'backfill' ? previous.lastDay : lastDay,
+        backfillRead,
+        backfillToken: advancing ? (backfillRead < 100 ? pending.nextToken : undefined) : previous.backfillToken,
+        backfillComplete: advancing ? (!pending.nextToken || backfillRead >= 100) : previous.backfillComplete,
+        seen: [...new Set([...pending.bookmarkIds, ...(previous.seen ?? [])])].slice(0, 2000) });
     } else if (pending.nextToken) {
       put(db, pending.key, { ...previous, range: { start: pending.start, end: pending.end, token: pending.nextToken, gapFrom: pending.gapFrom } });
     } else {
       put(db, pending.key, { lastDay, through: pending.end });
       if (pending.kind === 'rotation') put(db, 'rotation-day', lastDay);
     }
+    if (pending.kind === 'priority' || pending.kind === 'rotation') {
+      put(db, pending.key, { ...get(db, pending.key), lastPageDay: lastDay });
+    }
     remove(db, 'pending');
-    const receipt = { page: pending.id, kind: pending.kind, day: lastDay,
+    const receipt = { page: pending.id, kind: pending.kind, mode: pending.mode, day: lastDay,
       status: pending.nextToken ? 'partial' : 'complete', coverageGapFrom: pending.gapFrom,
       postsReturned: pending.readCount, queued: leads.map(lead => lead.url) };
     const receipts = get(db, 'receipts') ?? [];
@@ -309,8 +335,8 @@ export async function runDiscovery({ argv, dir, groups, now = Date.now(), reques
   const watch = groups ?? watchGroups(readJson(join(SCRIPT_DIR, 'x-watchlist.json')));
   const day = madrid.format(now);
   if (command === 'plan') return { day, groups: watch.map(({ kind, handles, query }) => ({ kind, handles, query })), dailyRequests: DAILY_REQUESTS, pageSize: PAGE, maxDailyPostReadUsd: 0.30 };
-  if (!['status', 'review', 'ack', 'collect', 'probe', 'thread', 'bookmarks', 'verify-bookmarks'].includes(command)) {
-    throw new Error('Commands: plan, status, collect, review, ack FILE, probe, thread URL, bookmarks, verify-bookmarks FILE.');
+  if (!['status', 'review', 'ack', 'collect', 'probe', 'thread', 'bookmarks', 'bookmark-backfill', 'verify-bookmarks'].includes(command)) {
+    throw new Error('Commands: plan, status, collect, review, ack FILE, probe, thread URL, bookmarks, bookmark-backfill, verify-bookmarks FILE.');
   }
   process.umask(0o077);
   const root = dir ?? privateDirectory();
@@ -318,7 +344,7 @@ export async function runDiscovery({ argv, dir, groups, now = Date.now(), reques
   try {
     if (command === 'status') {
       const pending = get(db, 'pending');
-      return { day, budget: budget(db, day), pending: pending && { id: pending.id, kind: pending.kind, count: pending.posts.length },
+      return { day, bookmarkAuthorization: bookmarkAuthStatus(root), bookmarks: get(db, 'bookmarks') && { lastDay: get(db, 'bookmarks').lastDay, catchupRead: get(db, 'bookmarks').backfillRead, catchupComplete: get(db, 'bookmarks').backfillComplete, hasCatchupPage: Boolean(get(db, 'bookmarks').backfillToken) }, budget: budget(db, day), pending: pending && { id: pending.id, kind: pending.kind, count: pending.posts.length },
         halt: get(db, 'halt')?.day === day || (get(db, 'halt')?.until ?? 0) > now ? get(db, 'halt') : undefined, receipts: (get(db, 'receipts') ?? []).filter(receipt => receipt.day === day), groups: watch.map(({ key, kind, handles }) => {
           const group = get(db, key);
           return { kind, handles, lastCompleteThrough: group?.through, partial: Boolean(group?.range),
@@ -328,13 +354,13 @@ export async function runDiscovery({ argv, dir, groups, now = Date.now(), reques
     if (command === 'review') {
       const pending = get(db, 'pending');
       if (!pending) return { pending: false };
-      const { id, kind, posts, publicIds, nextToken, gapFrom } = pending;
-      return { id, kind, posts, publicIds, hasMore: Boolean(nextToken), gapFrom };
+      const { id, kind, mode, posts, publicIds, publicPosts, nextToken, gapFrom } = pending;
+      return { id, kind, mode, posts, publicIds, publicPosts, hasMore: Boolean(nextToken), gapFrom };
     }
     if (command === 'ack') return acknowledge(db, root, value);
     const plan = requestPlan(db, watch, command, value, day, now);
     if (!plan) return { status: 'no request due' };
-    return await collect(db, plan, day, now, request);
+    return await collect(db, plan, day, now, request, root);
   } finally {
     db.close();
   }

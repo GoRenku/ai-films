@@ -117,3 +117,68 @@ test('requires independent public lookup before forwarding bookmarks', async t =
   assert.deepEqual((await call(['review'])).publicIds, ['456']);
   assert.equal((await call(['ack', pick])).queued.length, 1);
 });
+
+test('checks the head again next day and keeps catch-up pagination separate', async t => {
+  const { dir, call, file } = fixture(t);
+  Object.assign(process.env, { X_BOOKMARK_USER_ID: '123', X_BOOKMARK_ACCESS_TOKEN: 'fixture' });
+  t.after(() => { delete process.env.X_BOOKMARK_USER_ID; delete process.env.X_BOOKMARK_ACCESS_TOKEN; });
+  writeFileSync(join(dir, 'film-queue.py'), 'print("[]")\n');
+  const ack = async invoke => {
+    const pending = await invoke(['review']);
+    return invoke(['ack', file('empty.json', { page: pending.id, leads: [] })]);
+  };
+  await call(['bookmarks'], async url => {
+    assert.equal(url.searchParams.has('pagination_token'), false);
+    return page(['101'], 'older-page');
+  });
+  await ack(call);
+  assert.equal((await call(['bookmarks'])).status, 'no request due');
+  const tomorrow = argv => runDiscovery({ argv, dir, groups, now: now + 86400_000,
+    request: async url => {
+      assert.equal(url.searchParams.has('pagination_token'), false);
+      return page(['102', '101'], 'new-head-continuation');
+    } });
+  await tomorrow(['bookmarks']);
+  assert.deepEqual((await tomorrow(['review'])).posts.map(p => p.id), ['102']);
+  await ack(tomorrow);
+  await call(['bookmark-backfill'], async url => {
+    assert.equal(url.searchParams.get('pagination_token'), 'older-page');
+    return page(['1']); // An old post newly discovered is still eligible.
+  });
+  assert.equal((await call(['review'])).posts[0].id, '1');
+  await ack(call);
+  assert.equal((await call(['status'])).bookmarks.catchupComplete, true);
+  assert.equal((await call(['bookmark-backfill'])).status, 'no request due');
+});
+
+test('bounds initial catch-up at 100 returned bookmarks', async t => {
+  const { dir, file } = fixture(t);
+  Object.assign(process.env, { X_BOOKMARK_USER_ID: '123', X_BOOKMARK_ACCESS_TOKEN: 'fixture' });
+  t.after(() => { delete process.env.X_BOOKMARK_USER_ID; delete process.env.X_BOOKMARK_ACCESS_TOKEN; });
+  writeFileSync(join(dir, 'film-queue.py'), 'print("[]")\n');
+  for (let i = 0; i < 5; i++) {
+    const call = argv => runDiscovery({ argv, dir, groups, now: now + i * 86400_000,
+      request: async () => page(Array.from({length:20}, (_, n) => String(i * 20 + n + 1)), 'more') });
+    await call([i ? 'bookmark-backfill' : 'bookmarks']);
+    const pending = await call(['review']);
+    await call(['ack', file('ack.json', { page: pending.id, leads: [] })]);
+    if (i === 4) {
+      assert.equal((await call(['status'])).bookmarks.catchupRead, 100);
+      assert.equal((await call(['bookmark-backfill'])).status, 'no request due');
+    }
+  }
+});
+
+
+test('can spend the sole remaining public request on overdue rotation', async t => {
+  const { dir, file, call } = fixture(t);
+  writeFileSync(join(dir, 'film-queue.py'), 'print("[]")\n');
+  await call(['collect', 'rotation'], async url => {
+    assert.match(url.searchParams.get('query'), /from:Studio/);
+    assert.doesNotMatch(url.searchParams.get('query'), /from:Director/);
+    return page([]);
+  });
+  const pending = await call(['review']);
+  await call(['ack', file('rotation.json', {page:pending.id, leads:[]})]);
+  assert.equal((await call(['collect', 'rotation'])).status, 'no request due');
+});

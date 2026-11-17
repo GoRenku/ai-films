@@ -40,6 +40,8 @@ Copy a relevant existing file to add an entry. Slugs are stable filenames. Recor
 
 The daily editorial refresh runs at 13:00 Europe/Madrid. The festival watch runs Mondays and Thursdays at 11:30, and the existing AI Film Director Watch provides a weekly deep editorial survey on Thursdays at 11:00. The separate 11:00 daily X discovery task uses the official X API for public intake. See the [maintenance plan](docs/maintenance-plan.md) for source coverage, bookmarks, handoffs and Featured decisions, and the [content refresh procedure](docs/content-refresh.md) for publishing and verification.
 
+Bookmark intake uses a daily first-page read and a separate initial sample capped at 100 returned entries. The OAuth helper renews user tokens privately; setup and live acceptance steps are documented in the [X discovery runbook](docs/x-discovery.md). Original post dates do not identify when bookmarks were saved.
+
 Scheduled editorial refreshes are content-only: Markdown entries, credited media, refresh summaries and editorial research notes. They must not change CSS, templates, layouts, application code, deployment configuration or dependencies. Layout issues require a separate explicitly requested task. Publication uses the existing `pnpm deploy:cloudflare` command; the former Sites target is retired.
 
 ## Package safety

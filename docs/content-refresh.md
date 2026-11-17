@@ -132,7 +132,7 @@ Complete this reconciliation before the final publication summary. A published s
 
 ## X discovery review
 
-The 11:00 job reads public X posts through the official API. The journal checks its receipts and the private queue before independent research. The journal and festival jobs send X-only thread requests back to discovery using the [X discovery runbook](x-discovery.md). Private bookmarks require separate authorisation.
+The 11:00 job reads public X posts through the official API. The journal checks its receipts and the private queue before independent research. The journal and festival jobs send X-only thread requests back to discovery using the [X discovery runbook](x-discovery.md). Account-wide private bookmark discovery is user-authorized; it requires completed OAuth setup and a verified bounded read through the discovery helper. See the X discovery runbook for daily head checks, catch-up limits and public verification.
 
 Retain the private queue handoff and evidence-based dispositions. Deduplicate X posts by status ID. Keep account details, saved-activity provenance and unrelated material outside public Git and public content.
 
