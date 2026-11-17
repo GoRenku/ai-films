@@ -539,3 +539,5 @@ Added Gossip Goblin’s Carnal Pursuits from the original 2:57 release, clarifie
 ## November 17, 2026 editorial refresh
 
 Added Direct the Machine’s You’re Too Young to Remember and its shot-by-shot production record. The homepage features its two-period music video in the Claudia slot.
+
+Moved You’re Too Young to Remember into the opening homepage slot and added a separate two-day limit for the lead slot.

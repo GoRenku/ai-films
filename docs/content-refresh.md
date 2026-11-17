@@ -44,6 +44,12 @@ The daily editorial refresh owns the ordered `content/featured.json` slate. Make
 
 Retain a worthwhile pick with its original date for at most seven days. Seven days is a ceiling. Rotate earlier when a stronger candidate arrives. Check recent slate history before bringing back a pick, and give it at least one week off after removal. Change the order only for a reason. Verify that the rendered home has the intended lineup, no repeated creator, loaded artwork and working carousel controls before committing and again on the public site. The Latest feed contains the complete set of additions independently of feature selection. An unchanged slate does not require a commit.
 
+### Opening-slot rotation
+
+Slot one is the work visible on a fresh homepage load. Review it separately from slate membership. Give the strongest newly selected work first consideration for the lead. Keep an incumbent there only when a specific editorial reason supports it, and record that reason privately. A film may open the homepage for at most two consecutive Madrid dates. Use the date of its latest promotion from the Git history of `content/featured.json`, or the date it joined the slate if it debuted first. When its lead turn ends, promote the strongest eligible pick already on the slate or select a stronger new work. A move between slots preserves the original `since` date. Keep the existing seven-day slate limit and one-week cooldown after removal.
+
+Before committing and after deployment, verify that a fresh homepage load shows the intended opening work without selecting a slide. Then verify the carousel controls and the opening artwork at desktop and mobile sizes.
+
 ### Editorial judgment
 
 Compare the strongest candidates with the current lineup and with related works in the catalogue and recent feature history. For a finalist, use the finished cut or substantial sequence-level evidence from the release or making-of. Look for a concrete choice in staging, editing, performance, sound or visual form that holds across the work and serves its idea. Record what you checked and any limit on viewing. A new song, outfit, setting, high view count or handsome thumbnail alone is insufficient. For returning characters or formats, identify what the new work does differently and what that adds for the viewer.
