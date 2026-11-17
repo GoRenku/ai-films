@@ -535,3 +535,7 @@ Added AI Movie Awards with the twelve published London results and the official 
 ## November 16, 2026 editorial refresh
 
 Added Gossip Goblin’s Carnal Pursuits from the original 2:57 release, clarified the three-part scope of the Nexus Prison Break budget, and verified the playable Part One cut of Treasure of the Himalayas. See *A budget across three parts* in the journal.
+
+## November 17, 2026 editorial refresh
+
+Added Direct the Machine’s You’re Too Young to Remember and its shot-by-shot production record. The homepage features its two-period music video in the Claudia slot.
