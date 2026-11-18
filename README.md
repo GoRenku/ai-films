@@ -548,3 +548,9 @@ Moved You’re Too Young to Remember into the opening homepage slot and added a 
 ## November 18, 2026 — an intimate short and a filmmaker portfolio
 
 Added Nathaniel Chan / xdeconstructed and his August 2026 short Midnight Snack after checking its original portfolio player, synopsis, 1:06 runtime and credited artwork. The separate 100-minute Dreamina Originals series remains in development. Chan’s profile distinguishes Kyoso’s named collaboration credits from the short’s undisclosed cast and tools.
+
+## November 18, 2026 — journal and discovery repair
+
+Restored authored journal coverage for November 17’s You’re Too Young to Remember and November 18’s discoveries. Added Gossip Goblin’s complete 2:56 Furry Virus after resolving its alternate social title in the original Shorts catalogue. Recovered HOLED Episode 6: The Last Good Copy (November 16) and Space Pirates Episode 8: Family Sharing (November 3), with full original descriptions, current playback and episode-specific credits. Added Extraltodeus’s complete Emballé, c’est pesé with attributed production tools, local-generation electricity claim and clip-feedback technique, plus Christopher Fryant’s May 2024 Icarus with its Wave System / Musicbed credit.
+
+Repaired the maintenance workflow: meaningful new entries now require journal coverage; selected verified public X evidence survives handoff privately; a capped direct lookup can recover known missing posts; fair rotation and repeated-page detection prevent a partial creator group from monopolizing discovery. Existing API budgets, privacy rules, schedules and dependency pins remain in place.

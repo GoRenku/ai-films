@@ -19,7 +19,7 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 
 - Festival and competition records follow the listing bar and rules in docs/content-refresh.md ("Festivals and competitions"): only properly organised events with published results, organiser-sourced dates, organiser-published awards. Never type a status; it is computed from dated milestones.
 - The twice-weekly festival watch (`refresh-ai-film-festivals`, Monday and Thursday 11:30 Europe/Madrid) owns content/festivals/. Other runs add festival leads to the private festival inbox instead of editing festival files.
-- The festival watch researches every award across all editions as a discovery lead and backfills qualifying completed films and credited artists, including verified festival screenings without public playback. Apply the daily discovery workflow and use signed-out Chrome Incognito for YouTube, as specified in docs/content-refresh.md.
+- The festival watch researches every award across all editions as a discovery lead and backfills qualifying completed films and credited artists, including verified festival screenings without public playback. Apply the daily discovery workflow and use a verified signed-out private browser session for YouTube, as specified in docs/content-refresh.md.
 
 ## Scheduled refresh scope
 
@@ -45,4 +45,4 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 
 ## Inclusion with incomplete disclosures
 
-A verified narrative release and identifiable creator or credited studio are enough to consider inclusion on editorial merit. Missing individual credits, budget, exact models or team size do not alone justify deferral. Publish supported facts, label unknowns, and keep researching. Check original full-release descriptions, creator portfolios and linked production sources before deferring a lead. Never imply full viewing or invent credits. Recent additions automatically appear in What’s New; add a dated journal note for substantive changes to existing entries, not routine verification.
+A verified narrative release and identifiable creator or credited studio are enough to consider inclusion on editorial merit. Missing individual credits, budget, exact models or team size do not alone justify deferral. Publish supported facts, label unknowns, and keep researching. Check original full-release descriptions, creator portfolios and linked production sources before deferring a lead. Never imply full viewing or invent credits. What’s New is the automatic catalogue feed. The Journal is the authored editorial record: substantive new film/artist discoveries and production accounts require a dated note too. Group related additions in a daily note; do not omit it merely because the works are new. Routine unchanged checks need no note.

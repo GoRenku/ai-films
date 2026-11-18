@@ -1,6 +1,6 @@
 import { bookmarkCredentials, bookmarkAuthStatus } from './x-bookmark-auth.mjs';
 import { execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync, renameSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -52,6 +52,7 @@ export function searchRange(group, previous, now) {
     start: gap ? instant(earliest) : from,
     end: !gap && previous?.range ? previous.range.end : instant(now - 30_000),
     token: gap ? undefined : previous?.range?.token,
+    previousIds: gap ? undefined : previous?.range?.lastIds,
     gapFrom: previous?.range?.gapFrom ?? (gap ? from : undefined),
   };
 }
@@ -108,15 +109,11 @@ function budget(db, day) {
 }
 
 function nextSearch(db, groups, day, now) {
-  const completed = group => get(db, group.key)?.lastDay === day;
-  const priority = groups[0];
-  if (!completed(priority) && get(db, 'priority-page-day') !== day) return searchRange(priority, get(db, priority.key), now);
-  const rotationToday = get(db, 'rotation-day') === day;
-  const rotation = groups.slice(1).filter(group => !completed(group) && (!rotationToday || get(db, group.key)?.range));
-  rotation.sort((a, b) => (get(db, a.key)?.through ?? '').localeCompare(get(db, b.key)?.through ?? ''));
-  const group = rotation[0];
-  if (group) return searchRange(group, get(db, group.key), now);
-  if (!completed(priority)) return searchRange(priority, get(db, priority.key), now);
+  // A perpetually partial high-volume group must not monopolize discovery.
+  const eligible = groups.filter(group => get(db, group.key)?.lastDay !== day && get(db, group.key)?.blockedDay !== day);
+  eligible.sort((a, b) => (get(db, a.key)?.lastPageDay ?? '').localeCompare(get(db, b.key)?.lastPageDay ?? ''));
+  const group = eligible[0];
+  return group && searchRange(group, get(db, group.key), now);
 }
 
 function requestPlan(db, groups, command, value, day, now) {
@@ -127,8 +124,8 @@ function requestPlan(db, groups, command, value, day, now) {
     const [, handle, id] = match;
     const key = 'thread:' + id;
     const job = get(db, key);
-    if (job?.lastDay === day) return;
-    return { kind: 'thread', key, query: 'conversation_id:' + id + ' from:' + handle, start: job?.range?.start, end: job?.range?.end ?? instant(now - 30_000), token: job?.range?.token, limit: PAGE };
+    if (job?.lastDay === day || job?.blockedDay === day) return;
+    return { kind: 'thread', key, query: 'conversation_id:' + id + ' from:' + handle, start: job?.range?.start, end: job?.range?.end ?? instant(now - 30_000), token: job?.range?.token, previousIds: job?.range?.lastIds, limit: PAGE };
   }
   if (command === 'bookmarks' || command === 'bookmark-backfill') {
     const state = get(db, 'bookmarks') ?? {};
@@ -137,6 +134,21 @@ function requestPlan(db, groups, command, value, day, now) {
     if (backfill && (!state.backfillToken || state.backfillRead >= 100)) return;
     return { kind: 'bookmarks', key: 'bookmarks', mode: backfill ? 'backfill' : 'head',
       token: backfill ? state.backfillToken : undefined, limit: backfill ? Math.min(PAGE, 100 - state.backfillRead) : PAGE };
+  }
+  if (command === 'lookup') {
+    const urls = readJson(value);
+    if (!Array.isArray(urls) || !urls.length || urls.length > PAGE) throw new Error('Lookup takes up to 20 canonical public X status URLs.');
+    const sourceUrls = {};
+    const ids = urls.map(url => {
+      const match = /^https:\/\/x\.com\/(?:[A-Za-z0-9_]{1,15}|i\/web)\/status\/(\d{1,19})$/.exec(url);
+      if (!match) throw new Error('Lookup takes canonical public X status URLs without tracking parameters.');
+      sourceUrls[match[1]] = url;
+      return match[1];
+    });
+    const unique = [...new Set(ids)];
+    const key = 'lookup:' + unique.join(',');
+    if (get(db, key)?.lastDay === day) return;
+    return { kind: 'lookup', key, path: '/2/tweets', ids: unique, sourceUrls, limit: unique.length };
   }
   if (command === 'verify-bookmarks') {
     const ids = readJson(value);
@@ -151,7 +163,7 @@ function requestPlan(db, groups, command, value, day, now) {
   }
   if (command === 'collect' && value) {
     if (!['priority', 'rotation'].includes(value)) throw new Error('Use collect, collect priority or collect rotation.');
-    const eligible = groups.filter(group => group.kind === value && get(db, group.key)?.lastDay !== day);
+    const eligible = groups.filter(group => group.kind === value && get(db, group.key)?.lastDay !== day && get(db, group.key)?.blockedDay !== day);
     eligible.sort((a, b) => (get(db, a.key)?.lastPageDay ?? '').localeCompare(get(db, b.key)?.lastPageDay ?? ''));
     const group = eligible[0];
     return group && { ...searchRange(group, get(db, group.key), now), limit: PAGE };
@@ -191,7 +203,7 @@ async function fetchPage(plan, token, request = fetch) {
   if (plan.query) url.searchParams.set('query', plan.query);
   if (plan.start) url.searchParams.set('start_time', plan.start);
   if (plan.end) url.searchParams.set('end_time', plan.end);
-  if (plan.token) url.searchParams.set('pagination_token', plan.token);
+  if (plan.token) url.searchParams.set(plan.path?.includes('/bookmarks') ? 'pagination_token' : 'next_token', plan.token);
   const response = await request(url, {
     headers: { Authorization: 'Bearer ' + token },
     redirect: 'error',
@@ -209,6 +221,7 @@ async function fetchPage(plan, token, request = fetch) {
   if (!Array.isArray(posts) || posts.length > plan.limit || posts.some(post => typeof post?.id !== 'string' || !idPattern.test(post.id))) {
     throw new Error('X returned an invalid or oversized post page.');
   }
+  if (plan.ids && posts.some(post => !plan.ids.includes(post.id))) throw new Error('X returned an unrequested post.');
   if (!page.meta && !plan.ids && !page.errors?.length) throw new Error('X response is missing pagination metadata.');
   return page;
 }
@@ -227,12 +240,15 @@ async function collect(db, plan, day, now, request, privateRoot) {
   const id = reserve(db, plan, day, now);
   try {
     const page = await fetchPage(plan, token, request);
+    if (plan.token && plan.previousIds?.length && JSON.stringify((page.data ?? []).map(p => p.id).sort()) === JSON.stringify([...plan.previousIds].sort())) {
+      throw Object.assign(new Error('X pagination made no progress. Stop this group for today and preserve its partial checkpoint.'), { noProgress: true });
+    }
     if (page.errors?.length && !plan.ids) throw new Error('X returned an incomplete page with API errors.');
     transaction(db, () => {
       if (get(db, 'lease')?.id !== id) throw new Error('Request ownership expired.');
       db.prepare('UPDATE requests SET outcome = ? WHERE id = ?').run('received', id);
       const posts = page.data ?? [];
-      if (plan.ids) {
+      if (plan.kind === 'bookmark-verification') {
         const pending = get(db, 'pending');
         pending.publicPosts = [...(pending.publicPosts ?? []).filter(post => !plan.ids.includes(post.id)), ...posts.filter(post => plan.ids.includes(post.id))];
         pending.publicIds = [...new Set([...(pending.publicIds ?? []), ...posts.map(post => post.id).filter(id => plan.ids.includes(id))])];
@@ -240,7 +256,8 @@ async function collect(db, plan, day, now, request, privateRoot) {
       } else {
         const seen = plan.kind === 'bookmarks' ? new Set(get(db, 'bookmarks')?.seen ?? []) : null;
         put(db, 'pending', {
-          ...plan, id, day,
+          ...plan, id, day, receivedAt: instant(now),
+          unavailableIds: plan.ids?.filter(id => !posts.some(post => post.id === id)),
           nextToken: page.meta?.next_token,
           readCount: posts.length,
           bookmarkIds: seen ? posts.map(post => post.id) : undefined,
@@ -249,11 +266,12 @@ async function collect(db, plan, day, now, request, privateRoot) {
       }
       remove(db, 'lease');
     });
-    return { request: plan.kind, postsReturned: page.data?.length ?? 0, hasMore: Boolean(page.meta?.next_token), staged: !plan.ids };
+    return { request: plan.kind, postsReturned: page.data?.length ?? 0, hasMore: Boolean(page.meta?.next_token), staged: plan.kind !== 'bookmark-verification' };
   } catch (error) {
     transaction(db, () => {
       db.prepare('UPDATE requests SET outcome = ? WHERE id = ?').run('failed', id);
       if (get(db, 'lease')?.id === id) remove(db, 'lease');
+      if (error.noProgress && plan.key) put(db, plan.key, { ...get(db, plan.key), blockedDay: day });
       const retryAfter = now + 60 * 60 * 1000;
       if ([402, 429].includes(error.status) || ([400, 401, 403].includes(error.status) && plan.kind !== 'bookmarks')) {
         put(db, 'halt', { day, reason: error.message, until: Math.max(retryAfter, error.reset || 0) });
@@ -299,6 +317,24 @@ function acknowledge(db, dir, path) {
       return { url: 'https://x.com/i/web/status/' + id, note: note.trim() };
     });
     queueLeads(dir, leads);
+    const publicPosts = pending.kind === 'bookmarks' ? pending.publicPosts : pending.posts;
+    if (leads.length) {
+      const evidenceDir = join(dir, 'public-evidence');
+      mkdirSync(evidenceDir, { recursive: true, mode: 0o700 });
+      for (const lead of leads) {
+        const id = basename(lead.url);
+        const post = publicPosts?.find(post => post.id === id);
+        if (!post) throw new Error('Verified public evidence is missing. Keep the page staged for local recovery.');
+        const target = join(evidenceDir, id + '.json');
+        const temporary = target + '.' + randomUUID() + '.tmp';
+        const record = { url: pending.sourceUrls?.[id] ?? lead.url, retrievedAt: pending.receivedAt ?? pending.day,
+          verification: 'app-only X API', post: Object.fromEntries(
+            ['id','text','note_tweet','created_at','author_id','conversation_id','entities','attachments','referenced_tweets']
+              .filter(key => post[key] !== undefined).map(key => [key, post[key]])) };
+        writeFileSync(temporary, JSON.stringify(record, null, 2) + '\n', { mode: 0o600, flag: 'wx' });
+        renameSync(temporary, target);
+      }
+    }
     const previous = get(db, pending.key) ?? {};
     const lastDay = pending.day;
     if (pending.kind === 'priority') put(db, 'priority-page-day', lastDay);
@@ -312,7 +348,7 @@ function acknowledge(db, dir, path) {
         backfillComplete: advancing ? (!pending.nextToken || backfillRead >= 100) : previous.backfillComplete,
         seen: [...new Set([...pending.bookmarkIds, ...(previous.seen ?? [])])].slice(0, 2000) });
     } else if (pending.nextToken) {
-      put(db, pending.key, { ...previous, range: { start: pending.start, end: pending.end, token: pending.nextToken, gapFrom: pending.gapFrom } });
+      put(db, pending.key, { ...previous, range: { start: pending.start, end: pending.end, token: pending.nextToken, lastIds: pending.posts.map(post => post.id), gapFrom: pending.gapFrom } });
     } else {
       put(db, pending.key, { lastDay, through: pending.end });
       if (pending.kind === 'rotation') put(db, 'rotation-day', lastDay);
@@ -323,7 +359,7 @@ function acknowledge(db, dir, path) {
     remove(db, 'pending');
     const receipt = { page: pending.id, kind: pending.kind, mode: pending.mode, day: lastDay,
       status: pending.nextToken ? 'partial' : 'complete', coverageGapFrom: pending.gapFrom,
-      postsReturned: pending.readCount, queued: leads.map(lead => lead.url) };
+      postsReturned: pending.readCount, unavailableIds: pending.unavailableIds, evidenceSaved: leads.length, queued: leads.map(lead => lead.url) };
     const receipts = get(db, 'receipts') ?? [];
     put(db, 'receipts', [...receipts.slice(-29), receipt]);
     return receipt;
@@ -335,27 +371,33 @@ export async function runDiscovery({ argv, dir, groups, now = Date.now(), reques
   const watch = groups ?? watchGroups(readJson(join(SCRIPT_DIR, 'x-watchlist.json')));
   const day = madrid.format(now);
   if (command === 'plan') return { day, groups: watch.map(({ kind, handles, query }) => ({ kind, handles, query })), dailyRequests: DAILY_REQUESTS, pageSize: PAGE, maxDailyPostReadUsd: 0.30 };
-  if (!['status', 'review', 'ack', 'collect', 'probe', 'thread', 'bookmarks', 'bookmark-backfill', 'verify-bookmarks'].includes(command)) {
-    throw new Error('Commands: plan, status, collect, review, ack FILE, probe, thread URL, bookmarks, bookmark-backfill, verify-bookmarks FILE.');
+  if (!['status', 'review', 'ack', 'collect', 'probe', 'thread', 'lookup', 'evidence', 'bookmarks', 'bookmark-backfill', 'verify-bookmarks'].includes(command)) {
+    throw new Error('Commands: plan, status, collect, review, ack FILE, probe, thread URL, lookup FILE, evidence URL, bookmarks, bookmark-backfill, verify-bookmarks FILE.');
   }
   process.umask(0o077);
   const root = dir ?? privateDirectory();
   const db = openState(root);
   try {
+    if (command === 'evidence') {
+      const match = /^https:\/\/x\.com\/(?:[A-Za-z0-9_]{1,15}|i\/web)\/status\/(\d{1,19})$/.exec(value ?? '');
+      if (!match) throw new Error('Use a canonical public X status URL.');
+      try { return readJson(join(root, 'public-evidence', match[1] + '.json')); }
+      catch { throw new Error('No preserved public evidence for this post. Request a bounded lookup from the discovery owner.'); }
+    }
     if (command === 'status') {
       const pending = get(db, 'pending');
       return { day, bookmarkAuthorization: bookmarkAuthStatus(root), bookmarks: get(db, 'bookmarks') && { lastDay: get(db, 'bookmarks').lastDay, catchupRead: get(db, 'bookmarks').backfillRead, catchupComplete: get(db, 'bookmarks').backfillComplete, hasCatchupPage: Boolean(get(db, 'bookmarks').backfillToken) }, budget: budget(db, day), pending: pending && { id: pending.id, kind: pending.kind, count: pending.posts.length },
         halt: get(db, 'halt')?.day === day || (get(db, 'halt')?.until ?? 0) > now ? get(db, 'halt') : undefined, receipts: (get(db, 'receipts') ?? []).filter(receipt => receipt.day === day), groups: watch.map(({ key, kind, handles }) => {
           const group = get(db, key);
-          return { kind, handles, lastCompleteThrough: group?.through, partial: Boolean(group?.range),
+          return { kind, handles, lastCompleteThrough: group?.through, lastPageDay: group?.lastPageDay, partial: Boolean(group?.range), stoppedForNoProgressToday: group?.blockedDay === day,
             outsideRecentWindow: Boolean((group?.range?.start || group?.through) && Date.parse(group?.range?.start || group.through) < now - 7 * DAY) };
         }) };
     }
     if (command === 'review') {
       const pending = get(db, 'pending');
       if (!pending) return { pending: false };
-      const { id, kind, mode, posts, publicIds, publicPosts, nextToken, gapFrom } = pending;
-      return { id, kind, mode, posts, publicIds, publicPosts, hasMore: Boolean(nextToken), gapFrom };
+      const { id, kind, mode, posts, publicIds, publicPosts, nextToken, gapFrom, unavailableIds } = pending;
+      return { id, kind, mode, posts, publicIds, publicPosts, unavailableIds, hasMore: Boolean(nextToken), gapFrom };
     }
     if (command === 'ack') return acknowledge(db, root, value);
     const plan = requestPlan(db, watch, command, value, day, now);

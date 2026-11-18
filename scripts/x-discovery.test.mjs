@@ -71,7 +71,7 @@ test('keeps a failed handoff staged and rotates before resuming priority paginat
   const rotation = await call(['review']);
   await call(['ack', file('rotation.json', { page: rotation.id, leads: [] })]);
   await call(['collect'], async url => {
-    assert.equal(url.searchParams.get('pagination_token'), 'next');
+    assert.equal(url.searchParams.get('next_token'), 'next');
     return page([]);
   });
   const end = await call(['review']);
@@ -116,6 +116,11 @@ test('requires independent public lookup before forwarding bookmarks', async t =
   });
   assert.deepEqual((await call(['review'])).publicIds, ['456']);
   assert.equal((await call(['ack', pick])).queued.length, 1);
+  const fs=await import('node:fs');
+  const evidence=JSON.parse(fs.readFileSync(join(dir,'public-evidence/456.json')));
+  assert.equal(evidence.post.text,'Public');
+  assert.equal(fs.existsSync(join(dir,'public-evidence/789.json')),false);
+  assert.equal(JSON.stringify(evidence).includes('bookmarks'),false);
 });
 
 test('checks the head again next day and keeps catch-up pagination separate', async t => {
@@ -181,4 +186,60 @@ test('can spend the sole remaining public request on overdue rotation', async t 
   const pending = await call(['review']);
   await call(['ack', file('rotation.json', {page:pending.id, leads:[]})]);
   assert.equal((await call(['collect', 'rotation'])).status, 'no request due');
+});
+
+
+test('hands off complete selected public evidence without bookmark activity or protected text', async t => {
+  const {dir,call,file}=fixture(t);
+  writeFileSync(join(dir,'film-queue.py'),'print(\"[]\")\n');
+  const lookup=await call(['lookup',file('urls.json',['https://x.com/Director/status/123'])],async url=>{
+    assert.equal(url.pathname,'/2/tweets');
+    assert.equal(url.searchParams.get('ids'),'123');
+    assert.equal(url.searchParams.has('start_time'),false);
+    return Response.json({data:[{id:'123',text:'Full original release and credits',note_tweet:{text:'Long public production account'}}]});
+  });
+  assert.equal(lookup.staged,true);
+  const pending=await call(['review']);
+  assert.equal(pending.posts[0].note_tweet.text,'Long public production account');
+  // Queue helper readback must confirm the selected public URL.
+  writeFileSync(join(dir,'film-queue.py'),'import sys\nprint(\"[{\\\"key\\\":\\\"x:123\\\"}]\" if sys.argv[1]==\"all\" else \"{}\")\n');
+  await call(['ack',file('ack.json',{page:pending.id,leads:[{id:'123',note:'Released film'}]})]);
+  const {readFileSync,statSync}=await import('node:fs');
+  const evidence=JSON.parse(readFileSync(join(dir,'public-evidence/123.json')));
+  assert.equal(evidence.post.note_tweet.text,'Long public production account');
+  assert.equal(evidence.url,'https://x.com/Director/status/123');
+  assert.equal((await call(['evidence','https://x.com/Director/status/123'])).post.id,'123');
+  assert.equal('kind' in evidence,false);
+  assert.equal(statSync(join(dir,'public-evidence/123.json')).mode&0o777,0o600);
+  assert.equal((await call(['lookup',file('urls.json',['https://x.com/Director/status/123'])])).status,'no request due');
+});
+
+
+test('a partial group does not starve never-checked creator groups', async t=>{
+  const {dir,file}=fixture(t);
+  writeFileSync(join(dir,'film-queue.py'),'print("[]")\n');
+  const watch=watchGroups({priority:['Director'],rotation:[['Studio'],['NewMaker']]});
+  for(let i=0;i<3;i++){
+    const call=argv=>runDiscovery({argv,dir,groups:watch,now,request:async url=>{
+      assert.match(url.searchParams.get('query'),new RegExp('from:'+['Director','Studio','NewMaker'][i]));
+      return page([], 'more');
+    }});
+    await call(['collect']);
+    const pending=await call(['review']);
+    await call(['ack',file('fair.json',{page:pending.id,leads:[]})]);
+  }
+});
+
+
+test('detects a repeated continuation page and preserves its checkpoint', async t=>{
+  const {dir,file,call}=fixture(t);
+  writeFileSync(join(dir,'film-queue.py'),'print("[]")\n');
+  await call(['collect','priority'],async()=>page(['123'],'next'));
+  const p=await call(['review']);
+  await call(['ack',file('empty.json',{page:p.id,leads:[]})]);
+  await assert.rejects(call(['collect','priority'],async()=>page(['123'],'next-again')),/pagination made no progress/);
+  assert.equal((await call(['review'])).pending,false);
+  assert.equal((await call(['status'])).groups[0].partial,true);
+  assert.equal((await call(['collect','priority'])).status,'no request due');
+  await call(['collect'],async url=>{assert.match(url.searchParams.get('query'),/from:Studio/);return page([]);});
 });
