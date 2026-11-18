@@ -543,3 +543,8 @@ Added Gossip Goblin’s Carnal Pursuits from the original 2:57 release, clarifie
 Added Direct the Machine’s You’re Too Young to Remember and its shot-by-shot production record. The homepage features its two-period music video in the Claudia slot.
 
 Moved You’re Too Young to Remember into the opening homepage slot and added a separate two-day limit for the lead slot.
+
+
+## November 18, 2026 — an intimate short and a filmmaker portfolio
+
+Added Nathaniel Chan / xdeconstructed and his August 2026 short Midnight Snack after checking its original portfolio player, synopsis, 1:06 runtime and credited artwork. The separate 100-minute Dreamina Originals series remains in development. Chan’s profile distinguishes Kyoso’s named collaboration credits from the short’s undisclosed cast and tools.
