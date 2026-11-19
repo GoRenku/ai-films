@@ -7,8 +7,8 @@ format: "Short film"
 genre: "Animation"
 status: "Watch now"
 discoveredAt: "2026-11-16"
-lastVerifiedAt: "2026-11-16"
-sources: [{"label": "Filmmaker’s full release and sound credit", "url": "https://www.youtube.com/watch?v=zUzuLkmWDKE"}, {"label": "CLOWD festival screening room", "url": "https://rad.live/watch/feature/when-you-run-from-your-mom-by-edmond-yang-jqNbfC/"}, {"label": "Wonder Studios filmmaker session", "url": "https://luma.com/wonder-z6hc"}, {"label": "AIMA London results announcement", "url": "https://www.londondaily.news/ai-movie-awards-announces-winners-of-first-london-edition-celebrating-global-ai-filmmaking-talent/"}]
+lastVerifiedAt: "2026-11-19"
+sources: [{"label": "Filmmaker’s full release and sound credit", "url": "https://www.youtube.com/watch?v=zUzuLkmWDKE"}, {"label": "CLOWD festival screening room", "url": "https://rad.live/watch/feature/when-you-run-from-your-mom-by-edmond-yang-jqNbfC/"}, {"label": "Wonder Studios filmmaker session", "url": "https://luma.com/wonder-z6hc"}, {"label": "AIMA London results announcement", "url": "https://www.londondaily.news/ai-movie-awards-announces-winners-of-first-london-edition-celebrating-global-ai-filmmaking-talent/"}, {"label": "OPUS official results", "url": "https://opusfilmawards.com/winners"}]
 runtimeMinutes: 5.166666666666667
 watchUrl: "https://www.youtube.com/watch?v=zUzuLkmWDKE"
 watchLabel: "Watch the full film on YouTube"
@@ -22,3 +22,8 @@ production: [{"label": "Voice and sound mix", "detail": "Yang narrates and credi
 ## Why this work matters
 
 The folded-paper world gives a physical form to the young narrator’s effort to blend in. Yang voices the adult looking back, leaving some of the film’s most personal details to the contrast between that voice and the child’s drawn mask. The London award announcement spells the title <em>When You Run From Your Mum</em>.
+
+
+## November 19 — OPUS results
+
+The [official OPUS results](https://opusfilmawards.com/winners) award **Best AI Documentary** to **When You Run From Your Mom / Edmond Yang**. The ceremony took place November 14. Its autobiographical subject and animated form remain distinct from the organiser’s award category; this adds recognition without changing the existing full-release link.

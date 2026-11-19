@@ -6,8 +6,8 @@ focus: "Conceptual science fiction"
 website: "https://x.com/DiDi_OKK"
 featured: true
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-27"
-sources: [{"label": "DiDi_OK — official films and announcements", "url": "https://x.com/DiDi_OKK"}, {"label": "Reply — 2026 awards", "url": "https://www.reply.com/de/artificial-intelligence/reply-ai-film-festival"}, {"label": "Jiaze Li — production credits", "url": "https://www.linkedin.com/posts/jiaze-li-a54494228_ai-aifilm-generativeai-activity-7481413564684017664-Mpd-"}, {"label": "Official Lumara result", "url": "https://lumarafilmfestival.com/"}]
+lastVerifiedAt: "2026-11-19"
+sources: [{"label": "DiDi_OK — official films and announcements", "url": "https://x.com/DiDi_OKK"}, {"label": "Reply — 2026 awards", "url": "https://www.reply.com/de/artificial-intelligence/reply-ai-film-festival"}, {"label": "Jiaze Li — production credits", "url": "https://www.linkedin.com/posts/jiaze-li-a54494228_ai-aifilm-generativeai-activity-7481413564684017664-Mpd-"}, {"label": "Official Lumara result", "url": "https://lumarafilmfestival.com/"}, {"label": "OPUS official results", "url": "https://opusfilmawards.com/winners"}]
 x:
   {
     "url": "https://x.com/DiDi_OKK",
@@ -34,4 +34,9 @@ MoonPay’s [October 16 official announcement](https://x.com/moonpay/status/2111
 
 ## October 27 — Candy's Lumara result
 
-[Candy](/films/candy/) is now officially labelled **Jury Selection / runner-up** by [Lumara](https://lumarafilmfestival.com/), credited there to **Jiaze Li**. This adds a verified result to the earlier finalist announcement without calling it the Grand Prize or changing the film's production credits.
+The October 27 note originally identified Candy as Jury Selection / runner-up. That account is superseded: the [current official results](https://lumarafilmfestival.com/), rechecked November 19, name **Candy / Jiaze Li as Grand Prize** and Mianmian as Jury Selection. This brings the artist’s prose into agreement with the existing film and festival records.
+
+
+## November 19 — OPUS results
+
+OPUS names **Jiaze Li / Candy** as its **Best AI Feature Film** winner at the November 14 ceremony. The catalogue retains the film’s short-film format and existing release evidence.

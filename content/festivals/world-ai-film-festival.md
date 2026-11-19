@@ -8,9 +8,10 @@ sponsors: "MiniMax and CapCut, among others"
 cadence: "Annual"
 website: "https://worldaifilmfestival.com/"
 discoveredAt: "2026-11-02"
-lastVerifiedAt: "2026-11-02"
+lastVerifiedAt: "2026-11-19"
 sources:
   - {label: "Official site and regional editions", url: "https://worldaifilmfestival.com/"}
+  - {label: "Current Cannes 2027 entry page and fee stages", url: "https://worldaifilmfestival.com/cannes-2027/"}
   - {label: "2026 prize list", url: "https://worldaifilmfestival.com/prize-list/"}
   - {label: "Competition rules, edition 2027", url: "https://worldaifilmfestival.com/wp-content/uploads/2026/10/WAIFF-Competition-Rules-Edition-2027_October26.pdf"}
 editions:
@@ -37,12 +38,13 @@ editions:
   - label: "2027"
     location: "Palais des Festivals, Cannes"
     url: "https://worldaifilmfestival.com/"
-    submitUrl: "https://filmfreeway.com/WAIFF"
+    submitUrl: "https://worldaifilmfestival.com/cannes-2027/"
     eligibility: "Feature, short (5 to 15 minutes), series, advertising, music video and CapCut categories, plus WAIFF Horizons for regional finalists. Fully AI or hybrid work with significant AI use, produced within the previous 12 months; a production journal is required."
     prizes: "Entry fees: €15 until November 15, 2026, €30 to January 31 and €60 to February 15, 2027. Prize amounts are not stated in the rules."
     milestones:
       - {kind: "Entries open", date: "2026-09-15", source: "https://worldaifilmfestival.com/wp-content/uploads/2026/10/WAIFF-Competition-Rules-Edition-2027_October26.pdf"}
       - {kind: "Early deadline", date: "2026-11-15", note: "End of the €15 early-bird fee", source: "https://worldaifilmfestival.com/wp-content/uploads/2026/10/WAIFF-Competition-Rules-Edition-2027_October26.pdf"}
+      - {kind: "Deadline", date: "2027-01-31", note: "End of the €30 entry-fee stage", source: "https://worldaifilmfestival.com/cannes-2027/"}
       - {kind: "Final deadline", date: "2027-02-15", note: "23:59", source: "https://worldaifilmfestival.com/wp-content/uploads/2026/10/WAIFF-Competition-Rules-Edition-2027_October26.pdf"}
       - {kind: "Finalists", date: "2027-02-17", endDate: "2027-03-07", note: "Selection Committee chooses finalists", source: "https://worldaifilmfestival.com/wp-content/uploads/2026/10/WAIFF-Competition-Rules-Edition-2027_October26.pdf"}
       - {kind: "Screening", date: "2027-04-06", endDate: "2027-04-07", source: "https://worldaifilmfestival.com/wp-content/uploads/2026/10/WAIFF-Competition-Rules-Edition-2027_October26.pdf"}
@@ -58,3 +60,8 @@ WAIFF stages AI cinema at the Palais des Festivals in Cannes, the month before t
 At the 2026 grand finale on April 22, Léo Cannone's [Costa Verde](/films/costa-verde/) won Best WAIFF Film and Best AI Fantasy Film. Category winners included Qiu Sheng's [A Dollar Story](/films/a-dollar-story/) (Best AI Action Film), Ibraheem Diab's [The Beginning](/films/the-beginning/) (Best AI Emotion Film) and Nyko Oliver's [Apocalypse the art of Tovar](/films/apocalypse-the-art-of-tovar/) (CapCut Prize). The Best AI Feature Film award went to *Napoléon III, le prix de l'audace*, a documentary by Jacques Edouard produced for Planète+ and Canal+ Docs; the catalogue links the cut published by the organiser. On the organiser's prize list each film is followed by its category, which this record follows. Press reports name Agnès Jaoui as jury president, with Gong Li as festival president and Claude Lelouch as honorary president; the organiser's own page does not list the jury.
 
 The 2027 call is open until February 15, 2027, with a cheaper early-bird fee until November 15, 2026. Finalists are chosen between February 17 and March 7, and screened in Cannes on April 6 and 7, with the awards on April 7. Regional editions are announced on the official site, among them Istanbul on November 9, 2026, Abidjan, Naples, Seoul and São Paulo in early 2027.
+
+
+## November 19 — current Cannes call
+
+The [official 2027 entry page](https://worldaifilmfestival.com/cannes-2027/) is now the submission link. The older FilmFreeway page still describes the closed 2026 call. The €30 fee stage ends January 31, before the February 15 final deadline; the April 6–7 Cannes dates are unchanged. Entrants from partner territories must follow the local-edition route specified in the call.

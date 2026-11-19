@@ -10,8 +10,8 @@ watchUrl: "https://x.com/DiDi_OKK/status/2097992769629278549"
 watchLabel: "Watch at the source"
 order: 3
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-10-31"
-sources: [{"label":"MoonPay — official Lumara finalist announcement","url":"https://x.com/moonpay/status/2111099892504678861"},{"label":"DiDi_OK — film and model disclosure","url":"https://x.com/DiDi_OKK/status/2097992769629278549"},{"label":"Official Lumara result and category definitions","url":"https://lumarafilmfestival.com/"},{"label":"Dated organiser winners announcement","url":"https://x.com/AskVenice/status/2116243937744875615"}]
+lastVerifiedAt: "2026-11-19"
+sources: [{"label": "MoonPay — official Lumara finalist announcement", "url": "https://x.com/moonpay/status/2111099892504678861"}, {"label": "DiDi_OK — film and model disclosure", "url": "https://x.com/DiDi_OKK/status/2097992769629278549"}, {"label": "Official Lumara result and category definitions", "url": "https://lumarafilmfestival.com/"}, {"label": "Dated organiser winners announcement", "url": "https://x.com/AskVenice/status/2116243937744875615"}, {"label": "OPUS official results", "url": "https://opusfilmawards.com/winners"}, {"label": "OPUS programme and 8:59 runtime", "url": "https://opusfilmawards.com/invite/candy"}]
 production:
   [
     {
@@ -51,3 +51,8 @@ The [organiser’s official announcement](https://x.com/moonpay/status/211109989
 The [current official results](https://lumarafilmfestival.com/) and the organiser’s [October 30 winners announcement](https://x.com/AskVenice/status/2116243937744875615) agree: **Candy / Jiaze Li won the Grand Prize**. The earlier October 27 note here identified Jury Selection and is superseded by this correction. The current results assign Jury Selection to Mianmian and Best Made With Venice to Black Thunder.
 
 This corrects the award record. It does not establish a new cut, an independently tested new stream or a changed production budget.
+
+
+## November 19 — OPUS results
+
+The [official OPUS results](https://opusfilmawards.com/winners) name **Candy / Jiaze Li** as **Best AI Feature Film**, presented November 14. That is the festival’s category label; its programme lists 8:59, consistent with this catalogue’s short-film format. The award does not establish a new cut or a newly tested stream.
