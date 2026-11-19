@@ -46,3 +46,7 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 ## Inclusion with incomplete disclosures
 
 A verified narrative release and identifiable creator or credited studio are enough to consider inclusion on editorial merit. Missing individual credits, budget, exact models or team size do not alone justify deferral. Publish supported facts, label unknowns, and keep researching. Check original full-release descriptions, creator portfolios and linked production sources before deferring a lead. Never imply full viewing or invent credits. What’s New is the automatic catalogue feed. The Journal is the authored editorial record: substantive new film/artist discoveries and production accounts require a dated note too. Group related additions in a daily note; do not omit it merely because the works are new. Routine unchanged checks need no note.
+
+## Fixed homepage lineup
+
+The homepage carousel always contains exactly five editorial picks. Add a new pick at the front, shift retained picks right and remove the displaced last work. Keep retained start dates. Replace expired or unsuitable picks one for one; never shrink the carousel. Preserve creator/persona diversity and the music-video limit. The page schema and built-page validation enforce five slots.

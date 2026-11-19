@@ -563,3 +563,10 @@ Added OPUS Film Awards with its eleven published first-edition results. Nine awa
 ## November 19, 2026 editorial refresh
 
 Added GlassWeaver Productions’ SALT Episode 1 and AAAAAIGC’s September DROPFALL Episodes 1–2 cut, keeping discovery and release dates separate. Verified original full players for Department of Good Memories and Kakehashi, and added Kiessling’s handwriting/continuity method and credited landscape still. Added Afahria’s complete November 18 What’s in That Birthday Cake?! release without inventing its episode number. The journal note Returning to the scene links all five works and creators. Department of Good Memories now opens the homepage; retained feature dates remain unchanged.
+
+
+## November 19, 2026 — five featured picks and festival playback repair
+
+Restored the homepage to exactly five editorial picks, retaining their original start dates and shifting new choices into a fixed-size lineup. The page schema and built-page check now reject any other count. Updated the daily and festival task instructions without changing their schedules.
+
+Searched all 56 festival-linked records lacking Watch now status, alongside the 95 already categorized as playable. Corrected 13 to verified public playback: Oni-Slaying Maiden IV: The Gunner, Ticket to Neverland, The First Honest Day, The Tree, The Hidden Tremor, The Man behind the Cartoon, RendAI-vous, ROAR, Soulless, THE COAT, Lullaby, GIRLS / DEMONS and HUNGER. Added original credited frames for THE COAT and HUNGER, the LostJoker release identity, and Shestak’s named Russian dub cast and disclosed tools. The dated journal references all thirteen films and creators. The research watchlist records each remaining result and verification limit; candidate links and trailers are not claimed as verified complete releases. Removed FRIENDS’ magazine article from its film-player action.

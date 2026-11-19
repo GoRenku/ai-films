@@ -7,8 +7,6 @@ format: "Short film"
 genre: "Animated family comedy"
 runtimeMinutes: 15
 status: "Released"
-watchUrl: "https://magazine.hankyung.com/money/article/202605196829c"
-watchLabel: "Read the TVING release report"
 discoveredAt: "2026-11-02"
 lastVerifiedAt: "2026-11-02"
 image: "/media/friends.jpg"

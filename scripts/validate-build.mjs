@@ -47,8 +47,8 @@ for (const file of pages) {
 }
 const home = await readFile(join(root, "index.html"), "utf8");
 const slides = (home.match(/<article class="slide[\s"]/g) || []).length;
-if (slides < 3)
-  errors.push(`index.html: homepage hero rendered ${slides} slides (expected at least 3)`);
+if (slides !== 5)
+  errors.push(`index.html: homepage hero rendered ${slides} slides (expected exactly 5)`);
 
 const decode = (text) => text.replaceAll("&amp;", "&");
 const canonicalUrl = (file) =>

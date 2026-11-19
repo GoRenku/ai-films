@@ -16,7 +16,7 @@ const featureEntries = z.array(z.object({
   film: z.string().min(1),
   since: z.iso.date(),
   reason: z.string().trim().min(1),
-})).min(3).max(5).parse(featureSlate);
+})).length(5).parse(featureSlate);
 
 const featuredArtists = new Set<string>();
 let featuredMusicVideos = 0;
