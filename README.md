@@ -559,3 +559,7 @@ Repaired the maintenance workflow: meaningful new entries now require journal co
 ## November 19, 2026 festival refresh
 
 Added OPUS Film Awards with its eleven published first-edition results. Nine awarded works link to canonical records: seven new films or music videos and two existing entries. Added seven filmmaker profiles, preserved The Siesta Job’s co-creator credit, and verified its complete 2:45 CLOWD/Rad release. Six new entries have festival-screening evidence with full playback still unresolved; private YouTube access failed, so no untested stream was promoted. The journal lists all nine works and ten credited makers. Updated WAIFF’s Cannes 2027 submission route and January 31 fee-stage deadline.
+
+## November 19, 2026 editorial refresh
+
+Added GlassWeaver Productions’ SALT Episode 1 and AAAAAIGC’s September DROPFALL Episodes 1–2 cut, keeping discovery and release dates separate. Verified original full players for Department of Good Memories and Kakehashi, and added Kiessling’s handwriting/continuity method and credited landscape still. Added Afahria’s complete November 18 What’s in That Birthday Cake?! release without inventing its episode number. The journal note Returning to the scene links all five works and creators. Department of Good Memories now opens the homepage; retained feature dates remain unchanged.

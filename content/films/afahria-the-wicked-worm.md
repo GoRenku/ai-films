@@ -1,7 +1,7 @@
 ---
 title: "Afahria — The Wicked Worm"
 artist: "billy-woodward"
-description: "A dark-fantasy family-pub sitcom with three complete episodes and a disclosed Showrunner / Fable production partnership."
+description: "A dark-fantasy family-pub sitcom with continuing complete episodes and a disclosed Showrunner / Fable production partnership."
 year: 2026
 format: "Series"
 genre: "Dark fantasy comedy · series episode"
@@ -9,8 +9,8 @@ status: "Watch now"
 watchUrl: "https://x.com/billywoodward/status/2107537407629197618"
 watchLabel: "Watch Episode 1 on X"
 discoveredAt: "2026-10-07"
-lastVerifiedAt: "2026-11-04"
-sources: [{"label": "Original complete episode", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Two-location blocking", "url": "https://x.com/billywoodward/status/2107548721294753898"}, {"label": "Preproduction", "url": "https://x.com/billywoodward/status/2107549926162858347"}, {"label": "Family-pub premise", "url": "https://x.com/billywoodward/status/2107552186364555629"}, {"label": "Production partnership", "url": "https://x.com/billywoodward/status/2107553062839529690"}, {"label": "Episode 2 complete release", "url": "https://x.com/billywoodward/status/2112927769503883399"}, {"label": "Blocking sheets and prompting", "url": "https://x.com/billywoodward/status/2112940085297521096"}, {"label": "Camera treatment", "url": "https://x.com/billywoodward/status/2112984730794909848"}, {"label": "Pronunciation example", "url": "https://x.com/billywoodward/status/2112996960151994444"}, {"label": "Episode 3 complete release", "url": "https://www.youtube.com/watch?v=OblhVYS0MKU"}, {"label": "Episode 3 maker announcement", "url": "https://x.com/billywoodward/status/2117664342900449476"}]
+lastVerifiedAt: "2026-11-19"
+sources: [{"label": "Original complete episode", "url": "https://x.com/billywoodward/status/2107537407629197618"}, {"label": "Two-location blocking", "url": "https://x.com/billywoodward/status/2107548721294753898"}, {"label": "Preproduction", "url": "https://x.com/billywoodward/status/2107549926162858347"}, {"label": "Family-pub premise", "url": "https://x.com/billywoodward/status/2107552186364555629"}, {"label": "Production partnership", "url": "https://x.com/billywoodward/status/2107553062839529690"}, {"label": "Episode 2 complete release", "url": "https://x.com/billywoodward/status/2112927769503883399"}, {"label": "Blocking sheets and prompting", "url": "https://x.com/billywoodward/status/2112940085297521096"}, {"label": "Camera treatment", "url": "https://x.com/billywoodward/status/2112984730794909848"}, {"label": "Pronunciation example", "url": "https://x.com/billywoodward/status/2112996960151994444"}, {"label": "Episode 3 complete release", "url": "https://www.youtube.com/watch?v=OblhVYS0MKU"}, {"label": "Episode 3 maker announcement", "url": "https://x.com/billywoodward/status/2117664342900449476"}, {"label": "What’s in That Birthday Cake?! — complete original and credits", "url": "https://www.youtube.com/watch?v=YKnq4BdhAsQ"}]
 production: [{"label": "Production partnership", "detail": "Produced in partnership with Showrunner / Fable, according to Woodward. Individual crew roles, budget and model versions are not disclosed in the checked thread.", "source": "https://x.com/billywoodward/status/2107553062839529690"}, {"label": "Blocking and locations", "detail": "The creator describes a sitcom staged in two locations; location and blocking consistency across generations were his biggest challenge.", "source": "https://x.com/billywoodward/status/2107548721294753898"}, {"label": "Preproduction", "detail": "He created characters, props, environments and variations before generation to streamline production.", "source": "https://x.com/billywoodward/status/2107549926162858347"}, {"label": "Episode 2 production", "detail": "Woodward describes script, design, music reworking, editing and finishing; thanks Dreamina and Invideo. Blocking uses environment sheets, Claude-assisted prompts and references. No exact model versions, total budget or audited crew count is disclosed.", "source": "https://x.com/billywoodward/status/2112927769503883399"}]
 image: "/media/afahria-the-wicked-worm.jpg"
 imageAlt: "The fantastical pub ensemble in ornate Afahria release artwork"
@@ -42,6 +42,14 @@ episodes:
     status: "Watch now"
     watchUrl: "https://www.youtube.com/watch?v=OblhVYS0MKU"
     source: "https://www.youtube.com/watch?v=OblhVYS0MKU"
+  - title: "What’s in That Birthday Cake?!"
+    synopsis: "The Troggens reject the party entertainment; Wick faces a promise-breaking decision while Gorm tries to recover the drinks from Gerald."
+    releasedOn: "2026-11-18"
+    addedAt: "2026-11-19"
+    runtimeMinutes: 4.2790166667
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=YKnq4BdhAsQ"
+    source: "https://www.youtube.com/watch?v=YKnq4BdhAsQ"
 ---
 
 **Episode 1: The Wicked Worm** was published by Billy Woodward on October 6. The original X video plays for approximately **3 minutes 34 seconds**. This is a complete titled episode, not a trailer or a model demonstration.
@@ -69,3 +77,9 @@ These are attributed, work-specific methods. Named tools and a broad single-arti
 The complete **Episode 3**, released November 3, runs **2:47** in its current original player. Gerald's fight with Gorm over worms and MaryAnn's attempt to replace the birthday cake continue the same ensemble obligations. The expanded official description credits Billy Woodward and the Showrunner partnership without establishing new exact generation models or a full crew. Earlier episode-specific tool disclosures remain scoped to those episodes.
 
 The series still starts with Episode 1. Original release post, full description and sampled current playback were checked.
+
+## November 19 — What’s in That Birthday Cake?!
+
+The [complete November 18 release](https://www.youtube.com/watch?v=YKnq4BdhAsQ) runs **4:17**. The Troggens are dissatisfied with the entertainment, Wick must decide whether to break his word, and Gorm plots to recover the party’s drinks from Gerald. The original description credits **Billy Woodward** and production in partnership with **Showrunner**, without new exact models, cast or budget.
+
+The creator does not number this upload, so it appears after Episode 3 in release order with its own title and no invented episode number. The full description and current playback were checked in a verified isolated, signed-out session. This does not establish that a joking social caption was a literal budget statement. No complete-cut critical viewing is claimed.
