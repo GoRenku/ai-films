@@ -17,9 +17,10 @@ Project root: /Users/keremk/Projects/aitinkerbox/ai-films. This is a standalone 
 
 ## Research safety
 
-- X: only through the official API with scripts/x-discovery.mjs and its hard caps. Never open or fetch x.com/twitter.com in a browser or web fetch, never use mirrors or unofficial endpoints, never change X account state.
-- YouTube: only through the Data API with scripts/youtube.mjs (API key, no account). Never open youtube.com in a browser or fetch its pages, so the user's YouTube account and recommendations are never involved.
-- In the Claude in-app browser: never sign in to any site (never to Google), never submit forms, decline optional cookies. Playwright and Chrome Incognito procedures are retired.
+- Account risk comes from signed-in sessions, not domains. Never use the user's own Chrome (Claude in Chrome) or computer use for YouTube or X research. The Claude in-app browser stays signed out of Google and X; never sign in to any site there.
+- X: discovery only through the official API with scripts/x-discovery.mjs and its hard caps; X's keyless oEmbed endpoint (publish.x.com) for checking a cited post. Never use mirrors, scrapers, unofficial endpoints or spoofed user agents, and never change X account state.
+- YouTube: research through the Data API with scripts/youtube.mjs (API key, no account).
+- Occasional targeted visits to specific X or YouTube pages in the signed-out in-app browser are allowed within the limits in docs/refresh-runbook.md (sign-in check first, at most 10 pages per site per run, no feeds, search or interactions). Never submit forms; decline optional cookies. Playwright and Chrome Incognito procedures are retired.
 
 ## Festivals
 

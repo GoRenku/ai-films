@@ -15,8 +15,8 @@ watchUrl: "https://www.youtube.com/watch?v=CrAxMOpK7IY"
 watchLabel: "Watch film"
 image: "/media/my-friend-zeph.jpg"
 imageAlt: "Official artwork for My Friend, Zeph"
-imageCredit: "Dave Clark / Promise · Adobe showcase thumbnail"
-imageSource: "https://blog.adobe.com/en/publish/2025/10/29/storytelling-reimagined-generative-ai-film-festival-adobe-max-2025"
+imageCredit: "Dave Clark / Promise · Adobe Firefly YouTube thumbnail"
+imageSource: "https://www.youtube.com/watch?v=CrAxMOpK7IY"
 ---
 
 ## Why this film matters

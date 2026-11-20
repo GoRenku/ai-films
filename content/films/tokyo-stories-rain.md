@@ -14,8 +14,8 @@ sources: [{"label": "AIFJ official programme", "url": "https://aifilm.jp/program
 production: []
 image: "/media/tokyo-stories-rain.jpg"
 imageAlt: "The Rain title over a dark Tokyo street"
-imageCredit: "Int.Lab · artwork via AI Film Festival Japan"
-imageSource: "https://www.aifilm.jp/nominations_en.html"
+imageCredit: "Int.Lab · TOKYO STORIES YouTube thumbnail"
+imageSource: "https://www.youtube.com/watch?v=LOT0ig9BZ4E"
 ---
 
 ## Why this film matters

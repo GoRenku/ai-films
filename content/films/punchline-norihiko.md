@@ -15,8 +15,8 @@ sources: [{"label": "AIFJ official programme", "url": "https://aifilm.jp/program
 production: []
 image: "/media/punchline-norihiko.jpg"
 imageAlt: "Two performers on a stage above the Punchline title"
-imageCredit: "Norihiko Mizushima · artwork via AI Film Festival Japan"
-imageSource: "https://www.aifilm.jp/nominations_en.html"
+imageCredit: "Norihiko Mizushima · official YouTube thumbnail"
+imageSource: "https://www.youtube.com/watch?v=PKsIGYya2xI"
 ---
 
 ## Why this film matters
