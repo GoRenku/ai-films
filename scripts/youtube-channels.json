@@ -1,0 +1,1387 @@
+{
+ "_about": "YouTube channels swept daily by scripts/youtube.mjs sweep. creator = credited maker or studio; publisher = festival, curator, distributor or production company releasing others' work (verify the credited maker before attribution); platform = AI tool company (often commissions films; exclude capability demos). artists lists catalogue slugs seen on the channel. Add channels deliberately; record exclusions with a reason.",
+ "channels": [
+  {
+   "id": "UCw6FVbCyfQO9tyxDPm6XnVQ",
+   "title": "2XLabs",
+   "handle": "@2xlabs",
+   "kind": "creator",
+   "artists": [
+    "2xlabs"
+   ]
+  },
+  {
+   "id": "UCNNGbR_WluI5-HrB8JQ-qNQ",
+   "title": "88probs",
+   "handle": "@88probs",
+   "kind": "creator",
+   "artists": [
+    "88probs"
+   ]
+  },
+  {
+   "id": "UCLozNYtPze8KdchwQ0Pseew",
+   "title": "AAAAAIGC",
+   "handle": "@aaaaaigc",
+   "kind": "creator",
+   "artists": [
+    "aaaaaigc"
+   ]
+  },
+  {
+   "id": "UCv4h_1SjQonSfdG4yoq1-LQ",
+   "title": "Abel Art",
+   "kind": "creator",
+   "artists": [
+    "abel-art"
+   ]
+  },
+  {
+   "id": "UCLMZrmAYNYxz4KOPHaVJGfg",
+   "title": "Absurd",
+   "kind": "creator",
+   "artists": [
+    "absurd"
+   ]
+  },
+  {
+   "id": "UCrMjvbH77ewnZVL56lpxepQ",
+   "title": "Adam \\[._.]/",
+   "handle": "@atomantic",
+   "kind": "creator",
+   "artists": [
+    "antic"
+   ]
+  },
+  {
+   "id": "UCzEPOv2Fj7TVYqkAsTcbXtw",
+   "title": "Afahria",
+   "kind": "creator",
+   "artists": [
+    "billy-woodward"
+   ]
+  },
+  {
+   "id": "UCTs5wNqJKd8K_tYFLkezeBw",
+   "title": "AGENCY INDIGO",
+   "handle": "@agencyindigo",
+   "kind": "creator",
+   "artists": [
+    "nyko-oliver"
+   ]
+  },
+  {
+   "id": "UCghJTNTO9kcDeUFXMuSDGLQ",
+   "title": "AI For Humans",
+   "handle": "@aiforhumansshow",
+   "kind": "creator",
+   "artists": [
+    "gavin-purcell"
+   ]
+  },
+  {
+   "id": "UCEC4_kBaGfVicaAEPuzfq-A",
+   "title": "AI Talk",
+   "handle": "@aitalk4",
+   "kind": "creator",
+   "artists": [
+    "hanqing-hq"
+   ]
+  },
+  {
+   "id": "UCcdPBRtemcxBP4vCZZUkA5A",
+   "title": "AiMation Studios",
+   "handle": "@aimationstudiosofficial",
+   "kind": "creator",
+   "artists": [
+    "tom-paton"
+   ]
+  },
+  {
+   "id": "UCXKaEvU3ST_LqWnV_JEMj7Q",
+   "title": "aistlabs",
+   "handle": "@aistlabs",
+   "kind": "creator",
+   "artists": [
+    "aist"
+   ]
+  },
+  {
+   "id": "UCHmOJ0CUH3RFBg8ByLT5i-w",
+   "title": "Alex Naghavi",
+   "kind": "creator",
+   "artists": [
+    "alex-naghavi"
+   ]
+  },
+  {
+   "id": "UCG6SR6-bplZkAAJK50Voi5g",
+   "title": "ambiguous",
+   "kind": "creator",
+   "artists": [
+    "holden-boyles"
+   ]
+  },
+  {
+   "id": "UCWt82Y-l8fei-_sbXyO8JyQ",
+   "title": "anabology",
+   "kind": "creator",
+   "artists": [
+    "anabology"
+   ]
+  },
+  {
+   "id": "UCkIlnxFSS2HqVgCnIoHDODQ",
+   "title": "Andrew Salter",
+   "handle": "@andrewsalter7932",
+   "kind": "creator",
+   "artists": [
+    "andrew-salter"
+   ]
+  },
+  {
+   "id": "UCthmxKa_Mb_I2fqzB6qnCiA",
+   "title": "Animatix",
+   "kind": "creator",
+   "artists": [
+    "jacopo-reale"
+   ]
+  },
+  {
+   "id": "UCbAKxOEa_PgCAbwb4Eoi-Uw",
+   "title": "Anne Horel",
+   "kind": "creator",
+   "artists": [
+    "anne-horel"
+   ]
+  },
+  {
+   "id": "UCpIFBmAOdvdvDIKjWF_RzQw",
+   "title": "Astra Blue",
+   "kind": "creator",
+   "artists": [
+    "astra-blue-ai"
+   ]
+  },
+  {
+   "id": "UCmgOuapJ6wXHwBVQKghz6Zw",
+   "title": "Bai yun 白芸",
+   "kind": "creator",
+   "artists": [
+    "sijin-liu"
+   ]
+  },
+  {
+   "id": "UC80t_BwkQ7pKLItaiib4P1A",
+   "title": "Barley Studios",
+   "kind": "creator",
+   "artists": [
+    "neill-blomkamp"
+   ]
+  },
+  {
+   "id": "UChCoLskb7uLd4_qbxuehCHQ",
+   "title": "Benhamin_AI",
+   "handle": "@benhamin-e5n",
+   "kind": "creator",
+   "artists": [
+    "benhamin"
+   ]
+  },
+  {
+   "id": "UCUFyZ64XuQAifnNnomcIwJg",
+   "title": "Bewilderbeats",
+   "handle": "@bewilderbeats",
+   "kind": "creator",
+   "artists": [
+    "eddie-jacobson"
+   ]
+  },
+  {
+   "id": "UCXQq6hpmy6EaNRawaP1I2MA",
+   "title": "BLUELABS",
+   "handle": "@bluelabs_ai",
+   "kind": "creator",
+   "artists": [
+    "bluelabs"
+   ]
+  },
+  {
+   "id": "UC2Mh4kZ9qMNAL69meZytPug",
+   "title": "Caroline C. Kiessling",
+   "kind": "creator",
+   "artists": [
+    "caroline-kiessling"
+   ]
+  },
+  {
+   "id": "UCWdJyW3CcNeAe_TnpCyFuNw",
+   "title": "Christopher Fryant",
+   "kind": "creator",
+   "artists": [
+    "christopher-fryant"
+   ]
+  },
+  {
+   "id": "UCx3mMRA8nUs07Vz13PRXrUg",
+   "title": "Circadian Stories",
+   "kind": "creator",
+   "artists": [
+    "christopher-fryant"
+   ]
+  },
+  {
+   "id": "UCFVhV3PzpxUFFDOMeoRvKxg",
+   "title": "COMA aka Chinatown Organization for Media Awakening",
+   "kind": "creator",
+   "artists": [
+    "qiu-sheng"
+   ]
+  },
+  {
+   "id": "UCy-0aoGc-zxflcVB8QH9HBw",
+   "title": "Contanimation Films",
+   "kind": "creator",
+   "artists": [
+    "contanimation"
+   ]
+  },
+  {
+   "id": "UCLvhfmDtIShBJXmkJ4MRZLQ",
+   "title": "Craneo Films",
+   "handle": "@craneofilms",
+   "kind": "creator",
+   "artists": [
+    "matias-mera"
+   ]
+  },
+  {
+   "id": "UCMMqM7j8CmoDGRTZ26X6v5Q",
+   "title": "Dair",
+   "kind": "creator",
+   "artists": [
+    "dair-karakeev"
+   ]
+  },
+  {
+   "id": "UCU64QEZIwAb1klael-gX7XA",
+   "title": "Daniił Vołkaŭ",
+   "handle": "@daniilvolkau",
+   "kind": "creator",
+   "artists": [
+    "daniil-volkau"
+   ]
+  },
+  {
+   "id": "UC8016aJLo9XYy8B5qnB-uqg",
+   "title": "Dark Epic Films",
+   "kind": "creator",
+   "artists": [
+    "glenn-robert-triggs"
+   ]
+  },
+  {
+   "id": "UCDr-FUdkM7Z8foJG3x4E-3w",
+   "title": "DEJAWA",
+   "handle": "@dejawa0812",
+   "kind": "creator",
+   "artists": [
+    "dejawa-dana-and-panda-gomm"
+   ]
+  },
+  {
+   "id": "UCO5nvqA1YYos4rg29clzliQ",
+   "title": "DiDi_OK",
+   "kind": "creator",
+   "artists": [
+    "didi-ok"
+   ]
+  },
+  {
+   "id": "UCqrWkLKwRKNZRbbJXVEvAjw",
+   "title": "Director Dave Clark",
+   "kind": "creator",
+   "artists": [
+    "dave-clark"
+   ]
+  },
+  {
+   "id": "UCM-XPFv_VoHHxx-77Ux_a_w",
+   "title": "Domain Films A.I",
+   "handle": "@domainfilmsa.i",
+   "kind": "creator",
+   "artists": [
+    "domain-filmes-ai"
+   ]
+  },
+  {
+   "id": "UCDW3Lwc23Si_KEJvl_TxH5w",
+   "title": "Dorian & Daniel",
+   "kind": "creator",
+   "artists": [
+    "dorian-and-daniel"
+   ]
+  },
+  {
+   "id": "UC4K5V0SdPqWCYidgmavZ03A",
+   "title": "DotPockett",
+   "handle": "@dotpockett",
+   "kind": "creator",
+   "artists": [
+    "dotpockett"
+   ]
+  },
+  {
+   "id": "UCnhCJHFRLikp1GuRONDh8vA",
+   "title": "Edit9",
+   "kind": "creator",
+   "artists": [
+    "hal-watmough"
+   ]
+  },
+  {
+   "id": "UCHlb_GQ-nX-uYGeuKt1qi4Q",
+   "title": "Edmond Yang",
+   "kind": "creator",
+   "artists": [
+    "edmond-yang"
+   ]
+  },
+  {
+   "id": "UCIuf71GnlrBmPltcA7gMEtQ",
+   "title": "El dia que me quieras",
+   "kind": "creator",
+   "artists": [
+    "matias-mera"
+   ]
+  },
+  {
+   "id": "UC2yfO5aOLflq2TXiV1ew89g",
+   "title": "Ernest Desumbila",
+   "kind": "creator",
+   "artists": [
+    "ernest-desumbila"
+   ]
+  },
+  {
+   "id": "UCfJYcoj_C-Jut_hAvS3fg1w",
+   "title": "Extraltodeus",
+   "handle": "@extraltodeus",
+   "kind": "creator",
+   "artists": [
+    "extraltodeus"
+   ]
+  },
+  {
+   "id": "UC9n3AHH2zFACJgxlL5PI4jg",
+   "title": "For The Record: True Crime From the Transcripts",
+   "kind": "creator",
+   "artists": [
+    "higginswerx"
+   ]
+  },
+  {
+   "id": "UCfItDIvOek3BNogIXj81MmQ",
+   "title": "FOUNTAIN 0 studios",
+   "kind": "creator",
+   "artists": [
+    "ash-koosha"
+   ]
+  },
+  {
+   "id": "UC7IaerAN9Hg8RT6c9UNVXeg",
+   "title": "Francesca Fini Dreamlab",
+   "kind": "creator",
+   "artists": [
+    "francesca-fini"
+   ]
+  },
+  {
+   "id": "UCcR3TYXKCb9HC6AVK5_z5PQ",
+   "title": "Full Moon Studio🌕",
+   "handle": "@胖月亮工作室",
+   "kind": "creator",
+   "artists": [
+    "bee-han-and-yixuan-niu"
+   ]
+  },
+  {
+   "id": "UC7HOJgVp8GqTsUDzNGZZQ9Q",
+   "title": "Funny Story Musicals",
+   "handle": "@funnystorymusicals",
+   "kind": "creator",
+   "artists": [
+    "funny-story-musicals"
+   ]
+  },
+  {
+   "id": "UCaMpCCF2MrmrypPnSnV-z1A",
+   "title": "Generative History",
+   "handle": "@generativehistorytv",
+   "kind": "creator",
+   "artists": [
+    "gavin-carlton"
+   ]
+  },
+  {
+   "id": "UC-yJdL5c-tNVZmgZU01fbUw",
+   "title": "GlassWeaver Productions",
+   "handle": "@glassweaverproductions",
+   "kind": "creator",
+   "artists": [
+    "glassweaver-productions"
+   ]
+  },
+  {
+   "id": "UC4oOA0pU7YvHPGOHubo2chg",
+   "title": "Gossip Goblin",
+   "kind": "creator",
+   "artists": [
+    "zack-london"
+   ]
+  },
+  {
+   "id": "UC4X1zNMkPwjnQIzI7kyziAw",
+   "title": "Grab AI Studio | BREEZE JELLY",
+   "kind": "creator",
+   "artists": [
+    "junho-her"
+   ]
+  },
+  {
+   "id": "UC3QL9A1XLLgXlsCTGDW29Hw",
+   "title": "Grindhouse Glitch",
+   "handle": "@grindhouseglitch",
+   "kind": "creator",
+   "artists": [
+    "christopher-gwinn"
+   ]
+  },
+  {
+   "id": "UCvxoBwjLNByhIvPDSOCHNnw",
+   "title": "Henry Daubrez",
+   "kind": "creator",
+   "artists": [
+    "henry-daubrez"
+   ]
+  },
+  {
+   "id": "UCBb27GYclS_v3I6x8npN8CA",
+   "title": "Herinarivo",
+   "kind": "creator",
+   "artists": [
+    "herinarivo-rakotomanana"
+   ]
+  },
+  {
+   "id": "UCbAgrubRChTmn5k97bmRsgg",
+   "title": "Higginswerx",
+   "kind": "creator",
+   "artists": [
+    "higginswerx"
+   ]
+  },
+  {
+   "id": "UCNFOYQmXzL9FxZ4tZE3huxg",
+   "title": "HydeSynister",
+   "handle": "@hydesynister",
+   "kind": "creator",
+   "artists": [
+    "hyde-synister"
+   ]
+  },
+  {
+   "id": "UChbQA75NBsuPlkj5rweUtig",
+   "title": "Ibai Abad",
+   "handle": "@ibainkb",
+   "kind": "creator",
+   "artists": [
+    "ibai-abad"
+   ]
+  },
+  {
+   "id": "UCW29655ux3TLXLtmjRdiXXw",
+   "title": "Ibraheem Diab",
+   "handle": "@ibraheemdiab-uj6su",
+   "kind": "creator",
+   "artists": [
+    "ibraheem-diab"
+   ]
+  },
+  {
+   "id": "UCS0j-ZdFkXMokXN-gi4QAkA",
+   "title": "Illuvai",
+   "kind": "creator",
+   "artists": [
+    "leighanne-fernandes"
+   ]
+  },
+  {
+   "id": "UCI2Ri4Sfjaxe6UBlNrfRfYw",
+   "title": "Isaac Rodriguez",
+   "handle": "@isaacrodriguez88",
+   "kind": "creator",
+   "artists": [
+    "isaac-rodriguez"
+   ]
+  },
+  {
+   "id": "UCrbzWJPs38uFeXehOzJnm5Q",
+   "title": "Jaiostudios",
+   "kind": "creator",
+   "artists": [
+    "jacopo-zanetti"
+   ]
+  },
+  {
+   "id": "UCwY8Bz8U07FaS_s29orTKzw",
+   "title": "javiexmachina",
+   "kind": "creator",
+   "artists": [
+    "javiexmachina"
+   ]
+  },
+  {
+   "id": "UCmRvaLie-M9sd55I6mZQJgw",
+   "title": "Jeff Synthesized",
+   "handle": "@jeffsynthesized",
+   "kind": "creator",
+   "artists": [
+    "jeff-synthesized"
+   ]
+  },
+  {
+   "id": "UCfHL3iPbLGmTzYX2yLtsJNQ",
+   "title": "Jenny Krakovsky",
+   "kind": "creator",
+   "artists": [
+    "jenny-krakovsky"
+   ]
+  },
+  {
+   "id": "UCUDDVol4vZeuUz7DLsXSBzQ",
+   "title": "Jodie Heenan",
+   "handle": "@jodieheenan",
+   "kind": "creator",
+   "artists": [
+    "jodie-heenan"
+   ]
+  },
+  {
+   "id": "UCoJun_nF0I90wzXq5t4SdqA",
+   "title": "JSFILMZ",
+   "kind": "creator",
+   "artists": [
+    "jsfilmz"
+   ]
+  },
+  {
+   "id": "UCPizifsBuRkHWkyOUMb23tQ",
+   "title": "Jun Pabon",
+   "handle": "@jun_pabon",
+   "kind": "creator",
+   "artists": [
+    "jun-pabon"
+   ]
+  },
+  {
+   "id": "UCvTARjzHMhhjOP9l1ycqIaA",
+   "title": "JUNKY CREAM",
+   "handle": "@junkycream",
+   "kind": "creator",
+   "artists": [
+    "junky-cream"
+   ]
+  },
+  {
+   "id": "UCMOiV-agwdaNxJENLQ_Sudg",
+   "title": "Kavan the Kid",
+   "kind": "creator",
+   "artists": [
+    "kavan-cardoza"
+   ]
+  },
+  {
+   "id": "UCfXg6PpmyP6c1h4vuerWUhw",
+   "title": "Kelly Boesch AI Art",
+   "kind": "creator",
+   "artists": [
+    "kelly-boesch"
+   ]
+  },
+  {
+   "id": "UCj222J6i9764QNxp5gFjZkA",
+   "title": "KNGMKR",
+   "handle": "@kngmkrlabs",
+   "kind": "creator",
+   "artists": [
+    "matt-zien"
+   ]
+  },
+  {
+   "id": "UCEYykVek44MPl96xgMLKikg",
+   "title": "Korgamiai",
+   "handle": "@korgamiai",
+   "kind": "creator",
+   "artists": [
+    "korgamiai"
+   ]
+  },
+  {
+   "id": "UC63aSxHOEu5W-hFAAff43VA",
+   "title": "Labyrinth Studio",
+   "handle": "@labyrinthstudio-ai",
+   "kind": "creator",
+   "artists": [
+    "jacopo-reale"
+   ]
+  },
+  {
+   "id": "UCqUgoFH8ub_9_eDneCP5Wxw",
+   "title": "Le jardin du jardinier",
+   "kind": "creator",
+   "artists": [
+    "le-jardin-du-jardinier"
+   ]
+  },
+  {
+   "id": "UC1AfEBrWlDi7cvUXbY00Vmw",
+   "title": "LostJoker Films",
+   "handle": "@lostjokerfilms",
+   "kind": "creator",
+   "artists": [
+    "ce-jiang"
+   ]
+  },
+  {
+   "id": "UCGwp8TJYI61iOEI5kT2t_mQ",
+   "title": "LouieVerse",
+   "handle": "@louieversecinematics",
+   "kind": "creator",
+   "artists": [
+    "lady-wasabi"
+   ]
+  },
+  {
+   "id": "UCcAJ6QGQmvOUgnzj6NErf_w",
+   "title": "Lucas Cinematic Studio",
+   "handle": "@lucascinematicstudio",
+   "kind": "creator",
+   "artists": [
+    "lucas-m-kern"
+   ]
+  },
+  {
+   "id": "UCPXN-fuMEcQ4ScMnpVDWubQ",
+   "title": "Lucas Levitan",
+   "kind": "creator",
+   "artists": [
+    "lucas-levitan-and-fabian-jimenez"
+   ]
+  },
+  {
+   "id": "UCQPXJxupBREntRVpWDwuPzQ",
+   "title": "Magic Engine Studios",
+   "kind": "creator",
+   "artists": [
+    "brian-james-gage"
+   ]
+  },
+  {
+   "id": "UC3Stbde0vOyropUawlTnE-g",
+   "title": "Marco Magario",
+   "kind": "creator",
+   "artists": [
+    "marco-magario"
+   ]
+  },
+  {
+   "id": "UCXD808E7TTHzFkzPxWKLAMw",
+   "title": "Marcus Grip",
+   "kind": "creator",
+   "artists": [
+    "marcus-grip"
+   ]
+  },
+  {
+   "id": "UCpSQ5MPiTdPgZLxLWdnyubQ",
+   "title": "Maria Zozulia",
+   "handle": "@neuro-miracle",
+   "kind": "creator",
+   "artists": [
+    "maria-zozulia"
+   ]
+  },
+  {
+   "id": "UCD7WmOjVVGMrr_0ikgCN3Uw",
+   "title": "Midnight Monkeys | Allan Ripley",
+   "handle": "@midnightmonkeysstudio",
+   "kind": "creator",
+   "artists": [
+    "allan-ripley"
+   ]
+  },
+  {
+   "id": "UCOfZVGDn0umh0HkYq4vPDkA",
+   "title": "Mike Bennion",
+   "kind": "creator",
+   "artists": [
+    "mike-bennion"
+   ]
+  },
+  {
+   "id": "UCJ1US23qpPvHqcR6peRJBlw",
+   "title": "Mike J Mitch",
+   "kind": "creator",
+   "artists": [
+    "mike-j-mitch"
+   ]
+  },
+  {
+   "id": "UCq11RfD8hyFA8swweUj8U5w",
+   "title": "Muja Studios",
+   "handle": "@mujastudios",
+   "kind": "creator",
+   "artists": [
+    "muhammed-jabir"
+   ]
+  },
+  {
+   "id": "UCd5bN03z9veVIAZeRWejgnw",
+   "title": "Muybridge",
+   "handle": "@muybridgefilms",
+   "kind": "creator",
+   "artists": [
+    "jonathan-perry"
+   ]
+  },
+  {
+   "id": "UC5QQ4SDCbB1IjcQMeueVwEw",
+   "title": "Myrzakhan Zhumakhan | AI Creator",
+   "handle": "@myrza_khan",
+   "kind": "creator",
+   "artists": [
+    "myrzakhan-zhumakhan"
+   ]
+  },
+  {
+   "id": "UCQnhXRLVlz161PmIuqA9e4A",
+   "title": "MYTHRA",
+   "kind": "creator",
+   "artists": [
+    "zahid-iqbal"
+   ]
+  },
+  {
+   "id": "UCPSF0iTzUrS_kJsmzVUg7xQ",
+   "title": "Nemoris",
+   "handle": "@nemorisfilms",
+   "kind": "creator",
+   "artists": [
+    "javi-lopez"
+   ]
+  },
+  {
+   "id": "UCxJCroUwd6wzRuE0EaMXOmA",
+   "title": "New Forest Film Co",
+   "kind": "creator",
+   "artists": [
+    "leo-cannone"
+   ]
+  },
+  {
+   "id": "UCVK6WtXeU_mc6BfgD-C1OSA",
+   "title": "niu Niu",
+   "kind": "creator",
+   "artists": [
+    "bee-han-and-yixuan-niu"
+   ]
+  },
+  {
+   "id": "UC_fusevgoBR1TbhgspIo5Sw",
+   "title": "NoiraDEVIL",
+   "handle": "@noiradevil",
+   "kind": "creator",
+   "artists": [
+    "noiradevil"
+   ]
+  },
+  {
+   "id": "UCotwNXfqRFO6dC5aKYzxNjA",
+   "title": "Norihiko / AI Creative Director",
+   "kind": "creator",
+   "artists": [
+    "norihiko-mizushima"
+   ]
+  },
+  {
+   "id": "UCCFjJoBEi17xXhfhhkT9Srw",
+   "title": "OneDay",
+   "kind": "creator",
+   "artists": [
+    "oneday"
+   ]
+  },
+  {
+   "id": "UCictVgDWma8LVBJzebPDb_A",
+   "title": "OVIS AI",
+   "kind": "creator",
+   "artists": [
+    "ovis-ai"
+   ]
+  },
+  {
+   "id": "UC-tCW7sRP5KYa791o-onKtg",
+   "title": "Particle Panic",
+   "handle": "@particlepanic",
+   "kind": "creator",
+   "artists": [
+    "mark-wachholz"
+   ]
+  },
+  {
+   "id": "UC1yJnYTQ8tFG4KuqSXo8kjQ",
+   "title": "Peter Tei-Hyoguchi",
+   "kind": "creator",
+   "artists": [
+    "christopher-gwinn"
+   ]
+  },
+  {
+   "id": "UCM0oWxrFse4sFbPrz2ObL-w",
+   "title": "PJ Ace",
+   "kind": "creator",
+   "artists": [
+    "nexus-filmmakers"
+   ]
+  },
+  {
+   "id": "UC5JaL1Qde_aCKUGqmlnWngQ",
+   "title": "Primordial Soup",
+   "kind": "creator",
+   "artists": [
+    "liz-garbus"
+   ]
+  },
+  {
+   "id": "UCPwkEfA43VDuobtPoKAwOvw",
+   "title": "Purga Studio AI",
+   "handle": "@purgastudio",
+   "kind": "creator",
+   "artists": [
+    "purga-studio"
+   ]
+  },
+  {
+   "id": "UCaryNFWzw3yqwhL5zmMg2WQ",
+   "title": "RAPHAEL ALISTAIR",
+   "handle": "@raphael_alistair",
+   "kind": "creator",
+   "artists": [
+    "raphael-alistair"
+   ]
+  },
+  {
+   "id": "UCfzWaltL8rps2SG-4QpDhdg",
+   "title": "Richin",
+   "handle": "@richinnnn",
+   "kind": "creator",
+   "artists": [
+    "wai-studio"
+   ]
+  },
+  {
+   "id": "UCKJ5iz9UOIESy3x46ZyiCVQ",
+   "title": "Robert Gaudette AI",
+   "kind": "creator",
+   "artists": [
+    "robert-gaudette"
+   ]
+  },
+  {
+   "id": "UCS-XKTVzF1at_nLYir-rQGQ",
+   "title": "ROLLSOUND",
+   "kind": "creator",
+   "artists": [
+    "abhik-banerjee"
+   ]
+  },
+  {
+   "id": "UCx7bl3vF8gSLxWS5s7N7oQw",
+   "title": "Ryan Lightbourn",
+   "handle": "@ryanlightbourn",
+   "kind": "creator",
+   "artists": [
+    "ryan-lightbourn"
+   ]
+  },
+  {
+   "id": "UC6JRqLH8tmhRoWB3Sl7ArVg",
+   "title": "S.A.V",
+   "handle": "@filmsbysav",
+   "kind": "creator",
+   "artists": [
+    "sav"
+   ]
+  },
+  {
+   "id": "UCrcRP2GksMyz-TYZeSlrSFw",
+   "title": "SASHA FEVRALSKAYA",
+   "handle": "@f3vralskaya",
+   "kind": "creator",
+   "artists": [
+    "sasha-fevralskaya"
+   ]
+  },
+  {
+   "id": "UCA5wRJq4rRjF8oh9V0ytWng",
+   "title": "schmede_AI",
+   "handle": "@schmede_ai",
+   "kind": "creator",
+   "artists": [
+    "schmede"
+   ]
+  },
+  {
+   "id": "UCd5hMYKycJ58c1EWa2-lwVg",
+   "title": "Seif Abdalla",
+   "handle": "@seifabdalla_films",
+   "kind": "creator",
+   "artists": [
+    "seif-abdalla"
+   ]
+  },
+  {
+   "id": "UCnAsTVjgHlJ7WX5YOsS6lvA",
+   "title": "Shestak",
+   "kind": "creator",
+   "artists": [
+    "nikolay-shestak"
+   ]
+  },
+  {
+   "id": "UCJKRSn7YhTQ2lXZui1bRR1A",
+   "title": "Sho AI Studio",
+   "handle": "@shoaistudio",
+   "kind": "creator",
+   "artists": [
+    "sho-ai-studio"
+   ]
+  },
+  {
+   "id": "UCOmUKsehtfKMr-A1ki-3JzQ",
+   "title": "Skyebrows",
+   "handle": "@skyebrows",
+   "kind": "creator",
+   "artists": [
+    "skyebrows"
+   ]
+  },
+  {
+   "id": "UCjdfyHTHh5DjLazNBXuPLmw",
+   "title": "Slophouse",
+   "kind": "creator",
+   "artists": [
+    "luke-mazey"
+   ]
+  },
+  {
+   "id": "UCZGNdgh7MeCDeFfAwTj4n6g",
+   "title": "STEVE BALDERSON",
+   "kind": "creator",
+   "artists": [
+    "steve-balderson"
+   ]
+  },
+  {
+   "id": "UCxZMdLpYfAFVpoBYDgmz6ng",
+   "title": "Teally +",
+   "handle": "@teallyplus",
+   "kind": "creator",
+   "artists": [
+    "teallyz"
+   ]
+  },
+  {
+   "id": "UCTfrtRHWkkGPdLrUOONymIg",
+   "title": "Tell me Songs",
+   "handle": "@tellmesongs",
+   "kind": "creator",
+   "artists": [
+    "loic-ramboanasolo"
+   ]
+  },
+  {
+   "id": "UC_4uqamdcBO_rcMYbjW-oSw",
+   "title": "The Awarehouse Studio",
+   "handle": "@theawarehousestudio",
+   "kind": "creator",
+   "artists": [
+    "the-awarehouse-studio"
+   ]
+  },
+  {
+   "id": "UCpIWVf6GQzlrQHYVHPryGaA",
+   "title": "The Blue Horizon AI",
+   "handle": "@thebluehorizon_ai",
+   "kind": "creator",
+   "artists": [
+    "alex-marco",
+    "tomas-bucetto"
+   ]
+  },
+  {
+   "id": "UCkUT2RH1wTsLNBaq4jNW5-A",
+   "title": "The Indie Photographs",
+   "handle": "@theindiephotographs",
+   "kind": "creator",
+   "artists": [
+    "the-indie-photographs"
+   ]
+  },
+  {
+   "id": "UC1yhWqjv22XczeYL508r86Q",
+   "title": "The Last Nursery of Elderwall",
+   "kind": "creator",
+   "artists": [
+    "ledertsworld-studios"
+   ]
+  },
+  {
+   "id": "UCVMEOgUkb90GHqzpWvrN56g",
+   "title": "The Snail",
+   "kind": "creator",
+   "artists": [
+    "jacopo-reale"
+   ]
+  },
+  {
+   "id": "UCW537_mrpFK3zLnaEZU57wA",
+   "title": "The_Bloooop",
+   "kind": "creator",
+   "artists": [
+    "hyde-synister"
+   ]
+  },
+  {
+   "id": "UCMlRJhHlskksCmNHw31S8hA",
+   "title": "TheHolyBall",
+   "kind": "creator",
+   "artists": [
+    "lyrian-chronicles-team"
+   ]
+  },
+  {
+   "id": "UCtmjI76qt_iZRSfxPmCiqWA",
+   "title": "Thousand Words FilmS",
+   "handle": "@thousandwordsfilms",
+   "kind": "creator",
+   "artists": [
+    "thousand-words-films"
+   ]
+  },
+  {
+   "id": "UCaQ-Ijjnv_w4OzlW6evwi5g",
+   "title": "Urban Novel Studios",
+   "handle": "@urbannovelstudios",
+   "kind": "creator",
+   "artists": [
+    "urban-novel-studios"
+   ]
+  },
+  {
+   "id": "UCLy3WByD4pBRUoiLyMeiUog",
+   "title": "Vadim Lasca",
+   "handle": "@vadimlasca",
+   "kind": "creator",
+   "artists": [
+    "vadim-lasca"
+   ]
+  },
+  {
+   "id": "UC0Lezon2x0_fDfjSeBqGKKQ",
+   "title": "Victor Moreno",
+   "handle": "@victormoreno2",
+   "kind": "creator",
+   "artists": [
+    "victor-moreno"
+   ]
+  },
+  {
+   "id": "UCx_m3zpisQmdkSx71gnj1Cw",
+   "title": "VIDEO DESIGN FORMATION",
+   "kind": "creator",
+   "artists": [
+    "denis-larzilliere"
+   ]
+  },
+  {
+   "id": "UCkKTn6gTGiJNrIu9nONq2lg",
+   "title": "Wonder Studios",
+   "kind": "creator",
+   "artists": [
+    "hal-watmough"
+   ]
+  },
+  {
+   "id": "UCrcupS4Z4UbfSJbh2j_vcMg",
+   "title": "Yaroflasher",
+   "kind": "creator",
+   "artists": [
+    "iaroslav-kononov"
+   ]
+  },
+  {
+   "id": "UCK1sXWvPkSdXA4_sPoKFpEQ",
+   "title": "스틸레이 l STEELAY",
+   "kind": "creator",
+   "artists": [
+    "seol-woo-in"
+   ]
+  },
+  {
+   "id": "UCMFOMPLz6jJmN4-3oUhKpWQ",
+   "title": "썸머퍼즈",
+   "handle": "@summer_pause",
+   "kind": "creator",
+   "artists": [
+    "summer-pause"
+   ]
+  },
+  {
+   "id": "UCt9WYnfSwOhuglHOjNraSwA",
+   "title": "프로덕션 파이",
+   "handle": "@pipiecom",
+   "kind": "creator",
+   "artists": [
+    "production-pi"
+   ]
+  },
+  {
+   "id": "UC8OM24ISwacDkDy_9fL9sZg",
+   "title": "AI Film Festival Japan",
+   "kind": "publisher",
+   "artists": [
+    "ivan-yeh",
+    "kennex-ma"
+   ]
+  },
+  {
+   "id": "UCTdWHgq41WXW0RfdWDMMViA",
+   "title": "AIXR Contents Lab presented MBC C&I",
+   "kind": "publisher",
+   "artists": [
+    "mateo-ai-studio"
+   ]
+  },
+  {
+   "id": "UCZboqaoNth6bfhHVek88uZw",
+   "title": "Big Screen Hack",
+   "kind": "publisher",
+   "artists": [
+    "muhammed-jabir"
+   ]
+  },
+  {
+   "id": "UCe7vdfPrFqneynYOHhxpOzA",
+   "title": "FFTG Awards Film Fest",
+   "kind": "publisher",
+   "artists": [
+    "jihyun-kim"
+   ]
+  },
+  {
+   "id": "UCCVS-NSDRH4rps1238u8w9Q",
+   "title": "Nightway Fantasy",
+   "handle": "@nightwayfantasy",
+   "kind": "publisher",
+   "artists": [
+    "lyrian-chronicles-team",
+    "nightway-fantasy"
+   ]
+  },
+  {
+   "id": "UCpYHEAhSUx1hBn2SkvXvTrg",
+   "title": "NOWNESS",
+   "kind": "publisher",
+   "artists": [
+    "leo-cannone"
+   ]
+  },
+  {
+   "id": "UCn_yxCKnwmh9_E0AfC24E5A",
+   "title": "Sky Screen AI",
+   "kind": "publisher",
+   "artists": [
+    "nyko-oliver"
+   ]
+  },
+  {
+   "id": "UCWsn6aqxLlH3p7z9HsXfJmg",
+   "title": "TOKYO STORIES",
+   "kind": "publisher",
+   "artists": [
+    "arata-fukoe",
+    "int-lab",
+    "kentaro-osawa",
+    "masaaki-uchino"
+   ]
+  },
+  {
+   "id": "UCJ6FfvxW2l1oJiEc4f-i2sg",
+   "title": "WAIFF",
+   "kind": "publisher",
+   "artists": [
+    "fabio-bonvicini",
+    "ibraheem-diab",
+    "jules-blachier",
+    "marius-doicov",
+    "qiu-sheng"
+   ]
+  },
+  {
+   "id": "UCd5xAc2ynhBeEizewyUZiiA",
+   "title": "WAIFF Seoul",
+   "kind": "publisher",
+   "artists": [
+    "min-heo-minho-son-hanin-kim"
+   ]
+  },
+  {
+   "id": "UCBCbU2EvxzvwHxWhcByVBLQ",
+   "title": "zero1cine",
+   "kind": "publisher",
+   "artists": [
+    "odair-faleco",
+    "odair-faleco-and-davi-moori"
+   ]
+  },
+  {
+   "id": "UC6dIUJWww2iPjt_my3hZm9g",
+   "title": "電通クリエイティブピクチャーズ",
+   "kind": "publisher",
+   "artists": [
+    "ryo-matsumoto"
+   ]
+  },
+  {
+   "id": "UCZNg5CV7KV4oIgLGP04TSdg",
+   "title": "경기콘텐츠진흥원",
+   "kind": "publisher",
+   "artists": [
+    "bluelabs",
+    "yifei-li-and-zheng-bao"
+   ]
+  },
+  {
+   "id": "UCPoZs42STdjL0-HMjw-PIqA",
+   "title": "Adobe Firefly",
+   "kind": "platform",
+   "artists": [
+    "dave-clark"
+   ]
+  },
+  {
+   "id": "UCLhU6Ror2kjx3_SKqiHfcug",
+   "title": "CapCut",
+   "kind": "platform",
+   "artists": [
+    "justinas-vosylius"
+   ]
+  },
+  {
+   "id": "UC1i21joJVJVVRUGUOGFEdVQ",
+   "title": "Kling AI",
+   "kind": "platform",
+   "artists": [
+    "jacopo-reale"
+   ]
+  },
+  {
+   "id": "UC9wPXN2TIWoUamqONb7v8Pw",
+   "title": "Magnific",
+   "kind": "platform",
+   "artists": [
+    "janky-mess",
+    "magnific-studios",
+    "riz-esentaev"
+   ]
+  },
+  {
+   "id": "UCJoeb3B-z9P-co-XVpFmMaQ",
+   "title": "PixVerse",
+   "kind": "platform",
+   "artists": [
+    "maria-zozulia"
+   ]
+  },
+  {
+   "id": "UCUBqu_z5uP0AZhYtuyFZB3g",
+   "title": "Runway",
+   "kind": "platform",
+   "artists": [
+    "andrew-salter",
+    "dave-clark",
+    "john-kirk-kelly",
+    "leo-cannone",
+    "lucas-levitan-and-fabian-jimenez",
+    "minju-choi",
+    "ricardo-villavicencio-and-edward-saatchi",
+    "sifang-chen-and-yang-wang",
+    "yuuuki"
+   ]
+  }
+ ],
+ "excluded": [
+  {
+   "id": "UC4e35vN3-tSBZMNLE-wm45A",
+   "title": "AI for Good",
+   "reason": "UN programme channel"
+  },
+  {
+   "id": "UC16niRr50-MSBwiO3YDb3RA",
+   "title": "BBC News",
+   "reason": "General news channel"
+  },
+  {
+   "id": "UCG1CoynVOh5uj12qpDLQ7fQ",
+   "title": "Fox Nation",
+   "reason": "General streaming/news channel"
+  },
+  {
+   "id": "UCvsU0EGXN7Su7MfNqcTGNHg",
+   "title": "Infobae",
+   "reason": "General news channel"
+  },
+  {
+   "id": "UCxzOCEgSDRoFd6i3bbIMM_Q",
+   "title": "Maelle Iger - Étalonneuse / Colorist",
+   "reason": "Crew member reel channel"
+  },
+  {
+   "id": "UC9hQtWpGGNaZ8yiwFsBkRBg",
+   "title": "MoonPay",
+   "reason": "Crypto company channel"
+  },
+  {
+   "id": "UCcgA_OsYpnS4u1aXjNIc77Q",
+   "title": "The AI LIVE Show",
+   "reason": "Talk show"
+  },
+  {
+   "id": "UC9Ryt3XOGYBoAJVsBHNGDzA",
+   "title": "Theoretically Media",
+   "reason": "AI tools news and tutorials"
+  },
+  {
+   "id": "UC7PUJeDTUQ05Viu0TAPasnA",
+   "title": "テックトークナビゲーター【SUB】",
+   "reason": "Tech talk channel"
+  },
+  {
+   "id": "UCpbfXQsYBJTwq5lCkwGIeuQ",
+   "title": "中国新闻社",
+   "reason": "General news channel"
+  }
+ ]
+}

@@ -1,31 +1,30 @@
 # Latent Matinee maintenance plan
 
-Schedule inventory reviewed November 17, 2026. Times use Europe/Madrid, including daylight-saving changes. The saved schedules are the authority for run times and activation. Public discovery has been enabled. Account-wide bounded bookmark intake is authorized; activation awaits OAuth setup and a verified live read.
+Schedule reviewed November 20, 2026, when the scheduled refreshes moved from Codex to two local Claude scheduled tasks. Times use Europe/Madrid. The saved Claude schedules are the authority for run times and activation; the [scheduled refresh runbook](refresh-runbook.md) is the operating procedure.
 
 ## Schedule and ownership
 
-| Time | Task | Current operation | Target responsibility and handoff |
-| --- | --- | --- | --- |
-| Daily, 11:00 | X discovery | Active with capped, public X API discovery | Run one bounded X API intake job. Review public creator posts and, once OAuth setup is complete, a bounded account-wide page of personal bookmarks. Send qualifying public leads to the private film queue and report coverage. |
-| Thursday, 11:00 | AI Film Director Watch | Existing weekly ChatGPT watch. The November 12 report is confirmed in its pinned conversation. | Keep the deep editorial survey. Follow promising filmmakers beyond the catalogue, examine several works where available, and report how authorship, production practice and exhibition have developed. Deliver a source-linked report for the journal, without editing the site. |
-| Monday and Thursday, 11:30 | Festival watch | Active. Uses organiser and other non-X sources. | Check known calls, deadlines, screenings and results, plus a rotating set of prospective events. Reconcile official selections and awards against the catalogue. Own festival records and the film and artist updates supported by festival evidence. Route X-only source requests to the API job. |
-| Daily, 13:00 | Journal and homepage | Active. Uses private intake and non-X discovery. | Process intake, verify releases and production claims, review Featured, and publish a validated update. Pick up late festival or director-watch handoffs on the next run. |
-| On submission | Direct leads | Existing private intake | Accept a public URL and brief evidence from the user or a discovery task. Retain the public source and eventual disposition. |
+| Time | Task | Responsibility |
+| --- | --- | --- |
+| Daily, 11:00 | Daily refresh | X API intake (bounded bookmark head read and public creator search), YouTube channel sweep and watch-link audit, private queue and inboxes, light web discovery, catalogue additions, journal note, featured review and publication. |
+| Monday and Thursday, 15:00 | Deep watch | Festivals and competitions, a wide discovery survey of new creators (replacing the retired ChatGPT AI Film Director Watch), YouTube playback upgrades, back-catalogue featured candidates, registry and watchlist upkeep, publication. |
+| On submission | Direct leads | A public URL and brief evidence from the user, held in the private queue until a run gives it a disposition. |
 
-The X discovery, journal and festival schedules are local Codex tasks. The weekly watch runs in its existing ChatGPT conversation. Keep separate jobs where the work has a different purpose. The daily journal reads each new completed weekly report in full, reconciles every finding with the catalogue and records the report ID and evidence-based dispositions. A weekly report that finishes after the journal cutoff is picked up at the next daily run.
+The Codex automations `discover-ai-films-from-x`, `refresh-ai-film-journal` and `refresh-ai-film-festivals` are paused, with their configuration backed up beside each automation file. Folding X intake into the daily refresh removes the 11:00 → 13:00 handoff; a lock file and the clean-tree preflight keep the two tasks from publishing at once.
 
 ## Source coverage
 
 | Source | Cadence | How to check |
 | --- | --- | --- |
-| Private queue, submitted links, completed director-watch reports | Start of each 13:00 run | Read unresolved leads, deduplicate URLs and aliases, check previous dispositions, and verify the original sources. |
-| Creator and studio release pages, distributor listings, newsletters and feeds | Daily for known releases and recent updates. Rotate the remaining sources weekly. | Prefer public feeds or official listings. Use Computer Use to read interactive release pages where needed. Prioritise creators with a scheduled release or a substantive follow-up. |
-| Public X creator posts and making-of replies | Daily at 11:00 | Rotate the least recently checked creator group, including the priority group, so a busy partial group cannot consume every public slot. Use named targeted checks when a release warrants them. Use official API search. Fetch selected creator replies for credits, production methods and cost disclosures within the shared cap. |
-| Personal X bookmarks | Daily at 11:00 after OAuth setup | Account-wide scope authorized November 17. Read the first page of up to 20 bookmarks; the initial catch-up sample is capped at 100 returned entries across bounded requests. Find newly saved items even when the original post is old. Hand off only relevant, independently public sources. |
-| Festival organisers, programmes, results, and discovery directories such as FilmFreeway | Monday and Thursday, with time-sensitive events first | Confirm dates and results at the organiser. Use Computer Use for interactive catalogues and screening rooms where needed. Dedupe notices. Maintain the next event date so routine checks concentrate on what can change. |
-| Broader creator discovery, credits, interviews and festival crossovers | Weekly Director Watch, with targeted daily follow-up | Compare bodies of work and look for missed or underrepresented creators. Use original releases, creator portfolios, interviews and production notes. A headline or festival award alone establishes no artistic assessment. |
+| Private queue, submitted links, preserved X evidence | Every daily run | `film-queue.py open`, inboxes and `x-discovery.mjs evidence`. Deduplicate URLs and aliases and verify the original sources. |
+| YouTube creator, publisher and platform channels | Every daily run | `scripts/youtube.mjs sweep` over [the channel registry](../scripts/youtube-channels.json) (155 channels on November 20, about 200 units). `audit` re-checks every catalogue YouTube watch link (about 7 units). |
+| Public X creator posts and making-of replies | Every daily run | Official API only, least recently paged group first. X-only creators sit in small groups that usually page completely; creators already covered by the YouTube sweep sit in two larger groups. |
+| Personal X bookmarks | Every daily run | Bounded head page and public verification, as in the [X discovery runbook](x-discovery.md). |
+| Creator and studio sites, distributors, newsletters, platform showcases | Daily light pass; deep pass Monday and Thursday | Web search and fetch; the in-app browser only for JavaScript-heavy pages. |
+| Festival organisers, programmes, results, FilmFreeway | Monday and Thursday | Organiser pages first; reconcile awards with the catalogue. |
+| Broader creator discovery, credits, interviews and festival crossovers | Monday and Thursday | Deep watch survey: follow promising filmmakers through their body of work. |
 
-Use direct document or feed reads when sufficient. For YouTube, use the verified signed-out Chrome Incognito procedure in the [refresh runbook](content-refresh.md). Record any access limit. Follow the same runbook to track and close task-owned tabs and windows. Automated X access goes through the API job.
+YouTube is read only through the Data API (API key, no account, no browser) and X only through the official API. See the runbook's safety rules.
 
 ## X API pilot
 
@@ -66,7 +65,7 @@ The [content refresh procedure](content-refresh.md) contains detailed inclusion,
 2. Public smoke test completed with one 10-post request and two verified queue entries. Billing was confirmed before activation.
 3. Account-wide bookmark consent received November 17. Complete OAuth setup, then test one bounded read, private deduplication, public verification, queue readback and unattended token renewal. Check observed charges. A bookmark failure should leave public discovery functional.
 4. Public schedule cutover completed. The 11:00 task owns X API requests, and journal and festival tasks use their shared handoff. The weekly editorial watch remains in place.
-5. Verify the first unattended 11:00 to 13:00 handoff. An empty receipt proves only the empty path. A non-empty handoff is verified from public lead to disposition and, when selected, live page. After one week review cost, oldest unchecked group, delayed items and outcomes before changing the budget or cadence.
+5. Verify the first unattended daily handoff from X intake to disposition. An empty receipt proves only the empty path. A non-empty handoff is verified from public lead to disposition and, when selected, live page. After one week review cost, oldest unchecked group, delayed items and outcomes before changing the budget or cadence.
 
 
 ## November 18 audit and repair
@@ -77,4 +76,4 @@ The API cutover also dropped primary source detail: a short queue note survived 
 
 Default creator selection now uses the least recently paged group rather than repeatedly favoring a partial group with no completed checkpoint. The request ceiling remains three data requests / 60 reserved reads per day and 1,860 per month. This is sampled coverage, not a daily check of every artist. Report groups actually sampled, oldest coverage and lost ranges. Bookmark verification and targeted recovery use the same allowance; do not increase it silently or claim exhaustive coverage.
 
-The recovery also established an independent signed-out private browser context for YouTube, avoiding the native active-window failure. Full original descriptions revealed HOLED Episode 6’s title The Last Good Copy and Space Pirates Episode 8’s title Family Sharing behind promotional headlines. The latter was already released November 3. The daily journal must inspect creator release lists and full descriptions before treating a failed exact-title search as lack of evidence. Revalidate context ownership after reconnects; never navigate a user/default YouTube tab.
+Full original descriptions revealed HOLED Episode 6’s title The Last Good Copy and Space Pirates Episode 8’s title Family Sharing behind promotional headlines. The latter was already released November 3. The daily refresh must inspect creator release lists and full descriptions before treating a failed exact-title search as lack of evidence.
