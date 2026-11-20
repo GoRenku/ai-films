@@ -6,19 +6,19 @@ year: 2026
 format: "Short film"
 genre: "Cyberpunk"
 runtimeMinutes: 22
-status: "Watch now"
-watchUrl: "https://www.youtube.com/watch?v=-Rzl7nUdEs4"
-watchLabel: "Watch on YouTube"
+status: "Released"
 image: "/media/the-patchwright.jpg"
 imageAlt: "A cybernetic aristocrat in The Patchwright"
 imageCredit: "Gossip Goblin · still via The Daring Creatives"
 imageSource: "https://www.thedaringcreatives.com/creator-stories/what-zack-london-actually-means-when-he-says-there-is-zero-skill-in-ai/"
 order: 1
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-20"
 sources:
-  - label: "The Patchwright — official film"
+  - label: "The Patchwright — original full upload (no longer public)"
     url: "https://www.youtube.com/watch?v=-Rzl7nUdEs4"
+  - label: "The Patchwright — official trailer"
+    url: "https://www.youtube.com/watch?v=tfdokTPsnb0"
   - label: "PJ Ace — interview with the filmmaker"
     url: "https://pjace.beehiiv.com/p/gossip-goblin-s-crazy-workflow-for-building-original-worlds-200m-views"
 production:
@@ -37,6 +37,8 @@ production:
 ---
 
 Set in NiiroCradle, this cyberpunk short follows an android's search for a lost memory. Its recurring world gives the story a life beyond a single release.
+
+The full film is no longer public on Gossip Goblin's YouTube channel; the official trailer remains available. London's feature is also set on Niiro Cradle, and its public cast listings include a role named the Patchwright; see [Gods Don’t Give Gifts](/films/gods-dont-give-gifts/).
 
 ## Why this film matters
 

@@ -5,7 +5,7 @@ focus: "Generated natural-history documentary, comedy and commercial motion desi
 website: "https://jodieheenan.com/"
 discoveredAt: "2026-11-02"
 lastVerifiedAt: "2026-11-02"
-sources: [{"label":"Filmmaker website and portfolio","url":"https://jodieheenan.com/"},{"label":"Creator channel","url":"https://www.youtube.com/@jodieheenan"},{"label":"Complete original Guardians of the Burrow","url":"https://www.youtube.com/watch?v=UPZQFvWQBuY"},{"label":"Official OMNI 1.5 Hyperphantasia results","url":"https://www.omnifilmfestival.com/hyperphantasia"}]
+sources: [{"label":"Filmmaker website and portfolio","url":"https://jodieheenan.com/"},{"label":"Creator channel","url":"https://www.youtube.com/@jodieheenan"},{"label":"Guardians of the Burrow — current full upload","url":"https://www.youtube.com/watch?v=--YF2APF_Oc"},{"label":"Official OMNI 1.5 Hyperphantasia results","url":"https://www.omnifilmfestival.com/hyperphantasia"}]
 ---
 
 ## Why follow this filmmaker
