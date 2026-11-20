@@ -1,8 +1,8 @@
 ---
 title: "Gods Don’t Give Gifts"
 artist: "zack-london"
-description: "Gossip Goblin’s science-fiction anthology has a December 4 general-release announcement and a November 10 advance screening in Los Angeles."
-year: 2026
+description: "Gossip Goblin\u2019s forthcoming science-fiction anthology now announces a January 22, 2027 wide theatrical opening, distinct from its earlier fan previews."
+year: 2027
 format: "Feature"
 genre: "Science-fiction anthology"
 status: "Coming soon"
@@ -10,8 +10,8 @@ watchUrl: "https://godsdontgivegifts.com/"
 watchLabel: "Official film & screening updates"
 order: 5
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-11-06"
-sources: [{"label": "Fable Showrunner — awards submission plan", "url": "https://x.com/fableshowrunner/status/2108003714480971875"}, {"label": "More Horror — reported release runtime", "url": "https://www.morehorror.com/post/gods-dont-give-gifts-ai-generated-horror-movie"}, {"label": "Official October 6 trailer — December 4 announcement", "url": "https://www.youtube.com/watch?v=1G5LArU7tmE"}, {"label": "October 7 production scope", "url": "https://x.com/Gossip_Goblin/status/2107741745358508486"}, {"label": "Gossip Goblin — September 30 winter release announcement", "url": "https://x.com/Gossip_Goblin/status/2105392789580284037"}, {"label": "Gossip Goblin — first teaser, September 28", "url": "https://x.com/Gossip_Goblin/status/2104599338471374983"}, {"label": "Official film — current city and screening status", "url": "https://godsdontgivegifts.com/"}, {"label": "Gossip Goblin — official studio", "url": "https://www.gossipgoblin.studio/"}, {"label": "Chris Branch — creator interview announcement and credits", "url": "https://www.linkedin.com/posts/chris-branch-live_the-first-ai-film-in-theatres-live-interview-activity-7486395260286418944-z4La"}, {"label": "Creator AGC distribution announcement", "url": "https://x.com/Gossip_Goblin/status/2113306179296448727"}, {"label": "Maker advance-screening invitation", "url": "https://x.com/Gossip_Goblin/status/2117688344012525707"}, {"label": "FBRC.AI screening listing and access conditions", "url": "https://luma.com/dewrl4jn"}, {"label": "Original casting preview", "url": "https://www.youtube.com/watch?v=r1LE-chUWgs"}, {"label": "London on theatrical sound and Foley", "url": "https://filmthreat.com/features/the-first-ai-animated-feature-film-in-theaters-gods-dont-give-gifts-director-zack-london-talks-about-the-future-of-cinema/"}, {"label": "Ilinca’s feature credits", "url": "https://www.razvanilinca.com/"}]
+lastVerifiedAt: "2026-11-20"
+sources: [{"label": "Fable Showrunner — awards submission plan", "url": "https://x.com/fableshowrunner/status/2108003714480971875"}, {"label": "More Horror — reported release runtime", "url": "https://www.morehorror.com/post/gods-dont-give-gifts-ai-generated-horror-movie"}, {"label": "Official October 6 trailer — December 4 announcement", "url": "https://www.youtube.com/watch?v=1G5LArU7tmE"}, {"label": "October 7 production scope", "url": "https://x.com/Gossip_Goblin/status/2107741745358508486"}, {"label": "Gossip Goblin — September 30 winter release announcement", "url": "https://x.com/Gossip_Goblin/status/2105392789580284037"}, {"label": "Gossip Goblin — first teaser, September 28", "url": "https://x.com/Gossip_Goblin/status/2104599338471374983"}, {"label": "Official film — current city and screening status", "url": "https://godsdontgivegifts.com/"}, {"label": "Gossip Goblin — official studio", "url": "https://www.gossipgoblin.studio/"}, {"label": "Chris Branch — creator interview announcement and credits", "url": "https://www.linkedin.com/posts/chris-branch-live_the-first-ai-film-in-theatres-live-interview-activity-7486395260286418944-z4La"}, {"label": "Creator AGC distribution announcement", "url": "https://x.com/Gossip_Goblin/status/2113306179296448727"}, {"label": "Maker advance-screening invitation", "url": "https://x.com/Gossip_Goblin/status/2117688344012525707"}, {"label": "FBRC.AI screening listing and access conditions", "url": "https://luma.com/dewrl4jn"}, {"label": "Original casting preview", "url": "https://www.youtube.com/watch?v=r1LE-chUWgs"}, {"label": "London on theatrical sound and Foley", "url": "https://filmthreat.com/features/the-first-ai-animated-feature-film-in-theaters-gods-dont-give-gifts-director-zack-london-talks-about-the-future-of-cinema/"}, {"label": "Ilinca’s feature credits", "url": "https://www.razvanilinca.com/"}, {"label": "Current wide release and original making-of", "url": "https://www.youtube.com/watch?v=Pq_jcHj6914"}]
 production:
   - label: "Feature team and duration"
     detail: "The maker reports two writers, eleven voice actors, four composers, nine core creatives and a five-person post-production team including a foley artist, with more than nine months of work. These categories may overlap; no total headcount is inferred."
@@ -19,13 +19,16 @@ production:
   - label: "Announced creative credits"
     detail: "Director: Zack London. Writers: Zack London and Jacob Batchelor. Producers: Zack London and Edward Saatchi. Gossip Goblin presents in association with Fable Showrunner; these are announcement credits, not a complete crew list."
     source: "https://www.linkedin.com/posts/chris-branch-live_the-first-ai-film-in-theatres-live-interview-activity-7486395260286418944-z4La"
+  - label: "Original making-of and editorial repair"
+    detail: "The November 18 studio documentary demonstrates voice-direction alternatives, composited design references, adjusting video or audio when generated timing departs from recorded dialogue, instrumental score and practical Foley. Its full description announces the January 22 wide opening. It does not provide an audited budget or a complete model inventory."
+    source: "https://www.youtube.com/watch?v=Pq_jcHj6914"
 image: "/media/gods-dont-give-gifts.jpg"
 imageAlt: "An ornate, augmented figure looks skyward in Gods Don’t Give Gifts"
 imageCredit: "Gossip Goblin · Gods Don’t Give Gifts · official film artwork"
 imageSource: "https://godsdontgivegifts.com/"
 ---
 
-**Latest announced date: December 4, 2026.** The [official trailer published October 6](https://www.youtube.com/watch?v=1G5LArU7tmE) states this date in its description, superseding the broader September 30 winter window. The earlier October 30 announcement remains a historical source, not the current date. The official film site still says cities will be announced; no specific venue booking was verified.
+**Current announced wide opening: January 22, 2027.** The [official film site](https://godsdontgivegifts.com/) and [November 18 making-of description](https://www.youtube.com/watch?v=Pq_jcHj6914) now give January 22. The site explicitly distinguishes earlier fan screenings and live Q&As from the wide theatrical opening. The old December 4 trailer announcement remains historical context, not the current general-release date. Individual venue availability was not verified.
 
 The film inhabits London's Second Cycle of Humanity: a world where bodies can be replaced and memories altered, while familiar desires for love, belonging and stimulation persist.
 
@@ -63,4 +66,8 @@ In the [October 22 creator announcement](https://x.com/Gossip_Goblin/status/2113
 
 The maker's November 3 invitation now links to **FBRC.AI's organiser listing** for a **November 10 private fan screening at AMC Century City 15, Los Angeles**. The listing says doors at 7 p.m. and the film at **8 p.m. PST**; its broader event block runs 7:30–10:30 p.m. Those are different event timings, not a changed general release date.
 
-At the November 4 check the event is **full, with a waitlist**. The organiser explicitly says seating is first come, first served and an RSVP does not guarantee admission. The film's December 4 general-release announcement remains in place; this advance screening does not make it an anonymously available stream or an unrestricted public screening. No registration was submitted.
+At the November 4 check the event is **full, with a waitlist**. The organiser explicitly says seating is first come, first served and an RSVP does not guarantee admission. At that November 4 check, December 4 remained the announced general-release date; the January 22 wide-opening update above supersedes it. This advance screening did not make the film an anonymously available stream or an unrestricted public screening. No registration was submitted.
+
+## Original making-of
+
+The studio’s November 18 **21:51 documentary** covers voice direction, selecting and compositing visual references, editing generated motion back to recorded dialogue, instrumental score and practical Foley. The [updated Zack London profile](/artists/zack-london/#november-18-documentary--the-work-between-generation-and-a-cut) preserves the detailed process and named credits. This documentary is public; the feature itself remains forthcoming.
