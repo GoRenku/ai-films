@@ -7,9 +7,10 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { DatabaseSync } from 'node:sqlite';
 import { randomUUID } from 'node:crypto';
 
-const DAILY_REQUESTS = 3;
-const DAILY_POSTS = 60;
-const CYCLE_POSTS = 1860; // $9.30 at the standard Post Read rate.
+const DAILY_REQUESTS = 6;
+const DAILY_POSTS = 100;
+const CYCLE_POSTS = 2800; // $14.00 at the standard Post Read rate.
+export const LIMITS = Object.freeze({ dailyRequests: DAILY_REQUESTS, dailyPosts: DAILY_POSTS, monthlyPosts: CYCLE_POSTS });
 const PAGE = 20;
 const DAY = 86_400_000;
 const POST_FIELDS = 'created_at,author_id,conversation_id,entities,attachments,referenced_tweets,note_tweet';
@@ -370,7 +371,7 @@ export async function runDiscovery({ argv, dir, groups, now = Date.now(), reques
   const [command = 'status', value] = argv ?? process.argv.slice(2);
   const watch = groups ?? watchGroups(readJson(join(SCRIPT_DIR, 'x-watchlist.json')));
   const day = madrid.format(now);
-  if (command === 'plan') return { day, groups: watch.map(({ kind, handles, query }) => ({ kind, handles, query })), dailyRequests: DAILY_REQUESTS, pageSize: PAGE, maxDailyPostReadUsd: 0.30 };
+  if (command === 'plan') return { day, groups: watch.map(({ kind, handles, query }) => ({ kind, handles, query })), dailyRequests: DAILY_REQUESTS, pageSize: PAGE, maxDailyPostReadUsd: 0.50 };
   if (!['status', 'review', 'ack', 'collect', 'probe', 'thread', 'lookup', 'evidence', 'bookmarks', 'bookmark-backfill', 'verify-bookmarks'].includes(command)) {
     throw new Error('Commands: plan, status, collect, review, ack FILE, probe, thread URL, lookup FILE, evidence URL, bookmarks, bookmark-backfill, verify-bookmarks FILE.');
   }

@@ -20,7 +20,7 @@ What puts an account at risk is a signed-in session, not a domain. Requests with
 Use the routes in this order:
 
 1. **APIs and keyless public endpoints (default, every run).**
-   - X discovery: `node --env-file-if-exists=.env scripts/x-discovery.mjs …` within its hard caps (3 data requests and 60 post reads per Madrid day, 1,860 per month). Never change X account state.
+   - X discovery: `node --env-file-if-exists=.env scripts/x-discovery.mjs …` within its hard caps (6 data requests and 100 post reads per Madrid day, 2,800 per month). Never change X account state.
    - X post check: X's official embed endpoint, `curl -sL "https://publish.x.com/oembed?url=<encoded post URL>&omit_script=1"`, returns a post's full text, author and date. It needs no login and costs nothing against the API budget. Use it to confirm a cited post, not to crawl.
    - YouTube: `node --env-file-if-exists=.env scripts/youtube.mjs …` (API key only: no Google account, cookies or watch history) for every search, channel check, full description, runtime, embeddability and thumbnail. The local ceiling is 8,000 units per Pacific day; `search` costs 100 units, everything else 1.
    - Vimeo: `curl -s "https://vimeo.com/api/oembed.json?url=<encoded URL>&width=1920"` gives title, author, duration and a thumbnail up to 1280 px.

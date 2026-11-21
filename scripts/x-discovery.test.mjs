@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { runDiscovery, searchRange, watchGroups } from './x-discovery.mjs';
+import { LIMITS, runDiscovery, searchRange, watchGroups } from './x-discovery.mjs';
 
 const groups = watchGroups({ priority: ['Director'], rotation: [['Studio']] });
 const now = Date.parse('2026-11-14T11:00:00Z');
@@ -24,6 +24,12 @@ function fixture(t) {
 const page = (ids, next) => Response.json({
   data: ids.map(id => ({ id, text: 'Fixture' })),
   meta: { result_count: ids.length, next_token: next },
+});
+
+test('keeps the X allowance within the agreed spending limit', () => {
+  assert.deepEqual(LIMITS, { dailyRequests: 6, dailyPosts: 100, monthlyPosts: 2800 });
+  assert.ok(LIMITS.monthlyPosts * 0.005 <= 14, 'monthly reads must stay within $14 at the standard rate');
+  assert.ok(LIMITS.dailyPosts <= LIMITS.dailyRequests * 20, 'daily reads fit within full 20-post pages');
 });
 
 test('preserves an explicitly bounded partial window and reports missed ranges', () => {
@@ -76,6 +82,13 @@ test('keeps a failed handoff staged and rotates before resuming priority paginat
   });
   const end = await call(['review']);
   await call(['ack', file('end.json', { page: end.id, leads: [] })]);
+  for (let used = 3; used < LIMITS.dailyRequests; used++) {
+    const id = String(900 + used);
+    await call(['lookup', file('lookup-' + used + '.json', ['https://x.com/Studio/status/' + id])], async () => page([id]));
+    const lookup = await call(['review']);
+    await call(['ack', file('lookup-ack-' + used + '.json', { page: lookup.id, leads: [] })]);
+  }
+  assert.equal((await call(['status'])).budget.requests, LIMITS.dailyRequests);
   await assert.rejects(call(['probe']), /budget exhausted/);
 });
 
