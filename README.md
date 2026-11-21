@@ -587,3 +587,7 @@ The research rules now distinguish account safety from domains: APIs and keyless
 ## November 20, 2026 — afternoon playback check
 
 The YouTube audit found two catalogue players no longer public. Jodie Heenan re-released Guardians of the Burrow on her channel on November 4; the film page now plays that upload with its current thumbnail and updated maker notes. Gossip Goblin's full upload of The Patchwright is no longer public and no other official full release was found, so it moves from Watch now to Released, with the official trailer listed as a source. The homepage slate is unchanged.
+
+## November 21, 2026 — a third Babel film and a mecha finale
+
+Added HUSH, Daniił Vołkaŭ's third HIVE film, to the series and promoted HIVE to the homepage's opening slot; the other four picks keep their dates. ATLAS — NEXT gains its November 7 Part 7 and November 21 Final from Sho AI Studio's channel. Added Astra Blue's AGI BEFORE GTA6 music video with its original release artwork. The YouTube audit found The Gift's full upload no longer available and no replacement on the studio channel, so it moves from Watch now to Festival screening. The dated journal links all four works and their makers. Francesca Fini's Second Voice serial (a static-image audio drama) and an unattributed Claudia fan video were reviewed and not added.

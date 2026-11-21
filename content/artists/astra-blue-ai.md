@@ -5,8 +5,8 @@ website: "https://x.com/AstrablueAI"
 focus: "Speculative music-video storytelling"
 x: {"url": "https://x.com/AstrablueAI", "label": "Astra Blue AI on X", "source": "https://x.com/AstrablueAI/status/2109639386178650416"}
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-11-04"
-sources: [{"label": "P DOOM — original release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}, {"label": "Wait Till You See It original release", "url": "https://www.youtube.com/watch?v=YZGLA_F_UGw"}, {"label": "What Am I To You original complete release", "url": "https://www.youtube.com/watch?v=y5mkdjG9xtA"}, {"label": "Creator on lyric direction", "url": "https://x.com/AstrablueAI/status/2114226080169304246"}, {"label": "Creator on work and Claude", "url": "https://x.com/AstrablueAI/status/2114018141051515075"}, {"label": "Creator on per-video prompting", "url": "https://x.com/AstrablueAI/status/2114255799312920912"}, {"label": "Complete release and work-specific credits", "url": "https://www.youtube.com/watch?v=W-HTU4Inzbg"}, {"label": "New full original", "url": "https://x.com/AstrablueAI/status/2117639277375046050"}]
+lastVerifiedAt: "2026-11-21"
+sources: [{"label": "AGI BEFORE GTA6 original release", "url": "https://www.youtube.com/watch?v=CxhFcC1bMRc"}, {"label": "P DOOM — original release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}, {"label": "Wait Till You See It original release", "url": "https://www.youtube.com/watch?v=YZGLA_F_UGw"}, {"label": "What Am I To You original complete release", "url": "https://www.youtube.com/watch?v=y5mkdjG9xtA"}, {"label": "Creator on lyric direction", "url": "https://x.com/AstrablueAI/status/2114226080169304246"}, {"label": "Creator on work and Claude", "url": "https://x.com/AstrablueAI/status/2114018141051515075"}, {"label": "Creator on per-video prompting", "url": "https://x.com/AstrablueAI/status/2114255799312920912"}, {"label": "Complete release and work-specific credits", "url": "https://www.youtube.com/watch?v=W-HTU4Inzbg"}, {"label": "New full original", "url": "https://x.com/AstrablueAI/status/2117639277375046050"}]
 ---
 
 Astra Blue AI is the public releasing project behind [P DOOM](/films/p-doom/). The account identifies itself as a slopcore artist. Its public project identity is used here without guessing an operator’s legal name or a human singer.
@@ -40,3 +40,7 @@ The release claims twelve hours of unattended production. It does not identify a
 ## November 4 — THE APP SAYS WAIT
 
 [THE APP SAYS WAIT](/films/the-app-says-wait/) adds a complete 3:18 November 3 release, using the recurring performer and institutional/interface imagery to turn reassuring system language into unease. Its news-like premise is not independently verified reporting, and broad Super Intelligence framing still supplies no exact tool inventory.
+
+## November 21 — AGI BEFORE GTA6
+
+[AGI BEFORE GTA6](/films/agi-before-gta6/) moves the recurring performer from unease to comedy. Released on November 20, the 4:07 video borrows the look of a Miami crime game, from rooftop parties to a five-star wanted meter, to stage the joke that AI might arrive before a long-delayed game. The release calls itself an unofficial fan-art parody and does not name its tools.
