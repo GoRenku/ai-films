@@ -6,7 +6,7 @@ website: "https://x.com/Dani__oros"
 x: {"url": "https://x.com/Dani__oros", "label": "Danioros on X", "source": "https://x.com/Dani__oros/status/2118395421479596091"}
 discoveredAt: "2026-11-11"
 lastVerifiedAt: "2026-11-20"
-sources: [{"label": "Original creator release", "url": "https://x.com/Dani__oros/status/2118395421479596091"}, {"label": "Do Not Wake Her sequel announcement", "url": "https://x.com/Dani__oros/status/2123178309362356345"}]
+sources: [{"label": "Original creator release", "url": "https://x.com/Dani__oros/status/2118395421479596091"}, {"label": "Do Not Wake Her sequel announcement", "url": "https://x.com/Dani__oros/status/2123178309362356345"}, {"label": "Do Not Wake Her original release", "url": "https://x.com/Dani__oros/status/2089187312118993153"}]
 ---
 
 ## Why follow this filmmaker
@@ -16,3 +16,7 @@ sources: [{"label": "Original creator release", "url": "https://x.com/Dani__oros
 ## A separate sequel announcement
 
 In the **November 18 original announcement**, Danioros says a sequel to **Do Not Wake Her** is in development. **Part 2** is explicitly a placeholder title, and the maker supplies neither a release date nor a complete new film. This is separate from Storm-Born; no episode, final title or shared production credits are inferred. [Creator announcement](https://x.com/Dani__oros/status/2123178309362356345).
+
+## The original Do Not Wake Her
+
+The first film, [Do Not Wake Her](/films/do-not-wake-her/), was released on X on August 17. Danioros describes it as a first attempt at a longer story: about two minutes, made in four days with Seedance 2.5. [Original release](https://x.com/Dani__oros/status/2089187312118993153)

@@ -1,5 +1,10 @@
 [
   {
+    "film": "the-clay-legion",
+    "since": "2026-11-22",
+    "reason": "A sinking river gives back one soldier of a thousand-year-old clay army, and a village has to decide what it is guarding against. The 22-minute first episode is built in titled chapters, and the studio's director's note frames the army as a promise rather than a weapon."
+  },
+  {
     "film": "hive",
     "since": "2026-11-20",
     "reason": "Babel’s one-life-for-one-home rule now runs through three complete films. The new HUSH returns Mercy as an auditor of a factory that sells quiet, widening the city’s system from housing to sleep."
@@ -18,10 +23,5 @@
     "film": "department-of-good-memories",
     "since": "2026-11-19",
     "reason": "A single archive, recurring phials and restrained close-ups make a change of perspective visible. The newly verified full release and filmmaker’s practical continuity account invite a closer look (https://idlespace.ca/how-i-purposefully-shot-myself-in-the-foot-making-my-latest-short-film/)."
-  },
-  {
-    "film": "youre-too-young-to-remember",
-    "since": "2026-11-17",
-    "reason": "The same couple moves from a 1994 landline call to a dating-app match. Editing to a song measured in beats makes the change in their habits visible."
   }
 ]

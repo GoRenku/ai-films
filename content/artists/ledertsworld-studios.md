@@ -5,9 +5,13 @@ focus: "Fantasy, recurring creatures and long-form storytelling"
 website: "https://diffuse.runway.com/ledertsworld-studios"
 discoveredAt: "2026-11-06"
 lastVerifiedAt: "2026-11-07"
-sources: [{"label": "Studio portfolio on Runway Diffuse", "url": "https://diffuse.runway.com/ledertsworld-studios"}, {"label": "Original Halloween feature", "url": "https://www.youtube.com/watch?v=Oz0k7l8m7UA"}, {"label": "Creator’s season FAQ", "url": "https://www.kickstarter.com/projects/the-last-nursery/awaken-the-nursery-bring-back-the-dragons-season-one/faqs"}]
+sources: [{"label": "Studio portfolio on Runway Diffuse", "url": "https://diffuse.runway.com/ledertsworld-studios"}, {"label": "Original Halloween feature", "url": "https://www.youtube.com/watch?v=Oz0k7l8m7UA"}, {"label": "Creator’s season FAQ", "url": "https://www.kickstarter.com/projects/the-last-nursery/awaken-the-nursery-bring-back-the-dragons-season-one/faqs"}, {"label": "Veyara and Her Dragon original release", "url": "https://www.youtube.com/watch?v=tHiEHL6OwnU"}]
 ---
 
 LedertsWorld Studios develops Elderwall across short-form character work and [The Last Nursery of Elderwall](/films/the-last-nursery-of-elderwall/), its feature-length Halloween story. The studio portfolio also lists a complete short, [*Origins*](/films/elderwall-origins/), alongside individual scenes and character pieces. The creator’s campaign identifies *Origins* as a completed, separately funded proof of concept and describes six proposed episodes as a separate production.
 
 The portfolio describes a workflow spanning writing, visuals, editing and sound. Those studio-level descriptions do not establish which tool made a particular Halloween scene. The available sources do not give a complete feature crew or budget.
+
+## November 22 — Veyara and Her Dragon
+
+[Veyara and Her Dragon](/films/veyara-and-her-dragon/) is a complete eight-and-a-half-minute prequel. It tells the backstory of the dragons turned to stone from the point of view of the sister who stole magic to keep her own dragon alive, and uses the studio's original song Not Our Home.

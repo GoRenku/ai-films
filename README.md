@@ -591,3 +591,7 @@ The YouTube audit found two catalogue players no longer public. Jodie Heenan re-
 ## November 21, 2026 — a third Babel film and a mecha finale
 
 Added HUSH, Daniił Vołkaŭ's third HIVE film, to the series and promoted HIVE to the homepage's opening slot; the other four picks keep their dates. ATLAS — NEXT gains its November 7 Part 7 and November 21 Final from Sho AI Studio's channel. Added Astra Blue's AGI BEFORE GTA6 music video with its original release artwork. The YouTube audit found The Gift's full upload no longer available and no replacement on the studio channel, so it moves from Watch now to Festival screening. The dated journal links all four works and their makers. Francesca Fini's Second Voice serial (a static-image audio drama) and an unattributed Claudia fan video were reviewed and not added.
+
+## November 22, 2026 — a clay army, an Elderwall prequel and two music videos
+
+Added Thousand Words FilmS's new series The Clay Legion (Episode 1, November 21) and placed it first on the homepage slate; You're Too Young to Remember leaves the slate and the other four picks keep their dates. Added LedertsWorld Studios' Elderwall prequel Veyara and Her Dragon, Danioros's August short Do Not Wake Her (from the original X release, with its full-size video poster), NoiraDEVIL's Not Going Down Today and javiexmachina's PUT THE CHIP IN. The Chronicles of Bone now cites Magnific's November 20 interview with Kavan the Kid. The dated journal links all six works and their makers.

@@ -20,6 +20,8 @@ sources:
     url: "https://www.magnific.com/originals/chronicles-of-bone"
   - label: "Magnific — episode three production breakdown"
     url: "https://www.magnific.com/es/blog/the-chronicles-of-bone-temporada-1-capitulo-3/"
+  - label: "Magnific — Inside the Mind of the Creator interview (November 20)"
+    url: "https://www.youtube.com/watch?v=Le631J6Ziv0"
 production:
   [
     {
@@ -31,6 +33,11 @@ production:
       "label": "Continuity technique",
       "detail": "Use a group reference to establish character positions and spatial relationships; check screen direction, set details and light across reverse angles.",
       "source": "https://www.magnific.com/es/blog/the-chronicles-of-bone-temporada-1-capitulo-3/",
+    },
+    {
+      "label": "Shared universe and creature design",
+      "detail": "Magnific's November interview presents the series as a shared universe built from public-domain characters and discusses the design of its clay creature models, including the Collector.",
+      "source": "https://www.youtube.com/watch?v=Le631J6Ziv0",
     },
   ]
 image: "/media/chronicles-of-bone.png"
@@ -78,3 +85,7 @@ The breakdown also describes composing music prompts around dramatic timing. Too
 Kavan released season one's sixth chapter on **October 6**. The complete [original X video](https://x.com/Kavanthekid/status/2107516926545281203) plays for approximately **24 minutes**; his own reply identifies the chapter title and provides a 4K release card. The Collector travels into the Northern Realm to rescue his wife, while the story redirects him toward Vaylos and a secret from Varek's past.
 
 The maker says this chapter was created entirely with tools inside **Magnific**. That is a platform disclosure, not confirmation that episode three's exact models were reused. Its longer dramatic arc extends the continuity test across an established ensemble; it is a substantive episode release, not a preview. No complete critical viewing or new crew total is claimed.
+
+## The creator interview
+
+On November 20 Magnific published a four-minute [interview with Kavan](https://www.youtube.com/watch?v=Le631J6Ziv0) about building the series. Magnific's summary says it covers assembling a shared universe from public-domain characters, holding a dark tone across a large cast, and designing the clay creature models such as the Collector, as well as the details behind Chapter Six.
