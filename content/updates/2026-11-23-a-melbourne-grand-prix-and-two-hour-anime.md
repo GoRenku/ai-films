@@ -1,0 +1,33 @@
+---
+title: "A Melbourne Grand Prix, a two-hour anime and features back in play"
+description: "Australia's DISRUPT AI Film Festival joins the festivals section with its four 2026 winners, Wonder Studios' Beyond the Loop season closes with Goldfish Mayhem, a three-person team releases a 117-minute AI anime, and Hooroo Jackson's features and older shorts now play in full."
+date: "2026-11-23"
+films: ["everything-soft", "daylight-saving-time", "qwerty-jonathan-heath", "ding-qian-deng", "hoshi-no-uta-ga-kikoeru", "goldfish-mayhem", "kita", "88-junky-cream", "before-the-show", "redline-stephane-benini", "lucky-stars", "window-seat", "dreadclub-vampires-verdict", "a-very-long-carriage-ride", "my-boyfriend-is-a-superhero", "strings", "beyond-wukong", "non-player-combat", "another", "a-million-trillion-pathways", "total-pixel-space", "kitsune", "banished"]
+artists: ["jamin-tasker", "genki-yamasaki", "jonathan-heath", "qian-deng", "deline-prime", "junie-lau", "jidenna", "junky-cream", "magnific-studios", "stephane-benini", "hooroo-jackson", "li-dongshen", "tom-paton", "dave-clark", "rohki", "jacob-adler", "henry-daubrez"]
+festivals: ["disrupt-ai-film-festival"]
+sources: [{"label": "DISRUPT AI Film Festival — 2026 winners", "url": "https://daiff.com.au/2026-winners"}, {"label": "DISRUPT 2026 festival report", "url": "https://assets.tbwamelbourne.com.au/DAIFF/DISRUPT_Festival_2026.pdf"}, {"label": "星の唄が聞こえる — complete film", "url": "https://www.youtube.com/watch?v=_kvNkp1KiUk"}, {"label": "アニメ！アニメ！ — 星の唄が聞こえる release report", "url": "https://animeanime.jp/article/2026/10/22/104090.html"}, {"label": "Goldfish Mayhem — complete film", "url": "https://www.youtube.com/watch?v=8R4hEVX46fA"}, {"label": "KITA — complete film", "url": "https://www.youtube.com/watch?v=7wrt3wp0CCk"}, {"label": "88 — complete film", "url": "https://www.youtube.com/watch?v=TMJtnDuT0UM"}, {"label": "Before the Show Episode 1 — credits", "url": "https://www.youtube.com/watch?v=_Fi8fZi7d-0"}, {"label": "REDLINE — credits", "url": "https://www.youtube.com/watch?v=S-1kzYWAQ6c"}, {"label": "Lucky Stars — complete film", "url": "https://www.youtube.com/watch?v=UrLoAdg4Koc"}, {"label": "Beyond Wukong — Mango TV episodes on YouTube", "url": "https://www.youtube.com/watch?v=T2Xzd7KHSis"}]
+---
+
+## A festival in Melbourne
+
+The [DISRUPT AI Film Festival](/festivals/disrupt-ai-film-festival/) joins the festivals section. It is run by the advertising agency TBWA Australia, free to enter, open only to filmmakers based in Australia and judged by a named jury of twelve chaired by TBWA\Melbourne's Paul Reardon. Its second edition drew 487 entries, and the four winners were announced at The Capitol in Melbourne on November 18. The festival put all four on its YouTube channel the same night, so each now has a catalogue page with the complete film.
+
+Jamin Tasker's **[Everything Soft](/films/everything-soft/)** took the Grand Prix; juror Tessa Conrad singles it out as a hopeful film in a field that leans dystopian. Genki Yamasaki's **[Daylight Saving Time!](/films/daylight-saving-time/)** won Best Long Film, Jonathan Heath's **[QWERTY](/films/qwerty-jonathan-heath/)**, which two jurors call funny and original, won Best Short Film, and Qian Deng's animated **[Ding!](/films/ding-qian-deng/)** won Best Student Film. The festival has not yet published synopses or credits, so these pages are short for now. Reardon's report is worth reading for its theme: the films that won knew what to leave out.
+
+## A two-hour anime from three people
+
+**[星の唄が聞こえる](/films/hoshi-no-uta-ga-kikoeru/)** is a 117-minute anime feature released free on YouTube by the Japanese studio [DELINE PRIME](/artists/deline-prime/) in October. An orphan from Aso grows into a driven Tokyo entrepreneur and, after losing almost everything, returns to the hill where his grandfather showed him the stars. Japanese trade reports, drawing on the makers' announcement, describe a three-person team, about three months of work, roughly 1,500 cuts and more than 10,000 generations in Seedance and MiniMax. The director, 結野弘崇, an entrepreneur in his first directing job, also wrote the music; the lead roles are voiced by human actors.
+
+## Beyond the Loop, Season 2
+
+Wonder Studios' anthology closed with Junie Lau's **[Goldfish Mayhem](/films/goldfish-mayhem/)**, a 27-minute Cantonese cyberpunk kung-fu comedy about three women rescuing their foster mother, drawn from Lau's upbringing in Foshan. Two earlier films from the season join it. The musician Jidenna's **[KITA](/films/kita/)**, his first film as a director, is a stop-motion-style drama about an elderly Nigerian man who believes a broken delivery robot has chosen him. [Junky Cream](/artists/junky-cream/)'s **[88](/films/88-junky-cream/)** stages a hospital zombie fight as a single 17-minute take, built from motion capture and real-time 3D.
+
+## Two tool-company originals
+
+Magnific's **[Before the Show](/films/before-the-show/)**, written and directed by Cristina Polo, is a Brooklyn family comedy that will tell one day from five characters' points of view; the first episode follows Nora, cast as Tree Number Three in the school play. Its credits are unusually complete, down to the six people on AI visuals and the Seedance, Nano Banana, ElevenLabs and Suno roles. Kling's **[REDLINE](/films/redline-stephane-benini/)** is Stephane Benini's 11-minute racing drama made with Kling 4.0; Benini was earlier an image and animation artist on [Sky Line Heist](/films/sky-line-heist/).
+
+## Features back in play
+
+[Hooroo Jackson](/artists/hooroo-jackson/)'s features now play in full from his own channel: [Window Seat](/films/window-seat/), [DreadClub: Vampire's Verdict](/films/dreadclub-vampires-verdict/), the stop-motion edition of [A Very Long Carriage Ride](/films/a-very-long-carriage-ride/), [My Boyfriend Is a Superhero!?](/films/my-boyfriend-is-a-superhero/) and [Strings](/films/strings/). His September space opera **[Lucky Stars](/films/lucky-stars/)**, with ten randomised endings, joins them.
+
+[Beyond Wukong](/films/beyond-wukong/) now plays from Mango TV's official channel, with captions, and gains episodes six to ten. AiMation Studios' four episodes of [Non Player Combat](/films/non-player-combat/) are listed in full. Several older shorts also have their makers' own uploads now: Dave Clark's live-action hybrid [Another](/films/another/), with its full cast and crew credits, RŌHKI's [A Million Trillion Pathways](/films/a-million-trillion-pathways/), Jacob Adler's [Total Pixel Space](/films/total-pixel-space/) and Henry Daubrez's [KITSUNE](/films/kitsune/) and [BANISHED](/films/banished/).

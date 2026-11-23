@@ -1121,7 +1121,10 @@
    "title": "Wonder Studios",
    "kind": "creator",
    "artists": [
-    "hal-watmough"
+    "hal-watmough",
+    "jidenna",
+    "junie-lau",
+    "junky-cream"
    ]
   },
   {
@@ -1295,7 +1298,8 @@
    "title": "Kling AI",
    "kind": "platform",
    "artists": [
-    "jacopo-reale"
+    "jacopo-reale",
+    "stephane-benini"
    ]
   },
   {
@@ -1330,6 +1334,70 @@
     "ricardo-villavicencio-and-edward-saatchi",
     "sifang-chen-and-yang-wang",
     "yuuuki"
+   ]
+  },
+  {
+   "id": "UCHR3HGVfKyKm560OiNXm60w",
+   "title": "Hooroo Jackson",
+   "handle": "@hooroojackson",
+   "kind": "creator",
+   "artists": [
+    "hooroo-jackson"
+   ]
+  },
+  {
+   "id": "UC2dUVpvyMe699aqGME1BMmA",
+   "title": "RŌHKI",
+   "handle": "@rohki",
+   "kind": "creator",
+   "artists": [
+    "rohki"
+   ]
+  },
+  {
+   "id": "UCZtQvSerNaprocHCuKTjFKg",
+   "title": "Jacob Adler",
+   "kind": "creator",
+   "artists": [
+    "jacob-adler"
+   ]
+  },
+  {
+   "id": "UCbYQFOovYXS9VC2wXZHNy4Q",
+   "title": "Jidenna",
+   "handle": "@jidenna-inc",
+   "kind": "creator",
+   "artists": [
+    "jidenna"
+   ]
+  },
+  {
+   "id": "UCtFO33_sHkJKWoXJRnTOdsg",
+   "title": "Junie Lau",
+   "handle": "@junielaux",
+   "kind": "creator",
+   "artists": [
+    "junie-lau"
+   ]
+  },
+  {
+   "id": "UC8buszIcZpB1-TL_VoNyskg",
+   "title": "DELINE PRIME 公式",
+   "handle": "@delineprime",
+   "kind": "creator",
+   "artists": [
+    "deline-prime"
+   ]
+  },
+  {
+   "id": "UClX6_FfGv1h7DUf_W-ZbZDw",
+   "title": "Disrupt AI Film Festival (DAIFF) | Australia",
+   "kind": "publisher",
+   "artists": [
+    "jamin-tasker",
+    "genki-yamasaki",
+    "jonathan-heath",
+    "qian-deng"
    ]
   }
  ],

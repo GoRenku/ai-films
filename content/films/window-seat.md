@@ -5,19 +5,19 @@ description: "A confined airline journey turns a technology executive’s profes
 year: 2023
 format: "Feature"
 genre: "Dark comedy"
-status: "Released"
+status: "Watch now"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 20
-sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/window-seat/"}]
+sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/window-seat/"}, {"label": "Hooroo Jackson — complete film on YouTube", "url": "https://www.youtube.com/watch?v=WxVUxf1gcQw"}]
 production: [{"label": "Production scale", "detail": "Jackson reports assembling more than 4,000 generated videos and using synthetic dialogue performances.", "source": "https://hooroojackson.com/portfolio-item/window-seat/"}]
-runtimeMinutes: 61
-watchUrl: "https://hooroojackson.com/portfolio-item/window-seat/"
-watchLabel: "Film details / trailer"
-image: "/media/window-seat.png"
-imageAlt: "Official artwork for Window Seat"
-imageCredit: "Hooroo Jackson · official film artwork"
-imageSource: "https://hooroojackson.com/portfolio-item/window-seat/"
+runtimeMinutes: 61.92
+watchUrl: "https://www.youtube.com/watch?v=WxVUxf1gcQw"
+watchLabel: "Watch the film"
+image: "/media/window-seat.jpg"
+imageAlt: "A black-and-white zebra-striped whale drifts through clouds beside the Window Seat title"
+imageCredit: "Hooroo Jackson · Window Seat · YouTube release thumbnail"
+imageSource: "https://www.youtube.com/watch?v=WxVUxf1gcQw"
 ---
 
 A 61-minute feature released in July 2023, assembled from more than 4,000 generated videos according to Jackson.

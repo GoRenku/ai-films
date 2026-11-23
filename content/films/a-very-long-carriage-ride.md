@@ -7,12 +7,13 @@ format: "Feature"
 genre: "Animated period adventure"
 status: "Watch now"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 22
-sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/a-very-long-carriage-ride/"}]
+sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/a-very-long-carriage-ride/"}, {"label": "Hooroo Jackson — stop-motion edition, October 2025 revision", "url": "https://www.youtube.com/watch?v=clLfbEMHpGA"}, {"label": "Hooroo Jackson — classic 2D edition", "url": "https://www.youtube.com/watch?v=eZkZaDYKjyI"}]
 production: [{"label": "Budget and authorship", "detail": "Jackson reports a solo production costing $2,000 across two versions, approximately $1,000 per edition.", "source": "https://hooroojackson.com/portfolio-item/a-very-long-carriage-ride/"}, {"label": "Writing and process", "detail": "The filmmaker describes writing the screenplay and workshopping it with AI, and links more than 40 hours of production recordings.", "source": "https://hooroojackson.com/portfolio-item/a-very-long-carriage-ride/"}]
-watchUrl: "https://hooroojackson.com/portfolio-item/a-very-long-carriage-ride/"
-watchLabel: "Watch film"
+watchUrl: "https://www.youtube.com/watch?v=clLfbEMHpGA"
+watchLabel: "Watch the stop-motion edition"
+runtimeMinutes: 82.57
 image: "/media/a-very-long-carriage-ride.jpg"
 imageAlt: "Official artwork for A Very Long Carriage Ride"
 imageCredit: "Hooroo Jackson · official film artwork"

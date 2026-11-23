@@ -12,10 +12,9 @@ lastVerifiedAt: "2026-11-05"
 watchUrl: "https://www.youtube.com/watch?v=Ri--qqBtMD0"
 watchLabel: "Watch film"
 image: "/media/more-tears-than-harm.jpg"
-imageFit: "contain"
-imageAlt: "A blue-faced figure in an orange hood on the More Tears Than Harm poster"
-imageCredit: "More Tears Than Harm official artwork via Runway AI Film Festival"
-imageSource: "https://aif.runwayml.com/screening-room"
+imageAlt: "A blue-faced figure in an orange hood stands in a brightly coloured supermarket aisle"
+imageCredit: "Herinarivo Rakotomanana · More Tears Than Harm · YouTube release thumbnail"
+imageSource: "https://www.youtube.com/watch?v=Ri--qqBtMD0"
 sources: [{"label":"Filmmaker’s release page","url":"https://herinarivorakotomanana.com/More_Tears_Than_Harm.html"},{"label":"Runway screening room and runtime","url":"https://aif.runwayml.com/screening-room"},{"label":"BIFAN 2025 official awards","url":"https://www.bifan.kr/eng/community/comm01_view.asp?actEvent=view&pk_seq=90841&sc_board_seq=1"}]
 production: []
 ---

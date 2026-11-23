@@ -7,17 +7,17 @@ format: "Feature"
 genre: "Animated gothic romance"
 status: "Watch now"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 21
-sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/dreadclub-vampires-verdict/"}]
+sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/dreadclub-vampires-verdict/"}, {"label": "Hooroo Jackson — complete film on YouTube", "url": "https://www.youtube.com/watch?v=brQpbo8Vt0E"}]
 production: [{"label": "Budget, time and team", "detail": "Jackson reports a $405 production, one maker and a six-month process in 2024, drawing on more than 17,000 generated images.", "source": "https://hooroojackson.com/portfolio-item/dreadclub-vampires-verdict/"}, {"label": "Editions", "detail": "The Blu-ray includes a Machine Cut and a Director’s Cut containing non-machine elements. These should not be conflated.", "source": "https://hooroojackson.com/portfolio-item/dreadclub-vampires-verdict/"}]
 runtimeMinutes: 88
-watchUrl: "https://hooroojackson.com/portfolio-item/dreadclub-vampires-verdict/"
-watchLabel: "Watch film"
-image: "/media/dreadclub-vampires-verdict.png"
-imageAlt: "Official artwork for DreadClub: Vampire’s Verdict"
-imageCredit: "Hooroo Jackson · official film artwork"
-imageSource: "https://hooroojackson.com/portfolio-item/dreadclub-vampires-verdict/"
+watchUrl: "https://www.youtube.com/watch?v=brQpbo8Vt0E"
+watchLabel: "Watch the film"
+image: "/media/dreadclub-vampires-verdict.jpg"
+imageAlt: "Duchamps and Betty face each other on either side of the DreadClub title"
+imageCredit: "Hooroo Jackson · DreadClub: Vampire’s Verdict · YouTube release thumbnail"
+imageSource: "https://www.youtube.com/watch?v=brQpbo8Vt0E"
 ---
 
 The film combines romantic melodrama with a trial, giving character relationships and accusations a common narrative spine.

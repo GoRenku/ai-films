@@ -6,11 +6,11 @@ year: 2026
 format: "Series"
 genre: "Science-fiction thriller"
 status: "Watch now"
-watchUrl: "https://www.magnific.com/originals/black-box"
-watchLabel: "Watch at the source"
+watchUrl: "https://www.youtube.com/watch?v=Z9SdL6VIHaY"
+watchLabel: "Watch Episode 1"
 order: 10
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 sources:
   [
     {
@@ -21,6 +21,7 @@ sources:
       "label": "Magnific — series viewing page",
       "url": "https://www.magnific.com/originals/black-box",
     },
+    {"label": "Magnific — Episode 1, The Debut, on YouTube", "url": "https://www.youtube.com/watch?v=Z9SdL6VIHaY"},
   ]
 production:
   [
@@ -49,7 +50,7 @@ episodes:
     synopsis: "Kendrick Robinson’s need to pay for his sister’s treatment draws him into an invented, lethal fighting arena."
     runtimeMinutes: 10
     status: "Watch now"
-    watchUrl: "https://www.magnific.com/originals/black-box"
+    watchUrl: "https://www.youtube.com/watch?v=Z9SdL6VIHaY"
     source: "https://es.linkedin.com/posts/john-olivos-118377161_aifilmmaking-generativeai-aivideo-activity-7494826332393168896-TNhf"
 ---
 

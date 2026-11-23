@@ -6,11 +6,11 @@ year: 2026
 format: "Short film"
 genre: "Speculative mystery"
 status: "Watch now"
-watchUrl: "https://x.com/DiDi_OKK/status/2043698244778123286"
-watchLabel: "Watch at the source"
+watchUrl: "https://www.youtube.com/watch?v=M-_8pk_9VbY"
+watchLabel: "Watch the film"
 order: 2
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 sources:
   [
     {
@@ -25,6 +25,7 @@ sources:
       "label": "Jiaze Li — collaborators",
       "url": "https://www.linkedin.com/posts/jiaze-li-a54494228_were-honoured-that-website-has-been-selected-activity-7488280955128864769-5i-6",
     },
+    {"label": "DiDi_OK — complete film on YouTube", "url": "https://www.youtube.com/watch?v=M-_8pk_9VbY"},
   ]
 production:
   [
@@ -49,6 +50,6 @@ The film is a good entry point into Li's work because its central idea demands m
 
 ## Recognition and evidence
 
-Reply lists Website as the 2026 recipient of its AI Studios Grand Prix and its WeShort Community Award. The linked original X upload runs approximately 11 minutes. The award event took place in Venice; it should not be confused with the main Venice competition.
+Reply lists Website as the 2026 recipient of its AI Studios Grand Prix and its WeShort Community Award. The original release runs about 11 minutes; DiDi_OK's YouTube upload is the same April 13 film. The award event took place in Venice; it should not be confused with the main Venice competition.
 
 Li names TzuJung Lin and Zhetao Huang as collaborators. The cited post does not assign their Website roles or give a complete crew count. We have not assigned the tools disclosed for Waste to Energy to this separate production.

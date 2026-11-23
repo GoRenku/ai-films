@@ -14,10 +14,9 @@ sources: [{"label": "Complete film — Ernest Desumbila’s YouTube channel", "u
 production: [{"label": "Disclosed schedule and scope", "detail": "Maker’s direct festival interview: completed in ten days, working alone at home. This is self-reported production scope.", "source": "https://qazinform.com/news/aaiff-2026-winners-share-stories-behind-their-ai-generated-films-163b82/amp"}, {"label": "Story development", "detail": "The maker says he imagined a rainy ending first and developed the story backwards from that ending.", "source": "https://qazinform.com/news/aaiff-2026-winners-share-stories-behind-their-ai-generated-films-163b82/amp"}]
 runtimeMinutes: 12.15
 image: "/media/looking-for-perseida.jpg"
-imageAlt: "AAIFF third-place announcement for Ernest Desumbila’s Looking For Perseida over a desert image"
-imageCredit: "Astana AI Film Festival · official winning-film excerpt thumbnail"
-imageSource: "https://www.instagram.com/aaiff.ai/p/DeCm8B3iMfj/"
-imageFit: "contain"
+imageAlt: "Armed hunters and a reptilian creature crowd a burning jungle above the Looking 4 Perseida title"
+imageCredit: "Ernest Desumbila · Looking 4 Perseida · YouTube release thumbnail"
+imageSource: "https://www.youtube.com/watch?v=k7DIhD3ubIw"
 ---
 
 In the festival’s synopsis, humanity is extinct and evolved dolphins rule the ruins. A lone robot crosses this world to retrieve a capsule containing Perseida’s consciousness. His mission is driven by love rather than survival.

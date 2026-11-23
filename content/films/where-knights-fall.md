@@ -7,12 +7,13 @@ format: "Short film"
 genre: "Animated fairy tale"
 status: "Watch now"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 27
-sources: [{"label": "Official film / credits", "url": "https://tv.wonderstudios.com/watch/where-knights-fall"}, {"label": "AIF — 2026 Silver", "url": "https://aif.runwayml.com/"}]
+sources: [{"label": "Official film / credits", "url": "https://tv.wonderstudios.com/watch/where-knights-fall"}, {"label": "AIF — 2026 Silver", "url": "https://aif.runwayml.com/"}, {"label": "Mathery — complete film on Vimeo", "url": "https://vimeo.com/1177606236"}]
 production: []
-watchUrl: "https://tv.wonderstudios.com/watch/where-knights-fall"
-watchLabel: "Watch film"
+watchUrl: "https://vimeo.com/1177606236"
+watchLabel: "Watch the film"
+runtimeMinutes: 3.58
 image: "/media/where-knights-fall.webp"
 imageAlt: "Official artwork for Where Knights Fall"
 imageCredit: "Mathery · artwork via AIF"
@@ -25,4 +26,4 @@ Rescue attempts have left a grim accumulation below Rapunzel’s tower. The next
 
 The setup makes repeated action meaningful: each attempt builds an expectation that the next can interrupt. It is a compact test of physical comedy and narrative economy. A recognizable fairy tale gives viewers enough context for the filmmakers to spend their short runtime on the reversal.
 
-The full film is available on Wonder TV; AIF awarded it Silver in 2026.
+The full film is on Mathery's Vimeo and on Wonder TV; AIF awarded it Silver in 2026.

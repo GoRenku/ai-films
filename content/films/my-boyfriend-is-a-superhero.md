@@ -5,16 +5,19 @@ description: "A secretary discovers her employer’s secret identity in a story 
 year: 2025
 format: "Feature"
 genre: "Animated superhero romance"
-status: "Released"
+status: "Watch now"
+watchUrl: "https://www.youtube.com/watch?v=PKVBxTPM2_E"
+watchLabel: "Watch the film"
+runtimeMinutes: 92.05
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 23
-sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/my-boyfriend-is-a-superhero/"}]
+sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/my-boyfriend-is-a-superhero/"}, {"label": "Hooroo Jackson — complete film (Abigail A) on YouTube", "url": "https://www.youtube.com/watch?v=PKVBxTPM2_E"}]
 production: [{"label": "Model disclosure", "detail": "The official film page links the production’s Sora 2 announcement. This identifies a disclosed model, not a complete shot-by-shot tool inventory.", "source": "https://hooroojackson.com/portfolio-item/my-boyfriend-is-a-superhero/"}, {"label": "Editing", "detail": "Jackson describes autonomous systems proposing and placing elements in the cut. The exact level of accepted automation is not quantified.", "source": "https://hooroojackson.com/portfolio-item/my-boyfriend-is-a-superhero/"}]
-image: "/media/my-boyfriend-is-a-superhero.png"
-imageAlt: "Official artwork for My Boyfriend Is a Superhero!?"
-imageCredit: "Hooroo Jackson · official film artwork"
-imageSource: "https://hooroojackson.com/portfolio-item/my-boyfriend-is-a-superhero/"
+image: "/media/my-boyfriend-is-a-superhero.jpg"
+imageAlt: "Abigail looks startled beside the masked hero under the film's title"
+imageCredit: "Hooroo Jackson · My Boyfriend Is a Superhero!? · YouTube release thumbnail"
+imageSource: "https://www.youtube.com/watch?v=PKVBxTPM2_E"
 ---
 
 The project lets viewers choose between two versions of its lead character, Abigail. Its creator also describes an experimental edit and agent-assisted proposals for assembling the film.

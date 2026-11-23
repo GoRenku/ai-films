@@ -7,12 +7,13 @@ format: "Feature"
 genre: "Period drama"
 status: "Watch now"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 24
-sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/strings/"}]
+sources: [{"label": "Official film / credits", "url": "https://hooroojackson.com/portfolio-item/strings/"}, {"label": "Hooroo Jackson — complete film on YouTube", "url": "https://www.youtube.com/watch?v=DHMk1yvUQ8s"}]
 production: [{"label": "Budget and team", "detail": "The director reports a crew of one and a budget under $1,000. These are self-reported production figures.", "source": "https://hooroojackson.com/portfolio-item/strings/"}, {"label": "Variable ending", "detail": "The creator describes an algorithm selecting either a happy or tragic ending; this is an edition-specific mechanism, not evidence that the story is generated live.", "source": "https://hooroojackson.com/portfolio-item/strings/"}]
-watchUrl: "https://hooroojackson.com/portfolio-item/strings/"
-watchLabel: "Watch film"
+watchUrl: "https://www.youtube.com/watch?v=DHMk1yvUQ8s"
+watchLabel: "Watch the film"
+runtimeMinutes: 74.33
 image: "/media/strings.png"
 imageAlt: "Official artwork for Strings"
 imageCredit: "Hooroo Jackson · official film artwork"

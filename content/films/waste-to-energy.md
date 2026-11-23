@@ -6,11 +6,11 @@ year: 2026
 format: "Series"
 genre: "Science-fiction mystery"
 status: "Watch now"
-watchUrl: "https://x.com/DiDi_OKK/status/2075554498064617627"
-watchLabel: "Watch the first installment on X"
+watchUrl: "https://www.youtube.com/watch?v=n9D7hjeBQcU"
+watchLabel: "Watch Episode 1"
 order: 4
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 sources:
   [
     {
@@ -21,6 +21,7 @@ sources:
       "label": "Jiaze Li — tools and collaborators",
       "url": "https://www.linkedin.com/posts/jiaze-li-a54494228_ai-aifilm-generativeai-activity-7481413564684017664-Mpd-",
     },
+    {"label": "DiDi_OK — Episode 1 on YouTube", "url": "https://www.youtube.com/watch?v=n9D7hjeBQcU"},
   ]
 production:
   [
@@ -45,7 +46,7 @@ episodes:
     releasedOn: "2026-07-10"
     runtimeMinutes: 12
     status: "Watch now"
-    watchUrl: "https://x.com/DiDi_OKK/status/2075554498064617627"
+    watchUrl: "https://www.youtube.com/watch?v=n9D7hjeBQcU"
     source: "https://x.com/DiDi_OKK/status/2075554498064617627"
 ---
 

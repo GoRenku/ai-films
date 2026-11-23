@@ -7,7 +7,7 @@ format: "Short film"
 genre: "Satire"
 status: "Watch now"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 49
 sources: [{"label": "Official film / credits", "url": "https://vimeo.com/1072890294"}, {"label": "Artist — project context", "url": "https://www.lucassabean.com/about-1"}]
 production: []

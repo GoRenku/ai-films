@@ -5,7 +5,7 @@ focus: "Character continuity, intimate performance and disclosed production work
 website: "https://www.magnific.com/originals"
 x: {"url": "https://x.com/magnific", "label": "Magnific on X", "source": "https://www.magnific.com/originals/candela"}
 discoveredAt: "2026-10-05"
-lastVerifiedAt: "2026-11-04"
+lastVerifiedAt: "2026-11-23"
 sources: [{"label": "Original film and studio credits", "url": "https://www.magnific.com/originals/candela"}, {"label": "Original shot-generation making-of", "url": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Original music making-of", "url": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}, {"label": "Roots original full release", "url": "https://www.magnific.com/originals/roots"}, {"label": "Patricia Camuñas credit and complete presentation", "url": "https://x.com/magnific/status/2114356446615974273"}, {"label": "Original model roles and reference-free video account", "url": "https://x.com/magnific/status/2114402169017573381"}, {"label": "Separate poster workflow", "url": "https://x.com/magnific/status/2114402220804551017"}, {"label": "Complete release and work-specific credits", "url": "https://www.magnific.com/originals/smoke"}, {"label": "ALMA full original", "url": "https://www.youtube.com/watch?v=psDurxghQ8Q"}, {"label": "ALMA studio credit thread", "url": "https://x.com/magnific/status/2117651914557145387"}]
 ---
 
@@ -34,3 +34,7 @@ The [production thread](https://x.com/magnific/status/2114402169017573381) names
 ## November 4 — ALMA and the Creative Hub
 
 [ALMA: The Nomad Saga](/films/alma-the-nomad-saga/) is written and directed by [Riz Esentaev](/artists/riz-esentaev/), from Magnific Creative Hub and powered by Magnific. The named team and platform-backed context are preserved. The original YouTube description and X thread differ on AI-artist and sound credits; the film page documents both accounts without merging them into an invented final crew.
+
+## November 10 — Before the Show
+
+[Before the Show](/films/before-the-show/) is an animated family comedy series written and directed by Cristina Polo. Each episode retells one Brooklyn day from a different character's point of view; the first follows Nora. The release credits a six-person AI-visuals team and lists Seedance 2.0, Nano Banana 2, ElevenLabs and Suno.

@@ -6,12 +6,12 @@ year: 2026
 format: "Series"
 genre: "Mythological fantasy"
 status: "Watch now"
-watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
-watchLabel: "Watch Episode 1 on Mango TV"
+watchUrl: "https://www.youtube.com/watch?v=T2Xzd7KHSis"
+watchLabel: "Watch Episode 1 on Mango TV's YouTube channel"
 image: "/media/beyond-wukong.jpg"
-imageAlt: "Mango TV promotional image for Beyond Wukong"
-imageCredit: "Mango TV · series promotional image"
-imageSource: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+imageAlt: "Elder monkeys gather around a young stone monkey in a forest in Beyond Wukong's first episode"
+imageCredit: "Mango TV · Beyond Wukong Episode 1 · official YouTube thumbnail"
+imageSource: "https://www.youtube.com/watch?v=T2Xzd7KHSis"
 order: 6
 sources:
   [
@@ -23,9 +23,10 @@ sources:
       "label": "Mango TV — premiere and production announcement",
       "url": "https://investor.wedbush.com/wedbush/article/accwirecq-2026-9-1-chinas-first-aigc-long-form-drama-beyond-wukong-premieres-in-hunan-satellite-tvs-prime-time-slot-marking-a-new-chapter-in-the-industrialization-of-film-and-television-production",
     },
+    {"label": "Mango TV official YouTube channel — full episodes with captions", "url": "https://www.youtube.com/watch?v=T2Xzd7KHSis"},
   ]
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 production:
   [
     {
@@ -42,33 +43,63 @@ production:
 episodes:
   - number: 1
     releasedOn: "2026-08-31"
-    runtimeMinutes: 40
+    runtimeMinutes: 41.9
     status: "Watch now"
-    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
-    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    watchUrl: "https://www.youtube.com/watch?v=T2Xzd7KHSis"
+    source: "https://www.youtube.com/watch?v=T2Xzd7KHSis"
   - number: 2
-    runtimeMinutes: 40
+    runtimeMinutes: 43.4
     status: "Watch now"
-    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
-    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    watchUrl: "https://www.youtube.com/watch?v=KlTIxv2u4Xw"
+    source: "https://www.youtube.com/watch?v=KlTIxv2u4Xw"
   - number: 3
-    runtimeMinutes: 40
+    runtimeMinutes: 40.1
     status: "Watch now"
-    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
-    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    watchUrl: "https://www.youtube.com/watch?v=RwlFrHRNnBs"
+    source: "https://www.youtube.com/watch?v=RwlFrHRNnBs"
   - number: 4
-    runtimeMinutes: 40
+    runtimeMinutes: 41.4
     status: "Watch now"
-    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
-    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    watchUrl: "https://www.youtube.com/watch?v=SrmFaY06KBQ"
+    source: "https://www.youtube.com/watch?v=SrmFaY06KBQ"
   - number: 5
-    runtimeMinutes: 40
+    runtimeMinutes: 40.4
     status: "Watch now"
-    watchUrl: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
-    source: "https://w.mgtv.com/b/900162/24594067.html?lang=en"
+    watchUrl: "https://www.youtube.com/watch?v=2jWo3fblNAU"
+    source: "https://www.youtube.com/watch?v=2jWo3fblNAU"
+  - number: 6
+    runtimeMinutes: 42.5
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=O2zhYpo_-MA"
+    source: "https://www.youtube.com/watch?v=O2zhYpo_-MA"
+    addedAt: "2026-11-23"
+  - number: 7
+    runtimeMinutes: 40.6
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=YNUEUXqEGrs"
+    source: "https://www.youtube.com/watch?v=YNUEUXqEGrs"
+    addedAt: "2026-11-23"
+  - number: 8
+    runtimeMinutes: 42.1
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=0VxkGm7b0JA"
+    source: "https://www.youtube.com/watch?v=0VxkGm7b0JA"
+    addedAt: "2026-11-23"
+  - number: 9
+    runtimeMinutes: 40.5
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=GXTVm9J_4ns"
+    source: "https://www.youtube.com/watch?v=GXTVm9J_4ns"
+    addedAt: "2026-11-23"
+  - number: 10
+    runtimeMinutes: 39.9
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=YwRZGLZJJkU"
+    source: "https://www.youtube.com/watch?v=YwRZGLZJJkU"
+    addedAt: "2026-11-23"
 ---
 
-Beyond Wukong premiered on Mango TV and Hunan Satellite TV on August 31, 2026. The initial release contains five episodes of approximately 40 minutes; a planned 30-episode run is not the same as thirty released episodes.
+Beyond Wukong premiered on Mango TV and Hunan Satellite TV on August 31, 2026. The first five episodes of about 40 minutes arrived in its opening week. Mango TV's official YouTube channel now carries ten full, captioned episodes, the sixth to tenth uploaded on October 7 and 8. A planned 30-episode run is not the same as thirty released episodes.
 
 ## Why this series matters
 

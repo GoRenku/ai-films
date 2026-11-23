@@ -6,12 +6,13 @@ year: 2026
 format: "Short film"
 genre: "Narrative experiment"
 status: "Watch now"
-watchUrl: "https://x.com/Diesol/status/2078120870766350758"
-watchLabel: "Watch on X"
+watchUrl: "https://www.youtube.com/watch?v=i0KnG5ozzPs"
+watchLabel: "Watch the film"
+runtimeMinutes: 21.07
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
+lastVerifiedAt: "2026-11-23"
 order: 58
-sources: [{"label": "Director — complete film", "url": "https://x.com/Diesol/status/2078120870766350758"}, {"label": "Director — continuity method", "url": "https://x.com/Diesol/status/2078301029905715232"}]
+sources: [{"label": "Director — complete film", "url": "https://x.com/Diesol/status/2078120870766350758"}, {"label": "Director — continuity method", "url": "https://x.com/Diesol/status/2078301029905715232"}, {"label": "Dave Clark — complete film on YouTube", "url": "https://www.youtube.com/watch?v=i0KnG5ozzPs"}]
 production: [{"label": "Writing, direction and editing", "detail": "Clark credits himself in the release post. This does not establish the full production headcount.", "source": "https://x.com/Diesol/status/2078120870766350758"}, {"label": "Continuity technique", "detail": "Clark describes creating character sheets for each character and each change of clothes, then combining them with a shared prompt reference document.", "source": "https://x.com/Diesol/status/2078301029905715232"}]
 image: "/media/plume.webp"
 imageAlt: "Sunlight rises over a planet in Plume"
