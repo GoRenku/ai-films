@@ -13,9 +13,9 @@ lastVerifiedAt: "2026-11-12"
 sources: [{"label": "AIFJ official programme", "url": "https://aifilm.jp/program_en.html"}, {"label": "AIFJ finalist and selection catalogue", "url": "https://www.aifilm.jp/nominations_en.html"}, {"label": "AIFJ official awards", "url": "https://www.aifilm.jp/#award-winners-2026"}, {"label": "TYO production and festival screening", "url": "https://tyo.co.jp/topics/20261030-2/"}, {"label": "Official full film from TYO", "url": "https://www.youtube.com/watch?v=jTxfwmRcuN8"}]
 production: [{"label": "Commissioning context", "detail": "Produced as part of TYO Inc.’s Tokyo Stories AI short-film project.", "source": "https://tyo.co.jp/topics/20261030-2/"}]
 image: "/media/tokyo-stories-imitation.jpg"
-imageAlt: "A child in red in a warmly lit room"
-imageCredit: "Kentaro Osawa · artwork via AI Film Festival Japan"
-imageSource: "https://www.aifilm.jp/nominations_en.html"
+imageAlt: "A girl in red reaches up from a sea of toys and trinkets beneath the red Tokyo Imitation title"
+imageCredit: "Kentaro Osawa · TOKYO STORIES YouTube release artwork"
+imageSource: "https://www.youtube.com/watch?v=jTxfwmRcuN8"
 ---
 
 ## Why this film matters

@@ -5,8 +5,8 @@ description: "A filmmaker exploring constructed realities and human emotion thro
 focus: "Psychological science fiction & shared process"
 website: "https://www.youtube.com/@MidnightMonkeysStudio"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-09-17"
-sources: [{"label": "Midnight Monkeys — filmmaker’s channel", "url": "https://www.youtube.com/@MidnightMonkeysStudio/about"}, {"label": "Midnight Monkeys — official film and production credits", "url": "https://www.youtube.com/watch?v=_MhKwYjkWFc"}, {"label": "Allan Ripley — public production project", "url": "https://higgsfield.ai/@allan_ripley/projects/the-prompter"}]
+lastVerifiedAt: "2026-11-23"
+sources: [{"label": "Midnight Monkeys — filmmaker’s channel", "url": "https://www.youtube.com/@MidnightMonkeysStudio/about"}, {"label": "Midnight Monkeys — official film and production credits", "url": "https://www.youtube.com/watch?v=_MhKwYjkWFc"}, {"label": "Allan Ripley — public production project", "url": "https://higgsfield.ai/@allan_ripley/projects/the-prompter"}, {"label": "OTSUKAI — original release and credits", "url": "https://www.youtube.com/watch?v=enhIoKbufeY"}]
 ---
 
 Allan Ripley is the writer, director and producer credited on [The Prompter](/films/the-prompter/). His YouTube channel, **Midnight Monkeys**, identifies itself as the home of his films and links to his [Higgsfield profile](https://higgsfield.ai/@allan_ripley).
@@ -18,3 +18,7 @@ Ripley’s stated interest in emotion gives his speculative premise a concrete t
 He also makes the production unusually inspectable, linking the finished film to a public project and naming tools by their role. That is useful for following the decisions between an initial idea and a completed edit.
 
 The public biography is currently brief. This profile does not infer a wider career, nationality or crew size from the studio name. The verified places to follow his work are the channel and Higgsfield profile above; a personal X account has not yet been verified.
+
+## OTSUKAI
+
+[OTSUKAI](/films/otsukai/), released November 23 for the Higgsfield Talent Contest, turns from The Prompter's psychological science fiction to comedy: a seven-minute short in the style of 1990s Japanese anime about two alien visitors on a neighbourhood errand. Its release again names each tool by role.

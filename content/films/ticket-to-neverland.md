@@ -12,9 +12,9 @@ lastVerifiedAt: "2026-11-19"
 sources: [{"label": "AIFJ official programme", "url": "https://aifilm.jp/program_en.html"}, {"label": "AIFJ finalist and selection catalogue", "url": "https://www.aifilm.jp/nominations_en.html"}, {"label": "AIFJ official awards", "url": "https://www.aifilm.jp/#award-winners-2026"}, {"label": "BIFAN official programme", "url": "https://www.bifan.kr/program/program_view.asp?pk_seq=8286&sc_category_seq=9112"}, {"label": "Verified complete public release", "url": "https://www.youtube.com/watch?v=CtGFvac3PQs"}]
 production: []
 image: "/media/ticket-to-neverland.jpg"
-imageAlt: "A costumed character holding a microphone"
-imageCredit: "Min Heo, Minho Son and Hanin Kim · artwork via AI Film Festival Japan"
-imageSource: "https://www.aifilm.jp/nominations_en.html"
+imageAlt: "A wooden puppet, a scowling old man and a pale girl sit at a table under a single interrogation lamp"
+imageCredit: "Min Heo, Minho Son and Hanin Kim · WAIFF Seoul YouTube release artwork"
+imageSource: "https://www.youtube.com/watch?v=CtGFvac3PQs"
 watchUrl: "https://www.youtube.com/watch?v=CtGFvac3PQs"
 watchLabel: "Watch the full film"
 ---

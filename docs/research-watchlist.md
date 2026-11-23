@@ -729,3 +729,11 @@ Audited all **151 festival-linked canonical films**: **95** already carried Watc
 
 - Festival playback rotation: BALLAST’s original 7:06 player and SIMUL/ACTION #1’s original 9:01 player now play. The earlier ad interruptions are resolved. Measured release runtimes replace unconfirmed catalogue values; no new premieres claimed. https://www.youtube.com/watch?v=ygRuZTa6O8k · https://www.youtube.com/watch?v=TT-2-YK5AAg
 - Extraltodeus’s November 15 Tap the Glass, Push It, Mirage and Ashen Crown releases were checked against their original descriptions and artwork. These are presented as music-composition experiments with cover/waveform artwork, with Claude Fable 5.2 and YuE2 disclosures, rather than verified directed music-video cuts. Excluded from film/music-video cards under the audio/visualizer distinction, not merely because the maker calls them experiments. https://www.youtube.com/watch?v=S1PcGrsepmc · https://www.youtube.com/watch?v=MS_LPoAU6E4 · https://www.youtube.com/watch?v=QKk7PtZjLH8 · https://www.youtube.com/watch?v=4XT5p8kM9xg
+
+## November 23, 2026 — Higgsfield Talent Contest entries and sweep outcomes
+
+- Higgsfield Talent Contest: four catalogue makers released complete entries this weekend (Allan Ripley's OTSUKAI, Jun Pabon's They Said, Francesca Fini's The Ark, Leandro Mera's Seven Domes for Cráneo Films). The contest itself stays a festival-inbox lead for the deep watch; entering is not an award.
+- GOOD BOY Part II: Magnific published the official trailer on November 22 (https://www.youtube.com/watch?v=utZb-kFojeE), crediting Dair Karakeev as writer and director and Max Balter as producer, as a Magnific Creative Hub series. No release date; watch for the full release.
+- The House of Amun: Isaac Rodriguez has scheduled the 1-hour-51-minute feature cut combining Season One as a YouTube premiere (https://www.youtube.com/watch?v=u9-f2ftfJRc). Not yet released; add when it plays.
+- Gossip Goblin's Fishbowl Spartacus (2:33, https://www.youtube.com/watch?v=UEkxU8dCqd4) has no description or production post; not added until its form can be described from a source.
+- Danioros's November 22 A Strange Kind of Meadow post is a single still image, not a film.

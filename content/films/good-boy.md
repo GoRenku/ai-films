@@ -16,7 +16,7 @@ imageSource: "https://www.youtube.com/watch?v=rk-qiHH41Ns"
 imageFit: "contain"
 discoveredAt: "2026-09-24"
 lastVerifiedAt: "2026-09-24"
-sources: [{"label": "Original full release and creator disclosures", "url": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}, {"label": "Director and studio portfolio", "url": "https://digidoc.studio/"}]
+sources: [{"label": "Original full release and creator disclosures", "url": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}, {"label": "Director and studio portfolio", "url": "https://digidoc.studio/"}, {"label": "Good Boy Part II — official trailer (Magnific)", "url": "https://www.youtube.com/watch?v=utZb-kFojeE"}]
 production: [{"label": "Authorship", "detail": "The release credits writing, direction and creation to Dair K.; the linked Digidoc site identifies Dair Karakeev. A complete crew count is not stated.", "source": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}, {"label": "Video and images", "detail": "The official release artwork credits Seedance 2.5 and 2.0 for video generation and GPT Image 2 for image generation.", "source": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}, {"label": "Sound and finishing", "detail": "The artwork credits ElevenLabs and Suno AI for soundtrack generation, and Topaz Labs for upscaling. It does not separate voice, effects and music roles.", "source": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}, {"label": "Schedule and scope", "detail": "The creator describes months of work and thousands of takes, and calls it an independent non-commercial passion project. No precise budget is disclosed.", "source": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}]
 ---
 
@@ -29,3 +29,7 @@ A central human–animal relationship offers a specific dramatic test: can a gen
 The production credits are unusually useful because they separate image creation, video, sound and upscaling. They show a multi-tool process, while leaving individual shot assignments and the extent of manual editing unknown. The Spanish-language thumbnail carries the title **Buen Chico**; it is the artwork attached to this same original release, not a different film.
 
 The original release page was checked on September 24. Playback could not be confirmed in the research browser; the link is provided without a verified “Watch now” label. This entry is not a full-film critical review.
+
+## Part II
+
+Magnific published the official trailer for **Good Boy Part II** on November 22. In the sequel, Jane drives with Argos through a zombie-ridden world to find vaccines for his four newborn pups, a search that leads to a sealed underground facility. The trailer credits Dair Karakeev as writer and director and Max Balter as producer, and presents it as a Magnific Creative Hub series. No release date has been announced. [Official trailer](https://www.youtube.com/watch?v=utZb-kFojeE)
