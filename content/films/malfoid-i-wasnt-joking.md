@@ -13,7 +13,7 @@ imageAlt: "Malfoid beside the I Wasn’t Joking and Don’t Wait for Me titles i
 imageCredit: "schmede_AI · original complete-cut YouTube artwork"
 imageSource: "https://www.youtube.com/watch?v=3ieOEFLKMD4"
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-11-04"
+lastVerifiedAt: "2026-11-24"
 sources: [{"label": "Original complete short and credits", "url": "https://www.youtube.com/watch?v=os8ULNNjEWI"}, {"label": "Original story and comic credit", "url": "https://x.com/schmede_AI/status/2109323478679597403"}, {"label": "Maker — character, voice and acting references", "url": "https://x.com/schmede_AI/status/2109356101351145768"}, {"label": "Don’t Wait for Me Part 2 full original", "url": "https://www.youtube.com/watch?v=cp8VYGsG7O0"}, {"label": "Part 2 maker announcement", "url": "https://x.com/schmede_AI/status/2112297287552786566"}, {"label": "Part 3 complete original", "url": "https://www.youtube.com/watch?v=nU807C2rgVU"}, {"label": "Maker’s pacing and French-subtitle disclosure", "url": "https://x.com/schmede_AI/status/2112691761537552832"}, {"label": "Part 4 original and description", "url": "https://www.youtube.com/watch?v=hp6kwoMIosA"}, {"label": "Part 4 writing and caption disclosure", "url": "https://x.com/schmede_AI/status/2113014086183338228"}, {"label": "Part 5 complete original and description", "url": "https://www.youtube.com/watch?v=i16WEtbV4ZM"}, {"label": "Part 5 writing and staging account", "url": "https://x.com/schmede_AI/status/2113710377628307842"}, {"label": "Part 5 caption scope", "url": "https://x.com/schmede_AI/status/2113710488530178295"}, {"label": "Complete combined short and scoped writing credits", "url": "https://www.youtube.com/watch?v=3ieOEFLKMD4"}, {"label": "Combined-cut creator announcement", "url": "https://x.com/schmede_AI/status/2114120737636205050"}, {"label": "Creator caption-language scope", "url": "https://x.com/schmede_AI/status/2114121415591170199"}, {"label": "I Was Joking Part 1 complete original", "url": "https://www.youtube.com/watch?v=FJFiu8JL3R8"}, {"label": "Creator release and caption scope", "url": "https://x.com/schmede_AI/status/2114403745698115810"}, {"label": "Part 2 complete original and public creator process comment", "url": "https://www.youtube.com/watch?v=JzDB8oQZjEE"}, {"label": "Creator Part 2 and caption announcement", "url": "https://x.com/schmede_AI/status/2115161031781581028"}, {"label": "Part Three complete release and recasting account", "url": "https://x.com/schmede_AI/status/2116239559369318751"}, {"label": "Recap music disclosure", "url": "https://x.com/schmede_AI/status/2116245096949485790"}, {"label": "Future compilation scope", "url": "https://x.com/schmede_AI/status/2116255510764904848"}, {"label": "Part Four original full upload", "url": "https://www.youtube.com/watch?v=8cwv81N5cvc"}, {"label": "Creator’s complete Part Four announcement", "url": "https://x.com/schmede_AI/status/2116636697719083231"}, {"label": "Maker’s narrative-production account", "url": "https://x.com/schmede_AI/status/2116670424260198537"}, {"label": "Part Five full original and expanded creator comment", "url": "https://www.youtube.com/watch?v=M7KliJScHCk"}, {"label": "Part Five release, captions and character-writing account", "url": "https://x.com/schmede_AI/status/2117055731551604855"}, {"label": "Part Six complete original", "url": "https://www.youtube.com/watch?v=FBUEjD453KE"}, {"label": "Corrected official story playlist", "url": "https://www.youtube.com/playlist?list=PLH3pYi9dZmQk"}, {"label": "Maker corrected link", "url": "https://x.com/schmede_AI/status/2117639125998461213"}]
 production: [{"label":"Adaptation credits","detail":"The release credits story/comic to G-G-G-Grin (@Grin2702) and writing to TriangularCipher9000 (@Axolotl52032346). schmede is the adapter/releasing creator. The October 11 original upload runs 2:21 and belongs to a continuing fan-fiction catalogue, not an official franchise production.","source":"https://www.youtube.com/watch?v=os8ULNNjEWI"},{"label":"References and support","detail":"The maker reports reusing a created character reference, extracting preferred generated audio as a voice reference and prompting the acting. The creator discloses Vidu creative-partner support. Exact film-wide model/version allocation, total crew and budget are not established by hashtags.","source":"https://x.com/schmede_AI/status/2109356101351145768"},{"label":"October 18 continuation: staging and support","detail":"For Don’t Wait for Me Part 1, the maker reports framing around supporting-character likeness constraints, Vidu partner/preview context and an intended later compilation. These describe the new instalment, not a retroactive exact model or writing credit for I Wasn’t Joking.","source":"https://x.com/schmede_AI/status/2111789541921042875"},{"label":"Complete combined release","detail":"The October 25 upload runs 9:50 and supersedes the planned-compilation status. Original source writers remain credited specifically for I Wasn’t Joking. Exact full-cut model allocation, human crew and budget remain unknown.","source":"https://www.youtube.com/watch?v=3ieOEFLKMD4"},{"label":"I Was Joking Part Four — narrative practice","detail":"The complete Thank You upload runs 4:20. Its description retains Vidu partner / Q4 Preview context without exact model allocation. The maker attributes faster narrative work to developing a system through practice, distinguishing this from prior general AI-video experience.","source":"https://x.com/schmede_AI/status/2116670424260198537"},{"label":"I Was Joking Part Five — writing a confidante","detail":"The complete Was That Worth It? runs 3:12. In the original upload’s expanded pinned comment, the maker explains adding Lisa Turpin as an ally Daphne can confide in, providing a way to convey her intentions through another character. The release retains Vidu creative-partner / Q4 Preview context and reusable references, without a complete exact model inventory.","source":"https://www.youtube.com/watch?v=M7KliJScHCk"}]
 episodeNoun: "Part"
@@ -123,6 +123,62 @@ episodes:
     status: "Watch now"
     watchUrl: "https://www.youtube.com/watch?v=FBUEjD453KE"
     source: "https://www.youtube.com/watch?v=FBUEjD453KE"
+  - number: 7
+    title: "I Was Joking — Books"
+    releasedOn: "2026-11-05"
+    addedAt: "2026-11-24"
+    runtimeMinutes: 2.7666666666666666
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=RRPZws3XE8Q"
+    source: "https://www.youtube.com/watch?v=RRPZws3XE8Q"
+  - number: 8
+    title: "I Was Joking — Does He Know?"
+    releasedOn: "2026-11-07"
+    addedAt: "2026-11-24"
+    runtimeMinutes: 3.183333333333333
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=_oBn5vsJf-Y"
+    source: "https://www.youtube.com/watch?v=_oBn5vsJf-Y"
+  - number: 9
+    title: "I Was Joking — I Won’t Say Anything"
+    releasedOn: "2026-11-10"
+    addedAt: "2026-11-24"
+    runtimeMinutes: 1.9666666666666666
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=KGR6ejXoDZ8"
+    source: "https://www.youtube.com/watch?v=KGR6ejXoDZ8"
+  - number: 10
+    title: "I Was Joking — You All Right?"
+    releasedOn: "2026-11-13"
+    addedAt: "2026-11-24"
+    runtimeMinutes: 2.15
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=2OIGH7ywlpY"
+    source: "https://www.youtube.com/watch?v=2OIGH7ywlpY"
+  - number: 11
+    title: "I Was Joking — Rather Ambitious"
+    releasedOn: "2026-11-15"
+    addedAt: "2026-11-24"
+    runtimeMinutes: 1.9333333333333333
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=xNr0rSkk438"
+    source: "https://www.youtube.com/watch?v=xNr0rSkk438"
+  - number: 12
+    title: "I Was Joking — What Slytherin Girl?"
+    releasedOn: "2026-11-17"
+    addedAt: "2026-11-24"
+    runtimeMinutes: 2.0
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=27HaV1mLSeg"
+    source: "https://www.youtube.com/watch?v=27HaV1mLSeg"
+  - number: 13
+    title: "I Was Joking — Keep Her Busy"
+    releasedOn: "2026-11-23"
+    addedAt: "2026-11-24"
+    runtimeMinutes: 2.55
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=s72sa2azxsI"
+    source: "https://www.youtube.com/watch?v=s72sa2azxsI"
 ---
 
 After Harry is turned down for a ball, Malfoid offers to go with him. Harry hears a familiar insult where the speaker intends something sincere. The complete captioned scene makes that misunderstanding and its aftermath the story.
@@ -212,3 +268,9 @@ The maker explains Lisa Turpin's dramatic function as someone Daphne can confide
 **I Was Joking Part 6: Nobody's That Good**, released November 3, runs **2:20** in the checked current player (the playlist rounds its listing to 2:21). The full description retains Vidu creative-partner / Q4 Preview context without assigning every shot an exact version. Earlier adaptation writers remain credited only for their established work.
 
 The creator now supplies a corrected **[Malfoid Main Story playlist](https://www.youtube.com/playlist?list=PLH3pYi9dZmQk)**. Its public explanation removes separate parts where a combined cut already contains them, reducing duplicate viewing. This is a recommended main-story route, not a claim that every upload is a new episode. The existing series guide and its first playable link remain intact. Original full description, maker comment, corrected playlist and sampled playback were checked.
+
+## November 24 — Parts 7 to 13
+
+Seven more parts of **I Was Joking** have appeared on schmede's channel since November 5, from **[Books](https://www.youtube.com/watch?v=RRPZws3XE8Q)** to **[Keep Her Busy](https://www.youtube.com/watch?v=s72sa2azxsI)**, released late on November 23. Each runs between about two and three minutes, so the serial now moves in short, frequent steps rather than long combined cuts. They join the episode guide today; the series still starts from its first playable release.
+
+The descriptions keep linking the creator's anime and realistic Malfoid references on Vidu and the main-story playlist, and add referral links to OpenArt. They do not say which models generated the new parts. On November 23 schmede also streamed a long working session on the channel while trying to finish a part, which is a public look at the process rather than a separate episode.

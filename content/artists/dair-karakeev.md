@@ -4,8 +4,8 @@ description: "An Almaty filmmaker developing horror, science-fiction comedy and 
 focus: "Character-led genre filmmaking"
 website: "https://digidoc.studio/"
 discoveredAt: "2026-09-24"
-lastVerifiedAt: "2026-09-24"
-sources: [{"label": "Official Digidoc portfolio", "url": "https://digidoc.studio/"}, {"label": "Bring Me Home — 2019 festival listing", "url": "https://indieshortfest.com/2019/10/18/bring-me-home/"}, {"label": "GOOD BOY — original release", "url": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}]
+lastVerifiedAt: "2026-11-24"
+sources: [{"label": "Official Digidoc portfolio", "url": "https://digidoc.studio/"}, {"label": "Bring Me Home — 2019 festival listing", "url": "https://indieshortfest.com/2019/10/18/bring-me-home/"}, {"label": "GOOD BOY — original release", "url": "https://www.youtube.com/watch?v=rk-qiHH41Ns"}, {"label": "Good Boy Part II, Episode 1 (Magnific)", "url": "https://www.youtube.com/watch?v=xo4oggzkKsY"}]
 ---
 
 Karakeev founded **Digidoc AI Studio** in Almaty. Its portfolio includes **GOOD BOY**, the science-fiction comedy **Jackpot**, and three episodes of **Мёртвый сигнал** (Dead Signal). The official 2019 Indie Short Fest listing credits him as director of **Bring Me Home**, establishing a filmmaking practice before the current generative-video wave.
@@ -15,3 +15,7 @@ Karakeev founded **Digidoc AI Studio** in Almaty. Its portfolio includes **GOOD 
 The portfolio returns to survival, vulnerable characters and relationships under pressure. Its range—from a scavenger who discovers the universe’s last tree in **Jackpot** to a survivor travelling with a dog in **GOOD BOY**—makes genre a way of testing character choices, not simply a catalogue of visual effects.
 
 Moving between shorts, episodes and a 51-minute film makes Digidoc worth tracking for sustained dramatic development. Runtime alone cannot establish quality; the useful evidence is an identifiable director pursuing multiple completed stories. A personal X account has not yet been verified; the creator-owned site remains the monitoring source.
+
+## November 24 — A sequel with studio backing
+
+Magnific commissioned a sequel series through its Creative Hub. [Good Boy Part II](/films/good-boy-part-ii/) opened on November 23 with a 32-minute first episode, written and directed by Karakeev with a credited producer, sound engineer and cinematography adviser.

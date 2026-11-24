@@ -32,6 +32,8 @@ episodes:
     film: "dino-demolition-squad"
   - number: 8
     film: "nexus-prison-break-part-one"
+  - film: "nexus-prison-break-part-two"
+    addedAt: "2026-11-24"
 ---
 
 The first seven Nexus episodes explore a shared world through separate adventures. PJ Ace identifies **Prison Break — Part I** as **Episode 8, Part I**, where Anika from Episode 1 and Jace from Episode 4 begin a connected story aboard an imperial ship.

@@ -32,4 +32,6 @@ The original release page was checked on September 24. Playback could not be con
 
 ## Part II
 
-Magnific published the official trailer for **Good Boy Part II** on November 22. In the sequel, Jane drives with Argos through a zombie-ridden world to find vaccines for his four newborn pups, a search that leads to a sealed underground facility. The trailer credits Dair Karakeev as writer and director and Max Balter as producer, and presents it as a Magnific Creative Hub series. No release date has been announced. [Official trailer](https://www.youtube.com/watch?v=utZb-kFojeE)
+Magnific published the official trailer for **Good Boy Part II** on November 22. In the sequel, Jane drives with Argos through a zombie-ridden world to find vaccines for his four newborn pups, a search that leads to a sealed underground facility. The trailer credits Dair Karakeev as writer and director and Max Balter as producer, and presents it as a Magnific Creative Hub series. [Official trailer](https://www.youtube.com/watch?v=utZb-kFojeE)
+
+The first episode, You Don't Know Jane, followed on November 23 and runs about 32 minutes. It has its own entry: [Good Boy Part II](/films/good-boy-part-ii/).

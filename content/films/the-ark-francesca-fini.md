@@ -7,16 +7,16 @@ format: "Short film"
 genre: "Surreal science fiction"
 runtimeMinutes: 7
 status: "Watch now"
-watchUrl: "https://www.youtube.com/watch?v=edgP8JXC5dQ"
+watchUrl: "https://www.youtube.com/watch?v=UtJbTW-k3ns"
 watchLabel: "Watch on YouTube"
 image: "/media/the-ark-francesca-fini.jpg"
 imageAlt: "A figure in a grey hood with small horns stands on a white plane facing scattered black creatures made of tangled ink"
 imageCredit: "Francesca Fini Dreamlab · original YouTube release artwork"
-imageSource: "https://www.youtube.com/watch?v=edgP8JXC5dQ"
+imageSource: "https://www.youtube.com/watch?v=UtJbTW-k3ns"
 discoveredAt: "2026-11-23"
-lastVerifiedAt: "2026-11-23"
-sources: [{"label": "Original full release and synopsis (Francesca Fini Dreamlab)", "url": "https://www.youtube.com/watch?v=edgP8JXC5dQ"}]
-production: [{"label": "Maker", "detail": "Credited as an AI short film by Francesca Fini.", "source": "https://www.youtube.com/watch?v=edgP8JXC5dQ"}, {"label": "Tools", "detail": "Made entirely in Higgsfield Cinema Studio with Seedance 2.5, according to the release.", "source": "https://www.youtube.com/watch?v=edgP8JXC5dQ"}, {"label": "Contest entry", "detail": "Made for the Higgsfield Talent Contest, a platform-run competition.", "source": "https://www.youtube.com/watch?v=edgP8JXC5dQ"}]
+lastVerifiedAt: "2026-11-24"
+sources: [{"label": "Current full release and synopsis (Francesca Fini Dreamlab)", "url": "https://www.youtube.com/watch?v=UtJbTW-k3ns"}, {"label": "First upload, since removed", "url": "https://www.youtube.com/watch?v=edgP8JXC5dQ"}]
+production: [{"label": "Maker", "detail": "Credited as an AI short film by Francesca Fini.", "source": "https://www.youtube.com/watch?v=UtJbTW-k3ns"}, {"label": "Tools", "detail": "Made entirely in Higgsfield Cinema Studio with Seedance 2.5, according to the release.", "source": "https://www.youtube.com/watch?v=UtJbTW-k3ns"}, {"label": "Contest entry", "detail": "Made for the Higgsfield Talent Contest, a platform-run competition.", "source": "https://www.youtube.com/watch?v=UtJbTW-k3ns"}]
 ---
 
 ## Why this film matters

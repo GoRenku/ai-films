@@ -23,7 +23,7 @@ runtimeMinutes: 4.665266666666667
 
 Episode 8 brings Anika from Wet Markets of Kafar together with Jace from Squid Heist. In the mechanics-bay scene, the two swap prison clothes for work uniforms. Returning characters now have to act together inside one continuing story. PJ Ace cites Nausicaä of the Valley of the Wind as an influence.
 
-The original 4:40 release is Part I. PJ Ace announced Parts II and III. The production notebook below records his reported schedule, cost split and what he disclosed about the picture and sound.
+The original 4:40 release is Part I. [Part II](/films/nexus-prison-break-part-two/) followed on November 20, and PJ Ace has announced Part III. The production notebook below records his reported schedule, cost split and what he disclosed about the picture and sound.
 
 ## November 15 — Keeping a voice through the cut
 
