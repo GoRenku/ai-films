@@ -756,3 +756,8 @@ Audited all **151 festival-linked canonical films**: **95** already carried Watc
 - AAAAAIGC's 40-minute 《三體後傳》 (https://www.youtube.com/watch?v=q8hGaTswQuA) is an unofficial continuation of Three-Body with a one-line description and no credits; assess in a deep watch before adding.
 - TechTalkNavigator's excluded tech-talk channel (UC7PUJeDTUQ05Viu0TAPasnA) carried the FRIENDLY FIRE release; the studio channel @techtalknavistudio was added to the registry instead, and its September LAST WISH (18:11, https://www.youtube.com/watch?v=WLunxPngdJ4) is a back-catalogue lead.
 - Good Boy Part II Episode 1 released November 23; the series is now in the catalogue.
+
+## November 25, 2026 — TUPACABRA follow-up (editor request)
+
+- TEMPLES (https://x.com/tupacabra/status/2101605649755124211, 2:51, posted Sep 20, reshared Nov 24) added as a world-building piece on the Nuremberg page and the TUPACABRA artist page, not as a catalogue film. Editor direction: track TUPACABRA closely; further Nuremberg-world pieces go on the Nuremberg page as they appear. tupacabra moved from rotation to the X priority group.
+- THE PASCAGOULA ABDUCTION (https://x.com/tupacabra/status/2124599389536797055) runs 5:17. Sampled frames include what looks like archival footage of the real 1973 witness, so it may be a documentary-style mix rather than generated fiction. Still not added; decide once its form is clear.

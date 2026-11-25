@@ -615,3 +615,7 @@ Removed the Latest page (/whats-new/) and its navigation link; the Journal is no
 ## November 25, 2026 — The King's Wolf and two second episodes
 
 Added Thousand Words FilmS's The King's Wolf, a 30-minute retelling of Marie de France's werewolf lay Bisclavret through a kennel girl at court. The Black Box gains Episode 2, The Favor, with Magnific's new credits (Iván Jiménez directing; John Olivos on original idea and art direction) and its Magnific Spaces / Seedance 2.5 Pro disclosure. SALT gains Episode 2, The Lift Home. The House of Amun now links Isaac Rodriguez's 1 hour 51 minute feature cut of Season One, and its homepage reason is updated accordingly. You're Too Young to Remember adds Direct the Machine's account of lip sync done inside the video generation. The dated journal links all five works and six artists. The homepage lineup and order are unchanged.
+
+## November 25, 2026 — TEMPLES and the world of Nuremberg
+
+At the editor's request, TUPACABRA's TEMPLES (2:51, first posted September 20 and reshared November 24) now has a section on the Nuremberg page and the TUPACABRA artist page as a world-building piece around the feature, not as a separate film. A dated journal note explains the addition. TUPACABRA moves from an X rotation group to the priority group, so the daily refresh reads his posts every day.
