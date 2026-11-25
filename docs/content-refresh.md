@@ -1,6 +1,6 @@
 # Content refresh procedure
 
-This document is the editorial standard and the record rules. The operating procedure for the two scheduled Claude tasks (daily refresh at 11:00 and deep watch on Monday and Thursday at 15:00, Europe/Madrid), the research tools and the safety rules for X and YouTube are in the [scheduled refresh runbook](refresh-runbook.md). X API details are in the [X discovery runbook](x-discovery.md).
+This document is the editorial standard and the record rules. The operating procedure for the two scheduled Claude tasks (daily refresh at 11:00 and deep watch on Monday and Thursday at 21:00, Europe/Madrid), the research tools and the safety rules for X and YouTube are in the [scheduled refresh runbook](refresh-runbook.md). X API details are in the [X discovery runbook](x-discovery.md).
 
 Private discovery inbox: `/Users/keremk/.codex/.chatgpt-projects/g-p-6aabb55f14b8819192b8a0d2bee9108b/discovery-inbox.md`. Never copy this file into the repository or public output.
 
