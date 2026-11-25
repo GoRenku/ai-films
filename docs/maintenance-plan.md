@@ -7,7 +7,7 @@ Schedule reviewed November 20, 2026, when the scheduled refreshes moved from Cod
 | Time | Task | Responsibility |
 | --- | --- | --- |
 | Daily, 11:00 | Daily refresh | X API intake (bounded bookmark head read and public creator search), YouTube channel sweep and watch-link audit, private queue and inboxes, light web discovery, catalogue additions, journal note, featured review and publication. |
-| Monday and Thursday, 21:00 | Deep watch | Festivals and competitions, a wide discovery survey of new creators (replacing the retired ChatGPT AI Film Director Watch), YouTube playback upgrades, back-catalogue featured candidates, registry and watchlist upkeep, publication. |
+| Monday and Thursday, 12:30 | Deep watch | Festivals and competitions, a wide discovery survey of new creators (replacing the retired ChatGPT AI Film Director Watch), YouTube playback upgrades, back-catalogue featured candidates, registry and watchlist upkeep, publication. |
 | On submission | Direct leads | A public URL and brief evidence from the user, held in the private queue until a run gives it a disposition. |
 
 The Codex automations `discover-ai-films-from-x`, `refresh-ai-film-journal` and `refresh-ai-film-festivals` are paused, with their configuration backed up beside each automation file. Folding X intake into the daily refresh removes the 11:00 → 13:00 handoff; a lock file and the clean-tree preflight keep the two tasks from publishing at once.

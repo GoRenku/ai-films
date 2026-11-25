@@ -38,7 +38,7 @@ Copy a relevant existing file to add an entry. Slugs are stable filenames. Recor
 
 ## Periodic refresh
 
-Two local Claude scheduled tasks maintain the site: a daily refresh at 11:00 Europe/Madrid (X API intake, YouTube channel sweep, discovery, records, journal, featured review, publication) and a deep watch on Mondays and Thursdays at 21:00 (festivals, a wide discovery survey, YouTube playback upgrades, upkeep). The [scheduled refresh runbook](docs/refresh-runbook.md) is the operating procedure, including the research safety rules; see also the [maintenance plan](docs/maintenance-plan.md) and the [content refresh procedure](docs/content-refresh.md).
+Two local Claude scheduled tasks maintain the site: a daily refresh at 11:00 Europe/Madrid (X API intake, YouTube channel sweep, discovery, records, journal, featured review, publication) and a deep watch on Mondays and Thursdays at 12:30 (festivals, a wide discovery survey, YouTube playback upgrades, upkeep). The [scheduled refresh runbook](docs/refresh-runbook.md) is the operating procedure, including the research safety rules; see also the [maintenance plan](docs/maintenance-plan.md) and the [content refresh procedure](docs/content-refresh.md).
 
 Bookmark intake uses a daily first-page read and a separate initial sample capped at 100 returned entries. The OAuth helper renews user tokens privately; setup and live acceptance steps are documented in the [X discovery runbook](docs/x-discovery.md). Original post dates do not identify when bookmarks were saved.
 

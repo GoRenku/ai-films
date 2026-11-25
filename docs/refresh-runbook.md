@@ -5,7 +5,7 @@ Two local Claude scheduled tasks maintain Latent Matinee. Times are Europe/Madri
 | Task | When | Owns |
 | --- | --- | --- |
 | **Daily refresh** | Every day, 11:00 | X API intake, YouTube channel sweep, queue and inbox leads, light web discovery, catalogue additions, journal note, homepage featured review, publication |
-| **Deep watch** | Monday and Thursday, 21:00 | Festivals and competitions, a wide discovery survey of new creators, YouTube playback upgrades, back-catalogue featured candidates, registry and watchlist upkeep, publication |
+| **Deep watch** | Monday and Thursday, 12:30 | Festivals and competitions, a wide discovery survey of new creators, YouTube playback upgrades, back-catalogue featured candidates, registry and watchlist upkeep, publication |
 
 The editorial standard, record rules, journal checks and featured rules are in [content-refresh.md](content-refresh.md). The X API procedure is in [x-discovery.md](x-discovery.md). This runbook is the operating procedure; when they disagree on editorial matters, content-refresh.md wins.
 
@@ -71,9 +71,9 @@ Verifying a YouTube full release means: the uploader is the credited creator or 
 8. **Publish.** See "Validation and publication" below.
 9. **Close the loop.** Resolve every processed queue record (`film-queue.py resolve`) and mark inbox leads only after the live site serves them. Festival leads found today go to `festival-inbox.md` for the deep watch, not into festival files.
 
-## Deep watch (Monday and Thursday, 21:00)
+## Deep watch (Monday and Thursday, 12:30)
 
-The deep watch runs at 21:00, outside Claude's weekday peak window (05:00–11:00 Pacific, about 14:00–20:00 Madrid). The daily refresh has normally published by then. If preflight finds its lock, stop and report rather than waiting.
+The deep watch runs at 12:30, before Claude's weekday peak window (05:00–11:00 Pacific, about 14:00–20:00 Madrid). The daily refresh has normally published by then. If preflight finds its lock, stop and report rather than waiting.
 
 1. **Festivals.** Run the festival watch exactly as "Festivals and competitions" in content-refresh.md describes: re-check open editions at the organiser, discover new events (including `festival-inbox.md`), reconcile every award row with the catalogue, backfill qualifying winners and their makers, and rotate unresolved playback checks. Use `youtube.mjs` for every YouTube check.
 2. **Wide discovery survey.** This replaces the retired ChatGPT AI Film Director Watch. Look beyond the catalogue: festival programmes and selections, platform showcases and commissioned films, AI film newsletters and interviews, collaborators credited on catalogue works, and creators appearing on publisher channels in the registry. Follow promising filmmakers through their body of work and add every verified, qualifying film and artist. Aim for breadth across countries, languages, formats (shorts, series, music videos) and production approaches.
