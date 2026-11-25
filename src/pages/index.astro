@@ -103,7 +103,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
   </section>
 
   <section class="ticker" aria-label="Latest additions">
-    <a class="ticker-label" href="/whats-new/"><span class="live-dot" aria-hidden="true"></span>Latest</a>
+    <a class="ticker-label" href="/journal/"><span class="live-dot" aria-hidden="true"></span>Latest</a>
     <div class="ticker-viewport">
       <ul class="ticker-track">
         {[0, 1].map((copy) => ticker.map((n) => (
@@ -114,7 +114,7 @@ const week = feed.filter((n) => c.thisWeek(n.date));
   </section>
 
   <div class="home-body">
-    <Rail title="Just added" href="/whats-new/" note={`${week.length} additions this week`}>
+    <Rail title="Just added" href="/films/" note={`${week.length} additions this week`}>
       {justAdded.map((f) => <FilmCard film={f} artist={artistOf(f)} fresh={c.freshOf(f)} />)}
     </Rail>
 

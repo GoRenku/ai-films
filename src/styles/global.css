@@ -435,37 +435,14 @@ html:not(.js) .browser, html:not(.js) .result-line { display: none; }
 .artist-hero .slide-credit { bottom: 20px; }
 .artist-films { margin-top: 40px; }
 
-/* ---------- Latest ---------- */
 .week { display: flex; flex-wrap: wrap; gap: 0; margin: 10px 0 0; border-top: 1px solid var(--line); padding-top: 18px; }
 .week div { padding-right: 28px; margin-right: 28px; border-right: 1px solid var(--line); }
 .week div:last-child { border: 0; }
 .week dt { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); }
 .week dd { margin: 4px 0 0; font: 380 44px/1 var(--display); letter-spacing: -0.03em; }
 .week div:first-child dd { color: var(--accent); }
-.timeline { margin-top: 32px; }
-.day { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; padding-top: 26px !important; padding-bottom: 26px !important; border-top: 1px solid var(--line); }
-.day-date { position: sticky; top: calc(var(--header) + 24px); align-self: start; font-size: 40px; font-weight: 380; }
-.day-date span { display: block; margin-top: 6px; font: 400 13px/1.4 var(--body); letter-spacing: 0; color: var(--dim); }
-.day-items { display: grid; gap: 6px; }
-.entry { display: grid; grid-template-columns: 192px minmax(0, 1fr); gap: 22px; align-items: center; padding: 10px; margin: 0 -10px; border-radius: var(--radius); transition: background 0.2s; }
-.entry:hover { background: var(--panel); }
 .entry-media { position: relative; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: var(--panel-2); }
 .entry-media img { width: 100%; height: 100%; }
-.entry-media .monogram { font-size: 36px; }
-.note-tile { display: grid; place-content: center; gap: 2px; width: 100%; height: 100%; text-align: center; background: radial-gradient(circle at 70% 20%, rgb(185 162 255 / 0.22), transparent 60%), var(--panel-2); }
-.note-tile b { font: italic 380 26px/1 var(--display); color: var(--text); }
-.note-tile small { font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fest); }
-.entry-artist .entry-media img { filter: grayscale(0.4) brightness(0.8); }
-.entry-copy { display: grid; gap: 4px; }
-.entry-kind { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
-.entry-film .entry-kind { color: var(--accent); }
-.entry-journal .entry-kind { color: var(--fest); }
-.entry-artist .entry-kind { color: var(--live); }
-.entry-festival .entry-kind { color: var(--soon); }
-.entry-kind span { color: var(--dim); }
-.entry-title { font: 420 23px/1.15 var(--display); letter-spacing: -0.02em; }
-.entry:hover .entry-title { color: var(--accent); }
-.entry-desc { font-size: 14.5px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
 /* ---------- Journal ---------- */
 .journal-lead { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); margin: 12px var(--pad) 0; padding: 0 !important; border-radius: 24px; overflow: hidden; background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); }
@@ -732,12 +709,6 @@ html:not(.js) .edition-panel + .edition-panel { margin-top: 72px; }
   .fact-strip, .week { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 12px; }
   .week { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .fact-strip div, .week div { border: 0; padding: 0; margin: 0; }
-  .day { grid-template-columns: 1fr; gap: 12px; }
-  .day-date { position: static; font-size: 30px; }
-  .day-date span { display: inline; margin-left: 10px; }
-  .entry { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: start; }
-  .entry-title { font-size: 19px; }
-  .entry-desc { -webkit-line-clamp: 2; font-size: 13.5px; }
   .note-row { grid-template-columns: 1fr; gap: 8px; }
   .note-thumbs { display: none; }
   .pager { grid-template-columns: 1fr; }

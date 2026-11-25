@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { catalog } from '../lib/catalog';
 import { escapeXml } from '../lib/xml';
 
-const FIXED_PAGES = ['/', '/films/', '/artists/', '/festivals/', '/whats-new/', '/journal/', '/about/', '/privacy/'];
+const FIXED_PAGES = ['/', '/films/', '/artists/', '/festivals/', '/journal/', '/about/', '/privacy/'];
 
 export const GET: APIRoute = async ({ site }) => {
   const { films, artists, festivals, updates, episodesOf } = await catalog();

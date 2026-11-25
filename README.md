@@ -56,7 +56,7 @@ Palette and typography adapted from the existing studio website. Fraunces is pro
 
 Every page is derived from the content collections; no section is hand-curated. src/lib/catalog.ts holds the shared rules:
 
-- The homepage hero shows an editorial selection from `content/featured.json`. The daily editorial review weighs recency, audience response, relevance and how the credited artwork reads full-screen. The slate allows one work per creator, up to two music videos and a seven-day feature window per pick. Latest lists all dated additions. Posters (`imageFit: contain`) fill the frame in the hero and retain their full composition on cards and film pages.
+- The homepage hero shows an editorial selection from `content/featured.json`. The daily editorial review weighs recency, audience response, relevance and how the credited artwork reads full-screen. The slate allows one work per creator, up to two music videos and a seven-day feature window per pick. Posters (`imageFit: contain`) fill the frame in the hero and retain their full composition on cards and film pages.
 - “New” badges cover the last three days of additions; the weekly tally covers seven, both measured from the newest content date rather than the build date.
 - Free-text `genre` stays editorial. Ten broad genre groups are derived from it by keyword for browsing and filters; extend the patterns rather than adding a frontmatter field.
 - YouTube and Vimeo watch links for Watch now films play in an embedded player (youtube-nocookie / Vimeo `dnt`) that loads only when pressed. Other links open at the source.
@@ -97,7 +97,7 @@ This checkout at `/Users/keremk/Projects/aitinkerbox/ai-films` is the source of 
 ### What’s New and three additional releases
 
 - Added The Poison Taster / Absurd, Life Lines / Christopher Fryant and NiE / Nishiyama Seigo with official imagery and full viewing links.
-- Homepage What’s New and /whats-new/ automatically show dated new films, artists and editorial updates; routine verification does not count as new.
+- Homepage What’s New and /whats-new/ automatically showed dated new films, artists and editorial updates (both removed on 2026-11-24 in favour of the Journal).
 - Missing secondary production details no longer block otherwise verified, curated releases.
 
 ### September 21, 2026 content refresh
@@ -607,3 +607,7 @@ Added the DISRUPT AI Film Festival (TBWA Australia; 2026 results from the Novemb
 ## November 24, 2026 — Good Boy Part II, Prison Break Part II and Hazama in full
 
 Added Dair Karakeev's Magnific-commissioned series Good Boy Part II (Episode 1, You Don't Know Jane, 32 minutes) and placed it first on the homepage slate; Ticket to Neverland leaves the slate and the other four picks keep their dates. Added Nexus's Prison Break — Part II (linked into the Nexus series after Part I), with PJ Ace's plate, Claude-skill coverage prompt and crew disclosures; TechTalkNavigator's Higgsfield Talent Contest short FRIENDLY FIRE; and two music videos, NoiraDEVIL's Midnight Heist and Higginswerx's November Treat. Victor Moreno's Hazama moves from festival screening to Watch now with the director's full Vimeo release and his new making-of. Malfoid's episode guide gains Parts 7 to 13. The Ark switches to Francesca Fini's current upload after the first was removed; A Million Malfoids falls back to Korgami AI's original X release after its YouTube upload disappeared. Added TechTalkNavi Studio's YouTube channel to the sweep registry.
+
+## November 24, 2026 — Latest removed in favour of the Journal
+
+Removed the Latest page (/whats-new/) and its navigation link; the Journal is now the single record of what joined the collection. The homepage Latest ticker stays and its label links to the Journal. /whats-new/ redirects permanently to /journal/ (`public/_redirects`), the header "Updated" pill links to the Journal, and the homepage "Just added" rail links to Films. Application change only; no content, dependency or deployment configuration changes.

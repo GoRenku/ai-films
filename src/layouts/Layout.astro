@@ -15,7 +15,6 @@ const nav = [
   ['Films', '/films/'],
   ['Artists', '/artists/'],
   ['Festivals', '/festivals/'],
-  ['Latest', '/whats-new/'],
   ['Journal', '/journal/'],
 ];
 ---
@@ -47,7 +46,7 @@ const nav = [
         <nav aria-label="Main navigation">
           {nav.map(([label, href]) => <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>{label}</a>)}
         </nav>
-        <a class="pulse-pill" href="/whats-new/"><span class="live-dot" aria-hidden="true"></span>Updated <time datetime={latest}>{shortDate(latest)}</time></a>
+        <a class="pulse-pill" href="/journal/"><span class="live-dot" aria-hidden="true"></span>Updated <time datetime={latest}>{shortDate(latest)}</time></a>
       </div>
     </header>
     <main id="main"><slot /></main>
