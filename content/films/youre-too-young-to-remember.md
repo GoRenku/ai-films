@@ -35,6 +35,9 @@ production:
   - label: "An edit built to the song"
     detail: "The maker timed about 200 shots to a beat grid measured from the 120 BPM track and rendered the counters, tickers, phone screens and lyrics as separate code-driven overlays."
     source: "https://directthemachine.com/Y2Y2R/"
+  - label: "Lip sync without a lip-sync tool"
+    detail: "Andrew says Claudia’s sung shots were generated in Seedance 2.5 or MiniMax H3 with the lyrics in the prompt and that shot’s vocal, cut to length, attached. Face and outfit sheets, the scene and the vocal went into one job, and no separate lip-sync pass followed. He names Runway as the platform where most of the film was made, and says the post was not sponsored."
+    source: "https://x.com/DTM_lab/status/2125101078291349792"
 ---
 
 ## Why this work matters

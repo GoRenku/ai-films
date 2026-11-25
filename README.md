@@ -611,3 +611,7 @@ Added Dair Karakeev's Magnific-commissioned series Good Boy Part II (Episode 1, 
 ## November 24, 2026 — Latest removed in favour of the Journal
 
 Removed the Latest page (/whats-new/) and its navigation link; the Journal is now the single record of what joined the collection. The homepage Latest ticker stays and its label links to the Journal. /whats-new/ redirects permanently to /journal/ (`public/_redirects`), the header "Updated" pill links to the Journal, and the homepage "Just added" rail links to Films. Application change only; no content, dependency or deployment configuration changes.
+
+## November 25, 2026 — The King's Wolf and two second episodes
+
+Added Thousand Words FilmS's The King's Wolf, a 30-minute retelling of Marie de France's werewolf lay Bisclavret through a kennel girl at court. The Black Box gains Episode 2, The Favor, with Magnific's new credits (Iván Jiménez directing; John Olivos on original idea and art direction) and its Magnific Spaces / Seedance 2.5 Pro disclosure. SALT gains Episode 2, The Lift Home. The House of Amun now links Isaac Rodriguez's 1 hour 51 minute feature cut of Season One, and its homepage reason is updated accordingly. You're Too Young to Remember adds Direct the Machine's account of lip sync done inside the video generation. The dated journal links all five works and six artists. The homepage lineup and order are unchanged.
