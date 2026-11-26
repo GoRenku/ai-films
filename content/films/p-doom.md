@@ -7,15 +7,15 @@ format: "Music video"
 genre: "Music video"
 runtimeMinutes: 4.49
 status: "Watch now"
-watchUrl: "https://x.com/AstrablueAI/status/2109639386178650416"
-watchLabel: "Watch the complete music video"
+watchUrl: "https://www.youtube.com/watch?v=eTArfoeeUcw"
+watchLabel: "Watch the music video on YouTube"
 image: "/media/p-doom.jpg"
 imageAlt: "A woman with a dark fringe and closed eyes beside the P(DOOM) title on a data-screen layout"
 imageCredit: "Astra Blue AI · original X video poster"
 imageSource: "https://x.com/AstrablueAI/status/2109639386178650416"
 discoveredAt: "2026-10-13"
-lastVerifiedAt: "2026-10-13"
-sources: [{"label": "Original complete music-video release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}]
+lastVerifiedAt: "2026-11-26"
+sources: [{"label": "Astra Blue — official music video (YouTube)", "url": "https://www.youtube.com/watch?v=eTArfoeeUcw"}, {"label": "Original complete music-video release", "url": "https://x.com/AstrablueAI/status/2109639386178650416"}]
 production: [{"label": "Release and limits", "detail": "The original October 12 post explicitly calls P DOOM a music video. Its player runs approximately 4:30. The account claims twelve hours of unattended production without identifying specific models, individual direction or a full crew. Its Super Intelligence wording is promotional, not a technical model credit.", "source": "https://x.com/AstrablueAI/status/2109639386178650416"}]
 musician: "Astra Blue AI"
 ---

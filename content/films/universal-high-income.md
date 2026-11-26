@@ -7,15 +7,15 @@ format: "Music video"
 genre: "Music video"
 runtimeMinutes: 3.91
 status: "Watch now"
-watchUrl: "https://claudia.gallery/whitepill/"
-watchLabel: "Watch WHITEPILL at the creator gallery"
+watchUrl: "https://www.youtube.com/watch?v=G7megUHUqFo"
+watchLabel: "Watch WHITEPILL on YouTube"
 discoveredAt: "2026-10-22"
-lastVerifiedAt: "2026-10-23"
+lastVerifiedAt: "2026-11-26"
 image: "/media/universal-high-income.jpg"
 imageAlt: "A performer between blue and red capsule-like forms in a field"
 imageCredit: "anabology · original Universal High Income release poster"
 imageSource: "https://x.com/anabology/status/2113239948144890235"
-sources: [{"label": "Complete original release", "url": "https://x.com/anabology/status/2113239948144890235"}, {"label": "Maker production statement", "url": "https://x.com/anabology/status/2113239948472004957"}, {"label": "Linked creator gallery", "url": "https://claudia.gallery/"}, {"label": "Official WHITEPILL film page", "url": "https://claudia.gallery/whitepill/"}, {"label": "Work-specific complete production record", "url": "https://claudia.gallery/record/whitepill/readme/"}]
+sources: [{"label": "anabology — WHITEPILL, complete music video (YouTube)", "url": "https://www.youtube.com/watch?v=G7megUHUqFo"}, {"label": "Complete original release", "url": "https://x.com/anabology/status/2113239948144890235"}, {"label": "Maker production statement", "url": "https://x.com/anabology/status/2113239948472004957"}, {"label": "Linked creator gallery", "url": "https://claudia.gallery/"}, {"label": "Official WHITEPILL film page", "url": "https://claudia.gallery/whitepill/"}, {"label": "Work-specific complete production record", "url": "https://claudia.gallery/record/whitepill/readme/"}]
 production: [{"label": "Direction, song and production lead", "detail": "Directed by anabology. Claudia is the recurring synthetic singer. Suno made the song from Claude’s lyric with the director’s notes; the maker selected take d2 A. Claude Code using Opus 5.5 is credited as production lead, not a human crew member.", "source": "https://claudia.gallery/record/whitepill/readme/"}, {"label": "Final picture and development tools", "detail": "All final picture is credited to Seedance 2.5: performer shots through Higgsfield and shader scenes through Replicate. Midjourney v8.2 and GPT Image 2.5 supplied stills and references; MiniMax H3 supplied rough performance guides. Wan 3.0 Prime cuts were discarded and Kling 4.0 was tested, not credited as final picture.", "source": "https://claudia.gallery/record/whitepill/readme/"}, {"label": "Musical timing and lip sync", "detail": "The published cut has 27 segments, with cuts on musical bar lines. Singing shots use precisely trimmed Suno lead-vocal stems and timed words as generation guidance; the full song is restored in the edit. GLSL geometry and repainted stills guide the mathematical interludes.", "source": "https://claudia.gallery/record/whitepill/readme/"}, {"label": "Maker-reported scale and cost scope", "detail": "The record reports about 82 hours, 147 director messages and 31 agent launches. Its $588.59 API-generation figure is at list prices and excludes unlogged work, subscriptions, compute and human labour; it is not a total budget or a count of human collaborators.", "source": "https://claudia.gallery/record/whitepill/readme/"}]
 musician: "Claudia (synthetic singer)"
 ---

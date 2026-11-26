@@ -6,15 +6,15 @@ year: 2026
 format: "Music video"
 genre: "Music video"
 status: "Watch now"
-watchUrl: "https://x.com/Extraltodeus/status/2115353066690011250"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=x_j_vxdYm0Y"
+watchLabel: "Watch the music video on YouTube"
 discoveredAt: "2026-10-28"
-lastVerifiedAt: "2026-10-28"
+lastVerifiedAt: "2026-11-26"
 image: "/media/omnia.jpg"
 imageAlt: "Volta with white braids and blue electrical arcs against a black background"
 imageCredit: "Extraltodeus · original Volta release artwork"
 imageSource: "https://x.com/Extraltodeus/status/2115353066690011250"
-sources: [{"label": "Complete original release and tool disclosure", "url": "https://x.com/Extraltodeus/status/2115353066690011250"}, {"label": "Maker qualifies the language count", "url": "https://x.com/Extraltodeus/status/2115354296313118922"}]
+sources: [{"label": "Extraltodeus — Volta, Omnia (YouTube)", "url": "https://www.youtube.com/watch?v=x_j_vxdYm0Y"}, {"label": "Complete original release and tool disclosure", "url": "https://x.com/Extraltodeus/status/2115353066690011250"}, {"label": "Maker qualifies the language count", "url": "https://x.com/Extraltodeus/status/2115354296313118922"}]
 production: [{"label": "Named tools and supervision", "detail": "The maker reports local generation including the music, naming YuE2, Krea2 and MinimaxH3. ChatGPT supplies lyrics and Claude handles coordination. YuE2 is identified in the music context; the caption does not map every visual shot to one of the other tools.", "source": "https://x.com/Extraltodeus/status/2115353066690011250"}, {"label": "Language-count scope", "detail": "The post says 57 languages; the maker’s reply says 62 if overlapping languages are counted. These are attributed counts, not an independent translation or pronunciation audit.", "source": "https://x.com/Extraltodeus/status/2115354296313118922"}, {"label": "Unknowns", "detail": "Exact checkpoints, hardware, generation cost, human vocal contribution and complete crew are not disclosed. Volta is the named performance persona, not a verified human singer.", "source": "https://x.com/Extraltodeus/status/2115353066690011250"}]
 runtimeMinutes: 3.97222
 musician: "Volta — Extraltodeus project"

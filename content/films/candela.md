@@ -8,14 +8,14 @@ genre: "Romantic drama"
 runtimeMinutes: 3.1
 status: "Watch now"
 discoveredAt: "2026-10-05"
-lastVerifiedAt: "2026-10-05"
-watchUrl: "https://www.magnific.com/originals/candela"
-watchLabel: "Watch full film"
+lastVerifiedAt: "2026-11-26"
+watchUrl: "https://www.youtube.com/watch?v=FNYDvhBotqc"
+watchLabel: "Watch on YouTube"
 image: "/media/candela.jpg"
 imageAlt: "Two women face one another on a beach at blue hour"
 imageCredit: "Magnific Studios · official Candela release artwork"
 imageSource: "https://www.magnific.com/originals/candela"
-sources: [{"label": "Original film and studio credits", "url": "https://www.magnific.com/originals/candela"}, {"label": "Original shot-generation making-of", "url": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Original music making-of", "url": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}]
+sources: [{"label": "Magnific — complete short (YouTube)", "url": "https://www.youtube.com/watch?v=FNYDvhBotqc"}, {"label": "Original film and studio credits", "url": "https://www.magnific.com/originals/candela"}, {"label": "Original shot-generation making-of", "url": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Original music making-of", "url": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}]
 production: [{"label": "Credited team", "detail": "The official release credits Magnific Studios, an in-house multidisciplinary team. Individual director names, crew total and budget are not disclosed in the checked sources. The cast section names characters rather than identifying performers.", "source": "https://www.magnific.com/originals/candela"}, {"label": "Shot construction", "detail": "The studio demonstrates character identity references and a few key-frame references, with prompts prioritising recognisable characters, subtle movement, readable actions and emotion. Claude is used to coordinate generation; a reliable versioned video-model inventory is not established here.", "source": "https://www.youtube.com/watch?v=1ZbCycJlw-U"}, {"label": "Music and sound", "detail": "The making-of demonstrates Claude adding an audio node in Magnific Spaces using prepared lyrics and a music prompt. The prompt specifies an intimate Spanish alternative-pop track, instrumentation and an emotional arc. The music model and any human vocalist are not identified.", "source": "https://www.youtube.com/watch?v=XPBf7WNmjvc"}]
 ---
 

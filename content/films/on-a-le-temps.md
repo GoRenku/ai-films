@@ -8,15 +8,15 @@ musician: "ClaudiaGI"
 genre: "Music video"
 runtimeMinutes: 2.5618
 status: "Watch now"
-watchUrl: "https://x.com/Extraltodeus/status/2116260459200282971"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=KvgUG06qiaU"
+watchLabel: "Watch the music video on YouTube"
 image: "/media/on-a-le-temps.jpg"
 imageAlt: "A woman sits beside an open window in a sunlit Parisian apartment"
 imageCredit: "Extraltodeus / ClaudiaGI · original release artwork"
 imageSource: "https://x.com/Extraltodeus/status/2116260459200282971"
 discoveredAt: "2026-10-31"
-lastVerifiedAt: "2026-10-31"
-sources: [{"label":"Original release","url":"https://x.com/Extraltodeus/status/2116260459200282971"}]
+lastVerifiedAt: "2026-11-26"
+sources: [{"label": "Extraltodeus — ClaudiaGI, On a le temps (YouTube)", "url": "https://www.youtube.com/watch?v=KvgUG06qiaU"}, {"label":"Original release","url":"https://x.com/Extraltodeus/status/2116260459200282971"}]
 production: [{"label":"Project and release","detail":"Extraltodeus publishes this complete 2:34 ClaudiaGI song-video as French slopcore. The release does not identify a separate human vocalist.","source":"https://x.com/Extraltodeus/status/2116260459200282971"},{"label":"Undisclosed production","detail":"Work-specific models, exact versions, collaborators, total crew and costs are not given. Tools named for earlier ClaudiaGI releases are not transferred to this video.","source":"https://x.com/Extraltodeus/status/2116260459200282971"}]
 ---
 
@@ -24,4 +24,4 @@ production: [{"label":"Project and release","detail":"Extraltodeus publishes thi
 
 The question of having time becomes a question about who gets to inhabit it. Sampled playback places doubled male figures side by side, using repetition and comparison as a sustained visual idea. The song’s speculation about indefinite life is treated as fiction and artistic framing, not as a factual claim about longevity.
 
-This is another authored release within Extraltodeus’s recurring ClaudiaGI project. Its complete song-length edit and identity motif distinguish it from an isolated generation. The current X player and original artwork were checked; this introduction does not claim a full critical viewing.
+This is another authored release within Extraltodeus’s recurring ClaudiaGI project. Its complete song-length edit and identity motif distinguish it from an isolated generation.

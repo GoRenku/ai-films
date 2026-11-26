@@ -8,15 +8,15 @@ musician: "Kelly Boesch"
 genre: "Music video"
 runtimeMinutes: 2.9896833333333332
 status: "Watch now"
-watchUrl: "https://x.com/kellyeld/status/2116180981992558997"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=XrYrYZv1gKM"
+watchLabel: "Watch the music video on YouTube"
 image: "/media/everything-blue.jpg"
 imageAlt: "A performer in sculptural blue clothing amid blue-toned portrait imagery"
 imageCredit: "Kelly Boesch · original release artwork"
 imageSource: "https://x.com/kellyeld/status/2116180981992558997"
 discoveredAt: "2026-10-31"
-lastVerifiedAt: "2026-10-31"
-sources: [{"label":"Original release","url":"https://x.com/kellyeld/status/2116180981992558997"}]
+lastVerifiedAt: "2026-11-26"
+sources: [{"label": "Kelly Boesch — official music video (YouTube)", "url": "https://www.youtube.com/watch?v=XrYrYZv1gKM"}, {"label":"Original release","url":"https://x.com/kellyeld/status/2116180981992558997"}]
 production: [{"label":"Work-specific credits","detail":"Boesch credits her own lyrics, Suno for the song, Midjourney for images and VEO for animation. No exact versions are disclosed, and the generated voice is not assigned to an invented human singer.","source":"https://x.com/kellyeld/status/2116180981992558997"},{"label":"Unknown scope","detail":"Additional collaborators, complete crew, budget and detailed edit settings remain undisclosed.","source":"https://x.com/kellyeld/status/2116180981992558997"}]
 ---
 

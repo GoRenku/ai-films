@@ -8,15 +8,15 @@ musician: "ClaudiaGI"
 genre: "Music video"
 runtimeMinutes: 2.6388833333333332
 status: "Watch now"
-watchUrl: "https://x.com/Extraltodeus/status/2116570063952380225"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=qI9PAnZOQ0k"
+watchLabel: "Watch the music video on YouTube"
 image: "/media/quest-ce-quelle-a-que-jai-pas.jpg"
 imageAlt: "A woman in red emerges from a large open shell inside an apartment"
 imageCredit: "Extraltodeus / ClaudiaGI · original release thumbnail"
 imageSource: "https://x.com/Extraltodeus/status/2116570063952380225"
 discoveredAt: "2026-11-01"
-lastVerifiedAt: "2026-11-01"
-sources: [{"label":"Complete original release","url":"https://x.com/Extraltodeus/status/2116570063952380225"},{"label":"Maker’s deliberate choice of song phrasing","url":"https://x.com/Extraltodeus/status/2116575783871238185"},{"label":"Creator’s characterisation account","url":"https://x.com/Extraltodeus/status/2116599883910005085"}]
+lastVerifiedAt: "2026-11-26"
+sources: [{"label": "Extraltodeus — ClaudiaGI, Qu'est-ce qu'elle a que j'ai pas? (YouTube)", "url": "https://www.youtube.com/watch?v=qI9PAnZOQ0k"}, {"label":"Complete original release","url":"https://x.com/Extraltodeus/status/2116570063952380225"},{"label":"Maker’s deliberate choice of song phrasing","url":"https://x.com/Extraltodeus/status/2116575783871238185"},{"label":"Creator’s characterisation account","url":"https://x.com/Extraltodeus/status/2116599883910005085"}]
 production: [{"label":"Project and editorial choice","detail":"Extraltodeus releases the complete 2:38 song-video as ClaudiaGI. In reply to a comment about crowded phrasing, the maker says that quality helped determine which version to keep. It is a selection decision, not an accidental model defect asserted by this journal.","source":"https://x.com/Extraltodeus/status/2116575783871238185"},{"label":"Authorship and unknowns","detail":"The maker describes the impertinent, sarcastic characterisation as his intention expressed through Claude. That does not establish an exact Claude version or a complete generation pipeline. Work-specific video/image models, audio contributors, total crew and budget remain undisclosed.","source":"https://x.com/Extraltodeus/status/2116599883910005085"}]
 ---
 

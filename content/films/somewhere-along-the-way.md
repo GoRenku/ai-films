@@ -7,15 +7,15 @@ format: "Music video"
 genre: "Music video"
 runtimeMinutes: 2.98
 status: "Watch now"
-watchUrl: "https://x.com/kellyeld/status/2112897019845165440"
-watchLabel: "Watch the complete release"
+watchUrl: "https://www.youtube.com/watch?v=0syB0AT1F9w"
+watchLabel: "Watch the music video on YouTube"
 discoveredAt: "2026-10-22"
-lastVerifiedAt: "2026-10-22"
+lastVerifiedAt: "2026-11-26"
 image: "/media/somewhere-along-the-way.jpg"
 imageAlt: "Three elaborately costumed dancers in the original Somewhere Along the Way poster"
 imageCredit: "Kelly Boesch · original X release poster"
 imageSource: "https://x.com/kellyeld/status/2112897019845165440"
-sources: [{"label": "Original complete release and role credits", "url": "https://x.com/kellyeld/status/2112897019845165440"}]
+sources: [{"label": "Kelly Boesch — official music video (YouTube)", "url": "https://www.youtube.com/watch?v=0syB0AT1F9w"}, {"label": "Original complete release and role credits", "url": "https://x.com/kellyeld/status/2112897019845165440"}]
 production: [{"label": "Music and imagery", "detail": "The original release credits Boesch’s lyrics, Suno for the song, Midjourney for images and Veo for animation; exact versions are not supplied.", "source": "https://x.com/kellyeld/status/2112897019845165440"}, {"label": "Unknown totals", "detail": "No complete human crew, separate human singer, cost or production schedule is established by the release.", "source": "https://x.com/kellyeld/status/2112897019845165440"}]
 musician: "Kelly Boesch"
 ---

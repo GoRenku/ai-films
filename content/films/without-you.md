@@ -6,15 +6,15 @@ year: 2026
 format: "Music video"
 genre: "Music video"
 status: "Watch now"
-watchUrl: "https://x.com/kellyeld/status/2115433552997486917"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=_0efj9XFQVs"
+watchLabel: "Watch the music video on YouTube"
 discoveredAt: "2026-10-28"
-lastVerifiedAt: "2026-10-28"
+lastVerifiedAt: "2026-11-26"
 image: "/media/without-you.jpg"
 imageAlt: "A seated figure beneath a submerged clock and suspended golden form"
 imageCredit: "Kelly Boesch · original X release artwork"
 imageSource: "https://x.com/kellyeld/status/2115433552997486917"
-sources: [{"label": "Complete original and work-specific production credits", "url": "https://x.com/kellyeld/status/2115433552997486917"}]
+sources: [{"label": "Kelly Boesch — official music video (YouTube)", "url": "https://www.youtube.com/watch?v=_0efj9XFQVs"}, {"label": "Complete original and work-specific production credits", "url": "https://x.com/kellyeld/status/2115433552997486917"}]
 production: [{"label": "Human writing and named tools", "detail": "Boesch identifies the lyrics as her own, Midjourney for images, Veo for animation and Suno for the song. Exact versions, human vocalist, additional collaborators and budget are not supplied.", "source": "https://x.com/kellyeld/status/2115433552997486917"}]
 runtimeMinutes: 2.99688
 musician: "Kelly Boesch"

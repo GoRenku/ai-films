@@ -7,15 +7,15 @@ format: "Short film"
 genre: "Documentary & essay"
 runtimeMinutes: 2.56391
 status: "Watch now"
-watchUrl: "https://x.com/oFaleco/status/2115018649664680444"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=gSt5mhF86HM"
+watchLabel: "Watch on YouTube"
 discoveredAt: "2026-10-27"
-lastVerifiedAt: "2026-10-27"
+lastVerifiedAt: "2026-11-26"
 image: "/media/the-tool.jpg"
 imageAlt: "A dark desk and screen beside a blue-lit window in The Tool release poster"
 imageCredit: "Odair Faléco · original X release artwork"
 imageSource: "https://x.com/oFaleco/status/2115018649664680444"
-sources: [{"label": "Complete titled original and maker explanation", "url": "https://x.com/oFaleco/status/2115018649664680444"}, {"label": "Filmmaker identity and verified account connection", "url": "https://ai.ofaleco.xyz/"}]
+sources: [{"label": "zero1cine — complete short essay with credits (YouTube)", "url": "https://www.youtube.com/watch?v=gSt5mhF86HM"}, {"label": "Complete titled original and maker explanation", "url": "https://x.com/oFaleco/status/2115018649664680444"}, {"label": "Filmmaker identity and verified account connection", "url": "https://ai.ofaleco.xyz/"}]
 production: [{"label": "Maker and platform", "detail": "Odair Faléco explicitly calls this a short video essay he made and names Dreamina. The post does not name Davi Moori as a collaborator; their separate Cornered partnership is not extended to this work.", "source": "https://x.com/oFaleco/status/2115018649664680444"}, {"label": "Unknown production details", "detail": "Exact Dreamina model/version, voice and music tools, editing software, full crew, schedule and budget are not disclosed in the original post.", "source": "https://x.com/oFaleco/status/2115018649664680444"}]
 ---
 

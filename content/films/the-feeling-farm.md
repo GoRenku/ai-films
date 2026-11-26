@@ -7,15 +7,15 @@ format: "Short film"
 genre: "Science-fiction satire"
 runtimeMinutes: 2.976024166666667
 status: "Watch now"
-watchUrl: "https://x.com/Gossip_Goblin/status/2115834999974834586"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=f53fmIWQN_s"
+watchLabel: "Watch on YouTube"
 image: "/media/feeling-farm.jpg"
 imageAlt: "A distressed woman with a mechanical neck in The Feeling Farm"
 imageCredit: "Gossip Goblin / Zack London · original X release artwork"
 imageSource: "https://x.com/Gossip_Goblin/status/2115834999974834586"
 discoveredAt: "2026-10-30"
-lastVerifiedAt: "2026-10-30"
-sources: [{"label":"Original titled release","url":"https://x.com/Gossip_Goblin/status/2115834999974834586"}]
+lastVerifiedAt: "2026-11-26"
+sources: [{"label": "Gossip Goblin — complete short (YouTube)", "url": "https://www.youtube.com/watch?v=f53fmIWQN_s"}, {"label":"Original titled release","url":"https://x.com/Gossip_Goblin/status/2115834999974834586"}]
 production: [{"label":"Release and authorship","detail":"Gossip Goblin publishes the titled complete short on October 29. The checked original player runs approximately 2:59. Credit follows the established releasing creator; the post does not name separate performers or a complete crew.","source":"https://x.com/Gossip_Goblin/status/2115834999974834586"},{"label":"Disclosure limits","detail":"Exact video, image, voice and music models, editing tools, budget and schedule are not disclosed in the checked release thread. No connection to Gods Don’t Give Gifts is established.","source":"https://x.com/Gossip_Goblin/status/2115834999974834586"}]
 imageFit: "contain"
 ---

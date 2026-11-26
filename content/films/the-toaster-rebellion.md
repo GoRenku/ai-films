@@ -7,15 +7,15 @@ format: "Short film"
 genre: "Science-fiction satire"
 runtimeMinutes: 2.9
 status: "Watch now"
-watchUrl: "https://x.com/Gossip_Goblin/status/2112935228104905156"
-watchLabel: "Watch the complete release"
+watchUrl: "https://www.youtube.com/watch?v=yayCXPPgXFk"
+watchLabel: "Watch on YouTube"
 discoveredAt: "2026-10-22"
-lastVerifiedAt: "2026-10-22"
+lastVerifiedAt: "2026-11-26"
 image: "/media/the-toaster-rebellion.jpg"
 imageAlt: "A mechanical woman seated in a retrofuturist kitchen"
 imageCredit: "Gossip Goblin · original The Toaster Rebellion video poster"
 imageSource: "https://x.com/Gossip_Goblin/status/2112935228104905156"
-sources: [{"label": "Original complete titled release", "url": "https://x.com/Gossip_Goblin/status/2112935228104905156"}]
+sources: [{"label": "Gossip Goblin — complete short (YouTube)", "url": "https://www.youtube.com/watch?v=yayCXPPgXFk"}, {"label": "Original complete titled release", "url": "https://x.com/Gossip_Goblin/status/2112935228104905156"}]
 production: [{"label": "Release and unknown production details", "detail": "Published as The Toaster Rebellion by Gossip Goblin. The checked original release does not name tools, versions, a full crew, budget or schedule.", "source": "https://x.com/Gossip_Goblin/status/2112935228104905156"}]
 imageFit: "contain"
 ---

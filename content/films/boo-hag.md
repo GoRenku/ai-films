@@ -7,15 +7,15 @@ format: "Short film"
 genre: "Horror"
 runtimeMinutes: 2.3097166666666666
 status: "Watch now"
-watchUrl: "https://x.com/Diesol/status/2064379186756862216"
-watchLabel: "Watch the complete original"
+watchUrl: "https://www.youtube.com/watch?v=2ERvOTD3zYE"
+watchLabel: "Watch on YouTube"
 image: "/media/boo-hag.jpg"
 imageAlt: "A skeletal night visitor leans over a bed in the original Boo Hag artwork"
 imageCredit: "Dave Clark · original Boo Hag video thumbnail"
 imageSource: "https://x.com/Diesol/status/2115908457945874588"
 discoveredAt: "2026-10-30"
-lastVerifiedAt: "2026-10-30"
-sources: [{"label":"June 9 original full release and creator credit","url":"https://x.com/Diesol/status/2064379186756862216"},{"label":"Director’s Halloween reshare and quoted original release","url":"https://x.com/Diesol/status/2115908457945874588"}]
+lastVerifiedAt: "2026-11-26"
+sources: [{"label": "Director Dave Clark — complete short (YouTube)", "url": "https://www.youtube.com/watch?v=2ERvOTD3zYE"}, {"label":"June 9 original full release and creator credit","url":"https://x.com/Diesol/status/2064379186756862216"},{"label":"Director’s Halloween reshare and quoted original release","url":"https://x.com/Diesol/status/2115908457945874588"}]
 production: [{"label":"Direction, model and original date","detail":"Clark’s October 29 reshare quotes his June 9 original: a short by Dave Clark, made with Seedance 2.0. The currently accessible complete video runs approximately 2:19. This is an older release resurfacing for Halloween.","source":"https://x.com/Diesol/status/2115908457945874588"},{"label":"Unknown production scope","detail":"The checked release does not identify separate voice, music or editing tools, individual collaborators, total crew, schedule or budget. Credits from Clark’s other films are not transferred.","source":"https://x.com/Diesol/status/2115908457945874588"}]
 ---
 
