@@ -1,5 +1,10 @@
 [
   {
+    "film": "out-of-character",
+    "since": "2026-11-26",
+    "reason": "An actress who exists only inside the worlds she was made for finds herself in a Western beside an orc from another genre entirely. Avaren's comedy turns a basic condition of generated film, characters written into whatever scene is asked of them, into the story itself; it was made for the Higgsfield Talent Contest and produced by The Blue Horizon."
+  },
+  {
     "film": "good-boy-part-ii",
     "since": "2026-11-24",
     "reason": "Dair Karakeev returns to the survivor and dog of his 51-minute GOOD BOY with a 32-minute first episode: Argos's newborn pups need vaccines, and the search leads Jane to an abandoned research station. Magnific commissioned the sequel, and the release credits a small team for producing, sound and cinematography."
@@ -18,10 +23,5 @@
     "film": "hive",
     "since": "2026-11-20",
     "reason": "Babel’s one-life-for-one-home rule now runs through three complete films. The new HUSH returns Mercy as an auditor of a factory that sells quiet, widening the city’s system from housing to sleep."
-  },
-  {
-    "film": "house-of-amun",
-    "since": "2026-11-20",
-    "reason": "Ten original chapters connect a young king’s public authority to illness, loss and succession. Isaac Rodriguez has now released the whole season as a 1 hour 51 minute feature, so it can be watched as episodes or in one sitting."
   }
 ]

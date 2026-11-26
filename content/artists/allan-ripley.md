@@ -5,8 +5,8 @@ description: "A filmmaker exploring constructed realities and human emotion thro
 focus: "Psychological science fiction & shared process"
 website: "https://www.youtube.com/@MidnightMonkeysStudio"
 discoveredAt: "2026-09-17"
-lastVerifiedAt: "2026-11-23"
-sources: [{"label": "Midnight Monkeys — filmmaker’s channel", "url": "https://www.youtube.com/@MidnightMonkeysStudio/about"}, {"label": "Midnight Monkeys — official film and production credits", "url": "https://www.youtube.com/watch?v=_MhKwYjkWFc"}, {"label": "Allan Ripley — public production project", "url": "https://higgsfield.ai/@allan_ripley/projects/the-prompter"}, {"label": "OTSUKAI — original release and credits", "url": "https://www.youtube.com/watch?v=enhIoKbufeY"}]
+lastVerifiedAt: "2026-11-26"
+sources: [{"label": "Midnight Monkeys — filmmaker’s channel", "url": "https://www.youtube.com/@MidnightMonkeysStudio/about"}, {"label": "Midnight Monkeys — official film and production credits", "url": "https://www.youtube.com/watch?v=_MhKwYjkWFc"}, {"label": "Allan Ripley — public production project", "url": "https://higgsfield.ai/@allan_ripley/projects/the-prompter"}, {"label": "OTSUKAI — original release and credits", "url": "https://www.youtube.com/watch?v=enhIoKbufeY"}, {"label": "ONE LAST CALL — original release and credits", "url": "https://www.youtube.com/watch?v=hNGpZ9IdAkA"}]
 ---
 
 Allan Ripley is the writer, director and producer credited on [The Prompter](/films/the-prompter/). His YouTube channel, **Midnight Monkeys**, identifies itself as the home of his films and links to his [Higgsfield profile](https://higgsfield.ai/@allan_ripley).
@@ -22,3 +22,7 @@ The public biography is currently brief. This profile does not infer a wider car
 ## OTSUKAI
 
 [OTSUKAI](/films/otsukai/), released November 23 for the Higgsfield Talent Contest, turns from The Prompter's psychological science fiction to comedy: a seven-minute short in the style of 1990s Japanese anime about two alien visitors on a neighbourhood errand. Its release again names each tool by role.
+
+## ONE LAST CALL
+
+[ONE LAST CALL](/films/one-last-call/), released November 26 for the same contest, keeps the 1990s cel look but turns to melancholy crime: an ageing hitman who finds his own photograph in an envelope. Ripley credits himself as writer, designer and director and again names each tool by role, from GPT Image 2 model sheets to Seedream backgrounds.

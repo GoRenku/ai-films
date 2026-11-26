@@ -619,3 +619,7 @@ Added Thousand Words FilmS's The King's Wolf, a 30-minute retelling of Marie de 
 ## November 25, 2026 — TEMPLES and the world of Nuremberg
 
 At the editor's request, TUPACABRA's TEMPLES (2:51, first posted September 20 and reshared November 24) now has a section on the Nuremberg page and the TUPACABRA artist page as a world-building piece around the feature, not as a separate film. A dated journal note explains the addition. TUPACABRA moves from an X rotation group to the priority group, so the daily refresh reads his posts every day.
+
+## November 26, 2026 — Out of Character, ONE LAST CALL and a story-led music video
+
+Added two more Higgsfield Talent Contest shorts: Out of Character, a science-fiction comedy written and directed by new artist Avaren and produced by The Blue Horizon, and Allan Ripley's ONE LAST CALL, a 1990s-style anime crime drama with a role-by-role tool list. Added Kelly Boesch's Wouldn't It Be Something, her first story-led music video, with her Seedance disclosure. The dated journal links all three works and their artists. Out of Character now opens the homepage carousel; The House of Amun leaves the lineup after its seven-day turn. Avaren joins The Blue Horizon channel in the YouTube registry.
