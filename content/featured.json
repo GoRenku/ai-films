@@ -1,5 +1,15 @@
 [
   {
+    "film": "journey-to-the-center-of-the-earth",
+    "since": "2026-11-27",
+    "reason": "Thousand Words FilmS takes Verne's travellers down Snaefells to a sea under the earth, with a wordless map in place of the runes and a giant blind salamander modelled on the real olm. The 39-minute release explains what was borrowed, what was invented and why the chapter cards name places rather than events."
+  },
+  {
+    "film": "the-last-warmth",
+    "since": "2026-11-27",
+    "reason": "The sun is not dead but held captive, and a young woman from a frozen northern village must carry the last ember into the wilderness. Sasha Fevralskaya, whose Kagome won Curious Refuge's horror competition, moves from a children's game to folk ritual, made in Higgsfield Cinema Studio for the Talent Contest."
+  },
+  {
     "film": "out-of-character",
     "since": "2026-11-26",
     "reason": "An actress who exists only inside the worlds she was made for finds herself in a Western beside an orc from another genre entirely. Avaren's comedy turns a basic condition of generated film, characters written into whatever scene is asked of them, into the story itself; it was made for the Higgsfield Talent Contest and produced by The Blue Horizon."
@@ -13,15 +23,5 @@
     "film": "otsukai",
     "since": "2026-11-23",
     "reason": "An alien ship over a quiet Japanese city turns out to be on an errand: two visitors have come to collect a vintage car from an old takoyaki seller. Allan Ripley shapes the comedy in the look of 1990s TV anime and names each tool by role, from Seedance 2.5 video to Dehancer colour."
-  },
-  {
-    "film": "the-clay-legion",
-    "since": "2026-11-22",
-    "reason": "A sinking river gives back one soldier of a thousand-year-old clay army, and a village has to decide what it is guarding against. The 22-minute first episode is built in titled chapters, and the studio's director's note frames the army as a promise rather than a weapon."
-  },
-  {
-    "film": "hive",
-    "since": "2026-11-20",
-    "reason": "Babel’s one-life-for-one-home rule now runs through three complete films. The new HUSH returns Mercy as an auditor of a factory that sells quiet, widening the city’s system from housing to sleep."
   }
 ]
