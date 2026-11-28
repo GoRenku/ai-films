@@ -9,8 +9,10 @@ x:
   label: "Nathaniel Chan on X"
   source: "https://xdeconstructed.com/"
 discoveredAt: "2026-11-18"
-lastVerifiedAt: "2026-11-18"
+lastVerifiedAt: "2026-11-28"
 sources:
+  - label: "Filmmaker’s YouTube channel"
+    url: "https://www.youtube.com/@xdeconstructed"
   - label: "Filmmaker’s portfolio, films and biography"
     url: "https://xdeconstructed.com/"
   - label: "Kyoso — production credits for its filmmaker showcase"
@@ -30,3 +32,7 @@ His portfolio describes an influence from 1990s Hong Kong and New York cinema, w
 For a separate film shown in its filmmaker showcase, **Kyoso** credits XDeconstructed with direction, writing, generation and editing; **Kyoso and Jordan Daniel Chesney** as executive producers; **David LaChance, Jr.** as composer and sound designer; and **JDC Entertainment** as producer. The page says that film was shown at a ByteDance conference in Budapest. These work-specific credits are not transferred to Midnight Snack or the rest of Chan’s catalogue.
 
 Chan’s portfolio describes a **100-minute Midnight Snack series in development with Dreamina Originals**. That is a development statement, distinct from the released 1:06 short. The checked pages do not establish a completed 100-minute release, its budget, a full cast or exact model versions.
+
+## November 28 — The Fixer
+
+[The Fixer](/films/the-fixer-nathaniel-chan/), released November 27, runs close to nine minutes, eight times the length of Midnight Snack. It is part of **PLAYGROUND Season 1**, an anthology produced by **Storybook Studios** and made on Cuelist, and it extends the interest in avoidance and withheld feeling from Midnight Snack to a whole character. Midnight Snack now plays from Chan's own YouTube channel.

@@ -4,7 +4,7 @@ description: "A studio whose creature stories develop the customs and obligation
 focus: "Creature fables and continuing fantasy worlds"
 website: "https://www.youtube.com/@ThousandWordsFilmS"
 discoveredAt: "2026-11-06"
-lastVerifiedAt: "2026-11-25"
+lastVerifiedAt: "2026-11-28"
 sources: [{"label": "Original studio channel", "url": "https://www.youtube.com/@ThousandWordsFilmS"}, {"label": "Studio world and creature catalogue", "url": "https://thousandwordsfilms.com/"}, {"label": "The River Mother original", "url": "https://www.youtube.com/watch?v=J_G18bb0Izs"}, {"label": "The Clay Legion Episode 1 original release", "url": "https://www.youtube.com/watch?v=lD-m_MHcokA"}, {"label": "The Red Wolf original release", "url": "https://www.youtube.com/watch?v=iwbPRja7wyQ"}, {"label": "The King's Wolf original release", "url": "https://www.youtube.com/watch?v=aRoyUZaHWdE"}]
 ---
 
@@ -23,3 +23,7 @@ The studio’s published catalogue describes designing creatures before making s
 ## The King's Wolf
 
 [The King's Wolf](/films/the-kings-wolf/), released November 25, is the studio's first adaptation of a written legend. It retells Marie de France's twelfth-century werewolf lay Bisclavret through Gwen, a kennel girl the original never mentions, and its description marks which parts come from the lay and which are invented.
+
+## The Dragon Midwife
+
+[The Dragon Midwife](/films/the-dragon-midwife/), released November 28, sets a European folk legend, the midwife called out at night to a birth among the hidden folk, in the Swiss Alps. Its 36-minute winter runs in five chapters named for the season and the hatchling's size, and its director's note explains a cut scene and why the hunt leader is a man the midwife once delivered.

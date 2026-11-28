@@ -1,5 +1,10 @@
 [
   {
+    "film": "hold-still",
+    "since": "2026-11-28",
+    "reason": "antic follows two teenagers across one hot July night in 1986, from a tired suburb to an abandoned mall with a found camcorder. The release counts 82 scenes and more than 1,200 takes, graded to look like a shoebox of found flash prints spliced with 16mm."
+  },
+  {
     "film": "journey-to-the-center-of-the-earth",
     "since": "2026-11-27",
     "reason": "Thousand Words FilmS takes Verne's travellers down Snaefells to a sea under the earth, with a wordless map in place of the runes and a giant blind salamander modelled on the real olm. The 39-minute release explains what was borrowed, what was invented and why the chapter cards name places rather than events."
@@ -18,10 +23,5 @@
     "film": "good-boy-part-ii",
     "since": "2026-11-24",
     "reason": "Dair Karakeev returns to the survivor and dog of his 51-minute GOOD BOY with a 32-minute first episode: Argos's newborn pups need vaccines, and the search leads Jane to an abandoned research station. Magnific commissioned the sequel, and the release credits a small team for producing, sound and cinematography."
-  },
-  {
-    "film": "otsukai",
-    "since": "2026-11-23",
-    "reason": "An alien ship over a quiet Japanese city turns out to be on an errand: two visitors have come to collect a vintage car from an old takoyaki seller. Allan Ripley shapes the comedy in the look of 1990s TV anime and names each tool by role, from Seedance 2.5 video to Dehancer colour."
   }
 ]

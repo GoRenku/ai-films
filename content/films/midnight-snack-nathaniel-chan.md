@@ -8,14 +8,16 @@ genre: "Drama"
 status: "Watch now"
 runtimeMinutes: 1.1
 discoveredAt: "2026-11-18"
-lastVerifiedAt: "2026-11-18"
-watchUrl: "https://xdeconstructed.com/"
-watchLabel: "Watch in the filmmaker’s portfolio"
+lastVerifiedAt: "2026-11-28"
+watchUrl: "https://www.youtube.com/watch?v=23D9TNfAcLE"
+watchLabel: "Watch on YouTube"
 image: "/media/midnight-snack-nathaniel-chan.jpg"
 imageAlt: "A bespectacled man speaks across a table under contrasting red and blue-green light"
 imageCredit: "Nathaniel Chan / xdeconstructed · official portfolio thumbnail at 0:49"
 imageSource: "https://xdeconstructed.com/"
 sources:
+  - label: "Original YouTube release and synopsis"
+    url: "https://www.youtube.com/watch?v=23D9TNfAcLE"
   - label: "Official portfolio — Midnight Snack player, synopsis and release month"
     url: "https://xdeconstructed.com/"
 production:
@@ -35,6 +37,6 @@ The checked portfolio playback and release image use close faces, visible grain 
 
 ## Release and production limits
 
-The filmmaker presents the **1:06 short as an August 2026 release**. Current playback was checked in the portfolio’s own player. Its linked YouTube upload was not used for this verification.
+The filmmaker presents the **1:06 short as an August 2026 release**. It is also on Chan's own YouTube channel, uploaded August 27, and the watch link now points there; the portfolio player remains a second official source. The YouTube release is tagged for Dreamina's creator programme, which is the only tool it names.
 
 The separately announced **100-minute series remains in development**. Named performers, voice production, exact models, budget and a complete crew for this short are not disclosed in the checked portfolio. Credits from Chan’s other collaborations are not assigned to it.

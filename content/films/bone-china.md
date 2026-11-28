@@ -13,8 +13,8 @@ imageAlt: "A porcelain woman in filmstrip frames beside the words Porcelain Does
 imageCredit: "Daniił Vołkaŭ · original Episode 2 YouTube artwork"
 imageSource: "https://www.youtube.com/watch?v=OYqKe0do8uQ"
 discoveredAt: "2026-10-16"
-lastVerifiedAt: "2026-10-26"
-sources: [{"label": "Complete original Episode 1 and synopsis", "url": "https://www.youtube.com/watch?v=kYShS_-n_9I"}, {"label": "Creator’s October 15 release share", "url": "https://x.com/machina9000/status/2110786873270440212"}, {"label": "Creator’s Dreamina disclosure", "url": "https://x.com/machina9000/status/2110786974600540583"}, {"label": "Episode 2 complete original, synopsis and authorship", "url": "https://www.youtube.com/watch?v=OYqKe0do8uQ"}]
+lastVerifiedAt: "2026-11-28"
+sources: [{"label": "Complete original Episode 1 and synopsis", "url": "https://www.youtube.com/watch?v=kYShS_-n_9I"}, {"label": "Creator’s October 15 release share", "url": "https://x.com/machina9000/status/2110786873270440212"}, {"label": "Creator’s Dreamina disclosure", "url": "https://x.com/machina9000/status/2110786974600540583"}, {"label": "Episode 2 complete original, synopsis and authorship", "url": "https://www.youtube.com/watch?v=OYqKe0do8uQ"}, {"label": "Episode 3 complete original and synopsis", "url": "https://www.youtube.com/watch?v=hQUb6XBNRWw"}]
 production: [{"label": "Author and episode", "detail": "The original release names Daniił Vołkaŭ and Episode 1, The Other Half. Its first upload is October 2; the later X share is not its premiere.", "source": "https://www.youtube.com/watch?v=kYShS_-n_9I"}, {"label": "Tools", "detail": "The creator’s release reply names Dreamina. Exact image/video models, versions, audio roles, collaborators, team size and budget are not disclosed by these sources.", "source": "https://x.com/machina9000/status/2110786974600540583"}]
 episodes:
   - number: 1
@@ -38,6 +38,19 @@ episodes:
     imageCredit: "Daniił Vołkaŭ · original Episode 2 YouTube artwork"
     imageSource: "https://www.youtube.com/watch?v=OYqKe0do8uQ"
     source: "https://www.youtube.com/watch?v=OYqKe0do8uQ"
+  - number: 3
+    title: "Ambrosia"
+    synopsis: "At the Spire's October Ball every porcelain guest must drink Ambrosia, and Klara learns what it is made of."
+    releasedOn: "2026-11-27"
+    addedAt: "2026-11-28"
+    runtimeMinutes: 8.1
+    status: "Watch now"
+    watchUrl: "https://www.youtube.com/watch?v=hQUb6XBNRWw"
+    image: "/media/bone-china-ambrosia.jpg"
+    imageAlt: "A porcelain-skinned young woman in a military coat sips a pale drink from a glass, a crack running down her cheek, beside the words PORCELAIN MUST DRINK"
+    imageCredit: "Daniił Vołkaŭ · original Episode 3 YouTube artwork"
+    imageSource: "https://www.youtube.com/watch?v=hQUb6XBNRWw"
+    source: "https://www.youtube.com/watch?v=hQUb6XBNRWw"
 ---
 
 **Episode 1 — The Other Half** was uploaded on **October 2**, before its October 15 share. The complete player runs about **6:58**. The series begins in an alternate October 1917, after two centuries of war.
@@ -59,3 +72,9 @@ The complete **[Newsreel](https://www.youtube.com/watch?v=OYqKe0do8uQ)** was upl
 The Spire makes Klara the heroine of a silent propaganda film. Her spoken warning can be removed, but blinking offers another route to the trenches. The porcelain rule now becomes a filmmaking problem inside the story: an image can be staged and captioned by those in power, yet still carry a signal they fail to recognise.
 
 The full original description credits **Daniił Vołkaŭ** and identifies Episode 2. It supplies no new exact model, voice, crew or cost inventory. Episode 1's Dreamina reply remains scoped to that earlier release. Full description, available automatic captions, current playback and sampled scenes were checked; no full critical viewing is claimed.
+
+## November 28 — Episode 3: Ambrosia
+
+**[Ambrosia](https://www.youtube.com/watch?v=hQUb6XBNRWw)**, uploaded **November 27**, runs about **8:06**. It moves Klara from the trenches into the Spire itself. At the October Ball every porcelain guest must empty a glass of Ambrosia, the drink that keeps them whole. Klara cannot refuse it, and it helps her, which is worse.
+
+A stranger's sacrifice hides the crack in her face long enough for her to learn what Ambrosia is made from: the men of her own sector, entered in a ledger before they die. The series' founding rule now turns inward. Porcelain survival is no longer something done to soldiers by Angels in the night; it is something Klara must take part in to stay whole. The full description credits Daniił Vołkaŭ and discloses AI-generated visuals and voices, without naming the tools for this episode.
